@@ -1,6 +1,22 @@
 /* toolbar */
 
 /* play / pause by Daniel Abdilla: https://css-tricks.com/making-pure-css-playpause-button/ */
+#time-serie-chart text {
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+	pointer-events: none;
+	fill: #7e7e7e;
+}
+
+
+#time-serie-chart .domain, #time-serie-chart .tick line{
+  display: none;
+}
+
+.c3-tooltip th {
+    background-color: #930025;
+    color: #fff;
+}
 
 .button {
   margin-bottom: 1em;
@@ -12,6 +28,7 @@
   cursor: pointer;
   border-style: solid;
   border-width: 13px 0 13px 20px;
+  background: #fff;
 }
 .button.pause {
   border-style: double;

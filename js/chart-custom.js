@@ -155,7 +155,7 @@ class Chart {
         this.plot.selectAll("dot")
             .data(this.data)
           .enter().append("circle")
-            .attr("r", this.width > 400 ? 4 : 3)
+            .attr("r", this.width > 400 ? 3 : 2)
             .attr("cx", d => this.xScale(d[0]))
             .attr("cy", d => this.yScale(d[1]))
             .on('mouseover', this.tool_tip.show)
