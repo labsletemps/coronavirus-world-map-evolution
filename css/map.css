@@ -1,0 +1,147 @@
+/* toolbar */
+
+/* play / pause by Daniel Abdilla: https://css-tricks.com/making-pure-css-playpause-button/ */
+
+.button {
+  margin-bottom: 1em;
+  box-sizing: border-box;
+  height: 25px;
+  border-color: transparent transparent transparent #202020;
+  transition: 100ms all ease;
+  will-change: border-width;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 13px 0 13px 20px;
+}
+.button.pause {
+  border-style: double;
+  border-width: 0px 0 0px 20px;
+}
+
+.irs-with-grid{
+  margin-left: 18px;
+}
+
+label{
+  font-weight: bold;
+  margin: .5em 0 0 0;
+}
+
+.showcase__mark {
+        display: block;
+        position: absolute;
+        top: 45px;
+        background: #f00;
+        transform: rotate(-45deg);
+        padding: 1px 3px;
+        border-radius: 3px;
+        color: #fff;
+        margin-left: -10px;
+    }
+
+/* map */
+
+#map  {
+  max-width: 900px;
+  margin: 8px auto;
+}
+#map svg{
+  width: 100%;
+}
+.small{
+  font-size: .9em;
+}
+.states {
+  fill: #ececec;
+  stroke: #fff;
+  stroke-width: 1px;
+}
+
+.circle{
+	stroke: #6c0013;
+	stroke-width: .5pt;
+}
+
+.points {
+  fill: #b80021;
+  fill-opacity: 0.5;
+}
+
+.hoveredpoints {
+  fill: #6c0013;
+  fill-opacity: 0.6;
+  stroke:white;
+  stroke-opacity:1;
+}
+
+.mouseover {
+  stroke: #f0f;
+  stroke-opacity:0.2;
+  stroke-alignment: outer;
+}
+
+.tooltip {
+  font-size: 11px;
+  width: 110px;
+  background: rgba(255,255,255,0.9);
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.tooltip p {
+  padding-bottom:4px;
+}
+
+.tooltip #click {
+  font-size:9px;
+  font-style: italic;
+  border-bottom: none;
+  color:grey;
+}
+
+.tooltip:after {
+  width: 110px;
+  display: block;
+  color: white;
+  opacity: 0.85;
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+  pointer-events: none;
+}
+
+
+#chart{
+  margin:2%;
+}
+
+
+.map-details {
+  margin: 8px auto;
+  padding: .5em;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.map-details h4 {
+  font-size: 1.2em;
+}
+.map-details p {
+  font-size: .9em;
+  margin: 0 0 3px 0;
+}
+
+
+.map-details .stats {
+  font-weight: bold;
+  color: #777;
+}
+.map-details .summary {
+  /* display: none; */
+}
+
+ul {
+    list-style-type: disc;
+    padding-left:1em;
+    margin-left:1em;
+}

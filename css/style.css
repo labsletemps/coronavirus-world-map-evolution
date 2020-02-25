@@ -1,0 +1,427 @@
+body {
+	margin: 90px 0 0 0;
+	background-color: #ffffff;
+	color: #6d6c6c;
+	font-family: Raleway;
+}
+.big {
+	font-size: 3em;
+	margin-left: 1em;
+}
+.chart-background{
+	margin-left: -4px;
+	margin-right: -4px;
+	padding: 0 8px;
+	background: #f9f9f9;
+	border: 2px solid #eee;
+	border-radius: 3px;
+}
+.slides p{
+	display: none;
+}
+.slides p.active{
+	display: block;
+}
+p.links{
+	/* padding-left: 5%;
+	padding-right: 5%; */
+}
+.padding-bottom{
+	padding-bottom: 40px;
+}
+.margin-top{
+	margin-top: 30px;
+}
+.margin-bottom{
+	margin-bottom: 40px;
+}
+.source{
+	font-size: .8em;
+	text-align: right;
+}
+@keyframes glowing {
+  0% { background-color: #b80021; box-shadow: 0 0 10px #b80021; }
+  50% { background-color: #6c0013; box-shadow: 0 0 10px #6c0013; }
+  100% { background-color: #b80021; box-shadow: 0 0 10px #b80021; }
+}
+@keyframes lightglowing {
+  0% { box-shadow: 0 0 5px #b80021; }
+  40% { box-shadow: 0 0 5px #6c0013; }
+  60% { box-shadow: 0 0 5px #b80021; }
+	100% { box-shadow: 0 0 5px #fff; }
+}
+
+.glowing{
+	animation: glowing 1500ms infinite;
+}
+.lightglowing{
+	animation: lightglowing 1500ms;
+}
+.next{
+	display: block;
+}
+
+.content {
+	margin-top: 50px;
+	background-color: #E9F0F5;
+}
+
+nav {
+	background: none repeat scroll 0 0 white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+	font-family: verdana;
+	left: 0;
+	line-height: 40px;
+	height: 40px;
+	padding-left: 10px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	vertical-align: middle;
+	z-index: 999;
+}
+
+nav .logo {
+	border: 0 dotted #fff;
+	float: left;
+	height: 20px;
+	margin-right: 19px;
+	margin-top: 10px;
+	height: 20px;
+}
+
+nav a {
+	border: medium none;
+	text-decoration: none;
+}
+
+nav .share-button {
+	line-height: normal;
+	position: absolute;
+	right: 35px;
+	top: 10px;
+}
+
+nav ul {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+footer {
+	margin:100px 0 -12px 0!important;
+	padding: 40px 10px;
+	box-shadow: 0px -4px 8px -4px rgb(0, 0, 0, 0.7);
+	background: none repeat scroll 0px 0px #FFF;
+	line-height: 30px;
+}
+
+.footer-container {
+	width:60%;
+	margin:auto;
+	font-size:16px;
+}
+
+.footer-container a {
+	color:#5C5959;
+	border-bottom:1px dotted #5C5959;
+}
+
+
+.footer-container a:hover {
+	color:#950728;
+	border-bottom:1px dotted #950728;
+	text-decoration:none;
+}
+
+
+h1 {
+	font-size: 34px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+h1.intro {
+  color: #787878;
+  color: #000;
+  text-shadow: none;
+  text-align: left;
+  font-size: 2.2rem;
+  line-height: 2.3rem;
+  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+
+h2 {
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+p {
+	margin-bottom: 20px;
+	font-size: 17px;
+}
+p.pie-description {
+	margin-bottom: 0;
+}
+
+.how_you_did
+{
+	margin: auto !important;
+	left: 0 !important;
+	width: auto !important;
+	padding: 0 0 0 0 !important;
+	max-width: 662px;
+}
+
+div.fourchette
+{
+	max-width: 630px;
+	padding: 0 15px;
+	margin: auto;
+
+}
+
+div.fourchette h1
+{
+	padding: 0;
+}
+
+div.fourchette p
+{
+	text-align: left;
+	font-size: 18px !important;
+	margin-bottom: 15px;
+	line-height: 23px;
+}
+
+div.fourchette p span
+{
+	color: #930025;
+	font-weight: 900;
+	margin-right: 15px;
+}
+
+/* custom pour barometre */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+	padding-bottom: 1em;
+}
+text{
+	font-size: 14px;
+}
+
+h1{
+	font-weight: bold;
+}
+
+.table td, .table th{
+	font-size: .8em;
+	padding-left: 0.25rem;
+	padding-right: 0.25rem;
+}
+.pubdate{
+	white-space: nowrap;
+}
+
+@media only screen and (max-width: 700px){
+	/* ... */
+}
+
+/* CHARTS */
+.dot, .chart circle, .line{
+	fill: #C32E1E;
+}
+ .chart-legend{
+	 font-size: .9em;
+ }
+.axis line {
+	fill: none;
+	shape-rendering: crispEdges;
+	stroke-width: 1px;
+}
+
+.axis text {
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+	pointer-events: none;
+	fill: #7e7e7e;
+}
+
+.y.axis text {
+	text-anchor: end !important;
+	font-size:14px;
+	fill: #7e7e7e;
+}
+
+.x .domain, .x line {
+	display: none;
+}
+
+.line {
+	stroke: #C32E1E;
+	stroke-width: 3px;
+	fill: none;
+}
+
+.overlay {
+	fill: none;
+	pointer-events: all;
+}
+
+.focus {
+	font-size: 14px;
+}
+
+.focus circle {
+	fill: #5e8dc9;
+}
+
+.hiddenDetails{
+	display: none;
+}
+
+/* tooltips */
+.d3-tip {
+  line-height: 1;
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-radius: 4px;
+}
+
+.d3-tip div{
+  color: #fff;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.7);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.four-graphs p{
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+.encadre p{
+	margin-bottom: 12px;
+}
+.encadre h3{
+	font-size: 1.75rem;
+	color: #333;
+	font-weight: bold;
+}
+h3{
+	font-size: 1.5rem;
+	margin-top: 60px;
+	color: #333;
+	font-weight: bold;
+}
+
+/*/HTML5 Boilerplate) Clearfix, hidden, visuallyhidden, invisible...*/
+/* Generated by Font Squirrel (https://www.fontsquirrel.com) on June 16, 2016 */
+@font-face {
+  font-family: 'montserratblack';
+  src: url("../fonts/montserrat-black-webfont.woff2") format("woff2"), url("../fonts/montserrat-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserratbold';
+  src: url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserratextra_bold';
+  src: url("../fonts/montserrat-extrabold-webfont.woff2") format("woff2"), url("../fonts/montserrat-extrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserrathairline';
+  src: url("../fonts/montserrat-hairline-webfont.woff2") format("woff2"), url("../fonts/montserrat-hairline-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserratlight';
+  src: url("../fonts/montserrat-light-webfont.woff2") format("woff2"), url("../fonts/montserrat-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserratregular';
+  src: url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserratsemi_bold';
+  src: url("../fonts/montserrat-semibold-webfont.woff2") format("woff2"), url("../fonts/montserrat-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserratultra_light';
+  src: url("../fonts/montserrat-ultralight-webfont.woff2") format("woff2"), url("../fonts/montserrat-ultralight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+p.credits {
+		font-family: 'montserratultra_light';
+    font-size: 17px;
+    line-height: calc(17px * 1.4);
+    color: #777;
+}
+.methode{
+	display: none;
+	font-size: .9em;
+}
+.btn-outline-burgundy{
+	margin: 2em;
+	color: #C32E1E;
+	background-color: transparent;
+	background-image: none;
+	border-color: #C32E1E;
+}
+.four-graphs svg, #map, .map-details{
+	border: 1px solid #eee;
+	border-radius: 3px;
+	background: #fff;
+}
+h5{
+	margin-top: 30px;
+	font-family: 'montserratsemi_bold';
+  color: #555;
+}
+h6{
+	margin-top: 10px;
+	font-family: 'montserratsemi_bold';
+  color: #555;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+select:focus, textarea:focus, input:focus {
+        font-size: 16px;
+    }
+}
