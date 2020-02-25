@@ -51,15 +51,11 @@
 	var path = d3.geoPath()
 	.projection(projection);
 
-	queue()
-	.defer(d3.json, "data/world_countries.json")
-	.defer(d3.csv, "data/time-series.csv?2")
-	.await(ready);
+	Promise.all([d3.json("data/world_countries.json"), d3.csv("data/time-series.csv?3")]).then( function (data) {
+		var geodata = data[0];
+		var data = data[1];
 
-	function ready(err, geodata, data) {
-
-		if (err) console.warn(err, "error loading data");
-
+		
 		data.forEach(function(d) {
 			d.n = +d.Confirmed;
 			d.ts = +d.ts;
@@ -336,8 +332,8 @@
 					var d5_instance = $d5.data("ionRangeSlider");
 
 					d5_instance.update({
-            from: dateCounter
-        	});
+						from: dateCounter
+					});
 					update_date( availableDates[dateCounter] );
 					dateCounter += 1;
 					if(dateCounter < availableDates.length){
@@ -360,5 +356,76 @@
 						$(this).addClass('pause')
 					}
 				});
-	}
+
+				/*
+					c3js graph also enables date picking
+				*/
+
+				var lastIndex;
+				var chart = c3.generate({
+					size: {
+						height: 200
+					},
+					bindto: "#time-serie-chart",
+
+					data: {
+						url: 'data/linegraphs-c3.csv',
+						type: 'line',
+						x: 'timestamp',
+						colors: {
+							'Infections confirmées': '#930025',
+							'Guérisons': '#4E8054'
+						}
+					},
+					axis: {
+						x: {
+							type: 'timeseries',
+							tick: {
+								format: '%d.%m.%Y',
+								count: 6
+							},
+						},
+						y: {
+							tick: {
+								values: [0, 40000, 80000]
+							}
+						}
+					},
+					grid: {
+						/*x: {
+							lines: [
+								{value: '2020-02-13', text: 'Nouvelle mesure'}
+							]
+						},*/
+						y: {
+							lines: [
+								{ value: 0},
+								{ value: 40000},
+								{ value: 80000},
+							]
+						}
+					},
+					tooltip: {
+						format: {
+							value: function (value, ratio, id, index) {
+								if (index != lastIndex) {
+									// TODO use value here
+									if (index < availableDates.length){
+										update_date(availableDates[index]);
+										var $d5 = $("#range_slider");
+										$d5.data("ionRangeSlider").update({
+											from: index
+										});
+
+										clearTimeout(animTimeout);
+										$('.pause').removeClass('pause')
+									}
+									lastIndex = index;
+								}
+								return value;
+							}
+						}
+					}
+				}); // end c3js graph
+	});
 })();
