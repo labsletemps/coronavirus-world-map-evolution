@@ -11,8 +11,10 @@
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css?5" />
-	<link rel="stylesheet" type="text/css" href="css/map.css?5" />
+	<link rel="stylesheet" type="text/css" href="css/c3.min.css"/>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css?8" />
+	<link rel="stylesheet" type="text/css" href="css/map.css?10" />
 	<link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.css" />
 
 </head>
@@ -34,20 +36,12 @@
 				</div>
 			</div>
 
-			<div style="display: none;" class="chart-background margin-top margin-bottom">
-				<div class="row four-graphs">
-
-					<div class="col-lg-12 col-md-12">
-						<h5>Infections confirmées dans le monde</h5>
-						<div class="chart chart-total"></div>
-
-					</div>
-				</div>
-			</div>
-
 			<!-- toolbox -->
 
 			<div class="row align-items-end">
+				<div class="col-12">
+					<div id="time-serie-chart"></div>
+				</div>
 				<div class="col-10 filter-container">
 					<label>Naviguer par date</label>
 					<input type="text" id="range_slider" />
@@ -60,69 +54,64 @@
 
 
 			<!-- map container -->
-				<div class="row">
+			<div class="row">
 
-					<div class="col-lg-9 col-sm-12">
-						<div id="map" class="map">
-							<div class="tooltip"></div>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-sm-12">
-						<div class="map-details">
-							<h4></h4>
-							<p>Cliquer/toucher un cercle pour plus d’informations.</p>
-						</div>
-					</div>
-					<div class="col-lg-12">
-						<div class="source">
-							Sources: compilation du <a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">CSSE de l’Université Johns-Hopkins</a>,
-							mise à jour le <span class="dataUpdate">30 janvier à 17h00 (heure suisse)</span> et basée sur des données
-							de <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports">l’OMS</a>,
-							du <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC</a>,
-							de la <a href="http://www.nhc.gov.cn/yjb/s3578/new_list.shtml">NHC</a>
-							et de <a href="https://3g.dxy.cn/newh5/view/pneumonia?scene=2">DXY.cn</a></div>
+				<div class="col-lg-9 col-sm-12">
+					<div id="map" class="map">
+						<div class="tooltip"></div>
 					</div>
 				</div>
 
-				<div class="chart-background margin-top margin-bottom">
-					<div class="row four-graphs">
-
-						<div class="col-lg-6 col-md-12">
-							<h5>Infections en Chine</h5>
-							<p>Une <b>nouvelle méthode</b> de détection a été <a target="_blank" href="https://www.letemps.ch/monde/coronavirus-bilan-morts-hausse-chine-apres-une-modification-mode-detection">introduite le 13 février</a>, ajoutant près de 15 000 cas au décompte.</p>
-							<div class="chart chart-china"></div>
-							<!-- <div class="source">Source: <a target="_blank" href="https://donnees.banquemondiale.org/indicateur/NY.GDP.MKTP.CD?end=2018&start=2008">Banque mondiale</a></div> -->
-						</div>
-
-						<div class="col-lg-6 col-md-12">
-							<h5>Ailleurs dans le monde</h5>
-							<p>En-dehors de la Chine continentale, 542 cas de Coronavirus ont été <a target="_blank" href="https://www.letemps.ch/sciences/diamond-princess-bouillon-culture-coronavirus">détectés sur un navire de croisière</a> (état au 18 février).</p>
-							<div class="chart chart-other"></div>
-							<!-- <div class="source">Source: Ilostat via la <a target="_blank" href="https://data.worldbank.org/indicator/SL.UEM.TOTL.NE.ZS?end=2018&locations=US&start=2008">Banque Mondiale</a></div> -->
-
-						</div>
+				<div class="col-lg-3 col-sm-12">
+					<div class="map-details">
+						<h4></h4>
+						<p>Cliquer/toucher un cercle pour plus d’informations.</p>
 					</div>
 				</div>
-
-				<div class="row">
-					<div class="offset-md-2 col-md-8 col-sm-12">
-
-
-									<p><span class="big confirmed_total">14000</span> infections confirmées dans le monde</p>
-									<p><span class="big deaths_total">300</span> décès</p>
-									<p><span class="big recovered_total">340</span> guérisons</p>
-
-									<p>D’après des données <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">compilées par l’université John Hopkins</a> et actualisées le <span class="dataUpdate">30 janvier à 17h00 (heure suisse)</span>.</p>
-
-									<p><b>Lire aussi: </b> <a target="_blank" href="https://www.letemps.ch/monde/loms-parler-pandemie-premature">Pour l’OMS, parler de pandémie est «prématuré»</a></p>
-
-									<p class="credits">Infographies: Paul Ronga, code <a target="_blank" href="https://github.com/labsletemps/coronavirus-world-map">disponible sur GitHub</a> <a class="warn_error"></a></p>
-						</div>
+				<div class="col-lg-12">
+					<div class="source">
+						Sources: compilation du <a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">CSSE de l’Université Johns-Hopkins</a>,
+						mise à jour le <span class="dataUpdate">30 janvier à 17h00 (heure suisse)</span> et basée sur des données
+						de <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports">l’OMS</a>,
+						du <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC</a>,
+						de la <a href="http://www.nhc.gov.cn/yjb/s3578/new_list.shtml">NHC</a>
+						et de <a href="https://3g.dxy.cn/newh5/view/pneumonia?scene=2">DXY.cn</a></div>
 				</div>
+			</div>
 
+			<div class="chart-background margin-top margin-bottom">
+				<div class="row four-graphs">
 
+					<div class="col-lg-6 col-md-12">
+						<h5>Infections en Chine</h5>
+						<p>Une <b>nouvelle méthode</b> de détection a été <a target="_blank" href="https://www.letemps.ch/monde/coronavirus-bilan-morts-hausse-chine-apres-une-modification-mode-detection">introduite le 13 février</a>, ajoutant près de 15 000 cas au décompte.</p>
+						<div class="chart chart-china"></div>
+						<!-- <div class="source">Source: <a target="_blank" href="https://donnees.banquemondiale.org/indicateur/NY.GDP.MKTP.CD?end=2018&start=2008">Banque mondiale</a></div> -->
+					</div>
 
+					<div class="col-lg-6 col-md-12">
+						<h5>Ailleurs dans le monde</h5>
+						<p>En-dehors de la Chine continentale, 542 cas de Coronavirus ont été <a target="_blank" href="https://www.letemps.ch/sciences/diamond-princess-bouillon-culture-coronavirus">détectés sur un navire de croisière</a> (état au 18 février).</p>
+						<div class="chart chart-other"></div>
+						<!-- <div class="source">Source: Ilostat via la <a target="_blank" href="https://data.worldbank.org/indicator/SL.UEM.TOTL.NE.ZS?end=2018&locations=US&start=2008">Banque Mondiale</a></div> -->
+
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="offset-md-2 col-md-8 col-sm-12">
+					<p><span class="big confirmed_total">14000</span> infections confirmées dans le monde</p>
+					<p><span class="big deaths_total">300</span> décès</p>
+					<p><span class="big recovered_total">340</span> guérisons</p>
+
+					<p>D’après des données <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">compilées par l’université John Hopkins</a> et actualisées le <span class="dataUpdate">30 janvier à 17h00 (heure suisse)</span>.</p>
+
+					<p><b>Lire aussi: </b> <a target="_blank" href="https://www.letemps.ch/monde/loms-parler-pandemie-premature">Pour l’OMS, parler de pandémie est «prématuré»</a></p>
+
+					<p class="credits">Infographies: Paul Ronga, code <a target="_blank" href="https://github.com/labsletemps/coronavirus-world-map-evolution">disponible sur GitHub</a> <a class="warn_error"></a></p>
+				</div>
+			</div>
 		</div>
 
 		
@@ -133,43 +122,36 @@
 		<script src="lib/bootstrap.min.js"></script>
 
 		<!-- pies -->
-		<script src="lib/d3.v4.min.js"></script>
+		<script src="lib/d3.min.js"></script>
 		<script src="lib/topojson.v2.min.js"></script>
 		<script src="lib/d3-geo-projection.v2.min.js"></script>
 		<script src="lib/d3-tip.js"></script>
 		<script src="lib/queue.min.js"></script>
-		<script src="js/chart-custom.js?17"></script>
-		<script src="js/map.js?30"></script>
+		<script src="js/chart-custom.js?20"></script>
+		<script src="lib/c3.min.js"></script>
+
+		<script src="js/map.js?40"></script>
 		<script>
 
 		$(document).ready(function() {
 			// time-serie charts
-			d3.csv("data/linegraphs.csv?30", function(e, data){
+			d3.csv("data/linegraphs.csv?30").then(function(data) {
+
 				var total = [];
 				var china = [];
 				var other = [];
 
 				data.forEach(function(d) {
 					d.date = new Date(d.timestamp);
-					total.push([d.date, +d.Total_Confirmed])
 					china.push([d.date, +d.Mainland_China]);
 					other.push([d.date, +d.Other_Locations]);
-				});
-
-				const chartTotal = new Chart({
-					element: document.querySelector('.chart-total'),
-					data: total,
-					suffix: ' cas',
-					ylabel: 'Cas confirmés cumulés',
-					dateParse: "%Y-%m-%d",
-					dateFormat: "%d.%m."
 				});
 
 				const chartChina = new Chart({
 					element: document.querySelector('.chart-china'),
 					data: china,
 					suffix: ' cas',
-					ylabel: 'Cas confirmés cumulés',
+					ylabel: 'Cas confirmés',
 					dateParse: "%Y-%m-%d",
 					dateFormat: "%d.%m."
 				});
@@ -178,7 +160,7 @@
 					element: document.querySelector('.chart-other'),
 					data: other,
 					suffix: ' cas',
-					ylabel: 'Cas confirmés cumulés',
+					ylabel: 'Cas confirmés',
 					dateParse: "%Y-%m-%d",
 					dateFormat: "%d.%m.",
 				});
@@ -196,7 +178,7 @@
 			});
 
 			if (window.fetch) {
-				fetch('data/meta.json?15')
+				fetch('data/meta.json?16')
 					.then(function(response) { return response.json(); })
 					.then(function(data) {
 						$('.warn_error').text('Signaler une erreur');
@@ -214,7 +196,7 @@
 		});
 
 		</script>
-
+	
 
 	</body>
 	</html>
