@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/map.css?2" />
+	<style>
+	body{
+		padding: 0;
+		margin: 0;
+	}
+	#screenshot-img{
+		width: 100%;
+		position: relative;
+		z-index: 0;
+	}
+	#cursor{
+		width: 40%;
+		position: fixed;
+		top: 20%;
+		left: 30%;
+		transform: rotate(-20deg);
+		z-index: 10;
+		transition-duration: 0.3s;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	#cursor:hover{
+		transform: rotate(-10deg);
+	}
+	#screenshot{
+		width: 100%;
+		height: 100%;
+		/* max-width: 958px; */
+		height: auto;
+		background-image: url('img/screenshot.png');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: contain;
+		border: 1px solid #ccc;
+
+	}
+	</style>
+</head>
+
+<body>
+
+	<a target="_blank" href="https://labs.letemps.ch/interactive/2020/carte-coronavirus-monde/">
+		<img id="cursor" src="img/hand-cursor-small.png" />
+		<img id="screenshot-img" src="img/screenshot.png">
+	</div>
+</a>
+
+
+	</body>
+	</html>

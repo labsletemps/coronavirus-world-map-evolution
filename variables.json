@@ -1,0 +1,15 @@
+{
+	"title": "L’expansion du nouveau coronavirus dans le monde",
+	"description": "",
+	"authors": "Paul Ronga",
+	"imgSocial": "social2.jpg",
+
+	"navBarStyle": "black",
+	"navBarOffset": "0",
+	"navBarLocked": false,
+	"pubDate": "2020-01-26T16:00:00+00:00",
+	"partner": {
+		"logo": "img/empty.png",
+		"link": "https://www.letemps.ch/"
+	}
+}
