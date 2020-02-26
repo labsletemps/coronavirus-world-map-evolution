@@ -110,7 +110,7 @@ class Chart {
 
         let xAxis = d3.axisBottom()
            .scale(this.xScale)
-           .ticks( this.width > 400 ? d3.timeDay.every(4) : d3.timeDay.every(8)) // mobile
+           .ticks( this.width > 400 ? d3.timeDay.every(6) : d3.timeDay.every(12)) // mobile
            .tickFormat(d3.timeFormat(this.dateFormat));
 
 
