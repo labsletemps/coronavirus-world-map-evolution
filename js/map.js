@@ -39,14 +39,15 @@
 '2020-02-21',
 '2020-02-22',
 '2020-02-23',
-'2020-02-24'];
+'2020-02-24',
+'2020-02-25'];
 
 	var margin = {top: 0, right: 10, bottom: 10, left: 10};
 
 	var width = 1500 - margin.left - margin.right,
-	height = 760 - margin.top - margin.bottom;
+	height = 600 - margin.top - margin.bottom;
 
-	var projection = d3.geoRobinson().scale(160);
+	var projection = d3.geoRobinson().scale(190).center([0, 12]);
 
 	var path = d3.geoPath()
 	.projection(projection);
@@ -55,7 +56,7 @@
 		var geodata = data[0];
 		var data = data[1];
 
-		
+
 		data.forEach(function(d) {
 			d.n = +d.Confirmed;
 			d.ts = +d.ts;
@@ -369,7 +370,7 @@
 					bindto: "#time-serie-chart",
 
 					data: {
-						url: 'data/linegraphs-c3.csv',
+						url: 'data/linegraphs-c3.csv?2',
 						type: 'line',
 						x: 'timestamp',
 						colors: {
