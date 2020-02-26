@@ -15,7 +15,17 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css?8" />
 	<link rel="stylesheet" type="text/css" href="css/map.css?10" />
 	<link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.css" />
-
+	<style>
+	.c3-area {
+  	opacity: 0.6 !important;
+	}
+	.big{
+		font-size: 2em;
+	}
+	.label{
+		color: #555;
+	}
+	</style>
 </head>
 
 <body>
@@ -24,16 +34,38 @@
 
 	{# Emplacement pour le contenu principal #}
 	<div class="container">
-		<div class="row">
+
+		<div class="row padding-bottom">
 			<div class="offset-md-2 col-md-8 col-sm-12">
 				<h1 class="intro">L’expansion du nouveau coronavirus</h1>
 
-				<p class="lead">Le 2019-nCov a causé <span class="deaths_total">2469</span> décès et plus de <span class="confirmed_total_floor">78000</span> infections confirmées dans le monde, selon les chiffres compilés par l’université Johns-Hopkins</p>
+				<p class="lead">Le 2019-nCov a causé <span class="deaths_total">____</span> décès et plus de <span class="confirmed_total_floor">_____</span> infections confirmées dans le monde, selon les chiffres compilés par l’université Johns-Hopkins</p>
 
-				<p>Ces infographies sont régulièrement actualisées depuis le 27 janvier. Dernière mise à jour le <span class="update">vendredi 31 janvier</span>.</p>
+				<p>L’université John-Hopkins, sur la côte Est des Etats-Unis, compile les données de la plateforme chinoise <a href="https://3g.dxy.cn/newh5/view/pneumonia?scene=2">DXY.cn</a> et de différentes agences de santé publique et les publie chaque soir vers 18 heures (minuit en Suisse).</p>
 
-				</div>
+				<p>Les infographies suivantes sont régulièrement actualisées depuis le 27 janvier sur la base de ces données. Dernière mise à jour le <span class="update">________________</span>.</p>
+
 			</div>
+		</div>
+
+		<div class="row numbers text-center align-items-top padding-bottom">
+			<div class="col-md-3 col-6">
+				<span class="big confirmed_total">_____</span><br>
+				<span class="label">infections confirmées cumulées</span>
+			</div>
+			<div class="col-md-3 col-6">
+				<span class="big deaths_total">___</span><br>
+				<span class="label">décès</span>
+			</div>
+			<div class="col-md-3 col-6">
+				<span class="big recovered_total">___</span><br>
+				<span class="label">guérisons</span>
+			</div>
+			<div class="col-md-3 col-6">
+				<span class="big existing_total">___</span><br>
+				<span class="label">infections encore existantes</span>
+			</div>
+		</div>
 
 			<!-- toolbox -->
 
@@ -50,8 +82,6 @@
 				</div>
 			</div>
 
-
-
 			<!-- map container -->
 			<div class="row">
 
@@ -64,7 +94,7 @@
 				<div class="col-lg-3 col-sm-12">
 					<div class="map-details">
 						<h4></h4>
-						<p>Cliquer/toucher un cercle pour plus d’informations.</p>
+						<p>Survoler/toucher un cercle pour plus d’informations.</p>
 					</div>
 				</div>
 				<div class="col-lg-12">
@@ -100,11 +130,6 @@
 
 			<div class="row">
 				<div class="offset-md-2 col-md-8 col-sm-12">
-					<p><span class="big confirmed_total">14000</span> infections confirmées dans le monde</p>
-					<p><span class="big deaths_total">300</span> décès</p>
-					<p><span class="big recovered_total">340</span> guérisons</p>
-
-					<p>D’après des données <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">compilées par l’université John Hopkins</a> et actualisées le <span class="dataUpdate">30 janvier à 17h00 (heure suisse)</span>.</p>
 
 					<p><b>Lire aussi: </b> <a target="_blank" href="https://www.letemps.ch/monde/loms-parler-pandemie-premature">Pour l’OMS, parler de pandémie est «prématuré»</a></p>
 
@@ -187,6 +212,8 @@
 						$('.confirmed_total').text(data['confirmed_total'])
 						$('.confirmed_total_floor').text(Math.floor(data['confirmed_total'] / 1000) * 1000)
 						$('.recovered_total').text(data['recovered_total'])
+						$('.existing_total').text(data['existing_total'])
+
 
 						$('.update').text(data['update'])
 						$('.dataUpdate').text(data['dataUpdate'])
