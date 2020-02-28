@@ -12,8 +12,8 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/c3.min.css"/>
 
-	<link rel="stylesheet" type="text/css" href="css/style.css?8" />
-	<link rel="stylesheet" type="text/css" href="css/map.css?10" />
+	<link rel="stylesheet" type="text/css" href="css/style.css?UPDATE" />
+	<link rel="stylesheet" type="text/css" href="css/map.css?UPDATE" />
 	<link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.css" />
 	<style>
 	.c3-area {
@@ -41,7 +41,7 @@
 
 				<p class="lead">Le 2019-nCov a causé <span class="deaths_total">____</span> décès et plus de <span class="confirmed_total_floor">_____</span> infections confirmées dans le monde, selon les chiffres compilés par l’université Johns-Hopkins</p>
 
-				<p>L’université John-Hopkins, sur la côte Est des Etats-Unis, compile les données de la plateforme chinoise <a href="https://3g.dxy.cn/newh5/view/pneumonia?scene=2">DXY.cn</a> et de différentes agences de santé publique et les publie chaque soir vers 18 heures (minuit en Suisse).</p>
+				<p>L’université John-Hopkins, sur la côte est des Etats-Unis, compile les données de la plateforme chinoise <a href="https://3g.dxy.cn/newh5/view/pneumonia?scene=2">DXY.cn</a> et de différentes agences de santé publique et les publie chaque soir vers 18 heures (minuit en Suisse).</p>
 
 				<p>Les infographies suivantes sont régulièrement actualisées depuis le 27 janvier sur la base de ces données. Dernière mise à jour le <span class="update">________________</span>.</p>
 
@@ -49,21 +49,24 @@
 		</div>
 
 		<div class="row numbers text-center align-items-top padding-bottom">
+			<!-- <div class="col-12 text-left">
+				Etat au <span class="update"></span>
+			</div> -->
 			<div class="col-md-3 col-6">
 				<span class="big confirmed_total">_____</span><br>
 				<span class="label">infections confirmées cumulées</span>
 			</div>
 			<div class="col-md-3 col-6">
-				<span class="big deaths_total">___</span><br>
-				<span class="label">décès</span>
+				<span class="big existing_total">___</span><br>
+				<span class="label">infections encore existantes</span>
 			</div>
 			<div class="col-md-3 col-6">
 				<span class="big recovered_total">___</span><br>
 				<span class="label">guérisons</span>
 			</div>
 			<div class="col-md-3 col-6">
-				<span class="big existing_total">___</span><br>
-				<span class="label">infections encore existantes</span>
+				<span class="big deaths_total">___</span><br>
+				<span class="label">décès</span>
 			</div>
 		</div>
 
@@ -112,16 +115,19 @@
 				<div class="row four-graphs">
 
 					<div class="col-lg-6 col-md-12">
-						<h5>Infections en Chine</h5>
-						<p>Une <b>nouvelle méthode</b> de détection a été <a target="_blank" href="https://www.letemps.ch/monde/coronavirus-bilan-morts-hausse-chine-apres-une-modification-mode-detection">introduite le 13 février</a>, ajoutant près de 15 000 cas au décompte.</p>
-						<div class="chart chart-china"></div>
+						<h5>Nouvelles guérisons et infections</h5>
+						<p>Depuis le 18 février, on compte chaque jour plus de guérisons que de nouvelles infections confirmées. Le pic des 12 et 13 février a été causé par une <a target="_blank" href="https://www.letemps.ch/monde/coronavirus-bilan-morts-hausse-chine-apres-une-modification-mode-detection">nouvelle méthode de détection</a>.</p>
+						<div class="c3-chart" id="chart-recoveries"></div>
+						<!-- <div class="chart chart-china"></div> -->
 						<!-- <div class="source">Source: <a target="_blank" href="https://donnees.banquemondiale.org/indicateur/NY.GDP.MKTP.CD?end=2018&start=2008">Banque mondiale</a></div> -->
 					</div>
 
+
 					<div class="col-lg-6 col-md-12">
 						<h5>Ailleurs dans le monde</h5>
-						<p>En-dehors de la Chine continentale, 542 cas de Coronavirus ont été <a target="_blank" href="https://www.letemps.ch/sciences/diamond-princess-bouillon-culture-coronavirus">détectés sur un navire de croisière</a> (état au 18 février).</p>
-						<div class="chart chart-other"></div>
+						<p>En-dehors de la Chine continentale, plusieurs centaines de cas ont été <a target="_blank" href="https://www.letemps.ch/sciences/diamond-princess-bouillon-culture-coronavirus">détectés sur le navire de croisière Diamond Princess</a>, en quarantaine dans la baie de Yokohama.</p>
+						<!-- <div class="chart chart-other"></div> -->
+						<div class="c3-chart" id="chart-china-other"></div>
 						<!-- <div class="source">Source: Ilostat via la <a target="_blank" href="https://data.worldbank.org/indicator/SL.UEM.TOTL.NE.ZS?end=2018&locations=US&start=2008">Banque Mondiale</a></div> -->
 
 					</div>
@@ -131,7 +137,7 @@
 			<div class="row">
 				<div class="offset-md-2 col-md-8 col-sm-12">
 
-					<p><b>Lire aussi: </b> <a target="_blank" href="https://www.letemps.ch/monde/loms-parler-pandemie-premature">Pour l’OMS, parler de pandémie est «prématuré»</a></p>
+					<p><b>Lire aussi: </b> <a target="_blank" href="https://www.letemps.ch/monde/continu-virus-geneve-un-cas-confirme-salon-lhorlogerie-annule">[En continu] Le virus à Genève: un cas confirmé, le Salon de l'horlogerie annulé</a></p>
 
 					<p class="credits">Infographies: Paul Ronga, code <a target="_blank" href="https://github.com/labsletemps/coronavirus-world-map-evolution">disponible sur GitHub</a> <a class="warn_error"></a></p>
 				</div>
@@ -151,15 +157,15 @@
 		<script src="lib/d3-geo-projection.v2.min.js"></script>
 		<script src="lib/d3-tip.js"></script>
 		<script src="lib/queue.min.js"></script>
-		<script src="js/chart-custom.js?20"></script>
+		<script src="js/chart-custom.js?UPDATE"></script>
 		<script src="lib/c3.min.js"></script>
 
-		<script src="js/map.js?44"></script>
+		<script src="js/map.js?UPDATE"></script>
 		<script>
 
 		$(document).ready(function() {
 			// time-serie charts
-			d3.csv("data/linegraphs.csv?32").then(function(data) {
+			d3.csv("data/linegraphs.csv?UPDATE").then(function(data) {
 
 				var total = [];
 				var china = [];
@@ -171,7 +177,7 @@
 					other.push([d.date, +d.Other_Locations]);
 				});
 
-				const chartChina = new Chart({
+				/*const chartChina = new Chart({
 					element: document.querySelector('.chart-china'),
 					data: china,
 					suffix: ' cas',
@@ -187,7 +193,7 @@
 					ylabel: 'Cas confirmés',
 					dateParse: "%Y-%m-%d",
 					dateFormat: "%d.%m.",
-				});
+				});*/
 
 				var resizeTimeout;
 				function resizeEvent(){
@@ -202,7 +208,7 @@
 			});
 
 			if (window.fetch) {
-				fetch('data/meta.json?16')
+				fetch('data/meta.json?UPDATE')
 					.then(function(response) { return response.json(); })
 					.then(function(data) {
 						$('.warn_error').text('Signaler une erreur');
@@ -219,6 +225,82 @@
 						$('.dataUpdate').text(data['dataUpdate'])
 					});
 				}
+
+				/* c3 graphs bottom */
+				var chart = c3.generate({
+					padding: {
+						right: 40,
+    			},
+					size: {
+						height: 200
+					},
+					bindto: "#chart-recoveries",
+
+					data: {
+						url: 'data/c3-cas-guerisons.csv?UPDATE',
+						type: 'line',
+						x: 'timestamp',
+						colors: {
+							'Nouveaux cas': '#930025',
+							'Nouvelles guérisons': '#4E8054'
+						}
+					},
+					axis: {
+						x: {
+							type: 'timeseries',
+							tick: {
+								format: '%d.%m.%Y',
+								count: 4
+							},
+						},
+						y: {
+							tick: {
+							 	values: [0, 5000, 10000, 15000]
+							}
+						}
+					},
+					grid: {
+						x: {
+							lines: [
+								{ value: '2018-02-12', label: 'Nouvelle méthode'},
+							]
+						}
+					}
+				}); // end c3js graph
+
+				var chartCases = c3.generate({
+					padding: {
+						right: 40,
+    			},
+					size: {
+						height: 200
+					},
+					bindto: "#chart-china-other",
+
+					data: {
+						url: 'data/c3-chine-etranger.csv?UPDATE',
+						type: 'line',
+						x: 'timestamp',
+						colors: {
+							'Nouveaux cas': '#930025',
+							'Nouvelles guérisons': '#4E8054'
+						}
+					},
+					axis: {
+						x: {
+							type: 'timeseries',
+							tick: {
+								format: '%d.%m.%Y',
+								count: 4
+							},
+						},
+						y: {
+							tick: {
+								 values: [0, 1000, 2000]
+							}
+						}
+					},
+				}); // end c3js graph
 		});
 
 		</script>
