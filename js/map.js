@@ -13,7 +13,7 @@
 	var path = d3.geoPath()
 		.projection(projection);
 
-	Promise.all([d3.json("data/world_countries.json"), d3.csv("data/time-series.csv?3")]).then( function (data) {
+	Promise.all([d3.json("data/world_countries.json"), d3.csv("data/time-series.csv?UPDATE")]).then( function (data) {
 		var geodata = data[0];
 		var data = data[1];
 
@@ -157,7 +157,11 @@
 
 					return `<h4>${location}</h4>
 						<p><span class="stats">Cas confirmés cumulés</span> ${d.Confirmed}</p>
+						<p><span class="stats">Guérisons</span> ${d.recovered}</p>
+						<p><span class="stats">Décès</span> ${d.deaths}</p>
+						<p><span class="stats">Infections encore existantes</span> ${d.existing}</p>
 						<p><span class="stats">Date</span> ${d.timestamp}</p>
+
 					`;})
 					.style('opacity', 1);
 				}
@@ -226,7 +230,7 @@
 					bindto: "#time-serie-chart",
 
 					data: {
-						url: 'data/linegraphs-c3.csv?2',
+						url: 'data/linegraphs-c3.csv?UPDATE',
 						type: 'line',
 						x: 'timestamp',
 						colors: {
