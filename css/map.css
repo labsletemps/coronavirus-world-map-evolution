@@ -1,7 +1,7 @@
 /* toolbar */
 
 /* play / pause by Daniel Abdilla: https://css-tricks.com/making-pure-css-playpause-button/ */
-#time-serie-chart text {
+.c3-chart text, #time-serie-chart text {
 	font-family: 'Raleway', sans-serif;
 	font-size: 13px;
 	pointer-events: none;
@@ -9,7 +9,7 @@
 }
 
 
-#time-serie-chart .domain, #time-serie-chart .tick line{
+#time-serie-chart .domain, #time-serie-chart .tick line, .c3-chart .tick line{
   display: none;
 }
 
