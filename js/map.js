@@ -202,7 +202,8 @@
 					}
 				}
 
-				animTimeout = setTimeout(runAnimation, 500)
+				// TODO: on scroll
+				// animTimeout = setTimeout(runAnimation, 500)
 
 				$('.play').click(function(){
 					if($(this).hasClass('pause')){
