@@ -39,42 +39,25 @@
 			<div class="offset-md-2 col-md-8 col-sm-12">
 				<h1 class="intro">L’expansion du nouveau coronavirus</h1>
 
-				<p class="lead">Le SARS-CoV-2 a causé <span class="deaths_total">____</span> décès et plus de <span class="confirmed_total_floor">_____</span> infections confirmées dans le monde. L’Italie est devenu le deuxième pays comptant le plus de cas, derrière la Chine</p>
+				<p class="lead">Le SARS-CoV-2 a causé <span class="deaths_total">____</span> décès et plus de <span class="confirmed_total_floor">_____</span> infections confirmées dans le monde. L’Italie est devenue le deuxième pays comptant le plus de cas, derrière la Chine</p>
 
+				<p><b>Avertissement</b> Les données affichées sur cette page en matière de contaminations doivent être considérées comme moyennement fiables, en particulier à partir du 12 mars. Les méthodes et capacités de détection diffèrent grandement de pays en pays.</p>
 
 
 			</div>
 		</div>
 
-		<div class="row padding-bottom">
-			<div class="outline">
-				<div class="col-12 group-label text-center">
-					<h5>Les dix pays les plus touchés, sans la Chine</h5>
-				</div>
 
-				<div class="offset-md-2 col-md-8 col-sm-12">
 
-					<p>En vingt jours, l’Italie est passée de 20 à plus de 10 000 cas, tandis que la Suisse a fait son entrée dans les dix pays comptant le plus de cas confirmés.</p>
-
-					<p class="text-center no-margin"><b>Date:</b> <span class="date">mercredi 19 février 2020</span> <span class="horizontal-spacer"></span><i class="fa fa-undo reload" aria-hidden="true"></i></p>
-
-					<div id="chartTop"></div>
-					<div>Cas cumulés d’infection au Covid-19, sans la Chine ni le paquebot «Diamond Princess».</div>
-					<div class="source">Source:
-						<a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">Université Johns-Hopkins</a>, données retraitées par <i>Le Temps</i>.</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row padding-bottom">
+			<!--<div class="row padding-bottom">
 				<div class="col-lg-10 offset-md-1 col-md-12">
 					<h5>Nouveaux cas en Suisse</h5>
-					<p>Etat au mercredi 11 mars à 13h00. Le total inclut les infections qui ont été confirmées par un laboratoire cantonal, mais n’ont pas encore été contrôlées par un second laboratoire.</p>
-					<iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-DVXGi" src="//datawrapper.dwcdn.net/DVXGi/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="300"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
+					<p>Le total quotidien inclut les infections qui ont été confirmées par un laboratoire cantonal, mais n’ont pas encore été contrôlées par un second laboratoire. Le chiffre du dernier jour n’est pas définitif.</p>
+					<iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-DVXGi" src="//datawrapper.dwcdn.net/DVXGi/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="300"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
 					</script>
 					<div class="source">Source: OFSP</div>
 				</div>
-			</div>
+			</div>-->
 			<!--
 			<div class="chart-background margin-top margin-bottom">
 			<div class="row four-graphs">
@@ -96,10 +79,10 @@
 </div>
 -->
 
-<div class="row numbers text-center align-items-top padding-bottom outline">
+<div class="row numbers text-center align-items-top padding-bottom outline worldmap">
 	<div class="col-12 group-label">
 		<h5>Situation dans le monde</h5>
-		<p>Données compilées le <b>11 mars à 0h50</b></p>
+		<p>Données compilées le <b class="dashboardUpdate">11 mars à 0h50</b></p>
 	</div>
 
 	<div class="col-md-3 col-6">
@@ -135,7 +118,7 @@
 		<input type="text" id="range_slider" />
 	</div>
 	<div class="col-2">
-		<button id="playpause" class="button play pause"></button>
+		<button id="playpause" class="button play"></button>
 	</div>
 </div>
 
@@ -155,13 +138,12 @@
 		</div>
 	</div>
 	<div class="col-lg-12">
+		<div><b>Note:</b> malgré nos efforts pour les éliminer, des erreurs dans nos sources de données peuvent subsister, en particulier dès le 13 mars.</div>
 		<div class="source">
-			Sources: compilation du <a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">CSSE de l’Université Johns-Hopkins</a>,
-			mise à jour le <span class="dataUpdate">30 janvier à 17h00 (heure suisse)</span> et basée sur des données
-			de <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports">l’OMS</a>,
-			du <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC</a>,
-			de la <a href="http://www.nhc.gov.cn/yjb/s3578/new_list.shtml">NHC</a>
-			et de <a href="https://3g.dxy.cn/newh5/view/pneumonia?scene=2">DXY.cn</a></div>
+			La taille maximale des cercles a été réduite le 17 mars pour limiter les chevauchements.
+			Entre le 9 et le 10 mars, Johns-Hopkins a changé le niveau de détail de ses données pour les Etats-Unis, passant des comtés aux états.
+			Des données au niveau des circonscriptions sont affichées pour les pays suivants: Etats-Unis, Chine, Australie, Canada, Royaume-Uni, Danemark. Source: compilation du <a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">CSSE de l’Université Johns-Hopkins</a>,
+			mise à jour le <span class="mapUpdate"></span> et retraitée par <i>Le Temps</i>.</div>
 		</div>
 	</div>
 
@@ -170,24 +152,50 @@
 
 			<div class="col-lg-6 col-md-12">
 				<h5>Nouvelles guérisons et infections</h5>
-				<p>Du 18 février au 4 mars, on a compté chaque jour plus de guérisons que de nouvelles infections confirmées.</p>
+				<p>Après une accalmie, on compte à nouveau plus de nouvelles infections confirmées que de guérisons depuis le 5 mars.</p>
 				<div class="c3-chart" id="chart-recoveries"></div>
 			</div>
 
 
 			<div class="col-lg-6 col-md-12">
 				<h5>Ailleurs dans le monde</h5>
-				<p>En-dehors de la Chine continentale, les pays comptant le plus de cas sont la Corée du Sud, l’Iran et l’Italie.</p>
+				<p>En-dehors de la Chine continentale, les pays comptant le plus de cas sont l’Italie, l’Iran et l’Espagne.</p>
 				<div class="c3-chart" id="chart-china-other"></div>
 
 			</div>
 		</div>
 	</div>
 
+	<div class="row padding-bottom">
+		<div class="outline">
+			<div class="col-12 group-label text-center">
+				<h5>Les dix pays les plus touchés, sans la Chine</h5>
+			</div>
+
+			<div class="offset-md-2 col-md-8 col-sm-12">
+
+				<p>En vingt jours, l’Italie est passée de 20 à plus de 10 000 cas, tandis que la Suisse a fait son entrée dans les dix pays comptant le plus de cas confirmés.</p>
+
+
+				<div class="text-center form-check">
+					<input type="checkbox" class="form-check-input" id="displayChina">
+					<label class="form-check-label" for="displayChina">Montrer la Chine</label>
+				</div>
+
+				<p class="text-center no-margin"><b>Date:</b> <span class="date">mercredi 19 février 2020</span> <span class="horizontal-spacer"></span><i class="fa fa-undo reload" aria-hidden="true"></i></p>
+
+				<div id="chartTop"></div>
+				<div>Cas cumulés (sans prise en compte des guérisons) d’infection au Covid-19, sans la Chine ni le paquebot «Diamond Princess».</div>
+				<div class="source">Source:
+					<a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">Université Johns-Hopkins</a>, données retraitées par <i>Le Temps</i></div>
+				</div>
+			</div>
+		</div>
+
 	<div class="row">
 		<div class="offset-md-2 col-md-8 col-sm-12">
 
-			<p><b>Lire aussi: </b> <a target="_blank" href="https://www.letemps.ch/monde/continu-wuhan-autorise-certaines-entreprises-redemarrer">[En continu] Wuhan autorise certaines entreprises à redémarrer</a></p>
+			<p><b>Consultez </b> notre <a target="_blank" href="https://www.letemps.ch/dossiers/menace-covid19">dossier sur le Covid-19</a></p>
 
 			<p class="credits">Infographies: Paul Ronga, code <a target="_blank" href="https://github.com/labsletemps/coronavirus-world-map-evolution">disponible sur GitHub</a> <a class="warn_error"></a></p>
 		</div>
@@ -216,31 +224,6 @@
 <script>
 
 $(document).ready(function() {
-	// time-serie charts
-	/*d3.csv("data/linegraphs.csv?UPDATE").then(function(data) {
-
-	var total = [];
-	var china = [];
-	var other = [];
-
-	data.forEach(function(d) {
-	d.date = new Date(d.timestamp);
-	china.push([d.date, +d.Mainland_China]);
-	other.push([d.date, +d.Other_Locations]);
-});
-
-var resizeTimeout;
-function resizeEvent(){
-clearTimeout(resizeTimeout);
-resizeTimeout = setTimeout(function(){
-chartChina.draw();
-chartOther.draw();
-}, 200);
-}
-d3.select(window).on('resize', resizeEvent );
-
-});*/
-
 if (window.fetch) {
 	fetch('data/meta.json?UPDATE')
 	.then(function(response) { return response.json(); })
@@ -257,6 +240,8 @@ if (window.fetch) {
 
 		$('.update').text(data['update'])
 		$('.dataUpdate').text(data['dataUpdate'])
+		$('.mapUpdate').text(data['mapUpdate'])
+		$('.dashboardUpdate').text(data['dashboardUpdate'])
 	});
 }
 
@@ -288,7 +273,7 @@ var chart = c3.generate({
 		},
 		y: {
 			tick: {
-				values: [0, 5000, 10000, 15000]
+				values: [0, 5000, 10000, 15000, 20000]
 			}
 		}
 	},
@@ -329,7 +314,7 @@ var chartCases = c3.generate({
 		},
 		y: {
 			tick: {
-				values: [0, 1000, 2000]
+				values: [0, 5000, 10000, 15000, 20000],
 			}
 		}
 	},
