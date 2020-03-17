@@ -11,8 +11,7 @@ $( document ).ready(function() {
 }
   d3.timeFormatDefaultLocale(locale);
   var format = d3.timeFormat("%c");
-
-  console.log(format(new Date));
+  var filter_china = 'Chine';
 
   var availableDates = [];
   var dateCounter = 1;
@@ -48,7 +47,7 @@ $( document ).ready(function() {
   var yaxis = d3.axisLeft().scale(yscale);
   var g_yaxis = g.append("g").attr("class", "y axis");
 
-  d3.json("data/top10.json").then(json => {
+  d3.json("data/top10.json?UPDATE").then(json => {
     data = json;
     data.forEach(function(d) {
       if( availableDates.indexOf( d['date'] ) == -1 ){
@@ -56,12 +55,12 @@ $( document ).ready(function() {
       }
     });
 
-    first_day_data = data.filter(d => d.date === availableDates[0])
-    update(first_day_data);
+    first_day_data = data.filter(d => d.date === availableDates[0]).filter(d => d.country != filter_china)
+    update(first_day_data, stepDuration * 0.8);
   });
 
-  function update(new_data) {
-    xscale.domain([0, d3.max(new_data, d => d.confirmed)]);
+  function update(new_data, duration) {
+    xscale.domain([0, d3.max(new_data, d => d.confirmed)]).nice();
     yscale.domain(new_data.map(d => d.country));
 
     g_xaxis.transition().call(
@@ -94,7 +93,7 @@ $( document ).ready(function() {
 
     rect
       .transition()
-      .duration(stepDuration * 0.8) // 400
+      .duration(duration) // 400
       .attr("height", yscale.bandwidth())
       .attr("width", d => xscale(d.confirmed))
       .attr("y", d => yscale(d.country));
@@ -102,9 +101,19 @@ $( document ).ready(function() {
     rect.select("title").text(d => d.country);
   }
 
+  $( "#displayChina" ).change(function() {
+    if($(this).prop( "checked" )){
+      filter_china = 'no-filter';
+    } else {
+      filter_china = 'Chine';
+    }
+    update( data.filter(d => d.date === availableDates[dateCounter]).filter(d => d.country != filter_china), 100 );
+  });
+
+
   // comme map.js
   function runAnimation(){
-    update( data.filter(d => d.date === availableDates[dateCounter]) );
+    update( data.filter(d => d.date === availableDates[dateCounter]).filter(d => d.country != filter_china), stepDuration * 0.8);
 
     $('.date').text( format( new Date(availableDates[dateCounter])) );
 
@@ -119,11 +128,12 @@ $( document ).ready(function() {
       clearTimeout(animTimeout);
     })
 
+    // TODO: cleaner code
     dateCounter += 1;
     if(dateCounter < availableDates.length){
       animTimeout = setTimeout(runAnimation, stepDuration);
     }else{
-      dateCounter = 0;
+      dateCounter -= 1;
       $('.play').removeClass('pause');
     }
   }
@@ -134,6 +144,6 @@ $( document ).ready(function() {
   $('.reload').click(function(){
     clearTimeout(animTimeout);
     dateCounter = 0;
-    animTimeout = setTimeout(runAnimation, stepDuration);
+    runAnimation();
   })
 });
