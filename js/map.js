@@ -1,4 +1,17 @@
 (function(){
+	var locale = {
+	"dateTime": "%A %e %B %Y",
+	"date": "%d/%m/%Y",
+	"time": "%H:%M:%S",
+	"periods": ["AM", "PM"],
+	"days": ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"],
+	"shortDays": ["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."],
+	"months": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
+	"shortMonths": ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
+}
+	d3.timeFormatDefaultLocale(locale);
+	var format = d3.timeFormat("%c");
+
 	var animTimeout;
 	var dateCounter = 0;
 	var availableDates = [];
@@ -12,6 +25,15 @@
 
 	var path = d3.geoPath()
 		.projection(projection);
+
+  // Add zoom according to Mike Bostock's example https://bl.ocks.org/mbostock/2206340
+	/*var zoom = d3.behavior.zoom()
+    .translate(projection.translate())
+    .scale(projection.scale())
+    .scaleExtent([height, 8 * height])
+    .on("zoom", zoomed);*/
+
+		// .call(zoom)
 
 	Promise.all([d3.json("data/world_countries.json"), d3.csv("data/time-series.csv?UPDATE")]).then( function (data) {
 		var geodata = data[0];
@@ -28,6 +50,7 @@
 		var svg = d3.select("#map").append("svg")
 			.append("g")
 			.attr('id', 'container');
+
 
     svg.append('g')
       .attr('class', 'countries')
@@ -46,6 +69,7 @@
 		var slider = $("#range_slider").ionRangeSlider({
 				// skin: "flat",
 				values: availableDates,
+				prettify: function(d){ console.log(d); return d},
 				onChange: function(data){
 					update_date( data.from_value );
 				}
@@ -95,7 +119,7 @@
 	  var size = d3.scalePow() // previously: d3.scaleSqrt()
 			.exponent(1/3)
 	    .domain(valueExtent)
-	    .range([ 3, 50]) // Size in pixel
+	    .range([ 3, 40 ]) // Size in pixel
 
 			// Legend: from Bubblemap Template by Yan Holtz
 			// https://www.d3-graph-gallery.com/graph/bubble_legend.html
@@ -203,7 +227,7 @@
 				}
 
 				// TODO: on scroll
-				// animTimeout = setTimeout(runAnimation, 500)
+				animTimeout = setTimeout(runAnimation, 500)
 
 				$('.play').click(function(){
 					if($(this).hasClass('pause')){
@@ -249,7 +273,8 @@
 						},
 						y: {
 							tick: {
-								values: [0, 40000, 80000]
+								values: [0, 50000, 100000, 150000, 200000],
+								// format: d3.format(".0s")
 							}
 						}
 					},
@@ -257,8 +282,10 @@
 						y: {
 							lines: [
 								{ value: 0},
-								{ value: 40000},
-								{ value: 80000},
+								{ value: 50000},
+								{ value: 100000},
+								{ value: 150000},
+								{ value: 200000},
 							]
 						}
 					},
