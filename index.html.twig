@@ -41,8 +41,12 @@
 
 				<p class="lead">Le SARS-CoV-2 a causé <span class="deaths_total">____</span> décès et plus de <span class="confirmed_total_floor">_____</span> infections confirmées dans le monde. L’Italie est devenue le deuxième pays comptant le plus de cas, derrière la Chine</p>
 
-				<p><b>Avertissement</b> Les données affichées sur cette page en matière de contaminations doivent être considérées comme moyennement fiables, en particulier à partir du 12 mars. Les méthodes et capacités de détection diffèrent grandement de pays en pays.</p>
+				<p><b>Avertissement</b> <br>
 
+					• Nous ne pouvons pas indiquer de chiffres détaillées pour la Suisse en raison de l'incapacité de l'OFSP à fournir des données fiables et actualisées.<br>
+					• La disponibilité des données, leur degré de précision et leur fiabilité varie de pays en pays.<br>
+					• Les cas confirmés ne correspondent qu’à une portion des cas réels. Selon les pays, le suivi du nombre de guérisons est très lacunaire.
+				</p>
 
 			</div>
 		</div>
@@ -79,7 +83,7 @@
 </div>
 -->
 
-<div class="row numbers text-center align-items-top padding-bottom outline worldmap">
+<div class="row numbers text-center align-items-top margin-bottom outline worldmap">
 	<div class="col-12 group-label">
 		<h5>Situation dans le monde</h5>
 		<p>Données compilées le <b class="dashboardUpdate">11 mars à 0h50</b></p>
@@ -101,13 +105,19 @@
 		<span class="big deaths_total">___</span><br>
 		<span class="label">décès</span>
 	</div>
+
+	<div class="col-12">
+		<div class="source">Source:
+			<a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">Université Johns-Hopkins</a>
+		</div>
+	</div>
 </div>
 
 <!-- toolbox -->
 
 <div class="row align-items-end">
 	<div class="col-12 group-label text-center">
-		<h5>Evolution mondiale depuis le 22 janvier</h5>
+		<h5>Evolution dans le monde depuis le 22 janvier</h5>
 	</div>
 
 	<div class="col-12">
@@ -118,7 +128,7 @@
 		<input type="text" id="range_slider" />
 	</div>
 	<div class="col-2">
-		<button id="playpause" class="button play"></button>
+		<button id="playpause" class="button play pause"></button>
 	</div>
 </div>
 
@@ -142,7 +152,7 @@
 		<div class="source">
 			La taille maximale des cercles a été réduite le 17 mars pour limiter les chevauchements.
 			Entre le 9 et le 10 mars, Johns-Hopkins a changé le niveau de détail de ses données pour les Etats-Unis, passant des comtés aux états.
-			Des données au niveau des circonscriptions sont affichées pour les pays suivants: Etats-Unis, Chine, Australie, Canada, Royaume-Uni, Danemark. Source: compilation du <a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">CSSE de l’Université Johns-Hopkins</a>,
+			Des données au niveau des circonscriptions sont affichées pour les pays suivants: Etats-Unis, Chine, Australie, Canada, Royaume-Uni, Danemark. Source: compilation du <a target="_blank" href="https://github.com/CSSEGISandData/COVID-19">CSSE de l’Université Johns-Hopkins</a>,
 			mise à jour le <span class="mapUpdate"></span> et retraitée par <i>Le Temps</i>.</div>
 		</div>
 	</div>
@@ -158,8 +168,8 @@
 
 
 			<div class="col-lg-6 col-md-12">
-				<h5>Ailleurs dans le monde</h5>
-				<p>En-dehors de la Chine continentale, les pays comptant le plus de cas sont l’Italie, l’Iran et l’Espagne.</p>
+				<h5>Flambée en Europe</h5>
+				<p>En cas existants (déduction faite des guérisons et décès), l’Allemagne, l’Espagne et l’Italie dépassent désormais la Chine.</p>
 				<div class="c3-chart" id="chart-china-other"></div>
 
 			</div>
@@ -187,13 +197,24 @@
 				<div id="chartTop"></div>
 				<div>Cas cumulés (sans prise en compte des guérisons) d’infection au Covid-19, sans la Chine ni le paquebot «Diamond Princess».</div>
 				<div class="source">Source:
-					<a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">Université Johns-Hopkins</a>, données retraitées par <i>Le Temps</i></div>
+					<a target="_blank" href="https://github.com/CSSEGISandData/COVID-19">Université Johns-Hopkins</a>, données retraitées par <i>Le Temps</i></div>
 				</div>
 			</div>
 		</div>
 
 	<div class="row">
 		<div class="offset-md-2 col-md-8 col-sm-12">
+
+
+			  <h5>Le point scientifique sur le coronavirus</h5>
+			  <ul>
+					<li><a href="https://letemps.ch/sciences/chloroquine-une-piste-lutter-contre-sarscov2">La chloroquine, une piste pour lutter contre le SARS-CoV-2</a></li>
+					<li><a href="https://letemps.ch/sciences/suisse-ne-fera-tests-large-echelle">La Suisse ne fera pas de tests à large échelle</a></li>
+					<li><strong>En vidéo:</strong>&nbsp;<a href="https://letemps.ch/node/1200340">Le coronavirus en 3 questions</a></li>
+					<li><a href="https://letemps.ch/sciences/covid19-bien-pire-quune-grippe">Le Covid-19, bien pire qu’une grippe</a></li>
+					<li><a href="https://letemps.ch/sciences/remede-contre-coronavirus-existait-deja">Et si le remède existait déjà?</a></li>
+					<li><a href="https://letemps.ch/sciences/masques-ne-protegent-bien-virus">Les masques ne protègent pas bien des virus</a></li>
+				</ul>
 
 			<p><b>Consultez </b> notre <a target="_blank" href="https://www.letemps.ch/dossiers/menace-covid19">dossier sur le Covid-19</a></p>
 
@@ -211,6 +232,7 @@
 
 <!-- pies -->
 <script src="lib/d3.min.js"></script>
+<script src="lib/d3-zoom.min.js"></script>
 <script src="lib/topojson.v2.min.js"></script>
 <script src="lib/d3-geo-projection.v2.min.js"></script>
 <script src="lib/d3-tip.js"></script>
@@ -224,18 +246,28 @@
 <script>
 
 $(document).ready(function() {
-if (window.fetch) {
-	fetch('data/meta.json?UPDATE')
-	.then(function(response) { return response.json(); })
-	.then(function(data) {
+	var locale = d3.formatLocale({
+	  decimal: ",",
+	  thousands: '\xa0',
+	  grouping: [3]
+	});
+	var format = locale.format(",d");
+
+	var d = new Date();
+	var update = Math.round(d.getTime() / 10000);
+
+	if (window.fetch) {
+		fetch('data/metaAuto.json?' + update)
+		.then(function(response) { return response.json(); })
+		.then(function(data) {
 		$('.warn_error').text('Signaler une erreur');
 		$('<span>| </span>').insertBefore('.warn_error')
 		$('.warn_error').attr('href', 'mailto:' + data['contact'] + '@letemps.ch');
 		$('.deaths_total').text(data['deaths_total'])
-		$('.confirmed_total').text(data['confirmed_total'])
-		$('.confirmed_total_floor').text(Math.floor(data['confirmed_total'] / 1000) * 1000)
-		$('.recovered_total').text(data['recovered_total'])
-		$('.existing_total').text(data['existing_total'])
+		$('.confirmed_total').text( format( data['confirmed_total'] ) )
+		$('.confirmed_total_floor').text( format( Math.floor(data['confirmed_total'] / 1000) * 1000 ) )
+		$('.recovered_total').text( format( data['recovered_total'] ) )
+		$('.existing_total').text( format( data['existing_total'] ) )
 
 
 		$('.update').text(data['update'])
@@ -260,7 +292,8 @@ var chart = c3.generate({
 		type: 'line',
 		x: 'timestamp',
 		colors: {
-			'Cas confirmés': '#930025'
+			'Nouveaux cas': '#930025',
+			'Nouvelles guérisons': '#4E8054'
 		}
 	},
 	axis: {
@@ -296,11 +329,20 @@ var chartCases = c3.generate({
 	bindto: "#chart-china-other",
 
 	data: {
-		url: 'data/c3-chine-etranger.csv?UPDATE',
+		url: 'data/top5_existing.csv?UPDATE',
 		type: 'line',
-		x: 'timestamp',
+		x: 'date',
+		labels: {
+			format: function(d, country, i){
+						if(i == 2 && (country == 'Italie' || country == 'Chine')){
+							return country
+						}else{
+							return null
+						}
+         },
+			 },
 		colors: {
-			'Nouveaux cas': '#930025',
+			'Nouveaux cas hors de la Chine': '#930025',
 			'Nouvelles guérisons': '#4E8054'
 		}
 	},
@@ -314,7 +356,7 @@ var chartCases = c3.generate({
 		},
 		y: {
 			tick: {
-				values: [0, 5000, 10000, 15000, 20000],
+				values: [0, 10000, 20000, 30000, 40000, 50000, 60000],
 			}
 		}
 	},
