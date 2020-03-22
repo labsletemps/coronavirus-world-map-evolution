@@ -1,4 +1,28 @@
 (function(){
+	var thousandsLocale = {"thousands": "\xa0"}
+	var locale = {
+	"dateTime": "%A %e %B %Y",
+	"date": "%d/%m/%Y",
+	"time": "%H:%M:%S",
+	"periods": ["AM", "PM"],
+	"days": ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"],
+	"shortDays": ["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."],
+	"months": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
+	"shortMonths": ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
+}
+	d3.timeFormatDefaultLocale(locale);
+	// var numberFormat = d3.locale(thousandsLocale);
+	// console.log(numberFormat(50000));
+	var locale = d3.formatLocale({
+	  decimal: ",",
+	  thousands: " ",
+	  grouping: [3]
+	});
+	var format = locale.format(",d");
+	console.log(format(20000), format(1000))
+
+	var format = d3.timeFormat("%c");
+
 	var animTimeout;
 	var dateCounter = 0;
 	var availableDates = [];
@@ -13,7 +37,13 @@
 	var path = d3.geoPath()
 		.projection(projection);
 
-	Promise.all([d3.json("data/world_countries.json"), d3.csv("data/time-series.csv?1582870398389")]).then( function (data) {
+  // Add zoom: https://github.com/d3/d3-zoom
+	// Example implementation: https://bl.ocks.org/d3noob/e549dc220052ac8214b9db6ce47d2a61
+
+
+		// .call(zoom)
+
+	Promise.all([d3.json("data/world_countries.json"), d3.csv("data/time-series.csv?1584888001257")]).then( function (data) {
 		var geodata = data[0];
 		var data = data[1];
 
@@ -28,6 +58,7 @@
 		var svg = d3.select("#map").append("svg")
 			.append("g")
 			.attr('id', 'container');
+
 
     svg.append('g')
       .attr('class', 'countries')
@@ -46,6 +77,7 @@
 		var slider = $("#range_slider").ionRangeSlider({
 				// skin: "flat",
 				values: availableDates,
+				prettify: function(d){ console.log(d); return d},
 				onChange: function(data){
 					update_date( data.from_value );
 				}
@@ -95,7 +127,7 @@
 	  var size = d3.scalePow() // previously: d3.scaleSqrt()
 			.exponent(1/3)
 	    .domain(valueExtent)
-	    .range([ 3, 50]) // Size in pixel
+	    .range([ 3, 40 ]) // Size in pixel
 
 			// Legend: from Bubblemap Template by Yan Holtz
 			// https://www.d3-graph-gallery.com/graph/bubble_legend.html
@@ -183,7 +215,7 @@
 					$('.filter-container, .irs-with-grid, .irs, #range_slider').click(function(){
 						$('.play').removeClass('pause');
 						clearTimeout(animTimeout);
-					})
+					});
 
 					// doc: http://ionden.com/a/plugins/ion.rangeSlider/demo_interactions.html
 					var slider_instance = $("#range_slider").data("ionRangeSlider");
@@ -202,7 +234,8 @@
 					}
 				}
 
-				animTimeout = setTimeout(runAnimation, 500)
+				// TODO: on scroll
+				// animTimeout = setTimeout(runAnimation, 500)
 
 				$('.play').click(function(){
 					if($(this).hasClass('pause')){
@@ -214,6 +247,25 @@
 						$(this).addClass('pause')
 					}
 				});
+
+				var worldMapScene = new ScrollMagic.Scene({triggerElement: "#map", duration: 300})
+					.addTo(controller)
+					// .addIndicators({'name': 'animated map'}) // debug
+					.on("enter", function(){
+						// on commence tranquille
+						runAnimation();
+					})
+					.on("leave", function(event){
+						clearTimeout(animTimeout);
+					});
+
+				/*var zoom = d3.zoom()
+			      .scaleExtent([1, 8])
+			      .on('zoom', function() {
+			          svg.selectAll('path')
+			           .attr('transform', d3.event.transform);
+			});
+			svg.call(zoom);*/
 
 				/*
 					c3js graph also enables date picking
@@ -230,7 +282,7 @@
 					bindto: "#time-serie-chart",
 
 					data: {
-						url: 'data/linegraphs-c3.csv?1582870398389',
+						url: 'data/linegraphs-c3.csv?1584888001257',
 						type: 'line',
 						x: 'timestamp',
 						colors: {
@@ -248,7 +300,8 @@
 						},
 						y: {
 							tick: {
-								values: [0, 40000, 80000]
+								values: [0, 100000, 200000, 300000],
+								// format: d3.format(".0s")
 							}
 						}
 					},
@@ -256,8 +309,9 @@
 						y: {
 							lines: [
 								{ value: 0},
-								{ value: 40000},
-								{ value: 80000},
+								{ value: 100000},
+								{ value: 200000},
+								{ value: 300000}
 							]
 						}
 					},
