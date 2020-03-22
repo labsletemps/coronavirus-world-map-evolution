@@ -10,6 +10,7 @@ body {
 	background-color: #ffffff;
 	color: #6d6c6c;
 	font-family: Raleway;
+	border-bottom: 6px solid #930025;
 }
 .big {
 	/* font-size: 3em;

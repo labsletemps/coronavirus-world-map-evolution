@@ -44,7 +44,7 @@
 
 				<p><b>Avertissement</b> <br>
 
-					• Nous ne pouvons pas indiquer de chiffres détaillées pour la Suisse en raison de l'incapacité de l'OFSP à fournir des données fiables et actualisées.<br>
+					• Nous ne pouvons pas indiquer de chiffres détaillés pour la Suisse en raison de l'incapacité de l'OFSP à fournir des données fiables et actualisées.<br>
 					• La disponibilité des données, leur degré de précision et leur fiabilité varie de pays en pays.<br>
 					• Les cas confirmés ne correspondent qu’à une portion des cas réels. Selon les pays, le suivi du nombre de guérisons est très lacunaire.
 				</p>
@@ -54,15 +54,7 @@
 
 
 
-			<!--<div class="row padding-bottom">
-				<div class="col-lg-10 offset-md-1 col-md-12">
-					<h5>Nouveaux cas en Suisse</h5>
-					<p>Le total quotidien inclut les infections qui ont été confirmées par un laboratoire cantonal, mais n’ont pas encore été contrôlées par un second laboratoire. Le chiffre du dernier jour n’est pas définitif.</p>
-					<iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-DVXGi" src="//datawrapper.dwcdn.net/DVXGi/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="300"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
-					</script>
-					<div class="source">Source: OFSP</div>
-				</div>
-			</div>-->
+
 			<!--
 			<div class="chart-background margin-top margin-bottom">
 			<div class="row four-graphs">
@@ -92,11 +84,11 @@
 
 	<div class="col-md-3 col-6">
 		<span class="big confirmed_total">_____</span><br>
-		<span class="label">infections confirmées cumulées</span>
+		<span class="label">cas confirmés cumulés</span>
 	</div>
 	<div class="col-md-3 col-6">
 		<span class="big existing_total">___</span><br>
-		<span class="label">infections encore existantes</span>
+		<span class="label">cas encore existants</span>
 	</div>
 	<div class="col-md-3 col-6">
 		<span class="big recovered_total">___</span><br>
@@ -170,7 +162,7 @@
 
 			<div class="col-lg-6 col-md-12">
 				<h5>Flambée en Europe</h5>
-				<p>En cas existants (déduction faite des guérisons et décès), l’Allemagne, l’Espagne et l’Italie dépassent désormais la Chine.</p>
+				<p>En cas existants (déduction faite des guérisons et décès), l’Allemagne, les Etats-Unis et l’Italie dépassent désormais la Chine.</p>
 				<div class="c3-chart" id="chart-china-other"></div>
 
 			</div>
@@ -178,7 +170,18 @@
 	</div>
 
 	<div class="row padding-bottom">
-		<div class="outline">
+		<div class="col-lg-10 offset-md-1 col-md-12">
+			<h5>Les dix cantons suisses comptant le plus de cas</h5>
+			<p>Vaud, Genève et le Tessin sont les cantons qui comptent le plus de cas confirmés. Le Tessin compte le plus haut taux par habitant (27 infections confirmées pour 10 000 habitants le samedi 21 mars).</p>
+				<div class="c3-chart" id="chart-swiss-cantons"></div>
+
+			<div class="source"><b>Note</b> L’Office fédéral de la santé publique (OFSP) fournit des rapports quotidiens en PDF, mais l’heure du bilan n’est pas le même pour chaque jour. L’OFSP refuse de transmettre les données brutes plus d’une fois. Les tests systématiques ont été interrompus le 15 mars. Cette infographie est mise à jour grâce aux compilations de tweets de l’OFSP et de pages d’information cantonales par l’informaticien Daniel Probst.</div>
+			<div class="source">Source: <a target="_blank" href="https://www.corona-data.ch">corona-data.ch</a>, OFSP, cantons suisses</div>
+		</div>
+	</div>
+
+	<div class="row padding-bottom">
+		<!-- <div class="outline"> -->
 			<div class="col-12 group-label text-center">
 				<h5>Les dix pays les plus touchés, sans la Chine</h5>
 			</div>
@@ -195,12 +198,12 @@
 
 				<p class="text-center no-margin"><b>Date:</b> <span class="date">mercredi 19 février 2020</span> <span class="horizontal-spacer"></span><i class="fa fa-undo reload" aria-hidden="true"></i></p>
 
-				<div id="chartTop"></div>
-				<div>Cas cumulés (sans prise en compte des guérisons) d’infection au Covid-19, sans la Chine ni le paquebot «Diamond Princess».</div>
+				<div id="animatedBarChart"></div>
+				<div>Cas cumulés (sans prise en compte des guérisons) de Covid-19, sans la Chine ni le paquebot «Diamond Princess».</div>
 				<div class="source">Source:
 					<a target="_blank" href="https://github.com/CSSEGISandData/COVID-19">Université Johns-Hopkins</a>, données retraitées par <i>Le Temps</i></div>
 				</div>
-			</div>
+			<!-- </div> -->
 		</div>
 
 	<div class="row">
@@ -226,21 +229,12 @@
 
 
 
+<!-- 14 merged, minified libraries -->
+<script src="lib-merged/libraries.js"></script>
 
-<script src="lib/jquery-3.4.1.slim.min.js"></script>
-<script src="lib/ion.rangeSlider.js"></script>
-<script src="lib/bootstrap.min.js"></script>
-
-<!-- pies -->
-<script src="lib/d3.min.js"></script>
-<script src="lib/d3-zoom.min.js"></script>
-<script src="lib/topojson.v2.min.js"></script>
-<script src="lib/d3-geo-projection.v2.min.js"></script>
-<script src="lib/d3-tip.js"></script>
-<script src="lib/queue.min.js"></script>
-<script src="js/chart-custom.js?UPDATE"></script>
-<script src="lib/c3.min.js"></script>
-
+<script>
+var controller = new ScrollMagic.Controller();
+</script>
 <script src="js/map.js?UPDATE"></script>
 <script src="js/animatedBarChart.js?UPDATE"></script>
 
@@ -277,6 +271,51 @@ $(document).ready(function() {
 		$('.dashboardUpdate').text(data['dashboardUpdate'])
 	});
 }
+
+/* c3 graph switzerland */
+var chartCH = c3.generate({
+	padding: {
+		right: 40,
+	},
+	size: {
+		height: 400
+	},
+	bindto: "#chart-swiss-cantons",
+
+	data: {
+		url: 'data/c3-cantons-switzerland.csv?UPDATE',
+		type: 'line',
+		x: 'Date',
+		colors: {
+
+		}
+	},
+	axis: {
+		x: {
+			type: 'timeseries',
+			tick: {
+				format: '%d.%m.%Y',
+				count: 4
+			},
+		},
+		y: {
+				tick: {
+					values: [0, 500, 1000, 1500, 2000],
+				}
+			}
+		},
+		grid: {
+			y: {
+				lines: [
+					{ value: 0},
+					{ value: 500},
+					{ value: 1000},
+					{ value: 1500},
+					{ value: 2000},
+				]
+			}
+		}
+}); // end c3js graph
 
 /* c3 graphs bottom */
 var chart = c3.generate({

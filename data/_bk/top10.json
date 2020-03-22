@@ -1,9 +1,15 @@
 [
  {
   "date":"2020-02-19",
-  "confirmed":74619,
-  "existing":56541,
+  "confirmed":74546,
+  "existing":56480,
   "country":"Chine"
+ },
+ {
+  "date":"2020-02-19",
+  "confirmed":84,
+  "existing":50,
+  "country":"Singapour"
  },
  {
   "date":"2020-02-19",
@@ -13,9 +19,9 @@
  },
  {
   "date":"2020-02-19",
-  "confirmed":84,
-  "existing":50,
-  "country":"Singapour"
+  "confirmed":63,
+  "existing":56,
+  "country":"Hongkong"
  },
  {
   "date":"2020-02-19",
@@ -44,14 +50,14 @@
  {
   "date":"2020-02-19",
   "confirmed":16,
-  "existing":9,
-  "country":"Viet Nam"
+  "existing":4,
+  "country":"Allemagne"
  },
  {
   "date":"2020-02-19",
   "confirmed":16,
-  "existing":4,
-  "country":"Allemagne"
+  "existing":9,
+  "country":"Vietnam"
  },
  {
   "date":"2020-02-19",
@@ -60,15 +66,9 @@
   "country":"Australie"
  },
  {
-  "date":"2020-02-19",
-  "confirmed":13,
-  "existing":10,
-  "country":"Etats-Unis"
- },
- {
   "date":"2020-02-20",
-  "confirmed":75077,
-  "existing":54825,
+  "confirmed":74999,
+  "existing":54761,
   "country":"Chine"
  },
  {
@@ -88,6 +88,12 @@
   "confirmed":84,
   "existing":50,
   "country":"Singapour"
+ },
+ {
+  "date":"2020-02-20",
+  "confirmed":68,
+  "existing":60,
+  "country":"Hongkong"
  },
  {
   "date":"2020-02-20",
@@ -117,7 +123,7 @@
   "date":"2020-02-20",
   "confirmed":16,
   "existing":9,
-  "country":"Viet Nam"
+  "country":"Vietnam"
  },
  {
   "date":"2020-02-20",
@@ -126,15 +132,9 @@
   "country":"Australie"
  },
  {
-  "date":"2020-02-20",
-  "confirmed":13,
-  "existing":10,
-  "country":"Etats-Unis"
- },
- {
   "date":"2020-02-21",
-  "confirmed":75550,
-  "existing":54608,
+  "confirmed":75472,
+  "existing":54543,
   "country":"Chine"
  },
  {
@@ -154,6 +154,12 @@
   "confirmed":85,
   "existing":48,
   "country":"Singapour"
+ },
+ {
+  "date":"2020-02-21",
+  "confirmed":68,
+  "existing":61,
+  "country":"Hongkong"
  },
  {
   "date":"2020-02-21",
@@ -189,18 +195,12 @@
   "date":"2020-02-21",
   "confirmed":16,
   "existing":2,
-  "country":"Allemagne"
- },
- {
-  "date":"2020-02-21",
-  "confirmed":16,
-  "existing":2,
-  "country":"Viet Nam"
+  "country":"Vietnam"
  },
  {
   "date":"2020-02-22",
-  "confirmed":77001,
-  "existing":51859,
+  "confirmed":76922,
+  "existing":51794,
   "country":"Chine"
  },
  {
@@ -220,6 +220,12 @@
   "confirmed":85,
   "existing":48,
   "country":"Singapour"
+ },
+ {
+  "date":"2020-02-22",
+  "confirmed":69,
+  "existing":61,
+  "country":"Hongkong"
  },
  {
   "date":"2020-02-22",
@@ -255,18 +261,12 @@
   "date":"2020-02-22",
   "confirmed":16,
   "existing":2,
-  "country":"Allemagne"
- },
- {
-  "date":"2020-02-22",
-  "confirmed":16,
-  "existing":2,
-  "country":"Viet Nam"
+  "country":"Vietnam"
  },
  {
   "date":"2020-02-23",
-  "confirmed":77022,
-  "existing":51390,
+  "confirmed":76938,
+  "existing":51325,
   "country":"Chine"
  },
  {
@@ -292,6 +292,12 @@
   "confirmed":89,
   "existing":38,
   "country":"Singapour"
+ },
+ {
+  "date":"2020-02-23",
+  "confirmed":74,
+  "existing":61,
+  "country":"Hongkong"
  },
  {
   "date":"2020-02-23",
@@ -321,18 +327,12 @@
   "date":"2020-02-23",
   "confirmed":16,
   "existing":2,
-  "country":"Allemagne"
- },
- {
-  "date":"2020-02-23",
-  "confirmed":16,
-  "existing":2,
-  "country":"Viet Nam"
+  "country":"Vietnam"
  },
  {
   "date":"2020-02-24",
-  "confirmed":77241,
-  "existing":49631,
+  "confirmed":77152,
+  "existing":49569,
   "country":"Chine"
  },
  {
@@ -358,6 +358,12 @@
   "confirmed":89,
   "existing":38,
   "country":"Singapour"
+ },
+ {
+  "date":"2020-02-24",
+  "confirmed":79,
+  "existing":58,
+  "country":"Hongkong"
  },
  {
   "date":"2020-02-24",
@@ -387,18 +393,12 @@
   "date":"2020-02-24",
   "confirmed":16,
   "existing":2,
-  "country":"Viet Nam"
- },
- {
-  "date":"2020-02-24",
-  "confirmed":16,
-  "existing":2,
   "country":"Allemagne"
  },
  {
   "date":"2020-02-25",
-  "confirmed":77754,
-  "existing":47413,
+  "confirmed":77660,
+  "existing":47347,
   "country":"Chine"
  },
  {
@@ -433,6 +433,12 @@
  },
  {
   "date":"2020-02-25",
+  "confirmed":84,
+  "existing":63,
+  "country":"Hongkong"
+ },
+ {
+  "date":"2020-02-25",
   "confirmed":37,
   "existing":15,
   "country":"Tha\u00eflande"
@@ -456,15 +462,9 @@
   "country":"Malaisie"
  },
  {
-  "date":"2020-02-25",
-  "confirmed":17,
-  "existing":3,
-  "country":"Allemagne"
- },
- {
   "date":"2020-02-26",
-  "confirmed":78166,
-  "existing":45365,
+  "confirmed":78065,
+  "existing":45297,
   "country":"Chine"
  },
  {
@@ -499,6 +499,12 @@
  },
  {
   "date":"2020-02-26",
+  "confirmed":91,
+  "existing":65,
+  "country":"Hongkong"
+ },
+ {
+  "date":"2020-02-26",
   "confirmed":40,
   "existing":18,
   "country":"Tha\u00eflande"
@@ -522,15 +528,9 @@
   "country":"Allemagne"
  },
  {
-  "date":"2020-02-26",
-  "confirmed":26,
-  "existing":26,
-  "country":"Kowe\u00eft"
- },
- {
   "date":"2020-02-27",
-  "confirmed":78600,
-  "existing":42924,
+  "confirmed":78498,
+  "existing":42856,
   "country":"Chine"
  },
  {
@@ -565,6 +565,12 @@
  },
  {
   "date":"2020-02-27",
+  "confirmed":92,
+  "existing":66,
+  "country":"Hongkong"
+ },
+ {
+  "date":"2020-02-27",
   "confirmed":46,
   "existing":30,
   "country":"Allemagne"
@@ -588,15 +594,9 @@
   "country":"France"
  },
  {
-  "date":"2020-02-27",
-  "confirmed":33,
-  "existing":33,
-  "country":"Bahre\u00efn"
- },
- {
   "date":"2020-02-28",
-  "confirmed":78928,
-  "existing":39809,
+  "confirmed":78824,
+  "existing":39745,
   "country":"Chine"
  },
  {
@@ -622,6 +622,12 @@
   "confirmed":228,
   "existing":202,
   "country":"Japon"
+ },
+ {
+  "date":"2020-02-28",
+  "confirmed":94,
+  "existing":62,
+  "country":"Hongkong"
  },
  {
   "date":"2020-02-28",
@@ -654,15 +660,9 @@
   "country":"Tha\u00eflande"
  },
  {
-  "date":"2020-02-28",
-  "confirmed":36,
-  "existing":36,
-  "country":"Bahre\u00efn"
- },
- {
   "date":"2020-02-29",
-  "confirmed":79356,
-  "existing":37199,
+  "confirmed":79251,
+  "existing":37137,
   "country":"Chine"
  },
  {
@@ -703,6 +703,12 @@
  },
  {
   "date":"2020-02-29",
+  "confirmed":95,
+  "existing":60,
+  "country":"Hongkong"
+ },
+ {
+  "date":"2020-02-29",
   "confirmed":79,
   "existing":63,
   "country":"Allemagne"
@@ -720,15 +726,9 @@
   "country":"Kowe\u00eft"
  },
  {
-  "date":"2020-02-29",
-  "confirmed":42,
-  "existing":14,
-  "country":"Tha\u00eflande"
- },
- {
   "date":"2020-03-01",
-  "confirmed":79932,
-  "existing":34898,
+  "confirmed":79826,
+  "existing":34838,
   "country":"Chine"
  },
  {
@@ -758,20 +758,26 @@
  {
   "date":"2020-03-01",
   "confirmed":130,
-  "existing":116,
-  "country":"France"
+  "existing":114,
+  "country":"Allemagne"
  },
  {
   "date":"2020-03-01",
   "confirmed":130,
-  "existing":114,
-  "country":"Allemagne"
+  "existing":116,
+  "country":"France"
  },
  {
   "date":"2020-03-01",
   "confirmed":106,
   "existing":34,
   "country":"Singapour"
+ },
+ {
+  "date":"2020-03-01",
+  "confirmed":96,
+  "existing":58,
+  "country":"Hongkong"
  },
  {
   "date":"2020-03-01",
@@ -786,15 +792,9 @@
   "country":"Bahre\u00efn"
  },
  {
-  "date":"2020-03-01",
-  "confirmed":45,
-  "existing":45,
-  "country":"Kowe\u00eft"
- },
- {
   "date":"2020-03-02",
-  "confirmed":80136,
-  "existing":32368,
+  "confirmed":80026,
+  "existing":32304,
   "country":"Chine"
  },
  {
@@ -847,20 +847,20 @@
  },
  {
   "date":"2020-03-02",
+  "confirmed":100,
+  "existing":62,
+  "country":"Hongkong"
+ },
+ {
+  "date":"2020-03-02",
   "confirmed":56,
   "existing":56,
   "country":"Kowe\u00eft"
  },
  {
-  "date":"2020-03-02",
-  "confirmed":53,
-  "existing":40,
-  "country":"Etats-Unis"
- },
- {
   "date":"2020-03-03",
-  "confirmed":80261,
-  "existing":29864,
+  "confirmed":80151,
+  "existing":29802,
   "country":"Chine"
  },
  {
@@ -913,20 +913,20 @@
  },
  {
   "date":"2020-03-03",
+  "confirmed":100,
+  "existing":61,
+  "country":"Hongkong"
+ },
+ {
+  "date":"2020-03-03",
   "confirmed":73,
   "existing":59,
   "country":"Etats-Unis"
  },
  {
-  "date":"2020-03-03",
-  "confirmed":56,
-  "existing":56,
-  "country":"Kowe\u00eft"
- },
- {
   "date":"2020-03-04",
-  "confirmed":80386,
-  "existing":27402,
+  "confirmed":80271,
+  "existing":27335,
   "country":"Chine"
  },
  {
@@ -955,8 +955,8 @@
  },
  {
   "date":"2020-03-04",
-  "confirmed":288,
-  "existing":272,
+  "confirmed":285,
+  "existing":269,
   "country":"France"
  },
  {
@@ -979,20 +979,20 @@
  },
  {
   "date":"2020-03-04",
+  "confirmed":105,
+  "existing":66,
+  "country":"Hongkong"
+ },
+ {
+  "date":"2020-03-04",
   "confirmed":104,
   "existing":86,
   "country":"Etats-Unis"
  },
  {
-  "date":"2020-03-04",
-  "confirmed":90,
-  "existing":87,
-  "country":"Suisse"
- },
- {
   "date":"2020-03-05",
-  "confirmed":80537,
-  "existing":25230,
+  "confirmed":80422,
+  "existing":25169,
   "country":"Chine"
  },
  {
@@ -1021,8 +1021,8 @@
  },
  {
   "date":"2020-03-05",
-  "confirmed":380,
-  "existing":362,
+  "confirmed":377,
+  "existing":359,
   "country":"France"
  },
  {
@@ -1051,14 +1051,14 @@
  },
  {
   "date":"2020-03-05",
-  "confirmed":116,
-  "existing":107,
-  "country":"Royaume-Uni"
+  "confirmed":115,
+  "existing":106,
+  "country":"Grande-Bretagne"
  },
  {
   "date":"2020-03-06",
-  "confirmed":80690,
-  "existing":23702,
+  "confirmed":80573,
+  "existing":23643,
   "country":"Chine"
  },
  {
@@ -1087,8 +1087,8 @@
  },
  {
   "date":"2020-03-06",
-  "confirmed":656,
-  "existing":635,
+  "confirmed":653,
+  "existing":632,
   "country":"France"
  },
  {
@@ -1105,8 +1105,8 @@
  },
  {
   "date":"2020-03-06",
-  "confirmed":217,
-  "existing":196,
+  "confirmed":222,
+  "existing":201,
   "country":"Etats-Unis"
  },
  {
@@ -1117,14 +1117,14 @@
  },
  {
   "date":"2020-03-06",
-  "confirmed":164,
-  "existing":154,
-  "country":"Royaume-Uni"
+  "confirmed":163,
+  "existing":153,
+  "country":"Grande-Bretagne"
  },
  {
   "date":"2020-03-07",
-  "confirmed":80770,
-  "existing":22159,
+  "confirmed":80652,
+  "existing":22104,
   "country":"Chine"
  },
  {
@@ -1147,8 +1147,8 @@
  },
  {
   "date":"2020-03-07",
-  "confirmed":957,
-  "existing":934,
+  "confirmed":949,
+  "existing":926,
   "country":"France"
  },
  {
@@ -1171,8 +1171,8 @@
  },
  {
   "date":"2020-03-07",
-  "confirmed":336,
-  "existing":312,
+  "confirmed":337,
+  "existing":313,
   "country":"Etats-Unis"
  },
  {
@@ -1183,14 +1183,14 @@
  },
  {
   "date":"2020-03-07",
-  "confirmed":207,
-  "existing":187,
-  "country":"Royaume-Uni"
+  "confirmed":206,
+  "existing":186,
+  "country":"Grande-Bretagne"
  },
  {
   "date":"2020-03-08",
-  "confirmed":80823,
-  "existing":20335,
+  "confirmed":80699,
+  "existing":20282,
   "country":"Chine"
  },
  {
@@ -1213,8 +1213,8 @@
  },
  {
   "date":"2020-03-08",
-  "confirmed":1134,
-  "existing":1103,
+  "confirmed":1126,
+  "existing":1095,
   "country":"France"
  },
  {
@@ -1249,14 +1249,14 @@
  },
  {
   "date":"2020-03-08",
-  "confirmed":274,
-  "existing":253,
-  "country":"Royaume-Uni"
+  "confirmed":273,
+  "existing":252,
+  "country":"Grande-Bretagne"
  },
  {
   "date":"2020-03-09",
-  "confirmed":80860,
-  "existing":18933,
+  "confirmed":80735,
+  "existing":18880,
   "country":"Chine"
  },
  {
@@ -1279,8 +1279,8 @@
  },
  {
   "date":"2020-03-09",
-  "confirmed":1217,
-  "existing":1186,
+  "confirmed":1209,
+  "existing":1178,
   "country":"France"
  },
  {
@@ -1297,8 +1297,8 @@
  },
  {
   "date":"2020-03-09",
-  "confirmed":517,
-  "existing":488,
+  "confirmed":518,
+  "existing":489,
   "country":"Etats-Unis"
  },
  {
@@ -1315,14 +1315,14 @@
  },
  {
   "date":"2020-03-09",
-  "confirmed":322,
-  "existing":300,
-  "country":"Royaume-Uni"
+  "confirmed":321,
+  "existing":318,
+  "country":"Pays-Bas"
  },
  {
   "date":"2020-03-10",
-  "confirmed":80887,
-  "existing":17567,
+  "confirmed":80757,
+  "existing":17515,
   "country":"Chine"
  },
  {
@@ -1345,8 +1345,8 @@
  },
  {
   "date":"2020-03-10",
-  "confirmed":1792,
-  "existing":1747,
+  "confirmed":1784,
+  "existing":1739,
   "country":"France"
  },
  {
@@ -1363,8 +1363,8 @@
  },
  {
   "date":"2020-03-10",
-  "confirmed":892,
-  "existing":856,
+  "confirmed":711,
+  "existing":676,
   "country":"Etats-Unis"
  },
  {
@@ -1411,8 +1411,8 @@
  },
  {
   "date":"2020-03-11",
-  "confirmed":2290,
-  "existing":2230,
+  "confirmed":2284,
+  "existing":2224,
   "country":"France"
  },
  {
@@ -1426,12 +1426,6 @@
   "confirmed":1908,
   "existing":1880,
   "country":"Allemagne"
- },
- {
-  "date":"2020-03-11",
-  "confirmed":1214,
-  "existing":1170,
-  "country":"Etats-Unis"
  },
  {
   "date":"2020-03-11",
@@ -1452,663 +1446,9 @@
   "country":"Norv\u00e8ge"
  },
  {
-  "date":"2020-03-12",
-  "confirmed":80932,
-  "existing":14859,
-  "country":"Chine"
- },
- {
-  "date":"2020-03-12",
-  "confirmed":12462,
-  "existing":10590,
-  "country":"Italie"
- },
- {
-  "date":"2020-03-12",
-  "confirmed":10075,
-  "existing":6687,
-  "country":"Iran"
- },
- {
-  "date":"2020-03-12",
-  "confirmed":7869,
-  "existing":7470,
-  "country":"Cor\u00e9e du Sud"
- },
- {
-  "date":"2020-03-12",
-  "confirmed":2290,
-  "existing":2230,
-  "country":"France"
- },
- {
-  "date":"2020-03-12",
-  "confirmed":2277,
-  "existing":2039,
-  "country":"Espagne"
- },
- {
-  "date":"2020-03-12",
-  "confirmed":2078,
-  "existing":2050,
-  "country":"Allemagne"
- },
- {
-  "date":"2020-03-12",
-  "confirmed":1596,
-  "existing":1544,
-  "country":"Etats-Unis"
- },
- {
-  "date":"2020-03-12",
-  "confirmed":702,
-  "existing":701,
-  "country":"Norv\u00e8ge"
- },
- {
-  "date":"2020-03-12",
-  "confirmed":652,
-  "existing":644,
-  "country":"Suisse"
- },
- {
-  "date":"2020-03-12",
-  "confirmed":639,
-  "existing":505,
-  "country":"Japon"
- },
- {
-  "date":"2020-03-13",
-  "confirmed":80945,
-  "existing":13569,
-  "country":"Chine"
- },
- {
-  "date":"2020-03-13",
-  "confirmed":17660,
-  "existing":14955,
-  "country":"Italie"
- },
- {
-  "date":"2020-03-13",
-  "confirmed":11364,
-  "existing":7891,
-  "country":"Iran"
- },
- {
-  "date":"2020-03-13",
-  "confirmed":7979,
-  "existing":7403,
-  "country":"Cor\u00e9e du Sud"
- },
- {
-  "date":"2020-03-13",
-  "confirmed":5232,
-  "existing":4906,
-  "country":"Espagne"
- },
- {
-  "date":"2020-03-13",
-  "confirmed":3678,
-  "existing":3587,
-  "country":"France"
- },
- {
-  "date":"2020-03-13",
-  "confirmed":3675,
-  "existing":3622,
-  "country":"Allemagne"
- },
- {
-  "date":"2020-03-13",
-  "confirmed":2112,
-  "existing":2053,
-  "country":"Etats-Unis"
- },
- {
-  "date":"2020-03-13",
-  "confirmed":1139,
-  "existing":1124,
-  "country":"Suisse"
- },
- {
-  "date":"2020-03-13",
-  "confirmed":996,
-  "existing":995,
-  "country":"Norv\u00e8ge"
- },
- {
-  "date":"2020-03-13",
-  "confirmed":814,
-  "existing":812,
-  "country":"Su\u00e8de"
- },
- {
-  "date":"2020-03-14",
-  "confirmed":80977,
-  "existing":12124,
-  "country":"Chine"
- },
- {
-  "date":"2020-03-14",
-  "confirmed":21157,
-  "existing":17750,
-  "country":"Italie"
- },
- {
-  "date":"2020-03-14",
-  "confirmed":12729,
-  "existing":9159,
-  "country":"Iran"
- },
- {
-  "date":"2020-03-14",
-  "confirmed":8086,
-  "existing":7504,
-  "country":"Cor\u00e9e du Sud"
- },
- {
-  "date":"2020-03-14",
-  "confirmed":6391,
-  "existing":5679,
-  "country":"Espagne"
- },
- {
-  "date":"2020-03-14",
-  "confirmed":4585,
-  "existing":4530,
-  "country":"Allemagne"
- },
- {
-  "date":"2020-03-14",
-  "confirmed":4487,
-  "existing":4384,
-  "country":"France"
- },
- {
-  "date":"2020-03-14",
-  "confirmed":2660,
-  "existing":2594,
-  "country":"Etats-Unis"
- },
- {
-  "date":"2020-03-14",
-  "confirmed":1359,
-  "existing":1342,
-  "country":"Suisse"
- },
- {
-  "date":"2020-03-14",
-  "confirmed":1144,
-  "existing":1104,
-  "country":"Royaume-Uni"
- },
- {
-  "date":"2020-03-14",
-  "confirmed":1090,
-  "existing":1086,
-  "country":"Norv\u00e8ge"
- },
- {
-  "date":"2020-03-15",
-  "confirmed":81003,
-  "existing":10783,
-  "country":"Chine"
- },
- {
-  "date":"2020-03-15",
-  "confirmed":24747,
-  "existing":20603,
-  "country":"Italie"
- },
- {
-  "date":"2020-03-15",
-  "confirmed":13938,
-  "existing":8624,
-  "country":"Iran"
- },
- {
-  "date":"2020-03-15",
-  "confirmed":8162,
-  "existing":7577,
-  "country":"Cor\u00e9e du Sud"
- },
- {
-  "date":"2020-03-15",
-  "confirmed":7798,
-  "existing":6992,
-  "country":"Espagne"
- },
- {
-  "date":"2020-03-15",
-  "confirmed":5795,
-  "existing":5738,
-  "country":"Allemagne"
- },
- {
-  "date":"2020-03-15",
-  "confirmed":4523,
-  "existing":4420,
-  "country":"France"
- },
- {
-  "date":"2020-03-15",
-  "confirmed":3432,
-  "existing":3357,
-  "country":"Etats-Unis"
- },
- {
-  "date":"2020-03-15",
-  "confirmed":2200,
-  "existing":2182,
-  "country":"Suisse"
- },
- {
-  "date":"2020-03-15",
-  "confirmed":1221,
-  "existing":1217,
-  "country":"Norv\u00e8ge"
- },
- {
-  "date":"2020-03-15",
-  "confirmed":1145,
-  "existing":1105,
-  "country":"Royaume-Uni"
- },
- {
-  "date":"2020-03-16",
-  "confirmed":81033,
-  "existing":9906,
-  "country":"Chine"
- },
- {
-  "date":"2020-03-16",
-  "confirmed":27980,
-  "existing":23073,
-  "country":"Italie"
- },
- {
-  "date":"2020-03-16",
-  "confirmed":14991,
-  "existing":9548,
-  "country":"Iran"
- },
- {
-  "date":"2020-03-16",
-  "confirmed":9942,
-  "existing":9070,
-  "country":"Espagne"
- },
- {
-  "date":"2020-03-16",
-  "confirmed":8236,
-  "existing":7024,
-  "country":"Cor\u00e9e du Sud"
- },
- {
-  "date":"2020-03-16",
-  "confirmed":7272,
-  "existing":7188,
-  "country":"Allemagne"
- },
- {
-  "date":"2020-03-16",
-  "confirmed":6668,
-  "existing":6508,
-  "country":"France"
- },
- {
-  "date":"2020-03-16",
-  "confirmed":4565,
-  "existing":4463,
-  "country":"Etats-Unis"
- },
- {
-  "date":"2020-03-16",
-  "confirmed":2200,
-  "existing":2182,
-  "country":"Suisse"
- },
- {
-  "date":"2020-03-16",
-  "confirmed":1551,
-  "existing":1474,
-  "country":"Royaume-Uni"
- },
- {
-  "date":"2020-03-16",
-  "confirmed":1416,
-  "existing":1390,
-  "country":"Pays-Bas"
- },
- {
-  "date":"2020-03-17",
-  "confirmed":81058,
-  "existing":9030,
-  "country":"Chine"
- },
- {
-  "date":"2020-03-17",
-  "confirmed":31506,
-  "existing":26062,
-  "country":"Italie"
- },
- {
-  "date":"2020-03-17",
-  "confirmed":16169,
-  "existing":9792,
-  "country":"Iran"
- },
- {
-  "date":"2020-03-17",
-  "confirmed":11748,
-  "existing":10187,
-  "country":"Espagne"
- },
- {
-  "date":"2020-03-17",
-  "confirmed":9257,
-  "existing":9166,
-  "country":"Allemagne"
- },
- {
-  "date":"2020-03-17",
-  "confirmed":8320,
-  "existing":6832,
-  "country":"Cor\u00e9e du Sud"
- },
- {
-  "date":"2020-03-17",
-  "confirmed":7699,
-  "existing":7539,
-  "country":"France"
- },
- {
-  "date":"2020-03-17",
-  "confirmed":6353,
-  "existing":6228,
-  "country":"Etats-Unis"
- },
- {
-  "date":"2020-03-17",
-  "confirmed":2700,
-  "existing":2669,
-  "country":"Suisse"
- },
- {
-  "date":"2020-03-17",
-  "confirmed":1960,
-  "existing":1851,
-  "country":"Royaume-Uni"
- },
- {
-  "date":"2020-03-17",
-  "confirmed":1711,
-  "existing":1666,
-  "country":"Pays-Bas"
- },
- {
-  "date":"2020-03-18",
-  "confirmed":81102,
-  "existing":8106,
-  "country":"Chine"
- },
- {
-  "date":"2020-03-18",
-  "confirmed":35713,
-  "existing":28710,
-  "country":"Italie"
- },
- {
-  "date":"2020-03-18",
-  "confirmed":17361,
-  "existing":10837,
-  "country":"Iran"
- },
- {
-  "date":"2020-03-18",
-  "confirmed":13910,
-  "existing":12206,
-  "country":"Espagne"
- },
- {
-  "date":"2020-03-18",
-  "confirmed":12327,
-  "existing":12194,
-  "country":"Allemagne"
- },
- {
-  "date":"2020-03-18",
-  "confirmed":9105,
-  "existing":8945,
-  "country":"France"
- },
- {
-  "date":"2020-03-18",
-  "confirmed":8413,
-  "existing":6789,
-  "country":"Cor\u00e9e du Sud"
- },
- {
-  "date":"2020-03-18",
-  "confirmed":7715,
-  "existing":7597,
-  "country":"Etats-Unis"
- },
- {
-  "date":"2020-03-18",
-  "confirmed":3028,
-  "existing":2985,
-  "country":"Suisse"
- },
- {
-  "date":"2020-03-18",
-  "confirmed":2642,
-  "existing":2503,
-  "country":"Royaume-Uni"
- },
- {
-  "date":"2020-03-18",
-  "confirmed":2058,
-  "existing":1998,
-  "country":"Pays-Bas"
- },
- {
-  "date":"2020-03-19",
-  "confirmed":81156,
-  "existing":7372,
-  "country":"Chine"
- },
- {
-  "date":"2020-03-19",
-  "confirmed":41035,
-  "existing":33190,
-  "country":"Italie"
- },
- {
-  "date":"2020-03-19",
-  "confirmed":18407,
-  "existing":11413,
-  "country":"Iran"
- },
- {
-  "date":"2020-03-19",
-  "confirmed":17963,
-  "existing":16026,
-  "country":"Espagne"
- },
- {
-  "date":"2020-03-19",
-  "confirmed":15320,
-  "existing":15163,
-  "country":"Allemagne"
- },
- {
-  "date":"2020-03-19",
-  "confirmed":13608,
-  "existing":13408,
-  "country":"Etats-Unis"
- },
- {
-  "date":"2020-03-19",
-  "confirmed":10947,
-  "existing":10692,
-  "country":"France"
- },
- {
-  "date":"2020-03-19",
-  "confirmed":8565,
-  "existing":6934,
-  "country":"Cor\u00e9e du Sud"
- },
- {
-  "date":"2020-03-19",
-  "confirmed":4075,
-  "existing":4019,
-  "country":"Suisse"
- },
- {
-  "date":"2020-03-19",
-  "confirmed":2716,
-  "existing":2511,
-  "country":"Royaume-Uni"
- },
- {
-  "date":"2020-03-19",
-  "confirmed":2467,
-  "existing":2388,
-  "country":"Pays-Bas"
- },
- {
-  "date":"2020-03-20",
-  "confirmed":81250,
-  "existing":6731,
-  "country":"Chine"
- },
- {
-  "date":"2020-03-20",
-  "confirmed":47021,
-  "existing":38549,
-  "country":"Italie"
- },
- {
-  "date":"2020-03-20",
-  "confirmed":20410,
-  "existing":17779,
-  "country":"Espagne"
- },
- {
-  "date":"2020-03-20",
-  "confirmed":19848,
-  "existing":19601,
-  "country":"Allemagne"
- },
- {
-  "date":"2020-03-20",
-  "confirmed":19644,
-  "existing":11466,
-  "country":"Iran"
- },
- {
-  "date":"2020-03-20",
-  "confirmed":19028,
-  "existing":18784,
-  "country":"Etats-Unis"
- },
- {
-  "date":"2020-03-20",
-  "confirmed":12726,
-  "existing":12264,
-  "country":"France"
- },
- {
-  "date":"2020-03-20",
-  "confirmed":8652,
-  "existing":7018,
-  "country":"Cor\u00e9e du Sud"
- },
- {
-  "date":"2020-03-20",
-  "confirmed":5294,
-  "existing":5225,
-  "country":"Suisse"
- },
- {
-  "date":"2020-03-20",
-  "confirmed":4014,
-  "existing":3769,
-  "country":"Royaume-Uni"
- },
- {
-  "date":"2020-03-20",
-  "confirmed":3003,
-  "existing":2894,
-  "country":"Pays-Bas"
- },
- {
-  "date":"2020-03-21",
-  "confirmed":81305,
-  "existing":6189,
-  "country":"Chine"
- },
- {
-  "date":"2020-03-21",
-  "confirmed":53578,
-  "existing":42681,
-  "country":"Italie"
- },
- {
-  "date":"2020-03-21",
-  "confirmed":25417,
-  "existing":25110,
-  "country":"Etats-Unis"
- },
- {
-  "date":"2020-03-21",
-  "confirmed":25374,
-  "existing":21874,
-  "country":"Espagne"
- },
- {
-  "date":"2020-03-21",
-  "confirmed":22213,
-  "existing":21896,
-  "country":"Allemagne"
- },
- {
-  "date":"2020-03-21",
-  "confirmed":20610,
-  "existing":11419,
-  "country":"Iran"
- },
- {
-  "date":"2020-03-21",
-  "confirmed":14431,
-  "existing":13857,
-  "country":"France"
- },
- {
-  "date":"2020-03-21",
-  "confirmed":8799,
-  "existing":7157,
-  "country":"Cor\u00e9e du Sud"
- },
- {
-  "date":"2020-03-21",
-  "confirmed":6575,
-  "existing":6485,
-  "country":"Suisse"
- },
- {
-  "date":"2020-03-21",
-  "confirmed":5067,
-  "existing":4766,
-  "country":"Royaume-Uni"
- },
- {
-  "date":"2020-03-21",
-  "confirmed":3640,
-  "existing":3501,
+  "date":"2020-03-11",
+  "confirmed":503,
+  "existing":498,
   "country":"Pays-Bas"
  }
 ]

@@ -142,7 +142,7 @@ $( document ).ready(function() {
   var barChartScene = new ScrollMagic.Scene({triggerElement: "#animatedBarChart", duration: 300})
     // .setClassToggle("#animatedBarChart", "bounce")
     .addTo(controller)
-    .addIndicators({'name': 'animated bar chart'}) // debug
+    // .addIndicators({'name': 'animated bar chart'}) // debug
     .on("enter", function(){
       // on commence tranquille
       runAnimation();

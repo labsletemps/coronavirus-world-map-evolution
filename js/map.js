@@ -250,7 +250,7 @@
 
 				var worldMapScene = new ScrollMagic.Scene({triggerElement: "#map", duration: 300})
 					.addTo(controller)
-					.addIndicators({'name': 'animated map'}) // debug
+					// .addIndicators({'name': 'animated map'}) // debug
 					.on("enter", function(){
 						// on commence tranquille
 						runAnimation();
