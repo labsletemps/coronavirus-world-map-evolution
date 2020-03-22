@@ -2,20 +2,24 @@
 <html>
 <head>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<style>
 	body{
 		padding: 0;
 		margin: 0;
 	}
 	#screenshot-img{
-		width: 100%;
+		max-width: 100%;
+		max-height: 240px;
+		width: auto;
 		position: relative;
 		z-index: 0;
 	}
 	#cursor{
-		width: 20%;
+		width: 40%;
 		position: fixed;
-		top: 15%;
+		bottom: 20%;
 		left: 30%;
 		transform: rotate(-20deg);
 		z-index: 10;
@@ -26,28 +30,103 @@
 	#cursor:hover{
 		transform: rotate(-10deg);
 	}
-	#screenshot{
-		width: 100%;
-		height: 100%;
-		/* max-width: 958px; */
-		height: auto;
-		background-image: url('img/screenshot.png');
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-position: contain;
-		border: 1px solid #ccc;
+	.outline {
+    border: 1px solid #ccc;
+    border-radius: 3px;
 	}
+	.big {
+    font-size: 1.4em;
+		font-weight: bold;
+		color: #555;
+		line-height: 1;
+	}
+	.numbers .add-margin{
+		margin-bottom: 1em;
+	}
+	h2{
+		margin-top: .5em;
+	}
+	@media screen and (max-width: 500px) {
+		h2{
+			font-size: 1.3rem;
+		}
+		.big{
+			font-size: 1.2rem;
+		}
+	}
+
 	</style>
 </head>
 
 <body>
+	<div class="container">
 
-	<a target="_blank" href="https://labs.letemps.ch/interactive/2020/carte-coronavirus-monde/">
-		<img id="cursor" src="img/hand-cursor-small.png" />
-		<img id="screenshot-img" src="img/screenshot.png">
-	</div>
-</a>
+		<div class="row numbers text-center align-items-top margin-bottom outline worldmap">
+
+			<div class="col-12 group-label">
+				<h2>Le Covid-19 dans le monde</h2>
+				<p>Etat au <b class="dashboardUpdate">11 mars à 0h50</b>, source: <a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">Johns-Hopkins</a></p>
+			</div>
+
+			<div class="col-12 error alert-warning"></div>
+
+			<div class="col-md-3 col-6 add-margin">
+				<span class="big confirmed_total">_____</span><br>
+				<span class="label">cas confirmés cumulés</span>
+			</div>
+			<div class="col-md-3 col-6 add-margin">
+				<span class="big existing_total">___</span><br>
+				<span class="label">cas encore existants</span>
+			</div>
+			<div class="col-md-3 col-6 add-margin">
+				<span class="big recovered_total">___</span><br>
+				<span class="label">guérisons</span>
+			</div>
+			<div class="col-md-3 col-6 add-margin">
+				<span class="big deaths_total">___</span><br>
+				<span class="label">décès</span>
+			</div>
+
+			<div class="col-12">
+			<a target="_blank" href="https://labs.letemps.ch/interactive/2020/carte-coronavirus-monde/">
+				<img id="cursor" src="img/hand-cursor-small.png" />
+				<img id="screenshot-img" src="img/screenshot-march-18.png">
+			</div>
+			</a>
+		</div>
+		</div>
+
+
+</div>
 
 
 	</body>
+
+	<script>
+
+	function setText(selector, text){
+		var el = document.querySelector(selector);
+		el.innerText = text;
+	}
+
+	// update chaque 100 seconde
+	var d = new Date();
+	var update = Math.round(d.getTime() / 10000)
+
+	if (window.fetch) {
+		fetch('data/metaAuto.json?' + update)
+		.then(function(response) { return response.json(); })
+		.then(function(data) {
+			setText('.deaths_total', data['deaths_total'] );
+			setText('.confirmed_total', data['confirmed_total'].toLocaleString('fr') );
+			setText('.recovered_total', data['recovered_total'].toLocaleString('fr') );
+			setText('.existing_total', data['existing_total'].toLocaleString('fr') );
+			setText('.dashboardUpdate', data['dashboardUpdate']);
+		});
+	}else{
+		// TODO
+		setText('.error', 'Mise à jour des chiffres impossible: le navigateur est trop ancien' );
+	}
+
+	</script>
 	</html>
