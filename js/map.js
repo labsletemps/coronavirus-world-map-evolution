@@ -1,4 +1,5 @@
 (function(){
+	var thousandsLocale = {"thousands": "\xa0"}
 	var locale = {
 	"dateTime": "%A %e %B %Y",
 	"date": "%d/%m/%Y",
@@ -10,6 +11,16 @@
 	"shortMonths": ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
 }
 	d3.timeFormatDefaultLocale(locale);
+	// var numberFormat = d3.locale(thousandsLocale);
+	// console.log(numberFormat(50000));
+	var locale = d3.formatLocale({
+	  decimal: ",",
+	  thousands: " ",
+	  grouping: [3]
+	});
+	var format = locale.format(",d");
+	console.log(format(20000), format(1000))
+
 	var format = d3.timeFormat("%c");
 
 	var animTimeout;
@@ -26,12 +37,9 @@
 	var path = d3.geoPath()
 		.projection(projection);
 
-  // Add zoom according to Mike Bostock's example https://bl.ocks.org/mbostock/2206340
-	/*var zoom = d3.behavior.zoom()
-    .translate(projection.translate())
-    .scale(projection.scale())
-    .scaleExtent([height, 8 * height])
-    .on("zoom", zoomed);*/
+  // Add zoom: https://github.com/d3/d3-zoom
+	// Example implementation: https://bl.ocks.org/d3noob/e549dc220052ac8214b9db6ce47d2a61
+
 
 		// .call(zoom)
 
@@ -207,7 +215,7 @@
 					$('.filter-container, .irs-with-grid, .irs, #range_slider').click(function(){
 						$('.play').removeClass('pause');
 						clearTimeout(animTimeout);
-					})
+					});
 
 					// doc: http://ionden.com/a/plugins/ion.rangeSlider/demo_interactions.html
 					var slider_instance = $("#range_slider").data("ionRangeSlider");
@@ -227,7 +235,7 @@
 				}
 
 				// TODO: on scroll
-				animTimeout = setTimeout(runAnimation, 500)
+				// animTimeout = setTimeout(runAnimation, 500)
 
 				$('.play').click(function(){
 					if($(this).hasClass('pause')){
@@ -239,6 +247,25 @@
 						$(this).addClass('pause')
 					}
 				});
+
+				var worldMapScene = new ScrollMagic.Scene({triggerElement: "#map", duration: 300})
+					.addTo(controller)
+					.addIndicators({'name': 'animated map'}) // debug
+					.on("enter", function(){
+						// on commence tranquille
+						runAnimation();
+					})
+					.on("leave", function(event){
+						clearTimeout(animTimeout);
+					});
+
+				/*var zoom = d3.zoom()
+			      .scaleExtent([1, 8])
+			      .on('zoom', function() {
+			          svg.selectAll('path')
+			           .attr('transform', d3.event.transform);
+			});
+			svg.call(zoom);*/
 
 				/*
 					c3js graph also enables date picking
@@ -273,7 +300,7 @@
 						},
 						y: {
 							tick: {
-								values: [0, 50000, 100000, 150000, 200000],
+								values: [0, 100000, 200000, 300000],
 								// format: d3.format(".0s")
 							}
 						}
@@ -282,10 +309,9 @@
 						y: {
 							lines: [
 								{ value: 0},
-								{ value: 50000},
 								{ value: 100000},
-								{ value: 150000},
 								{ value: 200000},
+								{ value: 300000}
 							]
 						}
 					},

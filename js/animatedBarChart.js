@@ -17,7 +17,7 @@ $( document ).ready(function() {
   var dateCounter = 1;
   var margin = { top: 40, bottom: 10, left: 124, right: 20 };
 
-  var width = parseInt(d3.select("#chartTop").style("width")) - margin.left - margin.right;
+  var width = parseInt(d3.select("#animatedBarChart").style("width")) - margin.left - margin.right;
 
   // var width = 800 - margin.left - margin.right;
   var height = 300 - margin.top - margin.bottom;
@@ -26,7 +26,7 @@ $( document ).ready(function() {
   var stepDuration = 800;
 
   var svg = d3
-    .select("#chartTop")
+    .select("#animatedBarChart")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom);
@@ -138,8 +138,18 @@ $( document ).ready(function() {
     }
   }
 
-  // on commence tranquille
-  animTimeout = setTimeout(runAnimation, stepDuration);
+
+  var barChartScene = new ScrollMagic.Scene({triggerElement: "#animatedBarChart", duration: 300})
+    // .setClassToggle("#animatedBarChart", "bounce")
+    .addTo(controller)
+    .addIndicators({'name': 'animated bar chart'}) // debug
+    .on("enter", function(){
+      // on commence tranquille
+      runAnimation();
+    })
+    .on("leave", function(event){
+      clearTimeout(animTimeout);
+    });
 
   $('.reload').click(function(){
     clearTimeout(animTimeout);
