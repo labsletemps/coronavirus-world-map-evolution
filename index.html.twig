@@ -168,11 +168,47 @@
 		</div>
 	</div>
 
+	<div class="row align-items-end">
+		<div class="col-12 group-label text-center">
+			<h5>Evolution en Suisse depuis le 6 mars</h5>
+		</div>
+
+		<div class="col-12">
+			<div id="chart-swiss-cantons"></div>
+		</div>
+		<div class="col-10 filter-container">
+			<label>Naviguer par date</label>
+			<input type="text" id="range_sliderCH" />
+		</div>
+		<div class="col-2">
+			<button id="playpauseCH" class="button play pause"></button>
+		</div>
+	</div>
+	
+	<div class="row">
+
+		<div class="col-lg-9 col-sm-12">
+			<div id="mapCH" class="map">
+			</div>
+		</div>
+
+		<div class="col-lg-3 col-sm-12">
+			<div class="map-details-CH">
+				<h4></h4>
+				<p>Survoler/toucher un cercle pour plus d’informations.</p>
+			</div>
+		</div>
+		<div class="col-lg-12">
+
+			</div>
+		</div>
+	
+	
 	<div class="row padding-bottom">
 		<div class="col-lg-10 offset-md-1 col-md-12">
 			<h5>Les dix cantons suisses comptant le plus de cas</h5>
 			<p>Vaud, Genève et le Tessin sont les cantons qui comptent le plus de cas confirmés. Le Tessin compte le plus haut taux par habitant (27 infections confirmées pour 10 000 habitants le samedi 21 mars).</p>
-				<div class="c3-chart" id="chart-swiss-cantons"></div>
+				<div class="c3-chart" id=""></div>
 
 			<div class="source"><b>Note</b> L’Office fédéral de la santé publique (OFSP) fournit des rapports quotidiens en PDF, mais l’heure du bilan n’est pas le même pour chaque jour. L’OFSP refuse de transmettre les données brutes plus d’une fois. Les tests systématiques ont été interrompus le 15 mars. Cette infographie est mise à jour grâce aux compilations de tweets de l’OFSP et de pages d’information cantonales par l’informaticien Daniel Probst.</div>
 			<div class="source">Source: <a target="_blank" href="https://www.corona-data.ch">corona-data.ch</a>, OFSP, cantons suisses</div>
@@ -235,6 +271,7 @@
 var controller = new ScrollMagic.Controller();
 </script>
 <script src="js/map.js?UPDATE"></script>
+<script src="js/mapCH.js?UPDATE"></script>
 <script src="js/animatedBarChart.js?UPDATE"></script>
 
 <script>

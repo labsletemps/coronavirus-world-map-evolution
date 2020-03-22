@@ -58,11 +58,11 @@
 
 /* map */
 
-#map  {
+#map, #mapCH  {
   max-width: 900px;
   margin: 8px auto;
 }
-#map svg{
+#map svg, #mapCH svg{
   width: 100%;
 }
 .small{
