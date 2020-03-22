@@ -1,0 +1,272 @@
+{% block head_brand %}
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>{{ title }}</title>
+	<meta name="description" content="{{ description }}" />
+	<meta name="author" content="{{authors}}">
+	<link rel="shortcut icon" href="https://assets.letemps.ch/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
+
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://assets.letemps.ch/themes/custom/letemps/favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://assets.letemps.ch/themes/custom/letemps/favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://assets.letemps.ch/themes/custom/letemps/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://assets.letemps.ch/themes/custom/letemps/favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://assets.letemps.ch/themes/custom/letemps/favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://assets.letemps.ch/themes/custom/letemps/favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://assets.letemps.ch/themes/custom/letemps/favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://assets.letemps.ch/themes/custom/letemps/favicons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="https://assets.letemps.ch/themes/custom/letemps/favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="https://assets.letemps.ch/themes/custom/letemps/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="https://assets.letemps.ch/themes/custom/letemps/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://assets.letemps.ch/themes/custom/letemps/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="https://assets.letemps.ch/themes/custom/letemps/favicons/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="https://assets.letemps.ch/themes/custom/letemps/favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="https://assets.letemps.ch/themes/custom/letemps/favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="https://assets.letemps.ch/themes/custom/letemps/favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="https://assets.letemps.ch/themes/custom/letemps/favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="https://assets.letemps.ch/themes/custom/letemps/favicons/mstile-310x310.png" />
+
+	<!-- FACEBOOK -->
+	<link rel="image_src" href="{{ app.url ~ imgSocial }}" />
+	<meta property="og:title" content="{{ title }}" />
+	<meta property="og:site_name" content="LeTemps.ch" />
+	<meta property="og:image" content="{{ app.url ~ imgSocial }}" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="{{ app.url }}" />
+	<meta property="og:description" content="{{ description }}" />
+
+	<!-- TWITTER -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@letemps" />
+	<meta name="twitter:description" content="{{ description }}" />
+	<meta name="twitter:image" content="{{ app.url ~ imgSocial }}" />
+	<meta name="twitter:url" content="{{ app.url }}" />
+
+	<!-- CANONICAL URL -->
+	<link rel="canonical" href="{{ app.url }}"/>
+
+    
+    <script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"NewsArticle","mainEntityOfPage":{{ app.url|json_encode()|raw }},"publisher":{"@type":"Organization","name":"Le Temps","logo":{"@type":"ImageObject","url":"https:\/\/assets.letemps.ch\/themes\/custom\/letemps\/logo-amp.png","width":324,"height":60}},"url":{{ app.url|json_encode()|raw }},"articleSection":"Interactif","keywords":["Longread"],"headline":{{ title|json_encode()|raw }},"dateCreated":{{ app.created|json_encode()|raw }},"datePublished":{{ app.created|json_encode()|raw }},"dateModified":{{ app.modified|json_encode()|raw }},"description":{{ description|json_encode()|raw }},"author":{"@type":"Person","name":{{ authors|json_encode()|raw }}},"image":{"@type":"ImageObject","url":{{ (app.url ~ imgSocial)|json_encode()|raw }},"height":433,"width":1200}}</script>
+
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<style>
+		/* RESET BROWSER HTML5 */
+		html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}ul{list-style-type:none;}
+
+		/* BAR */
+		div.brand-nav { width: 100%; background: rgba(0, 0, 0, 0.15); position: fixed; height: 57px; z-index: 1000; top:0;}
+		/* div.brand-nav { width: 100%; background: linear-gradient(to bottom, rgba(0,0,0,.7) 0, rgba(0,0,0,.5) 50%, rgba(0,0,0,.0) 200%); position: fixed; height: 57px; z-index: 1000;} */
+			div.brand-nav.normal { width: 100%; background: #ffffff; /*background: linear-gradient(to right, #fff 50%,  #d8d6d6 100%);*/ border-bottom: 1px solid #eaeaea;}
+
+		/* NAVBAR HIDE EFFECT CLASSES (HEADROOM.JS) */
+		div.headroom { transition: transform 200ms linear; }
+		div.headroom--pinned { transform: translateY(0%); -webkit-transition: all 0.2s ease-in; -moz-transition: all 0.2s ease-in; transition: all 0.2s ease-in; opacity: 1;}
+		div.headroom--unpinned { transform: translateY(-100%); -webkit-transition: all 0.2s ease-in; -moz-transition: all 0.2s ease-in; transition: all 0.2s ease-in; opacity: 0;}
+
+		/* IF NAVBAR HAS "LOCKED" CLASS, IT DOESNT HIDE ANYMORE (set in variable.json) */
+		div.brand-nav.headroom.is-locked { transform: translateY(0%) !important; opacity: 1 !important; }
+		div.brand-nav.headroom.is-locked div.brand-logo-wrapper { transform: translateX(0%) !important; }
+		div.brand-nav.headroom.is-locked div.brand-social-wrapper { transform: translateX(0%) !important; }
+
+		/* BRAND LOGO WRAPPER + SLIDE LEFT EFFECT CLASSES */
+		div.brand-nav div.brand-logo-wrapper { height: 100%; float: left; }
+		div.brand-nav div.brand-logo-wrapper.is-slided { transform: translateX(-20%); -webkit-transition: all 0.2s cubic-bezier(.6,-1.09,.36,1.72); -moz-transition: all 0.2s cubic-bezier(.6,-1.09,.36,1.72); transition: all 0.2s cubic-bezier(.6,-1.09,.36,1.72); }
+		div.brand-nav div.brand-logo-wrapper.isnot-slided { transform: translateX(0%); -webkit-transition: all 0.25s ease-in; -moz-transition: all 0.25s ease-in; transition: all 0.25s ease-in; }
+		div.brand-nav div.brand-logo-wrapper a { height: 100%; float: left; display: block; margin-left: 30px; text-decoration: none; border: none;}
+		div.brand-nav div.brand-logo-wrapper svg#brand-logo { height: 100%; height: auto; }
+			div.brand-nav.normal div.brand-logo-wrapper svg#brand-logo path { fill: #930025; }
+		div.brand-nav div.brand-logo-wrapper .partner-brand-logo { width: auto; height: 35px; margin-top: 12px; }
+
+		/* SOCIAL WRAPPER + SLIDE RIGHT EFFECT CLASSES */
+		div.brand-nav div.brand-social-wrapper { float: right; height: 100%; }
+		div.brand-nav div.brand-social-wrapper.is-slided { transform: translateX(20%); -webkit-transition: all 0.2s cubic-bezier(.6,-1.09,.36,1.72); -moz-transition: all 0.2s cubic-bezier(.6,-1.09,.36,1.72); transition: all 0.2s cubic-bezier(.6,-1.09,.36,1.72); }
+		div.brand-nav div.brand-social-wrapper.isnot-slided { transform: translateX(0%); -webkit-transition: all 0.25s ease-in; -moz-transition: all 0.25s ease-in; transition: all 0.25s ease-in; }
+
+		/* SOCIAL WRAPPER > BUTTONS */
+		div.brand-nav div.brand-social-wrapper span.brand-button { width: 60px; height: 100%; /*background: red;*/ float: right; color: white; text-align: center; cursor: pointer; -webkit-transition: all 0.1s ease-in; -moz-transition: all 0.1s ease-in; transition: all 0.1s ease-in; }
+		div.brand-nav div.brand-social-wrapper a { float: right; text-decoration: none; border: none; height: 100%; }
+		div.brand-nav div.brand-social-wrapper a:nth-child(1) { margin-right: 30px; }
+		div.brand-nav div.brand-social-wrapper span.brand-button:hover { background: rgba(255, 255, 255, .3); -webkit-transition: all 0.1s ease-in; -moz-transition: all 0.1s ease-in; transition: all 0.1s ease-in;}
+
+		/* SOCIAL WRAPPER > BUTTONS > ICONS */
+		div.brand-nav div.brand-social-wrapper span.brand-button i { font-size: 20px; margin-top: 18px; -webkit-transition: all 0.1s ease-in; -moz-transition: all 0.1s ease-in; transition: all 0.1s ease-in; }
+			div.brand-nav.normal div.brand-social-wrapper span.brand-button i.fa-facebook { color: #323232; }
+			div.brand-nav.normal div.brand-social-wrapper span.brand-button:hover i.fa-facebook { color: #3d5a98; }
+			div.brand-nav.normal div.brand-social-wrapper span.brand-button i.fa-twitter { color: #323232; }
+			div.brand-nav.normal div.brand-social-wrapper span.brand-button:hover i.fa-twitter { color: #00aced; }
+			div.brand-nav.normal div.brand-social-wrapper span.brand-button i.fa-linkedin { color: #323232; }
+			div.brand-nav.normal div.brand-social-wrapper span.brand-button:hover i.fa-linkedin { color: #1c87bd; }
+		div.brand-nav div.brand-social-wrapper span.brand-button:hover i { font-size: 30px; margin-top: 13px; -webkit-transition: all 0.1s ease-in; -moz-transition: all 0.1s ease-in; transition: all 0.1s ease-in;}
+		/*div.brand-nav div.brand-social-wrapper span.brand-button i.fa-share-alt { clear: both !important; }*/
+
+		/* MEDIAQUERIES */
+		@media screen and (max-width: 580px) {
+			div.brand-nav { height: 40px !important; }
+		  	div.brand-nav div.brand-social-wrapper a:nth-child(1) { margin-right: 0; }
+		  	div.brand-nav div.brand-logo-wrapper a { margin-left: 0; }
+		  	div.brand-nav div.brand-logo-wrapper svg#brand-logo { height: 100% !important; height: auto; }
+		  	div.brand-nav div.brand-logo-wrapper .partner-brand-logo { height: 24px; margin-top: 10px;}
+		  	div.brand-nav div.brand-social-wrapper span.brand-button { width: 40px; }
+		  	div.brand-nav div.brand-social-wrapper span.brand-button i { font-size: 15px; margin-top: 13px; }
+		  	div.brand-nav div.brand-social-wrapper span.brand-button:hover i { font-size: 22px; margin-top: 10px; }
+		}
+	</style>
+
+	<!-- SCRIPTS -->
+	<!-- AD -->
+	<script type="text/javascript">ltx8="Disabled";</script>
+	<script src="//assets.letemps.ch/modules/custom/lt_gtm/js/advertisement.js"></script>
+
+	<script type="text/javascript">
+
+		// HEADROOM.JS MINIFIED
+		!function(a,b){"use strict";function c(a){this.callback=a,this.ticking=!1}function d(b){return b&&"undefined"!=typeof a&&(b===a||b.nodeType)}function e(a){if(arguments.length<=0)throw new Error("Missing arguments in extend function");var b,c,f=a||{};for(c=1;c<arguments.length;c++){var g=arguments[c]||{};for(b in g)f[b]="object"!=typeof f[b]||d(f[b])?f[b]||g[b]:e(f[b],g[b])}return f}function f(a){return a===Object(a)?a:{down:a,up:a}}function g(a,b){b=e(b,g.options),this.lastKnownScrollY=0,this.elem=a,this.debouncer=new c(this.update.bind(this)),this.tolerance=f(b.tolerance),this.classes=b.classes,this.offset=b.offset,this.scroller=b.scroller,this.initialised=!1,this.onPin=b.onPin,this.onUnpin=b.onUnpin,this.onTop=b.onTop,this.onNotTop=b.onNotTop}var h={bind:!!function(){}.bind,classList:"classList"in b.documentElement,rAF:!!(a.requestAnimationFrame||a.webkitRequestAnimationFrame||a.mozRequestAnimationFrame)};a.requestAnimationFrame=a.requestAnimationFrame||a.webkitRequestAnimationFrame||a.mozRequestAnimationFrame,c.prototype={constructor:c,update:function(){this.callback&&this.callback(),this.ticking=!1},requestTick:function(){this.ticking||(requestAnimationFrame(this.rafCallback||(this.rafCallback=this.update.bind(this))),this.ticking=!0)},handleEvent:function(){this.requestTick()}},g.prototype={constructor:g,init:function(){return g.cutsTheMustard?(this.elem.classList.add(this.classes.initial),setTimeout(this.attachEvent.bind(this),100),this):void 0},destroy:function(){var a=this.classes;this.initialised=!1,this.elem.classList.remove(a.unpinned,a.pinned,a.top,a.initial),this.scroller.removeEventListener("scroll",this.debouncer,!1)},attachEvent:function(){this.initialised||(this.lastKnownScrollY=this.getScrollY(),this.initialised=!0,this.scroller.addEventListener("scroll",this.debouncer,!1),this.debouncer.handleEvent())},unpin:function(){var a=this.elem.classList,b=this.classes;(a.contains(b.pinned)||!a.contains(b.unpinned))&&(a.add(b.unpinned),a.remove(b.pinned),this.onUnpin&&this.onUnpin.call(this))},pin:function(){var a=this.elem.classList,b=this.classes;a.contains(b.unpinned)&&(a.remove(b.unpinned),a.add(b.pinned),this.onPin&&this.onPin.call(this))},top:function(){var a=this.elem.classList,b=this.classes;a.contains(b.top)||(a.add(b.top),a.remove(b.notTop),this.onTop&&this.onTop.call(this))},notTop:function(){var a=this.elem.classList,b=this.classes;a.contains(b.notTop)||(a.add(b.notTop),a.remove(b.top),this.onNotTop&&this.onNotTop.call(this))},getScrollY:function(){return void 0!==this.scroller.pageYOffset?this.scroller.pageYOffset:void 0!==this.scroller.scrollTop?this.scroller.scrollTop:(b.documentElement||b.body.parentNode||b.body).scrollTop},getViewportHeight:function(){return a.innerHeight||b.documentElement.clientHeight||b.body.clientHeight},getDocumentHeight:function(){var a=b.body,c=b.documentElement;return Math.max(a.scrollHeight,c.scrollHeight,a.offsetHeight,c.offsetHeight,a.clientHeight,c.clientHeight)},getElementHeight:function(a){return Math.max(a.scrollHeight,a.offsetHeight,a.clientHeight)},getScrollerHeight:function(){return this.scroller===a||this.scroller===b.body?this.getDocumentHeight():this.getElementHeight(this.scroller)},isOutOfBounds:function(a){var b=0>a,c=a+this.getViewportHeight()>this.getScrollerHeight();return b||c},toleranceExceeded:function(a,b){return Math.abs(a-this.lastKnownScrollY)>=this.tolerance[b]},shouldUnpin:function(a,b){var c=a>this.lastKnownScrollY,d=a>=this.offset;return c&&d&&b},shouldPin:function(a,b){var c=a<this.lastKnownScrollY,d=a<=this.offset;return c&&b||d},update:function(){var a=this.getScrollY(),b=a>this.lastKnownScrollY?"down":"up",c=this.toleranceExceeded(a,b);this.isOutOfBounds(a)||(a<=this.offset?this.top():this.notTop(),this.shouldUnpin(a,c)?this.unpin():this.shouldPin(a,c)&&this.pin(),this.lastKnownScrollY=a)}},g.options={tolerance:{up:0,down:0},offset:0,scroller:a,classes:{pinned:"headroom--pinned",unpinned:"headroom--unpinned",top:"headroom--top",notTop:"headroom--not-top",initial:"headroom"}},g.cutsTheMustard="undefined"!=typeof h&&h.rAF&&h.bind&&h.classList,a.Headroom=g}(window,document);
+
+			// INIT WHEN DOCUMENT IS READY
+			document.addEventListener("DOMContentLoaded", function() {
+			  	// grab an element
+				var brandNav = document.querySelector(".brand-nav");
+				var brandLogoWrapper = document.querySelector(".brand-logo-wrapper");
+				var brandSocialWrapper = document.querySelector(".brand-social-wrapper");
+
+				// construct an instance of Headroom, passing the element
+				var headroom = new Headroom(brandNav, {
+								  "offset": 1000,
+								  "tolerance": 20
+								});
+
+				var headroom2 = new Headroom(brandLogoWrapper, {
+								   	"offset": 1000,
+									"tolerance": 20,
+									"classes": {
+									"initial": "is-visible",
+									"pinned": "isnot-slided",
+									"unpinned": "is-slided"
+									}
+								});
+
+				var headroom3 = new Headroom(brandSocialWrapper, {
+								   	"offset": 1000,
+									"tolerance": 20,
+									"classes": {
+									"initial": "is-visible",
+									"pinned": "isnot-slided",
+									"unpinned": "is-slided"
+									}
+								});
+
+				// INIT EVERY ANIMATED BIDULZ
+				headroom.init();
+				headroom2.init();
+				headroom3.init();
+			});
+
+	</script>
+	{% if dataLayer %}
+		<script>
+			dataLayer = [{{ dataLayer|json_encode|raw }}];
+		</script>
+	{% endif %}
+{% endblock %}
+
+{% block bar_brand %}
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TQ2B8Q"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TQ2B8Q');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- REMP -->
+    <script language="JavaScript" type="text/javascript"> <!--
+    	var WEMF="https://temp-ssl.wemfbox.ch/cgi-bin/ivw/CP/non_classe/article";
+    	document.write("<img src=\""+WEMF+"?r="+escape(document.referrer)+"&d="+(Math.random()*100000)+"\"width=\"1\" height=\"1\" alt=\"\"  style=\"display: none;\" />");
+    </script>
+    <noscript>
+    	<img src="https://temp-ssl.wemfbox.ch/cgi-bin/ivw/CP/non_classe/article" width="1" height="1" alt="" />
+    </noscript>
+
+    <!-- NAVBAR -->
+    <div class="brand-nav {{ navBarStyle|default('') }} headroom {% if navBarLocked == true %}is-locked{% endif %}">
+    	<div class="brand-logo-wrapper">
+    		<a href="https://www.letemps.ch">
+
+    			<svg id="brand-logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 width="147.669px" height="57px" viewBox="-5.134 -41.284 147.669 57" enable-background="new -5.134 -41.284 147.669 57"
+				 xml:space="preserve">
+				<g id="fond">
+					<rect x="-5.134" y="-41.284" fill="#FFFFFF" opacity="0" width="147.669" height="57"/>
+				</g>
+				<g id="logo_1_">
+					<title>logo</title>
+					<g id="Page-1">
+						<g id="logo">
+							<path id="Fill-2" fill="#FFFFFF" d="M13.314-8.548l-0.401,6.262H-5.134v-0.217c0.522-0.03,1.842-0.153,2.271-0.337
+								c0.738-0.276,0.954-0.829,0.954-1.503v-16.759c0-0.674-0.185-1.197-0.953-1.535c-0.552-0.246-1.717-0.368-2.27-0.4v-0.214H5.332
+								v0.215c-0.552,0.033-1.657,0.063-2.209,0.245c-0.767,0.247-0.952,0.861-0.952,1.538v15.869c0,2.454,0.552,2.732,3.467,2.732
+								c1.873,0,3.561-0.061,4.236-0.739c0.953-0.982,2.671-3.959,3.192-5.156H13.314"/>
+							<path id="Fill-3" fill="#FFFFFF" d="M13.642-2.285v-0.217c0.706-0.03,1.872-0.184,2.302-0.337
+								c0.738-0.245,0.951-0.767,0.951-1.442v-16.821c0-0.674-0.186-1.26-0.952-1.535c-0.552-0.215-1.626-0.368-2.302-0.4v-0.214h17.342
+								v5.094h-0.306c-0.399-1.379-2.364-4.419-3.806-4.603c-0.737-0.091-1.934-0.155-2.885-0.155h-3.009v9.578h2.577
+								c1.721,0,2.273-0.552,2.641-0.952c0.554-0.521,1.166-2.301,1.291-3.1h0.305v8.626h-0.306c-0.094-0.92-0.861-2.794-1.291-3.254
+								c-0.4-0.46-0.983-0.951-2.641-0.951h-2.577v7.613c0,2.395,0.521,2.701,3.469,2.701c1.933,0,3.989,0.031,4.726-0.705
+								c1.075-1.107,2.701-4.053,3.162-5.065h0.275l-0.399,6.138H13.642"/>
+							<path id="Fill-4" fill="#FFFFFF" d="M58.835-17.756H58.56c-0.368-1.351-2.239-4.82-3.56-5.004
+								c-0.708-0.091-1.597-0.123-2.365-0.123h-1.351v18.449c0,0.674,0.246,1.228,0.953,1.533c0.367,0.153,1.933,0.369,2.486,0.399
+								v0.216H43.765v-0.217c0.552-0.03,2.087-0.184,2.486-0.337c0.738-0.276,0.952-0.859,0.952-1.536v-18.507h-1.319
+								c-0.707,0-1.689,0.031-2.364,0.123c-1.32,0.184-3.224,3.651-3.591,5.004h-0.276v-5.495h19.183V-17.756"/>
+							<path id="Fill-5" fill="#FFFFFF" d="M59.466-2.285v-0.217c0.706-0.03,1.873-0.184,2.303-0.337
+								c0.736-0.245,0.952-0.767,0.952-1.442v-16.821c0-0.674-0.184-1.26-0.952-1.535c-0.554-0.215-1.628-0.368-2.305-0.4v-0.214H76.81
+								v5.094h-0.308c-0.399-1.379-2.365-4.419-3.808-4.603c-0.736-0.091-1.934-0.155-2.885-0.155h-3.007v9.578h2.577
+								c1.722,0,2.272-0.552,2.641-0.952c0.553-0.521,1.164-2.301,1.289-3.1h0.31v8.626h-0.31c-0.091-0.92-0.857-2.794-1.287-3.254
+								c-0.399-0.46-0.983-0.951-2.641-0.951h-2.577v7.613c0,2.395,0.521,2.701,3.467,2.701c1.934,0,3.991,0.031,4.725-0.705
+								c1.074-1.107,2.703-4.053,3.162-5.065h0.279l-0.399,6.138H59.466"/>
+							<path id="Fill-6" fill="#FFFFFF" d="M106.423-2.285H95.618v-0.217c0.52-0.03,2.115-0.153,2.548-0.367
+								c0.705-0.368,0.982-0.86,0.982-1.566v-17.095L91.413-2.623h-0.551c-0.309-0.952-1.076-3.162-1.568-4.268l-6.203-14.18v13.905
+								c0,2.361,0.341,3.468,1.016,4.05c0.521,0.43,2.548,0.583,3.1,0.613v0.216h-8.409v-0.217c0.521-0.061,2.086-0.061,2.824-0.583
+								c0.706-0.521,0.982-1.718,0.982-4.052v-12.584c0-1.258-0.31-2.118-0.922-2.609c-0.737-0.582-1.904-0.674-2.732-0.706v-0.214
+								h7.459l6.723,15.102l5.126-12.493c0.461-1.104,0.646-2.271,0.675-2.608h7.46v0.215c-0.553,0.033-1.688,0.186-2.241,0.369
+								c-0.766,0.247-0.95,0.829-0.95,1.504v16.729c0,0.676,0.246,1.167,0.95,1.503c0.339,0.185,1.688,0.4,2.272,0.431V-2.285"/>
+							<path id="Fill-7" fill="#FFFFFF" d="M117.27-11.71h-1.934v7.336c0,0.676,0.214,1.259,0.952,1.536
+								c0.366,0.153,1.566,0.307,2.332,0.337v0.216h-10.591v-0.217c0.553-0.03,1.873-0.184,2.272-0.337
+								c0.736-0.276,0.95-0.829,0.95-1.502v-16.761c0-0.674-0.185-1.26-0.95-1.535c-0.675-0.246-1.781-0.368-2.334-0.4v-0.214h10.652
+								c4.327,0,7.121,1.749,7.121,5.096c0,4.359-4.178,6.447-8.474,6.447v-0.002H117.27z M116.932-22.852h-1.596v10.712h1.074
+								c3.928,0,4.758-3.224,4.758-5.279C121.168-20.09,120.216-22.852,116.932-22.852z"/>
+							<path id="Fill-8" fill="#FFFFFF" d="M135.106-1.857c-3.1,0-5.158-0.982-6.169-1.657l-1.014,1.504h-0.309l-0.184-7.429h0.276
+								c1.503,3.93,3.715,7.184,7.274,7.184c2.916,0,4.145-2.056,4.145-4.268c0-1.841-1.229-3.224-3.284-3.988
+								c-1.566-0.615-2.792-1.015-4.174-1.597c-2.485-1.074-3.684-3.009-3.684-5.679c0-3.285,2.701-5.924,6.692-5.924
+								c2.422,0,4.449,0.767,5.492,1.535l0.954-1.382h0.305l0.124,7.122h-0.277c-1.164-3.591-3.007-6.876-6.537-6.876
+								c-1.934,0-3.562,1.474-3.562,3.652c0,1.844,1.012,3.04,3.131,3.992c1.382,0.644,2.885,1.044,4.083,1.566
+								c2.518,1.134,4.145,2.516,4.145,5.77C142.535-4.589,139.434-1.857,135.106-1.857"/>
+						</g>
+					</g>
+				</g>
+				</svg>
+
+    		</a>
+
+			{% if partner.link %}
+    			<a name="partner"{% if partner.link is defined %} href="{{ partner.link }}" target="blank"{% endif %}>
+    				<img src="{{ partner.logo }}" alt="" class="partner-brand-logo">
+    			</a>
+    		{% endif %}
+
+    	</div>
+
+    	<div class="brand-social-wrapper">
+    		<!-- <div class="brand-button"><i class="fa fa-share-alt"></i></div> -->
+    		<a target="blank" href="https://www.linkedin.com/shareArticle?url={{ app.url }}&mini=true&title={{ title|url_encode }}&summary={{ description|url_encode }}&source={{ 'Le Temps'|url_encode }}"><span class="brand-button"><i class="fa fa-linkedin"></i></span></a>
+    		<a target="blank" href="https://twitter.com/intent/tweet?text={{ description ~ ' ' ~ app.url ~ ' '|url_encode }}&via=letemps"><span class="brand-button"><i class="fa fa-twitter"></i></span></a>
+    		<a target="blank" href="https://www.facebook.com/sharer.php?u={{ app.url }}&display=popup&ref=plugin&src=share_button"><span class="brand-button"><i class="fa fa-facebook"></i></span></a>
+    	</div>
+    </div>
+{% endblock %}
+
+{% block footer_brand %}
+
+    <!-- SZMFRABO VERSION="1.1" -->
+    <script language="Javascript">var szmvars="letemps//CP//non_classe/article";</script>
+    <script language="Javascript" src="https://temp-ssl.wemfbox.ch/2004/01/survey.js"></script>
+    <!-- /SZMFRABO -->
+{% endblock %}
