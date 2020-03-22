@@ -1,5 +1,6 @@
 # Mac Filesystem
 .DS_STORE
+*.DS_Store
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -126,6 +127,6 @@ venv.bak/
 dmypy.json
 
 # Pyre type checker
-.pyre/ 
+.pyre/
 
 temp/
