@@ -12,8 +12,8 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/c3.min.css"/>
 
-	<link rel="stylesheet" type="text/css" href="css/style.css?1584888001255" />
-	<link rel="stylesheet" type="text/css" href="css/map.css?1584888001255" />
+	<link rel="stylesheet" type="text/css" href="css/style.css?1584957067457" />
+	<link rel="stylesheet" type="text/css" href="css/map.css?1584957067457" />
 	<link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.css" />
 	<style>
 	.c3-area {
@@ -43,7 +43,7 @@
 
 				<p><b>Avertissement</b> <br>
 
-					• Nous ne pouvons pas indiquer de chiffres détaillés pour la Suisse en raison de l'incapacité de l'OFSP à fournir des données fiables et actualisées.<br>
+					• Nous pouvons difficilement maintenir à jour les chiffres détaillés pour la Suisse en raison de l'incapacité de l'OFSP à fournir des données fiables et actualisées.<br>
 					• La disponibilité des données, leur degré de précision et leur fiabilité varie de pays en pays.<br>
 					• Les cas confirmés ne correspondent qu’à une portion des cas réels. Selon les pays, le suivi du nombre de guérisons est très lacunaire.
 				</p>
@@ -142,7 +142,7 @@
 	<div class="col-lg-12">
 		<div><b>Note:</b> malgré nos efforts pour les éliminer, des erreurs dans nos sources de données peuvent subsister, en particulier dès le 13 mars.</div>
 		<div class="source">
-			La taille maximale des cercles a été réduite le 17 mars pour limiter les chevauchements.
+			La taille maximale des cercles a été réduite le 23 mars pour limiter les chevauchements.
 			Entre le 9 et le 10 mars, Johns-Hopkins a changé le niveau de détail de ses données pour les Etats-Unis, passant des comtés aux états.
 			Des données au niveau des circonscriptions sont affichées pour les pays suivants: Etats-Unis, Chine, Australie, Canada, Royaume-Uni, Danemark. Source: compilation du <a target="_blank" href="https://github.com/CSSEGISandData/COVID-19">CSSE de l’Université Johns-Hopkins</a>,
 			mise à jour le <span class="mapUpdate"></span> et retraitée par <i>Le Temps</i>.</div>
@@ -168,14 +168,49 @@
 		</div>
 	</div>
 
+	<div class="row align-items-end">
+		<div class="col-12 group-label text-center">
+			<h5>Evolution en Suisse depuis le 6 mars</h5>
+		</div>
+
+		<div class="col-12">
+			<div id="time-serie-chart-ch"></div>
+		</div>
+		<div class="col-10 filter-container-ch">
+			<label>Naviguer par date</label>
+			<input type="text" id="range_sliderCH" />
+		</div>
+		<div class="col-2">
+			<button id="playpauseCH" class="button play-ch pause-ch"></button>
+		</div>
+	</div>
+
+	<div class="row">
+
+		<div class="col-lg-9 col-sm-12">
+			<div id="mapCH" class="map">
+			</div>
+		</div>
+
+		<div class="col-lg-3 col-sm-12">
+			<div class="map-details-CH">
+				<h4></h4>
+				<p>Survoler/toucher un cercle pour plus d’informations.</p>
+			</div>
+		</div>
+		<div class="col-lg-12">
+			<div class="source"><b>Note</b> Les données cantonales manquantes, complétées par le jour précédent, sont indiquées par des cercles oranges. L’Office fédéral de la santé publique (OFSP) fournit des rapports quotidiens en PDF, mais ne publie pas les données brutes. Les tests systématiques ont été interrompus le 15 mars. Cette infographie est mise à jour grâce aux compilations de tweets de l’OFSP et de pages d’information cantonales par l’informaticien Daniel Probst.</div>
+			<div class="source">Source: <a target="_blank" href="https://www.corona-data.ch">corona-data.ch</a>, OFSP, cantons suisses. Population dans les cantons: <a target="_blank" href="https://www.bfs.admin.ch/bfs/fr/home.assetdetail.9486063.html">OFS</a></div>
+			</div>
+		</div>
+
+
 	<div class="row padding-bottom">
 		<div class="col-lg-10 offset-md-1 col-md-12">
 			<h5>Les dix cantons suisses comptant le plus de cas</h5>
-			<p>Vaud, Genève et le Tessin sont les cantons qui comptent le plus de cas confirmés. Le Tessin compte le plus haut taux par habitant (27 infections confirmées pour 10 000 habitants le samedi 21 mars).</p>
+			<p>Vaud, Genève et le Tessin sont les cantons qui comptent le plus de cas confirmés. Le Tessin compte le plus haut taux par habitant (27 infections confirmées pour 10 000 habitants le samedi 21 mars). Le graphique est actualisé lorsque des données complètes par canton le permettent.</p>
 				<div class="c3-chart" id="chart-swiss-cantons"></div>
-
-			<div class="source"><b>Note</b> L’Office fédéral de la santé publique (OFSP) fournit des rapports quotidiens en PDF, mais l’heure du bilan n’est pas le même pour chaque jour. L’OFSP refuse de transmettre les données brutes plus d’une fois. Les tests systématiques ont été interrompus le 15 mars. Cette infographie est mise à jour grâce aux compilations de tweets de l’OFSP et de pages d’information cantonales par l’informaticien Daniel Probst.</div>
-			<div class="source">Source: <a target="_blank" href="https://www.corona-data.ch">corona-data.ch</a>, OFSP, cantons suisses</div>
+			<div class="source">Source: <a target="_blank" href="https://www.corona-data.ch">corona-data.ch</a>, OFSP, cantons suisses.</div>
 		</div>
 	</div>
 
@@ -234,8 +269,9 @@
 <script>
 var controller = new ScrollMagic.Controller();
 </script>
-<script src="js/map.js?1584888001255"></script>
-<script src="js/animatedBarChart.js?1584888001255"></script>
+<script src="js/map.js?1584957067457"></script>
+<script src="js/mapCH.js?1584957067457"></script>
+<script src="js/animatedBarChart.js?1584957067457"></script>
 
 <script>
 
@@ -282,7 +318,7 @@ var chartCH = c3.generate({
 	bindto: "#chart-swiss-cantons",
 
 	data: {
-		url: 'data/c3-cantons-switzerland.csv?1584888001255',
+		url: 'data/c3-cantons-switzerland.csv?1584957067457',
 		type: 'line',
 		x: 'Date',
 		colors: {
@@ -327,7 +363,7 @@ var chart = c3.generate({
 	bindto: "#chart-recoveries",
 
 	data: {
-		url: 'data/c3-cas-guerisons.csv?1584888001255',
+		url: 'data/c3-cas-guerisons.csv?1584957067457',
 		type: 'line',
 		x: 'timestamp',
 		colors: {
@@ -368,7 +404,7 @@ var chartCases = c3.generate({
 	bindto: "#chart-china-other",
 
 	data: {
-		url: 'data/top5_existing.csv?1584888001255',
+		url: 'data/top5_existing.csv?1584957067457',
 		type: 'line',
 		x: 'date',
 		labels: {
@@ -414,7 +450,7 @@ height: 200
 bindto: "#chart-switzerland-evolution",
 
 data: {
-url: 'data/c3-switzerland-evolution?1584888001255',
+url: 'data/c3-switzerland-evolution?1584957067457',
 type: 'area',
 x: 'timestamp',
 colors: {
