@@ -435,6 +435,31 @@ h6{
   color: #555;
 }
 
+/* style qu'on mettra après mise au point des graphiques */
+.highlight{
+  border-bottom-width: 3px;
+  border-style: solid;
+}
+.highlight-red{
+  background: rgba(231, 76, 60, 0.2);
+  color: rgb(231, 76, 60);
+  border-color: 2px solid rgb(231, 76, 60);
+}
+.highlight-blue{
+  background: rgba(52, 152, 219, 0.2);
+  color: rgb(52, 152, 219);
+  border-color: 2px solid rgb(52, 152, 219);
+}
+.highlight-thin{
+  border-bottom-width: 1px;
+}
+.highlight-dot{
+  border-bottom-width: 2px;
+  border-style: dashed;
+}
+.legend{
+  font-size: .9em;
+}
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
 select:focus, textarea:focus, input:focus {
