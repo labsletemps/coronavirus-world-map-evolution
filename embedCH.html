@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+	body{
+		padding: 0;
+		margin: 0;
+		max-width: 600px;
+	}
+	#screenshot-img{
+		max-width: 100%;
+		max-height: 240px;
+		width: auto;
+		position: relative;
+		z-index: 0;
+	}
+	#cursor{
+		width: 40%;
+		position: fixed;
+		bottom: 20%;
+		left: 30%;
+		transform: rotate(-20deg);
+		z-index: 10;
+		transition-duration: 0.3s;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	#cursor:hover{
+		transform: rotate(-10deg);
+	}
+	.outline {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+	}
+	.big {
+    font-size: 1.4em;
+		font-weight: bold;
+		color: #555;
+		line-height: 1;
+	}
+	.numbers .add-margin{
+		margin-bottom: 1em;
+	}
+	h2{
+		margin-top: .5em;
+	}
+	a, a:visited, a:hover{
+		color: #000;
+	}
+	video{
+		width: 100%;
+	}
+	@media screen and (max-width: 500px) {
+		h2{
+			font-size: 1.3rem;
+		}
+		.big{
+			font-size: 1.2rem;
+		}
+	}
+
+	</style>
+</head>
+
+<body>
+	<div class="container">
+
+		<div class="row numbers align-items-top margin-bottom outline worldmap">
+
+			<div class="col-12 group-label">
+				<h2><a href="https://labs.letemps.ch/interactive/2020/carte-coronavirus-monde/">Le Covid-19 en Suisse et dans le monde</a></h2>
+			</div>
+			<div class="text-center" id="corona-search">
+				<a href="https://labs.letemps.ch/interactive/2020/carte-coronavirus-monde/">
+				<!-- desktop -->
+				<video class="d-none d-sm-block" loop="" muted="" autoplay="" playsinline="">
+					<source src="img/rec_desktop.mp4?2" type="video/mp4">
+					Votre navigateur ne supporte pas les vidéos HTML.
+				</video>
+				<!-- mobile -->
+				<video class="d-block d-sm-none" loop="" muted="" autoplay="" playsinline="">
+					<source src="img/rec_mobile.mp4" type="video/mp4">
+					Votre navigateur ne supporte pas les vidéos HTML.
+				</video>
+				</a>
+			</div>
+
+		</div>
+		</div>
+
+
+</div>
+
+
+	</body>
+
+	<script>
+
+	function setText(selector, text){
+		var el = document.querySelector(selector);
+		el.innerText = text;
+	}
+
+	// update chaque 100 seconde
+	var d = new Date();
+	var update = Math.round(d.getTime() / 10000)
+
+	if (window.fetch) {
+		fetch('data/metaAuto.json?' + update)
+		.then(function(response) { return response.json(); })
+		.then(function(data) {
+			setText('.deaths_total', data['deaths_total'] );
+			setText('.confirmed_total', data['confirmed_total'].toLocaleString('fr') );
+			setText('.recovered_total', data['recovered_total'].toLocaleString('fr') );
+			setText('.existing_total', data['existing_total'].toLocaleString('fr') );
+			setText('.dashboardUpdate', data['dashboardUpdate']);
+		});
+	}else{
+		// TODO
+		setText('.error', 'Mise à jour des chiffres impossible: le navigateur est trop ancien' );
+	}
+
+	</script>
+	</html>
