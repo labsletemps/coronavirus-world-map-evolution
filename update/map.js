@@ -1,4 +1,5 @@
 (function(){
+	var played = false;
 	var thousandsLocale = {"thousands": "\xa0"}
 	var locale = {
 	"dateTime": "%A %e %B %Y",
@@ -42,7 +43,7 @@
 
 		// .call(zoom)
 
-	Promise.all([d3.json("data/world_countries.json"), d3.csv("data/time-series.csv?1584957067458")]).then( function (data) {
+	Promise.all([d3.json("data/world_countries.json"), d3.csv("data/time-series.csv?1584970679493")]).then( function (data) {
 		var geodata = data[0];
 		var data = data[1];
 
@@ -222,6 +223,7 @@
 					if(dateCounter < availableDates.length){
 						animTimeout = setTimeout(runAnimation, 200);
 					}else{
+						played = true;
 						dateCounter = 0;
 						$('.play').removeClass('pause');
 					}
@@ -232,7 +234,6 @@
 
 				$('.play').click(function(){
 					if($(this).hasClass('pause')){
-						console.log('Clear timeout');
 						clearTimeout(animTimeout);
 						$(this).removeClass('pause')
 					}else{
@@ -253,8 +254,10 @@
 					// .addIndicators({'name': 'animated map'}) // debug
 					.on("enter", function(){
 						// on commence tranquille
-						$('.play').addClass('pause');
-						runAnimation();
+						if(!played){
+							runAnimation();
+							$('.play').addClass('pause');
+						}
 					})
 					.on("leave", function(event){
 						clearTimeout(animTimeout);
@@ -284,7 +287,7 @@
 					bindto: "#time-serie-chart",
 
 					data: {
-						url: 'data/linegraphs-c3.csv?1584957067458',
+						url: 'data/linegraphs-c3.csv?1584970679493',
 						type: 'line',
 						x: 'timestamp',
 						colors: {

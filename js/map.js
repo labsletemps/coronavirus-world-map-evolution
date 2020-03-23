@@ -1,4 +1,5 @@
 (function(){
+	var played = false;
 	var thousandsLocale = {"thousands": "\xa0"}
 	var locale = {
 	"dateTime": "%A %e %B %Y",
@@ -222,6 +223,7 @@
 					if(dateCounter < availableDates.length){
 						animTimeout = setTimeout(runAnimation, 200);
 					}else{
+						played = true;
 						dateCounter = 0;
 						$('.play').removeClass('pause');
 					}
@@ -232,7 +234,6 @@
 
 				$('.play').click(function(){
 					if($(this).hasClass('pause')){
-						console.log('Clear timeout');
 						clearTimeout(animTimeout);
 						$(this).removeClass('pause')
 					}else{
@@ -253,8 +254,10 @@
 					// .addIndicators({'name': 'animated map'}) // debug
 					.on("enter", function(){
 						// on commence tranquille
-						$('.play').addClass('pause');
-						runAnimation();
+						if(!played){
+							runAnimation();
+							$('.play').addClass('pause');
+						}
 					})
 					.on("leave", function(event){
 						clearTimeout(animTimeout);
