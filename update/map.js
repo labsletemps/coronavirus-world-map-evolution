@@ -19,7 +19,6 @@
 	  grouping: [3]
 	});
 	var format = locale.format(",d");
-	console.log(format(20000), format(1000))
 
 	var format = d3.timeFormat("%c");
 
@@ -43,7 +42,7 @@
 
 		// .call(zoom)
 
-	Promise.all([d3.json("data/world_countries.json"), d3.csv("data/time-series.csv?1584888001257")]).then( function (data) {
+	Promise.all([d3.json("data/world_countries.json"), d3.csv("data/time-series.csv?1584957067458")]).then( function (data) {
 		var geodata = data[0];
 		var data = data[1];
 
@@ -125,14 +124,14 @@
 		// Bubble size
 	  var valueExtent = d3.extent(data, function(d) { return +d.n; })
 	  var size = d3.scalePow() // previously: d3.scaleSqrt()
-			.exponent(1/3)
+			.exponent(1/1.5)
 	    .domain(valueExtent)
-	    .range([ 3, 40 ]) // Size in pixel
+	    .range([ 4, 40 ]) // Size in pixel
 
 			// Legend: from Bubblemap Template by Yan Holtz
 			// https://www.d3-graph-gallery.com/graph/bubble_legend.html
 			// https://www.d3-graph-gallery.com/graph/bubblemap_template.html
-			var valuesToShow = [1, 1000, 10000, 50000]
+			var valuesToShow = [1, 10000, 50000]
 			var xCircle = 80
 			var xLabel = xCircle + 100;
 			var yCircle = height * 0.75;
@@ -211,12 +210,6 @@
 				sizeChange();
 
 				function runAnimation(){
-
-					$('.filter-container, .irs-with-grid, .irs, #range_slider').click(function(){
-						$('.play').removeClass('pause');
-						clearTimeout(animTimeout);
-					});
-
 					// doc: http://ionden.com/a/plugins/ion.rangeSlider/demo_interactions.html
 					var slider_instance = $("#range_slider").data("ionRangeSlider");
 
@@ -248,15 +241,24 @@
 					}
 				});
 
+				// stop si interaction
+				$('.filter-container, .irs-with-grid, .irs, #range_slider').click(function(){
+					$('.play').removeClass('pause');
+					clearTimeout(animTimeout);
+				});
+
+
 				var worldMapScene = new ScrollMagic.Scene({triggerElement: "#map", duration: 300})
 					.addTo(controller)
 					// .addIndicators({'name': 'animated map'}) // debug
 					.on("enter", function(){
 						// on commence tranquille
+						$('.play').addClass('pause');
 						runAnimation();
 					})
 					.on("leave", function(event){
 						clearTimeout(animTimeout);
+						$('.play').removeClass('pause');
 					});
 
 				/*var zoom = d3.zoom()
@@ -282,7 +284,7 @@
 					bindto: "#time-serie-chart",
 
 					data: {
-						url: 'data/linegraphs-c3.csv?1584888001257',
+						url: 'data/linegraphs-c3.csv?1584957067458',
 						type: 'line',
 						x: 'timestamp',
 						colors: {
