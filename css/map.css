@@ -1,7 +1,7 @@
 /* toolbar */
 
 /* play / pause by Daniel Abdilla: https://css-tricks.com/making-pure-css-playpause-button/ */
-.c3-chart text, #time-serie-chart text {
+.c3-chart text, #time-serie-chart text, #time-serie-chart-ch text {
 	font-family: 'Raleway', sans-serif;
 	font-size: 13px;
 	pointer-events: none;
@@ -9,9 +9,11 @@
 }
 
 
-#time-serie-chart .domain, #time-serie-chart .tick line, .c3-chart .tick line{
+#time-serie-chart .domain, #time-serie-chart .tick line, .c3-chart .tick line,
+#time-serie-chart-ch .domain, #time-serie-chart-ch .tick line{
   display: none;
 }
+
 
 .c3-tooltip th {
     background-color: #930025;
@@ -31,6 +33,10 @@
   background: #fff;
 }
 .button.pause {
+  border-style: double;
+  border-width: 0px 0 0px 20px;
+}
+.button.pause-ch {
   border-style: double;
   border-width: 0px 0 0px 20px;
 }
@@ -133,23 +139,23 @@
 }
 
 
-.map-details {
+.map-details, .map-details-CH {
   margin: 8px auto;
   padding: .5em;
   width: 100%;
   word-wrap: break-word;
 }
 
-.map-details h4 {
+.map-details h4, .map-details-CH h4 {
   font-size: 1.2em;
 }
-.map-details p {
+.map-details p, .map-details-CH p {
   font-size: .9em;
   margin: 0 0 3px 0;
 }
 
 
-.map-details .stats {
+.map-details .stats, .map-details-CH .stats {
   font-weight: bold;
   color: #777;
 }
