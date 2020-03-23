@@ -44,14 +44,14 @@
  {
   "date":"2020-02-19",
   "confirmed":16,
-  "existing":9,
-  "country":"Viet Nam"
+  "existing":4,
+  "country":"Allemagne"
  },
  {
   "date":"2020-02-19",
   "confirmed":16,
-  "existing":4,
-  "country":"Allemagne"
+  "existing":9,
+  "country":"Viet Nam"
  },
  {
   "date":"2020-02-19",
@@ -387,13 +387,13 @@
   "date":"2020-02-24",
   "confirmed":16,
   "existing":2,
-  "country":"Viet Nam"
+  "country":"Allemagne"
  },
  {
   "date":"2020-02-24",
   "confirmed":16,
   "existing":2,
-  "country":"Allemagne"
+  "country":"Viet Nam"
  },
  {
   "date":"2020-02-25",
@@ -710,14 +710,14 @@
  {
   "date":"2020-02-29",
   "confirmed":45,
-  "existing":43,
-  "country":"Espagne"
+  "existing":45,
+  "country":"Kowe\u00eft"
  },
  {
   "date":"2020-02-29",
   "confirmed":45,
-  "existing":45,
-  "country":"Kowe\u00eft"
+  "existing":43,
+  "country":"Espagne"
  },
  {
   "date":"2020-02-29",
@@ -758,14 +758,14 @@
  {
   "date":"2020-03-01",
   "confirmed":130,
-  "existing":116,
-  "country":"France"
+  "existing":114,
+  "country":"Allemagne"
  },
  {
   "date":"2020-03-01",
   "confirmed":130,
-  "existing":114,
-  "country":"Allemagne"
+  "existing":116,
+  "country":"France"
  },
  {
   "date":"2020-03-01",
@@ -2109,6 +2109,72 @@
   "date":"2020-03-21",
   "confirmed":3640,
   "existing":3501,
+  "country":"Pays-Bas"
+ },
+ {
+  "date":"2020-03-22",
+  "confirmed":81397,
+  "existing":5770,
+  "country":"Chine"
+ },
+ {
+  "date":"2020-03-22",
+  "confirmed":59138,
+  "existing":46638,
+  "country":"Italie"
+ },
+ {
+  "date":"2020-03-22",
+  "confirmed":33193,
+  "existing":32777,
+  "country":"Etats-Unis"
+ },
+ {
+  "date":"2020-03-22",
+  "confirmed":28768,
+  "existing":24421,
+  "country":"Espagne"
+ },
+ {
+  "date":"2020-03-22",
+  "confirmed":24873,
+  "existing":24513,
+  "country":"Allemagne"
+ },
+ {
+  "date":"2020-03-22",
+  "confirmed":21638,
+  "existing":12022,
+  "country":"Iran"
+ },
+ {
+  "date":"2020-03-22",
+  "confirmed":16176,
+  "existing":13296,
+  "country":"France"
+ },
+ {
+  "date":"2020-03-22",
+  "confirmed":8897,
+  "existing":5884,
+  "country":"Cor\u00e9e du Sud"
+ },
+ {
+  "date":"2020-03-22",
+  "confirmed":7245,
+  "existing":7016,
+  "country":"Suisse"
+ },
+ {
+  "date":"2020-03-22",
+  "confirmed":5741,
+  "existing":5392,
+  "country":"Royaume-Uni"
+ },
+ {
+  "date":"2020-03-22",
+  "confirmed":4216,
+  "existing":4034,
   "country":"Pays-Bas"
  }
 ]
