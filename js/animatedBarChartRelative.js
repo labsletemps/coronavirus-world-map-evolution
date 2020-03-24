@@ -1,14 +1,17 @@
 $( document ).ready(function() {
+  var dataReady = false;
+  var animTimeout;
+
   var locale = {
-  "dateTime": "%A %e %B %Y",
-  "date": "%d/%m/%Y",
-  "time": "%H:%M:%S",
-  "periods": ["AM", "PM"],
-  "days": ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"],
-  "shortDays": ["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."],
-  "months": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
-  "shortMonths": ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
-}
+    "dateTime": "%A %e %B %Y",
+    "date": "%d/%m/%Y",
+    "time": "%H:%M:%S",
+    "periods": ["AM", "PM"],
+    "days": ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"],
+    "shortDays": ["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."],
+    "months": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
+    "shortMonths": ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
+  }
   d3.timeFormatDefaultLocale(locale);
   var format = d3.timeFormat("%c");
   var filter_china = 'Chine';
@@ -47,7 +50,7 @@ $( document ).ready(function() {
   var yaxis = d3.axisLeft().scale(yscale);
   var g_yaxis = g.append("g").attr("class", "y axis");
 
-  d3.json("data/top10.json?UPDATE").then(json => {
+  d3.json("data/top_per_pop.json?UPDATE").then(json => {
     data = json;
     data.forEach(function(d) {
       if( availableDates.indexOf( d['date'] ) == -1 ){
@@ -55,12 +58,13 @@ $( document ).ready(function() {
       }
     });
 
-    first_day_data = data.filter(d => d.date === availableDates[0]).filter(d => d.country != filter_china)
+    first_day_data = data.filter(d => d.date === availableDates[0]).filter(d => d.country != filter_china);
+    dataReady = true;
     update(first_day_data, stepDuration * 0.8);
   });
 
   function update(new_data, duration) {
-    xscale.domain([0, d3.max(new_data, d => d.confirmed)]).nice();
+    xscale.domain([0, d3.max(new_data, d => d.confirmed_per_mio)]).nice();
     yscale.domain(new_data.map(d => d.country));
 
     g_xaxis.transition().call(
@@ -84,7 +88,11 @@ $( document ).ready(function() {
               if(d.country == 'Suisse') return '#E01649';
               return '#930025'
             });
-          rect_enter.append("title");
+
+            rect_enter
+              .append("text")
+              .text(function(d){ return d.confirmed_per_mio; });
+
           return rect_enter;
         },
         update => update,
@@ -95,10 +103,53 @@ $( document ).ready(function() {
       .transition()
       .duration(duration) // 400
       .attr("height", yscale.bandwidth())
-      .attr("width", d => xscale(d.confirmed))
+      .attr("width", d => xscale(d.confirmed_per_mio))
       .attr("y", d => yscale(d.country));
 
-    rect.select("title").text(d => d.country);
+  var textLabels = g
+    .selectAll(".textLabels")
+    .data(new_data, d => d.country)
+    .join(
+      enter => {
+        var textLabels_enter = enter.append("text")
+          .attr("class", "textLabels")
+          .attr("x", 0)
+          .attr("y", height) // les pays partent du bas, plop
+          .attr("text-anchor", "right")
+          .attr("opacity", 0)
+          .attr("fill", '#fff')
+          .text( function(d, i){
+              return d.confirmed_per_mio + (i == 0 ? ' par mio. d’habitant' : '')
+            }
+          );
+
+        return textLabels_enter;
+      },
+      update => update,
+      exit => exit.remove()
+    );
+
+  rect
+    .transition()
+    .duration(duration) // 400
+    .attr("height", yscale.bandwidth())
+    .attr("width", d => xscale(d.confirmed_per_mio))
+    .attr("y", d => yscale(d.country));
+
+  textLabels
+    .transition()
+    .duration(duration) // 400
+    .attr("height", yscale.bandwidth())
+    .attr("x", 5)
+    .attr("opacity", 1)
+    .attr("y", d => yscale(d.country) + 16)
+    .text( function(d, i){
+        return d.confirmed_per_mio + (i == 0 ? ' par mio. d’habitant' : '')
+      }
+    );
+    //.attr("text", function(d, i){ d.confirmed_per_mio + (i == 0 ? ' par mio. d’habitant' : '') });
+
+
   }
 
   $( "#displayChina" ).change(function() {
@@ -145,7 +196,9 @@ $( document ).ready(function() {
     // .addIndicators({'name': 'animated bar chart'}) // debug
     .on("enter", function(){
       // on commence tranquille
-      runAnimation();
+      if(dataReady){
+        runAnimation();
+      }
     })
     .on("leave", function(event){
       clearTimeout(animTimeout);
