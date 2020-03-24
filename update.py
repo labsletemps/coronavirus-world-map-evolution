@@ -20,12 +20,22 @@ with open( 'js/map.js' , 'r') as f:
     with open( 'update/map.js', 'w') as fp:
         fp.write( content )
 
-with open( 'js/animatedBarChart.js' , 'r') as f:
+with open( 'js/mapCH.js' , 'r') as f:
     content = f.read()
 
     now = str(int(round(time.time() * 1000)))
 
     content = content.replace('UPDATE', now)
 
-    with open( 'update/animatedBarChart.js', 'w') as fp:
+    with open( 'update/mapCH.js', 'w') as fp:
+        fp.write( content )
+
+with open( 'js/animatedBarChartRelative.js' , 'r') as f:
+    content = f.read()
+
+    now = str(int(round(time.time() * 1000)))
+
+    content = content.replace('UPDATE', now)
+
+    with open( 'update/animatedBarChartRelative.js', 'w') as fp:
         fp.write( content )
