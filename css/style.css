@@ -166,7 +166,7 @@ h2 {
 }
 p {
 	margin-bottom: 20px;
-	font-size: 17px;
+	font-size: 16px;
 }
 p.pie-description {
 	margin-bottom: 0;
@@ -335,13 +335,14 @@ h1{
 .encadre h3{
 	font-size: 1.75rem;
 	color: #333;
-	font-weight: bold;
+	font-family: 'montserratsemi_bold';
 }
 h3{
-	font-size: 1.5rem;
-	margin-top: 60px;
-	color: #333;
+	color: #555;
 	font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.4em;
 }
 
 /*/HTML5 Boilerplate) Clearfix, hidden, visuallyhidden, invisible...*/
@@ -465,4 +466,17 @@ h6{
 select:focus, textarea:focus, input:focus {
         font-size: 16px;
     }
+}
+
+#faq button{
+	padding-left: 0;
+}
+#faq button.active{
+	font-weight: bold;
+}
+#faq button i.fa{
+  transition-duration: 0.5s;
+}
+#faq button.active i.fa{
+	transform: rotate(180deg);
 }
