@@ -1,31 +1,28 @@
 (function(){
 	var played = false;
-	var thousandsLocale = {"thousands": "\xa0"}
-	var locale = {
-	"dateTime": "%A %e %B %Y",
-	"date": "%d/%m/%Y",
-	"time": "%H:%M:%S",
-	"periods": ["AM", "PM"],
-	"days": ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"],
-	"shortDays": ["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."],
-	"months": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
-	"shortMonths": ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
-}
-	d3.timeFormatDefaultLocale(locale);
-	// var numberFormat = d3.locale(thousandsLocale);
-	// console.log(numberFormat(50000));
-	var locale = d3.formatLocale({
-	  decimal: ",",
-	  thousands: " ",
-	  grouping: [3]
-	});
-	var format = locale.format(",d");
-
-	var format = d3.timeFormat("%c");
-
+	var dataReady = false;
 	var animTimeout;
 	var dateCounter = 0;
 	var availableDates = [];
+
+	var locale = {
+		"dateTime": "%A %e %B %Y",
+		"date": "%d/%m/%Y",
+		"time": "%H:%M:%S",
+		"periods": ["AM", "PM"],
+		"days": ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"],
+		"shortDays": ["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."],
+		"months": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
+		"shortMonths": ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
+	}
+	d3.timeFormatDefaultLocale(locale);
+
+	// TODO: use it when > 1000
+	var numberLocale = d3.formatLocale({
+	  decimal: ",",
+	  thousands: "\xa0",
+	  grouping: [3]
+	});
 
 	var margin = {top: 0, right: 10, bottom: 10, left: 10};
 
@@ -40,10 +37,10 @@
   // Add zoom: https://github.com/d3/d3-zoom
 	// Example implementation: https://bl.ocks.org/d3noob/e549dc220052ac8214b9db6ce47d2a61
 
-
-		// .call(zoom)
-
-	Promise.all([d3.json("data/world_countries.json"), d3.csv("data/time-series.csv?1584970679493")]).then( function (data) {
+	/*
+		LOAD DATA
+	*/
+	Promise.all([d3.json("data/world_countries.json"), d3.csv("data/time-series.csv?1585069707542")]).then( function (data) {
 		var geodata = data[0];
 		var data = data[1];
 
@@ -59,7 +56,6 @@
 			.append("g")
 			.attr('id', 'container');
 
-
     svg.append('g')
       .attr('class', 'countries')
       .selectAll('path')
@@ -72,10 +68,9 @@
         .style('stroke-width', 0.3);
 
 		/*
-		Date picker
+			DATE PICKER
 		*/
 		var slider = $("#range_slider").ionRangeSlider({
-				// skin: "flat",
 				values: availableDates,
 				prettify: function(d){ console.log(d); return d},
 				onChange: function(data){
@@ -182,11 +177,6 @@
 						location += ', ' + d['Province/State']
 					}
 
-					// <p><span class="stats">Dernière mise à jour</span> ${d['Last Update']}</p>
-					// -> parse and convert time
-// <p><span class="stats">Décès</span> ${d.Deaths}</p>
-// <p><span class="stats">Rétablissements</span> ${d.Recovered}</p>
-
 					return `<h4>${location}</h4>
 						<p><span class="stats">Cas confirmés cumulés</span> ${d.Confirmed}</p>
 						<p><span class="stats">Guérisons</span> ${d.recovered}</p>
@@ -198,18 +188,22 @@
 					.style('opacity', 1);
 				}
 
+				/*
+					RESIZE
+				*/
 				function sizeChange() {
-					// TODO adapter pour version embed
 					d3.select("g#container").attr("transform", "scale(" + $("#map").width() / 1000 + ")");
 					$("#map svg").height($("#map").width()*0.5);
 				}
-
 
 				d3.select(window)
 					.on("resize", sizeChange);
 
 				sizeChange();
 
+				/*
+					ANIMATE
+				*/
 				function runAnimation(){
 					// doc: http://ionden.com/a/plugins/ion.rangeSlider/demo_interactions.html
 					var slider_instance = $("#range_slider").data("ionRangeSlider");
@@ -229,9 +223,6 @@
 					}
 				}
 
-				// TODO: on scroll
-				// animTimeout = setTimeout(runAnimation, 500)
-
 				$('.play').click(function(){
 					if($(this).hasClass('pause')){
 						clearTimeout(animTimeout);
@@ -248,12 +239,13 @@
 					clearTimeout(animTimeout);
 				});
 
-
+				/*
+					SCROLL TRIGGER
+				*/
 				var worldMapScene = new ScrollMagic.Scene({triggerElement: "#map", duration: 300})
 					.addTo(controller)
 					// .addIndicators({'name': 'animated map'}) // debug
 					.on("enter", function(){
-						// on commence tranquille
 						if(!played){
 							runAnimation();
 							$('.play').addClass('pause');
@@ -273,7 +265,7 @@
 			svg.call(zoom);*/
 
 				/*
-					c3js graph also enables date picking
+					C3JS CHART which also enables date picking
 				*/
 
 				var lastIndex;
@@ -287,7 +279,7 @@
 					bindto: "#time-serie-chart",
 
 					data: {
-						url: 'data/linegraphs-c3.csv?1584970679493',
+						url: 'data/linegraphs-c3.csv?1585069707542',
 						type: 'line',
 						x: 'timestamp',
 						colors: {
@@ -306,7 +298,6 @@
 						y: {
 							tick: {
 								values: [0, 100000, 200000, 300000],
-								// format: d3.format(".0s")
 							}
 						}
 					},
@@ -341,6 +332,7 @@
 							}
 						}
 					}
-				}); // end c3js graph
-	});
+				}); // end c3js chart
+			dataReady = true;
+	}); // end promise
 })();

@@ -12,8 +12,8 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/c3.min.css"/>
 
-	<link rel="stylesheet" type="text/css" href="css/style.css?1584970679493" />
-	<link rel="stylesheet" type="text/css" href="css/map.css?1584970679493" />
+	<link rel="stylesheet" type="text/css" href="css/style.css?1585069707542" />
+	<link rel="stylesheet" type="text/css" href="css/map.css?1585069707542" />
 	<link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.css" />
 	<style>
 	.c3-area {
@@ -41,75 +41,75 @@
 
 				<p class="lead">Le SARS-CoV-2 a causé <span class="deaths_total">____</span> décès et plus de <span class="confirmed_total_floor">_____</span> infections confirmées dans le monde. L’Italie est devenue le deuxième pays comptant le plus de cas, derrière la Chine</p>
 
-				<p><b>Avertissement</b> <br>
-
-					• Nous pouvons difficilement maintenir à jour les chiffres détaillés pour la Suisse en raison de l'incapacité de l'OFSP à fournir des données fiables et actualisées.<br>
-					• La disponibilité des données, leur degré de précision et leur fiabilité varie de pays en pays.<br>
-					• Les cas confirmés ne correspondent qu’à une portion des cas réels. Selon les pays, le suivi du nombre de guérisons est très lacunaire.
-				</p>
+				<p style="margin-bottom: 4px;"><b>Avertissement</b></p>
+				<ul>
+					<li>Nous pouvons difficilement maintenir à jour les chiffres détaillés pour la Suisse en raison de l'incapacité de l'OFSP à fournir des données fiables et actualisées.</li>
+					<li>La disponibilité des données, leur degré de précision et leur fiabilité varie de pays en pays.</li>
+					<li>Les cas confirmés ne correspondent qu’à une portion des cas réels. Selon les pays, le suivi du nombre de guérisons est très lacunaire.</li>
+				</ul>
 
 			</div>
 		</div>
 
-
-
-
-			<!--
-			<div class="chart-background margin-top margin-bottom">
-			<div class="row four-graphs">
-
-			<div class="col-lg-6 col-md-12">
-			<h5>Nouveaux cas en Suisse</h5>
-			<p>Etat au mercredi 11 mars à 13h00. Le total inclut les infections qui ont été confirmées par un laboratoire cantonal, mais n’ont pas encore été contrôlées par un second laboratoire.</p>
-			<div class="c3-chart" id="chart-switzerland-evolution"></div>
+	<div class="row numbers text-center align-items-top margin-bottom outline worldmap">
+		<div class="col-12 group-label">
+			<h5>Situation dans le monde</h5>
+			<p>Données compilées le <b class="dashboardUpdate">11 mars à 0h50</b></p>
 		</div>
 
+		<div class="col-md-3 col-6">
+			<span class="big confirmed_total">_____</span><br>
+			<span class="label">cas confirmés cumulés</span>
+		</div>
+		<div class="col-md-3 col-6">
+			<span class="big existing_total">___</span><br>
+			<span class="label">cas encore existants</span>
+		</div>
+		<div class="col-md-3 col-6">
+			<span class="big recovered_total">___</span><br>
+			<span class="label">guérisons</span>
+		</div>
+		<div class="col-md-3 col-6">
+			<span class="big deaths_total">___</span><br>
+			<span class="label">décès</span>
+		</div>
 
-		<div class="col-lg-6 col-md-12">
-		<h5>Dans les cantons</h5>
-		<p>ZZy.</p>
-		<div class="c3-chart" id="chart-switzerland-cantons"></div>
-
-	</div>
-</div>
-</div>
--->
-
-<div class="row numbers text-center align-items-top margin-bottom outline worldmap">
-	<div class="col-12 group-label">
-		<h5>Situation dans le monde</h5>
-		<p>Données compilées le <b class="dashboardUpdate">11 mars à 0h50</b></p>
-	</div>
-
-	<div class="col-md-3 col-6">
-		<span class="big confirmed_total">_____</span><br>
-		<span class="label">cas confirmés cumulés</span>
-	</div>
-	<div class="col-md-3 col-6">
-		<span class="big existing_total">___</span><br>
-		<span class="label">cas encore existants</span>
-	</div>
-	<div class="col-md-3 col-6">
-		<span class="big recovered_total">___</span><br>
-		<span class="label">guérisons</span>
-	</div>
-	<div class="col-md-3 col-6">
-		<span class="big deaths_total">___</span><br>
-		<span class="label">décès</span>
-	</div>
-
-	<div class="col-12">
-		<div class="source">Source:
-			<a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">Université Johns-Hopkins</a>
+		<div class="col-12">
+			<div class="source">Source:
+				<a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">Université Johns-Hopkins</a>
+			</div>
 		</div>
 	</div>
-</div>
+
+	<div class="row padding-bottom" id="triggerAnimatedChart">
+
+			<div class="offset-md-2 col-md-8 col-sm-12">
+				<h5>La Suisse est presque le premier pays en taux de cas confirmés</h5>
+				<p>En nombre d’infections confirmées pour un million d’habitant, la Suisse est à 25 points d’écart de l’Italie, à en croire les <a target="_blank" href="https://github.com/CSSEGISandData/2019-nCoV">données compilées par Johns-Hopkins</a> que nous avons retraitées et divisées par la population mondiale. Cette université américaine, qui compile des chiffres mondiaux beaucoup plus rapidement que l’<a target="_blank" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports">OMS</a> et l’agence européenne <a target="_blank" href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide">ECDC</a>, <a target="_blank" href="https://github.com/CSSEGISandData/COVID-19/issues">commet cependant souvent des erreurs</a>.
+					Si l’on se réfère à la compilation de données cantonales faites sur <a href="https://www.corona-data.ch/" target="_blank">corona-data.ch</a>, supérieur aux chiffres de l’OFSP, la Suisse serait déjà devant l’Italie.</p>
+
+
+				<!--<div class="text-center form-check">
+					<input type="checkbox" class="form-check-input" id="displayChina">
+					<label class="form-check-label" for="displayChina">Montrer la Chine</label>
+				</div>-->
+
+				<p class="text-center no-margin"><b>Date:</b> <span class="date">mercredi 11 mars 2020</span> <span class="horizontal-spacer"></span><i class="fa fa-undo reload" aria-hidden="true"></i></p>
+
+				<div id="animatedBarChart"></div>
+				<div>Cas confirmés cumulés (sans prise en compte des guérisons) de Covid-19 pour un million d’habitants. Seuls les pays comptant plus de 1000 cas confirmés sont pris en compte.</div>
+				<div class="source"><b>Correction du 24 mars:</b> le fichier de l’université Johns-Hopkins utilisé précédemment contenait des données erronnées pour un grand nombre de pays, dont la Suisse et l’Italie.</div>
+				<div class="source"><b>Source:</b>
+					<a target="_blank" href="https://github.com/CSSEGISandData/COVID-19">Université Johns-Hopkins</a>, population 2018 <a href="https://data.worldbank.org/indicator/sp.pop.totl" target="_blank">selon la Banque mondiale</a>, données retraitées par <i>Le Temps</i></div>
+				</div>
+		</div>
 
 
 	<!-- switzerland -->
 	<div class="row align-items-end">
-		<div class="col-12 group-label text-center">
+		<div class="col-12 group-label">
 			<h5>Evolution en Suisse depuis le 6 mars</h5>
+			<p>Les décès par cantons ne sont pas indiqués en raison d’incertitudes sur ces données (86 décès le 24 mars à 12h15 <a href="https://www.bag.admin.ch/bag/fr/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/situation-schweiz-und-international.html" target="_blank">selon l’OFSP</a>, qui ne fait pas les totaux par canton, contre 123 selon <a target="_blank" href="https://www.corona-data.ch">corona-data.ch</a> et 124 selon <a target="_blank" href="https://interactif.tdg.ch/2020/covid-19-carte-suisse/">Tamedia</a>, qui compilent des données cantonales).</p>
 		</div>
 
 		<div class="col-12">
@@ -119,19 +119,18 @@
 			<label>Naviguer par date</label>
 			<input type="text" id="range_sliderCH" />
 		</div>
-		<div class="col-2">
+		<div class="col-1 col-lg-2">
 			<button id="playpauseCH" class="button play-ch pause-ch"></button>
 		</div>
-		<div class="col-3">
+		<div class="col-4 col-lg-3">
 			<div class="form-check">
 		    <input type="checkbox" class="form-check-input" id="showAbsoluteCH">
-		    <label class="form-check-label" for="showAbsoluteCH"><b>Valeurs absolues</b></label>
+		    <label class="form-check-label" for="showAbsoluteCH">Valeurs absolues</label>
 		  </div>
 		</div>
 	</div>
 
 	<div class="row">
-
 		<div class="col-lg-9 col-sm-12">
 			<div id="mapCH" class="map">
 			</div>
@@ -140,31 +139,117 @@
 		<div class="col-lg-3 col-sm-12">
 			<div class="map-details-CH">
 				<h4></h4>
-				<p>Survoler/toucher un cercle pour plus d’informations.</p>
+				<p>Survoler/toucher un canton pour plus d’informations.</p>
 			</div>
 		</div>
 		<div class="col-lg-12">
-			<div class="source"><b>Note</b> Les données cantonales manquantes, complétées par le jour précédent, sont indiquées par des cercles oranges. L’Office fédéral de la santé publique (OFSP) fournit des rapports quotidiens en PDF, mais ne publie pas les données brutes. Les tests systématiques ont été interrompus le 15 mars. Cette infographie est mise à jour grâce aux compilations de tweets de l’OFSP et de pages d’information cantonales par l’informaticien Daniel Probst.</div>
-			<div class="source">Source: <a target="_blank" href="https://www.corona-data.ch">corona-data.ch</a>, OFSP, cantons suisses. Population dans les cantons: <a target="_blank" href="https://www.bfs.admin.ch/bfs/fr/home.assetdetail.9486063.html">OFS</a></div>
-			</div>
+			<div class="source"><b>Correction du 24 mars:</b> une version précédente de l’infographie ne tenait pas compte de la population de nationalité étrangère. </div>
+			<div class="source"><b>Note:</b> les données cantonales manquantes sont substituées par celles du jour précédent. Elles sont indiquées par des cercles oranges lorsque l’option «valeurs absolues» est cochée. L’Office fédéral de la santé publique (OFSP) fournit des rapports quotidiens en PDF, mais ne publie pas les données brutes. Les tests systématiques ont été interrompus le 15 mars. Cette infographie est mise à jour grâce aux compilations de tweets de l’OFSP et de pages d’information cantonales par l’informaticien Daniel Probst.</div>
+			<div class="source"><b>Source:</b> <a target="_blank" href="https://www.corona-data.ch">corona-data.ch</a>, cantons suisses. Population dans les cantons: <a target="_blank" href="https://www.bfs.admin.ch/bfs/fr/home/statistiques/population/effectif-evolution/population.assetdetail.9486047.html">chiffres définitifs 2018 de l’OFS</a></div>
 		</div>
+	</div>
 
 
 	<div class="row padding-bottom">
 		<div class="col-lg-10 offset-md-1 col-md-12">
-			<h5>Les dix cantons suisses comptant le plus de cas par habitants</h5>
-			<p>Vaud, Genève et le Tessin sont les cantons qui comptaient le plus de cas confirmés pour 100 000 habitants le dimanche 22 mars. Ce graphique est actualisé lorsque des données complètes par canton le permettent.</p>
+			<h5>Les dix cantons suisses comptant le plus de cas par habitant</h5>
+			<p>Le Tessin, Genève et Vaud sont les cantons qui comptaient le plus de cas confirmés pour 100 000 habitants le dimanche 22 mars. Ce graphique est actualisé lorsque des données complètes par canton le permettent.</p>
 				<div class="c3-chart" id="chart-swiss-cantons"></div>
-			<div class="source">Source: <a target="_blank" href="https://www.corona-data.ch">corona-data.ch</a>, OFSP, cantons suisses.</div>
+				<div class="source"><b>Correction du 24 mars:</b> une version précédente de l’infographie ne tenait pas compte de la population de nationalité étrangère. </div>
+			<div class="source"><b>Source:</b> <a target="_blank" href="https://www.corona-data.ch">corona-data.ch</a>, cantons suisses. Population dans les cantons: <a target="_blank" href="https://www.bfs.admin.ch/bfs/fr/home/statistiques/population/effectif-evolution/population.assetdetail.9486047.html">chiffres définitifs 2018 de l’OFS</a></div>
 		</div>
 	</div>
 	<!-- end switzerland -->
+
+	<!-- bloc texte -->
+	<div class="row text padding-bottom">
+		<div class="offset-md-2 col-md-8 col-sm-12">
+
+			<p>
+
+			</p>
+
+			<h3>Le Covid-19 en cinq questions</h3>
+
+			<div id="faq" class="card">
+				<ul class="list-group list-group-flush">
+					<!-- begin qa li -->
+
+					<li class="list-group-item">
+						<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse0" aria-expanded="false" aria-controls="collapseExample">
+							Covid-19, SARS-CoV-2, coronavirus… Qu’est-ce que ces noms désignent?
+							<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+						</button>
+						<div class="collapse" id="collapse0">
+							<p>L’épidémie est provoquée par un virus de la famille des coronavirus, ou virus à couronne, du nom de l’aspect de ces agents pathogènes: une boule hérissée de spicules formant une couronne.</p>
+							<p>Il existe plusieurs coronavirus. Celui dont il est question en ce moment, un temps nommé nCoV-2019 pour «nouveau coronavirus de 2019», s’appelle désormais officiellement le SARS-CoV-2, pour «coronavirus responsable du syndrome respiratoire aigu sévère 2».</p>
+							<p>La maladie qu’il provoque est quant à elle nommée le Covid-19, pour «maladie du coronavirus de 2019».</p>
+							<p><strong>Sur ce sujet:</strong> <a target="_blank" href="https://www.letemps.ch/sciences/coronavirus-un-nouveau-nom-nest-terrible">Le coronavirus a un nouveau nom et il n’est pas terrible</a></p>
+						</div>
+					</li>
+
+					<li class="list-group-item">
+						<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseExample">
+							Rappelez-moi comment les choses ont démarré, s’il vous plaît.
+							<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+						</button>
+						<div class="collapse" id="collapse1">
+							<p>Selon la version officielle, tout serait parti en décembre 2019 d’animaux vivants vendus sur le marché de Wuhan en Chine et qui auraient transmis le virus à l’homme. Les coronavirus sont des virus dits zoonotiques, à savoir que leurs réservoirs naturels sont des animaux, souvent la chauve-souris. Généralement, le passage vers l’être humain se fait via un autre animal, appelé hôte intermédiaire: la civette masquée pour le SRAS et le dromadaire pour le MERS, deux épidémies provoquées par des coronavirus.</p>
+							<p>Cet animal intermédiaire pourrait être le pangolin, d’après une étude chinoise. Après avoir testé plus de 1000 échantillons provenant d’animaux sauvages, les scientifiques ont déterminé que les génomes de séquences de virus prélevés sur les pangolins étaient à 99% identiques à ceux trouvés sur des patients atteints du nouveau coronavirus, selon l’agence étatique Chine nouvelle. Mais ces résultats demandent confirmation.</p>
+							<p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/chauvessouris-chinoises-fabriques-nouveaux-coronavirus" target="_blank" rel="noopener">Les chauve-souris chinoises, fabriques à coronavirus</a></p>
+						</div>
+					</li>
+
+					<li class="list-group-item">
+						<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseExample">
+							Quels sont les symptômes provoqués par une infection au coronavirus?
+							<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+						</button>
+						<div class="collapse" id="collapse2">
+							<p>Les cas de maladies liés au SARS-CoV-2 peuvent évoluer très différemment et s’accompagner de légers symptômes comme de plus graves nécessitant une hospitalisation chez les sujets souffrant de maladies chroniques ou particulièrement sensibles.</p>
+							<p>Mais les deux symptômes les plus fréquents sont la fièvre (plus de 38 °C) et une toux sèche pouvant s’accompagner parfois de maux de gorge. D’après l’Organisation mondiale de la santé (OMS), environ une personne infectée sur six devient gravement malade et développe des symptômes plus inquiétants de difficultés respiratoires. Dans ce cas, il convient d’appeler son médecin par téléphone, mais pas de se rendre chez lui ni à l’hôpital sans y être invité.</p>
+							<p><strong>Sur ce sujet:</strong> <a href="https://blogs.letemps.ch/dr-jean-gabriel-jeannot/2020/03/05/coronavirus-un-test-en-ligne-pour-connaitre-votre-risque/" target="_blank">Coronavirus: un test en ligne pour connaître votre risque</a></p>
+						</div>
+					</li>
+
+					<li class="list-group-item">
+						<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapseExample">
+							Que faire si je pense être infecté?
+							<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+						</button>
+						<div class="collapse" id="collapse3">
+							<p>Commençons par ce que vous ne devez surtout pas faire: aller directement chez le médecin, à l’hôpital sans y avoir été invité: c’est le meilleur moyen pour infecter un grand nombre de personnes, sujets vulnérables et personnels soignants compris.</p>
+							<p>Ceci étant dit, vous pouvez consulter la plateforme <a href="https://coronavirus.unisante.ch/evaluation" target="_blank" rel="noopener">Coronacheck,</a> première étape utile pour se faire une idée de son état.</p>
+							<p>En cas d’apparition des symptômes évoqués ci-dessus, vous pouvez appeler la ligne spécialement mise en place par l’Office fédéral de la santé publique (OFSP): le 058 463 00 00, accessible 24 heures sur 24. Mieux vaut éviter d’appeler directement son médecin, dit l’OFSP.</p>
+							<p><strong>Sur ce sujet:</strong> <a target="_blank" href="https://www.bag.admin.ch/bag/fr/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/selbst-isolierung-und-selbst-quarantaene.html">La fiche auto-isolation de l’OFSP vous dira tout</a></p>
+						</div>
+					</li>
+
+					<li class="list-group-item">
+						<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapseExample">
+							Comment le virus se propage-t-il?
+							<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+						</button>
+						<div class="collapse" id="collapse4">
+							<p>Le virus ne se propage pas seul: ce sont les personnes qui le propagent. Les scientifiques ont encore beaucoup à apprendre à ce sujet, mais ils semblent s’accorder sur le fait que le SARS-CoV-2 se transmet par les sécrétions de personne à personne (postillons, toux, etc.) et non par l’air, comme si un nuage de virus pouvait se propager sur de longues distances.</p>
+							<p>Il subsiste quelques doutes sur la capacité du coronavirus à être transmis via des surfaces infectées – ce qu’on appelle des fomites. De récents travaux en attente de publication ont établi que le SARS-CoV-2 pouvait perdurer plusieurs jours sur du plastique ou de l’acier inoxydable. Une telle infection «peut être possible», évoque le site des Centres américains de contrôle et de prévention des maladies (CDC), si l’on touche une telle surface et qu’on porte ses mains au visage ensuite. Mais ce n’est vraisemblablement pas la principale voie de transmission.</p>
+							<p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/surfaces-coronavirus-persistetil-plus-longtemps" target="_blank" rel="noopener">Le coronavirus, plus plastique que carton</a></p>
+						</div>
+					</li>
+
+
+					<!-- end qa li -->
+				</ul>
+			</div>
+
+		</div>
+	</div> <!-- fin bloc texte -->
 
 
 <!-- toolbox -->
 
 <div class="row align-items-end">
-	<div class="col-12 group-label text-center">
+	<div class="col-12 group-label">
 		<h5>Evolution dans le monde depuis le 22 janvier</h5>
 	</div>
 
@@ -226,32 +311,6 @@
 
 
 
-	<div class="row padding-bottom">
-		<!-- <div class="outline"> -->
-			<div class="col-12 group-label text-center">
-				<h5>Les dix pays les plus touchés, sans la Chine</h5>
-			</div>
-
-			<div class="offset-md-2 col-md-8 col-sm-12">
-
-				<p>En vingt jours, l’Italie est passée de 20 à plus de 10 000 cas, tandis que la Suisse a fait son entrée dans les dix pays comptant le plus de cas confirmés.</p>
-
-
-				<div class="text-center form-check">
-					<input type="checkbox" class="form-check-input" id="displayChina">
-					<label class="form-check-label" for="displayChina">Montrer la Chine</label>
-				</div>
-
-				<p class="text-center no-margin"><b>Date:</b> <span class="date">mercredi 19 février 2020</span> <span class="horizontal-spacer"></span><i class="fa fa-undo reload" aria-hidden="true"></i></p>
-
-				<div id="animatedBarChart"></div>
-				<div>Cas cumulés (sans prise en compte des guérisons) de Covid-19, sans la Chine ni le paquebot «Diamond Princess».</div>
-				<div class="source">Source:
-					<a target="_blank" href="https://github.com/CSSEGISandData/COVID-19">Université Johns-Hopkins</a>, données retraitées par <i>Le Temps</i></div>
-				</div>
-			<!-- </div> -->
-		</div>
-
 	<div class="row">
 		<div class="offset-md-2 col-md-8 col-sm-12">
 
@@ -281,13 +340,23 @@
 <script>
 var controller = new ScrollMagic.Controller();
 </script>
-<script src="js/map.js?1584970679493"></script>
-<script src="js/mapCH.js?1584970679493"></script>
-<script src="js/animatedBarChart.js?1584970679493"></script>
+<script src="js/map.js?1585069707542"></script>
+<script src="js/mapCH.js?1585069707542"></script>
+<script src="js/animatedBarChartRelative.js?1585069707542"></script>
 
 <script>
 
 $(document).ready(function() {
+	$('#faq button').click(function(){
+		if($(this).hasClass('active')){
+			$(this).removeClass('active');
+		} else {
+			$('#faq button.active').removeClass('active');
+			$('.collapse').collapse('hide');
+			$(this).addClass('active');
+		}
+	});
+
 	var locale = d3.formatLocale({
 	  decimal: ",",
 	  thousands: '\xa0',
@@ -300,194 +369,156 @@ $(document).ready(function() {
 
 	if (window.fetch) {
 		fetch('data/metaAuto.json?' + update)
-		.then(function(response) { return response.json(); })
-		.then(function(data) {
-		$('.warn_error').text('Signaler une erreur');
-		$('<span>| </span>').insertBefore('.warn_error')
-		$('.warn_error').attr('href', 'mailto:' + data['contact'] + '@letemps.ch');
-		$('.deaths_total').text(data['deaths_total'])
-		$('.confirmed_total').text( format( data['confirmed_total'] ) )
-		$('.confirmed_total_floor').text( format( Math.floor(data['confirmed_total'] / 1000) * 1000 ) )
-		$('.recovered_total').text( format( data['recovered_total'] ) )
-		$('.existing_total').text( format( data['existing_total'] ) )
+			.then(function(response) { return response.json(); })
+			.then(function(data) {
+			$('.warn_error').text('Signaler une erreur');
+			$('<span>| </span>').insertBefore('.warn_error')
+			$('.warn_error').attr('href', 'mailto:' + data['contact'] + '@letemps.ch');
+			$('.deaths_total').text(data['deaths_total'])
+			$('.confirmed_total').text( format( data['confirmed_total'] ) )
+			$('.confirmed_total_floor').text( format( Math.floor(data['confirmed_total'] / 1000) * 1000 ) )
+			$('.recovered_total').text( format( data['recovered_total'] ) )
+			$('.existing_total').text( format( data['existing_total'] ) )
 
 
-		$('.update').text(data['update'])
-		$('.dataUpdate').text(data['dataUpdate'])
-		$('.mapUpdate').text(data['mapUpdate'])
-		$('.dashboardUpdate').text(data['dashboardUpdate'])
-	});
-}
+			$('.update').text(data['update'])
+			$('.dataUpdate').text(data['dataUpdate'])
+			$('.mapUpdate').text(data['mapUpdate'])
+			$('.dashboardUpdate').text(data['dashboardUpdate'])
+		});
+	}
 
-/* c3 graph switzerland */
-var chartCH = c3.generate({
-	padding: {
-		right: 40,
-	},
-	size: {
-		height: 400
-	},
-	bindto: "#chart-swiss-cantons",
-
-	data: {
-		url: 'data/c3-cantons-switzerland.csv?1584970679493',
-		type: 'line',
-		x: 'timestamp',
-		colors: {
-
-		}
-	},
-	axis: {
-		x: {
-			type: 'timeseries',
-			tick: {
-				format: '%d.%m.%Y',
-				count: 4
-			},
+	/* c3 graph switzerland */
+	var chartCH = c3.generate({
+		padding: {
+			right: 40,
 		},
-		y: {
+		size: {
+			height: 400
+		},
+		bindto: "#chart-swiss-cantons",
+
+		data: {
+			url: 'data/c3-cantons-switzerland.csv?1585069707542',
+			type: 'line',
+			x: 'timestamp',
+			colors: {
+
+			}
+		},
+		axis: {
+			x: {
+				type: 'timeseries',
 				tick: {
-					values: [0, 100, 200, 300, 400],
+					format: '%d.%m.%Y',
+					count: 4
+				},
+			},
+			y: {
+					tick: {
+						values: [0, 100, 200, 300, 400],
+					}
+				}
+			},
+			grid: {
+				y: {
+					lines: [
+						{ value: 0},
+						{ value: 100},
+						{ value: 2000},
+						{ value: 300},
+						{ value: 400},
+					]
+				}
+			}
+	}); // end c3js graph
+
+	/* c3 graphs bottom */
+	var chart = c3.generate({
+		padding: {
+			right: 40,
+		},
+		size: {
+			height: 200
+		},
+		bindto: "#chart-recoveries",
+
+		data: {
+			url: 'data/c3-cas-guerisons.csv?1585069707542',
+			type: 'line',
+			x: 'timestamp',
+			colors: {
+				'Nouveaux cas': '#930025',
+				'Nouvelles guérisons': '#4E8054'
+			}
+		},
+		axis: {
+			x: {
+				type: 'timeseries',
+				tick: {
+					format: '%d.%m.%Y',
+					count: 4
+				},
+			},
+			y: {
+				tick: {
+					values: [0, 5000, 10000, 15000, 20000]
 				}
 			}
 		},
 		grid: {
-			y: {
+			x: {
 				lines: [
-					{ value: 0},
-					{ value: 100},
-					{ value: 2000},
-					{ value: 300},
-					{ value: 400},
+					{ value: '2018-02-12', label: 'Nouvelle méthode'},
 				]
 			}
 		}
-}); // end c3js graph
+	}); // end c3js graph
 
-/* c3 graphs bottom */
-var chart = c3.generate({
-	padding: {
-		right: 40,
-	},
-	size: {
-		height: 200
-	},
-	bindto: "#chart-recoveries",
-
-	data: {
-		url: 'data/c3-cas-guerisons.csv?1584970679493',
-		type: 'line',
-		x: 'timestamp',
-		colors: {
-			'Nouveaux cas': '#930025',
-			'Nouvelles guérisons': '#4E8054'
-		}
-	},
-	axis: {
-		x: {
-			type: 'timeseries',
-			tick: {
-				format: '%d.%m.%Y',
-				count: 4
-			},
+	var chartCases = c3.generate({
+		padding: {
+			right: 40
 		},
-		y: {
-			tick: {
-				values: [0, 5000, 10000, 15000, 20000]
-			}
-		}
-	},
-	grid: {
-		x: {
-			lines: [
-				{ value: '2018-02-12', label: 'Nouvelle méthode'},
-			]
-		}
-	}
-}); // end c3js graph
-
-var chartCases = c3.generate({
-	padding: {
-		right: 40
-	},
-	size: {
-		height: 200
-	},
-	bindto: "#chart-china-other",
-
-	data: {
-		url: 'data/top5_existing.csv?1584970679493',
-		type: 'line',
-		x: 'date',
-		labels: {
-			format: function(d, country, i){
-						if(i == 2 && (country == 'Italie' || country == 'Chine')){
-							return country
-						}else{
-							return null
-						}
-         },
-			 },
-		colors: {
-			'Nouveaux cas hors de la Chine': '#930025',
-			'Nouvelles guérisons': '#4E8054'
-		}
-	},
-	axis: {
-		x: {
-			type: 'timeseries',
-			tick: {
-				format: '%d.%m.%Y',
-				count: 4
-			},
+		size: {
+			height: 200
 		},
-		y: {
-			tick: {
-				values: [0, 10000, 20000, 30000, 40000, 50000, 60000],
+		bindto: "#chart-china-other",
+
+		data: {
+			url: 'data/top5_existing.csv?1585069707542',
+			type: 'line',
+			x: 'date',
+			labels: {
+				format: function(d, country, i){
+							if(i == 2 && (country == 'Italie' || country == 'Chine')){
+								return country
+							}else{
+								return null
+							}
+	         },
+				 },
+			colors: {
+				'Nouveaux cas hors de la Chine': '#930025',
+				'Nouvelles guérisons': '#4E8054'
 			}
-		}
-	},
-}); // end c3js graph
+		},
+		axis: {
+			x: {
+				type: 'timeseries',
+				tick: {
+					format: '%d.%m.%Y',
+					count: 4
+				},
+			},
+			y: {
+				tick: {
+					values: [0, 10000, 20000, 30000, 40000, 50000, 60000],
+				}
+			}
+		},
+	}); // end c3js graph
 
-
-
-/*
-var chartSwitzerlandEvolution = c3.generate({
-padding: {
-right: 40
-},
-size: {
-height: 200
-},
-bindto: "#chart-switzerland-evolution",
-
-data: {
-url: 'data/c3-switzerland-evolution?1584970679493',
-type: 'area',
-x: 'timestamp',
-colors: {
-'Cas confirmé': '#930025',
-'En attente 2e contrôle': '#4E8054'
-}
-},
-axis: {
-x: {
-type: 'timeseries',
-tick: {
-format: '%d.%m.%Y',
-count: 4
-},
-},
-y: {
-tick: {
-values: [0, 1000, 2000]
-}
-}
-},
-}); // end c3js graph
-
-*/
-});
+}); // end on ready
 
 </script>
 
