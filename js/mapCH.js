@@ -41,7 +41,7 @@
 	    .scale(12000)
 	    .translate([ width/2, height/2 ]);
 	var dataById = d3.map();
-Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?4")]).then(function(data) {
+Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?UPDATE")]).then(function(data) {
 		var geodata = data[0];
 		var data = data[1];
 
@@ -58,13 +58,9 @@ Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?
 		});
 
 		var valueExtent = d3.extent(data, function(d) { return +d.taux; })
-		console.log(valueExtent[1])
 		var colorScale = d3.scaleSqrt()
 		.domain(valueExtent)
 		.range(["#27751D", "#C22E1D"]);
-
-		console.log(colorScale(381))
-
 
 		availableDates.sort();
 
@@ -82,7 +78,14 @@ Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?
 				if(showAbsoluteValues){
 					return '#888';
 				}else{
-					return colorScale(data.filter(function(e){ return (e.no == d.properties.KANTONSNUM && e.timestamp == current_timestamp)} )[0].taux);
+					var rows = data.filter(function(e){ return (e.no == d.properties.KANTONSNUM && e.timestamp == current_timestamp)} );
+					if(rows.length > 0){
+						return colorScale(rows[0].taux);
+					}else{
+						console.log('Error for', d.properties.KANTONSNUM)
+						return '#ccc';
+					}
+
 				}
 			})
 			.attr("d", d3.geoPath()
@@ -187,7 +190,6 @@ Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?
 					textGroup.exit()
 							.remove();
 				} else {
-					console.log('updt')
 
 					// dry: tomorrow
 					var textLabels = svg
@@ -207,7 +209,7 @@ Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?
 							})
 							.on("mouseover", function(d) {
 								displayDetail(d);
-							});;
+							});
 
 					textGroup.append("rect")
 							.attr("width", 80)
@@ -282,7 +284,7 @@ Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?
 							.attr("x", 20 + size_l*1.2)
 							.attr("y", function(d,i){ return distance_from_top - i*(size_l+5) + (size_l/2)}) // 100 is where the first dot appears. 25 is the distance between dots
 							.style("fill", '#000')
-							.text(function(d){ return d + ' cas'})
+							.text(function(d){ return d})
 							.attr("text-anchor", "left")
 							.style("alignment-baseline", "middle")
 
