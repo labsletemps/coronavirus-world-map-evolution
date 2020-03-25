@@ -84,21 +84,20 @@
 	<div class="row padding-bottom" id="triggerAnimatedChart">
 
 			<div class="offset-md-2 col-md-8 col-sm-12">
-				<h5>La Suisse est presque le premier pays en taux de cas confirmés</h5>
-				<p>En nombre d’infections confirmées pour un million d’habitant, la Suisse est à 25 points d’écart de l’Italie, à en croire les <a target="_blank" href="https://github.com/CSSEGISandData/2019-nCoV">données compilées par Johns-Hopkins</a> que nous avons retraitées et divisées par la population mondiale. Cette université américaine, qui compile des chiffres mondiaux beaucoup plus rapidement que l’<a target="_blank" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports">OMS</a> et l’agence européenne <a target="_blank" href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide">ECDC</a>, <a target="_blank" href="https://github.com/CSSEGISandData/COVID-19/issues">commet cependant souvent des erreurs</a>.
-					Si l’on se réfère à la compilation de données cantonales faites sur <a href="https://www.corona-data.ch/" target="_blank">corona-data.ch</a>, supérieur aux chiffres de l’OFSP, la Suisse serait déjà devant l’Italie.</p>
+				<h5>La Suisse est devenue le premier pays en taux de cas confirmés</h5>
+				<p>En nombre d’infections confirmées pour un million d’habitant, la Suisse a dépassé l’Italie ce mercredi, à en croire les <a target="_blank" href="https://github.com/CSSEGISandData/2019-nCoV">données compilées par Johns-Hopkins</a> que nous avons retraitées et divisées par la population mondiale. Cette université américaine, qui compile des chiffres mondiaux beaucoup plus rapidement que l’<a target="_blank" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports">OMS</a> et l’agence européenne <a target="_blank" href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide">ECDC</a>, <a target="_blank" href="https://github.com/CSSEGISandData/COVID-19/issues">commet cependant souvent des erreurs</a>.
+					Ecarté en raison des critères (pays comptant plus d’un million d’habitants), le Luxembourg serait encore au-dessus avec 1808 cas par million d’habitants (le duché comptait 600 000 habitants en 2018).</p>
+				<p>En décès par million d’habitants, la Suisse serait en 6e position, bien que l’épidémie n’ait atteint le pays que le 25 février (contre le 31 janvier pour l’Italie).</p>
 
-
-				<!--<div class="text-center form-check">
+				<!-- <div class="text-center form-check">
 					<input type="checkbox" class="form-check-input" id="displayChina">
-					<label class="form-check-label" for="displayChina">Montrer la Chine</label>
-				</div>-->
+					<label class="form-check-label" for="displayChina">Décès par Mio d’habitant</label>
+				</div> -->
 
 				<p class="text-center no-margin"><b>Date:</b> <span class="date">mercredi 11 mars 2020</span> <span class="horizontal-spacer"></span><i class="fa fa-undo reload" aria-hidden="true"></i></p>
 
 				<div id="animatedBarChart"></div>
-				<div>Cas confirmés cumulés (sans prise en compte des guérisons) de Covid-19 pour un million d’habitants. Seuls les pays comptant plus de 1000 cas confirmés sont pris en compte.</div>
-				<div class="source"><b>Correction du 24 mars:</b> le fichier de l’université Johns-Hopkins utilisé précédemment contenait des données erronnées pour un grand nombre de pays, dont la Suisse et l’Italie.</div>
+				<div>Cas confirmés cumulés (sans prise en compte des guérisons) de Covid-19 pour un million d’habitants. Seuls les pays comptant plus d’un million d’habitants et plus de 100 cas confirmés sont pris en compte.</div>
 				<div class="source"><b>Source:</b>
 					<a target="_blank" href="https://github.com/CSSEGISandData/COVID-19">Université Johns-Hopkins</a>, population 2018 <a href="https://data.worldbank.org/indicator/sp.pop.totl" target="_blank">selon la Banque mondiale</a>, données retraitées par <i>Le Temps</i></div>
 				</div>
@@ -143,7 +142,6 @@
 			</div>
 		</div>
 		<div class="col-lg-12">
-			<div class="source"><b>Correction du 24 mars:</b> une version précédente de l’infographie ne tenait pas compte de la population de nationalité étrangère. </div>
 			<div class="source"><b>Note:</b> les données cantonales manquantes sont substituées par celles du jour précédent. Elles sont indiquées par des cercles oranges lorsque l’option «valeurs absolues» est cochée. L’Office fédéral de la santé publique (OFSP) fournit des rapports quotidiens en PDF, mais ne publie pas les données brutes. Les tests systématiques ont été interrompus le 15 mars. Cette infographie est mise à jour grâce aux compilations de tweets de l’OFSP et de pages d’information cantonales par l’informaticien Daniel Probst.</div>
 			<div class="source"><b>Source:</b> <a target="_blank" href="https://www.corona-data.ch">corona-data.ch</a>, cantons suisses. Population dans les cantons: <a target="_blank" href="https://www.bfs.admin.ch/bfs/fr/home/statistiques/population/effectif-evolution/population.assetdetail.9486047.html">chiffres définitifs 2018 de l’OFS</a></div>
 		</div>
@@ -155,7 +153,6 @@
 			<h5>Les dix cantons suisses comptant le plus de cas par habitant</h5>
 			<p>Le Tessin, Genève et Vaud sont les cantons qui comptaient le plus de cas confirmés pour 100 000 habitants le dimanche 22 mars. Ce graphique est actualisé lorsque des données complètes par canton le permettent.</p>
 				<div class="c3-chart" id="chart-swiss-cantons"></div>
-				<div class="source"><b>Correction du 24 mars:</b> une version précédente de l’infographie ne tenait pas compte de la population de nationalité étrangère. </div>
 			<div class="source"><b>Source:</b> <a target="_blank" href="https://www.corona-data.ch">corona-data.ch</a>, cantons suisses. Population dans les cantons: <a target="_blank" href="https://www.bfs.admin.ch/bfs/fr/home/statistiques/population/effectif-evolution/population.assetdetail.9486047.html">chiffres définitifs 2018 de l’OFS</a></div>
 		</div>
 	</div>
@@ -164,10 +161,6 @@
 	<!-- bloc texte -->
 	<div class="row text padding-bottom">
 		<div class="offset-md-2 col-md-8 col-sm-12">
-
-			<p>
-
-			</p>
 
 			<h3>Le Covid-19 en cinq questions</h3>
 
@@ -236,11 +229,20 @@
 							<p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/surfaces-coronavirus-persistetil-plus-longtemps" target="_blank" rel="noopener">Le coronavirus, plus plastique que carton</a></p>
 						</div>
 					</li>
-
-
 					<!-- end qa li -->
 				</ul>
 			</div>
+
+			<!-- <p><b>A consulter également:</b> <a target="_blank" href="https://labs.letemps.ch/interactive/2020/covid-trends/">Covid-19: histoire d’une médiatisation
+			</a></p>
+			<div class="text-center" id="corona-search">
+				<a target="_blank" href="https://labs.letemps.ch/interactive/2020/covid-trends/">
+				<video loop="true" muted="true" autoplay="true" playsinline="">
+					<source src="img/apercu_covid-trends.mp4" type="video/mp4">
+					Votre navigateur ne supporte pas les vidéos HTML.
+				</video>
+				</a>
+			</div> -->
 
 		</div>
 	</div> <!-- fin bloc texte -->
@@ -374,7 +376,7 @@ $(document).ready(function() {
 			$('.warn_error').text('Signaler une erreur');
 			$('<span>| </span>').insertBefore('.warn_error')
 			$('.warn_error').attr('href', 'mailto:' + data['contact'] + '@letemps.ch');
-			$('.deaths_total').text(data['deaths_total'])
+			$('.deaths_total').text( format( data['deaths_total'] ) )
 			$('.confirmed_total').text( format( data['confirmed_total'] ) )
 			$('.confirmed_total_floor').text( format( Math.floor(data['confirmed_total'] / 1000) * 1000 ) )
 			$('.recovered_total').text( format( data['recovered_total'] ) )
