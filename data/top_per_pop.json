@@ -1,502 +1,542 @@
 [
  {
-  "date":"2020-03-14",
-  "confirmed_per_mio":350.1,
-  "country":"Italie"
- },
- {
-  "date":"2020-03-14",
-  "confirmed_per_mio":205.1,
-  "country":"Norv\u00e8ge"
- },
- {
-  "date":"2020-03-14",
-  "confirmed_per_mio":159.6,
-  "country":"Suisse"
- },
- {
-  "date":"2020-03-14",
-  "confirmed_per_mio":156.6,
-  "country":"Cor\u00e9e du Sud"
- },
- {
-  "date":"2020-03-14",
-  "confirmed_per_mio":155.6,
-  "country":"Iran"
- },
- {
-  "date":"2020-03-14",
-  "confirmed_per_mio":136.8,
-  "country":"Espagne"
- },
- {
-  "date":"2020-03-14",
-  "confirmed_per_mio":67.1,
-  "country":"France"
- },
- {
-  "date":"2020-03-14",
-  "confirmed_per_mio":58.1,
-  "country":"Chine"
- },
- {
-  "date":"2020-03-14",
-  "confirmed_per_mio":55.3,
-  "country":"Allemagne"
- },
- {
-  "date":"2020-03-14",
-  "confirmed_per_mio":17.2,
-  "country":"Royaume-Uni"
- },
- {
-  "date":"2020-03-15",
-  "confirmed_per_mio":409.5,
-  "country":"Italie"
- },
- {
-  "date":"2020-03-15",
-  "confirmed_per_mio":258.3,
-  "country":"Suisse"
- },
- {
-  "date":"2020-03-15",
-  "confirmed_per_mio":229.8,
-  "country":"Norv\u00e8ge"
- },
- {
-  "date":"2020-03-15",
-  "confirmed_per_mio":170.4,
-  "country":"Iran"
- },
- {
-  "date":"2020-03-15",
-  "confirmed_per_mio":166.9,
-  "country":"Espagne"
- },
- {
-  "date":"2020-03-15",
-  "confirmed_per_mio":158.1,
-  "country":"Cor\u00e9e du Sud"
- },
- {
-  "date":"2020-03-15",
-  "confirmed_per_mio":100.4,
-  "country":"Su\u00e8de"
- },
- {
-  "date":"2020-03-15",
-  "confirmed_per_mio":69.9,
-  "country":"Allemagne"
- },
- {
-  "date":"2020-03-15",
-  "confirmed_per_mio":67.7,
-  "country":"France"
- },
- {
-  "date":"2020-03-15",
-  "confirmed_per_mio":66.0,
-  "country":"Pays-Bas"
- },
- {
-  "date":"2020-03-16",
-  "confirmed_per_mio":463.0,
-  "country":"Italie"
- },
- {
-  "date":"2020-03-16",
-  "confirmed_per_mio":258.3,
-  "country":"Suisse"
- },
- {
-  "date":"2020-03-16",
-  "confirmed_per_mio":250.8,
-  "country":"Norv\u00e8ge"
- },
- {
-  "date":"2020-03-16",
-  "confirmed_per_mio":212.8,
-  "country":"Espagne"
- },
- {
-  "date":"2020-03-16",
-  "confirmed_per_mio":183.3,
-  "country":"Iran"
- },
- {
-  "date":"2020-03-16",
-  "confirmed_per_mio":159.5,
-  "country":"Cor\u00e9e du Sud"
- },
- {
-  "date":"2020-03-16",
-  "confirmed_per_mio":115.1,
-  "country":"Autriche"
- },
- {
-  "date":"2020-03-16",
-  "confirmed_per_mio":108.3,
-  "country":"Su\u00e8de"
- },
- {
-  "date":"2020-03-16",
-  "confirmed_per_mio":99.8,
-  "country":"France"
- },
- {
-  "date":"2020-03-16",
-  "confirmed_per_mio":92.6,
-  "country":"Belgique"
- },
- {
   "date":"2020-03-17",
   "confirmed_per_mio":521.4,
+  "death_per_mio":41.4189452175,
   "country":"Italie"
  },
  {
   "date":"2020-03-17",
   "confirmed_per_mio":317.0,
+  "death_per_mio":3.1703004376,
   "country":"Suisse"
  },
  {
   "date":"2020-03-17",
   "confirmed_per_mio":275.3,
+  "death_per_mio":0.5645107874,
   "country":"Norv\u00e8ge"
  },
  {
   "date":"2020-03-17",
   "confirmed_per_mio":251.4,
+  "death_per_mio":11.4074750295,
   "country":"Espagne"
  },
  {
   "date":"2020-03-17",
   "confirmed_per_mio":197.7,
+  "death_per_mio":12.0781998895,
   "country":"Iran"
  },
  {
   "date":"2020-03-17",
   "confirmed_per_mio":176.8,
+  "death_per_mio":0.6899589923,
   "country":"Danemark"
  },
  {
   "date":"2020-03-17",
+  "confirmed_per_mio":170.3,
+  "death_per_mio":0.0,
+  "country":"Estonie"
+ },
+ {
+  "date":"2020-03-17",
   "confirmed_per_mio":161.1,
+  "death_per_mio":1.5686956215,
   "country":"Cor\u00e9e du Sud"
  },
  {
   "date":"2020-03-17",
+  "confirmed_per_mio":157.8,
+  "death_per_mio":0.0,
+  "country":"Qatar"
+ },
+ {
+  "date":"2020-03-17",
   "confirmed_per_mio":150.6,
+  "death_per_mio":0.3390965811,
   "country":"Autriche"
- },
- {
-  "date":"2020-03-17",
-  "confirmed_per_mio":116.9,
-  "country":"Su\u00e8de"
- },
- {
-  "date":"2020-03-17",
-  "confirmed_per_mio":115.2,
-  "country":"France"
  },
  {
   "date":"2020-03-18",
   "confirmed_per_mio":591.0,
+  "death_per_mio":49.279112608,
   "country":"Italie"
  },
  {
   "date":"2020-03-18",
   "confirmed_per_mio":355.5,
+  "death_per_mio":3.2877189724,
   "country":"Suisse"
  },
  {
   "date":"2020-03-18",
   "confirmed_per_mio":297.7,
+  "death_per_mio":13.3336903252,
   "country":"Espagne"
  },
  {
   "date":"2020-03-18",
   "confirmed_per_mio":291.7,
+  "death_per_mio":1.1290215748,
   "country":"Norv\u00e8ge"
  },
  {
   "date":"2020-03-18",
   "confirmed_per_mio":212.2,
+  "death_per_mio":13.8752599946,
   "country":"Iran"
  },
  {
   "date":"2020-03-18",
+  "confirmed_per_mio":195.3,
+  "death_per_mio":0.0,
+  "country":"Estonie"
+ },
+ {
+  "date":"2020-03-18",
   "confirmed_per_mio":192.5,
+  "death_per_mio":0.6899589923,
   "country":"Danemark"
  },
  {
   "date":"2020-03-18",
   "confirmed_per_mio":186.1,
+  "death_per_mio":0.4521287749,
   "country":"Autriche"
  },
  {
   "date":"2020-03-18",
+  "confirmed_per_mio":163.1,
+  "death_per_mio":0.637170352,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "date":"2020-03-18",
   "confirmed_per_mio":162.9,
+  "death_per_mio":1.6267954593,
   "country":"Cor\u00e9e du Sud"
- },
- {
-  "date":"2020-03-18",
-  "confirmed_per_mio":148.6,
-  "country":"Allemagne"
- },
- {
-  "date":"2020-03-18",
-  "confirmed_per_mio":136.2,
-  "country":"France"
  },
  {
   "date":"2020-03-19",
   "confirmed_per_mio":679.0,
+  "death_per_mio":56.344989399,
   "country":"Italie"
  },
  {
   "date":"2020-03-19",
   "confirmed_per_mio":478.5,
+  "death_per_mio":4.8141599238,
   "country":"Suisse"
  },
  {
   "date":"2020-03-19",
   "confirmed_per_mio":384.5,
+  "death_per_mio":17.7639855055,
   "country":"Espagne"
  },
  {
   "date":"2020-03-19",
   "confirmed_per_mio":328.5,
+  "death_per_mio":1.3171918373,
   "country":"Norv\u00e8ge"
  },
  {
   "date":"2020-03-19",
   "confirmed_per_mio":227.5,
+  "death_per_mio":0.6781931623,
   "country":"Autriche"
  },
  {
   "date":"2020-03-19",
   "confirmed_per_mio":225.0,
+  "death_per_mio":15.6967698969,
   "country":"Iran"
  },
  {
   "date":"2020-03-19",
   "confirmed_per_mio":211.3,
+  "death_per_mio":1.0349384884,
   "country":"Danemark"
  },
  {
   "date":"2020-03-19",
+  "confirmed_per_mio":202.1,
+  "death_per_mio":0.0,
+  "country":"Estonie"
+ },
+ {
+  "date":"2020-03-19",
   "confirmed_per_mio":184.7,
+  "death_per_mio":0.5305812438,
   "country":"Allemagne"
  },
  {
   "date":"2020-03-19",
-  "confirmed_per_mio":165.9,
-  "country":"Cor\u00e9e du Sud"
- },
- {
-  "date":"2020-03-19",
-  "confirmed_per_mio":163.8,
-  "country":"France"
+  "confirmed_per_mio":177.1,
+  "death_per_mio":0.637170352,
+  "country":"Bahre\u00efn"
  },
  {
   "date":"2020-03-20",
   "confirmed_per_mio":778.1,
+  "death_per_mio":66.7204103544,
   "country":"Italie"
  },
  {
   "date":"2020-03-20",
   "confirmed_per_mio":621.6,
+  "death_per_mio":6.3406008753,
   "country":"Suisse"
  },
  {
   "date":"2020-03-20",
   "confirmed_per_mio":436.8,
+  "death_per_mio":22.3226950389,
   "country":"Espagne"
  },
  {
   "date":"2020-03-20",
   "confirmed_per_mio":360.2,
+  "death_per_mio":1.3171918373,
   "country":"Norv\u00e8ge"
  },
  {
   "date":"2020-03-20",
   "confirmed_per_mio":269.9,
+  "death_per_mio":0.6781931623,
   "country":"Autriche"
  },
  {
   "date":"2020-03-20",
   "confirmed_per_mio":240.1,
+  "death_per_mio":17.5182797993,
   "country":"Iran"
  },
  {
   "date":"2020-03-20",
   "confirmed_per_mio":239.3,
+  "death_per_mio":0.8079305303,
   "country":"Allemagne"
  },
  {
   "date":"2020-03-20",
   "confirmed_per_mio":230.6,
+  "death_per_mio":1.5524077326,
   "country":"Danemark"
  },
  {
   "date":"2020-03-20",
-  "confirmed_per_mio":197.6,
-  "country":"Belgique"
+  "confirmed_per_mio":214.3,
+  "death_per_mio":0.0,
+  "country":"Estonie"
  },
  {
   "date":"2020-03-20",
-  "confirmed_per_mio":190.5,
-  "country":"France"
+  "confirmed_per_mio":197.6,
+  "death_per_mio":3.2393433483,
+  "country":"Belgique"
  },
  {
   "date":"2020-03-21",
   "confirmed_per_mio":886.6,
+  "death_per_mio":79.8427529662,
   "country":"Italie"
  },
  {
   "date":"2020-03-21",
   "confirmed_per_mio":772.0,
+  "death_per_mio":8.8063901045,
   "country":"Suisse"
  },
  {
   "date":"2020-03-21",
   "confirmed_per_mio":543.1,
+  "death_per_mio":29.4282892411,
   "country":"Espagne"
  },
  {
   "date":"2020-03-21",
   "confirmed_per_mio":398.5,
+  "death_per_mio":1.3171918373,
   "country":"Norv\u00e8ge"
  },
  {
   "date":"2020-03-21",
   "confirmed_per_mio":318.1,
+  "death_per_mio":0.9042575497,
   "country":"Autriche"
  },
  {
   "date":"2020-03-21",
   "confirmed_per_mio":267.9,
+  "death_per_mio":1.0129278291,
   "country":"Allemagne"
  },
  {
   "date":"2020-03-21",
   "confirmed_per_mio":252.0,
+  "death_per_mio":19.0219423362,
   "country":"Iran"
  },
  {
   "date":"2020-03-21",
   "confirmed_per_mio":246.5,
+  "death_per_mio":5.8658379551,
   "country":"Belgique"
  },
  {
   "date":"2020-03-21",
   "confirmed_per_mio":244.9,
+  "death_per_mio":2.2423667249,
   "country":"Danemark"
  },
  {
   "date":"2020-03-21",
-  "confirmed_per_mio":215.9,
-  "country":"France"
+  "confirmed_per_mio":231.7,
+  "death_per_mio":0.0,
+  "country":"Estonie"
  },
  {
   "date":"2020-03-22",
   "confirmed_per_mio":978.6,
+  "death_per_mio":90.6153192213,
   "country":"Italie"
  },
  {
   "date":"2020-03-22",
   "confirmed_per_mio":877.6,
+  "death_per_mio":11.5070164033,
   "country":"Suisse"
  },
  {
   "date":"2020-03-22",
   "confirmed_per_mio":615.7,
+  "death_per_mio":37.9250389347,
   "country":"Espagne"
  },
  {
   "date":"2020-03-22",
   "confirmed_per_mio":448.8,
+  "death_per_mio":1.3171918373,
   "country":"Norv\u00e8ge"
  },
  {
   "date":"2020-03-22",
   "confirmed_per_mio":404.9,
+  "death_per_mio":1.8085150995,
   "country":"Autriche"
  },
  {
   "date":"2020-03-22",
   "confirmed_per_mio":299.9,
+  "death_per_mio":1.1335144754,
   "country":"Allemagne"
  },
  {
   "date":"2020-03-22",
   "confirmed_per_mio":297.8,
+  "death_per_mio":6.5662365169,
   "country":"Belgique"
  },
  {
   "date":"2020-03-22",
   "confirmed_per_mio":264.5,
+  "death_per_mio":20.5989542651,
   "country":"Iran"
  },
  {
   "date":"2020-03-22",
   "confirmed_per_mio":261.1,
+  "death_per_mio":2.2423667249,
   "country":"Danemark"
  },
  {
   "date":"2020-03-22",
-  "confirmed_per_mio":244.7,
-  "country":"Pays-Bas"
+  "confirmed_per_mio":246.8,
+  "death_per_mio":0.0,
+  "country":"Estonie"
  },
  {
   "date":"2020-03-23",
   "confirmed_per_mio":1057.8,
+  "death_per_mio":100.5604994354,
   "country":"Italie"
  },
  {
   "date":"2020-03-23",
   "confirmed_per_mio":1032.7,
+  "death_per_mio":14.0902241672,
   "country":"Suisse"
  },
  {
   "date":"2020-03-23",
   "confirmed_per_mio":752.0,
+  "death_per_mio":49.4609283172,
   "country":"Espagne"
  },
  {
   "date":"2020-03-23",
   "confirmed_per_mio":505.7,
+  "death_per_mio":2.373676068,
   "country":"Autriche"
  },
  {
   "date":"2020-03-23",
   "confirmed_per_mio":493.2,
+  "death_per_mio":1.8817026247,
   "country":"Norv\u00e8ge"
  },
  {
   "date":"2020-03-23",
   "confirmed_per_mio":350.4,
+  "death_per_mio":1.4832157497,
   "country":"Allemagne"
  },
  {
   "date":"2020-03-23",
   "confirmed_per_mio":327.7,
+  "death_per_mio":7.7043841798,
   "country":"Belgique"
  },
  {
   "date":"2020-03-23",
   "confirmed_per_mio":300.4,
+  "death_per_mio":12.8681215785,
   "country":"France"
  },
  {
   "date":"2020-03-23",
   "confirmed_per_mio":281.8,
+  "death_per_mio":22.1515163966,
   "country":"Iran"
  },
  {
   "date":"2020-03-23",
   "confirmed_per_mio":276.5,
+  "death_per_mio":12.4194642719,
   "country":"Pays-Bas"
+ },
+ {
+  "date":"2020-03-24",
+  "confirmed_per_mio":1159.7,
+  "death_per_mio":14.3250612367,
+  "country":"Suisse"
+ },
+ {
+  "date":"2020-03-24",
+  "confirmed_per_mio":1144.7,
+  "death_per_mio":112.8554560061,
+  "country":"Italie"
+ },
+ {
+  "date":"2020-03-24",
+  "confirmed_per_mio":853.6,
+  "death_per_mio":60.0979172283,
+  "country":"Espagne"
+ },
+ {
+  "date":"2020-03-24",
+  "confirmed_per_mio":597.1,
+  "death_per_mio":3.1649014241,
+  "country":"Autriche"
+ },
+ {
+  "date":"2020-03-24",
+  "confirmed_per_mio":538.7,
+  "death_per_mio":2.2580431497,
+  "country":"Norv\u00e8ge"
+ },
+ {
+  "date":"2020-03-24",
+  "confirmed_per_mio":397.8,
+  "death_per_mio":1.8932103472,
+  "country":"Allemagne"
+ },
+ {
+  "date":"2020-03-24",
+  "confirmed_per_mio":373.8,
+  "death_per_mio":10.6810780675,
+  "country":"Belgique"
+ },
+ {
+  "date":"2020-03-24",
+  "confirmed_per_mio":337.7,
+  "death_per_mio":16.4508932477,
+  "country":"France"
+ },
+ {
+  "date":"2020-03-24",
+  "confirmed_per_mio":323.8,
+  "death_per_mio":16.0756616977,
+  "country":"Pays-Bas"
+ },
+ {
+  "date":"2020-03-24",
+  "confirmed_per_mio":303.3,
+  "death_per_mio":23.6429540348,
+  "country":"Iran"
+ },
+ {
+  "date":"2020-03-25",
+  "confirmed_per_mio":1279.5,
+  "death_per_mio":17.9650358132,
+  "country":"Suisse"
+ },
+ {
+  "date":"2020-03-25",
+  "confirmed_per_mio":1230.9,
+  "death_per_mio":124.1575493276,
+  "country":"Italie"
+ },
+ {
+  "date":"2020-03-25",
+  "confirmed_per_mio":1059.7,
+  "death_per_mio":78.0545242635,
+  "country":"Espagne"
+ },
+ {
+  "date":"2020-03-25",
+  "confirmed_per_mio":631.6,
+  "death_per_mio":3.3909658115,
+  "country":"Autriche"
+ },
+ {
+  "date":"2020-03-25",
+  "confirmed_per_mio":580.3,
+  "death_per_mio":2.6343836746,
+  "country":"Norv\u00e8ge"
+ },
+ {
+  "date":"2020-03-25",
+  "confirmed_per_mio":450.1,
+  "death_per_mio":2.4840849141,
+  "country":"Allemagne"
+ },
+ {
+  "date":"2020-03-25",
+  "confirmed_per_mio":432.2,
+  "death_per_mio":15.5838680001,
+  "country":"Belgique"
+ },
+ {
+  "date":"2020-03-25",
+  "confirmed_per_mio":382.2,
+  "death_per_mio":19.8993109793,
+  "country":"France"
+ },
+ {
+  "date":"2020-03-25",
+  "confirmed_per_mio":373.6,
+  "death_per_mio":20.7184520798,
+  "country":"Pays-Bas"
+ },
+ {
+  "date":"2020-03-25",
+  "confirmed_per_mio":330.3,
+  "death_per_mio":25.3911145451,
+  "country":"Iran"
  }
 ]
