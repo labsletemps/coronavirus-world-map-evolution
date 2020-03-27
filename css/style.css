@@ -480,3 +480,9 @@ select:focus, textarea:focus, input:focus {
 #faq button.active i.fa{
 	transform: rotate(180deg);
 }
+#animatedBarChart .domain, #animatedBarChart .y line{
+	display: none;
+}
+#animatedBarChart .x line {
+	display: block;
+}
