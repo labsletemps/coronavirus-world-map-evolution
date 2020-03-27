@@ -5,19 +5,18 @@
 	var current_timestamp = '2020-03-07';
 
 	var thousandsLocale = {"thousands": "\xa0"}
-	var locale = {
-	"dateTime": "%A %e %B %Y",
-	"date": "%d/%m/%Y",
-	"time": "%H:%M:%S",
-	"periods": ["AM", "PM"],
-	"days": ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"],
-	"shortDays": ["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."],
-	"months": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
-	"shortMonths": ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
-}
-	d3.timeFormatDefaultLocale(locale);
-	// var numberFormat = d3.locale(thousandsLocale);
-	// console.log(numberFormat(50000));
+	var timeLocale = {
+		"dateTime": "%A %e %B %Y",
+		"date": "%d/%m/%Y",
+		"time": "%H:%M:%S",
+		"periods": ["AM", "PM"],
+		"days": ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"],
+		"shortDays": ["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."],
+		"months": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
+		"shortMonths": ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
+	}
+	d3.timeFormatDefaultLocale(timeLocale);
+
 	var locale = d3.formatLocale({
 	  decimal: ",",
 	  thousands: " ",
@@ -25,7 +24,7 @@
 	});
 	var format = locale.format(",d");
 
-	var formatDate = d3.timeFormat("%c");
+	var timeFormat = d3.timeFormat("%c");
 
 	var animTimeoutCH;
 	var dateCounter = 0;
@@ -346,12 +345,11 @@ Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?
 				if(d.status != ''){
 					addendum = '<p><span class="stats">Pas de données pour cette date:</span> les données du jour précédent sont indiquées</p>';
 				}
-				// formatDate
 				return `<h4>${d.name}</h4>
 					<p><span class="stats">Cas confirmés cumulés:</span> ${parseInt( d.confirmed )}</p>
 					<p><span class="stats">Taux pour 100 000 habitants:</span> ${d.taux} (soit ${d.perc}%)</p>
 					${addendum}
-					<p><span class="stats">Date:</span> ${ d.timestamp }</p>
+					<p><span class="stats">Date:</span> ${ timeFormat( new Date(d.timestamp) ) }</p>
 
 				`;})
 				.style('opacity', 1);
