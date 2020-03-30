@@ -193,7 +193,7 @@ Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?
 					// dry: tomorrow
 					var textLabels = svg
 					.selectAll(".textLabels")
-					.data( data.filter(function(d){ return d.timestamp == timestamp}) );
+					.data( data.filter(function(d){ return (d.timestamp == timestamp && d.n > 0)}) );
 
 					var textEnter = textLabels
 						.enter()
