@@ -1,3 +1,15 @@
+/**
+
+Copyright 2020 Le Temps
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+*/
+
 class multilineChart {
   constructor(opts = {}) {
     this.selector = opts.selector ? opts.selector : '#multilineChart';
@@ -72,7 +84,7 @@ class multilineChart {
   }
 
   draw() {
-    //update the scales
+    // Update scales
     this.xscale.domain(d3.extent(this.data, function(d) { return d.country_day; })).nice();
 
     this.yscale.domain([
@@ -82,14 +94,11 @@ class multilineChart {
 
     this.zscale.domain(this.countries.map(function(c) { return c.id; }));
 
-    //render the axis
+    // Render axis
     this.g_xaxis.transition().call(this.xaxis);
     this.g_yaxis.transition().call(this.yaxis);
 
-    // Render the chart
-
-    /* ------------------------- ------------------------- ------------------------- ------------------------- */
-
+    // Render chart
     var theChart = this;
 
     var lineStatic = d3.line()
@@ -115,18 +124,6 @@ class multilineChart {
         .attr("dy", "0.35em")
         .attr("class", "country-label")
         .text(function(d) { return d.id; });
-
-    this.addFatLine();
-
-    /* ------------------------- ------------------------- ------------------------- ------------------------- */
-
-
-           /*new ScrollMagic.Scene({triggerElement: "#chartDayOffset", duration: 300})
-             // .setClassToggle("#animatedBarChart", "bounce")
-             .addTo(controller)
-             .on("enter", function(){
-               addSwitzerland();
-             });*/
   }
 
   addFatLine(){
@@ -153,6 +150,5 @@ class multilineChart {
           .ease(d3.easeCubic)
           .attr("stroke-dashoffset", 1);
       }
-
 
 }
