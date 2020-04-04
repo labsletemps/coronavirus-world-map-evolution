@@ -14,14 +14,19 @@ class multilineChart {
   constructor(opts = {}) {
     this.selector = opts.selector ? opts.selector : '#multilineChart';
     this.margin = opts.margin ? opts.margin : { top: 40, bottom: 30, left: 50, right: 100 };
-    this.xAxisFormat = opts.xAxisFormat ? opts.xAxisFormat : "%d";
+    this.xTickFormat = opts.xTickFormat ? opts.xTickFormat : "d";
+
+    this.timeScale = opts.timeScale ? opts.timeScale : false;
+
     this.file = opts.file;
+    this.fatLineWidth = opts.fatLineWidth ? opts.fatLineWidth : 3;
+    this.needsFatLine = false;
     this.data = null;
     this.mouseOverTimeout = null;
     this.countries = [];
     this.selectedColumns = ['Corée du Sud', 'Etats-Unis',
-     'France', 'Italie', 'Royaume-Uni',
-     'Suisse'];
+    'France', 'Italie', 'Royaume-Uni',
+    'Suisse'];
 
     var container = d3.select(this.selector).node();
     if(!container){
@@ -29,9 +34,10 @@ class multilineChart {
     }else{
       this.width = parseInt(d3.select(this.selector).style("width")) - this.margin.left - this.margin.right;
       this.height = 400 - this.margin.top - this.margin.bottom;
+      this.tickNumber = 4;
 
       var svg = d3
-        .select("#chartDayOffset")
+        .select(this.selector)
         .append("svg")
         .attr("width", this.width + this.margin.left + this.margin.right)
         .attr("height", this.height + this.margin.top + this.margin.bottom);
@@ -47,23 +53,23 @@ class multilineChart {
     d3.csv(this.file).then( function(data) {
       theChart.data = data;
       data.forEach(function(d) {
-        d.country_day = +d.country_day;
+        if(theChart.timeScale){
+          d.xValue = new Date(d.timestamp);
+        }else{
+          d.xValue = +d.country_day;
+        }
       });
 
       theChart.countries = data.columns.slice(1).map(function(id) {
-          return {
-            id: id,
-            values: data.map(function(d) {
-              return {day: d.country_day, value: parseFloat(d[id])};
-            })
-          };
-        });
+        return {
+          id: id,
+          values: data.map(function(d) {
+            return {day: d.xValue, value: parseFloat(d[id])};
+          })
+        };
+      });
       theChart.draw();
     });
-  }
-
-  addLine(){
-
   }
 
   createScales(){
@@ -72,20 +78,35 @@ class multilineChart {
     var countries;
 
     // Scales setup
-    this.xscale = d3.scaleLinear().range([0, this.width]);
+    if(this.timeScale){
+      this.xscale = d3.scaleTime().range([0, this.width]);
+    }else{
+      this.xscale = d3.scaleLinear().range([0, this.width]);
+    }
+
     this.yscale = d3.scaleLinear().range([this.height, 0]);
     this.zscale = d3.scaleOrdinal(d3.schemeCategory10);
 
     // Axis setup
-    this.xaxis = d3.axisBottom().scale(this.xscale);
+    if(this.timeScale){
+      this.xaxis = d3.axisBottom().scale(this.xscale).ticks(this.tickNumber).tickFormat( d3.timeFormat("%d %b") );
+    }else{
+      this.xaxis = d3.axisBottom().scale(this.xscale);
+    }
+
     this.g_xaxis = this.g.append("g").attr("class", "x axis").attr("transform", "translate(0," + this.height + ")");
-    this.yaxis = d3.axisLeft().scale(this.yscale).tickFormat( d3.format("d") );
+    this.yaxis = d3.axisLeft().scale(this.yscale).tickFormat( d3.format(this.xTickFormat) );
     this.g_yaxis = this.g.append("g").attr("class", "y axis");
   }
 
   draw() {
     // Update scales
-    this.xscale.domain(d3.extent(this.data, function(d) { return d.country_day; })).nice();
+    if(this.timeScale){
+      this.xscale.domain(d3.extent(this.data, function(d) { return d.xValue; }));
+    }else{
+      this.xscale.domain(d3.extent(this.data, function(d) { return d.xValue; })).nice;
+    }
+
 
     this.yscale.domain([
       d3.min(this.countries, function(c) { return d3.min(c.values, function(d) { return d.value; }); }),
@@ -102,10 +123,10 @@ class multilineChart {
     var theChart = this;
 
     var lineStatic = d3.line()
-        .defined(function(d){ return !isNaN(d.value); })
-        .curve(d3.curveBasis)
-        .x(function(d) { return theChart.xscale(d.day); })
-        .y(function(d) { return theChart.yscale(d.value); });
+      .defined(function(d){ return !isNaN(d.value); })
+      .curve(d3.curveBasis)
+      .x(function(d) { return theChart.xscale(d.day); })
+      .y(function(d) { return theChart.yscale(d.value); });
 
     var country = this.g.selectAll(".city")
       .data(this.countries)
@@ -118,37 +139,47 @@ class multilineChart {
       .style("stroke", function(d) { return theChart.zscale(d.id); });
 
     country.append("text")
-        .datum(function(d) { return {id: d.id, value: d.values[d.values.filter(function(d){ return !isNaN(d.value);}).length - 1]}; })
-        .attr("transform", function(d) { return "translate(" + theChart.xscale(d.value.day) + "," + theChart.yscale(d.value.value) + ")"; })
-        .attr("x", 3)
-        .attr("dy", "0.35em")
-        .attr("class", "country-label")
-        .text(function(d) { return d.id; });
+      .datum(function(d) { return {id: d.id, value: d.values[d.values.filter(function(d){ return !isNaN(d.value);}).length - 1]}; })
+      .attr("transform", function(d) { return "translate(" + theChart.xscale(d.value.day) + "," + theChart.yscale(d.value.value) + ")"; })
+      .attr("x", 3)
+      .attr("dy", "0.35em")
+      .attr("class", "country-label")
+      .text(function(d) { return d.id; });
+
+    if(this.needsFatLine){
+      this.addFatLine();
+    }
   }
 
   addFatLine(){
-    var theChart = this;
+    if(!this.data){
+      // Wait for fetch
+      this.needsFatLine = true;
+    }else{
+      var theChart = this;
 
-    var fatLine = d3.line()
-      .defined(function(d){ return d.Suisse !== ''; })
-      .curve(d3.curveBasis)
-      .x(function(d) { return theChart.xscale(d.country_day); })
-      .y(function(d) { return theChart.yscale(d.Suisse); });
+      var fatLine = d3.line()
+        .defined(function(d){ return d.Suisse !== ''; })
+        .curve(d3.curveBasis)
+        .x(function(d) { return theChart.xscale(d.xValue); })
+        .y(function(d) { return theChart.yscale(d.Suisse); });
 
-    var path = this.g.append("path")
+      var path = this.g.append("path")
         .attr("d", fatLine( this.data.filter(function(d){ return d.Suisse != 0;})) )
         .attr("stroke", "#b80021")
-        .attr("stroke-width", "4")
+        .attr("stroke-width", this.fatLineWidth)
         .attr("fill", "none");
 
       var totalLength = path.node().getTotalLength();
-      path
-        .attr("stroke-dasharray", totalLength + " " + totalLength)
+
+      // Animate
+      path.attr("stroke-dasharray", totalLength + " " + totalLength)
         .attr("stroke-dashoffset", totalLength)
         .transition()
-          .duration(4000)
-          .ease(d3.easeCubic)
-          .attr("stroke-dashoffset", 1);
-      }
+        .duration(4000)
+        .ease(d3.easeCubic)
+        .attr("stroke-dashoffset", 1);
+    }
+  }
 
 }
