@@ -5,19 +5,18 @@
 	var current_timestamp = '2020-03-07';
 
 	var thousandsLocale = {"thousands": "\xa0"}
-	var locale = {
-	"dateTime": "%A %e %B %Y",
-	"date": "%d/%m/%Y",
-	"time": "%H:%M:%S",
-	"periods": ["AM", "PM"],
-	"days": ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"],
-	"shortDays": ["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."],
-	"months": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
-	"shortMonths": ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
-}
-	d3.timeFormatDefaultLocale(locale);
-	// var numberFormat = d3.locale(thousandsLocale);
-	// console.log(numberFormat(50000));
+	var timeLocale = {
+		"dateTime": "%A %e %B %Y",
+		"date": "%d/%m/%Y",
+		"time": "%H:%M:%S",
+		"periods": ["AM", "PM"],
+		"days": ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"],
+		"shortDays": ["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."],
+		"months": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
+		"shortMonths": ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
+	}
+	d3.timeFormatDefaultLocale(timeLocale);
+
 	var locale = d3.formatLocale({
 	  decimal: ",",
 	  thousands: " ",
@@ -25,7 +24,7 @@
 	});
 	var format = locale.format(",d");
 
-	var formatDate = d3.timeFormat("%c");
+	var timeFormat = d3.timeFormat("%c");
 
 	var animTimeoutCH;
 	var dateCounter = 0;
@@ -41,7 +40,8 @@
 	    .scale(12000)
 	    .translate([ width/2, height/2 ]);
 	var dataById = d3.map();
-Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?1585069707543")]).then(function(data) {
+
+	Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?1586362016228")]).then(function(data) {
 		var geodata = data[0];
 		var data = data[1];
 
@@ -194,7 +194,7 @@ Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?
 					// dry: tomorrow
 					var textLabels = svg
 					.selectAll(".textLabels")
-					.data( data.filter(function(d){ return d.timestamp == timestamp}) );
+					.data( data.filter(function(d){ return (d.timestamp == timestamp && d.n > 0)}) );
 
 					var textEnter = textLabels
 						.enter()
@@ -346,12 +346,11 @@ Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?
 				if(d.status != ''){
 					addendum = '<p><span class="stats">Pas de données pour cette date:</span> les données du jour précédent sont indiquées</p>';
 				}
-				// formatDate
 				return `<h4>${d.name}</h4>
 					<p><span class="stats">Cas confirmés cumulés:</span> ${parseInt( d.confirmed )}</p>
 					<p><span class="stats">Taux pour 100 000 habitants:</span> ${d.taux} (soit ${d.perc}%)</p>
 					${addendum}
-					<p><span class="stats">Date:</span> ${ d.timestamp }</p>
+					<p><span class="stats">Date:</span> ${ timeFormat( new Date(d.timestamp) ) }</p>
 
 				`;})
 				.style('opacity', 1);
@@ -365,6 +364,7 @@ Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?
 				values: availableDates,
 				prettify: function(d){ return d},
 				onChange: function(data){
+					dateCounter = availableDates.indexOf(data.from_value);
 					update_date( data.from_value );
 				}
 		});
@@ -455,7 +455,7 @@ Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?
 				bindto: "#time-serie-chart-ch",
 
 				data: {
-					url: 'data/c3-linegraph-ch.csv?1585069707543',
+					url: 'data/c3-linegraph-ch.csv?1586362016228',
 					type: 'line',
 					x: 'timestamp',
 					colors: {
@@ -471,8 +471,9 @@ Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?
 						},
 					},
 					y: {
+						max: 25000,
 						tick: {
-							values: [0, 2000, 4000, 6000, 8000],
+							values: [0, 5000, 10000, 15000, 20000, 25000],
 							// format: d3.format(".0s")
 						}
 					}
@@ -481,10 +482,11 @@ Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?
 					y: {
 						lines: [
 							{ value: 0},
-							{ value: 2000},
-							{ value: 4000},
-							{ value: 6000},
-							{ value: 8000}
+							{ value: 5000},
+							{ value: 10000},
+							{ value: 15000},
+							{ value: 20000},
+							{ value: 25000}
 						]
 					}
 				},
@@ -504,6 +506,7 @@ Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?
 									$('.pause-ch').removeClass('pause-ch')
 								}
 								lastIndex = index;
+								dateCounter = index;
 							}
 							return value;
 						}

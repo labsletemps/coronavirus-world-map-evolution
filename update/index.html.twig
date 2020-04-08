@@ -12,8 +12,8 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/c3.min.css"/>
 
-	<link rel="stylesheet" type="text/css" href="css/style.css?1585069707542" />
-	<link rel="stylesheet" type="text/css" href="css/map.css?1585069707542" />
+	<link rel="stylesheet" type="text/css" href="css/style.css?1586362016227" />
+	<link rel="stylesheet" type="text/css" href="css/map.css?1586362016227" />
 	<link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.css" />
 	<style>
 	.c3-area {
@@ -39,77 +39,73 @@
 			<div class="offset-md-2 col-md-8 col-sm-12">
 				<h1 class="intro">L’expansion du nouveau coronavirus</h1>
 
-				<p class="lead">Le SARS-CoV-2 a causé <span class="deaths_total">____</span> décès et plus de <span class="confirmed_total_floor">_____</span> infections confirmées dans le monde. L’Italie est devenue le deuxième pays comptant le plus de cas, derrière la Chine</p>
+				<p class="lead">Le SARS-CoV-2 a causé <span class="deaths_total">____</span> décès et plus de <span class="confirmed_total_floor">_____</span> infections confirmées dans le monde. Il a atteint la Suisse le 25 février, quatre semaines après l’Italie. Suivi de la situation au jour le jour</p>
 
 				<p style="margin-bottom: 4px;"><b>Avertissement</b></p>
 				<ul>
-					<li>Nous pouvons difficilement maintenir à jour les chiffres détaillés pour la Suisse en raison de l'incapacité de l'OFSP à fournir des données fiables et actualisées.</li>
-					<li>La disponibilité des données, leur degré de précision et leur fiabilité varie de pays en pays.</li>
-					<li>Les cas confirmés ne correspondent qu’à une portion des cas réels. Selon les pays, le suivi du nombre de guérisons est très lacunaire.</li>
+					<li>La fiabilité et la disponibilité des données varie de pays en pays.</li>
+					<li>Les cas confirmés ne correspondent qu’à une portion des cas réels.</li>
+					<li>Les chiffres établis par les pays dépendent du nombre de tests effectués, de la qualité des tests et des critères retenus pour attribuer les décès au Covid-19.</li>
 				</ul>
 
 			</div>
 		</div>
 
-	<div class="row numbers text-center align-items-top margin-bottom outline worldmap">
-		<div class="col-12 group-label">
-			<h5>Situation dans le monde</h5>
-			<p>Données compilées le <b class="dashboardUpdate">11 mars à 0h50</b></p>
-		</div>
+	<div class="row numbers text-center align-items-top margin-bottom worldmap">
 
-		<div class="col-md-3 col-6">
-			<span class="big confirmed_total">_____</span><br>
-			<span class="label">cas confirmés cumulés</span>
-		</div>
-		<div class="col-md-3 col-6">
-			<span class="big existing_total">___</span><br>
-			<span class="label">cas encore existants</span>
-		</div>
-		<div class="col-md-3 col-6">
-			<span class="big recovered_total">___</span><br>
-			<span class="label">guérisons</span>
-		</div>
-		<div class="col-md-3 col-6">
-			<span class="big deaths_total">___</span><br>
-			<span class="label">décès</span>
-		</div>
+		<div class="col-12 col-sm-6 group-label border">
+			<div class="row">
+				<div class="col-12">
+					<h5>Le Covid-19 dans le monde</h5>
+				</div>
 
-		<div class="col-12">
-			<div class="source">Source:
-				<a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">Université Johns-Hopkins</a>
+				<div class="col-12 col-md-6">
+					<span class="big confirmed_total">_____</span><br>
+					<span class="label">cas confirmés</span>
+				</div>
+				<div class="col-12 col-md-6">
+					<span class="big deaths_total">___</span><br>
+					<span class="label">décès</span>
+				</div>
+
+				<div class="col-12 margin-top">
+					<p class="small">Mis à jour le <span class="dashboardUpdate">_____________</span>, source:
+						<a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">Université Johns-Hopkins</a></p>
+				</div>
+
 			</div>
 		</div>
-	</div>
 
-	<div class="row padding-bottom" id="triggerAnimatedChart">
-
-			<div class="offset-md-2 col-md-8 col-sm-12">
-				<h5>La Suisse est presque le premier pays en taux de cas confirmés</h5>
-				<p>En nombre d’infections confirmées pour un million d’habitant, la Suisse est à 25 points d’écart de l’Italie, à en croire les <a target="_blank" href="https://github.com/CSSEGISandData/2019-nCoV">données compilées par Johns-Hopkins</a> que nous avons retraitées et divisées par la population mondiale. Cette université américaine, qui compile des chiffres mondiaux beaucoup plus rapidement que l’<a target="_blank" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports">OMS</a> et l’agence européenne <a target="_blank" href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide">ECDC</a>, <a target="_blank" href="https://github.com/CSSEGISandData/COVID-19/issues">commet cependant souvent des erreurs</a>.
-					Si l’on se réfère à la compilation de données cantonales faites sur <a href="https://www.corona-data.ch/" target="_blank">corona-data.ch</a>, supérieur aux chiffres de l’OFSP, la Suisse serait déjà devant l’Italie.</p>
-
-
-				<!--<div class="text-center form-check">
-					<input type="checkbox" class="form-check-input" id="displayChina">
-					<label class="form-check-label" for="displayChina">Montrer la Chine</label>
-				</div>-->
-
-				<p class="text-center no-margin"><b>Date:</b> <span class="date">mercredi 11 mars 2020</span> <span class="horizontal-spacer"></span><i class="fa fa-undo reload" aria-hidden="true"></i></p>
-
-				<div id="animatedBarChart"></div>
-				<div>Cas confirmés cumulés (sans prise en compte des guérisons) de Covid-19 pour un million d’habitants. Seuls les pays comptant plus de 1000 cas confirmés sont pris en compte.</div>
-				<div class="source"><b>Correction du 24 mars:</b> le fichier de l’université Johns-Hopkins utilisé précédemment contenait des données erronnées pour un grand nombre de pays, dont la Suisse et l’Italie.</div>
-				<div class="source"><b>Source:</b>
-					<a target="_blank" href="https://github.com/CSSEGISandData/COVID-19">Université Johns-Hopkins</a>, population 2018 <a href="https://data.worldbank.org/indicator/sp.pop.totl" target="_blank">selon la Banque mondiale</a>, données retraitées par <i>Le Temps</i></div>
+		<div class="col-12 col-sm-6 group-label border">
+			<div class="row">
+				<div class="col-12">
+					<h5>En Suisse</h5>
 				</div>
+
+				<div class="col-12 col-md-6">
+					<span class="big confirmed_total_ch">___</span><br>
+					<span class="label">cas confirmés</span>
+				</div>
+				<div class="col-12 col-md-6">
+					<span class="big deaths_total_ch">___</span><br>
+					<span class="label">décès</span>
+				</div>
+
+				<div class="col-12 margin-top">
+					<p class="small">Mis à jour le <span class="dashboardUpdate_ch">_____________</span>, source:
+						<a target="_blank" href="https://www.corona-data.ch/">Corona-data.ch</a>
+					</p>
+				</div>
+
+			</div>
 		</div>
 
+	</div>
 
-	<!-- switzerland -->
+		<!-- switzerland -->
 	<div class="row align-items-end">
 		<div class="col-12 group-label">
-			<h5>Evolution en Suisse depuis le 6 mars</h5>
-			<p>Les décès par cantons ne sont pas indiqués en raison d’incertitudes sur ces données (86 décès le 24 mars à 12h15 <a href="https://www.bag.admin.ch/bag/fr/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/situation-schweiz-und-international.html" target="_blank">selon l’OFSP</a>, qui ne fait pas les totaux par canton, contre 123 selon <a target="_blank" href="https://www.corona-data.ch">corona-data.ch</a> et 124 selon <a target="_blank" href="https://interactif.tdg.ch/2020/covid-19-carte-suisse/">Tamedia</a>, qui compilent des données cantonales).</p>
+			<h5>Nombre de cas confirmés en Suisse depuis le 6 mars</h5>
 		</div>
 
 		<div class="col-12">
@@ -143,8 +139,7 @@
 			</div>
 		</div>
 		<div class="col-lg-12">
-			<div class="source"><b>Correction du 24 mars:</b> une version précédente de l’infographie ne tenait pas compte de la population de nationalité étrangère. </div>
-			<div class="source"><b>Note:</b> les données cantonales manquantes sont substituées par celles du jour précédent. Elles sont indiquées par des cercles oranges lorsque l’option «valeurs absolues» est cochée. L’Office fédéral de la santé publique (OFSP) fournit des rapports quotidiens en PDF, mais ne publie pas les données brutes. Les tests systématiques ont été interrompus le 15 mars. Cette infographie est mise à jour grâce aux compilations de tweets de l’OFSP et de pages d’information cantonales par l’informaticien Daniel Probst.</div>
+			<div class="source"><b>Note:</b> les données cantonales manquantes sont substituées par celles du jour précédent.</div>
 			<div class="source"><b>Source:</b> <a target="_blank" href="https://www.corona-data.ch">corona-data.ch</a>, cantons suisses. Population dans les cantons: <a target="_blank" href="https://www.bfs.admin.ch/bfs/fr/home/statistiques/population/effectif-evolution/population.assetdetail.9486047.html">chiffres définitifs 2018 de l’OFS</a></div>
 		</div>
 	</div>
@@ -152,180 +147,301 @@
 
 	<div class="row padding-bottom">
 		<div class="col-lg-10 offset-md-1 col-md-12">
-			<h5>Les dix cantons suisses comptant le plus de cas par habitant</h5>
-			<p>Le Tessin, Genève et Vaud sont les cantons qui comptaient le plus de cas confirmés pour 100 000 habitants le dimanche 22 mars. Ce graphique est actualisé lorsque des données complètes par canton le permettent.</p>
-				<div class="c3-chart" id="chart-swiss-cantons"></div>
-				<div class="source"><b>Correction du 24 mars:</b> une version précédente de l’infographie ne tenait pas compte de la population de nationalité étrangère. </div>
+			<h5>Les cinq cantons suisses comptant le plus de cas par habitant</h5>
+			<p>Le Tessin, Genève et Vaud sont les cantons qui comptent le plus de cas confirmés pour 100 000 habitants.</p>
+				<div class="multiline" id="chartCantons"></div>
 			<div class="source"><b>Source:</b> <a target="_blank" href="https://www.corona-data.ch">corona-data.ch</a>, cantons suisses. Population dans les cantons: <a target="_blank" href="https://www.bfs.admin.ch/bfs/fr/home/statistiques/population/effectif-evolution/population.assetdetail.9486047.html">chiffres définitifs 2018 de l’OFS</a></div>
 		</div>
 	</div>
-	<!-- end switzerland -->
+
+	<!-- toolbox -->
+
+	<div class="row align-items-end">
+		<div class="col-12 group-label">
+			<h5>Evolution dans le monde depuis le 26 janvier</h5>
+			<p>Les Etats-Unis sont devenus le nouvel épicentre de la pandémie. Relativement épargnée jusqu’à présent, l’Afrique compte de plus en plus de malades du Covid-19.</p>
+		</div>
+
+		<div class="col-12">
+			<div id="time-serie-chart"></div>
+		</div>
+		<div class="col-10 filter-container">
+			<label>Naviguer par date</label>
+			<input type="text" id="range_slider" />
+		</div>
+		<div class="col-2">
+			<button id="playpause" class="button play pause"></button>
+		</div>
+	</div>
+
+	<!-- map container -->
+	<div class="row">
+
+		<div class="col-lg-9 col-sm-12">
+			<div id="map" class="map">
+				<div class="tooltip"></div>
+			</div>
+		</div>
+
+		<div class="col-lg-3 col-sm-12">
+			<div class="map-details">
+				<h4></h4>
+				<p>Survoler/toucher un cercle pour plus d’informations.</p>
+			</div>
+		</div>
+		<div class="col-lg-12">
+			<div class="source">
+				<b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>. Jusqu’au 22 mars, nous indiquions le nombre de guérisons, compilé par l’université Johns-Hopkins. Cette dernière ne fournit plus ces chiffres pour un usage externe.</div>
+			</div>
+		</div>
+
+	<div class="row padding-bottom">
+		<div class="col-lg-10 offset-md-1 col-md-12">
+			<h5>Cas confirmés en valeurs absolues</h5>
+			<p>Le nombre de cas confirmés en laboratoire grimpe en flèche aux Etats-Unis, qui sont cependant encore loin derrière l’Italie et l’Espagne en taux de cas par rapport à la population.</p>
+			<div class="multiline" id="chartAbsolute"></div>
+			<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
+		</div>
+	</div>
+
+	<div class="row padding-bottom">
+		<div class="col-lg-10 offset-md-1 col-md-12">
+			<h5>Taux de cas confirmés par million d’habitants</h5>
+			<p>Les pays sont alignés sur le jour où les cas confirmés atteignent le taux de 1 cas par million d’habitants. Pour la Suisse, ce «jour 0» est le 29 février, avec 12 cas. Des différences dans les méthodes et le nombre de tests effectués rendent cependant les comparaisons entre pays difficiles. La Confédération a renoncé au dépistage systématique le 14 mars (jour 14).</p>
+			<div class="multiline" id="chartDayOffset"></div>
+			<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
+		</div>
+	</div>
+
+	<div class="row padding-bottom">
+		<div class="col-lg-10 offset-md-1 col-md-12">
+			<h5>Taux de décès par million d’habitants</h5>
+			<p>Comme dans le graphique précédent, les pays sont alignés sur le jour où les cas confirmés atteignent le taux de 1 cas par million d’habitants. L’attribution ou non d’un décès au Covid-19 peut être problématique, en particulier lorsque la victime était affectée par plusieurs maladies. Les critères ne sont pas les mêmes dans chaque pays.</p>
+			<div class="multiline" id="chartDeath"></div>
+			<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
+		</div>
+	</div>
+
+
+	<!-- <div class="row padding-bottom">
+		<div class="col-lg-10 offset-md-1 col-md-12">
+			<h5>Taux d’augmentation</h5>
+
+			<div class="multiline" id="chartIncrease"></div>
+			<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
+		</div>
+	</div> -->
+
+	<div class="row padding-bottom" id="triggerAnimatedChart">
+
+			<div class="offset-md-2 col-md-8 col-sm-12">
+				<h5>La Suisse, 2e pays en taux de cas confirmés</h5>
+				<p>Depuis lundi, l’Espagne est le pays qui compte le plus d’infections confirmées par million d’habitants, à en croire les <a target="_blank" href="https://github.com/CSSEGISandData/2019-nCoV">données compilées par Johns-Hopkins</a> que nous avons retraitées et divisées par la population mondiale.</p>
+				<p>Du mardi 24 au dimanche 29 mars, la Suisse a été le pays comptant le taux le plus élevé. Elle serait en 6e position en décès par million d’habitants, bien que l’épidémie n’ait atteint le pays que le 25 février (contre le 31 janvier pour l’Italie).</p>
+				<p>Cependant la fiabilité des données, l’étendue des tests et même la manière de compter les décès liés au Covid-19 varie de pays en pays.</p>
+
+				<!-- <div class="text-center form-check">
+					<input type="checkbox" class="form-check-input" id="displayChina">
+					<label class="form-check-label" for="displayChina">Décès par Mio d’habitant</label>
+				</div> -->
+
+				<p class="text-center no-margin"><b>Date:</b> <span class="date">mercredi 11 mars 2020</span> <span class="horizontal-spacer"></span><i class="fa fa-undo reload" aria-hidden="true"></i></p>
+
+				<div id="animatedBarChart"></div>
+				<div>Taux de cas confirmés pour un million d’habitants. Les pays comptant moins d’un million d’habitants ont été écartés.</div>
+				<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
+		</div>
+	</div>
+
+
+
+
+
 
 	<!-- bloc texte -->
-	<div class="row text padding-bottom">
+	<div class="row text margin-top padding-bottom">
 		<div class="offset-md-2 col-md-8 col-sm-12">
 
-			<p>
-
-			</p>
-
-			<h3>Le Covid-19 en cinq questions</h3>
+			<h3>Le Covid-19 en douze questions</h3>
 
 			<div id="faq" class="card">
 				<ul class="list-group list-group-flush">
 					<!-- begin qa li -->
 
 					<li class="list-group-item">
-						<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse0" aria-expanded="false" aria-controls="collapseExample">
-							Covid-19, SARS-CoV-2, coronavirus… Qu’est-ce que ces noms désignent?
-							<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
-						</button>
-						<div class="collapse" id="collapse0">
-							<p>L’épidémie est provoquée par un virus de la famille des coronavirus, ou virus à couronne, du nom de l’aspect de ces agents pathogènes: une boule hérissée de spicules formant une couronne.</p>
-							<p>Il existe plusieurs coronavirus. Celui dont il est question en ce moment, un temps nommé nCoV-2019 pour «nouveau coronavirus de 2019», s’appelle désormais officiellement le SARS-CoV-2, pour «coronavirus responsable du syndrome respiratoire aigu sévère 2».</p>
-							<p>La maladie qu’il provoque est quant à elle nommée le Covid-19, pour «maladie du coronavirus de 2019».</p>
-							<p><strong>Sur ce sujet:</strong> <a target="_blank" href="https://www.letemps.ch/sciences/coronavirus-un-nouveau-nom-nest-terrible">Le coronavirus a un nouveau nom et il n’est pas terrible</a></p>
-						</div>
-					</li>
+  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse0" aria-expanded="false" aria-controls="collapseExample">
+    Covid-19, SARS-CoV-2, coronavirus… Qu’est-ce que ces noms désignent?
+    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+  </button>
+  <div class="collapse" id="collapse0">
+    <p>Parlez-vous le coronavirus? Commençons par un rapide point sur la nomenclature utilisée.</p>
+<p>L’épidémie est provoquée par un virus de la famille des coronavirus, ou virus à couronne, du nom de l’aspect de ces agents pathogènes: une boule hérissée de spicules formant une couronne.</p>
+<p>Il existe plusieurs coronavirus. Celui dont il est question en ce moment, un temps nommé nCoV-2019 pour «nouveau coronavirus de 2019», s’appelle désormais officiellement le SARS-CoV-2, pour «coronavirus responsable du syndrome respiratoire aigu sévère 2».</p>
+<p>La maladie qu’il provoque est quant à elle nommée le Covid-19, pour «maladie du coronavirus de 2019».</p>
+    <p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/coronavirus-un-nouveau-nom-nest-terrible" target="_blank" rel="noopener">Le coronavirus a un nouveau nom et il n’est pas terrible</a></p>
+  </div>
+</li>
 
-					<li class="list-group-item">
-						<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseExample">
-							Rappelez-moi comment les choses ont démarré, s’il vous plaît.
-							<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
-						</button>
-						<div class="collapse" id="collapse1">
-							<p>Selon la version officielle, tout serait parti en décembre 2019 d’animaux vivants vendus sur le marché de Wuhan en Chine et qui auraient transmis le virus à l’homme. Les coronavirus sont des virus dits zoonotiques, à savoir que leurs réservoirs naturels sont des animaux, souvent la chauve-souris. Généralement, le passage vers l’être humain se fait via un autre animal, appelé hôte intermédiaire: la civette masquée pour le SRAS et le dromadaire pour le MERS, deux épidémies provoquées par des coronavirus.</p>
-							<p>Cet animal intermédiaire pourrait être le pangolin, d’après une étude chinoise. Après avoir testé plus de 1000 échantillons provenant d’animaux sauvages, les scientifiques ont déterminé que les génomes de séquences de virus prélevés sur les pangolins étaient à 99% identiques à ceux trouvés sur des patients atteints du nouveau coronavirus, selon l’agence étatique Chine nouvelle. Mais ces résultats demandent confirmation.</p>
-							<p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/chauvessouris-chinoises-fabriques-nouveaux-coronavirus" target="_blank" rel="noopener">Les chauve-souris chinoises, fabriques à coronavirus</a></p>
-						</div>
-					</li>
+<li class="list-group-item">
+  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseExample">
+    Rappelez-moi comment les choses ont démarré, s’il vous plaît.
+    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+  </button>
+  <div class="collapse" id="collapse1">
+    <p>Selon la version officielle, tout serait parti en décembre 2019 d’animaux vivants vendus sur le marché de Wuhan en Chine et qui auraient transmis le virus à l’homme. Les coronavirus sont des virus dits zoonotiques, à savoir que leurs réservoirs naturels sont des animaux, souvent la chauve-souris. Généralement, le passage vers l’être humain se fait via un autre animal, appelé hôte intermédiaire: la civette masquée pour le SRAS et le dromadaire pour le MERS, deux épidémies provoquées par des coronavirus.</p>
+<p>Cet animal intermédiaire pourrait être le pangolin, d’après une étude chinoise. Après avoir testé plus de 1000 échantillons provenant d’animaux sauvages, les scientifiques ont déterminé que les génomes de séquences de virus prélevés sur les pangolins étaient à 99% identiques à ceux trouvés sur des patients atteints du nouveau coronavirus, selon l’agence étatique Chine nouvelle. Mais ces résultats demandent confirmation.</p>
+    <p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/chauvessouris-chinoises-fabriques-nouveaux-coronavirus" target="_blank" rel="noopener">Les chauves-souris chinoises, fabriques à coronavirus</a></p>
+  </div>
+</li>
 
-					<li class="list-group-item">
-						<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseExample">
-							Quels sont les symptômes provoqués par une infection au coronavirus?
-							<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
-						</button>
-						<div class="collapse" id="collapse2">
-							<p>Les cas de maladies liés au SARS-CoV-2 peuvent évoluer très différemment et s’accompagner de légers symptômes comme de plus graves nécessitant une hospitalisation chez les sujets souffrant de maladies chroniques ou particulièrement sensibles.</p>
-							<p>Mais les deux symptômes les plus fréquents sont la fièvre (plus de 38 °C) et une toux sèche pouvant s’accompagner parfois de maux de gorge. D’après l’Organisation mondiale de la santé (OMS), environ une personne infectée sur six devient gravement malade et développe des symptômes plus inquiétants de difficultés respiratoires. Dans ce cas, il convient d’appeler son médecin par téléphone, mais pas de se rendre chez lui ni à l’hôpital sans y être invité.</p>
-							<p><strong>Sur ce sujet:</strong> <a href="https://blogs.letemps.ch/dr-jean-gabriel-jeannot/2020/03/05/coronavirus-un-test-en-ligne-pour-connaitre-votre-risque/" target="_blank">Coronavirus: un test en ligne pour connaître votre risque</a></p>
-						</div>
-					</li>
+<li class="list-group-item">
+  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseExample">
+    Quels sont les symptômes provoqués par une infection au coronavirus?
+    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+  </button>
+  <div class="collapse" id="collapse2">
+    <p>Les cas de maladies liés au SARS-CoV-2 peuvent évoluer très différemment et s’accompagner de légers symptômes comme de plus graves nécessitant une hospitalisation chez les sujets souffrant de maladies chroniques ou particulièrement sensibles.</p>
+<p>Mais les deux symptômes les plus fréquents sont la fièvre (plus de 38 °C) et une toux sèche pouvant s’accompagner parfois de maux de gorge. D’après l’Organisation mondiale de la santé (OMS), environ une personne infectée sur six devient gravement malade et développe des symptômes plus inquiétants de difficultés respiratoires. Dans ce cas, il convient d’appeler son médecin par téléphone, mais pas de se rendre chez lui ni à l’hôpital sans y être invité.</p>
+    <p><strong>Sur ce sujet:</strong> <a href="https://blogs.letemps.ch/dr-jean-gabriel-jeannot/2020/03/05/coronavirus-un-test-en-ligne-pour-connaitre-votre-risque/" target="_blank" rel="noopener">Coronavirus: un test en ligne pour connaître votre risque</a></p>
+  </div>
+</li>
 
-					<li class="list-group-item">
-						<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapseExample">
-							Que faire si je pense être infecté?
-							<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
-						</button>
-						<div class="collapse" id="collapse3">
-							<p>Commençons par ce que vous ne devez surtout pas faire: aller directement chez le médecin, à l’hôpital sans y avoir été invité: c’est le meilleur moyen pour infecter un grand nombre de personnes, sujets vulnérables et personnels soignants compris.</p>
-							<p>Ceci étant dit, vous pouvez consulter la plateforme <a href="https://coronavirus.unisante.ch/evaluation" target="_blank" rel="noopener">Coronacheck,</a> première étape utile pour se faire une idée de son état.</p>
-							<p>En cas d’apparition des symptômes évoqués ci-dessus, vous pouvez appeler la ligne spécialement mise en place par l’Office fédéral de la santé publique (OFSP): le 058 463 00 00, accessible 24 heures sur 24. Mieux vaut éviter d’appeler directement son médecin, dit l’OFSP.</p>
-							<p><strong>Sur ce sujet:</strong> <a target="_blank" href="https://www.bag.admin.ch/bag/fr/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/selbst-isolierung-und-selbst-quarantaene.html">La fiche auto-isolation de l’OFSP vous dira tout</a></p>
-						</div>
-					</li>
+<li class="list-group-item">
+  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapseExample">
+    Que faire si je pense être infecté?
+    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+  </button>
+  <div class="collapse" id="collapse3">
+    <p>Commençons par ce que vous ne devez surtout pas faire: aller directement chez le médecin, à l’hôpital sans y avoir été invité: c’est le meilleur moyen pour infecter un grand nombre de personnes, sujets vulnérables et personnels soignants compris.</p>
+<p>Ceci étant dit, vous pouvez consulter la plateforme <a href="https://coronavirus.unisante.ch/evaluation" target="_blank" rel="noopener">Coronacheck,</a> première étape utile pour se faire une idée de son état.</p>
+<p>En cas d’apparition des symptômes évoqués ci-dessus, vous pouvez appeler la ligne spécialement mise en place par l’Office fédéral de la santé publique (OFSP): le 058 463 00 00, accessible 24 heures sur 24. Mieux vaut éviter d’appeler directement son médecin, dit l’OFSP.</p>
+    <p><strong>Sur ce sujet:</strong> <a href="https://www.bag.admin.ch/bag/fr/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/selbst-isolierung-und-selbst-quarantaene.html" target="_blank" rel="noopener">La fiche auto-isolation de l’OFSP vous dira tout</a></p>
+  </div>
+</li>
 
-					<li class="list-group-item">
-						<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapseExample">
-							Comment le virus se propage-t-il?
-							<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
-						</button>
-						<div class="collapse" id="collapse4">
-							<p>Le virus ne se propage pas seul: ce sont les personnes qui le propagent. Les scientifiques ont encore beaucoup à apprendre à ce sujet, mais ils semblent s’accorder sur le fait que le SARS-CoV-2 se transmet par les sécrétions de personne à personne (postillons, toux, etc.) et non par l’air, comme si un nuage de virus pouvait se propager sur de longues distances.</p>
-							<p>Il subsiste quelques doutes sur la capacité du coronavirus à être transmis via des surfaces infectées – ce qu’on appelle des fomites. De récents travaux en attente de publication ont établi que le SARS-CoV-2 pouvait perdurer plusieurs jours sur du plastique ou de l’acier inoxydable. Une telle infection «peut être possible», évoque le site des Centres américains de contrôle et de prévention des maladies (CDC), si l’on touche une telle surface et qu’on porte ses mains au visage ensuite. Mais ce n’est vraisemblablement pas la principale voie de transmission.</p>
-							<p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/surfaces-coronavirus-persistetil-plus-longtemps" target="_blank" rel="noopener">Le coronavirus, plus plastique que carton</a></p>
-						</div>
-					</li>
+<li class="list-group-item">
+  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapseExample">
+    Comment le virus se propage-t-il?
+    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+  </button>
+  <div class="collapse" id="collapse4">
+    <p>Le virus ne se propage pas seul: ce sont les personnes qui le propagent. Les scientifiques ont encore beaucoup à apprendre à ce sujet, mais ils semblent s’accorder sur le fait que le SARS-CoV-2 se transmet par les sécrétions de personnes à personnes (postillons, toux, etc.) et non par l’air, comme si un nuage de virus pouvait se propager sur de longues distances.</p>
+<p>Il subsiste quelques doutes sur la capacité du coronavirus à être transmis via des surfaces infectées – ce qu’on appelle des fomites. De récents travaux en attente de publication ont établi que le SARS-CoV-2 pouvait perdurer plusieurs jours sur du plastique ou de l’acier inoxydable. Une telle infection «peut être possible», évoque le site des Centres américains de contrôle et de prévention des maladies (CDC), si l’on touche une telle surface et qu’on porte ses mains au visage ensuite. Mais ce n’est vraisemblablement pas la principale voie de transmission.</p>
+    <p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/surfaces-coronavirus-persistetil-plus-longtemps" target="_blank" rel="noopener">Le coronavirus, plus plastique que carton</a></p>
+  </div>
+</li>
 
+<li class="list-group-item">
+  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapseExample">
+    Les personnes asymptomatiques peuvent-elles infecter d’autres personnes?
+    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+  </button>
+  <div class="collapse" id="collapse5">
+    <p>Les personnes les plus malades sont aussi les plus contagieuses. Mais les autres? Pour les experts, la durée d’incubation oscille entre sept et quatorze jours. Les risques d’être contaminés par une personne porteuse du virus qui n’aurait pas encore développé de symptômes sont faibles, mais certains cas laissent entendre qu’un tel mode d’infection est possible, sans qu’il s’agisse là encore de la principale voie d’entrée du virus.</p>
+    <p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/symptomes-transmission-coronavirus-question" target="_blank" rel="noopener">Avec ou sans symptômes, la transmission du coronavirus en question</a></p>
+  </div>
+</li>
 
+<li class="list-group-item">
+  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapseExample">
+    Faut-il porter un masque de protection?
+    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+  </button>
+  <div class="collapse" id="collapse6">
+    <p>Depuis le début de l’épidémie, le discours officiel de l’Organisation mondiale de la santé (OMS) rappelle que seuls les personnes présentant des symptômes et les personnels soignants doivent en porter. La plupart des autorités sanitaires nationales le répètent. Les masques chirurgicaux, les plus courants, ne protègent pas contre une infection virale: ils empêchent le porteur d’expectorer des gouttelettes potentiellement infectieuses. Les masques seraient donc plutôt inutiles, d’autant plus qu’ils sont à présent introuvables.</p>
+<p>Mais certains experts ne sont pas d’accord avec l’OMS, <a href="https://www.lemonde.fr/idees/article/2020/03/31/ne-pas-porter-de-masque-pour-se-proteger-du-coronavirus-est-une-grande-erreur-affirme-un-haut-scientifique-chinois_6035064_3232.html" target="_blank" rel="noopener">à commencer par le directeur des centres chinois de contrôle et de prévention des maladies</a>. Plusieurs pays asiatiques ont au contraire encouragé la population à se protéger, arguant du fait que si tout le monde se protège, on limite la transmission, comme l’ont montré plusieurs études scientifiques. La protection des masques est donc limitée, mais combinée avec les mesures d’hygiène et de distanciation sociale, elle a bel et bien un effet.</p>
+    <p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/quatre-questions-lefficacite-masques-protection" target="_blank" rel="noopener">Quatre questions sur l’efficacité des masques de protection</a></p>
+  </div>
+</li>
+
+<li class="list-group-item">
+  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapseExample">
+    Mon chat, mon chien, mon perroquet peuvent-ils me transmettre le Covid-19?
+    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+  </button>
+  <div class="collapse" id="collapse7">
+    <p>Début avril, plusieurs cas d’animaux de compagnie testés positifs au SARS-CoV-2 étaient recensés dont trois chiens à Hongkong et un chat en Belgique. Un des chiens est mort, mais sans preuve que ce soit bien le Covid-19 qui ait tué ce loulou de Poméranie à Hongkong. Le virus est extrêmement bien adapté pour infecter les humains, mais cela ne veut pas dire qu’il sera aussi efficace chez un chien. Il peut ouvrir deux portes accédant à l’intérieur des cellules humaines: les protéines transmembranaires ACE2 et TMPRSS2. Protéines qui existent aussi chez le chien, mais de forme légèrement différentes. Peu de chance qu’il puisse donc infecter les cellules de ces animaux, d’autant qu’il semble peu soumis aux mutations génétiques.</p>
+<p>En l’état, il y a donc très peu de risque de transmission depuis ou vers les animaux domestiques. Et ce sont ces pauvres bêtes qui trinquent: les refuges du monde entier <a href="https://time.com/5793363/china-coronavirus-covid19-abandoned-pets-wuhan/" target="_blank" rel="noopener">observent un pic d’abandon</a> depuis le début de l’épidémie.</p>
+    <p><strong>Sur ce sujet</strong>: <a href="https://www.letemps.ch/sciences/animaux-compagnie-labri-coronavirus" target="_blank" rel="noopener">Les animaux de compagnie à l’abri du coronavirus</a></p>
+  </div>
+</li>
+
+<li class="list-group-item">
+  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapseExample">
+    Peut-on être infecté en faisant ses courses?
+    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+  </button>
+  <div class="collapse" id="collapse8">
+    <p>C’est possible, mais facilement évitable en prenant quelques précautions. Possible car le virus persiste jusqu’à trois heures dans des aérosols, et que les supermarchés constituent des environnements confinés: rayons, parkings couverts et autres ascenseurs contribuent à une promiscuité déconseillée. Mais les aérosols ne sont vraisemblablement pas le vecteur principal de transmission.</p>
+<p>Les aliments <a href="https://www.efsa.europa.eu/fr/news/coronavirus-no-evidence-food-source-or-transmission-route" target="_blank" rel="noopener">ne sont pas non plus des vecteurs privilégiés</a>, et la cuisson tue les virus. Attention de bien laver ses fruits et légumes, ce qu’il faut de toute façon faire pandémie ou pas. Enfin s’agissant des emballages, ils peuvent être contaminés. Il faut donc les jeter et se laver les mains.</p>
+<p>En résumé, en évitant les contacts, en respectant une hygiène stricte, et en lavant ou cuisant bien ses aliments, on ne risque rien.</p>
+    <p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/faire-courses-risques-gestes-adopter" target="_blank" rel="noopener">Faire ses courses sans risques: les gestes à adopter</a></p>
+  </div>
+</li>
+
+<li class="list-group-item">
+  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapseExample">
+    Les enfants peuvent-ils attraper le Covid-19 ou le transmettre?
+    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+  </button>
+  <div class="collapse" id="collapse9">
+    <p>Comme tout le monde, les enfants peuvent être infectés par le SARS-CoV-2, mais ils sont sous-représentés parmi les personnes atteintes. <a href="https://www.nejm.org/doi/full/10.1056/NEJMc2005073?cid=DM88773_&amp;bid=171209032" target="_blank" rel="noopener">Une étude menée sur 72 134 personnes infectées en Chine</a> a montré début mars que seuls 1% d’entre elles avaient moins de 10 ans. La plupart des cas n’étaient pas critiques. Un seul décès a été recensé dans cette étude, chez un bébé de dix mois ayant un facteur de risque pulmonaire. Depuis, des cas de décès chez une fille de 16 ans en France, et une autre de 12 ans en Belgique ont été signalés. Mais il s’agit de formes sévères rarissimes de la maladie.</p>
+<p>Quant à la transmission, elle ne semble pas particulièrement portée par les enfants, même si ce point demeure obscur. Parmi les explications possibles, le fait qu’ils toussent «mal» comparé aux adultes, limitant les projections de gouttelettes, ou encore le fait que le nez ne coule pas lors du Covid-19 (les sécrétions nasales étant un vecteur important chez les enfants). Les adolescents ou les jeunes adultes semblent plus à même de transmettre le virus, en raison de faibles symptômes qu’ils subissent.</p>
+    <p><strong>Sur ce sujet</strong>: <a href="https://www.letemps.ch/sciences/arnaud-lhuillier-enfants-ne-semblent-moteurs-propagation-virus" target="_blank" rel="noopener">Les enfants et le coronavirus</a></p>
+  </div>
+</li>
+
+<li class="list-group-item">
+  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapseExample">
+    Quels sont les traitements donnés en cas de Covid-19?
+    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+  </button>
+  <div class="collapse" id="collapse10">
+    <p>Il n’y a pas de traitement standard étant donné que le SARS-CoV-2 est un virus émergent, qui était inconnu il y a quelques mois. Tant qu’aucune molécule n’a clairement démontré son efficacité à éradiquer le virus, les médecins doivent donc se baser sur des maladies semblables. Pour les patients à risque et hospitalisés, qui présentent des infiltrations pulmonaires et de graves insuffisances respiratoires, il existe plusieurs molécules, au premier rang desquelles les antiviraux.</p>
+<p>Le Kaletra, une combinaison de lopinavir et de ritonavir, est utilisé dans certains hôpitaux, dont celui de Genève. Autre possibilité: le remdesivir, produit par Gilead, ou encore l’hydroxychloroquine, un ancien antipaludique à l’efficacité relative. Tous ces médicaments – et d’autres – font actuellement l’objet d’essais cliniques afin de déterminer leur efficacité et leur innocuité.</p>
+    <p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/hopitaux-valse-traitements" target="_blank" rel="noopener">Dans les hôpitaux, la valse des traitements</a></p>
+  </div>
+</li>
+
+<li class="list-group-item">
+  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapseExample">
+    Peut-on perdre l’odorat si l’on est infecté?
+    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+  </button>
+  <div class="collapse" id="collapse11">
+    <p>Négligée depuis l’irruption de la maladie, la perte de l’odorat est désormais relevée dans de nombreux pays et pourrait être expliquée par la capacité du nouveau coronavirus à infecter le système nerveux central des malades – notamment les zones du cerveau traitant les informations olfactives.</p>
+<p>Des études ont rapporté la présence du SARS-CoV-1 (très proche génétiquement) dans le système nerveux de malades lors de l’épidémie de SRAS au début des années 2000. D’autres travaux ont mis en évidence chez la souris la diffusion du virus dans le bulbe olfactif puis dans le reste du cerveau. De quoi laisser supposer à certains scientifiques que les difficultés respiratoires des patients pourraient être aussi le fait d’atteintes aux centres nerveux en charge du contrôle de la respiration.</p>
+    <p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/nouveau-coronavirus-sattaquetil-aux-neurones-lolfaction" target="_blank" rel="noopener">Le nouveau coronavirus s’attaque-t-il aux neurones de l’olfaction?</a></p>
+  </div>
+</li>
 					<!-- end qa li -->
 				</ul>
 			</div>
 
+			<!-- <p><b>A consulter également:</b> <a target="_blank" href="https://labs.letemps.ch/interactive/2020/covid-trends/">Covid-19: histoire d’une médiatisation
+			</a></p>
+			<div class="text-center" id="corona-search">
+				<a target="_blank" href="https://labs.letemps.ch/interactive/2020/covid-trends/">
+				<video loop="true" muted="true" autoplay="true" playsinline="">
+					<source src="img/apercu_covid-trends.mp4" type="video/mp4">
+					Votre navigateur ne supporte pas les vidéos HTML.
+				</video>
+				</a>
+			</div> -->
+
 		</div>
 	</div> <!-- fin bloc texte -->
-
-
-<!-- toolbox -->
-
-<div class="row align-items-end">
-	<div class="col-12 group-label">
-		<h5>Evolution dans le monde depuis le 22 janvier</h5>
-	</div>
-
-	<div class="col-12">
-		<div id="time-serie-chart"></div>
-	</div>
-	<div class="col-10 filter-container">
-		<label>Naviguer par date</label>
-		<input type="text" id="range_slider" />
-	</div>
-	<div class="col-2">
-		<button id="playpause" class="button play pause"></button>
-	</div>
-</div>
-
-<!-- map container -->
-<div class="row">
-
-	<div class="col-lg-9 col-sm-12">
-		<div id="map" class="map">
-			<div class="tooltip"></div>
-		</div>
-	</div>
-
-	<div class="col-lg-3 col-sm-12">
-		<div class="map-details">
-			<h4></h4>
-			<p>Survoler/toucher un cercle pour plus d’informations.</p>
-		</div>
-	</div>
-	<div class="col-lg-12">
-		<div><b>Note:</b> malgré nos efforts pour les éliminer, des erreurs dans nos sources de données peuvent subsister, en particulier dès le 13 mars.</div>
-		<div class="source">
-			La taille maximale des cercles a été réduite le 23 mars pour limiter les chevauchements.
-			Entre le 9 et le 10 mars, Johns-Hopkins a changé le niveau de détail de ses données pour les Etats-Unis, passant des comtés aux états.
-			Des données au niveau des circonscriptions sont affichées pour les pays suivants: Etats-Unis, Chine, Australie, Canada, Royaume-Uni, Danemark. Source: compilation du <a target="_blank" href="https://github.com/CSSEGISandData/COVID-19">CSSE de l’Université Johns-Hopkins</a>,
-			mise à jour le <span class="mapUpdate"></span> et retraitée par <i>Le Temps</i>.</div>
-		</div>
-	</div>
-
-	<div class="chart-background margin-top margin-bottom">
-		<div class="row four-graphs">
-
-			<div class="col-lg-6 col-md-12">
-				<h5>Nouvelles guérisons et infections</h5>
-				<p>Après une accalmie, on compte à nouveau plus de nouvelles infections confirmées que de guérisons depuis le 5 mars.</p>
-				<div class="c3-chart" id="chart-recoveries"></div>
-			</div>
-
-
-			<div class="col-lg-6 col-md-12">
-				<h5>Flambée en Europe</h5>
-				<p>En cas existants (déduction faite des guérisons et décès), l’Allemagne, les Etats-Unis et l’Italie dépassent désormais la Chine.</p>
-				<div class="c3-chart" id="chart-china-other"></div>
-
-			</div>
-		</div>
-	</div>
-
-
 
 	<div class="row">
 		<div class="offset-md-2 col-md-8 col-sm-12">
 
+			<p style="margin-bottom: 4px;"><b>A consulter également:</b></p>
 
-			  <h5>Le point scientifique sur le coronavirus</h5>
-			  <ul>
-					<li><a href="https://letemps.ch/sciences/chloroquine-une-piste-lutter-contre-sarscov2">La chloroquine, une piste pour lutter contre le SARS-CoV-2</a></li>
-					<li><a href="https://letemps.ch/sciences/suisse-ne-fera-tests-large-echelle">La Suisse ne fera pas de tests à large échelle</a></li>
-					<li><strong>En vidéo:</strong>&nbsp;<a href="https://letemps.ch/node/1200340">Le coronavirus en 3 questions</a></li>
-					<li><a href="https://letemps.ch/sciences/covid19-bien-pire-quune-grippe">Le Covid-19, bien pire qu’une grippe</a></li>
-					<li><a href="https://letemps.ch/sciences/remede-contre-coronavirus-existait-deja">Et si le remède existait déjà?</a></li>
-					<li><a href="https://letemps.ch/sciences/masques-ne-protegent-bien-virus">Les masques ne protègent pas bien des virus</a></li>
+			<ul>
+					<li><a href="https://labs.letemps.ch/interactive/2020/covid-trends/">Covid-19: histoire d’une médiatisation</a></li>
+
+					<li> notre <a href="https://www.letemps.ch/dossiers/menace-covid19">dossier sur le Covid-19</a></li>
 				</ul>
-
-			<p><b>Consultez </b> notre <a target="_blank" href="https://www.letemps.ch/dossiers/menace-covid19">dossier sur le Covid-19</a></p>
 
 			<p class="credits">Infographies: Paul Ronga, code <a target="_blank" href="https://github.com/labsletemps/coronavirus-world-map-evolution">disponible sur GitHub</a> <a class="warn_error"></a></p>
 		</div>
@@ -340,11 +456,51 @@
 <script>
 var controller = new ScrollMagic.Controller();
 </script>
-<script src="js/map.js?1585069707542"></script>
-<script src="js/mapCH.js?1585069707542"></script>
-<script src="js/animatedBarChartRelative.js?1585069707542"></script>
+<script src="js/map.js?1586362016227"></script>
+<script src="js/mapCH.js?1586362016227"></script>
+<script src="js/animatedBarChartRelative.js?1586362016227"></script>
+<script src="js/multiLineChart.js?1586362016227"></script>
 
 <script>
+
+var timeLocale = {
+	"dateTime": "%A %e %B %Y",
+	"date": "%d/%m/%Y",
+	"time": "%H:%M:%S",
+	"periods": ["AM", "PM"],
+	"days": ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"],
+	"shortDays": ["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."],
+	"months": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
+	"shortMonths": ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
+}
+d3.timeFormatDefaultLocale(timeLocale);
+
+var chartCantons = new multilineChart({'selector': '#chartCantons', 'file': 'data/c3-cantons-switzerland.csv?0', 'timeScale': true});
+
+var chartAbsolute = new multilineChart({'selector': '#chartAbsolute', 'file': 'data/cases_timestamp.csv?0', 'timeScale': true, 'xTickFormat': ".2s"});
+
+new ScrollMagic.Scene({triggerElement: "#chartAbsolute", duration: 300})
+	.addTo(controller)
+	.on("enter", function(){
+		chartAbsolute.addFatLine();
+});
+
+var chartDayOffset = new multilineChart({'selector': '#chartDayOffset', 'file': 'data/cases_per_pop_day0.csv?0'});
+
+new ScrollMagic.Scene({triggerElement: "#chartDayOffset", duration: 300})
+	.addTo(controller)
+	.on("enter", function(){
+		chartDayOffset.addFatLine();
+});
+
+var chartDeath = new multilineChart({'selector': '#chartDeath', 'file': 'data/deaths_per_pop_day0.csv?0'});
+
+new ScrollMagic.Scene({triggerElement: "#chartDeath", duration: 300})
+	.addTo(controller)
+	.on("enter", function(){
+		chartDeath.addFatLine();
+});
+
 
 $(document).ready(function() {
 	$('#faq button').click(function(){
@@ -357,12 +513,12 @@ $(document).ready(function() {
 		}
 	});
 
-	var locale = d3.formatLocale({
+	var numberLocale = d3.formatLocale({
 	  decimal: ",",
 	  thousands: '\xa0',
 	  grouping: [3]
 	});
-	var format = locale.format(",d");
+	var format = numberLocale.format(",d");
 
 	var d = new Date();
 	var update = Math.round(d.getTime() / 10000);
@@ -374,150 +530,18 @@ $(document).ready(function() {
 			$('.warn_error').text('Signaler une erreur');
 			$('<span>| </span>').insertBefore('.warn_error')
 			$('.warn_error').attr('href', 'mailto:' + data['contact'] + '@letemps.ch');
-			$('.deaths_total').text(data['deaths_total'])
+			$('.deaths_total').text( format( data['deaths_total'] ) )
 			$('.confirmed_total').text( format( data['confirmed_total'] ) )
 			$('.confirmed_total_floor').text( format( Math.floor(data['confirmed_total'] / 1000) * 1000 ) )
-			$('.recovered_total').text( format( data['recovered_total'] ) )
-			$('.existing_total').text( format( data['existing_total'] ) )
+
+			$('.confirmed_total_ch').text( format( data['confirmed_ch'] ) )
+			$('.deaths_total_ch').text( format( data['deaths_ch'] ) )
 
 
-			$('.update').text(data['update'])
-			$('.dataUpdate').text(data['dataUpdate'])
-			$('.mapUpdate').text(data['mapUpdate'])
 			$('.dashboardUpdate').text(data['dashboardUpdate'])
+			$('.dashboardUpdate_ch').text(data['dashboardUpdate_ch'])
 		});
 	}
-
-	/* c3 graph switzerland */
-	var chartCH = c3.generate({
-		padding: {
-			right: 40,
-		},
-		size: {
-			height: 400
-		},
-		bindto: "#chart-swiss-cantons",
-
-		data: {
-			url: 'data/c3-cantons-switzerland.csv?1585069707542',
-			type: 'line',
-			x: 'timestamp',
-			colors: {
-
-			}
-		},
-		axis: {
-			x: {
-				type: 'timeseries',
-				tick: {
-					format: '%d.%m.%Y',
-					count: 4
-				},
-			},
-			y: {
-					tick: {
-						values: [0, 100, 200, 300, 400],
-					}
-				}
-			},
-			grid: {
-				y: {
-					lines: [
-						{ value: 0},
-						{ value: 100},
-						{ value: 2000},
-						{ value: 300},
-						{ value: 400},
-					]
-				}
-			}
-	}); // end c3js graph
-
-	/* c3 graphs bottom */
-	var chart = c3.generate({
-		padding: {
-			right: 40,
-		},
-		size: {
-			height: 200
-		},
-		bindto: "#chart-recoveries",
-
-		data: {
-			url: 'data/c3-cas-guerisons.csv?1585069707542',
-			type: 'line',
-			x: 'timestamp',
-			colors: {
-				'Nouveaux cas': '#930025',
-				'Nouvelles guérisons': '#4E8054'
-			}
-		},
-		axis: {
-			x: {
-				type: 'timeseries',
-				tick: {
-					format: '%d.%m.%Y',
-					count: 4
-				},
-			},
-			y: {
-				tick: {
-					values: [0, 5000, 10000, 15000, 20000]
-				}
-			}
-		},
-		grid: {
-			x: {
-				lines: [
-					{ value: '2018-02-12', label: 'Nouvelle méthode'},
-				]
-			}
-		}
-	}); // end c3js graph
-
-	var chartCases = c3.generate({
-		padding: {
-			right: 40
-		},
-		size: {
-			height: 200
-		},
-		bindto: "#chart-china-other",
-
-		data: {
-			url: 'data/top5_existing.csv?1585069707542',
-			type: 'line',
-			x: 'date',
-			labels: {
-				format: function(d, country, i){
-							if(i == 2 && (country == 'Italie' || country == 'Chine')){
-								return country
-							}else{
-								return null
-							}
-	         },
-				 },
-			colors: {
-				'Nouveaux cas hors de la Chine': '#930025',
-				'Nouvelles guérisons': '#4E8054'
-			}
-		},
-		axis: {
-			x: {
-				type: 'timeseries',
-				tick: {
-					format: '%d.%m.%Y',
-					count: 4
-				},
-			},
-			y: {
-				tick: {
-					values: [0, 10000, 20000, 30000, 40000, 50000, 60000],
-				}
-			}
-		},
-	}); // end c3js graph
-
 }); // end on ready
 
 </script>
