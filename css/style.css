@@ -220,6 +220,7 @@ body{
 	padding-bottom: 1em;
 }
 text{
+	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
 }
 
@@ -485,4 +486,58 @@ select:focus, textarea:focus, input:focus {
 }
 #animatedBarChart .x line {
 	display: block;
+}
+
+
+.multiline {
+	position: relative;
+}
+
+.multiline rect {
+	/* fill: #ccc; */ /* debug */
+}
+.multiline  .value-label{
+	font-size: .8em;
+}
+.multiline .x line {
+	display: block;
+}
+
+/* temp */
+
+.multiline .country-label{
+	font-size: .8em;
+}
+
+.multiline .x path.domain {
+	display: block !important;
+}
+
+.multiline  .line {
+	fill: none;
+	stroke: steelblue;
+	stroke-width: 1.5px;
+}
+.multiline .country.Suisse path{
+	display: none;
+}
+.multiline .annotation-group text{
+	font-size: .8em;
+}
+
+.multiline .tooltip {
+	display: none;
+	opacity: 0;
+	padding: 4px 10px;
+	border: 1px solid #aaa;
+	border-radius: 4px;
+	position: absolute;
+	background-color: white;
+	font-size: 14px;
+	pointer-events: none;
+	-webkit-transition: all 0.25s;
+	-moz-transition: all 0.25s;
+	-ms-transition: all 0.25s;
+	-o-transition: all 0.25s;
+	transition: all 0.25s;
 }
