@@ -50,21 +50,21 @@ $( document ).ready(function() {
   var yaxis = d3.axisLeft().scale(yscale);
   var g_yaxis = g.append("g").attr("class", "y axis");
 
-  d3.json("data/top_per_pop.json?UPDATE").then(json => {
+  d3.json("data/top_death_per_pop.json?UPDATE").then(json => {
     data = json;
     data.forEach(function(d) {
-      if( availableDates.indexOf( d['timestamp'] ) == -1 ){
-        availableDates.push( d['timestamp'] );
+      if( availableDates.indexOf( d['date'] ) == -1 ){
+        availableDates.push( d['date'] );
       }
     });
 
-    first_day_data = data.filter(d => d.timestamp === availableDates[0]).filter(d => d.country != filter_china);
+    first_day_data = data.filter(d => d.date === availableDates[0]).filter(d => d.country != filter_china);
     dataReady = true;
     update(first_day_data, stepDuration * 0.8);
   });
 
   function update(new_data, duration) {
-    xscale.domain([0, d3.max(new_data, d => d.casesPerPop)]).nice();
+    xscale.domain([0, d3.max(new_data, d => d.death_per_mio)]).nice();
     yscale.domain(new_data.map(d => d.country));
 
     g_xaxis.transition().call(
@@ -85,14 +85,13 @@ $( document ).ready(function() {
             .attr("y", height) // les pays partent du bas, plop
             .style("fill", function(d){
               if(d.country == 'Italie') return '#4E8054';
-              if(d.country == 'Espagne') return '#e5b927';
               if(d.country == 'Suisse') return '#E01649';
               return '#930025'
             });
 
             rect_enter
               .append("text")
-              .text(function(d){ return d.casesPerPop; });
+              .text(function(d){ return d.death_per_mio; });
 
           return rect_enter;
         },
@@ -104,7 +103,7 @@ $( document ).ready(function() {
       .transition()
       .duration(duration) // 400
       .attr("height", yscale.bandwidth())
-      .attr("width", d => xscale(d.casesPerPop))
+      .attr("width", d => xscale(d.death_per_mio))
       .attr("y", d => yscale(d.country));
 
   var textLabels = g
@@ -120,7 +119,7 @@ $( document ).ready(function() {
           .attr("opacity", 0)
           .attr("fill", '#fff')
           .text( function(d, i){
-              return d.casesPerPop + (i == 0 ? ' par mio. d’habitant' : '')
+              return d.death_per_mio + (i == 0 ? ' par mio. d’habitant' : '')
             }
           );
 
@@ -134,7 +133,7 @@ $( document ).ready(function() {
     .transition()
     .duration(duration) // 400
     .attr("height", yscale.bandwidth())
-    .attr("width", d => xscale(d.casesPerPop))
+    .attr("width", d => xscale(d.death_per_mio))
     .attr("y", d => yscale(d.country));
 
   textLabels
@@ -145,10 +144,10 @@ $( document ).ready(function() {
     .attr("opacity", 1)
     .attr("y", d => yscale(d.country) + 16)
     .text( function(d, i){
-        return d.casesPerPop + (i == 0 ? ' par mio. d’habitant' : '')
+        return d.death_per_mio + (i == 0 ? ' par mio. d’habitant' : '')
       }
     );
-    //.attr("text", function(d, i){ d.casesPerPop + (i == 0 ? ' par mio. d’habitant' : '') });
+    //.attr("text", function(d, i){ d.death_per_mio + (i == 0 ? ' par mio. d’habitant' : '') });
 
 
   }
@@ -159,13 +158,13 @@ $( document ).ready(function() {
     } else {
       filter_china = 'Chine';
     }
-    update( data.filter(d => d.timestamp === availableDates[dateCounter]).filter(d => d.country != filter_china), 100 );
+    update( data.filter(d => d.date === availableDates[dateCounter]).filter(d => d.country != filter_china), 100 );
   });
 
 
   // comme map.js
   function runAnimation(){
-    update( data.filter(d => d.timestamp === availableDates[dateCounter]).filter(d => d.country != filter_china), stepDuration * 0.8);
+    update( data.filter(d => d.date === availableDates[dateCounter]).filter(d => d.country != filter_china), stepDuration * 0.8);
 
     $('.date').text( format( new Date(availableDates[dateCounter])) );
 

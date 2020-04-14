@@ -5,7 +5,8 @@
 	var dateCounter = 0;
 	var availableDates = [];
 
-	var locale = {
+	var thousandsLocale = {"thousands": "\xa0"}
+	var timeLocale = {
 		"dateTime": "%A %e %B %Y",
 		"date": "%d/%m/%Y",
 		"time": "%H:%M:%S",
@@ -15,7 +16,16 @@
 		"months": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
 		"shortMonths": ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
 	}
-	d3.timeFormatDefaultLocale(locale);
+	d3.timeFormatDefaultLocale(timeLocale);
+
+	var locale = d3.formatLocale({
+	  decimal: ",",
+	  thousands: " ",
+	  grouping: [3]
+	});
+	var format = locale.format(",d");
+
+	var timeFormat = d3.timeFormat("%c");
 
 	// TODO: use it when > 1000
 	var numberLocale = d3.formatLocale({
@@ -40,7 +50,7 @@
 	/*
 		LOAD DATA
 	*/
-	Promise.all([d3.json("data/world_countries.json"), d3.csv("data/time-series.csv?UPDATE")]).then( function (data) {
+	Promise.all([d3.json("data/world_countries.json"), d3.csv("data/time-series-ecdc.csv?UPDATE")]).then( function (data) {
 		var geodata = data[0];
 		var data = data[1];
 
@@ -48,7 +58,7 @@
 			if( availableDates.indexOf( d['timestamp'] ) == -1 ){
 				availableDates.push( d['timestamp'] );
 			}
-			d.n = +d.Confirmed;
+			d.n = +d.cases_sum;
 		});
 		availableDates.sort();
 
@@ -74,6 +84,7 @@
 				values: availableDates,
 				prettify: function(d){ console.log(d); return d},
 				onChange: function(data){
+					dateCounter = availableDates.indexOf(data.from_value);
 					update_date( data.from_value );
 				}
 		});
@@ -84,7 +95,7 @@
 
 			var circles = svg
 		    .selectAll(".circles")
-		    .data(data.filter(function(d){ return d.timestamp == timestamp}).filter(function(d){ return d.Confirmed > 0}).sort(function(a,b) { return +b.n - +a.n }));
+		    .data(data.filter(function(d){ return d.timestamp == timestamp}).filter(function(d){ return d.cases_sum > 0}).sort(function(a,b) { return +b.n - +a.n }));
 
 				var circleEnter = circles
 		    .enter()
@@ -120,14 +131,14 @@
 		// Bubble size
 	  var valueExtent = d3.extent(data, function(d) { return +d.n; })
 	  var size = d3.scalePow() // previously: d3.scaleSqrt()
-			.exponent(1/1.5)
+			.exponent(1/1.75)
 	    .domain(valueExtent)
-	    .range([ 4, 40 ]) // Size in pixel
+	    .range([ 2, 40 ]) // Size in pixel
 
 			// Legend: from Bubblemap Template by Yan Holtz
 			// https://www.d3-graph-gallery.com/graph/bubble_legend.html
 			// https://www.d3-graph-gallery.com/graph/bubblemap_template.html
-			var valuesToShow = [1, 10000, 50000]
+			var valuesToShow = [10, 20000, 100000]
 			var xCircle = 80
 			var xLabel = xCircle + 100;
 			var yCircle = height * 0.75;
@@ -178,11 +189,11 @@
 					}
 
 					return `<h4>${location}</h4>
-						<p><span class="stats">Cas confirmés cumulés</span> ${d.Confirmed}</p>
-						<p><span class="stats">Guérisons</span> ${d.recovered}</p>
-						<p><span class="stats">Décès</span> ${d.deaths}</p>
-						<p><span class="stats">Infections encore existantes</span> ${d.existing}</p>
-						<p><span class="stats">Date</span> ${d.timestamp}</p>
+						<p><span class="stats">Cas confirmés cumulés</span> ${d.cases_sum}</p>
+						<p><span class="stats">Décès cumulés</span> ${d.deaths_sum}</p>
+						<p><span class="stats">Taux de cas pour un million d’habitants</span> ${d.casesPerPop}</p>
+						<p><span class="stats">Taux de décès pour un million d’habitants</span> ${d.deathsPerPop}</p>
+						<p><span class="stats">Date</span> ${ timeFormat( new Date(d.timestamp) ) }</p>
 
 					`;})
 					.style('opacity', 1);
@@ -271,6 +282,7 @@
 				var lastIndex;
 				var chart = c3.generate({
 					padding: {
+						top: 5,
 						right: 30,
     			},
 					size: {
@@ -297,17 +309,29 @@
 						},
 						y: {
 							tick: {
-								values: [0, 100000, 200000, 300000],
-							}
+								values: [0, 250000, 500000, 750000, 1000000, 1250000, 1500000, 1750000, 2000000],
+								format: function (x) {
+									if(x > 0){
+										return x / 1000000 + ' Mio';
+									} else {
+										return x;
+									}
+								}
+							},
 						}
 					},
 					grid: {
 						y: {
 							lines: [
 								{ value: 0},
-								{ value: 100000},
-								{ value: 200000},
-								{ value: 300000}
+								{ value: 250000},
+								{ value: 500000},
+								{ value: 750000},
+								{ value: 1000000},
+								{ value: 1250000},
+								{ value: 1500000},
+								{ value: 1750000},
+								{ value: 2000000},
 							]
 						}
 					},
@@ -327,6 +351,7 @@
 										$('.pause').removeClass('pause')
 									}
 									lastIndex = index;
+									dateCounter = index;
 								}
 								return value;
 							}

@@ -40,7 +40,8 @@
 	    .scale(12000)
 	    .translate([ width/2, height/2 ]);
 	var dataById = d3.map();
-Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?UPDATE")]).then(function(data) {
+
+	Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?UPDATE")]).then(function(data) {
 		var geodata = data[0];
 		var data = data[1];
 
@@ -250,7 +251,7 @@ Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?
 
 				// legends
 				if(!showAbsoluteValues){
-					var labels = [1, 50, 100, 200, 300]
+					var labels = [10, 100, 200, 500, 800]
 					var size_l = 20
 					var distance_from_top = height * 0.2;
 					// Legend title
@@ -363,6 +364,7 @@ Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?
 				values: availableDates,
 				prettify: function(d){ return d},
 				onChange: function(data){
+					dateCounter = availableDates.indexOf(data.from_value);
 					update_date( data.from_value );
 				}
 		});
@@ -469,8 +471,9 @@ Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?
 						},
 					},
 					y: {
+						max: 25000,
 						tick: {
-							values: [0, 2000, 4000, 6000, 8000],
+							values: [0, 5000, 10000, 15000, 20000, 25000],
 							// format: d3.format(".0s")
 						}
 					}
@@ -479,10 +482,11 @@ Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?
 					y: {
 						lines: [
 							{ value: 0},
-							{ value: 2000},
-							{ value: 4000},
-							{ value: 6000},
-							{ value: 8000}
+							{ value: 5000},
+							{ value: 10000},
+							{ value: 15000},
+							{ value: 20000},
+							{ value: 25000}
 						]
 					}
 				},
@@ -502,6 +506,7 @@ Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?
 									$('.pause-ch').removeClass('pause-ch')
 								}
 								lastIndex = index;
+								dateCounter = index;
 							}
 							return value;
 						}
