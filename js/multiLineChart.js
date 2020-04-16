@@ -15,6 +15,8 @@ class multilineChart {
     this.selector = opts.selector ? opts.selector : '#multilineChart';
     this.margin = opts.margin ? opts.margin : { top: 40, bottom: 30, left: 50, right: 100 };
     this.fatLineWidth = opts.fatLineWidth ? opts.fatLineWidth : 3;
+    this.needsMouseGroup = opts.needsMouseGroup ? opts.needsMouseGroup : true;
+    this.tickNumber = opts.tickNumber ? opts.tickNumber : 4;
 
     /* data */
     this.data = null;
@@ -23,6 +25,8 @@ class multilineChart {
     /* scales */
     this.xTickFormat = opts.xTickFormat ? opts.xTickFormat : "d";
     this.timeScale = opts.timeScale ? opts.timeScale : false;
+    this.exponentScale = opts.exponentScale ? opts.exponentScale : false;
+    this.logScale = opts.logScale ? opts.logScale : false;
 
     /* booleans */
     this.annotationsDrawn = false;
@@ -47,7 +51,6 @@ class multilineChart {
     }else{
       this.width = parseInt(d3.select(this.selector).style("width")) - this.margin.left - this.margin.right;
       this.height = 400 - this.margin.top - this.margin.bottom;
-      this.tickNumber = 4;
 
       var svg = d3
         .select(this.selector)
@@ -97,18 +100,31 @@ class multilineChart {
       this.xscale = d3.scaleLinear().range([0, this.width]);
     }
 
-    this.yscale = d3.scaleLinear().range([this.height, 0]);
+    if(this.exponentScale){
+      console.log('Exponent scale for', this.selector);
+      this.yscale = d3.scalePow(0.5).range([this.height, 0]);
+    }else if (this.logScale){
+      console.log('Log scale for', this.selector);
+      this.yscale = d3.scaleLog().range([this.height, 0]);
+    }else{
+      this.yscale = d3.scaleLinear().range([this.height, 0]);
+    }
     this.zscale = d3.scaleOrdinal(d3.schemeCategory10);
 
     // Axis setup
     if(this.timeScale){
-      this.xaxis = d3.axisBottom().scale(this.xscale).ticks(this.tickNumber).tickFormat( d3.timeFormat("%d %b") );
+      this.xaxis = d3.axisBottom().scale(this.xscale).ticks(this.tickNumber).tickFormat( this.width > 600 ? d3.timeFormat("%d %b") : d3.timeFormat('%d.%m') );
     }else{
-      this.xaxis = d3.axisBottom().scale(this.xscale);
+      this.xaxis = d3.axisBottom().scale(this.xscale).ticks();
+    }
+
+    if(this.logScale){
+      this.yaxis = d3.axisLeft().scale(this.yscale).ticks(3).tickFormat( d3.format(this.xTickFormat) );
+    }else{
+      this.yaxis = d3.axisLeft().scale(this.yscale).tickFormat( d3.format(this.xTickFormat) );
     }
 
     this.g_xaxis = this.g.append("g").attr("class", "x axis").attr("transform", "translate(0," + this.height + ")");
-    this.yaxis = d3.axisLeft().scale(this.yscale).tickFormat( d3.format(this.xTickFormat) );
     this.g_yaxis = this.g.append("g").attr("class", "y axis");
   }
 
@@ -120,11 +136,18 @@ class multilineChart {
       this.xscale.domain(d3.extent(this.data, function(d) { return d.xValue; })).nice;
     }
 
+    if(this.logScale){
+      this.yscale.domain([
+        1,
+        d3.max(this.countries, function(c) { return d3.max(c.values, function(d) { return d.value; }); })
+      ]);
+    }else{
+      this.yscale.domain([
+        d3.min(this.countries, function(c) { return d3.min(c.values, function(d) { return d.value; }); }),
+        d3.max(this.countries, function(c) { return d3.max(c.values, function(d) { return d.value; }); })
+      ]).nice();
+    }
 
-    this.yscale.domain([
-      d3.min(this.countries, function(c) { return d3.min(c.values, function(d) { return d.value; }); }),
-      d3.max(this.countries, function(c) { return d3.max(c.values, function(d) { return d.value; }); })
-    ]).nice();
 
     this.zscale.domain(this.countries.map(function(c) { return c.id; }));
 
@@ -177,7 +200,9 @@ class multilineChart {
     if(this.needsAnnotations){
       // TODO
     }
-    // this.mouseG = this.createMouseGroup();
+    if(this.needsMouseGroup){
+      this.mouseG = this.createMouseGroup();
+    }
 
     this.arrangeLabels();
   }
@@ -241,7 +266,6 @@ class multilineChart {
                   rect1.top > rect2.bottom);
 
                 if(overlap) {
-                  // console.log(this);
 
                   var rect1_y = that.getAttribute('y');
                   var rect2_y = this.getAttribute('y');
@@ -298,7 +322,6 @@ class multilineChart {
   showTooltip(idx, xValue){
     // idx = the index in value array
     // xValue = xAxis date or number
-    console.log(idx, xValue)
     var theChart = this;
     var valuesToShow = [];
 
@@ -312,7 +335,7 @@ class multilineChart {
        return d3.descending(x.value, y.value);
     })
 
-    var xSpan = theChart.xscale(xValue) + this.margin.left;
+    var xSpan = theChart.xscale(xValue) + this.margin.left + 10;
     if(xSpan < 50){
 
     }
@@ -322,10 +345,10 @@ class multilineChart {
       .style('opacity', 1)
       .style('left', function(d){ return xSpan + 'px'; })
       .selectAll()
-      .data(valuesToShow).enter() // for each vehicle category, list out name and price of premium
+      .data(valuesToShow).enter()
       .append('div')
       .html(d => {
-        return d.country + ': ' + d.value
+        return d.country + ': ' + d.value.toLocaleString();
       })
   }
 
@@ -418,7 +441,7 @@ class multilineChart {
               }
 
               if( typeof(d.values[idx]) !== 'undefined'){
-                if( !( isNaN(d.values[idx].value) ) && !( typeof(d.values[idx].value) != 'undefined' ) ){
+                if( ! isNaN(d.values[idx].value) ){
                   mouseG.select(".mouse-line")
                     .attr("d", function () {
                       var data = "M" + theChart.xscale(d.values[idx].xValue) + "," + (theChart.height);
@@ -437,7 +460,7 @@ class multilineChart {
 
             });
             theChart.showTooltip(idx, xValue);
-          }, 100);
+          }, 5);
 
         });
 
