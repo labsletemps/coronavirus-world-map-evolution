@@ -29,6 +29,64 @@
 	var animTimeoutCH;
 	var dateCounter = 0;
 	var availableDates = [];
+	var selectedDates = [
+		'2020-02-25',
+		'2020-02-26',
+		'2020-02-27',
+		'2020-03-06',
+		'2020-03-19', // VD > 1000 cas
+		'2020-03-23', // ZH
+		'2020-03-31', // GE devant le Tessin en valeurs relatives
+		'2020-04-14',
+	];
+	var explainLabels = new Map();
+
+	explainLabels.set('2020-02-25',
+		[{'dx': 100, 'dy': 80, 'canton': 'TI', 'label': 'Le premier cas est détecté au Tessin', 'title': '25 février', 'lat': 46.331734, 'lng': 8.8004529}
+	]);
+
+	explainLabels.set('2020-02-26',
+		[{'dx': 10, 'dy': -300, 'canton': 'GE', 'label': 'Un second est confirmé à Genève', 'title': '26 février', 'lat': 46.2043907, 'lng': 6.1431577}]
+	);
+
+	explainLabels.set('2020-02-27', [
+		{'dx': 20, 'dy': 60, 'canton': 'BS', 'label': 'Un cas à Bâle-Ville', 'title': '27 février', 'lat': 47.5619253, 'lng': 7.592768},
+		{'dx': 0, 'dy': 90, 'canton': 'JU', 'label': 'Un cas dans le Jura', 'title': '27 février', 'lat': 47.38444474, 'lng': 7.2430608},
+		{'dx': 300, 'dy': 10, 'canton': 'ZH', 'label': 'Deux cas à Zurich', 'title': '27 février', 'lat': 47.3768866, 'lng': 8.541694}
+	]);
+
+	explainLabels.set('2020-03-06', [
+		{'dx': -10, 'dy': -100, 'canton': 'VD', 'label': 'Premier décès en Suisse, au CHUV', 'title': '5 mars', 'lat': 46.5613135, 'lng': 6.536765},
+		{'dx': 300, 'dy': 10, 'canton': 'ZH', 'label': 'Zurich compte 30 cas', 'title': '6 mars', 'lat': 47.3768866, 'lng': 8.541694}
+	]);
+
+
+	// explainLabels.set('2020-03-03', {'canton': 'JU', 'label': 'Jura', 'title': '26 février', 'lat': 46.2043907, 'lng': 6.1431577});
+
+	/*explainLabels.set('2020-03-05',
+	[{'dx': -10, 'dy': -100, 'canton': 'VD', 'label': 'Premier décès en Suisse, au CHUV', 'title': '5 mars', 'lat': 46.5613135, 'lng': 6.536765}]
+);*/
+
+
+	explainLabels.set('2020-03-19',
+		[{'dx': -10, 'dy': -90, 'canton': 'VD', 'label': 'Vaud dépasse 1000 cas confirmés', 'title': '19 mars', 'lat': 46.5613135, 'lng': 6.536765}]
+	);
+
+	explainLabels.set('2020-03-23',
+		[{'dx': 300, 'dy': 10, 'canton': 'ZH', 'label': '1000e cas confirmé à Zurich', 'title': '23 mars', 'lat': 47.3768866, 'lng': 8.541694}]
+	);
+
+	explainLabels.set('2020-03-31',
+		[{'dx': 60, 'dy': 20, 'canton': 'GE', 'label': 'En taux par habitant, Genève dépasse le Tessin', 'title': '31 mars', 'lat': 46.2043907, 'lng': 6.1431577}]
+	);
+
+	explainLabels.set('2020-04-14',
+	[
+		{'dx': -10, 'dy': -90, 'canton': 'VD', 'label': 'Vaud reste le canton qui compte le plus de cas confirmés', 'title': '14 avril', 'lat': 46.5613135, 'lng': 6.536765},
+		//{'dx': -10, 'dy': -100, 'canton': 'VD', 'label': 'Appenzell Rhodes-Intérieures est celui qui en compte le moins', 'title': '14 avril', 'lat': 46.5613135, 'lng': 6.536765}
+	]);
+
+
 
 	var margin = {top: 0, right: 10, bottom: 10, left: 10};
 
@@ -94,7 +152,7 @@
 			.style("stroke", "#fff")
 			.style('stroke-width', 0.3)
 			.on('mouseover', function(d) {
-				d3.select(this).style('stroke-width', 1);
+				d3.select(this).style('stroke-width', 1.5);
 			 	d3.event.preventDefault();
 				var d2 = data.filter(function(e){ return (e.no == d.properties.KANTONSNUM && e.timestamp == current_timestamp)} )[0];
 			 	displayDetail(d2);
@@ -109,13 +167,20 @@
 			function update_date(timestamp) {
 				current_timestamp = timestamp;
 
-				svg.selectAll(".textLabels").remove();
+				svg.selectAll(".textLabels, .annotation-group").remove();
+
+				if(explainLabels.has(timestamp)){
+					$.each(explainLabels.get(timestamp), function(i, item){
+						annotate(item);
+					});
+				}
+
+
 
 				// svg.selectAll(".textLabels").remove();
 				// svg.selectAll(".textLabels").remove();
 
-				var cantons = svg.selectAll("path")
-
+				var cantons = svg.selectAll(".cantons path")
 		      .transition().duration(200)
 		      .style("fill", function(d){
 						if(showAbsoluteValues){
@@ -387,13 +452,13 @@
 			var slider_instance = $("#range_sliderCH").data("ionRangeSlider");
 
 			slider_instance.update({
-				from: dateCounter
+				from: availableDates.indexOf(selectedDates[dateCounter])
 			});
-			update_date( availableDates[dateCounter] );
+			update_date( selectedDates[dateCounter] );
 
 			dateCounter += 1;
-			if(dateCounter < availableDates.length){
-				animTimeoutCH = setTimeout(runAnimation, 200);
+			if(dateCounter < selectedDates.length){
+				animTimeoutCH = setTimeout(runAnimation, 2000);
 			}else{
 				playedCH = true;
 				dateCounter = 0;
@@ -514,5 +579,40 @@
 				}
 			}); // end c3js graph
 
+			// Annotate
+			// using https://github.com/susielu/d3-annotation/blob/master/d3-annotation.min.js
+
+			function annotate(item){
+				// lat, lng, title, label
+
+				var type = d3.annotationCalloutCircle;
+				var annotations = [{
+					note: {
+						label: item.label,
+						title: item.title
+					},
+					data: { lat: item.lat, lng: item.lng },
+					className: "show-bg",
+					dx: item.dx,
+					dy: item.dy,
+					subject: {
+				    radius: 50,
+				    radiusPadding: 5
+				  }
+				}];
+
+			var makeAnnotations = d3.annotation()
+				.type(type)
+				.accessors({
+					x: function(d){ return projection([+d.lng, +d.lat])[0] },
+					y: function(d){ return projection([+d.lng, +d.lat])[1] }
+				})
+				.annotations(annotations)
+
+				svg
+					.append("g")
+					.attr("class", "annotation-group")
+					.call(makeAnnotations);
+			}
 	});
 })();
