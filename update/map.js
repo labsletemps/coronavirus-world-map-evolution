@@ -50,7 +50,7 @@
 	/*
 		LOAD DATA
 	*/
-	Promise.all([d3.json("data/world_countries.json"), d3.csv("data/time-series-ecdc.csv?1586362016228")]).then( function (data) {
+	Promise.all([d3.json("data/world_countries.json"), d3.csv("data/time-series-ecdc.csv?1587041875525")]).then( function (data) {
 		var geodata = data[0];
 		var data = data[1];
 
@@ -133,7 +133,7 @@
 	  var size = d3.scalePow() // previously: d3.scaleSqrt()
 			.exponent(1/1.75)
 	    .domain(valueExtent)
-	    .range([ 2, 40 ]) // Size in pixel
+	    .range([ 2, 60 ]) // Size in pixel
 
 			// Legend: from Bubblemap Template by Yan Holtz
 			// https://www.d3-graph-gallery.com/graph/bubble_legend.html
@@ -282,6 +282,7 @@
 				var lastIndex;
 				var chart = c3.generate({
 					padding: {
+						top: 5,
 						right: 30,
     			},
 					size: {
@@ -290,7 +291,7 @@
 					bindto: "#time-serie-chart",
 
 					data: {
-						url: 'data/linegraphs-c3.csv?1586362016228',
+						url: 'data/linegraphs-c3.csv?1587041875525',
 						type: 'line',
 						x: 'timestamp',
 						colors: {
@@ -308,7 +309,7 @@
 						},
 						y: {
 							tick: {
-								values: [0, 200000, 400000, 600000, 800000, 1000000, 1200000, 1400000],
+								values: [0, 250000, 500000, 750000, 1000000, 1250000, 1500000, 1750000, 2000000],
 								format: function (x) {
 									if(x > 0){
 										return x / 1000000 + ' Mio';
@@ -323,13 +324,14 @@
 						y: {
 							lines: [
 								{ value: 0},
-								{ value: 200000},
-								{ value: 400000},
-								{ value: 600000},
-								{ value: 800000},
+								{ value: 250000},
+								{ value: 500000},
+								{ value: 750000},
 								{ value: 1000000},
-								{ value: 1200000},
-								{ value: 1400000}
+								{ value: 1250000},
+								{ value: 1500000},
+								{ value: 1750000},
+								{ value: 2000000},
 							]
 						}
 					},

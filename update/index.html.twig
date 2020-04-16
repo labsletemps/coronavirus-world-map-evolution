@@ -12,8 +12,8 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/c3.min.css"/>
 
-	<link rel="stylesheet" type="text/css" href="css/style.css?1586362016227" />
-	<link rel="stylesheet" type="text/css" href="css/map.css?1586362016227" />
+	<link rel="stylesheet" type="text/css" href="css/style.css?1587041875525" />
+	<link rel="stylesheet" type="text/css" href="css/map.css?1587041875525" />
 	<link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.css" />
 	<style>
 	.c3-area {
@@ -102,10 +102,33 @@
 
 	</div>
 
+
+	<div class="row padding-bottom">
+		<div class="col-lg-10 offset-md-1 col-md-12">
+			<h5>Nombre quotidien de décès</h5>
+			<p>Les Etats-Unis détiennent le triste record des décès quotidiens. La Corée du Sud n’a pas dépassé 9 décès en un jour et la Suisse a compté au plus 78 décès en 24 heures.</p>
+			<!-- (jq 16 avril) Ce graphique aplanit les fluctuations avec une moyenne mobile sur trois jours.  -->
+			<div class="multiline" id="chartMovingAvg"></div>
+			<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
+		</div>
+	</div>
+
+	<!-- <div class="row padding-bottom">
+		<div class="col-lg-10 offset-md-1 col-md-12">
+			<h5>Taux de décès quotidien</h5>
+			<p></p>
+			<div class="multiline" id="chartMovingAvgPop"></div>
+			<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
+		</div>
+	</div> -->
+
+
+
 		<!-- switzerland -->
 	<div class="row align-items-end">
 		<div class="col-12 group-label">
 			<h5>Nombre de cas confirmés en Suisse depuis le 6 mars</h5>
+			<p>Depuis le 10 avril, le nombre de cas confirmés augmente de moins de 2% par jour en Suisse. Le premier cas a été détecté le 25 février au Tessin, près d’un mois après l’arrivée du Covid-19 en Italie.</p>
 		</div>
 
 		<div class="col-12">
@@ -140,7 +163,7 @@
 		</div>
 		<div class="col-lg-12">
 			<div class="source"><b>Note:</b> les données cantonales manquantes sont substituées par celles du jour précédent.</div>
-			<div class="source"><b>Source:</b> <a target="_blank" href="https://www.corona-data.ch">corona-data.ch</a>, cantons suisses. Population dans les cantons: <a target="_blank" href="https://www.bfs.admin.ch/bfs/fr/home/statistiques/population/effectif-evolution/population.assetdetail.9486047.html">chiffres définitifs 2018 de l’OFS</a></div>
+			<div class="source"><b>Source:</b> <a target="_blank" href="https://github.com/openZH/covid_19">OpenZH</a>, cantons suisses. Population dans les cantons: <a target="_blank" href="https://www.bfs.admin.ch/bfs/fr/home/statistiques/population/effectif-evolution/population.assetdetail.9486047.html">chiffres définitifs 2018 de l’OFS</a></div>
 		</div>
 	</div>
 
@@ -148,11 +171,40 @@
 	<div class="row padding-bottom">
 		<div class="col-lg-10 offset-md-1 col-md-12">
 			<h5>Les cinq cantons suisses comptant le plus de cas par habitant</h5>
-			<p>Le Tessin, Genève et Vaud sont les cantons qui comptent le plus de cas confirmés pour 100 000 habitants.</p>
+			<p>Genève, le Tessin et Vaud sont les cantons qui comptent le plus de cas confirmés pour 100 000 habitants. Chaque canton a ses propres procédures et horaires de publication des données, ce qui rend la comparaison difficile.</p>
 				<div class="multiline" id="chartCantons"></div>
-			<div class="source"><b>Source:</b> <a target="_blank" href="https://www.corona-data.ch">corona-data.ch</a>, cantons suisses. Population dans les cantons: <a target="_blank" href="https://www.bfs.admin.ch/bfs/fr/home/statistiques/population/effectif-evolution/population.assetdetail.9486047.html">chiffres définitifs 2018 de l’OFS</a></div>
+			<div class="source"><b>Source:</b> <a target="_blank" href="https://github.com/openZH/covid_19">OpenZH</a>, cantons suisses. Population dans les cantons: <a target="_blank" href="https://www.bfs.admin.ch/bfs/fr/home/statistiques/population/effectif-evolution/population.assetdetail.9486047.html">chiffres définitifs 2018 de l’OFS</a>. Les données pour Genève (qui publie des chiffres prévisionnels) ont été revues à la hausse le jeudi 8 avril par notre source de données.</div>
 		</div>
 	</div>
+
+
+
+		<div class="row padding-bottom">
+			<div class="col-lg-10 offset-md-1 col-md-12">
+				<h5>Cas confirmés en valeurs absolues</h5>
+				<p>Le nombre de cas confirmés en laboratoire grimpe en flèche aux Etats-Unis, qui sont cependant encore loin derrière l’Italie et l’Espagne en taux de cas par rapport à la population.</p>
+				<div class="multiline" id="chartAbsolute"></div>
+				<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
+			</div>
+		</div>
+
+		<div class="row padding-bottom">
+			<div class="col-lg-10 offset-md-1 col-md-12">
+				<h5>Taux de cas confirmés par million d’habitants</h5>
+				<p>Les pays sont alignés sur le jour où les cas confirmés atteignent le taux de 1 cas par million d’habitants. Pour la Suisse, ce «jour 0» est le 29 février, avec 12 cas. Des différences dans les méthodes et le nombre de tests effectués rendent cependant les comparaisons entre pays difficiles.</p>
+				<div class="multiline" id="chartDayOffset"></div>
+				<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
+			</div>
+		</div>
+
+		<div class="row padding-bottom">
+			<div class="col-lg-10 offset-md-1 col-md-12">
+				<h5>Taux de décès par million d’habitants</h5>
+				<p>Comme dans le graphique précédent, les pays sont alignés sur le jour où les cas confirmés atteignent le taux de 1 cas par million d’habitants. L’attribution ou non d’un décès au Covid-19 peut être difficile, en particulier lorsque la victime était affectée par plusieurs maladies. Les critères ne sont pas les mêmes dans chaque pays.</p>
+				<div class="multiline" id="chartDeath"></div>
+				<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
+			</div>
+		</div>
 
 	<!-- toolbox -->
 
@@ -191,36 +243,11 @@
 		</div>
 		<div class="col-lg-12">
 			<div class="source">
-				<b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>. Jusqu’au 22 mars, nous indiquions le nombre de guérisons, compilé par l’université Johns-Hopkins. Cette dernière ne fournit plus ces chiffres pour un usage externe.</div>
+				<b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>. La taille des cercles a été modifiée le 15 avril en raison de la forte hausse des cas aux Etats-Unis.</div>
 			</div>
 		</div>
 
-	<div class="row padding-bottom">
-		<div class="col-lg-10 offset-md-1 col-md-12">
-			<h5>Cas confirmés en valeurs absolues</h5>
-			<p>Le nombre de cas confirmés en laboratoire grimpe en flèche aux Etats-Unis, qui sont cependant encore loin derrière l’Italie et l’Espagne en taux de cas par rapport à la population.</p>
-			<div class="multiline" id="chartAbsolute"></div>
-			<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
-		</div>
-	</div>
 
-	<div class="row padding-bottom">
-		<div class="col-lg-10 offset-md-1 col-md-12">
-			<h5>Taux de cas confirmés par million d’habitants</h5>
-			<p>Les pays sont alignés sur le jour où les cas confirmés atteignent le taux de 1 cas par million d’habitants. Pour la Suisse, ce «jour 0» est le 29 février, avec 12 cas. Des différences dans les méthodes et le nombre de tests effectués rendent cependant les comparaisons entre pays difficiles. La Confédération a renoncé au dépistage systématique le 14 mars (jour 14).</p>
-			<div class="multiline" id="chartDayOffset"></div>
-			<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
-		</div>
-	</div>
-
-	<div class="row padding-bottom">
-		<div class="col-lg-10 offset-md-1 col-md-12">
-			<h5>Taux de décès par million d’habitants</h5>
-			<p>Comme dans le graphique précédent, les pays sont alignés sur le jour où les cas confirmés atteignent le taux de 1 cas par million d’habitants. L’attribution ou non d’un décès au Covid-19 peut être problématique, en particulier lorsque la victime était affectée par plusieurs maladies. Les critères ne sont pas les mêmes dans chaque pays.</p>
-			<div class="multiline" id="chartDeath"></div>
-			<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
-		</div>
-	</div>
 
 
 	<!-- <div class="row padding-bottom">
@@ -435,6 +462,24 @@
 	<div class="row">
 		<div class="offset-md-2 col-md-8 col-sm-12">
 
+			<h3>Données et méthode</h3>
+
+			<p>Les données concernant <b>le monde entier ou des pays</b> sont fondées sur <a target="_blank" href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide">les fichiers diffusés quotidiennement par l’agence européenne ECDC</a>, à l’exception de la situation en temps réel, qui repose sur les <a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">compilations en continu de l’université Johns-Hopkins</a>.</p>
+
+			<p>Les <b>données des cantons Suisses</b> proviennent de <a target="_blank" href="https://github.com/openZH/covid_19">l’unité Open Data du canton de Zurich</a> (OpenZH). Compilé plus rapidement que les statistiques de l’OFSP, le total suisse diffère de celui indiqué dans les statistiques mondiales.</p>
+
+			<p>Les chiffres présentés <b>en haut de la page d’accueil</b> du «Temps» proviennent d’OpenZH pour la Suisse et de Johns-Hopkins pour le total mondial. Ces totaux sont complétés à mesure que les cantons et les autorités de chaque pays publient leur bilan. Le nombre de cas confirmés en Suisse est comparé à celui de la veille quand plus de 12 cantons ont publié leur bilan du jour et à l’avant-veille dans le cas contraire.</p>
+
+			<p>Du 27 janvier au 22 mars, cette page était actualisée grâce aux données de Johns-Hopkins, qui incluaient une estimation des guérisons. Cette université fournit un énorme travail de compilation des bilans officiels et des chiffres annoncés dans les médias en ligne, mais des erreurs importantes se sont fréquemment retrouvées dans les données.</p>
+
+			<p>Des chiffres de l’OFSP ont également été utilisés à plusieurs reprises. Nous avons dû y renoncer faute de continuité dans les séries temporelles.</p>
+
+			<p>Le tableau des cas confirmés et décès est mis à jour chaque heure. Les cartes et infographies sont mises à jour entre 10 heures et 15 heures, selon la disponibilité des données. Les taux de cas et de décès sont calculés à partir de la population 2018 selon la Banque mondiale pour les pays et selon l’Office fédéral de la statistique pour les cantons.</p>
+
+			<p>Les données géographiques sont ajoutées sur la base de l’abréviation sur trois lettres des pays (code alpha-3) et sur deux lettres des cantons. Nous réparons un maximum de données pour les pays, mais des chiffres relatifs aux trois pays suivants ne sont pas affichés pour cause de codes alpha-3 manquants: Pays-Bas caribéens, Anguilla et îles Malouines (18 cas confirmés au total le 15 avril).</p>
+
+			<p>Pour que l’aire des cercles soit proportionnelle au nombre de cas, ceux des cantons sont calculés au moyen d’une racine carrée. En raison des très grandes différences entre les pays (d’une poignée à plus d’un demi-million de cas), les cercles de la carte mondiale sont basés sur la puissance de 1/1.75.</p>
+
 			<p style="margin-bottom: 4px;"><b>A consulter également:</b></p>
 
 			<ul>
@@ -452,14 +497,16 @@
 
 <!-- 14 merged, minified libraries -->
 <script src="lib-merged/libraries.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
 
 <script>
 var controller = new ScrollMagic.Controller();
+var smallWindow = $( window ).width() < 600;
 </script>
-<script src="js/map.js?1586362016227"></script>
-<script src="js/mapCH.js?1586362016227"></script>
-<script src="js/animatedBarChartRelative.js?1586362016227"></script>
-<script src="js/multiLineChart.js?1586362016227"></script>
+<script src="js/map.js?1587041875525"></script>
+<script src="js/mapCH.js?1587041875525"></script>
+<script src="js/animatedBarChartRelative.js?1587041875525"></script>
+<script src="js/multiLineChart.js?1587041875525"></script>
 
 <script>
 
@@ -475,30 +522,72 @@ var timeLocale = {
 }
 d3.timeFormatDefaultLocale(timeLocale);
 
-var chartCantons = new multilineChart({'selector': '#chartCantons', 'file': 'data/c3-cantons-switzerland.csv?0', 'timeScale': true});
 
-var chartAbsolute = new multilineChart({'selector': '#chartAbsolute', 'file': 'data/cases_timestamp.csv?0', 'timeScale': true, 'xTickFormat': ".2s"});
+var chartMovingAvg = new multilineChart({'selector': '#chartMovingAvg', 'file': 'data/cases_timestamp_deaths.csv?1587041875525', 'timeScale': true, 'xTickFormat': "d", 'margin': { top: 40, bottom: 30, left: 42, right: 75 } });
+
+new ScrollMagic.Scene({triggerElement: "#chartMovingAvg", duration: 300})
+	.addTo(controller)
+	.on("enter", function(){
+		chartMovingAvg.addFatLine();
+
+		chartMovingAvg.annotate("En Italie, 795 décès en un dimanche", {x: new Date('2020-03-22'), y: 800}, -30, -50);
+
+		// chartMovingAvg.annotate("2004 décès en 24 heures en France", {x: new Date('2020-04-04'), y: 2000}, -20);
+
+		chartMovingAvg.annotate("2087 décès en 24 heures", {x: new Date('2020-04-11'), y: 2090}, -20);
+});
+
+/*
+var chartMovingAvgPop = new multilineChart({'selector': '#chartMovingAvgPop', 'file': 'data/cases_timestamp_3d.csv?1587041875525', 'timeScale': true, 'xTickFormat': "d"});
+
+new ScrollMagic.Scene({triggerElement: "#chartMovingAvgPop", duration: 300})
+	.addTo(controller)
+	.on("enter", function(){
+		chartMovingAvgPop.addFatLine();
+		// chartMovingAvg.annotate("2000 décès en 24 heures", {x: new Date('2020-04-11'), y: 6}, -50, -50);
+});*/
+
+var chartCantons = new multilineChart({'selector': '#chartCantons', 'file': 'data/c3-cantons-switzerland.csv?1587041875525', 'timeScale': true, 'margin': { top: 40, bottom: 30, left: 40, right: 20 }});
+
+var chartAbsolute = new multilineChart({'selector': '#chartAbsolute', 'file': 'data/cases_timestamp.csv?1587041875525', 'timeScale': true, 'xTickFormat': ".2s"});
 
 new ScrollMagic.Scene({triggerElement: "#chartAbsolute", duration: 300})
 	.addTo(controller)
 	.on("enter", function(){
 		chartAbsolute.addFatLine();
+		// chartAbsolute.annotate("23 janvier: Wuhan confinée", {x: new Date('2020-01-23'), y: 5000}, 0, -60);
+
+		chartAbsolute.annotate("31 janvier: premier cas en Italie", {x: new Date('2020-01-31'), y: 5000}, 0, -60);
+
+		chartAbsolute.annotate("17 mars: début du confinement en France", {x: new Date('2020-03-17'), y: 10000}, 0, -120);
 });
 
-var chartDayOffset = new multilineChart({'selector': '#chartDayOffset', 'file': 'data/cases_per_pop_day0.csv?0'});
+
+
+
+
+var chartDayOffset = new multilineChart({'selector': '#chartDayOffset', 'file': 'data/cases_per_pop_day0.csv?1587041875525'});
 
 new ScrollMagic.Scene({triggerElement: "#chartDayOffset", duration: 300})
 	.addTo(controller)
 	.on("enter", function(){
 		chartDayOffset.addFatLine();
+
+		if(!smallWindow){
+			chartDayOffset.annotate("Les pays sont alignés sur leur «jour 0»", {x: 0, y: 50}, 0);
+		}
+
+		chartDayOffset.annotate("Fin du dépistage systématique en Suisse", {x: 14, y: 185}, -5);
 });
 
-var chartDeath = new multilineChart({'selector': '#chartDeath', 'file': 'data/deaths_per_pop_day0.csv?0'});
+var chartDeath = new multilineChart({'selector': '#chartDeath', 'file': 'data/deaths_per_pop_day0.csv?1587041875525'});
 
 new ScrollMagic.Scene({triggerElement: "#chartDeath", duration: 300})
 	.addTo(controller)
 	.on("enter", function(){
 		chartDeath.addFatLine();
+		chartDeath.annotate("L’Espagne enregistre plus de 500 décès en 24 heures", {x: 23, y: 52}, -25);
+
 });
 
 
