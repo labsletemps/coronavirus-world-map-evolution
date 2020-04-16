@@ -133,7 +133,7 @@
 	  var size = d3.scalePow() // previously: d3.scaleSqrt()
 			.exponent(1/1.75)
 	    .domain(valueExtent)
-	    .range([ 2, 40 ]) // Size in pixel
+	    .range([ 2, 60 ]) // Size in pixel
 
 			// Legend: from Bubblemap Template by Yan Holtz
 			// https://www.d3-graph-gallery.com/graph/bubble_legend.html
