@@ -1,0 +1,130 @@
+<style type="text/css">
+.covid-numbers, .covid-numbers p{
+	font-size: 14px !important;
+}
+.covid-numbers.hidden{
+	display: none;
+}
+/* = titre de ce bloc */
+#block-letemps-content > div > div:nth-child(1) > h2{
+	display: none;
+}
+.covid-numbers .covid{
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #b80021;
+}
+.covid-numbers .big {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.covid-numbers i.fa{
+	font-size: 20px;
+	height: 100%;
+	display: block;
+	float: left;
+	margin-right: .4em;
+}
+.covid-numbers a, .covid-numbers a:visited{
+	color: #000;
+}
+.covid-numbers .vertical-center {
+	min-height: 60px;
+	display: flex;
+	align-items: center;
+}
+.covid-numbers .border-left {
+	border: 1px solid #ccc;
+	border-width: 0 0 0 1px;
+}
+.covid-numbers p{
+	margin-bottom: 0;
+	line-height: 1.2;
+}
+.covid-numbers .icon{
+	width: 40px;
+	/* todo: illustrator */
+	/* https://codepen.io/sosuke/pen/Pjoqqp */
+	filter: brightness(0) saturate(100%) invert(9%) sepia(95%) saturate(4550%) hue-rotate(341deg) brightness(89%) contrast(111%);
+	margin-right: 5px;
+}
+@media screen and (min-width: 500px){
+	/* = titre du bloc de une habituel */
+	#block-letemps-content > div > div.block-wrapper.block-wrapper--a-la-une- > div > div > div > h2{
+		margin-top: 0;
+	}
+}
+@media screen and (max-width: 499px) {
+	.covid-numbers{
+		font-size: 14px;
+		display: none;
+	}
+}
+</style>
+<div class="container">
+	<div class="row">
+		<div class="col-12 col-lg-10 col-lg-offset-1">
+			<div class="row covid-numbers">
+				<div class="col-12 col-sm-6 vertical-center">
+					<p><a href="https://labs.letemps.ch/interactive/2020/carte-coronavirus-monde/?ref=desktopbanner" target="_blank"><span class="covid-numbers covid">Covid-19</span>: la Suisse compte <span class="big confirmed_ch">_</span> cas confirmés (+<span class="big increase_ch">___</span> depuis <span class="day_name">___</span> soir). On compte <span class="big deaths_total">_______</span> décès et <span class="big confirmed_total">_</span> de cas confirmés dans le monde.</a></p>
+				</div>
+
+				<div class="col-4 col-sm-2 border-left vertical-center"><a id="current_story_icon" href="https://www.letemps.ch/monde/continu-linde-prolonge-douloureux-confinement?ref=desktopbanner" target="_blank"><img class="icon" src="https://labs.letemps.ch/interactive/2020/carte-coronavirus-monde/img/banner/text-box-outline.svg" /></a>
+					<p><a id="current_story" href="https://www.letemps.ch/monde/continu-linde-prolonge-douloureux-confinement" target="_blank">Notre suivi en direct</a></p>
+				</div>
+
+				<div class="col-4 col-sm-2 border-left vertical-center"><a href="https://labs.letemps.ch/interactive/2020/carte-coronavirus-monde/?ref=desktopbanner" target="_blank"><img class="icon" src="https://labs.letemps.ch/interactive/2020/carte-coronavirus-monde/img/banner/chart-bell-curve.svg" /></a>
+					<p><a href="https://labs.letemps.ch/interactive/2020/carte-coronavirus-monde/?ref=desktopbanner" target="_blank"><span class="d-none d-sm-block">Nos données</span> actualisées</a></p>
+				</div>
+
+				<div class="col-4 col-sm-2 border-left vertical-center"><a href="https://www.letemps.ch/podcast/message-viral?ref=desktopbanner" target="_blank"><img class="icon" src="https://labs.letemps.ch/interactive/2020/carte-coronavirus-monde/img/banner/podcast.svg" /></a>
+					<p><a href="https://www.letemps.ch/podcast/message-viral?ref=desktopbanner" target="_blank">Notre podcast «Message Viral»</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	function setText(selector, text){
+		var el = document.querySelector(selector);
+		if(el){
+			el.innerText = text;
+		}else{
+			console.log(selector, 'not found')
+		}
+	}
+	var d = new Date();
+	var update = Math.round(d.getTime() / 10000)
+	if (window.fetch) {
+		fetch('https://labs.letemps.ch/interactive/2020/carte-coronavirus-monde/data/metaAuto.json?' + update)
+		.then(function(response) { return response.json(); })
+		.then(function(data) {
+			var total_mio = Math.round(data['confirmed_total'] / 100000) * 0.1;
+			var total_suffix = ' millions';
+			setText('.increase_ch', data['increase_ch'] );
+			setText('.increase_rate_ch', (data['increase_rate_ch'] >= 0 ? '+' : '') + data['increase_rate_ch'].toLocaleString('fr-FR') + '%' );
+			setText('.confirmed_ch', data['confirmed_ch'].toLocaleString('fr-FR') );
+			setText('.cantonsCount', data['cantonsCount'] );
+			setText('.dashboardUpdate_ch', data['dashboardUpdate_ch'] );
+			setText('.confirmed_total', total_mio.toLocaleString('fr-FR') + total_suffix);
+			setText('.deaths_total', data['deaths_total'].toLocaleString('fr-FR') );
+			setText('.day_name', data['day_name']);
+
+		});
+
+		fetch('https://labs.letemps.ch/interactive/2020/carte-coronavirus-monde/data/current_story.json?' + update)
+		.then(function(response) {return response.json(); })
+		.then(function(data) {
+			if(data['hide'] == 'non'){
+				// TODO
+			}
+			console.log('Ajout de l’URL du direct: ', data['URL'])
+			document.getElementById('current_story').href = data['URL'] + '?ref=desktopbanner';
+			document.getElementById('current_story_icon').href = data['URL'] + '?ref=desktopbanner';
+
+		});
+	}else{
+		// TODO
+		setText('.error', 'Mise à jour des chiffres impossible: le navigateur est trop ancien' );
+	}
+</script>
