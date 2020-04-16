@@ -5,9 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<style>
+
 	body{
 		padding: 0;
 		margin: 0;
+	}
+	a, a:visited{
+		color: #000;
 	}
 	#screenshot-img{
 		max-width: 100%;
@@ -46,6 +50,10 @@
 	h2{
 		margin-top: .5em;
 	}
+
+	.update{
+		font-size: .7em;
+	}
 	@media screen and (max-width: 500px) {
 		h2{
 			font-size: 1.3rem;
@@ -53,39 +61,69 @@
 		.big{
 			font-size: 1.2rem;
 		}
+		h5{
+			font-size: 1.1em;
+		}
 	}
 
 	</style>
 </head>
 
 <body>
-	<div class="container">
-
-		<div class="row numbers text-center align-items-top margin-bottom outline worldmap">
-
-			<div class="col-12 group-label">
-				<h2>Le Covid-19 dans le monde</h2>
-				<p>Etat au <b class="dashboardUpdate">11 mars à 0h50</b>, source: <a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">Johns-Hopkins</a></p>
+	<div class="container-fluid">
+		<div class="row numbers text-center align-items-top worldmap outline">
+			<div class="col-12">
+				<h2><a target="_blank" href="https://labs.letemps.ch/interactive/2020/carte-coronavirus-monde/">Les chiffres du Covid-19 en direct</a></h2>
 			</div>
 
-			<div class="col-12 error alert-warning"></div>
+			<div class="col-6 col-sm-6 group-label border-right">
+				<div class="row">
 
-			<div class="col-md-3 col-6 add-margin">
-				<span class="big confirmed_total">_____</span><br>
-				<span class="label">cas confirmés cumulés</span>
+					<div class="col-12">
+						<h5>Dans le monde</h5>
+					</div>
+
+					<div class="col-12 col-md-6">
+						<span class="big confirmed_total">_____</span><br>
+						<span class="label">cas confirmés</span>
+					</div>
+					<div class="col-12 col-md-6">
+						<span class="big deaths_total">___</span><br>
+						<span class="label">décès</span>
+					</div>
+
+					<div class="col-12 margin-top">
+						<p class="small update">Mis à jour le <span class="dashboardUpdate">_____________</span>, source:
+							<a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">Johns-Hopkins</a></p>
+					</div>
+
+				</div>
 			</div>
-			<div class="col-md-3 col-6 add-margin">
-				<span class="big existing_total">___</span><br>
-				<span class="label">cas encore existants</span>
+
+			<div class="col-6 col-sm-6 group-label ">
+				<div class="row">
+					<div class="col-12">
+						<h5>En Suisse</h5>
+					</div>
+
+					<div class="col-12 col-md-6">
+						<span class="big confirmed_total_ch">___</span><br>
+						<span class="label">cas confirmés</span>
+					</div>
+					<div class="col-12 col-md-6">
+						<span class="big deaths_total_ch">___</span><br>
+						<span class="label">décès</span>
+					</div>
+
+					<div class="col-12 margin-top">
+						<p class="small update">Mis à jour le <span class="dashboardUpdate_ch">_____________</span>, source:
+							<a target="_blank" href="https://www.corona-data.ch/">Corona-data.ch</a>
+						</p>
+					</div>
+
+				</div>
 			</div>
-			<div class="col-md-3 col-6 add-margin">
-				<span class="big recovered_total">___</span><br>
-				<span class="label">guérisons</span>
-			</div>
-			<div class="col-md-3 col-6 add-margin">
-				<span class="big deaths_total">___</span><br>
-				<span class="label">décès</span>
-			</div>
+
 
 			<div class="col-12">
 			<a target="_blank" href="https://labs.letemps.ch/interactive/2020/carte-coronavirus-monde/">
@@ -117,11 +155,15 @@
 		fetch('data/metaAuto.json?' + update)
 		.then(function(response) { return response.json(); })
 		.then(function(data) {
+			console.log(data)
 			setText('.deaths_total', data['deaths_total'] );
 			setText('.confirmed_total', data['confirmed_total'].toLocaleString('fr') );
-			setText('.recovered_total', data['recovered_total'].toLocaleString('fr') );
-			setText('.existing_total', data['existing_total'].toLocaleString('fr') );
-			setText('.dashboardUpdate', data['dashboardUpdate']);
+			setText('.confirmed_total_ch', data['confirmed_ch'].toLocaleString('fr') );
+			setText('.deaths_total_ch', data['deaths_ch'].toLocaleString('fr') );
+
+			setText('.dashboardUpdate', data['dashboardUpdate'] );
+			setText('.dashboardUpdate_ch', data['dashboardUpdate_ch'] );
+
 		});
 	}else{
 		// TODO
