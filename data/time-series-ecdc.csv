@@ -32,6 +32,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Aruba,92,0,869.2,0.0,ABW,12.5,-69.9667
 2020-04-13,Aruba,92,0,869.2,0.0,ABW,12.5,-69.9667
 2020-04-14,Aruba,92,0,869.2,0.0,ABW,12.5,-69.9667
+2020-04-15,Aruba,92,0,869.2,0.0,ABW,12.5,-69.9667
+2020-04-16,Aruba,93,1,878.6,9.4,ABW,12.5,-69.9667
 2020-01-26,Afghanistan,0,0,0.0,0.0,AFG,33.0,65.0
 2020-01-27,Afghanistan,0,0,0.0,0.0,AFG,33.0,65.0
 2020-01-28,Afghanistan,0,0,0.0,0.0,AFG,33.0,65.0
@@ -112,6 +114,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Afghanistan,555,18,14.9,0.5,AFG,33.0,65.0
 2020-04-13,Afghanistan,607,18,16.3,0.5,AFG,33.0,65.0
 2020-04-14,Afghanistan,665,21,17.9,0.6,AFG,33.0,65.0
+2020-04-15,Afghanistan,714,23,19.2,0.6,AFG,33.0,65.0
+2020-04-16,Afghanistan,784,25,21.1,0.7,AFG,33.0,65.0
 2020-03-22,Angola,2,0,0.1,0.0,AGO,-12.5,18.5
 2020-03-23,Angola,2,0,0.1,0.0,AGO,-12.5,18.5
 2020-03-24,Angola,2,0,0.1,0.0,AGO,-12.5,18.5
@@ -136,6 +140,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Angola,19,2,0.6,0.1,AGO,-12.5,18.5
 2020-04-13,Angola,19,2,0.6,0.1,AGO,-12.5,18.5
 2020-04-14,Angola,19,2,0.6,0.1,AGO,-12.5,18.5
+2020-04-15,Angola,19,2,0.6,0.1,AGO,-12.5,18.5
+2020-04-16,Angola,19,2,0.6,0.1,AGO,-12.5,18.5
 2020-03-09,Albanie,2,0,0.7,0.0,ALB,41.0,20.0
 2020-03-10,Albanie,6,0,2.1,0.0,ALB,41.0,20.0
 2020-03-11,Albanie,10,0,3.5,0.0,ALB,41.0,20.0
@@ -173,6 +179,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Albanie,433,23,151.1,8.0,ALB,41.0,20.0
 2020-04-13,Albanie,446,23,155.6,8.0,ALB,41.0,20.0
 2020-04-14,Albanie,467,23,162.9,8.0,ALB,41.0,20.0
+2020-04-15,Albanie,475,24,165.7,8.4,ALB,41.0,20.0
+2020-04-16,Albanie,494,25,172.3,8.7,ALB,41.0,20.0
 2020-03-03,Andorre,1,0,13.0,0.0,AND,42.5,1.6
 2020-03-04,Andorre,1,0,13.0,0.0,AND,42.5,1.6
 2020-03-05,Andorre,1,0,13.0,0.0,AND,42.5,1.6
@@ -216,6 +224,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Andorre,622,28,8077.3,363.6,AND,42.5,1.6
 2020-04-13,Andorre,638,29,8285.1,376.6,AND,42.5,1.6
 2020-04-14,Andorre,646,29,8389.0,376.6,AND,42.5,1.6
+2020-04-15,Andorre,659,31,8557.8,402.6,AND,42.5,1.6
+2020-04-16,Andorre,673,33,8739.6,428.5,AND,42.5,1.6
 2020-01-26,Émirats arabes unis,0,0,0.0,0.0,ARE,24.0,54.0
 2020-01-27,Émirats arabes unis,1,0,0.1,0.0,ARE,24.0,54.0
 2020-01-28,Émirats arabes unis,1,0,0.1,0.0,ARE,24.0,54.0
@@ -296,6 +306,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Émirats arabes unis,3736,20,387.9,2.1,ARE,24.0,54.0
 2020-04-13,Émirats arabes unis,4123,22,428.1,2.3,ARE,24.0,54.0
 2020-04-14,Émirats arabes unis,4521,25,469.4,2.6,ARE,24.0,54.0
+2020-04-15,Émirats arabes unis,4933,28,512.2,2.9,ARE,24.0,54.0
+2020-04-16,Émirats arabes unis,5365,33,557.1,3.4,ARE,24.0,54.0
 2020-03-04,Argentine,1,0,0.0,0.0,ARG,-34.0,-64.0
 2020-03-05,Argentine,1,0,0.0,0.0,ARG,-34.0,-64.0
 2020-03-06,Argentine,2,0,0.0,0.0,ARG,-34.0,-64.0
@@ -338,6 +350,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Argentine,2137,89,48.0,2.0,ARG,-34.0,-64.0
 2020-04-13,Argentine,2203,95,49.5,2.1,ARG,-34.0,-64.0
 2020-04-14,Argentine,2272,98,51.1,2.2,ARG,-34.0,-64.0
+2020-04-15,Argentine,2432,105,54.7,2.4,ARG,-34.0,-64.0
+2020-04-16,Argentine,2432,109,54.7,2.4,ARG,-34.0,-64.0
 2020-01-26,Arménie,0,0,0.0,0.0,ARM,40.0,45.0
 2020-01-27,Arménie,0,0,0.0,0.0,ARM,40.0,45.0
 2020-01-28,Arménie,0,0,0.0,0.0,ARM,40.0,45.0
@@ -418,6 +432,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Arménie,967,13,327.6,4.4,ARM,40.0,45.0
 2020-04-13,Arménie,1013,13,343.2,4.4,ARM,40.0,45.0
 2020-04-14,Arménie,1039,14,352.0,4.7,ARM,40.0,45.0
+2020-04-15,Arménie,1111,17,376.4,5.8,ARM,40.0,45.0
+2020-04-16,Arménie,1159,18,392.6,6.1,ARM,40.0,45.0
 2020-03-15,Antigua-et-Barbuda,1,0,10.4,0.0,ATG,17.05,-61.8
 2020-03-16,Antigua-et-Barbuda,1,0,10.4,0.0,ATG,17.05,-61.8
 2020-03-17,Antigua-et-Barbuda,1,0,10.4,0.0,ATG,17.05,-61.8
@@ -449,6 +465,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Antigua-et-Barbuda,21,2,218.1,20.8,ATG,17.05,-61.8
 2020-04-13,Antigua-et-Barbuda,21,2,218.1,20.8,ATG,17.05,-61.8
 2020-04-14,Antigua-et-Barbuda,23,2,238.9,20.8,ATG,17.05,-61.8
+2020-04-15,Antigua-et-Barbuda,23,2,238.9,20.8,ATG,17.05,-61.8
+2020-04-16,Antigua-et-Barbuda,23,2,238.9,20.8,ATG,17.05,-61.8
 2020-01-26,Australie,4,0,0.2,0.0,AUS,-27.0,133.0
 2020-01-27,Australie,4,0,0.2,0.0,AUS,-27.0,133.0
 2020-01-28,Australie,4,0,0.2,0.0,AUS,-27.0,133.0
@@ -529,6 +547,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Australie,6289,57,251.6,2.3,AUS,-27.0,133.0
 2020-04-13,Australie,6322,61,253.0,2.4,AUS,-27.0,133.0
 2020-04-14,Australie,6366,61,254.7,2.4,AUS,-27.0,133.0
+2020-04-15,Australie,6416,61,256.7,2.4,AUS,-27.0,133.0
+2020-04-16,Australie,6458,63,258.4,2.5,AUS,-27.0,133.0
 2020-01-26,Autriche,0,0,0.0,0.0,AUT,47.3333,13.3333
 2020-01-27,Autriche,0,0,0.0,0.0,AUT,47.3333,13.3333
 2020-01-28,Autriche,0,0,0.0,0.0,AUT,47.3333,13.3333
@@ -609,6 +629,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Autriche,13807,337,1560.6,38.1,AUT,47.3333,13.3333
 2020-04-13,Autriche,13937,350,1575.3,39.6,AUT,47.3333,13.3333
 2020-04-14,Autriche,14043,368,1587.3,41.6,AUT,47.3333,13.3333
+2020-04-15,Autriche,14234,384,1608.9,43.4,AUT,47.3333,13.3333
+2020-04-16,Autriche,14370,393,1624.3,44.4,AUT,47.3333,13.3333
 2020-01-26,Azerbaïdjan,0,0,0.0,0.0,AZE,40.5,47.5
 2020-01-27,Azerbaïdjan,0,0,0.0,0.0,AZE,40.5,47.5
 2020-01-28,Azerbaïdjan,0,0,0.0,0.0,AZE,40.5,47.5
@@ -689,6 +711,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Azerbaïdjan,1058,11,106.4,1.1,AZE,40.5,47.5
 2020-04-13,Azerbaïdjan,1098,11,110.4,1.1,AZE,40.5,47.5
 2020-04-14,Azerbaïdjan,1148,12,115.5,1.2,AZE,40.5,47.5
+2020-04-15,Azerbaïdjan,1197,13,120.4,1.3,AZE,40.5,47.5
+2020-04-16,Azerbaïdjan,1253,13,126.0,1.3,AZE,40.5,47.5
 2020-04-01,Burundi,2,0,0.2,0.0,BDI,-3.5,30.0
 2020-04-02,Burundi,2,0,0.2,0.0,BDI,-3.5,30.0
 2020-04-03,Burundi,3,0,0.3,0.0,BDI,-3.5,30.0
@@ -703,6 +727,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Burundi,5,0,0.4,0.0,BDI,-3.5,30.0
 2020-04-13,Burundi,5,0,0.4,0.0,BDI,-3.5,30.0
 2020-04-14,Burundi,5,0,0.4,0.0,BDI,-3.5,30.0
+2020-04-15,Burundi,5,1,0.4,0.1,BDI,-3.5,30.0
+2020-04-16,Burundi,5,1,0.4,0.1,BDI,-3.5,30.0
 2020-01-26,Belgique,0,0,0.0,0.0,BEL,50.8333,4.0
 2020-01-27,Belgique,0,0,0.0,0.0,BEL,50.8333,4.0
 2020-01-28,Belgique,0,0,0.0,0.0,BEL,50.8333,4.0
@@ -783,6 +809,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Belgique,28018,3346,2453.0,292.9,BEL,50.8333,4.0
 2020-04-13,Belgique,29647,3600,2595.6,315.2,BEL,50.8333,4.0
 2020-04-14,Belgique,30589,3903,2678.1,341.7,BEL,50.8333,4.0
+2020-04-15,Belgique,31119,4157,2724.5,363.9,BEL,50.8333,4.0
+2020-04-16,Belgique,33573,4440,2939.3,388.7,BEL,50.8333,4.0
 2020-03-17,Bénin,1,0,0.1,0.0,BEN,9.5,2.25
 2020-03-18,Bénin,1,0,0.1,0.0,BEN,9.5,2.25
 2020-03-19,Bénin,1,0,0.1,0.0,BEN,9.5,2.25
@@ -812,6 +840,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Bénin,35,1,3.0,0.1,BEN,9.5,2.25
 2020-04-13,Bénin,35,1,3.0,0.1,BEN,9.5,2.25
 2020-04-14,Bénin,35,1,3.0,0.1,BEN,9.5,2.25
+2020-04-15,Bénin,35,1,3.0,0.1,BEN,9.5,2.25
+2020-04-16,Bénin,35,1,3.0,0.1,BEN,9.5,2.25
 2020-03-11,Burkina Faso,2,0,0.1,0.0,BFA,13.0,-2.0
 2020-03-12,Burkina Faso,2,0,0.1,0.0,BFA,13.0,-2.0
 2020-03-13,Burkina Faso,2,0,0.1,0.0,BFA,13.0,-2.0
@@ -847,6 +877,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Burkina Faso,484,27,24.5,1.4,BFA,13.0,-2.0
 2020-04-13,Burkina Faso,497,27,25.2,1.4,BFA,13.0,-2.0
 2020-04-14,Burkina Faso,515,28,26.1,1.4,BFA,13.0,-2.0
+2020-04-15,Burkina Faso,528,30,26.7,1.5,BFA,13.0,-2.0
+2020-04-16,Burkina Faso,542,32,27.4,1.6,BFA,13.0,-2.0
 2020-03-09,Bangladesh,3,0,0.0,0.0,BGD,24.0,90.0
 2020-03-10,Bangladesh,3,0,0.0,0.0,BGD,24.0,90.0
 2020-03-11,Bangladesh,3,0,0.0,0.0,BGD,24.0,90.0
@@ -884,6 +916,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Bangladesh,482,30,3.0,0.2,BGD,24.0,90.0
 2020-04-13,Bangladesh,621,34,3.8,0.2,BGD,24.0,90.0
 2020-04-14,Bangladesh,803,39,5.0,0.2,BGD,24.0,90.0
+2020-04-15,Bangladesh,1012,46,6.3,0.3,BGD,24.0,90.0
+2020-04-16,Bangladesh,1231,50,7.6,0.3,BGD,24.0,90.0
 2020-03-08,Bulgarie,2,0,0.3,0.0,BGR,43.0,25.0
 2020-03-09,Bulgarie,4,0,0.6,0.0,BGR,43.0,25.0
 2020-03-10,Bulgarie,4,0,0.6,0.0,BGR,43.0,25.0
@@ -922,6 +956,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Bulgarie,661,28,94.1,4.0,BGR,43.0,25.0
 2020-04-13,Bulgarie,675,29,96.1,4.1,BGR,43.0,25.0
 2020-04-14,Bulgarie,685,32,97.5,4.6,BGR,43.0,25.0
+2020-04-15,Bulgarie,713,35,101.5,5.0,BGR,43.0,25.0
+2020-04-16,Bulgarie,747,36,106.3,5.1,BGR,43.0,25.0
 2020-01-26,Bahreïn,0,0,0.0,0.0,BHR,26.0,50.55
 2020-01-27,Bahreïn,0,0,0.0,0.0,BHR,26.0,50.55
 2020-01-28,Bahreïn,0,0,0.0,0.0,BHR,26.0,50.55
@@ -1002,6 +1038,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Bahreïn,1040,6,662.7,3.8,BHR,26.0,50.55
 2020-04-13,Bahreïn,1136,6,723.8,3.8,BHR,26.0,50.55
 2020-04-14,Bahreïn,1361,7,867.2,4.5,BHR,26.0,50.55
+2020-04-15,Bahreïn,1528,7,973.6,4.5,BHR,26.0,50.55
+2020-04-16,Bahreïn,1673,7,1066.0,4.5,BHR,26.0,50.55
 2020-03-16,Bahamas,1,0,2.6,0.0,BHS,24.25,-76.0
 2020-03-17,Bahamas,1,0,2.6,0.0,BHS,24.25,-76.0
 2020-03-18,Bahamas,1,0,2.6,0.0,BHS,24.25,-76.0
@@ -1032,6 +1070,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Bahamas,46,8,119.3,20.7,BHS,24.25,-76.0
 2020-04-13,Bahamas,47,8,121.9,20.7,BHS,24.25,-76.0
 2020-04-14,Bahamas,49,8,127.1,20.7,BHS,24.25,-76.0
+2020-04-15,Bahamas,49,8,127.1,20.7,BHS,24.25,-76.0
+2020-04-16,Bahamas,53,8,137.4,20.7,BHS,24.25,-76.0
 2020-03-06,Bosnie-Herzégovine,2,0,0.6,0.0,BIH,44.0,18.0
 2020-03-07,Bosnie-Herzégovine,2,0,0.6,0.0,BIH,44.0,18.0
 2020-03-08,Bosnie-Herzégovine,2,0,0.6,0.0,BIH,44.0,18.0
@@ -1072,6 +1112,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Bosnie-Herzégovine,948,37,285.2,11.1,BIH,44.0,18.0
 2020-04-13,Bosnie-Herzégovine,1007,38,303.0,11.4,BIH,44.0,18.0
 2020-04-14,Bosnie-Herzégovine,1028,38,309.3,11.4,BIH,44.0,18.0
+2020-04-15,Bosnie-Herzégovine,1073,39,322.8,11.7,BIH,44.0,18.0
+2020-04-16,Bosnie-Herzégovine,1100,40,330.9,12.0,BIH,44.0,18.0
 2020-01-26,Bélarus,0,0,0.0,0.0,BLR,53.0,28.0
 2020-01-27,Bélarus,0,0,0.0,0.0,BLR,53.0,28.0
 2020-01-28,Bélarus,0,0,0.0,0.0,BLR,53.0,28.0
@@ -1152,6 +1194,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Bélarus,2226,23,234.7,2.4,BLR,53.0,28.0
 2020-04-13,Bélarus,2578,26,271.8,2.7,BLR,53.0,28.0
 2020-04-14,Bélarus,2919,29,307.7,3.1,BLR,53.0,28.0
+2020-04-15,Bélarus,3281,33,345.9,3.5,BLR,53.0,28.0
+2020-04-16,Bélarus,3728,36,393.0,3.8,BLR,53.0,28.0
 2020-03-24,Belize,1,0,2.6,0.0,BLZ,17.25,-88.75
 2020-03-25,Belize,1,0,2.6,0.0,BLZ,17.25,-88.75
 2020-03-26,Belize,2,0,5.2,0.0,BLZ,17.25,-88.75
@@ -1174,6 +1218,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Belize,13,2,33.9,5.2,BLZ,17.25,-88.75
 2020-04-13,Belize,14,2,36.5,5.2,BLZ,17.25,-88.75
 2020-04-14,Belize,18,2,47.0,5.2,BLZ,17.25,-88.75
+2020-04-15,Belize,18,2,47.0,5.2,BLZ,17.25,-88.75
+2020-04-16,Belize,18,2,47.0,5.2,BLZ,17.25,-88.75
 2020-03-20,Bermudes,2,0,31.3,0.0,BMU,32.3333,-64.75
 2020-03-21,Bermudes,2,0,31.3,0.0,BMU,32.3333,-64.75
 2020-03-22,Bermudes,2,0,31.3,0.0,BMU,32.3333,-64.75
@@ -1200,6 +1246,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Bermudes,50,4,781.6,62.5,BMU,32.3333,-64.75
 2020-04-13,Bermudes,57,4,891.1,62.5,BMU,32.3333,-64.75
 2020-04-14,Bermudes,57,4,891.1,62.5,BMU,32.3333,-64.75
+2020-04-15,Bermudes,57,5,891.1,78.2,BMU,32.3333,-64.75
+2020-04-16,Bermudes,81,5,1266.3,78.2,BMU,32.3333,-64.75
 2020-03-12,Bolivie,2,0,0.2,0.0,BOL,-17.0,-65.0
 2020-03-13,Bolivie,3,0,0.3,0.0,BOL,-17.0,-65.0
 2020-03-14,Bolivie,10,0,0.9,0.0,BOL,-17.0,-65.0
@@ -1234,6 +1282,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Bolivie,300,24,26.4,2.1,BOL,-17.0,-65.0
 2020-04-13,Bolivie,330,27,29.1,2.4,BOL,-17.0,-65.0
 2020-04-14,Bolivie,354,28,31.2,2.5,BOL,-17.0,-65.0
+2020-04-15,Bolivie,397,28,35.0,2.5,BOL,-17.0,-65.0
+2020-04-16,Bolivie,441,29,38.8,2.6,BOL,-17.0,-65.0
 2020-01-26,Brésil,0,0,0.0,0.0,BRA,-10.0,-55.0
 2020-01-27,Brésil,0,0,0.0,0.0,BRA,-10.0,-55.0
 2020-01-28,Brésil,0,0,0.0,0.0,BRA,-10.0,-55.0
@@ -1314,6 +1364,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Brésil,20727,1124,99.0,5.4,BRA,-10.0,-55.0
 2020-04-13,Brésil,22169,1223,105.8,5.8,BRA,-10.0,-55.0
 2020-04-14,Brésil,23430,1328,111.9,6.3,BRA,-10.0,-55.0
+2020-04-15,Brésil,25262,1532,120.6,7.3,BRA,-10.0,-55.0
+2020-04-16,Brésil,28320,1736,135.2,8.3,BRA,-10.0,-55.0
 2020-03-18,Barbade,1,0,3.5,0.0,BRB,13.1667,-59.5333
 2020-03-19,Barbade,1,0,3.5,0.0,BRB,13.1667,-59.5333
 2020-03-20,Barbade,2,0,7.0,0.0,BRB,13.1667,-59.5333
@@ -1342,6 +1394,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Barbade,68,4,237.2,14.0,BRB,13.1667,-59.5333
 2020-04-13,Barbade,71,4,247.7,14.0,BRB,13.1667,-59.5333
 2020-04-14,Barbade,72,4,251.2,14.0,BRB,13.1667,-59.5333
+2020-04-15,Barbade,73,5,254.7,17.4,BRB,13.1667,-59.5333
+2020-04-16,Barbade,75,5,261.7,17.4,BRB,13.1667,-59.5333
 2020-03-10,Brunéi Darussalam,1,0,2.3,0.0,BRN,4.5,114.6667
 2020-03-11,Brunéi Darussalam,1,0,2.3,0.0,BRN,4.5,114.6667
 2020-03-12,Brunéi Darussalam,11,0,25.6,0.0,BRN,4.5,114.6667
@@ -1378,6 +1432,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Brunéi Darussalam,136,1,317.0,2.3,BRN,4.5,114.6667
 2020-04-13,Brunéi Darussalam,136,1,317.0,2.3,BRN,4.5,114.6667
 2020-04-14,Brunéi Darussalam,136,1,317.0,2.3,BRN,4.5,114.6667
+2020-04-15,Brunéi Darussalam,136,1,317.0,2.3,BRN,4.5,114.6667
+2020-04-16,Brunéi Darussalam,136,1,317.0,2.3,BRN,4.5,114.6667
 2020-03-06,Bhoutan,1,0,1.3,0.0,BTN,27.5,90.5
 2020-03-07,Bhoutan,1,0,1.3,0.0,BTN,27.5,90.5
 2020-03-08,Bhoutan,1,0,1.3,0.0,BTN,27.5,90.5
@@ -1418,6 +1474,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Bhoutan,5,0,6.6,0.0,BTN,27.5,90.5
 2020-04-13,Bhoutan,5,0,6.6,0.0,BTN,27.5,90.5
 2020-04-14,Bhoutan,5,0,6.6,0.0,BTN,27.5,90.5
+2020-04-15,Bhoutan,5,0,6.6,0.0,BTN,27.5,90.5
+2020-04-16,Bhoutan,5,0,6.6,0.0,BTN,27.5,90.5
 2020-04-01,Botswana,3,0,1.3,0.0,BWA,-22.0,24.0
 2020-04-02,Botswana,4,1,1.8,0.4,BWA,-22.0,24.0
 2020-04-03,Botswana,4,1,1.8,0.4,BWA,-22.0,24.0
@@ -1432,6 +1490,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Botswana,13,1,5.8,0.4,BWA,-22.0,24.0
 2020-04-13,Botswana,13,1,5.8,0.4,BWA,-22.0,24.0
 2020-04-14,Botswana,13,1,5.8,0.4,BWA,-22.0,24.0
+2020-04-15,Botswana,13,1,5.8,0.4,BWA,-22.0,24.0
+2020-04-16,Botswana,13,1,5.8,0.4,BWA,-22.0,24.0
 2020-03-16,République centrafricaine,1,0,0.2,0.0,CAF,7.0,21.0
 2020-03-17,République centrafricaine,1,0,0.2,0.0,CAF,7.0,21.0
 2020-03-18,République centrafricaine,1,0,0.2,0.0,CAF,7.0,21.0
@@ -1462,6 +1522,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,République centrafricaine,11,0,2.4,0.0,CAF,7.0,21.0
 2020-04-13,République centrafricaine,11,0,2.4,0.0,CAF,7.0,21.0
 2020-04-14,République centrafricaine,11,0,2.4,0.0,CAF,7.0,21.0
+2020-04-15,République centrafricaine,11,0,2.4,0.0,CAF,7.0,21.0
+2020-04-16,République centrafricaine,11,0,2.4,0.0,CAF,7.0,21.0
 2020-01-26,Canada,1,0,0.0,0.0,CAN,60.0,-95.0
 2020-01-27,Canada,1,0,0.0,0.0,CAN,60.0,-95.0
 2020-01-28,Canada,2,0,0.1,0.0,CAN,60.0,-95.0
@@ -1542,6 +1604,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Canada,23301,653,628.8,17.6,CAN,60.0,-95.0
 2020-04-13,Canada,24365,717,657.5,19.3,CAN,60.0,-95.0
 2020-04-14,Canada,25663,780,692.5,21.0,CAN,60.0,-95.0
+2020-04-15,Canada,27046,903,729.8,24.4,CAN,60.0,-95.0
+2020-04-16,Canada,28364,1010,765.4,27.3,CAN,60.0,-95.0
 2020-01-26,Suisse,0,0,0.0,0.0,CHE,47.0,8.0
 2020-01-27,Suisse,0,0,0.0,0.0,CHE,47.0,8.0
 2020-01-28,Suisse,0,0,0.0,0.0,CHE,47.0,8.0
@@ -1622,6 +1686,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Suisse,24820,831,2914.3,97.6,CHE,47.0,8.0
 2020-04-13,Suisse,25220,858,2961.3,100.7,CHE,47.0,8.0
 2020-04-14,Suisse,25499,858,2994.1,100.7,CHE,47.0,8.0
+2020-04-15,Suisse,25753,900,3023.9,105.7,CHE,47.0,8.0
+2020-04-16,Suisse,26336,973,3092.3,114.2,CHE,47.0,8.0
 2020-03-04,Chili,1,0,0.1,0.0,CHL,-30.0,-71.0
 2020-03-05,Chili,3,0,0.2,0.0,CHL,-30.0,-71.0
 2020-03-06,Chili,4,0,0.2,0.0,CHL,-30.0,-71.0
@@ -1664,6 +1730,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Chili,6927,73,369.9,3.9,CHL,-30.0,-71.0
 2020-04-13,Chili,7213,80,385.1,4.3,CHL,-30.0,-71.0
 2020-04-14,Chili,7525,82,401.8,4.4,CHL,-30.0,-71.0
+2020-04-15,Chili,7917,92,422.7,4.9,CHL,-30.0,-71.0
+2020-04-16,Chili,8273,94,441.7,5.0,CHL,-30.0,-71.0
 2020-01-26,Chine,1988,56,1.4,0.0,CHN,35.0,105.0
 2020-01-27,Chine,2775,81,2.0,0.1,CHN,35.0,105.0
 2020-01-28,Chine,4528,106,3.3,0.1,CHN,35.0,105.0
@@ -1744,6 +1812,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Chine,83097,3343,59.7,2.4,CHN,35.0,105.0
 2020-04-13,Chine,83209,3345,59.7,2.4,CHN,35.0,105.0
 2020-04-14,Chine,83303,3345,59.8,2.4,CHN,35.0,105.0
+2020-04-15,Chine,83352,3346,59.8,2.4,CHN,35.0,105.0
+2020-04-16,Chine,83402,3346,59.9,2.4,CHN,35.0,105.0
 2020-03-12,Côte d'Ivoire,1,0,0.0,0.0,CIV,8.0,-5.0
 2020-03-13,Côte d'Ivoire,1,0,0.0,0.0,CIV,8.0,-5.0
 2020-03-14,Côte d'Ivoire,1,0,0.0,0.0,CIV,8.0,-5.0
@@ -1778,6 +1848,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Côte d'Ivoire,533,4,21.3,0.2,CIV,8.0,-5.0
 2020-04-13,Côte d'Ivoire,574,5,22.9,0.2,CIV,8.0,-5.0
 2020-04-14,Côte d'Ivoire,626,6,25.0,0.2,CIV,8.0,-5.0
+2020-04-15,Côte d'Ivoire,626,6,25.0,0.2,CIV,8.0,-5.0
+2020-04-16,Côte d'Ivoire,654,6,26.1,0.2,CIV,8.0,-5.0
 2020-03-07,Cameroun,1,0,0.0,0.0,CMR,6.0,12.0
 2020-03-08,Cameroun,1,0,0.0,0.0,CMR,6.0,12.0
 2020-03-09,Cameroun,2,0,0.1,0.0,CMR,6.0,12.0
@@ -1817,6 +1889,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Cameroun,820,11,32.5,0.4,CMR,6.0,12.0
 2020-04-13,Cameroun,820,12,32.5,0.5,CMR,6.0,12.0
 2020-04-14,Cameroun,820,12,32.5,0.5,CMR,6.0,12.0
+2020-04-15,Cameroun,855,17,33.9,0.7,CMR,6.0,12.0
+2020-04-16,Cameroun,855,17,33.9,0.7,CMR,6.0,12.0
 2020-03-11,RDC,1,0,0.0,0.0,COD,0.0,25.0
 2020-03-12,RDC,1,0,0.0,0.0,COD,0.0,25.0
 2020-03-13,RDC,1,0,0.0,0.0,COD,0.0,25.0
@@ -1852,6 +1926,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,RDC,234,20,2.8,0.2,COD,0.0,25.0
 2020-04-13,RDC,234,20,2.8,0.2,COD,0.0,25.0
 2020-04-14,RDC,235,20,2.8,0.2,COD,0.0,25.0
+2020-04-15,RDC,254,21,3.0,0.2,COD,0.0,25.0
+2020-04-16,RDC,267,22,3.2,0.3,COD,0.0,25.0
 2020-03-16,République du Congo,1,0,0.2,0.0,COG,-1.0,15.0
 2020-03-17,République du Congo,1,0,0.2,0.0,COG,-1.0,15.0
 2020-03-18,République du Congo,1,0,0.2,0.0,COG,-1.0,15.0
@@ -1882,6 +1958,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,République du Congo,60,5,11.4,1.0,COG,-1.0,15.0
 2020-04-13,République du Congo,70,5,13.3,1.0,COG,-1.0,15.0
 2020-04-14,République du Congo,70,5,13.3,1.0,COG,-1.0,15.0
+2020-04-15,République du Congo,74,5,14.1,1.0,COG,-1.0,15.0
+2020-04-16,République du Congo,117,5,22.3,1.0,COG,-1.0,15.0
 2020-03-07,Colombie,1,0,0.0,0.0,COL,4.0,-72.0
 2020-03-08,Colombie,1,0,0.0,0.0,COL,4.0,-72.0
 2020-03-09,Colombie,1,0,0.0,0.0,COL,4.0,-72.0
@@ -1921,6 +1999,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Colombie,2709,100,54.6,2.0,COL,4.0,-72.0
 2020-04-13,Colombie,2776,109,55.9,2.2,COL,4.0,-72.0
 2020-04-14,Colombie,2852,112,57.4,2.3,COL,4.0,-72.0
+2020-04-15,Colombie,2979,127,60.0,2.6,COL,4.0,-72.0
+2020-04-16,Colombie,3105,131,62.5,2.6,COL,4.0,-72.0
 2020-03-21,Cabo Verde,2,0,3.7,0.0,CPV,16.0,-24.0
 2020-03-22,Cabo Verde,3,0,5.5,0.0,CPV,16.0,-24.0
 2020-03-23,Cabo Verde,3,0,5.5,0.0,CPV,16.0,-24.0
@@ -1946,6 +2026,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Cabo Verde,8,1,14.7,1.8,CPV,16.0,-24.0
 2020-04-13,Cabo Verde,10,1,18.4,1.8,CPV,16.0,-24.0
 2020-04-14,Cabo Verde,10,1,18.4,1.8,CPV,16.0,-24.0
+2020-04-15,Cabo Verde,11,1,20.2,1.8,CPV,16.0,-24.0
+2020-04-16,Cabo Verde,55,1,101.1,1.8,CPV,16.0,-24.0
 2020-03-07,Costa Rica,1,0,0.2,0.0,CRI,10.0,-84.0
 2020-03-08,Costa Rica,1,0,0.2,0.0,CRI,10.0,-84.0
 2020-03-09,Costa Rica,5,0,1.0,0.0,CRI,10.0,-84.0
@@ -1985,6 +2067,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Costa Rica,577,3,115.4,0.6,CRI,10.0,-84.0
 2020-04-13,Costa Rica,595,3,119.0,0.6,CRI,10.0,-84.0
 2020-04-14,Costa Rica,612,3,122.4,0.6,CRI,10.0,-84.0
+2020-04-15,Costa Rica,618,3,123.6,0.6,CRI,10.0,-84.0
+2020-04-16,Costa Rica,626,4,125.2,0.8,CRI,10.0,-84.0
 2020-03-12,Cuba,3,0,0.3,0.0,CUB,21.5,-80.0
 2020-03-13,Cuba,3,0,0.3,0.0,CUB,21.5,-80.0
 2020-03-14,Cuba,4,0,0.4,0.0,CUB,21.5,-80.0
@@ -2019,6 +2103,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Cuba,620,16,54.7,1.4,CUB,21.5,-80.0
 2020-04-13,Cuba,669,18,59.0,1.6,CUB,21.5,-80.0
 2020-04-14,Cuba,726,21,64.0,1.9,CUB,21.5,-80.0
+2020-04-15,Cuba,766,21,67.6,1.9,CUB,21.5,-80.0
+2020-04-16,Cuba,814,24,71.8,2.1,CUB,21.5,-80.0
 2020-03-13,Curaçao,1,0,6.3,0.0,CUW,12.16957,-68.990021
 2020-03-14,Curaçao,1,0,6.3,0.0,CUW,12.16957,-68.990021
 2020-03-15,Curaçao,1,0,6.3,0.0,CUW,12.16957,-68.990021
@@ -2052,6 +2138,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Curaçao,14,1,87.6,6.3,CUW,12.16957,-68.990021
 2020-04-13,Curaçao,14,1,87.6,6.3,CUW,12.16957,-68.990021
 2020-04-14,Curaçao,14,1,87.6,6.3,CUW,12.16957,-68.990021
+2020-04-15,Curaçao,14,1,87.6,6.3,CUW,12.16957,-68.990021
+2020-04-16,Curaçao,14,1,87.6,6.3,CUW,12.16957,-68.990021
 2020-03-20,Îles Caïmans,1,0,15.6,0.0,CYM,19.5,-80.5
 2020-03-21,Îles Caïmans,3,1,46.7,15.6,CYM,19.5,-80.5
 2020-03-22,Îles Caïmans,3,1,46.7,15.6,CYM,19.5,-80.5
@@ -2078,6 +2166,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Îles Caïmans,53,1,825.9,15.6,CYM,19.5,-80.5
 2020-04-13,Îles Caïmans,53,1,825.9,15.6,CYM,19.5,-80.5
 2020-04-14,Îles Caïmans,53,1,825.9,15.6,CYM,19.5,-80.5
+2020-04-15,Îles Caïmans,54,1,841.5,15.6,CYM,19.5,-80.5
+2020-04-16,Îles Caïmans,60,1,935.0,15.6,CYM,19.5,-80.5
 2020-03-10,Chypre,2,0,1.7,0.0,CYP,35.0,33.0
 2020-03-11,Chypre,2,0,1.7,0.0,CYP,35.0,33.0
 2020-03-12,Chypre,6,0,5.0,0.0,CYP,35.0,33.0
@@ -2114,6 +2204,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Chypre,616,15,518.0,12.6,CYP,35.0,33.0
 2020-04-13,Chypre,633,16,532.3,13.5,CYP,35.0,33.0
 2020-04-14,Chypre,662,17,556.6,14.3,CYP,35.0,33.0
+2020-04-15,Chypre,695,17,584.4,14.3,CYP,35.0,33.0
+2020-04-16,Chypre,715,17,601.2,14.3,CYP,35.0,33.0
 2020-01-26,République tchèque,0,0,0.0,0.0,CZE,49.75,15.5
 2020-01-27,République tchèque,0,0,0.0,0.0,CZE,49.75,15.5
 2020-01-28,République tchèque,0,0,0.0,0.0,CZE,49.75,15.5
@@ -2194,6 +2286,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,République tchèque,5902,129,555.4,12.1,CZE,49.75,15.5
 2020-04-13,République tchèque,5991,138,563.8,13.0,CZE,49.75,15.5
 2020-04-14,République tchèque,6059,143,570.2,13.5,CZE,49.75,15.5
+2020-04-15,République tchèque,6141,161,577.9,15.2,CZE,49.75,15.5
+2020-04-16,République tchèque,6303,166,593.2,15.6,CZE,49.75,15.5
 2020-01-26,Allemagne,0,0,0.0,0.0,DEU,51.0,9.0
 2020-01-27,Allemagne,0,0,0.0,0.0,DEU,51.0,9.0
 2020-01-28,Allemagne,1,0,0.0,0.0,DEU,51.0,9.0
@@ -2274,6 +2368,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Allemagne,120479,2673,1452.8,32.2,DEU,51.0,9.0
 2020-04-13,Allemagne,123016,2799,1483.4,33.8,DEU,51.0,9.0
 2020-04-14,Allemagne,125098,2969,1508.5,35.8,DEU,51.0,9.0
+2020-04-15,Allemagne,127584,3254,1538.5,39.2,DEU,51.0,9.0
+2020-04-16,Allemagne,130450,3569,1573.1,43.0,DEU,51.0,9.0
 2020-03-19,Djibouti,1,0,1.0,0.0,DJI,11.5,43.0
 2020-03-20,Djibouti,1,0,1.0,0.0,DJI,11.5,43.0
 2020-03-21,Djibouti,1,0,1.0,0.0,DJI,11.5,43.0
@@ -2301,6 +2397,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Djibouti,187,2,195.0,2.1,DJI,11.5,43.0
 2020-04-13,Djibouti,214,2,223.2,2.1,DJI,11.5,43.0
 2020-04-14,Djibouti,298,2,310.8,2.1,DJI,11.5,43.0
+2020-04-15,Djibouti,363,2,378.6,2.1,DJI,11.5,43.0
+2020-04-16,Djibouti,435,2,453.6,2.1,DJI,11.5,43.0
 2020-03-23,Dominique,1,0,14.0,0.0,DMA,15.4167,-61.3333
 2020-03-24,Dominique,1,0,14.0,0.0,DMA,15.4167,-61.3333
 2020-03-25,Dominique,2,0,27.9,0.0,DMA,15.4167,-61.3333
@@ -2324,6 +2422,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Dominique,16,0,223.4,0.0,DMA,15.4167,-61.3333
 2020-04-13,Dominique,16,0,223.4,0.0,DMA,15.4167,-61.3333
 2020-04-14,Dominique,16,0,223.4,0.0,DMA,15.4167,-61.3333
+2020-04-15,Dominique,16,0,223.4,0.0,DMA,15.4167,-61.3333
+2020-04-16,Dominique,16,0,223.4,0.0,DMA,15.4167,-61.3333
 2020-01-26,Danemark,0,0,0.0,0.0,DNK,56.0,10.0
 2020-01-27,Danemark,0,0,0.0,0.0,DNK,56.0,10.0
 2020-01-28,Danemark,0,0,0.0,0.0,DNK,56.0,10.0
@@ -2404,6 +2504,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Danemark,5996,260,1034.2,44.8,DNK,56.0,10.0
 2020-04-13,Danemark,6174,273,1065.0,47.1,DNK,56.0,10.0
 2020-04-14,Danemark,6318,285,1089.8,49.2,DNK,56.0,10.0
+2020-04-15,Danemark,6511,299,1123.1,51.6,DNK,56.0,10.0
+2020-04-16,Danemark,6681,309,1152.4,53.3,DNK,56.0,10.0
 2020-01-26,République dominicaine,0,0,0.0,0.0,DOM,19.0,-70.6667
 2020-01-27,République dominicaine,0,0,0.0,0.0,DOM,19.0,-70.6667
 2020-01-28,République dominicaine,0,0,0.0,0.0,DOM,19.0,-70.6667
@@ -2484,6 +2586,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,République dominicaine,2759,135,259.6,12.7,DOM,19.0,-70.6667
 2020-04-13,République dominicaine,2967,173,279.2,16.3,DOM,19.0,-70.6667
 2020-04-14,République dominicaine,3167,177,298.0,16.7,DOM,19.0,-70.6667
+2020-04-15,République dominicaine,3286,183,309.2,17.2,DOM,19.0,-70.6667
+2020-04-16,République dominicaine,3614,189,340.1,17.8,DOM,19.0,-70.6667
 2020-01-26,Algérie,0,0,0.0,0.0,DZA,28.0,3.0
 2020-01-27,Algérie,0,0,0.0,0.0,DZA,28.0,3.0
 2020-01-28,Algérie,0,0,0.0,0.0,DZA,28.0,3.0
@@ -2564,6 +2668,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Algérie,1825,275,43.2,6.5,DZA,28.0,3.0
 2020-04-13,Algérie,1914,293,45.3,6.9,DZA,28.0,3.0
 2020-04-14,Algérie,1983,313,47.0,7.4,DZA,28.0,3.0
+2020-04-15,Algérie,2070,326,49.0,7.7,DZA,28.0,3.0
+2020-04-16,Algérie,2160,336,51.2,8.0,DZA,28.0,3.0
 2020-01-26,Équateur,0,0,0.0,0.0,ECU,-2.0,-77.5
 2020-01-27,Équateur,0,0,0.0,0.0,ECU,-2.0,-77.5
 2020-01-28,Équateur,0,0,0.0,0.0,ECU,-2.0,-77.5
@@ -2644,6 +2750,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Équateur,7257,315,424.8,18.4,ECU,-2.0,-77.5
 2020-04-13,Équateur,7466,333,437.0,19.5,ECU,-2.0,-77.5
 2020-04-14,Équateur,7529,355,440.7,20.8,ECU,-2.0,-77.5
+2020-04-15,Équateur,7603,355,445.0,20.8,ECU,-2.0,-77.5
+2020-04-16,Équateur,7858,388,460.0,22.7,ECU,-2.0,-77.5
 2020-01-26,Egypte,0,0,0.0,0.0,EGY,27.0,30.0
 2020-01-27,Egypte,0,0,0.0,0.0,EGY,27.0,30.0
 2020-01-28,Egypte,0,0,0.0,0.0,EGY,27.0,30.0
@@ -2724,6 +2832,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Egypte,1939,146,19.7,1.5,EGY,27.0,30.0
 2020-04-13,Egypte,2065,159,21.0,1.6,EGY,27.0,30.0
 2020-04-14,Egypte,2190,164,22.3,1.7,EGY,27.0,30.0
+2020-04-15,Egypte,2350,178,23.9,1.8,EGY,27.0,30.0
+2020-04-16,Egypte,2505,183,25.5,1.9,EGY,27.0,30.0
 2020-03-22,Érythrée,1,0,,,ERI,15.0,39.0
 2020-03-23,Érythrée,1,0,,,ERI,15.0,39.0
 2020-03-24,Érythrée,1,0,,,ERI,15.0,39.0
@@ -2748,6 +2858,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Érythrée,34,0,,,ERI,15.0,39.0
 2020-04-13,Érythrée,34,0,,,ERI,15.0,39.0
 2020-04-14,Érythrée,34,0,,,ERI,15.0,39.0
+2020-04-15,Érythrée,35,0,,,ERI,15.0,39.0
+2020-04-16,Érythrée,35,0,,,ERI,15.0,39.0
 2020-01-26,Espagne,0,0,0.0,0.0,ESP,40.0,-4.0
 2020-01-27,Espagne,0,0,0.0,0.0,ESP,40.0,-4.0
 2020-01-28,Espagne,0,0,0.0,0.0,ESP,40.0,-4.0
@@ -2828,6 +2940,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Espagne,161852,16353,3464.0,350.0,ESP,40.0,-4.0
 2020-04-13,Espagne,166019,16972,3553.2,363.2,ESP,40.0,-4.0
 2020-04-14,Espagne,169496,17489,3627.6,374.3,ESP,40.0,-4.0
+2020-04-15,Espagne,172541,18056,3692.8,386.4,ESP,40.0,-4.0
+2020-04-16,Espagne,177633,18579,3801.8,397.6,ESP,40.0,-4.0
 2020-01-26,Estonie,0,0,0.0,0.0,EST,59.0,26.0
 2020-01-27,Estonie,0,0,0.0,0.0,EST,59.0,26.0
 2020-01-28,Estonie,0,0,0.0,0.0,EST,59.0,26.0
@@ -2908,6 +3022,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Estonie,1304,24,987.2,18.2,EST,59.0,26.0
 2020-04-13,Estonie,1309,25,991.0,18.9,EST,59.0,26.0
 2020-04-14,Estonie,1332,28,1008.4,21.2,EST,59.0,26.0
+2020-04-15,Estonie,1373,31,1039.5,23.5,EST,59.0,26.0
+2020-04-16,Estonie,1402,35,1061.4,26.5,EST,59.0,26.0
 2020-03-14,Éthiopie,1,0,0.0,0.0,ETH,8.0,38.0
 2020-03-15,Éthiopie,1,0,0.0,0.0,ETH,8.0,38.0
 2020-03-16,Éthiopie,4,0,0.0,0.0,ETH,8.0,38.0
@@ -2940,6 +3056,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Éthiopie,69,3,0.6,0.0,ETH,8.0,38.0
 2020-04-13,Éthiopie,71,3,0.7,0.0,ETH,8.0,38.0
 2020-04-14,Éthiopie,74,3,0.7,0.0,ETH,8.0,38.0
+2020-04-15,Éthiopie,82,3,0.8,0.0,ETH,8.0,38.0
+2020-04-16,Éthiopie,85,3,0.8,0.0,ETH,8.0,38.0
 2020-01-26,Finlande,0,0,0.0,0.0,FIN,64.0,26.0
 2020-01-27,Finlande,0,0,0.0,0.0,FIN,64.0,26.0
 2020-01-28,Finlande,0,0,0.0,0.0,FIN,64.0,26.0
@@ -3020,6 +3138,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Finlande,2905,49,526.5,8.9,FIN,64.0,26.0
 2020-04-13,Finlande,2974,56,539.0,10.1,FIN,64.0,26.0
 2020-04-14,Finlande,3064,59,555.3,10.7,FIN,64.0,26.0
+2020-04-15,Finlande,3161,64,572.8,11.6,FIN,64.0,26.0
+2020-04-16,Finlande,3237,72,586.6,13.0,FIN,64.0,26.0
 2020-03-20,Fidji,1,0,1.1,0.0,FJI,-18.0,175.0
 2020-03-21,Fidji,1,0,1.1,0.0,FJI,-18.0,175.0
 2020-03-22,Fidji,2,0,2.3,0.0,FJI,-18.0,175.0
@@ -3046,6 +3166,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Fidji,16,0,18.1,0.0,FJI,-18.0,175.0
 2020-04-13,Fidji,16,0,18.1,0.0,FJI,-18.0,175.0
 2020-04-14,Fidji,16,0,18.1,0.0,FJI,-18.0,175.0
+2020-04-15,Fidji,16,0,18.1,0.0,FJI,-18.0,175.0
+2020-04-16,Fidji,16,0,18.1,0.0,FJI,-18.0,175.0
 2020-01-26,France,3,0,0.0,0.0,FRA,46.0,2.0
 2020-01-27,France,3,0,0.0,0.0,FRA,46.0,2.0
 2020-01-28,France,3,0,0.0,0.0,FRA,46.0,2.0
@@ -3126,6 +3248,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,France,93790,13832,1400.1,206.5,FRA,46.0,2.0
 2020-04-13,France,95403,14393,1424.2,214.9,FRA,46.0,2.0
 2020-04-14,France,98076,14967,1464.1,223.4,FRA,46.0,2.0
+2020-04-15,France,103573,15729,1546.2,234.8,FRA,46.0,2.0
+2020-04-16,France,106206,17167,1585.5,256.3,FRA,46.0,2.0
 2020-03-20,Îles Féroé,72,0,1484.6,0.0,FRO,62.0,-7.0
 2020-03-21,Îles Féroé,80,0,1649.6,0.0,FRO,62.0,-7.0
 2020-03-22,Îles Féroé,92,0,1897.0,0.0,FRO,62.0,-7.0
@@ -3152,6 +3276,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Îles Féroé,184,0,3794.0,0.0,FRO,62.0,-7.0
 2020-04-13,Îles Féroé,184,0,3794.0,0.0,FRO,62.0,-7.0
 2020-04-14,Îles Féroé,184,0,3794.0,0.0,FRO,62.0,-7.0
+2020-04-15,Îles Féroé,184,0,3794.0,0.0,FRO,62.0,-7.0
+2020-04-16,Îles Féroé,184,0,3794.0,0.0,FRO,62.0,-7.0
 2020-03-13,Gabon,1,0,0.5,0.0,GAB,-1.0,11.75
 2020-03-14,Gabon,1,0,0.5,0.0,GAB,-1.0,11.75
 2020-03-15,Gabon,1,0,0.5,0.0,GAB,-1.0,11.75
@@ -3185,6 +3311,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Gabon,49,1,23.1,0.5,GAB,-1.0,11.75
 2020-04-13,Gabon,57,1,26.9,0.5,GAB,-1.0,11.75
 2020-04-14,Gabon,57,1,26.9,0.5,GAB,-1.0,11.75
+2020-04-15,Gabon,75,1,35.4,0.5,GAB,-1.0,11.75
+2020-04-16,Gabon,87,1,41.1,0.5,GAB,-1.0,11.75
 2020-01-26,Royaume-Uni,0,0,0.0,0.0,GBR,54.0,-2.0
 2020-01-27,Royaume-Uni,0,0,0.0,0.0,GBR,54.0,-2.0
 2020-01-28,Royaume-Uni,0,0,0.0,0.0,GBR,54.0,-2.0
@@ -3265,6 +3393,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Royaume-Uni,78991,9875,1188.0,148.5,GBR,54.0,-2.0
 2020-04-13,Royaume-Uni,84279,10612,1267.6,159.6,GBR,54.0,-2.0
 2020-04-14,Royaume-Uni,88621,11329,1332.9,170.4,GBR,54.0,-2.0
+2020-04-15,Royaume-Uni,93873,12107,1411.9,182.1,GBR,54.0,-2.0
+2020-04-16,Royaume-Uni,98476,12868,1481.1,193.5,GBR,54.0,-2.0
 2020-01-26,Géorgie,0,0,0.0,0.0,GEO,42.0,43.5
 2020-01-27,Géorgie,0,0,0.0,0.0,GEO,42.0,43.5
 2020-01-28,Géorgie,0,0,0.0,0.0,GEO,42.0,43.5
@@ -3345,6 +3475,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Géorgie,242,3,64.9,0.8,GEO,42.0,43.5
 2020-04-13,Géorgie,257,3,68.9,0.8,GEO,42.0,43.5
 2020-04-14,Géorgie,272,3,72.9,0.8,GEO,42.0,43.5
+2020-04-15,Géorgie,300,3,80.4,0.8,GEO,42.0,43.5
+2020-04-16,Géorgie,306,3,82.0,0.8,GEO,42.0,43.5
 2020-03-20,Guernsey,1,0,15.9,0.0,GGY,49.5,-2.56
 2020-03-21,Guernsey,1,0,15.9,0.0,GGY,49.5,-2.56
 2020-03-22,Guernsey,1,0,15.9,0.0,GGY,49.5,-2.56
@@ -3371,6 +3503,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Guernsey,209,6,3316.1,95.2,GGY,49.5,-2.56
 2020-04-13,Guernsey,218,6,3458.9,95.2,GGY,49.5,-2.56
 2020-04-14,Guernsey,219,6,3474.8,95.2,GGY,49.5,-2.56
+2020-04-15,Guernsey,223,7,3538.2,111.1,GGY,49.5,-2.56
+2020-04-16,Guernsey,223,7,3538.2,111.1,GGY,49.5,-2.56
 2020-03-13,Ghana,2,0,0.1,0.0,GHA,8.0,-2.0
 2020-03-14,Ghana,2,0,0.1,0.0,GHA,8.0,-2.0
 2020-03-15,Ghana,2,0,0.1,0.0,GHA,8.0,-2.0
@@ -3404,6 +3538,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Ghana,408,8,13.7,0.3,GHA,8.0,-2.0
 2020-04-13,Ghana,566,8,19.0,0.3,GHA,8.0,-2.0
 2020-04-14,Ghana,566,8,19.0,0.3,GHA,8.0,-2.0
+2020-04-15,Ghana,636,8,21.4,0.3,GHA,8.0,-2.0
+2020-04-16,Ghana,641,8,21.5,0.3,GHA,8.0,-2.0
 2020-03-20,Gibraltar,10,0,296.6,0.0,GIB,36.1833,-5.3667
 2020-03-21,Gibraltar,10,0,296.6,0.0,GIB,36.1833,-5.3667
 2020-03-22,Gibraltar,10,0,296.6,0.0,GIB,36.1833,-5.3667
@@ -3430,6 +3566,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Gibraltar,129,0,3825.8,0.0,GIB,36.1833,-5.3667
 2020-04-13,Gibraltar,129,4,3825.8,118.6,GIB,36.1833,-5.3667
 2020-04-14,Gibraltar,129,4,3825.8,118.6,GIB,36.1833,-5.3667
+2020-04-15,Gibraltar,129,4,3825.8,118.6,GIB,36.1833,-5.3667
+2020-04-16,Gibraltar,131,4,3885.2,118.6,GIB,36.1833,-5.3667
 2020-03-14,Guinée,1,0,0.1,0.0,GIN,11.0,-10.0
 2020-03-15,Guinée,1,0,0.1,0.0,GIN,11.0,-10.0
 2020-03-16,Guinée,1,0,0.1,0.0,GIN,11.0,-10.0
@@ -3462,6 +3600,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Guinée,250,0,20.1,0.0,GIN,11.0,-10.0
 2020-04-13,Guinée,250,0,20.1,0.0,GIN,11.0,-10.0
 2020-04-14,Guinée,319,0,25.7,0.0,GIN,11.0,-10.0
+2020-04-15,Guinée,363,0,29.2,0.0,GIN,11.0,-10.0
+2020-04-16,Guinée,404,1,32.5,0.1,GIN,11.0,-10.0
 2020-03-18,Gambie,1,0,0.4,0.0,GMB,13.4667,-16.5667
 2020-03-19,Gambie,1,0,0.4,0.0,GMB,13.4667,-16.5667
 2020-03-20,Gambie,1,0,0.4,0.0,GMB,13.4667,-16.5667
@@ -3490,6 +3630,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Gambie,9,1,3.9,0.4,GMB,13.4667,-16.5667
 2020-04-13,Gambie,9,1,3.9,0.4,GMB,13.4667,-16.5667
 2020-04-14,Gambie,9,1,3.9,0.4,GMB,13.4667,-16.5667
+2020-04-15,Gambie,9,1,3.9,0.4,GMB,13.4667,-16.5667
+2020-04-16,Gambie,9,1,3.9,0.4,GMB,13.4667,-16.5667
 2020-03-27,Guinée-Bissau,2,0,1.1,0.0,GNB,12.0,-15.0
 2020-03-28,Guinée-Bissau,2,0,1.1,0.0,GNB,12.0,-15.0
 2020-03-29,Guinée-Bissau,2,0,1.1,0.0,GNB,12.0,-15.0
@@ -3509,6 +3651,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Guinée-Bissau,38,0,20.3,0.0,GNB,12.0,-15.0
 2020-04-13,Guinée-Bissau,39,0,20.8,0.0,GNB,12.0,-15.0
 2020-04-14,Guinée-Bissau,39,0,20.8,0.0,GNB,12.0,-15.0
+2020-04-15,Guinée-Bissau,40,0,21.3,0.0,GNB,12.0,-15.0
+2020-04-16,Guinée-Bissau,43,0,22.9,0.0,GNB,12.0,-15.0
 2020-03-15,Guinée équatoriale,1,0,0.8,0.0,GNQ,2.0,10.0
 2020-03-16,Guinée équatoriale,1,0,0.8,0.0,GNQ,2.0,10.0
 2020-03-17,Guinée équatoriale,1,0,0.8,0.0,GNQ,2.0,10.0
@@ -3540,6 +3684,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Guinée équatoriale,18,0,13.8,0.0,GNQ,2.0,10.0
 2020-04-13,Guinée équatoriale,21,0,16.0,0.0,GNQ,2.0,10.0
 2020-04-14,Guinée équatoriale,21,0,16.0,0.0,GNQ,2.0,10.0
+2020-04-15,Guinée équatoriale,41,0,31.3,0.0,GNQ,2.0,10.0
+2020-04-16,Guinée équatoriale,51,0,39.0,0.0,GNQ,2.0,10.0
 2020-01-26,Grèce,0,0,0.0,0.0,GRC,39.0,22.0
 2020-01-27,Grèce,0,0,0.0,0.0,GRC,39.0,22.0
 2020-01-28,Grèce,0,0,0.0,0.0,GRC,39.0,22.0
@@ -3620,6 +3766,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Grèce,2081,93,194.0,8.7,GRC,39.0,22.0
 2020-04-13,Grèce,2114,98,197.1,9.1,GRC,39.0,22.0
 2020-04-14,Grèce,2145,99,200.0,9.2,GRC,39.0,22.0
+2020-04-15,Grèce,2170,101,202.3,9.4,GRC,39.0,22.0
+2020-04-16,Grèce,2192,102,204.3,9.5,GRC,39.0,22.0
 2020-03-23,Grenade,1,0,9.0,0.0,GRD,12.1167,-61.6667
 2020-03-24,Grenade,1,0,9.0,0.0,GRD,12.1167,-61.6667
 2020-03-25,Grenade,1,0,9.0,0.0,GRD,12.1167,-61.6667
@@ -3643,6 +3791,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Grenade,14,0,125.6,0.0,GRD,12.1167,-61.6667
 2020-04-13,Grenade,14,0,125.6,0.0,GRD,12.1167,-61.6667
 2020-04-14,Grenade,14,0,125.6,0.0,GRD,12.1167,-61.6667
+2020-04-15,Grenade,14,0,125.6,0.0,GRD,12.1167,-61.6667
+2020-04-16,Grenade,14,0,125.6,0.0,GRD,12.1167,-61.6667
 2020-03-20,Groenland,2,0,35.7,0.0,GRL,72.0,-40.0
 2020-03-21,Groenland,2,0,35.7,0.0,GRL,72.0,-40.0
 2020-03-22,Groenland,2,0,35.7,0.0,GRL,72.0,-40.0
@@ -3669,6 +3819,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Groenland,11,0,196.3,0.0,GRL,72.0,-40.0
 2020-04-13,Groenland,11,0,196.3,0.0,GRL,72.0,-40.0
 2020-04-14,Groenland,11,0,196.3,0.0,GRL,72.0,-40.0
+2020-04-15,Groenland,11,0,196.3,0.0,GRL,72.0,-40.0
+2020-04-16,Groenland,11,0,196.3,0.0,GRL,72.0,-40.0
 2020-03-15,Guatemala,1,0,0.1,0.0,GTM,15.5,-90.25
 2020-03-16,Guatemala,1,1,0.1,0.1,GTM,15.5,-90.25
 2020-03-17,Guatemala,6,1,0.3,0.1,GTM,15.5,-90.25
@@ -3700,6 +3852,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Guatemala,153,3,8.9,0.2,GTM,15.5,-90.25
 2020-04-13,Guatemala,156,5,9.0,0.3,GTM,15.5,-90.25
 2020-04-14,Guatemala,167,5,9.7,0.3,GTM,15.5,-90.25
+2020-04-15,Guatemala,180,5,10.4,0.3,GTM,15.5,-90.25
+2020-04-16,Guatemala,196,5,11.4,0.3,GTM,15.5,-90.25
 2020-03-19,Guam,3,0,18.1,0.0,GUM,13.4667,144.7833
 2020-03-20,Guam,12,0,72.4,0.0,GUM,13.4667,144.7833
 2020-03-21,Guam,14,0,84.5,0.0,GUM,13.4667,144.7833
@@ -3727,6 +3881,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Guam,133,5,802.3,30.2,GUM,13.4667,144.7833
 2020-04-13,Guam,133,5,802.3,30.2,GUM,13.4667,144.7833
 2020-04-14,Guam,134,5,808.4,30.2,GUM,13.4667,144.7833
+2020-04-15,Guam,135,5,814.4,30.2,GUM,13.4667,144.7833
+2020-04-16,Guam,135,5,814.4,30.2,GUM,13.4667,144.7833
 2020-03-13,Guyane,1,1,1.3,1.3,GUY,5.0,-59.0
 2020-03-14,Guyane,1,1,1.3,1.3,GUY,5.0,-59.0
 2020-03-15,Guyane,1,1,1.3,1.3,GUY,5.0,-59.0
@@ -3760,6 +3916,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Guyane,45,6,57.8,7.7,GUY,5.0,-59.0
 2020-04-13,Guyane,45,6,57.8,7.7,GUY,5.0,-59.0
 2020-04-14,Guyane,47,6,60.3,7.7,GUY,5.0,-59.0
+2020-04-15,Guyane,48,6,61.6,7.7,GUY,5.0,-59.0
+2020-04-16,Guyane,55,6,70.6,7.7,GUY,5.0,-59.0
 2020-03-12,Honduras,2,0,0.2,0.0,HND,15.0,-86.5
 2020-03-13,Honduras,2,0,0.2,0.0,HND,15.0,-86.5
 2020-03-14,Honduras,3,0,0.3,0.0,HND,15.0,-86.5
@@ -3794,6 +3952,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Honduras,393,25,41.0,2.6,HND,15.0,-86.5
 2020-04-13,Honduras,397,25,41.4,2.6,HND,15.0,-86.5
 2020-04-14,Honduras,407,26,42.5,2.7,HND,15.0,-86.5
+2020-04-15,Honduras,419,31,43.7,3.2,HND,15.0,-86.5
+2020-04-16,Honduras,426,35,44.4,3.7,HND,15.0,-86.5
 2020-01-26,Croatie,0,0,0.0,0.0,HRV,45.1667,15.5
 2020-01-27,Croatie,0,0,0.0,0.0,HRV,45.1667,15.5
 2020-01-28,Croatie,0,0,0.0,0.0,HRV,45.1667,15.5
@@ -3874,6 +4034,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Croatie,1534,21,375.1,5.1,HRV,45.1667,15.5
 2020-04-13,Croatie,1600,23,391.3,5.6,HRV,45.1667,15.5
 2020-04-14,Croatie,1650,25,403.5,6.1,HRV,45.1667,15.5
+2020-04-15,Croatie,1704,31,416.7,7.6,HRV,45.1667,15.5
+2020-04-16,Croatie,1741,34,425.7,8.3,HRV,45.1667,15.5
 2020-03-20,Haïti,2,0,0.2,0.0,HTI,19.0,-72.4167
 2020-03-21,Haïti,2,0,0.2,0.0,HTI,19.0,-72.4167
 2020-03-22,Haïti,2,0,0.2,0.0,HTI,19.0,-72.4167
@@ -3900,6 +4062,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Haïti,33,2,3.0,0.2,HTI,19.0,-72.4167
 2020-04-13,Haïti,33,3,3.0,0.3,HTI,19.0,-72.4167
 2020-04-14,Haïti,40,3,3.6,0.3,HTI,19.0,-72.4167
+2020-04-15,Haïti,40,3,3.6,0.3,HTI,19.0,-72.4167
+2020-04-16,Haïti,41,3,3.7,0.3,HTI,19.0,-72.4167
 2020-03-05,Hongrie,2,0,0.2,0.0,HUN,47.0,20.0
 2020-03-06,Hongrie,2,0,0.2,0.0,HUN,47.0,20.0
 2020-03-07,Hongrie,4,0,0.4,0.0,HUN,47.0,20.0
@@ -3941,6 +4105,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Hongrie,1410,99,144.3,10.1,HUN,47.0,20.0
 2020-04-13,Hongrie,1458,109,149.3,11.2,HUN,47.0,20.0
 2020-04-14,Hongrie,1512,122,154.8,12.5,HUN,47.0,20.0
+2020-04-15,Hongrie,1579,134,161.6,13.7,HUN,47.0,20.0
+2020-04-16,Hongrie,1652,142,169.1,14.5,HUN,47.0,20.0
 2020-01-26,Indonésie,0,0,0.0,0.0,IDN,-5.0,120.0
 2020-01-27,Indonésie,0,0,0.0,0.0,IDN,-5.0,120.0
 2020-01-28,Indonésie,0,0,0.0,0.0,IDN,-5.0,120.0
@@ -4021,6 +4187,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Indonésie,3842,327,14.4,1.2,IDN,-5.0,120.0
 2020-04-13,Indonésie,4241,373,15.8,1.4,IDN,-5.0,120.0
 2020-04-14,Indonésie,4557,399,17.0,1.5,IDN,-5.0,120.0
+2020-04-15,Indonésie,4839,459,18.1,1.7,IDN,-5.0,120.0
+2020-04-16,Indonésie,5136,469,19.2,1.8,IDN,-5.0,120.0
 2020-03-21,Île de Man,1,0,11.9,0.0,IMN,54.23,-4.55
 2020-03-22,Île de Man,2,0,23.8,0.0,IMN,54.23,-4.55
 2020-03-23,Île de Man,2,0,23.8,0.0,IMN,54.23,-4.55
@@ -4046,6 +4214,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Île de Man,226,1,2688.0,11.9,IMN,54.23,-4.55
 2020-04-13,Île de Man,228,2,2711.8,23.8,IMN,54.23,-4.55
 2020-04-14,Île de Man,242,2,2878.3,23.8,IMN,54.23,-4.55
+2020-04-15,Île de Man,242,2,2878.3,23.8,IMN,54.23,-4.55
+2020-04-16,Île de Man,254,2,3021.0,23.8,IMN,54.23,-4.55
 2020-01-26,Inde,0,0,0.0,0.0,IND,20.0,77.0
 2020-01-27,Inde,0,0,0.0,0.0,IND,20.0,77.0
 2020-01-28,Inde,0,0,0.0,0.0,IND,20.0,77.0
@@ -4126,6 +4296,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Inde,8356,273,6.2,0.2,IND,20.0,77.0
 2020-04-13,Inde,9152,308,6.8,0.2,IND,20.0,77.0
 2020-04-14,Inde,10363,339,7.7,0.3,IND,20.0,77.0
+2020-04-15,Inde,11438,377,8.5,0.3,IND,20.0,77.0
+2020-04-16,Inde,12380,414,9.2,0.3,IND,20.0,77.0
 2020-01-26,Irlande,0,0,0.0,0.0,IRL,53.0,-8.0
 2020-01-27,Irlande,0,0,0.0,0.0,IRL,53.0,-8.0
 2020-01-28,Irlande,0,0,0.0,0.0,IRL,53.0,-8.0
@@ -4206,6 +4378,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Irlande,8928,320,1839.5,65.9,IRL,53.0,-8.0
 2020-04-13,Irlande,9655,334,1989.3,68.8,IRL,53.0,-8.0
 2020-04-14,Irlande,10647,365,2193.7,75.2,IRL,53.0,-8.0
+2020-04-15,Irlande,11479,406,2365.1,83.7,IRL,53.0,-8.0
+2020-04-16,Irlande,12547,444,2585.1,91.5,IRL,53.0,-8.0
 2020-01-26,Iran,0,0,0.0,0.0,IRN,32.0,53.0
 2020-01-27,Iran,0,0,0.0,0.0,IRN,32.0,53.0
 2020-01-28,Iran,0,0,0.0,0.0,IRN,32.0,53.0
@@ -4286,6 +4460,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Iran,70029,4357,856.1,53.3,IRN,32.0,53.0
 2020-04-13,Iran,71686,4474,876.4,54.7,IRN,32.0,53.0
 2020-04-14,Iran,73303,4585,896.1,56.1,IRN,32.0,53.0
+2020-04-15,Iran,74877,4683,915.4,57.2,IRN,32.0,53.0
+2020-04-16,Iran,76389,4777,933.8,58.4,IRN,32.0,53.0
 2020-01-26,Iraq,0,0,0.0,0.0,IRQ,33.0,44.0
 2020-01-27,Iraq,0,0,0.0,0.0,IRQ,33.0,44.0
 2020-01-28,Iraq,0,0,0.0,0.0,IRQ,33.0,44.0
@@ -4366,6 +4542,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Iraq,1318,72,34.3,1.9,IRQ,33.0,44.0
 2020-04-13,Iraq,1352,76,35.2,2.0,IRQ,33.0,44.0
 2020-04-14,Iraq,1378,78,35.9,2.0,IRQ,33.0,44.0
+2020-04-15,Iraq,1400,78,36.4,2.0,IRQ,33.0,44.0
+2020-04-16,Iraq,1415,79,36.8,2.1,IRQ,33.0,44.0
 2020-01-26,Islande,0,0,0.0,0.0,ISL,65.0,-18.0
 2020-01-27,Islande,0,0,0.0,0.0,ISL,65.0,-18.0
 2020-01-28,Islande,0,0,0.0,0.0,ISL,65.0,-18.0
@@ -4446,6 +4624,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Islande,1689,8,4776.9,22.6,ISL,65.0,-18.0
 2020-04-13,Islande,1701,8,4810.9,22.6,ISL,65.0,-18.0
 2020-04-14,Islande,1711,8,4839.2,22.6,ISL,65.0,-18.0
+2020-04-15,Islande,1720,8,4864.6,22.6,ISL,65.0,-18.0
+2020-04-16,Islande,1727,8,4884.4,22.6,ISL,65.0,-18.0
 2020-01-26,Israël,0,0,0.0,0.0,ISR,31.5,34.75
 2020-01-27,Israël,0,0,0.0,0.0,ISR,31.5,34.75
 2020-01-28,Israël,0,0,0.0,0.0,ISR,31.5,34.75
@@ -4526,6 +4706,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Israël,10743,101,1209.3,11.4,ISR,31.5,34.75
 2020-04-13,Israël,11145,103,1254.5,11.6,ISR,31.5,34.75
 2020-04-14,Israël,11586,116,1304.2,13.1,ISR,31.5,34.75
+2020-04-15,Israël,12046,123,1356.0,13.8,ISR,31.5,34.75
+2020-04-16,Israël,12501,130,1407.2,14.6,ISR,31.5,34.75
 2020-01-26,Italie,0,0,0.0,0.0,ITA,42.8333,12.8333
 2020-01-27,Italie,0,0,0.0,0.0,ITA,42.8333,12.8333
 2020-01-28,Italie,0,0,0.0,0.0,ITA,42.8333,12.8333
@@ -4606,6 +4788,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Italie,152271,19470,2519.7,322.2,ITA,42.8333,12.8333
 2020-04-13,Italie,156363,19901,2587.5,329.3,ITA,42.8333,12.8333
 2020-04-14,Italie,159516,20465,2639.6,338.6,ITA,42.8333,12.8333
+2020-04-15,Italie,162488,21069,2688.8,348.6,ITA,42.8333,12.8333
+2020-04-16,Italie,165155,21647,2732.9,358.2,ITA,42.8333,12.8333
 2020-03-12,Jamaïque,2,0,0.7,0.0,JAM,18.25,-77.5
 2020-03-13,Jamaïque,6,0,2.0,0.0,JAM,18.25,-77.5
 2020-03-14,Jamaïque,8,0,2.7,0.0,JAM,18.25,-77.5
@@ -4640,6 +4824,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Jamaïque,69,4,23.5,1.4,JAM,18.25,-77.5
 2020-04-13,Jamaïque,72,4,24.5,1.4,JAM,18.25,-77.5
 2020-04-14,Jamaïque,73,4,24.9,1.4,JAM,18.25,-77.5
+2020-04-15,Jamaïque,105,5,35.8,1.7,JAM,18.25,-77.5
+2020-04-16,Jamaïque,125,5,42.6,1.7,JAM,18.25,-77.5
 2020-03-20,Jersey,5,0,46.8,0.0,JEY,49.21,-2.13
 2020-03-21,Jersey,12,0,112.4,0.0,JEY,49.21,-2.13
 2020-03-22,Jersey,12,0,112.4,0.0,JEY,49.21,-2.13
@@ -4666,6 +4852,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Jersey,198,4,1853.9,37.5,JEY,49.21,-2.13
 2020-04-13,Jersey,213,4,1994.4,37.5,JEY,49.21,-2.13
 2020-04-14,Jersey,217,4,2031.8,37.5,JEY,49.21,-2.13
+2020-04-15,Jersey,217,4,2031.8,37.5,JEY,49.21,-2.13
+2020-04-16,Jersey,217,6,2031.8,56.2,JEY,49.21,-2.13
 2020-03-03,Jordanie,1,0,0.1,0.0,JOR,31.0,36.0
 2020-03-04,Jordanie,1,0,0.1,0.0,JOR,31.0,36.0
 2020-03-05,Jordanie,1,0,0.1,0.0,JOR,31.0,36.0
@@ -4709,6 +4897,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Jordanie,381,7,38.3,0.7,JOR,31.0,36.0
 2020-04-13,Jordanie,389,7,39.1,0.7,JOR,31.0,36.0
 2020-04-14,Jordanie,391,7,39.3,0.7,JOR,31.0,36.0
+2020-04-15,Jordanie,397,7,39.9,0.7,JOR,31.0,36.0
+2020-04-16,Jordanie,401,7,40.3,0.7,JOR,31.0,36.0
 2020-01-26,Japon,3,0,0.0,0.0,JPN,36.0,138.0
 2020-01-27,Japon,3,0,0.0,0.0,JPN,36.0,138.0
 2020-01-28,Japon,4,0,0.0,0.0,JPN,36.0,138.0
@@ -4789,6 +4979,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Japon,6748,98,53.3,0.8,JPN,36.0,138.0
 2020-04-13,Japon,7255,102,57.3,0.8,JPN,36.0,138.0
 2020-04-14,Japon,7645,109,60.4,0.9,JPN,36.0,138.0
+2020-04-15,Japon,8100,119,64.0,0.9,JPN,36.0,138.0
+2020-04-16,Japon,8582,136,67.8,1.1,JPN,36.0,138.0
 2020-03-15,Kazakhstan,6,0,0.3,0.0,KAZ,48.0,68.0
 2020-03-16,Kazakhstan,9,0,0.5,0.0,KAZ,48.0,68.0
 2020-03-17,Kazakhstan,11,0,0.6,0.0,KAZ,48.0,68.0
@@ -4820,6 +5012,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Kazakhstan,880,10,48.1,0.5,KAZ,48.0,68.0
 2020-04-13,Kazakhstan,961,10,52.6,0.5,KAZ,48.0,68.0
 2020-04-14,Kazakhstan,1179,14,64.5,0.8,KAZ,48.0,68.0
+2020-04-15,Kazakhstan,1267,14,69.3,0.8,KAZ,48.0,68.0
+2020-04-16,Kazakhstan,1331,16,72.8,0.9,KAZ,48.0,68.0
 2020-03-14,Kenya,1,0,0.0,0.0,KEN,1.0,38.0
 2020-03-15,Kenya,1,0,0.0,0.0,KEN,1.0,38.0
 2020-03-16,Kenya,3,0,0.1,0.0,KEN,1.0,38.0
@@ -4852,6 +5046,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Kenya,191,7,3.7,0.1,KEN,1.0,38.0
 2020-04-13,Kenya,197,8,3.8,0.2,KEN,1.0,38.0
 2020-04-14,Kenya,208,9,4.0,0.2,KEN,1.0,38.0
+2020-04-15,Kenya,216,9,4.2,0.2,KEN,1.0,38.0
+2020-04-16,Kenya,225,10,4.4,0.2,KEN,1.0,38.0
 2020-03-19,République kirghize,3,0,0.5,0.0,KGZ,41.0,75.0
 2020-03-20,République kirghize,6,0,0.9,0.0,KGZ,41.0,75.0
 2020-03-21,République kirghize,6,0,0.9,0.0,KGZ,41.0,75.0
@@ -4879,6 +5075,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,République kirghize,377,5,59.7,0.8,KGZ,41.0,75.0
 2020-04-13,République kirghize,419,5,66.3,0.8,KGZ,41.0,75.0
 2020-04-14,République kirghize,430,5,68.1,0.8,KGZ,41.0,75.0
+2020-04-15,République kirghize,449,5,71.1,0.8,KGZ,41.0,75.0
+2020-04-16,République kirghize,466,5,73.8,0.8,KGZ,41.0,75.0
 2020-01-26,Cambodge,0,0,0.0,0.0,KHM,13.0,105.0
 2020-01-27,Cambodge,0,0,0.0,0.0,KHM,13.0,105.0
 2020-01-28,Cambodge,1,0,0.1,0.0,KHM,13.0,105.0
@@ -4959,6 +5157,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Cambodge,122,0,7.5,0.0,KHM,13.0,105.0
 2020-04-13,Cambodge,122,0,7.5,0.0,KHM,13.0,105.0
 2020-04-14,Cambodge,122,0,7.5,0.0,KHM,13.0,105.0
+2020-04-15,Cambodge,122,0,7.5,0.0,KHM,13.0,105.0
+2020-04-16,Cambodge,122,0,7.5,0.0,KHM,13.0,105.0
 2020-03-26,Saint-Kitts-et-Nevis,2,0,38.1,0.0,KNA,17.3333,-62.75
 2020-03-27,Saint-Kitts-et-Nevis,2,0,38.1,0.0,KNA,17.3333,-62.75
 2020-03-28,Saint-Kitts-et-Nevis,2,0,38.1,0.0,KNA,17.3333,-62.75
@@ -4979,6 +5179,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Saint-Kitts-et-Nevis,12,0,228.8,0.0,KNA,17.3333,-62.75
 2020-04-13,Saint-Kitts-et-Nevis,12,0,228.8,0.0,KNA,17.3333,-62.75
 2020-04-14,Saint-Kitts-et-Nevis,12,0,228.8,0.0,KNA,17.3333,-62.75
+2020-04-15,Saint-Kitts-et-Nevis,14,0,267.0,0.0,KNA,17.3333,-62.75
+2020-04-16,Saint-Kitts-et-Nevis,14,0,267.0,0.0,KNA,17.3333,-62.75
 2020-01-26,Corée du Sud,3,0,0.1,0.0,KOR,37.0,127.5
 2020-01-27,Corée du Sud,4,0,0.1,0.0,KOR,37.0,127.5
 2020-01-28,Corée du Sud,4,0,0.1,0.0,KOR,37.0,127.5
@@ -5059,6 +5261,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Corée du Sud,10512,214,203.6,4.1,KOR,37.0,127.5
 2020-04-13,Corée du Sud,10537,217,204.1,4.2,KOR,37.0,127.5
 2020-04-14,Corée du Sud,10564,222,204.6,4.3,KOR,37.0,127.5
+2020-04-15,Corée du Sud,10591,225,205.1,4.4,KOR,37.0,127.5
+2020-04-16,Corée du Sud,10613,229,205.5,4.4,KOR,37.0,127.5
 2020-01-26,Koweït,0,0,0.0,0.0,KWT,29.3375,47.6581
 2020-01-27,Koweït,0,0,0.0,0.0,KWT,29.3375,47.6581
 2020-01-28,Koweït,0,0,0.0,0.0,KWT,29.3375,47.6581
@@ -5139,6 +5343,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Koweït,1154,1,278.9,0.2,KWT,29.3375,47.6581
 2020-04-13,Koweït,1234,1,298.3,0.2,KWT,29.3375,47.6581
 2020-04-14,Koweït,1300,2,314.2,0.5,KWT,29.3375,47.6581
+2020-04-15,Koweït,1355,3,327.5,0.7,KWT,29.3375,47.6581
+2020-04-16,Koweït,1405,3,339.6,0.7,KWT,29.3375,47.6581
 2020-03-25,République démocratique populaire lao,2,0,0.3,0.0,LAO,18.0,105.0
 2020-03-26,République démocratique populaire lao,2,0,0.3,0.0,LAO,18.0,105.0
 2020-03-27,République démocratique populaire lao,6,0,0.8,0.0,LAO,18.0,105.0
@@ -5160,6 +5366,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,République démocratique populaire lao,18,0,2.5,0.0,LAO,18.0,105.0
 2020-04-13,République démocratique populaire lao,19,0,2.7,0.0,LAO,18.0,105.0
 2020-04-14,République démocratique populaire lao,19,0,2.7,0.0,LAO,18.0,105.0
+2020-04-15,République démocratique populaire lao,19,0,2.7,0.0,LAO,18.0,105.0
+2020-04-16,République démocratique populaire lao,19,0,2.7,0.0,LAO,18.0,105.0
 2020-01-26,Liban,0,0,0.0,0.0,LBN,33.8333,35.8333
 2020-01-27,Liban,0,0,0.0,0.0,LBN,33.8333,35.8333
 2020-01-28,Liban,0,0,0.0,0.0,LBN,33.8333,35.8333
@@ -5240,6 +5448,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Liban,619,20,90.4,2.9,LBN,33.8333,35.8333
 2020-04-13,Liban,630,20,92.0,2.9,LBN,33.8333,35.8333
 2020-04-14,Liban,632,20,92.3,2.9,LBN,33.8333,35.8333
+2020-04-15,Liban,641,21,93.6,3.1,LBN,33.8333,35.8333
+2020-04-16,Liban,658,21,96.1,3.1,LBN,33.8333,35.8333
 2020-03-17,Libéria,1,0,0.2,0.0,LBR,6.5,-9.5
 2020-03-18,Libéria,2,0,0.4,0.0,LBR,6.5,-9.5
 2020-03-19,Libéria,2,0,0.4,0.0,LBR,6.5,-9.5
@@ -5269,6 +5479,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Libéria,48,5,10.0,1.0,LBR,6.5,-9.5
 2020-04-13,Libéria,50,5,10.4,1.0,LBR,6.5,-9.5
 2020-04-14,Libéria,59,6,12.2,1.2,LBR,6.5,-9.5
+2020-04-15,Libéria,59,6,12.2,1.2,LBR,6.5,-9.5
+2020-04-16,Libéria,59,6,12.2,1.2,LBR,6.5,-9.5
 2020-03-25,Libye,1,0,0.1,0.0,LBY,25.0,17.0
 2020-03-26,Libye,1,0,0.1,0.0,LBY,25.0,17.0
 2020-03-27,Libye,1,0,0.1,0.0,LBY,25.0,17.0
@@ -5290,6 +5502,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Libye,25,1,3.7,0.1,LBY,25.0,17.0
 2020-04-13,Libye,25,1,3.7,0.1,LBY,25.0,17.0
 2020-04-14,Libye,26,1,3.9,0.1,LBY,25.0,17.0
+2020-04-15,Libye,35,1,5.2,0.1,LBY,25.0,17.0
+2020-04-16,Libye,48,1,7.2,0.1,LBY,25.0,17.0
 2020-03-15,Sainte-Lucie,2,0,11.0,0.0,LCA,13.8833,-61.1333
 2020-03-16,Sainte-Lucie,2,0,11.0,0.0,LCA,13.8833,-61.1333
 2020-03-17,Sainte-Lucie,2,0,11.0,0.0,LCA,13.8833,-61.1333
@@ -5321,6 +5535,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Sainte-Lucie,15,0,82.5,0.0,LCA,13.8833,-61.1333
 2020-04-13,Sainte-Lucie,15,0,82.5,0.0,LCA,13.8833,-61.1333
 2020-04-14,Sainte-Lucie,15,0,82.5,0.0,LCA,13.8833,-61.1333
+2020-04-15,Sainte-Lucie,15,0,82.5,0.0,LCA,13.8833,-61.1333
+2020-04-16,Sainte-Lucie,15,0,82.5,0.0,LCA,13.8833,-61.1333
 2020-03-05,Liechtenstein,1,0,26.4,0.0,LIE,47.1667,9.5333
 2020-03-06,Liechtenstein,1,0,26.4,0.0,LIE,47.1667,9.5333
 2020-03-07,Liechtenstein,1,0,26.4,0.0,LIE,47.1667,9.5333
@@ -5362,6 +5578,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Liechtenstein,80,1,2110.3,26.4,LIE,47.1667,9.5333
 2020-04-13,Liechtenstein,80,1,2110.3,26.4,LIE,47.1667,9.5333
 2020-04-14,Liechtenstein,81,1,2136.6,26.4,LIE,47.1667,9.5333
+2020-04-15,Liechtenstein,81,1,2136.6,26.4,LIE,47.1667,9.5333
+2020-04-16,Liechtenstein,81,1,2136.6,26.4,LIE,47.1667,9.5333
 2020-01-26,Sri Lanka,0,0,0.0,0.0,LKA,7.0,81.0
 2020-01-27,Sri Lanka,0,0,0.0,0.0,LKA,7.0,81.0
 2020-01-28,Sri Lanka,1,0,0.0,0.0,LKA,7.0,81.0
@@ -5442,6 +5660,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Sri Lanka,199,7,9.2,0.3,LKA,7.0,81.0
 2020-04-13,Sri Lanka,210,7,9.7,0.3,LKA,7.0,81.0
 2020-04-14,Sri Lanka,218,7,10.1,0.3,LKA,7.0,81.0
+2020-04-15,Sri Lanka,233,7,10.8,0.3,LKA,7.0,81.0
+2020-04-16,Sri Lanka,237,7,10.9,0.3,LKA,7.0,81.0
 2020-01-26,Lituanie,0,0,0.0,0.0,LTU,56.0,24.0
 2020-01-27,Lituanie,0,0,0.0,0.0,LTU,56.0,24.0
 2020-01-28,Lituanie,0,0,0.0,0.0,LTU,56.0,24.0
@@ -5522,6 +5742,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Lituanie,1053,23,377.5,8.2,LTU,56.0,24.0
 2020-04-13,Lituanie,1062,24,380.7,8.6,LTU,56.0,24.0
 2020-04-14,Lituanie,1070,24,383.6,8.6,LTU,56.0,24.0
+2020-04-15,Lituanie,1070,24,383.6,8.6,LTU,56.0,24.0
+2020-04-16,Lituanie,1091,29,391.1,10.4,LTU,56.0,24.0
 2020-01-26,Luxembourg,0,0,0.0,0.0,LUX,49.75,6.1667
 2020-01-27,Luxembourg,0,0,0.0,0.0,LUX,49.75,6.1667
 2020-01-28,Luxembourg,0,0,0.0,0.0,LUX,49.75,6.1667
@@ -5601,7 +5823,9 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-11,Luxembourg,3223,54,5303.4,88.9,LUX,49.75,6.1667
 2020-04-12,Luxembourg,3270,62,5380.7,102.0,LUX,49.75,6.1667
 2020-04-13,Luxembourg,3281,66,5398.8,108.6,LUX,49.75,6.1667
-2020-04-14,Luxembourg,3292,69,5416.9,113.5,LUX,49.75,6.1667
+2020-04-14,Luxembourg,3292,67,5416.9,110.2,LUX,49.75,6.1667
+2020-04-15,Luxembourg,3307,67,5441.6,110.2,LUX,49.75,6.1667
+2020-04-16,Luxembourg,3373,69,5550.2,113.5,LUX,49.75,6.1667
 2020-03-03,Lettonie,1,0,0.5,0.0,LVA,57.0,25.0
 2020-03-04,Lettonie,1,0,0.5,0.0,LVA,57.0,25.0
 2020-03-05,Lettonie,1,0,0.5,0.0,LVA,57.0,25.0
@@ -5645,6 +5869,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Lettonie,630,3,327.0,1.6,LVA,57.0,25.0
 2020-04-13,Lettonie,651,5,337.9,2.6,LVA,57.0,25.0
 2020-04-14,Lettonie,655,5,340.0,2.6,LVA,57.0,25.0
+2020-04-15,Lettonie,657,5,341.0,2.6,LVA,57.0,25.0
+2020-04-16,Lettonie,666,5,345.7,2.6,LVA,57.0,25.0
 2020-03-03,Maroc,1,0,0.0,0.0,MAR,32.0,-5.0
 2020-03-04,Maroc,1,0,0.0,0.0,MAR,32.0,-5.0
 2020-03-05,Maroc,1,0,0.0,0.0,MAR,32.0,-5.0
@@ -5688,6 +5914,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Maroc,1545,111,42.9,3.1,MAR,32.0,-5.0
 2020-04-13,Maroc,1661,118,46.1,3.3,MAR,32.0,-5.0
 2020-04-14,Maroc,1763,126,48.9,3.5,MAR,32.0,-5.0
+2020-04-15,Maroc,1888,126,52.4,3.5,MAR,32.0,-5.0
+2020-04-16,Maroc,2024,127,56.2,3.5,MAR,32.0,-5.0
 2020-01-26,Monaco,0,0,0.0,0.0,MCO,43.7333,7.4
 2020-01-27,Monaco,0,0,0.0,0.0,MCO,43.7333,7.4
 2020-01-28,Monaco,0,0,0.0,0.0,MCO,43.7333,7.4
@@ -5768,6 +5996,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Monaco,92,2,2378.4,51.7,MCO,43.7333,7.4
 2020-04-13,Monaco,93,2,2404.2,51.7,MCO,43.7333,7.4
 2020-04-14,Monaco,93,2,2404.2,51.7,MCO,43.7333,7.4
+2020-04-15,Monaco,93,2,2404.2,51.7,MCO,43.7333,7.4
+2020-04-16,Monaco,93,3,2404.2,77.6,MCO,43.7333,7.4
 2020-03-08,Moldavie,1,0,0.3,0.0,MDA,47.0,29.0
 2020-03-09,Moldavie,1,0,0.3,0.0,MDA,47.0,29.0
 2020-03-10,Moldavie,1,0,0.3,0.0,MDA,47.0,29.0
@@ -5806,6 +6036,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Moldavie,1560,30,439.9,8.5,MDA,47.0,29.0
 2020-04-13,Moldavie,1662,32,468.7,9.0,MDA,47.0,29.0
 2020-04-14,Moldavie,1712,36,482.8,10.2,MDA,47.0,29.0
+2020-04-15,Moldavie,1934,40,545.4,11.3,MDA,47.0,29.0
+2020-04-16,Moldavie,2049,46,577.9,13.0,MDA,47.0,29.0
 2020-03-21,Madagascar,3,0,0.1,0.0,MDG,-20.0,47.0
 2020-03-22,Madagascar,3,0,0.1,0.0,MDG,-20.0,47.0
 2020-03-23,Madagascar,3,0,0.1,0.0,MDG,-20.0,47.0
@@ -5831,6 +6063,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Madagascar,102,0,3.9,0.0,MDG,-20.0,47.0
 2020-04-13,Madagascar,106,0,4.0,0.0,MDG,-20.0,47.0
 2020-04-14,Madagascar,106,0,4.0,0.0,MDG,-20.0,47.0
+2020-04-15,Madagascar,108,0,4.1,0.0,MDG,-20.0,47.0
+2020-04-16,Madagascar,110,0,4.2,0.0,MDG,-20.0,47.0
 2020-03-08,Maldives,2,0,3.9,0.0,MDV,3.25,73.0
 2020-03-09,Maldives,4,0,7.8,0.0,MDV,3.25,73.0
 2020-03-10,Maldives,4,0,7.8,0.0,MDV,3.25,73.0
@@ -5869,6 +6103,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Maldives,19,0,36.8,0.0,MDV,3.25,73.0
 2020-04-13,Maldives,20,0,38.8,0.0,MDV,3.25,73.0
 2020-04-14,Maldives,20,0,38.8,0.0,MDV,3.25,73.0
+2020-04-15,Maldives,21,0,40.7,0.0,MDV,3.25,73.0
+2020-04-16,Maldives,21,0,40.7,0.0,MDV,3.25,73.0
 2020-01-26,Mexique,0,0,0.0,0.0,MEX,23.0,-102.0
 2020-01-27,Mexique,0,0,0.0,0.0,MEX,23.0,-102.0
 2020-01-28,Mexique,0,0,0.0,0.0,MEX,23.0,-102.0
@@ -5949,6 +6185,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Mexique,4219,273,33.4,2.2,MEX,23.0,-102.0
 2020-04-13,Mexique,4661,296,36.9,2.3,MEX,23.0,-102.0
 2020-04-14,Mexique,5014,332,39.7,2.6,MEX,23.0,-102.0
+2020-04-15,Mexique,5399,406,42.8,3.2,MEX,23.0,-102.0
+2020-04-16,Mexique,5847,449,46.3,3.6,MEX,23.0,-102.0
 2020-01-26,Macédoine du Nord,0,0,0.0,0.0,MKD,41.8333,22.0
 2020-01-27,Macédoine du Nord,0,0,0.0,0.0,MKD,41.8333,22.0
 2020-01-28,Macédoine du Nord,0,0,0.0,0.0,MKD,41.8333,22.0
@@ -6029,6 +6267,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Macédoine du Nord,760,34,364.9,16.3,MKD,41.8333,22.0
 2020-04-13,Macédoine du Nord,828,34,397.5,16.3,MKD,41.8333,22.0
 2020-04-14,Macédoine du Nord,854,38,410.0,18.2,MKD,41.8333,22.0
+2020-04-15,Macédoine du Nord,908,44,435.9,21.1,MKD,41.8333,22.0
+2020-04-16,Macédoine du Nord,974,45,467.6,21.6,MKD,41.8333,22.0
 2020-03-26,Mali,2,0,0.1,0.0,MLI,17.0,-4.0
 2020-03-27,Mali,4,0,0.2,0.0,MLI,17.0,-4.0
 2020-03-28,Mali,4,0,0.2,0.0,MLI,17.0,-4.0
@@ -6049,6 +6289,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Mali,105,9,5.5,0.5,MLI,17.0,-4.0
 2020-04-13,Mali,116,9,6.1,0.5,MLI,17.0,-4.0
 2020-04-14,Mali,123,10,6.4,0.5,MLI,17.0,-4.0
+2020-04-15,Mali,144,13,7.5,0.7,MLI,17.0,-4.0
+2020-04-16,Mali,148,13,7.8,0.7,MLI,17.0,-4.0
 2020-03-08,Malte,3,0,6.2,0.0,MLT,35.8333,14.5833
 2020-03-09,Malte,3,0,6.2,0.0,MLT,35.8333,14.5833
 2020-03-10,Malte,4,0,8.3,0.0,MLT,35.8333,14.5833
@@ -6087,6 +6329,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Malte,370,3,765.2,6.2,MLT,35.8333,14.5833
 2020-04-13,Malte,378,3,781.8,6.2,MLT,35.8333,14.5833
 2020-04-14,Malte,384,3,794.2,6.2,MLT,35.8333,14.5833
+2020-04-15,Malte,393,3,812.8,6.2,MLT,35.8333,14.5833
+2020-04-16,Malte,399,3,825.2,6.2,MLT,35.8333,14.5833
 2020-03-17,Myanmar,0,0,0.0,0.0,MMR,22.0,98.0
 2020-03-18,Myanmar,0,0,0.0,0.0,MMR,22.0,98.0
 2020-03-19,Myanmar,0,0,0.0,0.0,MMR,22.0,98.0
@@ -6116,6 +6360,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Myanmar,31,3,0.6,0.1,MMR,22.0,98.0
 2020-04-13,Myanmar,41,4,0.8,0.1,MMR,22.0,98.0
 2020-04-14,Myanmar,62,4,1.2,0.1,MMR,22.0,98.0
+2020-04-15,Myanmar,74,4,1.4,0.1,MMR,22.0,98.0
+2020-04-16,Myanmar,74,4,1.4,0.1,MMR,22.0,98.0
 2020-03-18,Monténégro,2,0,3.2,0.0,MNE,42.0,19.0
 2020-03-19,Monténégro,8,0,12.9,0.0,MNE,42.0,19.0
 2020-03-20,Monténégro,13,0,20.9,0.0,MNE,42.0,19.0
@@ -6144,6 +6390,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Monténégro,263,2,422.6,3.2,MNE,42.0,19.0
 2020-04-13,Monténégro,272,3,437.1,4.8,MNE,42.0,19.0
 2020-04-14,Monténégro,274,3,440.3,4.8,MNE,42.0,19.0
+2020-04-15,Monténégro,283,4,454.7,6.4,MNE,42.0,19.0
+2020-04-16,Monténégro,288,4,462.8,6.4,MNE,42.0,19.0
 2020-03-10,Mongolie,1,0,0.3,0.0,MNG,46.0,105.0
 2020-03-11,Mongolie,1,0,0.3,0.0,MNG,46.0,105.0
 2020-03-12,Mongolie,1,0,0.3,0.0,MNG,46.0,105.0
@@ -6180,6 +6428,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Mongolie,16,0,5.0,0.0,MNG,46.0,105.0
 2020-04-13,Mongolie,16,0,5.0,0.0,MNG,46.0,105.0
 2020-04-14,Mongolie,16,0,5.0,0.0,MNG,46.0,105.0
+2020-04-15,Mongolie,30,0,9.5,0.0,MNG,46.0,105.0
+2020-04-16,Mongolie,30,0,9.5,0.0,MNG,46.0,105.0
 2020-03-31,Mariannes,2,0,35.2,0.0,MNP,15.2,145.75
 2020-04-01,Mariannes,6,0,105.5,0.0,MNP,15.2,145.75
 2020-04-02,Mariannes,6,1,105.5,17.6,MNP,15.2,145.75
@@ -6195,6 +6445,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Mariannes,11,2,193.4,35.2,MNP,15.2,145.75
 2020-04-13,Mariannes,11,2,193.4,35.2,MNP,15.2,145.75
 2020-04-14,Mariannes,11,2,193.4,35.2,MNP,15.2,145.75
+2020-04-15,Mariannes,13,2,228.5,35.2,MNP,15.2,145.75
+2020-04-16,Mariannes,13,2,228.5,35.2,MNP,15.2,145.75
 2020-03-23,Mozambique,1,0,0.0,0.0,MOZ,-18.25,35.0
 2020-03-24,Mozambique,1,0,0.0,0.0,MOZ,-18.25,35.0
 2020-03-25,Mozambique,1,0,0.0,0.0,MOZ,-18.25,35.0
@@ -6218,6 +6470,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Mozambique,20,0,0.7,0.0,MOZ,-18.25,35.0
 2020-04-13,Mozambique,21,0,0.7,0.0,MOZ,-18.25,35.0
 2020-04-14,Mozambique,27,0,0.9,0.0,MOZ,-18.25,35.0
+2020-04-15,Mozambique,28,0,0.9,0.0,MOZ,-18.25,35.0
+2020-04-16,Mozambique,29,0,1.0,0.0,MOZ,-18.25,35.0
 2020-03-15,Mauritanie,1,0,0.2,0.0,MRT,20.0,-12.0
 2020-03-16,Mauritanie,1,0,0.2,0.0,MRT,20.0,-12.0
 2020-03-17,Mauritanie,1,0,0.2,0.0,MRT,20.0,-12.0
@@ -6249,6 +6503,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Mauritanie,7,1,1.6,0.2,MRT,20.0,-12.0
 2020-04-13,Mauritanie,7,1,1.6,0.2,MRT,20.0,-12.0
 2020-04-14,Mauritanie,7,1,1.6,0.2,MRT,20.0,-12.0
+2020-04-15,Mauritanie,7,1,1.6,0.2,MRT,20.0,-12.0
+2020-04-16,Mauritanie,7,1,1.6,0.2,MRT,20.0,-12.0
 2020-03-21,Montserrat,1,0,169.5,0.0,MSR,16.75,-62.2
 2020-03-22,Montserrat,1,0,169.5,0.0,MSR,16.75,-62.2
 2020-03-23,Montserrat,1,0,169.5,0.0,MSR,16.75,-62.2
@@ -6274,6 +6530,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Montserrat,9,0,1525.4,0.0,MSR,16.75,-62.2
 2020-04-13,Montserrat,11,0,1864.4,0.0,MSR,16.75,-62.2
 2020-04-14,Montserrat,11,0,1864.4,0.0,MSR,16.75,-62.2
+2020-04-15,Montserrat,11,0,1864.4,0.0,MSR,16.75,-62.2
+2020-04-16,Montserrat,11,0,1864.4,0.0,MSR,16.75,-62.2
 2020-03-20,Maurice,3,0,2.4,0.0,MUS,-20.2833,57.55
 2020-03-21,Maurice,12,0,9.5,0.0,MUS,-20.2833,57.55
 2020-03-22,Maurice,14,1,11.1,0.8,MUS,-20.2833,57.55
@@ -6300,6 +6558,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Maurice,319,9,252.1,7.1,MUS,-20.2833,57.55
 2020-04-13,Maurice,324,9,256.1,7.1,MUS,-20.2833,57.55
 2020-04-14,Maurice,324,9,256.1,7.1,MUS,-20.2833,57.55
+2020-04-15,Maurice,324,9,256.1,7.1,MUS,-20.2833,57.55
+2020-04-16,Maurice,324,9,256.1,7.1,MUS,-20.2833,57.55
 2020-04-03,Malawi,3,0,0.2,0.0,MWI,-13.5,34.0
 2020-04-04,Malawi,3,0,0.2,0.0,MWI,-13.5,34.0
 2020-04-05,Malawi,4,0,0.2,0.0,MWI,-13.5,34.0
@@ -6312,6 +6572,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Malawi,12,2,0.7,0.1,MWI,-13.5,34.0
 2020-04-13,Malawi,13,2,0.7,0.1,MWI,-13.5,34.0
 2020-04-14,Malawi,16,2,0.9,0.1,MWI,-13.5,34.0
+2020-04-15,Malawi,16,2,0.9,0.1,MWI,-13.5,34.0
+2020-04-16,Malawi,16,2,0.9,0.1,MWI,-13.5,34.0
 2020-01-26,Malaisie,4,0,0.1,0.0,MYS,2.5,112.5
 2020-01-27,Malaisie,4,0,0.1,0.0,MYS,2.5,112.5
 2020-01-28,Malaisie,4,0,0.1,0.0,MYS,2.5,112.5
@@ -6392,6 +6654,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Malaisie,4530,73,143.7,2.3,MYS,2.5,112.5
 2020-04-13,Malaisie,4683,76,148.5,2.4,MYS,2.5,112.5
 2020-04-14,Malaisie,4817,77,152.8,2.4,MYS,2.5,112.5
+2020-04-15,Malaisie,4987,82,158.2,2.6,MYS,2.5,112.5
+2020-04-16,Malaisie,5072,83,160.9,2.6,MYS,2.5,112.5
 2020-03-15,Namibie,2,0,0.8,0.0,NAM,-22.0,17.0
 2020-03-16,Namibie,2,0,0.8,0.0,NAM,-22.0,17.0
 2020-03-17,Namibie,2,0,0.8,0.0,NAM,-22.0,17.0
@@ -6423,6 +6687,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Namibie,16,0,6.5,0.0,NAM,-22.0,17.0
 2020-04-13,Namibie,16,0,6.5,0.0,NAM,-22.0,17.0
 2020-04-14,Namibie,16,0,6.5,0.0,NAM,-22.0,17.0
+2020-04-15,Namibie,16,0,6.5,0.0,NAM,-22.0,17.0
+2020-04-16,Namibie,16,0,6.5,0.0,NAM,-22.0,17.0
 2020-03-21,Nouvelle-Calédonie,2,0,7.0,0.0,NCL,-21.5,165.5
 2020-03-22,Nouvelle-Calédonie,4,0,14.1,0.0,NCL,-21.5,165.5
 2020-03-23,Nouvelle-Calédonie,5,0,17.6,0.0,NCL,-21.5,165.5
@@ -6448,6 +6714,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Nouvelle-Calédonie,18,0,63.4,0.0,NCL,-21.5,165.5
 2020-04-13,Nouvelle-Calédonie,18,0,63.4,0.0,NCL,-21.5,165.5
 2020-04-14,Nouvelle-Calédonie,18,0,63.4,0.0,NCL,-21.5,165.5
+2020-04-15,Nouvelle-Calédonie,18,0,63.4,0.0,NCL,-21.5,165.5
+2020-04-16,Nouvelle-Calédonie,18,0,63.4,0.0,NCL,-21.5,165.5
 2020-03-21,Niger,1,0,0.0,0.0,NER,16.0,8.0
 2020-03-22,Niger,1,0,0.0,0.0,NER,16.0,8.0
 2020-03-23,Niger,1,0,0.0,0.0,NER,16.0,8.0
@@ -6473,6 +6741,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Niger,491,11,21.9,0.5,NER,16.0,8.0
 2020-04-13,Niger,529,12,23.6,0.5,NER,16.0,8.0
 2020-04-14,Niger,548,13,24.4,0.6,NER,16.0,8.0
+2020-04-15,Niger,570,14,25.4,0.6,NER,16.0,8.0
+2020-04-16,Niger,584,14,26.0,0.6,NER,16.0,8.0
 2020-01-26,Nigéria,0,0,0.0,0.0,NGA,10.0,8.0
 2020-01-27,Nigéria,0,0,0.0,0.0,NGA,10.0,8.0
 2020-01-28,Nigéria,0,0,0.0,0.0,NGA,10.0,8.0
@@ -6553,6 +6823,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Nigéria,318,10,1.6,0.1,NGA,10.0,8.0
 2020-04-13,Nigéria,323,10,1.6,0.1,NGA,10.0,8.0
 2020-04-14,Nigéria,343,10,1.8,0.1,NGA,10.0,8.0
+2020-04-15,Nigéria,373,11,1.9,0.1,NGA,10.0,8.0
+2020-04-16,Nigéria,407,12,2.1,0.1,NGA,10.0,8.0
 2020-03-19,Nicaragua,1,0,0.2,0.0,NIC,13.0,-85.0
 2020-03-20,Nicaragua,1,0,0.2,0.0,NIC,13.0,-85.0
 2020-03-21,Nicaragua,1,0,0.2,0.0,NIC,13.0,-85.0
@@ -6580,6 +6852,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Nicaragua,8,1,1.2,0.2,NIC,13.0,-85.0
 2020-04-13,Nicaragua,11,1,1.7,0.2,NIC,13.0,-85.0
 2020-04-14,Nicaragua,12,1,1.9,0.2,NIC,13.0,-85.0
+2020-04-15,Nicaragua,12,1,1.9,0.2,NIC,13.0,-85.0
+2020-04-16,Nicaragua,12,1,1.9,0.2,NIC,13.0,-85.0
 2020-01-26,Pays-Bas,0,0,0.0,0.0,NLD,52.5,5.75
 2020-01-27,Pays-Bas,0,0,0.0,0.0,NLD,52.5,5.75
 2020-01-28,Pays-Bas,0,0,0.0,0.0,NLD,52.5,5.75
@@ -6660,6 +6934,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Pays-Bas,24413,2643,1416.8,153.4,NLD,52.5,5.75
 2020-04-13,Pays-Bas,25587,2737,1484.9,158.8,NLD,52.5,5.75
 2020-04-14,Pays-Bas,26551,2823,1540.9,163.8,NLD,52.5,5.75
+2020-04-15,Pays-Bas,27419,2945,1591.3,170.9,NLD,52.5,5.75
+2020-04-16,Pays-Bas,28153,3134,1633.9,181.9,NLD,52.5,5.75
 2020-01-26,Norvège,0,0,0.0,0.0,NOR,62.0,10.0
 2020-01-27,Norvège,0,0,0.0,0.0,NOR,62.0,10.0
 2020-01-28,Norvège,0,0,0.0,0.0,NOR,62.0,10.0
@@ -6740,6 +7016,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Norvège,6320,98,1189.2,18.4,NOR,62.0,10.0
 2020-04-13,Norvège,6415,103,1207.1,19.4,NOR,62.0,10.0
 2020-04-14,Norvège,6488,114,1220.8,21.5,NOR,62.0,10.0
+2020-04-15,Norvège,6566,127,1235.5,23.9,NOR,62.0,10.0
+2020-04-16,Norvège,6677,130,1256.4,24.5,NOR,62.0,10.0
 2020-01-26,Népal,1,0,0.0,0.0,NPL,28.0,84.0
 2020-01-27,Népal,1,0,0.0,0.0,NPL,28.0,84.0
 2020-01-28,Népal,1,0,0.0,0.0,NPL,28.0,84.0
@@ -6820,6 +7098,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Népal,9,0,0.3,0.0,NPL,28.0,84.0
 2020-04-13,Népal,12,0,0.4,0.0,NPL,28.0,84.0
 2020-04-14,Népal,14,0,0.5,0.0,NPL,28.0,84.0
+2020-04-15,Népal,16,0,0.6,0.0,NPL,28.0,84.0
+2020-04-16,Népal,16,0,0.6,0.0,NPL,28.0,84.0
 2020-01-26,Nouvelle-Zélande,0,0,0.0,0.0,NZL,-41.0,174.0
 2020-01-27,Nouvelle-Zélande,0,0,0.0,0.0,NZL,-41.0,174.0
 2020-01-28,Nouvelle-Zélande,0,0,0.0,0.0,NZL,-41.0,174.0
@@ -6900,6 +7180,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Nouvelle-Zélande,1049,4,214.7,0.8,NZL,-41.0,174.0
 2020-04-13,Nouvelle-Zélande,1064,5,217.8,1.0,NZL,-41.0,174.0
 2020-04-14,Nouvelle-Zélande,1072,9,219.4,1.8,NZL,-41.0,174.0
+2020-04-15,Nouvelle-Zélande,1078,9,220.7,1.8,NZL,-41.0,174.0
+2020-04-16,Nouvelle-Zélande,1084,9,221.9,1.8,NZL,-41.0,174.0
 2020-01-26,Oman,0,0,0.0,0.0,OMN,21.0,57.0
 2020-01-27,Oman,0,0,0.0,0.0,OMN,21.0,57.0
 2020-01-28,Oman,0,0,0.0,0.0,OMN,21.0,57.0
@@ -6980,6 +7262,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Oman,546,3,113.1,0.6,OMN,21.0,57.0
 2020-04-13,Oman,599,4,124.0,0.8,OMN,21.0,57.0
 2020-04-14,Oman,813,4,168.3,0.8,OMN,21.0,57.0
+2020-04-15,Oman,910,4,188.4,0.8,OMN,21.0,57.0
+2020-04-16,Oman,910,4,188.4,0.8,OMN,21.0,57.0
 2020-01-26,Pakistan,0,0,0.0,0.0,PAK,30.0,70.0
 2020-01-27,Pakistan,0,0,0.0,0.0,PAK,30.0,70.0
 2020-01-28,Pakistan,0,0,0.0,0.0,PAK,30.0,70.0
@@ -7060,6 +7344,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Pakistan,5038,86,23.7,0.4,PAK,30.0,70.0
 2020-04-13,Pakistan,5374,93,25.3,0.4,PAK,30.0,70.0
 2020-04-14,Pakistan,5716,96,26.9,0.5,PAK,30.0,70.0
+2020-04-15,Pakistan,5988,107,28.2,0.5,PAK,30.0,70.0
+2020-04-16,Pakistan,6505,124,30.7,0.6,PAK,30.0,70.0
 2020-03-10,Panama,1,0,0.2,0.0,PAN,9.0,-80.0
 2020-03-11,Panama,7,1,1.7,0.2,PAN,9.0,-80.0
 2020-03-12,Panama,14,1,3.4,0.2,PAN,9.0,-80.0
@@ -7096,6 +7382,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Panama,3234,79,774.3,18.9,PAN,9.0,-80.0
 2020-04-13,Panama,3400,87,814.0,20.8,PAN,9.0,-80.0
 2020-04-14,Panama,3472,94,831.2,22.5,PAN,9.0,-80.0
+2020-04-15,Panama,3574,95,855.7,22.7,PAN,9.0,-80.0
+2020-04-16,Panama,3751,103,898.0,24.7,PAN,9.0,-80.0
 2020-03-07,Pérou,1,0,0.0,0.0,PER,-10.0,-76.0
 2020-03-08,Pérou,1,0,0.0,0.0,PER,-10.0,-76.0
 2020-03-09,Pérou,7,0,0.2,0.0,PER,-10.0,-76.0
@@ -7135,6 +7423,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Pérou,6848,181,214.1,5.7,PER,-10.0,-76.0
 2020-04-13,Pérou,7519,193,235.0,6.0,PER,-10.0,-76.0
 2020-04-14,Pérou,7519,193,235.0,6.0,PER,-10.0,-76.0
+2020-04-15,Pérou,10303,230,322.1,7.2,PER,-10.0,-76.0
+2020-04-16,Pérou,11475,254,358.7,7.9,PER,-10.0,-76.0
 2020-01-26,Philippines,0,0,0.0,0.0,PHL,13.0,122.0
 2020-01-27,Philippines,0,0,0.0,0.0,PHL,13.0,122.0
 2020-01-28,Philippines,0,0,0.0,0.0,PHL,13.0,122.0
@@ -7215,6 +7505,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Philippines,4428,247,41.5,2.3,PHL,13.0,122.0
 2020-04-13,Philippines,4648,297,43.6,2.8,PHL,13.0,122.0
 2020-04-14,Philippines,4932,315,46.2,3.0,PHL,13.0,122.0
+2020-04-15,Philippines,5223,335,49.0,3.1,PHL,13.0,122.0
+2020-04-16,Philippines,5453,349,51.1,3.3,PHL,13.0,122.0
 2020-03-21,Papouasie-Nouvelle-Guinée,1,0,0.1,0.0,PNG,-6.0,147.0
 2020-03-22,Papouasie-Nouvelle-Guinée,1,0,0.1,0.0,PNG,-6.0,147.0
 2020-03-23,Papouasie-Nouvelle-Guinée,1,0,0.1,0.0,PNG,-6.0,147.0
@@ -7240,6 +7532,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Papouasie-Nouvelle-Guinée,2,0,0.2,0.0,PNG,-6.0,147.0
 2020-04-13,Papouasie-Nouvelle-Guinée,2,0,0.2,0.0,PNG,-6.0,147.0
 2020-04-14,Papouasie-Nouvelle-Guinée,2,0,0.2,0.0,PNG,-6.0,147.0
+2020-04-15,Papouasie-Nouvelle-Guinée,2,0,0.2,0.0,PNG,-6.0,147.0
+2020-04-16,Papouasie-Nouvelle-Guinée,2,0,0.2,0.0,PNG,-6.0,147.0
 2020-03-04,Pologne,1,0,0.0,0.0,POL,52.0,20.0
 2020-03-05,Pologne,1,0,0.0,0.0,POL,52.0,20.0
 2020-03-06,Pologne,1,0,0.0,0.0,POL,52.0,20.0
@@ -7282,6 +7576,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Pologne,6356,208,167.4,5.5,POL,52.0,20.0
 2020-04-13,Pologne,6674,232,175.7,6.1,POL,52.0,20.0
 2020-04-14,Pologne,6934,245,182.6,6.5,POL,52.0,20.0
+2020-04-15,Pologne,7202,263,189.6,6.9,POL,52.0,20.0
+2020-04-16,Pologne,7582,286,199.6,7.5,POL,52.0,20.0
 2020-03-28,Porto Rico,64,2,20.0,0.6,PRI,18.25,-66.5
 2020-03-29,Porto Rico,100,3,31.3,0.9,PRI,18.25,-66.5
 2020-03-30,Porto Rico,127,5,39.7,1.6,PRI,18.25,-66.5
@@ -7300,6 +7596,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Porto Rico,788,42,246.6,13.1,PRI,18.25,-66.5
 2020-04-13,Porto Rico,897,44,280.7,13.8,PRI,18.25,-66.5
 2020-04-14,Porto Rico,903,45,282.6,14.1,PRI,18.25,-66.5
+2020-04-15,Porto Rico,923,45,288.9,14.1,PRI,18.25,-66.5
+2020-04-16,Porto Rico,974,51,304.8,16.0,PRI,18.25,-66.5
 2020-03-03,Portugal,2,0,0.2,0.0,PRT,39.5,-8.0
 2020-03-04,Portugal,4,0,0.4,0.0,PRT,39.5,-8.0
 2020-03-05,Portugal,5,0,0.5,0.0,PRT,39.5,-8.0
@@ -7343,6 +7641,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Portugal,15987,470,1554.9,45.7,PRT,39.5,-8.0
 2020-04-13,Portugal,16585,504,1613.1,49.0,PRT,39.5,-8.0
 2020-04-14,Portugal,16934,535,1647.0,52.0,PRT,39.5,-8.0
+2020-04-15,Portugal,17448,567,1697.0,55.1,PRT,39.5,-8.0
+2020-04-16,Portugal,18091,599,1759.5,58.3,PRT,39.5,-8.0
 2020-03-08,Paraguay,1,0,0.1,0.0,PRY,-23.0,-58.0
 2020-03-09,Paraguay,1,0,0.1,0.0,PRY,-23.0,-58.0
 2020-03-10,Paraguay,1,0,0.1,0.0,PRY,-23.0,-58.0
@@ -7381,6 +7681,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Paraguay,134,6,19.3,0.9,PRY,-23.0,-58.0
 2020-04-13,Paraguay,147,6,21.1,0.9,PRY,-23.0,-58.0
 2020-04-14,Paraguay,159,7,22.9,1.0,PRY,-23.0,-58.0
+2020-04-15,Paraguay,161,8,23.1,1.2,PRY,-23.0,-58.0
+2020-04-16,Paraguay,174,8,25.0,1.2,PRY,-23.0,-58.0
 2020-03-06,Cisjordanie et Gaza,7,0,1.5,0.0,PSE,32.0,35.25
 2020-03-07,Cisjordanie et Gaza,16,0,3.5,0.0,PSE,32.0,35.25
 2020-03-08,Cisjordanie et Gaza,19,0,4.2,0.0,PSE,32.0,35.25
@@ -7421,6 +7723,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Cisjordanie et Gaza,268,2,58.7,0.4,PSE,32.0,35.25
 2020-04-13,Cisjordanie et Gaza,268,2,58.7,0.4,PSE,32.0,35.25
 2020-04-14,Cisjordanie et Gaza,268,2,58.7,0.4,PSE,32.0,35.25
+2020-04-15,Cisjordanie et Gaza,287,2,62.8,0.4,PSE,32.0,35.25
+2020-04-16,Cisjordanie et Gaza,291,2,63.7,0.4,PSE,32.0,35.25
 2020-03-19,Polynésie française,3,0,10.8,0.0,PYF,-15.0,-140.0
 2020-03-20,Polynésie française,3,0,10.8,0.0,PYF,-15.0,-140.0
 2020-03-21,Polynésie française,15,0,54.0,0.0,PYF,-15.0,-140.0
@@ -7448,6 +7752,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Polynésie française,51,0,183.7,0.0,PYF,-15.0,-140.0
 2020-04-13,Polynésie française,53,0,190.9,0.0,PYF,-15.0,-140.0
 2020-04-14,Polynésie française,55,0,198.1,0.0,PYF,-15.0,-140.0
+2020-04-15,Polynésie française,55,0,198.1,0.0,PYF,-15.0,-140.0
+2020-04-16,Polynésie française,55,0,198.1,0.0,PYF,-15.0,-140.0
 2020-01-26,Qatar,0,0,0.0,0.0,QAT,25.5,51.25
 2020-01-27,Qatar,0,0,0.0,0.0,QAT,25.5,51.25
 2020-01-28,Qatar,0,0,0.0,0.0,QAT,25.5,51.25
@@ -7528,6 +7834,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Qatar,2728,6,980.7,2.2,QAT,25.5,51.25
 2020-04-13,Qatar,2979,7,1070.9,2.5,QAT,25.5,51.25
 2020-04-14,Qatar,3231,7,1161.5,2.5,QAT,25.5,51.25
+2020-04-15,Qatar,3428,7,1232.4,2.5,QAT,25.5,51.25
+2020-04-16,Qatar,3711,7,1334.1,2.5,QAT,25.5,51.25
 2020-01-26,Roumanie,0,0,0.0,0.0,ROU,46.0,25.0
 2020-01-27,Roumanie,0,0,0.0,0.0,ROU,46.0,25.0
 2020-01-28,Roumanie,0,0,0.0,0.0,ROU,46.0,25.0
@@ -7608,6 +7916,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Roumanie,5990,282,307.6,14.5,ROU,46.0,25.0
 2020-04-13,Roumanie,6300,306,323.5,15.7,ROU,46.0,25.0
 2020-04-14,Roumanie,6633,318,340.6,16.3,ROU,46.0,25.0
+2020-04-15,Roumanie,6879,344,353.2,17.7,ROU,46.0,25.0
+2020-04-16,Roumanie,7216,372,370.5,19.1,ROU,46.0,25.0
 2020-01-26,Fédération de Russie,0,0,0.0,0.0,RUS,60.0,100.0
 2020-01-27,Fédération de Russie,0,0,0.0,0.0,RUS,60.0,100.0
 2020-01-28,Fédération de Russie,0,0,0.0,0.0,RUS,60.0,100.0
@@ -7688,6 +7998,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Fédération de Russie,13584,106,94.0,0.7,RUS,60.0,100.0
 2020-04-13,Fédération de Russie,15770,130,109.2,0.9,RUS,60.0,100.0
 2020-04-14,Fédération de Russie,18328,148,126.9,1.0,RUS,60.0,100.0
+2020-04-15,Fédération de Russie,21102,170,146.1,1.2,RUS,60.0,100.0
+2020-04-16,Fédération de Russie,24490,198,169.5,1.4,RUS,60.0,100.0
 2020-03-15,Rwanda,1,0,0.1,0.0,RWA,-2.0,30.0
 2020-03-16,Rwanda,5,0,0.4,0.0,RWA,-2.0,30.0
 2020-03-17,Rwanda,5,0,0.4,0.0,RWA,-2.0,30.0
@@ -7719,6 +8031,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Rwanda,120,0,9.8,0.0,RWA,-2.0,30.0
 2020-04-13,Rwanda,126,0,10.2,0.0,RWA,-2.0,30.0
 2020-04-14,Rwanda,127,0,10.3,0.0,RWA,-2.0,30.0
+2020-04-15,Rwanda,134,0,10.9,0.0,RWA,-2.0,30.0
+2020-04-16,Rwanda,136,0,11.1,0.0,RWA,-2.0,30.0
 2020-03-03,Arabie saoudite,1,0,0.0,0.0,SAU,25.0,45.0
 2020-03-04,Arabie saoudite,1,0,0.0,0.0,SAU,25.0,45.0
 2020-03-05,Arabie saoudite,1,0,0.0,0.0,SAU,25.0,45.0
@@ -7762,6 +8076,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Arabie saoudite,4033,52,119.7,1.5,SAU,25.0,45.0
 2020-04-13,Arabie saoudite,4462,59,132.4,1.8,SAU,25.0,45.0
 2020-04-14,Arabie saoudite,4934,65,146.4,1.9,SAU,25.0,45.0
+2020-04-15,Arabie saoudite,5369,73,159.3,2.2,SAU,25.0,45.0
+2020-04-16,Arabie saoudite,5862,79,173.9,2.3,SAU,25.0,45.0
 2020-03-14,Soudan,1,0,0.0,0.0,SDN,15.0,30.0
 2020-03-15,Soudan,1,1,0.0,0.0,SDN,15.0,30.0
 2020-03-16,Soudan,1,1,0.0,0.0,SDN,15.0,30.0
@@ -7794,6 +8110,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Soudan,19,2,0.5,0.0,SDN,15.0,30.0
 2020-04-13,Soudan,19,2,0.5,0.0,SDN,15.0,30.0
 2020-04-14,Soudan,29,4,0.7,0.1,SDN,15.0,30.0
+2020-04-15,Soudan,32,5,0.8,0.1,SDN,15.0,30.0
+2020-04-16,Soudan,32,5,0.8,0.1,SDN,15.0,30.0
 2020-03-03,Sénégal,1,0,0.1,0.0,SEN,14.0,-14.0
 2020-03-04,Sénégal,1,0,0.1,0.0,SEN,14.0,-14.0
 2020-03-05,Sénégal,3,0,0.2,0.0,SEN,14.0,-14.0
@@ -7837,6 +8155,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Sénégal,278,2,17.5,0.1,SEN,14.0,-14.0
 2020-04-13,Sénégal,280,2,17.7,0.1,SEN,14.0,-14.0
 2020-04-14,Sénégal,291,2,18.4,0.1,SEN,14.0,-14.0
+2020-04-15,Sénégal,299,2,18.9,0.1,SEN,14.0,-14.0
+2020-04-16,Sénégal,314,2,19.8,0.1,SEN,14.0,-14.0
 2020-01-26,Singapour,4,0,0.7,0.0,SGP,1.3667,103.8
 2020-01-27,Singapour,4,0,0.7,0.0,SGP,1.3667,103.8
 2020-01-28,Singapour,5,0,0.9,0.0,SGP,1.3667,103.8
@@ -7917,6 +8237,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Singapour,2299,8,407.7,1.4,SGP,1.3667,103.8
 2020-04-13,Singapour,2532,8,449.0,1.4,SGP,1.3667,103.8
 2020-04-14,Singapour,2918,9,517.5,1.6,SGP,1.3667,103.8
+2020-04-15,Singapour,3252,10,576.7,1.8,SGP,1.3667,103.8
+2020-04-16,Singapour,3699,10,656.0,1.8,SGP,1.3667,103.8
 2020-04-01,Sierra Leone,1,0,0.1,0.0,SLE,8.5,-11.5
 2020-04-02,Sierra Leone,1,0,0.1,0.0,SLE,8.5,-11.5
 2020-04-03,Sierra Leone,2,0,0.3,0.0,SLE,8.5,-11.5
@@ -7931,6 +8253,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Sierra Leone,10,0,1.3,0.0,SLE,8.5,-11.5
 2020-04-13,Sierra Leone,10,0,1.3,0.0,SLE,8.5,-11.5
 2020-04-14,Sierra Leone,11,0,1.4,0.0,SLE,8.5,-11.5
+2020-04-15,Sierra Leone,11,0,1.4,0.0,SLE,8.5,-11.5
+2020-04-16,Sierra Leone,13,0,1.7,0.0,SLE,8.5,-11.5
 2020-03-19,El Salvador,1,0,0.2,0.0,SLV,13.8333,-88.9167
 2020-03-20,El Salvador,1,0,0.2,0.0,SLV,13.8333,-88.9167
 2020-03-21,El Salvador,3,0,0.5,0.0,SLV,13.8333,-88.9167
@@ -7958,6 +8282,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,El Salvador,118,6,18.4,0.9,SLV,13.8333,-88.9167
 2020-04-13,El Salvador,125,6,19.5,0.9,SLV,13.8333,-88.9167
 2020-04-14,El Salvador,149,6,23.2,0.9,SLV,13.8333,-88.9167
+2020-04-15,El Salvador,159,6,24.8,0.9,SLV,13.8333,-88.9167
+2020-04-16,El Salvador,159,6,24.8,0.9,SLV,13.8333,-88.9167
 2020-01-26,Saint-Marin,0,0,0.0,0.0,SMR,43.7667,12.4167
 2020-01-27,Saint-Marin,0,0,0.0,0.0,SMR,43.7667,12.4167
 2020-01-28,Saint-Marin,0,0,0.0,0.0,SMR,43.7667,12.4167
@@ -8038,6 +8364,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Saint-Marin,356,35,10537.2,1036.0,SMR,43.7667,12.4167
 2020-04-13,Saint-Marin,356,35,10537.2,1036.0,SMR,43.7667,12.4167
 2020-04-14,Saint-Marin,356,36,10537.2,1065.6,SMR,43.7667,12.4167
+2020-04-15,Saint-Marin,372,36,11010.8,1065.6,SMR,43.7667,12.4167
+2020-04-16,Saint-Marin,392,36,11602.8,1065.6,SMR,43.7667,12.4167
 2020-03-17,Somalie,1,0,0.1,0.0,SOM,10.0,49.0
 2020-03-18,Somalie,1,0,0.1,0.0,SOM,10.0,49.0
 2020-03-19,Somalie,1,0,0.1,0.0,SOM,10.0,49.0
@@ -8067,6 +8395,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Somalie,21,1,1.4,0.1,SOM,10.0,49.0
 2020-04-13,Somalie,25,2,1.7,0.1,SOM,10.0,49.0
 2020-04-14,Somalie,25,2,1.7,0.1,SOM,10.0,49.0
+2020-04-15,Somalie,60,2,4.0,0.1,SOM,10.0,49.0
+2020-04-16,Somalie,80,5,5.3,0.3,SOM,10.0,49.0
 2020-03-07,Serbie,1,0,0.1,0.0,SRB,44.0,21.0
 2020-03-08,Serbie,1,0,0.1,0.0,SRB,44.0,21.0
 2020-03-09,Serbie,1,0,0.1,0.0,SRB,44.0,21.0
@@ -8106,6 +8436,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Serbie,3380,74,484.1,10.6,SRB,44.0,21.0
 2020-04-13,Serbie,3630,80,519.9,11.5,SRB,44.0,21.0
 2020-04-14,Serbie,3630,80,519.9,11.5,SRB,44.0,21.0
+2020-04-15,Serbie,4054,84,580.6,12.0,SRB,44.0,21.0
+2020-04-16,Serbie,4873,99,697.9,14.2,SRB,44.0,21.0
 2020-04-06,Soudan du Sud,1,0,0.1,0.0,SSD,6.876991899999999,31.3069788
 2020-04-07,Soudan du Sud,1,0,0.1,0.0,SSD,6.876991899999999,31.3069788
 2020-04-08,Soudan du Sud,1,0,0.1,0.0,SSD,6.876991899999999,31.3069788
@@ -8115,12 +8447,16 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Soudan du Sud,4,0,0.4,0.0,SSD,6.876991899999999,31.3069788
 2020-04-13,Soudan du Sud,4,0,0.4,0.0,SSD,6.876991899999999,31.3069788
 2020-04-14,Soudan du Sud,4,0,0.4,0.0,SSD,6.876991899999999,31.3069788
+2020-04-15,Soudan du Sud,4,0,0.4,0.0,SSD,6.876991899999999,31.3069788
+2020-04-16,Soudan du Sud,4,0,0.4,0.0,SSD,6.876991899999999,31.3069788
 2020-04-09,Sao Tomé-et-Principe,4,0,19.0,0.0,STP,1.0,7.0
 2020-04-10,Sao Tomé-et-Principe,4,0,19.0,0.0,STP,1.0,7.0
 2020-04-11,Sao Tomé-et-Principe,4,0,19.0,0.0,STP,1.0,7.0
 2020-04-12,Sao Tomé-et-Principe,4,0,19.0,0.0,STP,1.0,7.0
 2020-04-13,Sao Tomé-et-Principe,4,0,19.0,0.0,STP,1.0,7.0
 2020-04-14,Sao Tomé-et-Principe,4,0,19.0,0.0,STP,1.0,7.0
+2020-04-15,Sao Tomé-et-Principe,4,0,19.0,0.0,STP,1.0,7.0
+2020-04-16,Sao Tomé-et-Principe,4,0,19.0,0.0,STP,1.0,7.0
 2020-03-15,Suriname,1,0,1.7,0.0,SUR,4.0,-56.0
 2020-03-16,Suriname,1,0,1.7,0.0,SUR,4.0,-56.0
 2020-03-17,Suriname,1,0,1.7,0.0,SUR,4.0,-56.0
@@ -8152,6 +8488,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Suriname,10,1,17.4,1.7,SUR,4.0,-56.0
 2020-04-13,Suriname,10,1,17.4,1.7,SUR,4.0,-56.0
 2020-04-14,Suriname,10,1,17.4,1.7,SUR,4.0,-56.0
+2020-04-15,Suriname,10,1,17.4,1.7,SUR,4.0,-56.0
+2020-04-16,Suriname,10,1,17.4,1.7,SUR,4.0,-56.0
 2020-03-07,République slovaque,1,0,0.2,0.0,SVK,48.6667,19.5
 2020-03-08,République slovaque,3,0,0.6,0.0,SVK,48.6667,19.5
 2020-03-09,République slovaque,5,0,0.9,0.0,SVK,48.6667,19.5
@@ -8191,6 +8529,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,République slovaque,728,2,133.7,0.4,SVK,48.6667,19.5
 2020-04-13,République slovaque,742,2,136.2,0.4,SVK,48.6667,19.5
 2020-04-14,République slovaque,769,2,141.2,0.4,SVK,48.6667,19.5
+2020-04-15,République slovaque,835,2,153.3,0.4,SVK,48.6667,19.5
+2020-04-16,République slovaque,863,6,158.4,1.1,SVK,48.6667,19.5
 2020-03-05,Slovénie,1,0,0.5,0.0,SVN,46.0,15.0
 2020-03-06,Slovénie,6,0,2.9,0.0,SVN,46.0,15.0
 2020-03-07,Slovénie,9,0,4.4,0.0,SVN,46.0,15.0
@@ -8232,6 +8572,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Slovénie,1188,50,574.6,24.2,SVN,46.0,15.0
 2020-04-13,Slovénie,1205,53,582.9,25.6,SVN,46.0,15.0
 2020-04-14,Slovénie,1212,55,586.3,26.6,SVN,46.0,15.0
+2020-04-15,Slovénie,1220,56,590.1,27.1,SVN,46.0,15.0
+2020-04-16,Slovénie,1248,61,603.7,29.5,SVN,46.0,15.0
 2020-01-26,Suède,0,0,0.0,0.0,SWE,62.0,15.0
 2020-01-27,Suède,0,0,0.0,0.0,SWE,62.0,15.0
 2020-01-28,Suède,0,0,0.0,0.0,SWE,62.0,15.0
@@ -8312,6 +8654,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Suède,10151,887,996.8,87.1,SWE,62.0,15.0
 2020-04-13,Suède,10483,899,1029.4,88.3,SWE,62.0,15.0
 2020-04-14,Suède,10948,919,1075.1,90.2,SWE,62.0,15.0
+2020-04-15,Suède,11445,1033,1123.9,101.4,SWE,62.0,15.0
+2020-04-16,Suède,11927,1203,1171.2,118.1,SWE,62.0,15.0
 2020-03-15,Eswatini,1,0,0.7,0.0,SWZ,-26.5,31.5
 2020-03-16,Eswatini,1,0,0.7,0.0,SWZ,-26.5,31.5
 2020-03-17,Eswatini,1,0,0.7,0.0,SWZ,-26.5,31.5
@@ -8343,6 +8687,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Eswatini,14,0,10.2,0.0,SWZ,-26.5,31.5
 2020-04-13,Eswatini,14,0,10.2,0.0,SWZ,-26.5,31.5
 2020-04-14,Eswatini,15,0,11.0,0.0,SWZ,-26.5,31.5
+2020-04-15,Eswatini,15,0,11.0,0.0,SWZ,-26.5,31.5
+2020-04-16,Eswatini,16,0,11.7,0.0,SWZ,-26.5,31.5
 2020-03-03,Saint-Martin,1,0,24.1,0.0,SXM,18.04248,-63.05483
 2020-03-04,Saint-Martin,1,0,24.1,0.0,SXM,18.04248,-63.05483
 2020-03-05,Saint-Martin,1,0,24.1,0.0,SXM,18.04248,-63.05483
@@ -8386,6 +8732,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Saint-Martin,50,9,1205.2,216.9,SXM,18.04248,-63.05483
 2020-04-13,Saint-Martin,50,9,1205.2,216.9,SXM,18.04248,-63.05483
 2020-04-14,Saint-Martin,52,9,1253.4,216.9,SXM,18.04248,-63.05483
+2020-04-15,Saint-Martin,52,9,1253.4,216.9,SXM,18.04248,-63.05483
+2020-04-16,Saint-Martin,57,9,1374.0,216.9,SXM,18.04248,-63.05483
 2020-03-15,Seychelles,2,0,20.7,0.0,SYC,-4.5833,55.6667
 2020-03-16,Seychelles,3,0,31.0,0.0,SYC,-4.5833,55.6667
 2020-03-17,Seychelles,4,0,41.3,0.0,SYC,-4.5833,55.6667
@@ -8417,6 +8765,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Seychelles,10,0,103.3,0.0,SYC,-4.5833,55.6667
 2020-04-13,Seychelles,10,0,103.3,0.0,SYC,-4.5833,55.6667
 2020-04-14,Seychelles,10,0,103.3,0.0,SYC,-4.5833,55.6667
+2020-04-15,Seychelles,11,0,113.7,0.0,SYC,-4.5833,55.6667
+2020-04-16,Seychelles,11,0,113.7,0.0,SYC,-4.5833,55.6667
 2020-03-23,République arabe syrienne,1,0,0.1,0.0,SYR,35.0,38.0
 2020-03-24,République arabe syrienne,1,0,0.1,0.0,SYR,35.0,38.0
 2020-03-25,République arabe syrienne,1,0,0.1,0.0,SYR,35.0,38.0
@@ -8440,6 +8790,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,République arabe syrienne,25,2,1.5,0.1,SYR,35.0,38.0
 2020-04-13,République arabe syrienne,25,2,1.5,0.1,SYR,35.0,38.0
 2020-04-14,République arabe syrienne,25,2,1.5,0.1,SYR,35.0,38.0
+2020-04-15,République arabe syrienne,29,2,1.7,0.1,SYR,35.0,38.0
+2020-04-16,République arabe syrienne,33,2,2.0,0.1,SYR,35.0,38.0
 2020-03-25,Îles Turques-et-Caïques,1,0,31.8,0.0,TCA,21.75,-71.5833
 2020-03-26,Îles Turques-et-Caïques,1,0,31.8,0.0,TCA,21.75,-71.5833
 2020-03-27,Îles Turques-et-Caïques,2,0,63.6,0.0,TCA,21.75,-71.5833
@@ -8461,6 +8813,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Îles Turques-et-Caïques,9,1,286.1,31.8,TCA,21.75,-71.5833
 2020-04-13,Îles Turques-et-Caïques,9,1,286.1,31.8,TCA,21.75,-71.5833
 2020-04-14,Îles Turques-et-Caïques,10,1,317.9,31.8,TCA,21.75,-71.5833
+2020-04-15,Îles Turques-et-Caïques,10,1,317.9,31.8,TCA,21.75,-71.5833
+2020-04-16,Îles Turques-et-Caïques,11,1,349.7,31.8,TCA,21.75,-71.5833
 2020-03-20,Tchad,1,0,0.1,0.0,TCD,15.0,19.0
 2020-03-21,Tchad,1,0,0.1,0.0,TCD,15.0,19.0
 2020-03-22,Tchad,2,0,0.1,0.0,TCD,15.0,19.0
@@ -8487,6 +8841,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Tchad,11,0,0.7,0.0,TCD,15.0,19.0
 2020-04-13,Tchad,15,0,1.0,0.0,TCD,15.0,19.0
 2020-04-14,Tchad,23,0,1.5,0.0,TCD,15.0,19.0
+2020-04-15,Tchad,23,0,1.5,0.0,TCD,15.0,19.0
+2020-04-16,Tchad,27,0,1.7,0.0,TCD,15.0,19.0
 2020-03-07,Togo,1,0,0.1,0.0,TGO,8.0,1.1667
 2020-03-08,Togo,1,0,0.1,0.0,TGO,8.0,1.1667
 2020-03-09,Togo,1,0,0.1,0.0,TGO,8.0,1.1667
@@ -8526,6 +8882,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Togo,76,3,9.6,0.4,TGO,8.0,1.1667
 2020-04-13,Togo,76,3,9.6,0.4,TGO,8.0,1.1667
 2020-04-14,Togo,77,3,9.8,0.4,TGO,8.0,1.1667
+2020-04-15,Togo,77,3,9.8,0.4,TGO,8.0,1.1667
+2020-04-16,Togo,81,3,10.3,0.4,TGO,8.0,1.1667
 2020-01-26,Thaïlande,5,0,0.1,0.0,THA,15.0,100.0
 2020-01-27,Thaïlande,8,0,0.1,0.0,THA,15.0,100.0
 2020-01-28,Thaïlande,14,0,0.2,0.0,THA,15.0,100.0
@@ -8606,6 +8964,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Thaïlande,2551,38,36.7,0.5,THA,15.0,100.0
 2020-04-13,Thaïlande,2579,40,37.1,0.6,THA,15.0,100.0
 2020-04-14,Thaïlande,2613,41,37.6,0.6,THA,15.0,100.0
+2020-04-15,Thaïlande,2643,43,38.1,0.6,THA,15.0,100.0
+2020-04-16,Thaïlande,2672,46,38.5,0.7,THA,15.0,100.0
 2020-03-22,Timor-Leste,1,0,0.8,0.0,TLS,-8.55,125.5167
 2020-03-23,Timor-Leste,1,0,0.8,0.0,TLS,-8.55,125.5167
 2020-03-24,Timor-Leste,1,0,0.8,0.0,TLS,-8.55,125.5167
@@ -8630,6 +8990,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Timor-Leste,2,0,1.6,0.0,TLS,-8.55,125.5167
 2020-04-13,Timor-Leste,2,0,1.6,0.0,TLS,-8.55,125.5167
 2020-04-14,Timor-Leste,4,0,3.2,0.0,TLS,-8.55,125.5167
+2020-04-15,Timor-Leste,6,0,4.7,0.0,TLS,-8.55,125.5167
+2020-04-16,Timor-Leste,6,0,4.7,0.0,TLS,-8.55,125.5167
 2020-03-13,Trinité-et-Tobago,1,0,0.7,0.0,TTO,11.0,-61.0
 2020-03-14,Trinité-et-Tobago,2,0,1.4,0.0,TTO,11.0,-61.0
 2020-03-15,Trinité-et-Tobago,2,0,1.4,0.0,TTO,11.0,-61.0
@@ -8663,6 +9025,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Trinité-et-Tobago,112,8,80.6,5.8,TTO,11.0,-61.0
 2020-04-13,Trinité-et-Tobago,113,8,81.3,5.8,TTO,11.0,-61.0
 2020-04-14,Trinité-et-Tobago,113,8,81.3,5.8,TTO,11.0,-61.0
+2020-04-15,Trinité-et-Tobago,113,8,81.3,5.8,TTO,11.0,-61.0
+2020-04-16,Trinité-et-Tobago,114,8,82.0,5.8,TTO,11.0,-61.0
 2020-03-03,Tunisie,1,0,0.1,0.0,TUN,34.0,9.0
 2020-03-04,Tunisie,1,0,0.1,0.0,TUN,34.0,9.0
 2020-03-05,Tunisie,1,0,0.1,0.0,TUN,34.0,9.0
@@ -8706,6 +9070,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Tunisie,685,28,59.2,2.4,TUN,34.0,9.0
 2020-04-13,Tunisie,707,31,61.1,2.7,TUN,34.0,9.0
 2020-04-14,Tunisie,726,34,62.8,2.9,TUN,34.0,9.0
+2020-04-15,Tunisie,747,34,64.6,2.9,TUN,34.0,9.0
+2020-04-16,Tunisie,780,35,67.4,3.0,TUN,34.0,9.0
 2020-03-12,Turquie,1,0,0.0,0.0,TUR,39.0,35.0
 2020-03-13,Turquie,2,0,0.0,0.0,TUR,39.0,35.0
 2020-03-14,Turquie,2,0,0.0,0.0,TUR,39.0,35.0
@@ -8740,6 +9106,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Turquie,52167,1101,633.7,13.4,TUR,39.0,35.0
 2020-04-13,Turquie,56956,1198,691.9,14.6,TUR,39.0,35.0
 2020-04-14,Turquie,61049,1296,741.6,15.7,TUR,39.0,35.0
+2020-04-15,Turquie,65111,1403,791.0,17.0,TUR,39.0,35.0
+2020-04-16,Turquie,69392,1518,843.0,18.4,TUR,39.0,35.0
 2020-01-26,Taïwan,3,0,0.1,0.0,TWN,23.5,121.0
 2020-01-27,Taïwan,5,0,0.2,0.0,TWN,23.5,121.0
 2020-01-28,Taïwan,7,0,0.3,0.0,TWN,23.5,121.0
@@ -8820,6 +9188,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Taïwan,385,6,16.2,0.3,TWN,23.5,121.0
 2020-04-13,Taïwan,388,6,16.3,0.3,TWN,23.5,121.0
 2020-04-14,Taïwan,393,6,16.5,0.3,TWN,23.5,121.0
+2020-04-15,Taïwan,395,6,16.6,0.3,TWN,23.5,121.0
+2020-04-16,Taïwan,395,6,16.6,0.3,TWN,23.5,121.0
 2020-03-17,Tanzanie,1,0,0.0,0.0,TZA,-6.0,35.0
 2020-03-18,Tanzanie,1,0,0.0,0.0,TZA,-6.0,35.0
 2020-03-19,Tanzanie,3,0,0.1,0.0,TZA,-6.0,35.0
@@ -8849,6 +9219,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Tanzanie,32,3,0.6,0.1,TZA,-6.0,35.0
 2020-04-13,Tanzanie,32,3,0.6,0.1,TZA,-6.0,35.0
 2020-04-14,Tanzanie,46,3,0.8,0.1,TZA,-6.0,35.0
+2020-04-15,Tanzanie,53,3,0.9,0.1,TZA,-6.0,35.0
+2020-04-16,Tanzanie,88,4,1.6,0.1,TZA,-6.0,35.0
 2020-03-22,Ouganda,1,0,0.0,0.0,UGA,1.0,32.0
 2020-03-23,Ouganda,1,0,0.0,0.0,UGA,1.0,32.0
 2020-03-24,Ouganda,9,0,0.2,0.0,UGA,1.0,32.0
@@ -8873,6 +9245,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Ouganda,53,0,1.2,0.0,UGA,1.0,32.0
 2020-04-13,Ouganda,54,0,1.3,0.0,UGA,1.0,32.0
 2020-04-14,Ouganda,54,0,1.3,0.0,UGA,1.0,32.0
+2020-04-15,Ouganda,55,0,1.3,0.0,UGA,1.0,32.0
+2020-04-16,Ouganda,55,0,1.3,0.0,UGA,1.0,32.0
 2020-03-04,Ukraine,1,0,0.0,0.0,UKR,49.0,32.0
 2020-03-05,Ukraine,1,0,0.0,0.0,UKR,49.0,32.0
 2020-03-06,Ukraine,1,0,0.0,0.0,UKR,49.0,32.0
@@ -8915,6 +9289,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Ukraine,2511,73,56.3,1.6,UKR,49.0,32.0
 2020-04-13,Ukraine,2777,83,62.2,1.9,UKR,49.0,32.0
 2020-04-14,Ukraine,3102,93,69.5,2.1,UKR,49.0,32.0
+2020-04-15,Ukraine,3372,98,75.6,2.2,UKR,49.0,32.0
+2020-04-16,Ukraine,4161,116,93.2,2.6,UKR,49.0,32.0
 2020-03-15,Uruguay,6,0,1.7,0.0,URY,-33.0,-56.0
 2020-03-16,Uruguay,8,0,2.3,0.0,URY,-33.0,-56.0
 2020-03-17,Uruguay,29,0,8.4,0.0,URY,-33.0,-56.0
@@ -8946,6 +9322,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Uruguay,501,7,145.2,2.0,URY,-33.0,-56.0
 2020-04-13,Uruguay,512,8,148.4,2.3,URY,-33.0,-56.0
 2020-04-14,Uruguay,521,8,151.0,2.3,URY,-33.0,-56.0
+2020-04-15,Uruguay,533,8,154.5,2.3,URY,-33.0,-56.0
+2020-04-16,Uruguay,539,9,156.3,2.6,URY,-33.0,-56.0
 2020-01-26,États-Unis,2,0,0.0,0.0,USA,38.0,-97.0
 2020-01-27,États-Unis,5,0,0.0,0.0,USA,38.0,-97.0
 2020-01-28,États-Unis,5,0,0.0,0.0,USA,38.0,-97.0
@@ -9026,6 +9404,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,États-Unis,529951,20608,1619.8,63.0,USA,38.0,-97.0
 2020-04-13,États-Unis,557571,22108,1704.2,67.6,USA,38.0,-97.0
 2020-04-14,États-Unis,582594,23649,1780.7,72.3,USA,38.0,-97.0
+2020-04-15,États-Unis,609516,26057,1863.0,79.6,USA,38.0,-97.0
+2020-04-16,États-Unis,639664,30985,1955.2,94.7,USA,38.0,-97.0
 2020-03-16,Ouzbékistan,6,0,0.2,0.0,UZB,41.0,64.0
 2020-03-17,Ouzbékistan,8,0,0.2,0.0,UZB,41.0,64.0
 2020-03-18,Ouzbékistan,16,0,0.5,0.0,UZB,41.0,64.0
@@ -9056,6 +9436,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Ouzbékistan,796,4,24.2,0.1,UZB,41.0,64.0
 2020-04-13,Ouzbékistan,865,4,26.2,0.1,UZB,41.0,64.0
 2020-04-14,Ouzbékistan,998,4,30.3,0.1,UZB,41.0,64.0
+2020-04-15,Ouzbékistan,1165,4,35.4,0.1,UZB,41.0,64.0
+2020-04-16,Ouzbékistan,1302,4,39.5,0.1,UZB,41.0,64.0
 2020-03-07,Saint-Siège,1,0,1000.0,0.0,VAT,41.9,12.45
 2020-03-08,Saint-Siège,1,0,1000.0,0.0,VAT,41.9,12.45
 2020-03-09,Saint-Siège,1,0,1000.0,0.0,VAT,41.9,12.45
@@ -9095,6 +9477,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Saint-Siège,8,0,8000.0,0.0,VAT,41.9,12.45
 2020-04-13,Saint-Siège,8,0,8000.0,0.0,VAT,41.9,12.45
 2020-04-14,Saint-Siège,8,0,8000.0,0.0,VAT,41.9,12.45
+2020-04-15,Saint-Siège,8,0,8000.0,0.0,VAT,41.9,12.45
+2020-04-16,Saint-Siège,8,0,8000.0,0.0,VAT,41.9,12.45
 2020-03-13,Saint-Vincent-et-les Grenadines,1,0,9.1,0.0,VCT,13.25,-61.2
 2020-03-14,Saint-Vincent-et-les Grenadines,1,0,9.1,0.0,VCT,13.25,-61.2
 2020-03-15,Saint-Vincent-et-les Grenadines,1,0,9.1,0.0,VCT,13.25,-61.2
@@ -9128,6 +9512,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Saint-Vincent-et-les Grenadines,12,0,108.9,0.0,VCT,13.25,-61.2
 2020-04-13,Saint-Vincent-et-les Grenadines,12,0,108.9,0.0,VCT,13.25,-61.2
 2020-04-14,Saint-Vincent-et-les Grenadines,12,0,108.9,0.0,VCT,13.25,-61.2
+2020-04-15,Saint-Vincent-et-les Grenadines,12,0,108.9,0.0,VCT,13.25,-61.2
+2020-04-16,Saint-Vincent-et-les Grenadines,12,0,108.9,0.0,VCT,13.25,-61.2
 2020-03-15,Venezuela,10,0,0.3,0.0,VEN,8.0,-66.0
 2020-03-16,Venezuela,15,0,0.5,0.0,VEN,8.0,-66.0
 2020-03-17,Venezuela,33,0,1.1,0.0,VEN,8.0,-66.0
@@ -9159,6 +9545,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Venezuela,175,9,6.1,0.3,VEN,8.0,-66.0
 2020-04-13,Venezuela,181,9,6.3,0.3,VEN,8.0,-66.0
 2020-04-14,Venezuela,189,9,6.5,0.3,VEN,8.0,-66.0
+2020-04-15,Venezuela,193,9,6.7,0.3,VEN,8.0,-66.0
+2020-04-16,Venezuela,197,9,6.8,0.3,VEN,8.0,-66.0
 2020-03-27,Îles Vierges britanniques,2,0,67.1,0.0,VGB,18.5,-64.5
 2020-03-28,Îles Vierges britanniques,2,0,67.1,0.0,VGB,18.5,-64.5
 2020-03-29,Îles Vierges britanniques,2,0,67.1,0.0,VGB,18.5,-64.5
@@ -9178,6 +9566,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Îles Vierges britanniques,3,0,100.7,0.0,VGB,18.5,-64.5
 2020-04-13,Îles Vierges britanniques,3,0,100.7,0.0,VGB,18.5,-64.5
 2020-04-14,Îles Vierges britanniques,3,0,100.7,0.0,VGB,18.5,-64.5
+2020-04-15,Îles Vierges britanniques,3,0,100.7,0.0,VGB,18.5,-64.5
+2020-04-16,Îles Vierges britanniques,3,0,100.7,0.0,VGB,18.5,-64.5
 2020-03-24,Îles Vierges (EU),17,0,158.9,0.0,VIR,18.3333,-64.8333
 2020-03-25,Îles Vierges (EU),17,0,158.9,0.0,VIR,18.3333,-64.8333
 2020-03-26,Îles Vierges (EU),17,0,158.9,0.0,VIR,18.3333,-64.8333
@@ -9200,6 +9590,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Îles Vierges (EU),51,1,476.7,9.3,VIR,18.3333,-64.8333
 2020-04-13,Îles Vierges (EU),51,1,476.7,9.3,VIR,18.3333,-64.8333
 2020-04-14,Îles Vierges (EU),51,1,476.7,9.3,VIR,18.3333,-64.8333
+2020-04-15,Îles Vierges (EU),51,1,476.7,9.3,VIR,18.3333,-64.8333
+2020-04-16,Îles Vierges (EU),51,1,476.7,9.3,VIR,18.3333,-64.8333
 2020-01-26,Viet Nam,2,0,0.0,0.0,VNM,16.0,106.0
 2020-01-27,Viet Nam,2,0,0.0,0.0,VNM,16.0,106.0
 2020-01-28,Viet Nam,2,0,0.0,0.0,VNM,16.0,106.0
@@ -9280,6 +9672,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Viet Nam,258,0,2.7,0.0,VNM,16.0,106.0
 2020-04-13,Viet Nam,262,0,2.7,0.0,VNM,16.0,106.0
 2020-04-14,Viet Nam,265,0,2.8,0.0,VNM,16.0,106.0
+2020-04-15,Viet Nam,274,0,2.9,0.0,VNM,16.0,106.0
+2020-04-16,Viet Nam,275,0,2.9,0.0,VNM,16.0,106.0
 2020-03-16,Kosovo,2,0,1.1,0.0,XKX,42.6026359,20.902977
 2020-03-17,Kosovo,2,0,1.1,0.0,XKX,42.6026359,20.902977
 2020-03-18,Kosovo,19,0,10.3,0.0,XKX,42.6026359,20.902977
@@ -9310,11 +9704,15 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Kosovo,283,7,153.4,3.8,XKX,42.6026359,20.902977
 2020-04-13,Kosovo,362,7,196.2,3.8,XKX,42.6026359,20.902977
 2020-04-14,Kosovo,377,8,204.3,4.3,XKX,42.6026359,20.902977
+2020-04-15,Kosovo,387,8,209.7,4.3,XKX,42.6026359,20.902977
+2020-04-16,Kosovo,423,9,229.2,4.9,XKX,42.6026359,20.902977
 2020-04-10,"Yémen, Rép. du",1,0,0.0,0.0,YEM,15.0,48.0
 2020-04-11,"Yémen, Rép. du",1,0,0.0,0.0,YEM,15.0,48.0
 2020-04-12,"Yémen, Rép. du",1,0,0.0,0.0,YEM,15.0,48.0
 2020-04-13,"Yémen, Rép. du",1,0,0.0,0.0,YEM,15.0,48.0
 2020-04-14,"Yémen, Rép. du",1,0,0.0,0.0,YEM,15.0,48.0
+2020-04-15,"Yémen, Rép. du",1,0,0.0,0.0,YEM,15.0,48.0
+2020-04-16,"Yémen, Rép. du",1,0,0.0,0.0,YEM,15.0,48.0
 2020-03-06,Afrique du Sud,1,0,0.0,0.0,ZAF,-29.0,24.0
 2020-03-07,Afrique du Sud,1,0,0.0,0.0,ZAF,-29.0,24.0
 2020-03-08,Afrique du Sud,2,0,0.0,0.0,ZAF,-29.0,24.0
@@ -9355,6 +9753,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Afrique du Sud,2028,25,35.1,0.4,ZAF,-29.0,24.0
 2020-04-13,Afrique du Sud,2173,25,37.6,0.4,ZAF,-29.0,24.0
 2020-04-14,Afrique du Sud,2272,27,39.3,0.5,ZAF,-29.0,24.0
+2020-04-15,Afrique du Sud,2415,27,41.8,0.5,ZAF,-29.0,24.0
+2020-04-16,Afrique du Sud,2506,34,43.4,0.6,ZAF,-29.0,24.0
 2020-03-19,Zambie,2,0,0.1,0.0,ZMB,-15.0,30.0
 2020-03-20,Zambie,2,0,0.1,0.0,ZMB,-15.0,30.0
 2020-03-21,Zambie,2,0,0.1,0.0,ZMB,-15.0,30.0
@@ -9382,6 +9782,8 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Zambie,40,2,2.3,0.1,ZMB,-15.0,30.0
 2020-04-13,Zambie,43,2,2.5,0.1,ZMB,-15.0,30.0
 2020-04-14,Zambie,45,2,2.6,0.1,ZMB,-15.0,30.0
+2020-04-15,Zambie,45,2,2.6,0.1,ZMB,-15.0,30.0
+2020-04-16,Zambie,48,2,2.8,0.1,ZMB,-15.0,30.0
 2020-03-21,Zimbabwe,1,0,0.1,0.0,ZWE,-20.0,30.0
 2020-03-22,Zimbabwe,2,0,0.1,0.0,ZWE,-20.0,30.0
 2020-03-23,Zimbabwe,2,0,0.1,0.0,ZWE,-20.0,30.0
@@ -9407,3 +9809,5 @@ timestamp,country,cases_sum,deaths_sum,casesPerPop,deathsPerPop,Alpha-3 code,lat
 2020-04-12,Zimbabwe,14,3,1.0,0.2,ZWE,-20.0,30.0
 2020-04-13,Zimbabwe,14,3,1.0,0.2,ZWE,-20.0,30.0
 2020-04-14,Zimbabwe,17,3,1.2,0.2,ZWE,-20.0,30.0
+2020-04-15,Zimbabwe,17,3,1.2,0.2,ZWE,-20.0,30.0
+2020-04-16,Zimbabwe,23,3,1.6,0.2,ZWE,-20.0,30.0
