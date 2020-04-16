@@ -15,6 +15,9 @@
 
     <link href="css/style.css" rel="stylesheet" />
     <style>
+      .multiline {
+        position: relative;
+      }
       .multiline rect {
         /* fill: #ccc; */ /* debug */
       }
@@ -36,6 +39,23 @@
       .multiline .country.Suisse path{
         display: none;
       }
+
+    .multiline .tooltip {
+      display: none;
+      padding: 4px 10px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      position: absolute;
+      background-color: white;
+      font-size: 14px;
+      pointer-events: none;
+      -webkit-transition: all 0.25s;
+      -moz-transition: all 0.25s;
+      -ms-transition: all 0.25s;
+      -o-transition: all 0.25s;
+      transition: all 0.25s;
+    }
+
     </style>
   </head>
   <body>
@@ -55,7 +75,7 @@
       <div id="chartDayOffset"></div>
     </div>
 
-    <script src="js/multilineChart.js"></script>
+    <script src="js/multiLineChart.js"></script>
     <script>
     var controller = new ScrollMagic.Controller();
 
