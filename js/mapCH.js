@@ -37,7 +37,7 @@
 		'2020-03-19', // VD > 1000 cas
 		'2020-03-23', // ZH
 		'2020-03-31', // GE devant le Tessin en valeurs relatives
-		'2020-04-14',
+		'2020-04-16',
 	];
 	var explainLabels = new Map();
 
@@ -80,7 +80,7 @@
 		[{'dx': 60, 'dy': 20, 'canton': 'GE', 'label': 'En taux par habitant, Genève dépasse le Tessin', 'title': '31 mars', 'lat': 46.2043907, 'lng': 6.1431577}]
 	);
 
-	explainLabels.set('2020-04-14',
+	explainLabels.set('2020-04-16',
 	[
 		{'dx': -10, 'dy': -90, 'canton': 'VD', 'label': 'Vaud reste le canton qui compte le plus de cas confirmés', 'title': '14 avril', 'lat': 46.5613135, 'lng': 6.536765},
 		//{'dx': -10, 'dy': -100, 'canton': 'VD', 'label': 'Appenzell Rhodes-Intérieures est celui qui en compte le moins', 'title': '14 avril', 'lat': 46.5613135, 'lng': 6.536765}
@@ -349,7 +349,7 @@
 							.attr("x", 20 + size_l*1.2)
 							.attr("y", function(d,i){ return distance_from_top - i*(size_l+5) + (size_l/2)}) // 100 is where the first dot appears. 25 is the distance between dots
 							.style("fill", '#000')
-							.text(function(d){ return d})
+							.text(function(d){ return d + (d == 800 ? ' et plus' : '')})
 							.attr("text-anchor", "left")
 							.style("alignment-baseline", "middle")
 
@@ -536,9 +536,8 @@
 						},
 					},
 					y: {
-						max: 25000,
 						tick: {
-							values: [0, 5000, 10000, 15000, 20000, 25000],
+							values: [0, 10000, 20000, 30000],
 							// format: d3.format(".0s")
 						}
 					}
@@ -547,11 +546,9 @@
 					y: {
 						lines: [
 							{ value: 0},
-							{ value: 5000},
 							{ value: 10000},
-							{ value: 15000},
 							{ value: 20000},
-							{ value: 25000}
+							{ value: 30000},
 						]
 					}
 				},
