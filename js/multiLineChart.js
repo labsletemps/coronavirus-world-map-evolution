@@ -17,6 +17,13 @@ class multilineChart {
     this.fatLineWidth = opts.fatLineWidth ? opts.fatLineWidth : 3;
     this.needsMouseGroup = opts.needsMouseGroup ? opts.needsMouseGroup : true;
     this.tickNumber = opts.tickNumber ? opts.tickNumber : 4;
+    this.hideLabel = opts.hideLabel ? opts.hideLabel : false;
+    this.height = opts.height ? opts.height : 400 - this.margin.top - this.margin.bottom;
+    this.annotationSplitter = opts.annotationSplitter ? opts.annotationSplitter: ' ';
+
+    if(this.hideLabel == true){
+      this.margin.right = this.margin.left;
+    }
 
     /* data */
     this.data = null;
@@ -25,6 +32,7 @@ class multilineChart {
     /* scales */
     this.xTickFormat = opts.xTickFormat ? opts.xTickFormat : "d";
     this.timeScale = opts.timeScale ? opts.timeScale : false;
+
     this.exponentScale = opts.exponentScale ? opts.exponentScale : false;
     this.logScale = opts.logScale ? opts.logScale : false;
 
@@ -50,7 +58,6 @@ class multilineChart {
       console.error('Error: element ' + this.selector + ' not found');
     }else{
       this.width = parseInt(d3.select(this.selector).style("width")) - this.margin.left - this.margin.right;
-      this.height = 400 - this.margin.top - this.margin.bottom;
 
       var svg = d3
         .select(this.selector)
@@ -174,25 +181,27 @@ class multilineChart {
       .attr("d", function(d) { return lineStatic(d.values.filter(function(d){ return d.value != 0;}) ); })
       .style("stroke", function(d) { return theChart.zscale(d.id); });
 
-    country.append("text")
-      .datum(function(d) {
-        // Find last non-nan value
-        var lastValueIndex = d.values.length - 1;
-        while( lastValueIndex > 0 ){
-          if( ! isNaN(d.values[lastValueIndex].value)){
-            break;
-          } else {
-            lastValueIndex--;
+    if(!this.hideLabel){
+      country.append("text")
+        .datum(function(d) {
+          // Find last non-nan value
+          var lastValueIndex = d.values.length - 1;
+          while( lastValueIndex > 0 ){
+            if( ! isNaN(d.values[lastValueIndex].value)){
+              break;
+            } else {
+              lastValueIndex--;
+            }
           }
-        }
-        return {id: d.id, value: d.values[lastValueIndex]};
-      })
-      .attr("transform", function(d) { return "translate(" + theChart.xscale(d.value.xValue) + "," + theChart.yscale(d.value.value) + ")"; })
-      .attr("x", 3)
-      .attr("dy", "0.35em")
-      .attr('stroke', function(d){ return d.id == 'Suisse'? '#b80021' : theChart.zscale(d.id)})
-      .attr("class", "country-label")
-      .text(function(d) { return d.id; });
+          return {id: d.id, value: d.values[lastValueIndex]};
+        })
+        .attr("transform", function(d) { return "translate(" + theChart.xscale(d.value.xValue) + "," + theChart.yscale(d.value.value) + ")"; })
+        .attr("x", 3)
+        .attr("dy", "0.35em")
+        .attr('stroke', function(d){ return d.id == 'Suisse'? '#b80021' : theChart.zscale(d.id)})
+        .attr("class", "country-label")
+        .text(function(d) { return d.id; });
+    }
 
     if(this.needsFatLine){
       this.addFatLine();
@@ -207,7 +216,7 @@ class multilineChart {
     this.arrangeLabels();
   }
 
-  annotate(text, position, dx = 0, dy = -100, connectorType = 'line') {
+  annotate(text, position, dx = 0, dy = -100, connectorType = 'line', title = null) {
     // using https://github.com/susielu/d3-annotation/blob/master/d3-annotation.min.js
 
     if(!this.data && !this.annotationsDrawn){
@@ -215,10 +224,14 @@ class multilineChart {
       this.needsAnnotations = true;
     }else{
 
+       // wrapSplitter: /\n/
+
       var type = d3.annotationLabel;
       var annotations = [{
         note: {
+          title: title,
           label: text,
+          wrapSplitter: this.annotationSplitter,
         },
         data: { xValue: position.x, value: position.y },
         className: "show-bg",
@@ -226,6 +239,7 @@ class multilineChart {
         dy: dy,
         connector: { end: "arrow", type: connectorType }
       }];
+      console.log(annotations)
 
       var makeAnnotations = d3.annotation()
         .type(type)
@@ -319,28 +333,40 @@ class multilineChart {
 
   /* tooltips */
 
-  showTooltip(idx, xValue){
+  showTooltip(idx){
     // idx = the index in value array
-    // xValue = xAxis date or number
     var theChart = this;
     var valuesToShow = [];
+    var xValue = false;
 
     this.countries.forEach(function(row){
       if( !isNaN( row.values[idx].value ) ){
         valuesToShow.push( {'country': row.id, 'value': row.values[idx].value} )
+        if(!xValue){
+          xValue = row.values[idx].xValue;
+        }
       }
     });
+
+    var xLabel = '';
+    if(this.timeScale){
+      xLabel = d3.timeFormat("%d %b")(xValue);
+      // this.xTickFormat = this.width > 600 ? d3.timeFormat("%d %b") : d3.timeFormat('%d.%m')
+    } else {
+      xLabel = 'Jour ' + d3.format(this.xTickFormat)(xValue);
+    }
 
     valuesToShow.sort(function(x, y){
        return d3.descending(x.value, y.value);
     })
 
     var xSpan = theChart.xscale(xValue) + this.margin.left + 10;
-    if(xSpan < 50){
-
+    if(xSpan > this.width - this.margin.right){
+      // TODO
+      xSpan = this.width - this.margin.right;
     }
 
-    this.tooltip.html('') // TODO: date / index
+    this.tooltip.html('<b>' + xLabel + '</b>') // TODO: date / index
       .style('display', 'block')
       .style('opacity', 1)
       .style('left', function(d){ return xSpan + 'px'; })
@@ -459,7 +485,7 @@ class multilineChart {
               }
 
             });
-            theChart.showTooltip(idx, xValue);
+            theChart.showTooltip(idx);
           }, 5);
 
         });
