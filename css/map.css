@@ -103,7 +103,7 @@
   stroke-alignment: outer;
 }
 
-.tooltip {
+.map .tooltip {
   font-size: 11px;
   width: 110px;
   background: rgba(255,255,255,0.9);
@@ -111,18 +111,19 @@
   padding-left: 10px;
 }
 
-.tooltip p {
+.map .tooltip p {
   padding-bottom:4px;
 }
 
-.tooltip #click {
+.map .tooltip #click {
   font-size:9px;
   font-style: italic;
   border-bottom: none;
   color:grey;
 }
 
-.tooltip:after {
+/*
+.map .tooltip:after {
   width: 110px;
   display: block;
   color: white;
@@ -132,7 +133,7 @@
   text-align: center;
   pointer-events: none;
 }
-
+*/
 
 #chart{
   margin:2%;

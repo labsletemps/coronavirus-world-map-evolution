@@ -450,6 +450,22 @@ h6{
   color: rgb(231, 76, 60);
   border-color: 2px solid rgb(231, 76, 60);
 }
+.highlight-fatline{
+  background: rgba(184, 0, 33, 0.2);
+  color: rgb(184, 0, 33);
+  border-color: 2px solid rgb(184, 0, 33);
+}
+.highlight-orange{
+  background: rgba(255, 127, 14, 0.2);
+  color: rgb(255, 127, 14);
+  border-color: 2px solid rgb(255, 127, 14);
+}
+.highlight-green{
+  background: rgba(204, 229, 223, 0.2);
+  color: rgb(104, 129, 123);
+  border-color: 2px solid rgb(204, 229, 223);
+}
+
 .highlight-blue{
   background: rgba(52, 152, 219, 0.2);
   color: rgb(52, 152, 219);
@@ -524,6 +540,7 @@ select:focus, textarea:focus, input:focus {
 .multiline .country.Suisse path{
 	display: none;
 }
+
 .multiline .annotation-group text{
 	font-size: .8em;
 }
