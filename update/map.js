@@ -50,7 +50,7 @@
 	/*
 		LOAD DATA
 	*/
-	Promise.all([d3.json("data/world_countries.json"), d3.csv("data/time-series-ecdc.csv?1587041875525")]).then( function (data) {
+	Promise.all([d3.json("data/world_countries.json"), d3.csv("data/time-series-ecdc.csv?1588250816279")]).then( function (data) {
 		var geodata = data[0];
 		var data = data[1];
 
@@ -291,7 +291,7 @@
 					bindto: "#time-serie-chart",
 
 					data: {
-						url: 'data/linegraphs-c3.csv?1587041875525',
+						url: 'data/linegraphs-c3.csv?1588250816279',
 						type: 'line',
 						x: 'timestamp',
 						colors: {
@@ -309,7 +309,7 @@
 						},
 						y: {
 							tick: {
-								values: [0, 250000, 500000, 750000, 1000000, 1250000, 1500000, 1750000, 2000000],
+								values: [0, 500000, 1000000, 1500000, 2000000, 2500000, 3000000],
 								format: function (x) {
 									if(x > 0){
 										return x / 1000000 + ' Mio';
@@ -324,14 +324,12 @@
 						y: {
 							lines: [
 								{ value: 0},
-								{ value: 250000},
 								{ value: 500000},
-								{ value: 750000},
 								{ value: 1000000},
-								{ value: 1250000},
 								{ value: 1500000},
-								{ value: 1750000},
 								{ value: 2000000},
+								{ value: 2500000},
+								{ value: 3000000},
 							]
 						}
 					},

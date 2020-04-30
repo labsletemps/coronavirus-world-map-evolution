@@ -37,7 +37,7 @@
 		'2020-03-19', // VD > 1000 cas
 		'2020-03-23', // ZH
 		'2020-03-31', // GE devant le Tessin en valeurs relatives
-		'2020-04-16',
+		'_YESTERDAY_',
 	];
 	var explainLabels = new Map();
 
@@ -80,9 +80,9 @@
 		[{'dx': 60, 'dy': 20, 'canton': 'GE', 'label': 'En taux par habitant, Genève dépasse le Tessin', 'title': '31 mars', 'lat': 46.2043907, 'lng': 6.1431577}]
 	);
 
-	explainLabels.set('2020-04-16',
+	explainLabels.set('_YESTERDAY_',
 	[
-		{'dx': -10, 'dy': -90, 'canton': 'VD', 'label': 'Vaud reste le canton qui compte le plus de cas confirmés', 'title': '14 avril', 'lat': 46.5613135, 'lng': 6.536765},
+		{'dx': -10, 'dy': -90, 'canton': 'VD', 'label': 'Vaud reste le canton qui compte le plus de cas confirmés', 'title': '_YESTERDAY-FR_', 'lat': 46.5613135, 'lng': 6.536765},
 		//{'dx': -10, 'dy': -100, 'canton': 'VD', 'label': 'Appenzell Rhodes-Intérieures est celui qui en compte le moins', 'title': '14 avril', 'lat': 46.5613135, 'lng': 6.536765}
 	]);
 
@@ -429,7 +429,8 @@
 				values: availableDates,
 				prettify: function(d){ return d},
 				onChange: function(data){
-					dateCounter = availableDates.indexOf(data.from_value);
+					// TODO: find nearest
+					// dateCounter = availableDates.indexOf(data.from_value);
 					update_date( data.from_value );
 				}
 		});
@@ -448,6 +449,7 @@
 
 		// animate
 		function runAnimation(){
+			console.log(dateCounter);
 			// doc: http://ionden.com/a/plugins/ion.rangeSlider/demo_interactions.html
 			var slider_instance = $("#range_sliderCH").data("ionRangeSlider");
 
@@ -568,7 +570,8 @@
 									$('.pause-ch').removeClass('pause-ch')
 								}
 								lastIndex = index;
-								dateCounter = index;
+								// TODO: find nearest
+								// dateCounter = index;
 							}
 							return value;
 						}

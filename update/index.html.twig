@@ -12,8 +12,8 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/c3.min.css"/>
 
-	<link rel="stylesheet" type="text/css" href="css/style.css?1587041875525" />
-	<link rel="stylesheet" type="text/css" href="css/map.css?1587041875525" />
+	<link rel="stylesheet" type="text/css" href="css/style.css?1588250816278" />
+	<link rel="stylesheet" type="text/css" href="css/map.css?1588250816278" />
 	<link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.css" />
 	<style>
 	.c3-area {
@@ -47,6 +47,9 @@
 					<li>Les cas confirmés ne correspondent qu’à une portion des cas réels.</li>
 					<li>Les chiffres établis par les pays dépendent du nombre de tests effectués, de la qualité des tests et des critères retenus pour attribuer les décès au Covid-19.</li>
 				</ul>
+
+
+				<!-- <p class="alert alert-warning">En raison d’une valeur manquante dans les données de l’European CDC, seules les infographies sur la Suisse et les cantons ont été mises à jour le 28 avril.</p> -->
 
 			</div>
 		</div>
@@ -102,19 +105,42 @@
 
 	</div>
 
+	<!-- <div id="vegaView"></div> -->
 
 	<div class="row padding-bottom">
-		<div class="col-lg-10 offset-md-1 col-md-12">
-			<h5>Nombre quotidien de décès</h5>
-			<p>Les Etats-Unis détiennent le triste record des décès quotidiens. La Corée du Sud n’a pas dépassé 9 décès en un jour et la Suisse a compté au plus 78 décès en 24 heures.</p>
+		<div class="col-12 was-col-10">
+			<h5 id="deces-quotidiens">Nombre quotidien de décès</h5>
+			<p>Les Etats-Unis détiennent le triste record des décès quotidiens. La Corée du Sud n’a pas dépassé 9 décès en un jour et la Suisse a compté au plus 78 décès en 24 heures. Ce graphique emploie une échelle logarithmique et aplanit les fluctuations pour faciliter la lecture. Survolez ou touchez une date pour afficher les points exacts.</p>
+			<p>A comparer avec les <a href="#taux-deces">taux de décès cumulés par million d’habitants</a>, plus bas dans cette page.</p>
+
 			<!-- (jq 16 avril) Ce graphique aplanit les fluctuations avec une moyenne mobile sur trois jours.  -->
 			<div class="multiline" id="chartMovingAvg"></div>
 			<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
 		</div>
 	</div>
 
+	<div class="row padding-bottom">
+		<div class="col-12 was-col-10">
+			<h5>Nouveaux cas quotidiens en Suisse</h5>
+			<p>Un pic de contamination s’est produit de mi-mars à mi-avril, avec plus de 400 nouveaux cas décelés quotidiennement. Des creux sont visibles chaque week-end, probablement en raison d’un plus faible nombre de tests ou de retards dans la prise en compte des résultats.</p>
+
+			<div class="multiline" id="chartDailyCH"></div>
+			<div class="source"><b>Source:</b> <a target="_blank" href="https://github.com/openZH/covid_19">OpenZH</a>, cantons suisses. Le 25 avril, des totaux ont été complétés rétrospectivement par OpenZH, notamment pour les nouveaux cas du 16 au 20 mars.</div>
+		</div>
+	</div>
+
+	<div class="row padding-bottom">
+		<div class="col-12 was-col-10">
+			<h5>Surmortalité des 65 ans et plus dans la région lémanique</h5>
+			<p>L’Office fédéral de la statistique observe le <span class="highlight highlight-blue">nombre hebdomadaire de décès</span> dans les grandes régions de Suisse, toutes causes confondues. La <span class="highlight highlight-orange">valeur attendue</span> est calculée sur la base des cinq années précédentes. L’<span class="highlight highlight-green">aire verte</span> correspond à la fourchette dans laquelle les fluctuations sont considérées comme aléatoires. La surmortalité est le nombre de décès qui dépassent la valeur attendue. L’OFS corrige à la hausse les valeurs des 40 derniers jours pour tenir compte des décès enregistrés en retard.</p>
+
+			<div class="multiline" id="deathRate"></div>
+			<div class="source"><b>Source:</b> <a href="https://www.experimental.bfs.admin.ch/fr/momo.html" target="_blank">Office fédéral de la statistique</a>. En raison des décès annoncés en retard, l’OFS doit ajuster les valeurs des 40 derniers jours.</div>
+		</div>
+	</div>
+
 	<!-- <div class="row padding-bottom">
-		<div class="col-lg-10 offset-md-1 col-md-12">
+		<div class="col-12 was-col-10">
 			<h5>Taux de décès quotidien</h5>
 			<p></p>
 			<div class="multiline" id="chartMovingAvgPop"></div>
@@ -169,9 +195,9 @@
 
 
 	<div class="row padding-bottom">
-		<div class="col-lg-10 offset-md-1 col-md-12">
+		<div class="col-12 was-col-10">
 			<h5>Les cinq cantons suisses comptant le plus de cas par habitant</h5>
-			<p>Genève, le Tessin et Vaud sont les cantons qui comptent le plus de cas confirmés pour 100 000 habitants. Chaque canton a ses propres procédures et horaires de publication des données, ce qui rend la comparaison difficile.</p>
+			<p>Genève, le Tessin et Vaud sont les cantons qui comptent le plus de cas confirmés pour 100 000 habitants. Chaque canton a ses propres procédures et horaires de publication des données, ce qui complique la comparaison. Les lignes s’interrompent quand les données manquent.</p>
 				<div class="multiline" id="chartCantons"></div>
 			<div class="source"><b>Source:</b> <a target="_blank" href="https://github.com/openZH/covid_19">OpenZH</a>, cantons suisses. Population dans les cantons: <a target="_blank" href="https://www.bfs.admin.ch/bfs/fr/home/statistiques/population/effectif-evolution/population.assetdetail.9486047.html">chiffres définitifs 2018 de l’OFS</a>. Les données pour Genève (qui publie des chiffres prévisionnels) ont été revues à la hausse le jeudi 8 avril par notre source de données.</div>
 		</div>
@@ -179,30 +205,33 @@
 
 
 
-		<div class="row padding-bottom">
-			<div class="col-lg-10 offset-md-1 col-md-12">
+		<!-- <div class="row padding-bottom">
+			<div class="col-12 was-col-10">
 				<h5>Cas confirmés en valeurs absolues</h5>
 				<p>Le nombre de cas confirmés en laboratoire grimpe en flèche aux Etats-Unis, qui sont cependant encore loin derrière l’Italie et l’Espagne en taux de cas par rapport à la population.</p>
 				<div class="multiline" id="chartAbsolute"></div>
 				<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="row padding-bottom">
-			<div class="col-lg-10 offset-md-1 col-md-12">
+			<div class="col-12 was-col-10">
 				<h5>Taux de cas confirmés par million d’habitants</h5>
-				<p>Les pays sont alignés sur le jour où les cas confirmés atteignent le taux de 1 cas par million d’habitants. Pour la Suisse, ce «jour 0» est le 29 février, avec 12 cas. Des différences dans les méthodes et le nombre de tests effectués rendent cependant les comparaisons entre pays difficiles.</p>
+				<p>Les pays sont alignés sur le jour où les cas confirmés atteignent le taux de 1 cas par million d’habitants. <span class="highlight highlight-fatline">Pour la Suisse</span>, ce «jour 0» est le 29 février, avec 12 cas. Des différences dans les méthodes et le nombre de tests effectués rendent cependant les comparaisons entre pays difficiles.</p>
 				<div class="multiline" id="chartDayOffset"></div>
-				<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
+				<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>. Le graphique s’arrête à la dernière valeur pour l’Italie, celles concernant la Chine sont donc rognées.</div>
+				<div class="source">Note: jusqu’au 22 avril, le graphique s’arrêtait au nombre de jours du pays où le Covid s’est déclaré le plus récemment.</div>
 			</div>
 		</div>
 
 		<div class="row padding-bottom">
-			<div class="col-lg-10 offset-md-1 col-md-12">
-				<h5>Taux de décès par million d’habitants</h5>
+			<div class="col-12 was-col-10">
+				<h5 id="taux-deces">Taux de décès par million d’habitants</h5>
 				<p>Comme dans le graphique précédent, les pays sont alignés sur le jour où les cas confirmés atteignent le taux de 1 cas par million d’habitants. L’attribution ou non d’un décès au Covid-19 peut être difficile, en particulier lorsque la victime était affectée par plusieurs maladies. Les critères ne sont pas les mêmes dans chaque pays.</p>
+				<p>A comparer avec les <a href="#deces-quotidiens">décès quotidiens en valeurs absolues</a>.</p>
 				<div class="multiline" id="chartDeath"></div>
-				<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
+				<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>. Le graphique s’arrête à la dernière valeur pour l’Italie, celles concernant la Chine sont donc rognées.</div>
+				<div class="source">Note: jusqu’au 22 avril, le graphique s’arrêtait au nombre de jours du pays où le Covid s’est déclaré le plus récemment.</div>
 			</div>
 		</div>
 
@@ -251,7 +280,7 @@
 
 
 	<!-- <div class="row padding-bottom">
-		<div class="col-lg-10 offset-md-1 col-md-12">
+		<div class="col-12 was-col-10">
 			<h5>Taux d’augmentation</h5>
 
 			<div class="multiline" id="chartIncrease"></div>
@@ -503,10 +532,11 @@
 var controller = new ScrollMagic.Controller();
 var smallWindow = $( window ).width() < 600;
 </script>
-<script src="js/map.js?1587041875525"></script>
-<script src="js/mapCH.js?1587041875525"></script>
-<script src="js/animatedBarChartRelative.js?1587041875525"></script>
-<script src="js/multiLineChart.js?1587041875525"></script>
+<script src="js/map.js?1588250816278"></script>
+<script src="js/mapCH.js?1588250816278"></script>
+<script src="js/animatedBarChartRelative.js?1588250816278"></script>
+<script src="js/multiLineChart.js?1588250816278"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega@5/build/vega-core.min.js"></script>
 
 <script>
 
@@ -522,23 +552,43 @@ var timeLocale = {
 }
 d3.timeFormatDefaultLocale(timeLocale);
 
+var chartDailyCH = new multilineChart({'selector': '#chartDailyCH', 'file': 'data/ch-daily-cases.csv?1588250816278', 'timeScale': true, 'xTickFormat': "d", 'hideLabel': true, 'annotationSplitter': /\n/})
 
-var chartMovingAvg = new multilineChart({'selector': '#chartMovingAvg', 'file': 'data/cases_timestamp_deaths.csv?1587041875525', 'timeScale': true, 'xTickFormat': "d", 'margin': { top: 40, bottom: 30, left: 42, right: 75 } });
+var deathRate = new multilineChart({'selector': '#deathRate', 'file': 'data/excess-deaths.csv?1588250816278', 'timeScale': true, 'xTickFormat': "d", 'hideLabel': false, 'hasConfidenceInterval': true, 'xMin': true, 'straightLine': true})
+
+
+new ScrollMagic.Scene({triggerElement: "#chartDailyCH", duration: 300})
+	.addTo(controller)
+	.on("enter", function(){
+
+		chartDailyCH.annotate("16 mars:\nmesures du \nConseil fédéral", {x: new Date('2020-03-16'), y: 731}, -40, -50);
+
+		chartDailyCH.annotate("Creux durant\nles week-ends", {x: new Date('2020-03-29'), y: 606}, 0, 30);
+
+		chartDailyCH.annotate("Dernier jour: \ndonnées \nincomplètes", {x: new Date('2020-04-30'), y: 160}, 0, -100);
+
+		// chartDailyCH.annotate("Interdiction des rassemblements de plus de 5 personnes", {x: new Date('2020-03-20'), y: 800}, -30, -50);
+
+});
+
+var chartMovingAvg = new multilineChart({'selector': '#chartMovingAvg', 'file': 'data/cases_timestamp_deaths.csv?1588250816278', 'timeScale': true, 'logScale': true, 'xTickFormat': "d", 'margin': { top: 40, bottom: 30, left: 42, right: 75 } });
 
 new ScrollMagic.Scene({triggerElement: "#chartMovingAvg", duration: 300})
 	.addTo(controller)
 	.on("enter", function(){
 		chartMovingAvg.addFatLine();
 
-		chartMovingAvg.annotate("En Italie, 795 décès en un dimanche", {x: new Date('2020-03-22'), y: 800}, -30, -50);
+		chartMovingAvg.annotate("En Italie, 795 décès en un dimanche", {x: new Date('2020-03-22'), y: 800}, -30, -10);
 
 		// chartMovingAvg.annotate("2004 décès en 24 heures en France", {x: new Date('2020-04-04'), y: 2000}, -20);
 
-		chartMovingAvg.annotate("2087 décès en 24 heures", {x: new Date('2020-04-11'), y: 2090}, -20);
+		chartMovingAvg.annotate("Près de 5000 décès en 24 heures", {x: new Date('2020-04-16'), y: 4090}, -30, -10);
+
+		// chartMovingAvg.annotate("4928 décès en 24 heures", {x: new Date('2020-04-16'), y: 4850}, -20);
 });
 
 /*
-var chartMovingAvgPop = new multilineChart({'selector': '#chartMovingAvgPop', 'file': 'data/cases_timestamp_3d.csv?1587041875525', 'timeScale': true, 'xTickFormat': "d"});
+var chartMovingAvgPop = new multilineChart({'selector': '#chartMovingAvgPop', 'file': 'data/cases_timestamp_3d.csv?1588250816278', 'timeScale': true, 'xTickFormat': "d"});
 
 new ScrollMagic.Scene({triggerElement: "#chartMovingAvgPop", duration: 300})
 	.addTo(controller)
@@ -547,9 +597,9 @@ new ScrollMagic.Scene({triggerElement: "#chartMovingAvgPop", duration: 300})
 		// chartMovingAvg.annotate("2000 décès en 24 heures", {x: new Date('2020-04-11'), y: 6}, -50, -50);
 });*/
 
-var chartCantons = new multilineChart({'selector': '#chartCantons', 'file': 'data/c3-cantons-switzerland.csv?1587041875525', 'timeScale': true, 'margin': { top: 40, bottom: 30, left: 40, right: 20 }});
+var chartCantons = new multilineChart({'selector': '#chartCantons', 'file': 'data/c3-cantons-switzerland.csv?1588250816278', 'timeScale': true, 'margin': { top: 40, bottom: 30, left: 40, right: 20 }});
 
-var chartAbsolute = new multilineChart({'selector': '#chartAbsolute', 'file': 'data/cases_timestamp.csv?1587041875525', 'timeScale': true, 'xTickFormat': ".2s"});
+/*var chartAbsolute = new multilineChart({'selector': '#chartAbsolute', 'file': 'data/cases_timestamp.csv?1588250816278', 'timeScale': true, 'xTickFormat': ".2s"});
 
 new ScrollMagic.Scene({triggerElement: "#chartAbsolute", duration: 300})
 	.addTo(controller)
@@ -562,11 +612,11 @@ new ScrollMagic.Scene({triggerElement: "#chartAbsolute", duration: 300})
 		chartAbsolute.annotate("17 mars: début du confinement en France", {x: new Date('2020-03-17'), y: 10000}, 0, -120);
 });
 
+*/
 
 
 
-
-var chartDayOffset = new multilineChart({'selector': '#chartDayOffset', 'file': 'data/cases_per_pop_day0.csv?1587041875525'});
+var chartDayOffset = new multilineChart({'selector': '#chartDayOffset', 'file': 'data/cases_per_pop_day0.csv?1588250816278'});
 
 new ScrollMagic.Scene({triggerElement: "#chartDayOffset", duration: 300})
 	.addTo(controller)
@@ -580,7 +630,7 @@ new ScrollMagic.Scene({triggerElement: "#chartDayOffset", duration: 300})
 		chartDayOffset.annotate("Fin du dépistage systématique en Suisse", {x: 14, y: 185}, -5);
 });
 
-var chartDeath = new multilineChart({'selector': '#chartDeath', 'file': 'data/deaths_per_pop_day0.csv?1587041875525'});
+var chartDeath = new multilineChart({'selector': '#chartDeath', 'file': 'data/deaths_per_pop_day0.csv?1588250816278'});
 
 new ScrollMagic.Scene({triggerElement: "#chartDeath", duration: 300})
 	.addTo(controller)
@@ -588,6 +638,9 @@ new ScrollMagic.Scene({triggerElement: "#chartDeath", duration: 300})
 		chartDeath.addFatLine();
 		chartDeath.annotate("L’Espagne enregistre plus de 500 décès en 24 heures", {x: 23, y: 52}, -25);
 
+		if(!smallWindow){
+			chartDeath.annotate("Les pays sont alignés sur leur «jour 0» en cas confirmés", {x: 1, y: 10}, 60, -20);
+		}
 });
 
 
@@ -634,6 +687,14 @@ $(document).ready(function() {
 }); // end on ready
 
 </script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+<script>
+	vegaEmbed(
+		'#vegaView',
+		'https://vega.github.io/vega/examples/bar-chart.vg.json'
+	);
+</script> -->
 
 
 </body>
