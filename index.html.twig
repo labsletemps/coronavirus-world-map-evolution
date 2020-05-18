@@ -561,17 +561,21 @@ new ScrollMagic.Scene({triggerElement: "#chartDailyCH", duration: 300})
 	.addTo(controller)
 	.on("enter", function(){
 
-		chartDailyCH.annotate("16 mars:\nmesures du \nConseil fédéral", {x: new Date('2020-03-16'), y: 731}, -40, -50);
+		chartDailyCH.annotate("16 mars:\nmesures du \nConseil fédéral", {x: new Date('2020-03-16'), y: 731}, -20, -70);
 
 		chartDailyCH.annotate("Creux durant\nles week-ends", {x: new Date('2020-03-29'), y: 606}, 0, 30);
 
-		chartDailyCH.annotate("Dernier jour: \ndonnées \nincomplètes", {x: new Date('_TODAY_'), y: 160}, 0, -100);
+		chartDailyCH.annotate("27 avril:\n1er assouplissement", {x: new Date('2020-04-27'), y: 175}, 0, -160);
+
+		chartDailyCH.annotate("Réouverture \ndes écoles", {x: new Date('2020-05-11'), y: 65}, 0, -120);
+
+		chartDailyCH.annotate("Dernier jour: \ndonnées \nincomplètes", {x: new Date('_TODAY_'), y: 65}, 0, -60);
 
 		// chartDailyCH.annotate("Interdiction des rassemblements de plus de 5 personnes", {x: new Date('2020-03-20'), y: 800}, -30, -50);
 
 });
 
-var chartMovingAvg = new multilineChart({'selector': '#chartMovingAvg', 'file': 'data/cases_timestamp_deaths.csv?UPDATE', 'timeScale': true, 'logScale': true, 'xTickFormat': "d", 'margin': { top: 40, bottom: 30, left: 42, right: 75 } });
+var chartMovingAvg = new multilineChart({'selector': '#chartMovingAvg', 'file': 'data/cases_timestamp_deaths.csv?UPDATE', 'timeScale': true, 'logScale': true, 'yMax': 10000, 'xTickFormat': "d", 'margin': { top: 40, bottom: 30, left: 52, right: 85 } });
 
 new ScrollMagic.Scene({triggerElement: "#chartMovingAvg", duration: 300})
 	.addTo(controller)
