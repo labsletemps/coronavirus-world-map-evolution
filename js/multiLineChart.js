@@ -20,6 +20,10 @@ class multilineChart {
     this.hideLabel = opts.hideLabel ? opts.hideLabel : false;
     this.height = opts.height ? opts.height : 400 - this.margin.top - this.margin.bottom;
     this.annotationSplitter = opts.annotationSplitter ? opts.annotationSplitter: ' ';
+    this.hasConfidenceInterval = opts.hasConfidenceInterval ? opts.hasConfidenceInterval: false;
+    this.xMin = opts.xMin ? opts.xMin : false;
+    this.yMax = opts.yMax ? opts.yMax : false;
+    this.straightLine = opts.straightLine ? opts.straightLine : false;
 
     if(this.hideLabel == true){
       this.margin.right = this.margin.left;
@@ -83,7 +87,9 @@ class multilineChart {
         }
       });
 
-      theChart.countries = data.columns.slice(1).map(function(id) {
+      var lastColIndex = theChart.hasConfidenceInterval ? data.columns.length - 2 : data.columns.length;
+
+      theChart.countries = data.columns.slice(1, lastColIndex).map(function(id) {
         return {
           id: id,
           values: data.map(function(d) {
@@ -135,7 +141,25 @@ class multilineChart {
     this.g_yaxis = this.g.append("g").attr("class", "y axis");
   }
 
+  addConfidenceInterval(){
+    console.log('Show confidence interval')
+    var theChart = this;
+
+    // Show confidence interval
+    this.g.append("path")
+      .datum(this.data)
+      .attr("fill", "#cce5df")
+      .attr("stroke", "none")
+      .attr("d", d3.area()
+        .x(function(d) { return theChart.xscale(d.xValue) })
+        .y0(function(d) { return theChart.yscale(d.min_limit) })
+        .y1(function(d) { return theChart.yscale(d.max_limit) })
+      )
+  }
+
   draw() {
+    var theChart = this;
+
     // Update scales
     if(this.timeScale){
       this.xscale.domain(d3.extent(this.data, function(d) { return d.xValue; }));
@@ -146,11 +170,11 @@ class multilineChart {
     if(this.logScale){
       this.yscale.domain([
         1,
-        d3.max(this.countries, function(c) { return d3.max(c.values, function(d) { return d.value; }); })
+        this.yMax ? this.yMax : d3.max(this.countries, function(c) { return d3.max(c.values, function(d) { return d.value; }); })
       ]);
     }else{
       this.yscale.domain([
-        d3.min(this.countries, function(c) { return d3.min(c.values, function(d) { return d.value; }); }),
+        theChart.xMin ? 0 : d3.min(this.countries, function(c) { return d3.min(c.values, function(d) { return d.value; }); }),
         d3.max(this.countries, function(c) { return d3.max(c.values, function(d) { return d.value; }); })
       ]).nice();
     }
@@ -162,14 +186,26 @@ class multilineChart {
     this.g_xaxis.transition().call(this.xaxis);
     this.g_yaxis.transition().call(this.yaxis);
 
-    // Render chart
-    var theChart = this;
+    if(this.hasConfidenceInterval){
+      this.addConfidenceInterval();
+    }
 
-    var lineStatic = d3.line()
-      .defined(function(d){ return !isNaN(d.value); })
-      .curve(d3.curveBasis)
-      .x(function(d) { return theChart.xscale(d.xValue); })
-      .y(function(d) { return theChart.yscale(d.value); });
+    // Render chart
+    var lineStatic;
+
+    if(this.straightLine){
+      lineStatic = d3.line()
+        .defined(function(d){ return !isNaN(d.value); })
+        .x(function(d) { return theChart.xscale(d.xValue); })
+        .y(function(d) { return theChart.yscale(d.value); });
+    }else{
+      lineStatic = d3.line()
+        .defined(function(d){ return !isNaN(d.value); })
+        .curve(d3.curveBasis)
+        .x(function(d) { return theChart.xscale(d.xValue); })
+        .y(function(d) { return theChart.yscale(d.value); });
+    }
+
 
     var country = this.g.selectAll(".city")
       .data(this.countries)
@@ -239,7 +275,6 @@ class multilineChart {
         dy: dy,
         connector: { end: "arrow", type: connectorType }
       }];
-      console.log(annotations)
 
       var makeAnnotations = d3.annotation()
         .type(type)
@@ -293,6 +328,19 @@ class multilineChart {
                     that.setAttribute('y', -5);
                     this.setAttribute('y', 5);
                   }
+
+                  // fix temporaire france
+                  if((theChart.selector == '#chartDayOffset') && (that.getAttribute('stroke') == '#d62728')){
+                    that.setAttribute('x', 60);
+                  }
+
+                  // fix temporaire allemagne
+                  if((theChart.selector == '#chartDayOffset') && (that.getAttribute('stroke') == '#1f77b4')){
+                    that.setAttribute('y', 10);
+                  }
+
+                  that.setAttribute('class', 'country-label moved');
+                  this.setAttribute('class', 'country-label moved');
                 }
               }
             });
