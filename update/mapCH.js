@@ -37,7 +37,7 @@
 		'2020-03-19', // VD > 1000 cas
 		'2020-03-23', // ZH
 		'2020-03-31', // GE devant le Tessin en valeurs relatives
-		'2020-05-17',
+		'2020-06-29',
 	];
 	var explainLabels = new Map();
 
@@ -80,9 +80,9 @@
 		[{'dx': 60, 'dy': 20, 'canton': 'GE', 'label': 'En taux par habitant, Genève dépasse le Tessin', 'title': '31 mars', 'lat': 46.2043907, 'lng': 6.1431577}]
 	);
 
-	explainLabels.set('2020-05-17',
+	explainLabels.set('2020-06-29',
 	[
-		{'dx': -10, 'dy': -90, 'canton': 'VD', 'label': 'Vaud reste le canton qui compte le plus de cas confirmés', 'title': '17 mai', 'lat': 46.5613135, 'lng': 6.536765},
+		{'dx': -10, 'dy': -90, 'canton': 'VD', 'label': 'Vaud reste le canton qui compte le plus de cas confirmés', 'title': '29 juin', 'lat': 46.5613135, 'lng': 6.536765},
 		//{'dx': -10, 'dy': -100, 'canton': 'VD', 'label': 'Appenzell Rhodes-Intérieures est celui qui en compte le moins', 'title': '14 avril', 'lat': 46.5613135, 'lng': 6.536765}
 	]);
 
@@ -99,7 +99,7 @@
 	    .translate([ width/2, height/2 ]);
 	var dataById = d3.map();
 
-	Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?1589788165139")]).then(function(data) {
+	Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?1593517752146")]).then(function(data) {
 		var geodata = data[0];
 		var data = data[1];
 
@@ -522,7 +522,7 @@
 				bindto: "#time-serie-chart-ch",
 
 				data: {
-					url: 'data/c3-linegraph-ch.csv?1589788165139',
+					url: 'data/c3-linegraph-ch.csv?1593517752146',
 					type: 'line',
 					x: 'timestamp',
 					colors: {
