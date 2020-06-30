@@ -47,27 +47,6 @@ p.links{
 	font-size: .8em;
 	text-align: right;
 }
-@keyframes glowing {
-  0% { background-color: #b80021; box-shadow: 0 0 10px #b80021; }
-  50% { background-color: #6c0013; box-shadow: 0 0 10px #6c0013; }
-  100% { background-color: #b80021; box-shadow: 0 0 10px #b80021; }
-}
-@keyframes lightglowing {
-  0% { box-shadow: 0 0 5px #b80021; }
-  40% { box-shadow: 0 0 5px #6c0013; }
-  60% { box-shadow: 0 0 5px #b80021; }
-	100% { box-shadow: 0 0 5px #fff; }
-}
-
-.glowing{
-	animation: glowing 1500ms infinite;
-}
-.lightglowing{
-	animation: lightglowing 1500ms;
-}
-.next{
-	display: block;
-}
 
 .content {
 	margin-top: 50px;
@@ -460,6 +439,11 @@ h6{
   color: rgb(255, 127, 14);
   border-color: 2px solid rgb(255, 127, 14);
 }
+.highlight-dark-orange{
+  background: rgba(255, 127, 14, 0.2);
+  color: #E06D3A;
+  border-color: 3px solid #E06D3A;
+}
 .highlight-green{
   background: rgba(204, 229, 223, 0.2);
   color: rgb(104, 129, 123);
@@ -510,6 +494,12 @@ select:focus, textarea:focus, input:focus {
 
 .multiline {
 	position: relative;
+}
+.multiline svg{
+	 margin-top: 2px;
+	 border: 1px solid #ccc;
+	 border-radius: 3px;
+	 background: #fdfdfd;
 }
 
 .multiline rect {
