@@ -25,7 +25,7 @@ class multilineChart {
     this.yMax = opts.yMax ? opts.yMax : false;
     this.straightLine = opts.straightLine ? opts.straightLine : false;
 
-    if(this.hideLabel == true){
+    if(this.hideLabel === true){
       this.margin.right = this.margin.left;
     }
 
@@ -34,7 +34,7 @@ class multilineChart {
     this.file = opts.file;
 
     /* scales */
-    this.xTickFormat = opts.xTickFormat ? opts.xTickFormat : "d";
+    this.yTickFormat = opts.yTickFormat ? opts.yTickFormat : "d";
     this.timeScale = opts.timeScale ? opts.timeScale : false;
 
     this.exponentScale = opts.exponentScale ? opts.exponentScale : false;
@@ -73,6 +73,31 @@ class multilineChart {
     }
     this.createScales();
     this.fetch();
+  }
+
+  addData(data){
+    this.data = data;
+
+    var theChart = this;
+
+    data.forEach(function(d) {
+      if(theChart.timeScale){
+        d.xValue = new Date(d.timestamp);
+      }else{
+        d.xValue = +d.country_day;
+      }
+    });
+    var lastColIndex = theChart.hasConfidenceInterval ? data.columns.length - 2 : data.columns.length;
+
+    this.countries = data.columns.slice(1, lastColIndex).map(function(id) {
+      return {
+        id: id,
+        values: data.map(function(d) {
+          return {xValue: d.xValue, value: parseFloat(d[id])};
+        })
+      };
+    });
+    this.draw();
   }
 
   fetch(){
@@ -118,7 +143,10 @@ class multilineChart {
       this.yscale = d3.scalePow(0.5).range([this.height, 0]);
     }else if (this.logScale){
       console.log('Log scale for', this.selector);
-      this.yscale = d3.scaleLog().range([this.height, 0]);
+      this.yscale = d3.scaleLog().clamp(true).domain([
+        0.1,
+        d3.max(this.countries, function(c) { return d3.max(c.values, function(d) { return d.value; }); })
+      ]).range([this.height, 0]);
     }else{
       this.yscale = d3.scaleLinear().range([this.height, 0]);
     }
@@ -132,13 +160,26 @@ class multilineChart {
     }
 
     if(this.logScale){
-      this.yaxis = d3.axisLeft().scale(this.yscale).ticks(3).tickFormat( d3.format(this.xTickFormat) );
+      this.yaxis = d3.axisLeft().scale(this.yscale).ticks(3).tickFormat( d3.format(this.yTickFormat) );
     }else{
-      this.yaxis = d3.axisLeft().scale(this.yscale).tickFormat( d3.format(this.xTickFormat) );
+      this.yaxis = d3.axisLeft().scale(this.yscale).tickFormat( d3.format(this.yTickFormat) );
     }
-
+    console.log(this.yTickFormat)
     this.g_xaxis = this.g.append("g").attr("class", "x axis").attr("transform", "translate(0," + this.height + ")");
     this.g_yaxis = this.g.append("g").attr("class", "y axis");
+  }
+
+  addReLimit(){
+    var bounds = this.xaxis.scale().domain();
+    var theChart = this;
+
+    this.g.append("line")
+      .style("stroke", "#E06D3A") // ou precedent rouge: "rgb(231, 76, 60)")
+      .style("stroke-width", 3)
+      .attr("x1", function(d){ return theChart.xscale(bounds[0])})
+      .attr("y1", function(d){ return theChart.yscale(1)})
+      .attr("x2", function(d){ return theChart.xscale(bounds[1])})
+      .attr("y2", function(d){ return theChart.yscale(1)})
   }
 
   addConfidenceInterval(){
@@ -214,7 +255,7 @@ class multilineChart {
 
     country.append("path")
       .attr("class", "line")
-      .attr("d", function(d) { return lineStatic(d.values.filter(function(d){ return d.value != 0;}) ); })
+      .attr("d", function(d) { return lineStatic(d.values.filter(function(d){ return d.value !== 0;}) ); })
       .style("stroke", function(d) { return theChart.zscale(d.id); });
 
     if(!this.hideLabel){
@@ -222,19 +263,21 @@ class multilineChart {
         .datum(function(d) {
           // Find last non-nan value
           var lastValueIndex = d.values.length - 1;
-          while( lastValueIndex > 0 ){
+          while( lastValueIndex >= 0 ){
             if( ! isNaN(d.values[lastValueIndex].value)){
               break;
             } else {
               lastValueIndex--;
             }
           }
+          // console.log(d.id, lastValueIndex, d.values[lastValueIndex], theChart.yscale(d.values[lastValueIndex]+1), theChart.yscale(1))
+
           return {id: d.id, value: d.values[lastValueIndex]};
         })
         .attr("transform", function(d) { return "translate(" + theChart.xscale(d.value.xValue) + "," + theChart.yscale(d.value.value) + ")"; })
         .attr("x", 3)
         .attr("dy", "0.35em")
-        .attr('stroke', function(d){ return d.id == 'Suisse'? '#b80021' : theChart.zscale(d.id)})
+        .attr('stroke', function(d){ return d.id === 'Suisse'? '#b80021' : theChart.zscale(d.id)})
         .attr("class", "country-label")
         .text(function(d) { return d.id; });
     }
@@ -306,7 +349,7 @@ class multilineChart {
 
          theChart.g.selectAll(".country-label")
             .each(function() {
-              if(this != that) {
+              if(this !== that) {
                 var rect2 = this.getBoundingClientRect();
 
                 var overlap = !(rect1.right < rect2.left ||
@@ -330,12 +373,12 @@ class multilineChart {
                   }
 
                   // fix temporaire france
-                  if((theChart.selector == '#chartDayOffset') && (that.getAttribute('stroke') == '#d62728')){
+                  if((theChart.selector === '#chartDayOffset') && (that.getAttribute('stroke') === '#d62728')){
                     that.setAttribute('x', 60);
                   }
 
                   // fix temporaire allemagne
-                  if((theChart.selector == '#chartDayOffset') && (that.getAttribute('stroke') == '#1f77b4')){
+                  if((theChart.selector === '#chartDayOffset') && (that.getAttribute('stroke') === '#1f77b4')){
                     that.setAttribute('y', 10);
                   }
 
@@ -361,7 +404,7 @@ class multilineChart {
         .y(function(d) { return theChart.yscale(d.Suisse); });
 
       var path = this.g.append("path")
-        .attr("d", fatLine( this.data.filter(function(d){ return d.Suisse != 0;})) )
+        .attr("d", fatLine( this.data.filter(function(d){ return d.Suisse !== 0;})) )
         .attr("stroke", "#b80021")
         .attr("stroke-width", this.fatLineWidth)
         .attr("stroke-opacity", 0.8)
@@ -409,9 +452,14 @@ class multilineChart {
     })
 
     var xSpan = theChart.xscale(xValue) + this.margin.left + 10;
-    if(xSpan > this.width - this.margin.right){
+    // if(xSpan > this.width - this.margin.right){
+    //   // TODO
+    //   xSpan = this.width - this.margin.right;
+    // }
+    if(xSpan + 200 > this.margin.left + this.width){
       // TODO
-      xSpan = this.width - this.margin.right;
+      console.log('>')
+      xSpan = this.margin.left + this.width - 200;
     }
 
     this.tooltip.html('<b>' + xLabel + '</b>') // TODO: date / index
@@ -422,6 +470,8 @@ class multilineChart {
       .data(valuesToShow).enter()
       .append('div')
       .html(d => {
+        // todo: couleur suisse
+        // return '<span style="color: ' + theChart.zscale(d.country) + ';">' + d.country + '</span>: ' + d.value.toLocaleString();
         return d.country + ': ' + d.value.toLocaleString();
       })
   }
@@ -510,7 +560,7 @@ class multilineChart {
           mouseG.selectAll(".mouse-per-line")
             .attr("transform", function (d, i) {
 
-              if(idx == -1){
+              if(idx === -1){
                 idx = bisect(d.values, xValue);
               }
 

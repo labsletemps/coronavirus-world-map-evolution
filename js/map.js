@@ -138,9 +138,9 @@
 			// Legend: from Bubblemap Template by Yan Holtz
 			// https://www.d3-graph-gallery.com/graph/bubble_legend.html
 			// https://www.d3-graph-gallery.com/graph/bubblemap_template.html
-			var valuesToShow = [10, 20000, 100000]
+			var valuesToShow = [100, 200000, 1000000]
 			var xCircle = 80
-			var xLabel = xCircle + 100;
+			var xLabel = xCircle + 50;
 			var yCircle = height * 0.75;
 
 			svg
@@ -175,7 +175,13 @@
 			  .append("text")
 			    .attr('x', xLabel)
 			    .attr('y', function(d){ return yCircle - size(d) } )
-			    .text( function(d){ return d + ' cas' } )
+			    .text( function(d){
+						if(d === 1000000){
+							return '1 million de cas'
+						}else{
+							return d.toLocaleString() }
+						}
+					)
 			    .style("font-size", 12)
 			    .attr('alignment-baseline', 'middle')
 
@@ -309,7 +315,7 @@
 						},
 						y: {
 							tick: {
-								values: [0, 1000000, 2000000, 3000000, 4000000],
+								values: [0, 2000000, 4000000, 6000000, 8000000],
 								format: function (x) {
 									if(x > 0){
 										return x / 1000000 + ' Mio';
@@ -324,10 +330,10 @@
 						y: {
 							lines: [
 								{ value: 0},
-								{ value: 1000000},
 								{ value: 2000000},
-								{ value: 3000000},
 								{ value: 4000000},
+								{ value: 6000000},
+								{ value: 8000000},
 							]
 						}
 					},
