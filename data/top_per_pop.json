@@ -25,8 +25,8 @@
  },
  {
   "timestamp":1584403200000,
-  "casesPerPop":187.1,
-  "deathsPerPop":2.5,
+  "casesPerPop":187.2,
+  "deathsPerPop":2.6,
   "country":"Belgique"
  },
  {
@@ -85,8 +85,8 @@
  },
  {
   "timestamp":1584489600000,
-  "casesPerPop":223.9,
-  "deathsPerPop":3.6,
+  "casesPerPop":224.0,
+  "deathsPerPop":3.7,
   "country":"Belgique"
  },
  {
@@ -139,8 +139,8 @@
  },
  {
   "timestamp":1584576000000,
-  "casesPerPop":270.5,
-  "deathsPerPop":5.5,
+  "casesPerPop":270.6,
+  "deathsPerPop":5.6,
   "country":"Belgique"
  },
  {
@@ -199,8 +199,8 @@
  },
  {
   "timestamp":1584662400000,
-  "casesPerPop":332.8,
-  "deathsPerPop":7.9,
+  "casesPerPop":332.9,
+  "deathsPerPop":8.0,
   "country":"Belgique"
  },
  {
@@ -259,8 +259,8 @@
  },
  {
   "timestamp":1584748800000,
-  "casesPerPop":390.6,
-  "deathsPerPop":10.6,
+  "casesPerPop":390.7,
+  "deathsPerPop":10.7,
   "country":"Belgique"
  },
  {
@@ -319,7 +319,7 @@
  },
  {
   "timestamp":1584835200000,
-  "casesPerPop":431.7,
+  "casesPerPop":431.8,
   "deathsPerPop":14.1,
   "country":"Belgique"
  },
@@ -379,8 +379,8 @@
  },
  {
   "timestamp":1584921600000,
-  "casesPerPop":474.1,
-  "deathsPerPop":17.7,
+  "casesPerPop":474.2,
+  "deathsPerPop":17.8,
   "country":"Belgique"
  },
  {
@@ -440,7 +440,7 @@
  {
   "timestamp":1585008000000,
   "casesPerPop":590.1,
-  "deathsPerPop":24.4,
+  "deathsPerPop":24.6,
   "country":"Belgique"
  },
  {
@@ -500,7 +500,7 @@
  {
   "timestamp":1585094400000,
   "casesPerPop":694.4,
-  "deathsPerPop":30.9,
+  "deathsPerPop":31.1,
   "country":"Belgique"
  },
  {
@@ -560,7 +560,7 @@
  {
   "timestamp":1585180800000,
   "casesPerPop":799.1,
-  "deathsPerPop":39.4,
+  "deathsPerPop":39.5,
   "country":"Belgique"
  },
  {
@@ -620,7 +620,7 @@
  {
   "timestamp":1585267200000,
   "casesPerPop":918.1,
-  "deathsPerPop":48.2,
+  "deathsPerPop":48.4,
   "country":"Belgique"
  },
  {
@@ -680,7 +680,7 @@
  {
   "timestamp":1585353600000,
   "casesPerPop":1050.7,
-  "deathsPerPop":59.0,
+  "deathsPerPop":59.1,
   "country":"Belgique"
  },
  {
@@ -740,7 +740,7 @@
  {
   "timestamp":1585440000000,
   "casesPerPop":1124.3,
-  "deathsPerPop":70.6,
+  "deathsPerPop":70.7,
   "country":"Belgique"
  },
  {
@@ -860,7 +860,7 @@
  {
   "timestamp":1585612800000,
   "casesPerPop":1335.7,
-  "deathsPerPop":97.5,
+  "deathsPerPop":97.6,
   "country":"Belgique"
  },
  {
@@ -920,7 +920,7 @@
  {
   "timestamp":1585699200000,
   "casesPerPop":1482.4,
-  "deathsPerPop":113.7,
+  "deathsPerPop":113.9,
   "country":"Belgique"
  },
  {
@@ -980,7 +980,7 @@
  {
   "timestamp":1585785600000,
   "casesPerPop":1613.6,
-  "deathsPerPop":135.3,
+  "deathsPerPop":135.8,
   "country":"Belgique"
  },
  {
@@ -1040,7 +1040,7 @@
  {
   "timestamp":1585872000000,
   "casesPerPop":1741.1,
-  "deathsPerPop":153.6,
+  "deathsPerPop":154.4,
   "country":"Belgique"
  },
  {
@@ -1100,7 +1100,7 @@
  {
   "timestamp":1585958400000,
   "casesPerPop":1888.7,
-  "deathsPerPop":173.7,
+  "deathsPerPop":174.8,
   "country":"Belgique"
  },
  {
@@ -1160,7 +1160,7 @@
  {
   "timestamp":1586044800000,
   "casesPerPop":1969.4,
-  "deathsPerPop":197.5,
+  "deathsPerPop":198.7,
   "country":"Belgique"
  },
  {
@@ -1220,7 +1220,7 @@
  {
   "timestamp":1586131200000,
   "casesPerPop":2027.5,
-  "deathsPerPop":217.9,
+  "deathsPerPop":219.2,
   "country":"Belgique"
  },
  {
@@ -1280,7 +1280,7 @@
  {
   "timestamp":1586217600000,
   "casesPerPop":2195.3,
-  "deathsPerPop":241.7,
+  "deathsPerPop":242.9,
   "country":"Belgique"
  },
  {
@@ -1333,8 +1333,8 @@
  },
  {
   "timestamp":1586304000000,
-  "casesPerPop":2326.2,
-  "deathsPerPop":268.2,
+  "casesPerPop":2326.1,
+  "deathsPerPop":269.4,
   "country":"Belgique"
  },
  {
@@ -1394,7 +1394,7 @@
  {
   "timestamp":1586390400000,
   "casesPerPop":2464.8,
-  "deathsPerPop":295.8,
+  "deathsPerPop":297.1,
   "country":"Belgique"
  },
  {
@@ -1453,8 +1453,8 @@
  },
  {
   "timestamp":1586476800000,
-  "casesPerPop":2658.9,
-  "deathsPerPop":319.5,
+  "casesPerPop":2659.2,
+  "deathsPerPop":320.6,
   "country":"Belgique"
  },
  {
@@ -1507,8 +1507,8 @@
  },
  {
   "timestamp":1586563200000,
-  "casesPerPop":2861.3,
-  "deathsPerPop":347.3,
+  "casesPerPop":2861.7,
+  "deathsPerPop":348.5,
   "country":"Belgique"
  },
  {
@@ -1567,8 +1567,8 @@
  },
  {
   "timestamp":1586649600000,
-  "casesPerPop":2950.6,
-  "deathsPerPop":372.6,
+  "casesPerPop":2951.1,
+  "deathsPerPop":373.6,
   "country":"Belgique"
  },
  {
@@ -1627,8 +1627,8 @@
  },
  {
   "timestamp":1586736000000,
-  "casesPerPop":2995.8,
-  "deathsPerPop":402.5,
+  "casesPerPop":2996.2,
+  "deathsPerPop":403.5,
   "country":"Belgique"
  },
  {
@@ -1687,8 +1687,8 @@
  },
  {
   "timestamp":1586822400000,
-  "casesPerPop":3042.2,
-  "deathsPerPop":427.1,
+  "casesPerPop":3042.6,
+  "deathsPerPop":427.9,
   "country":"Belgique"
  },
  {
@@ -1747,8 +1747,8 @@
  },
  {
   "timestamp":1586908800000,
-  "casesPerPop":3178.6,
-  "deathsPerPop":451.1,
+  "casesPerPop":3179.2,
+  "deathsPerPop":451.9,
   "country":"Belgique"
  },
  {
@@ -1807,8 +1807,8 @@
  },
  {
   "timestamp":1586995200000,
-  "casesPerPop":3320.0,
-  "deathsPerPop":475.1,
+  "casesPerPop":3321.3,
+  "deathsPerPop":475.9,
   "country":"Belgique"
  },
  {
@@ -1867,8 +1867,8 @@
  },
  {
   "timestamp":1587081600000,
-  "casesPerPop":3465.2,
-  "deathsPerPop":497.3,
+  "casesPerPop":3467.0,
+  "deathsPerPop":497.8,
   "country":"Belgique"
  },
  {
@@ -1927,8 +1927,8 @@
  },
  {
   "timestamp":1587168000000,
-  "casesPerPop":3585.9,
-  "deathsPerPop":515.1,
+  "casesPerPop":3588.1,
+  "deathsPerPop":515.7,
   "country":"Belgique"
  },
  {
@@ -1969,15 +1969,15 @@
  },
  {
   "timestamp":1587168000000,
-  "casesPerPop":1655.5,
-  "deathsPerPop":49.5,
-  "country":"Allemagne"
+  "casesPerPop":1676.5,
+  "deathsPerPop":253.5,
+  "country":"Royaume-Uni"
  },
  {
   "timestamp":1587168000000,
-  "casesPerPop":1648.4,
-  "deathsPerPop":48.7,
-  "country":"Autriche"
+  "casesPerPop":1655.5,
+  "deathsPerPop":49.5,
+  "country":"Allemagne"
  },
  {
   "timestamp":1587254400000,
@@ -1987,8 +1987,8 @@
  },
  {
   "timestamp":1587254400000,
-  "casesPerPop":3648.5,
-  "deathsPerPop":533.5,
+  "casesPerPop":3650.8,
+  "deathsPerPop":533.9,
   "country":"Belgique"
  },
  {
@@ -2035,8 +2035,8 @@
  },
  {
   "timestamp":1587254400000,
-  "casesPerPop":1713.8,
-  "deathsPerPop":270.0,
+  "casesPerPop":1750.9,
+  "deathsPerPop":270.2,
   "country":"Royaume-Uni"
  },
  {
@@ -2047,8 +2047,8 @@
  },
  {
   "timestamp":1587340800000,
-  "casesPerPop":3687.1,
-  "deathsPerPop":552.0,
+  "casesPerPop":3689.5,
+  "deathsPerPop":552.3,
   "country":"Belgique"
  },
  {
@@ -2095,8 +2095,8 @@
  },
  {
   "timestamp":1587340800000,
-  "casesPerPop":1801.5,
-  "deathsPerPop":277.5,
+  "casesPerPop":1821.7,
+  "deathsPerPop":277.7,
   "country":"Royaume-Uni"
  },
  {
@@ -2107,8 +2107,8 @@
  },
  {
   "timestamp":1587427200000,
-  "casesPerPop":3798.2,
-  "deathsPerPop":569.4,
+  "casesPerPop":3800.5,
+  "deathsPerPop":569.6,
   "country":"Belgique"
  },
  {
@@ -2155,8 +2155,8 @@
  },
  {
   "timestamp":1587427200000,
-  "casesPerPop":1871.7,
-  "deathsPerPop":285.8,
+  "casesPerPop":1879.5,
+  "deathsPerPop":286.0,
   "country":"Royaume-Uni"
  },
  {
@@ -2167,8 +2167,8 @@
  },
  {
   "timestamp":1587513600000,
-  "casesPerPop":3908.4,
-  "deathsPerPop":587.1,
+  "casesPerPop":3911.0,
+  "deathsPerPop":587.2,
   "country":"Belgique"
  },
  {
@@ -2215,8 +2215,8 @@
  },
  {
   "timestamp":1587513600000,
-  "casesPerPop":1936.2,
-  "deathsPerPop":303.4,
+  "casesPerPop":1952.4,
+  "deathsPerPop":303.6,
   "country":"Royaume-Uni"
  },
  {
@@ -2227,8 +2227,8 @@
  },
  {
   "timestamp":1587600000000,
-  "casesPerPop":3976.1,
-  "deathsPerPop":603.8,
+  "casesPerPop":3978.8,
+  "deathsPerPop":604.0,
   "country":"Belgique"
  },
  {
@@ -2269,15 +2269,15 @@
  },
  {
   "timestamp":1587600000000,
-  "casesPerPop":2016.1,
-  "deathsPerPop":234.6,
-  "country":"Pays-Bas"
+  "casesPerPop":2023.8,
+  "deathsPerPop":316.2,
+  "country":"Royaume-Uni"
  },
  {
   "timestamp":1587600000000,
-  "casesPerPop":2003.0,
-  "deathsPerPop":316.0,
-  "country":"Royaume-Uni"
+  "casesPerPop":2016.1,
+  "deathsPerPop":234.6,
+  "country":"Pays-Bas"
  },
  {
   "timestamp":1587686400000,
@@ -2287,8 +2287,8 @@
  },
  {
   "timestamp":1587686400000,
-  "casesPerPop":4060.6,
-  "deathsPerPop":619.1,
+  "casesPerPop":4063.5,
+  "deathsPerPop":619.4,
   "country":"Belgique"
  },
  {
@@ -2329,8 +2329,8 @@
  },
  {
   "timestamp":1587686400000,
-  "casesPerPop":2071.8,
-  "deathsPerPop":326.9,
+  "casesPerPop":2106.1,
+  "deathsPerPop":327.1,
   "country":"Royaume-Uni"
  },
  {
@@ -2347,8 +2347,8 @@
  },
  {
   "timestamp":1587772800000,
-  "casesPerPop":4130.7,
-  "deathsPerPop":631.9,
+  "casesPerPop":4134.0,
+  "deathsPerPop":632.3,
   "country":"Belgique"
  },
  {
@@ -2389,8 +2389,8 @@
  },
  {
   "timestamp":1587772800000,
-  "casesPerPop":2152.6,
-  "deathsPerPop":342.0,
+  "casesPerPop":2183.5,
+  "deathsPerPop":342.2,
   "country":"Royaume-Uni"
  },
  {
@@ -2407,8 +2407,8 @@
  },
  {
   "timestamp":1587859200000,
-  "casesPerPop":4164.5,
-  "deathsPerPop":645.5,
+  "casesPerPop":4167.9,
+  "deathsPerPop":645.8,
   "country":"Belgique"
  },
  {
@@ -2449,8 +2449,8 @@
  },
  {
   "timestamp":1587859200000,
-  "casesPerPop":2226.3,
-  "deathsPerPop":354.6,
+  "casesPerPop":2258.1,
+  "deathsPerPop":354.9,
   "country":"Royaume-Uni"
  },
  {
@@ -2467,8 +2467,8 @@
  },
  {
   "timestamp":1587945600000,
-  "casesPerPop":4182.4,
-  "deathsPerPop":660.8,
+  "casesPerPop":4185.8,
+  "deathsPerPop":661.2,
   "country":"Belgique"
  },
  {
@@ -2515,8 +2515,8 @@
  },
  {
   "timestamp":1587945600000,
-  "casesPerPop":2293.3,
-  "deathsPerPop":360.9,
+  "casesPerPop":2314.3,
+  "deathsPerPop":361.2,
   "country":"Royaume-Uni"
  },
  {
@@ -2527,8 +2527,8 @@
  },
  {
   "timestamp":1588032000000,
-  "casesPerPop":4247.6,
-  "deathsPerPop":671.9,
+  "casesPerPop":4251.1,
+  "deathsPerPop":672.3,
   "country":"Belgique"
  },
  {
@@ -2569,8 +2569,8 @@
  },
  {
   "timestamp":1588032000000,
-  "casesPerPop":2357.9,
-  "deathsPerPop":366.0,
+  "casesPerPop":2366.4,
+  "deathsPerPop":366.2,
   "country":"Royaume-Uni"
  },
  {
@@ -2587,8 +2587,8 @@
  },
  {
   "timestamp":1588118400000,
-  "casesPerPop":4297.2,
-  "deathsPerPop":681.9,
+  "casesPerPop":4300.9,
+  "deathsPerPop":682.3,
   "country":"Belgique"
  },
  {
@@ -2629,8 +2629,8 @@
  },
  {
   "timestamp":1588118400000,
-  "casesPerPop":2417.9,
-  "deathsPerPop":379.6,
+  "casesPerPop":2437.0,
+  "deathsPerPop":379.9,
   "country":"Royaume-Uni"
  },
  {
@@ -2653,8 +2653,8 @@
  },
  {
   "timestamp":1588204800000,
-  "casesPerPop":4342.1,
-  "deathsPerPop":690.5,
+  "casesPerPop":4346.0,
+  "deathsPerPop":690.8,
   "country":"Belgique"
  },
  {
@@ -2689,8 +2689,8 @@
  },
  {
   "timestamp":1588204800000,
-  "casesPerPop":2479.0,
-  "deathsPerPop":391.6,
+  "casesPerPop":2508.0,
+  "deathsPerPop":391.8,
   "country":"Royaume-Uni"
  },
  {
@@ -2713,8 +2713,8 @@
  },
  {
   "timestamp":1588291200000,
-  "casesPerPop":4393.3,
-  "deathsPerPop":697.8,
+  "casesPerPop":4397.4,
+  "deathsPerPop":698.2,
   "country":"Belgique"
  },
  {
@@ -2749,8 +2749,8 @@
  },
  {
   "timestamp":1588291200000,
-  "casesPerPop":2569.5,
-  "deathsPerPop":401.7,
+  "casesPerPop":2589.6,
+  "deathsPerPop":401.9,
   "country":"Royaume-Uni"
  },
  {
@@ -2773,8 +2773,8 @@
  },
  {
   "timestamp":1588377600000,
-  "casesPerPop":4414.0,
-  "deathsPerPop":706.4,
+  "casesPerPop":4418.0,
+  "deathsPerPop":706.7,
   "country":"Belgique"
  },
  {
@@ -2809,8 +2809,8 @@
  },
  {
   "timestamp":1588377600000,
-  "casesPerPop":2662.6,
-  "deathsPerPop":412.8,
+  "casesPerPop":2664.2,
+  "deathsPerPop":413.0,
   "country":"Royaume-Uni"
  },
  {
@@ -2833,8 +2833,8 @@
  },
  {
   "timestamp":1588464000000,
-  "casesPerPop":4438.8,
-  "deathsPerPop":712.8,
+  "casesPerPop":4442.8,
+  "deathsPerPop":713.1,
   "country":"Belgique"
  },
  {
@@ -2869,8 +2869,8 @@
  },
  {
   "timestamp":1588464000000,
-  "casesPerPop":2734.7,
-  "deathsPerPop":422.1,
+  "casesPerPop":2735.2,
+  "deathsPerPop":422.4,
   "country":"Royaume-Uni"
  },
  {
@@ -2893,8 +2893,8 @@
  },
  {
   "timestamp":1588550400000,
-  "casesPerPop":4451.1,
-  "deathsPerPop":721.1,
+  "casesPerPop":4455.1,
+  "deathsPerPop":721.5,
   "country":"Belgique"
  },
  {
@@ -2929,8 +2929,8 @@
  },
  {
   "timestamp":1588550400000,
-  "casesPerPop":2799.8,
-  "deathsPerPop":426.8,
+  "casesPerPop":2783.7,
+  "deathsPerPop":427.1,
   "country":"Royaume-Uni"
  },
  {
@@ -2953,8 +2953,8 @@
  },
  {
   "timestamp":1588636800000,
-  "casesPerPop":4509.5,
-  "deathsPerPop":729.7,
+  "casesPerPop":4513.6,
+  "deathsPerPop":730.0,
   "country":"Belgique"
  },
  {
@@ -2989,8 +2989,8 @@
  },
  {
   "timestamp":1588636800000,
-  "casesPerPop":2859.6,
-  "deathsPerPop":431.1,
+  "casesPerPop":2828.4,
+  "deathsPerPop":431.4,
   "country":"Royaume-Uni"
  },
  {
@@ -3013,8 +3013,8 @@
  },
  {
   "timestamp":1588723200000,
-  "casesPerPop":4556.3,
-  "deathsPerPop":736.9,
+  "casesPerPop":4560.9,
+  "deathsPerPop":737.1,
   "country":"Belgique"
  },
  {
@@ -3049,8 +3049,8 @@
  },
  {
   "timestamp":1588723200000,
-  "casesPerPop":2925.7,
-  "deathsPerPop":441.5,
+  "casesPerPop":2879.3,
+  "deathsPerPop":441.8,
   "country":"Royaume-Uni"
  },
  {
@@ -3073,8 +3073,8 @@
  },
  {
   "timestamp":1588809600000,
-  "casesPerPop":4604.4,
-  "deathsPerPop":743.4,
+  "casesPerPop":4609.3,
+  "deathsPerPop":743.7,
   "country":"Belgique"
  },
  {
@@ -3109,8 +3109,8 @@
  },
  {
   "timestamp":1588809600000,
-  "casesPerPop":3018.9,
-  "deathsPerPop":451.3,
+  "casesPerPop":2934.5,
+  "deathsPerPop":451.6,
   "country":"Royaume-Uni"
  },
  {
@@ -3133,8 +3133,8 @@
  },
  {
   "timestamp":1588896000000,
-  "casesPerPop":4641.6,
-  "deathsPerPop":750.2,
+  "casesPerPop":4648.0,
+  "deathsPerPop":750.5,
   "country":"Belgique"
  },
  {
@@ -3169,8 +3169,8 @@
  },
  {
   "timestamp":1588896000000,
-  "casesPerPop":3101.6,
-  "deathsPerPop":459.4,
+  "casesPerPop":2991.9,
+  "deathsPerPop":459.7,
   "country":"Royaume-Uni"
  },
  {
@@ -3193,8 +3193,8 @@
  },
  {
   "timestamp":1588982400000,
-  "casesPerPop":4683.4,
-  "deathsPerPop":756.3,
+  "casesPerPop":4690.1,
+  "deathsPerPop":756.6,
   "country":"Belgique"
  },
  {
@@ -3229,8 +3229,8 @@
  },
  {
   "timestamp":1588982400000,
-  "casesPerPop":3171.4,
-  "deathsPerPop":468.8,
+  "casesPerPop":3048.5,
+  "deathsPerPop":469.1,
   "country":"Royaume-Uni"
  },
  {
@@ -3253,8 +3253,8 @@
  },
  {
   "timestamp":1589068800000,
-  "casesPerPop":4704.4,
-  "deathsPerPop":762.3,
+  "casesPerPop":4711.1,
+  "deathsPerPop":762.5,
   "country":"Belgique"
  },
  {
@@ -3289,8 +3289,8 @@
  },
  {
   "timestamp":1589068800000,
-  "casesPerPop":3229.8,
-  "deathsPerPop":473.9,
+  "casesPerPop":3094.4,
+  "deathsPerPop":474.3,
   "country":"Royaume-Uni"
  },
  {
@@ -3313,8 +3313,8 @@
  },
  {
   "timestamp":1589155200000,
-  "casesPerPop":4714.7,
-  "deathsPerPop":768.6,
+  "casesPerPop":4721.4,
+  "deathsPerPop":768.9,
   "country":"Belgique"
  },
  {
@@ -3349,8 +3349,8 @@
  },
  {
   "timestamp":1589155200000,
-  "casesPerPop":3288.7,
-  "deathsPerPop":478.0,
+  "casesPerPop":3126.8,
+  "deathsPerPop":478.3,
   "country":"Royaume-Uni"
  },
  {
@@ -3373,8 +3373,8 @@
  },
  {
   "timestamp":1589241600000,
-  "casesPerPop":4755.0,
-  "deathsPerPop":774.0,
+  "casesPerPop":4762.8,
+  "deathsPerPop":774.3,
   "country":"Belgique"
  },
  {
@@ -3409,15 +3409,15 @@
  },
  {
   "timestamp":1589241600000,
-  "casesPerPop":3346.9,
-  "deathsPerPop":481.1,
-  "country":"Royaume-Uni"
- },
- {
-  "timestamp":1589241600000,
   "casesPerPop":3190.4,
   "deathsPerPop":4.9,
   "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1589241600000,
+  "casesPerPop":3161.7,
+  "deathsPerPop":481.5,
+  "country":"Royaume-Uni"
  },
  {
   "timestamp":1589328000000,
@@ -3433,8 +3433,8 @@
  },
  {
   "timestamp":1589328000000,
-  "casesPerPop":4789.5,
-  "deathsPerPop":778.2,
+  "casesPerPop":4797.3,
+  "deathsPerPop":778.5,
   "country":"Belgique"
  },
  {
@@ -3469,15 +3469,15 @@
  },
  {
   "timestamp":1589328000000,
-  "casesPerPop":3397.9,
-  "deathsPerPop":490.5,
-  "country":"Royaume-Uni"
- },
- {
-  "timestamp":1589328000000,
   "casesPerPop":3370.2,
   "deathsPerPop":5.5,
   "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1589328000000,
+  "casesPerPop":3215.5,
+  "deathsPerPop":490.9,
+  "country":"Royaume-Uni"
  },
  {
   "timestamp":1589414400000,
@@ -3493,8 +3493,8 @@
  },
  {
   "timestamp":1589414400000,
-  "casesPerPop":4817.2,
-  "deathsPerPop":782.9,
+  "casesPerPop":4825.0,
+  "deathsPerPop":783.2,
   "country":"Belgique"
  },
  {
@@ -3535,8 +3535,8 @@
  },
  {
   "timestamp":1589414400000,
-  "casesPerPop":3446.6,
-  "deathsPerPop":497.9,
+  "casesPerPop":3266.6,
+  "deathsPerPop":498.4,
   "country":"Royaume-Uni"
  },
  {
@@ -3559,8 +3559,8 @@
  },
  {
   "timestamp":1589500800000,
-  "casesPerPop":4842.9,
-  "deathsPerPop":787.0,
+  "casesPerPop":4851.5,
+  "deathsPerPop":787.2,
   "country":"Belgique"
  },
  {
@@ -3595,8 +3595,8 @@
  },
  {
   "timestamp":1589500800000,
-  "casesPerPop":3498.3,
-  "deathsPerPop":504.4,
+  "casesPerPop":3316.2,
+  "deathsPerPop":504.8,
   "country":"Royaume-Uni"
  },
  {
@@ -3619,8 +3619,8 @@
  },
  {
   "timestamp":1589587200000,
-  "casesPerPop":4872.6,
-  "deathsPerPop":790.2,
+  "casesPerPop":4881.6,
+  "deathsPerPop":790.5,
   "country":"Belgique"
  },
  {
@@ -3655,8 +3655,8 @@
  },
  {
   "timestamp":1589587200000,
-  "casesPerPop":3551.7,
-  "deathsPerPop":510.1,
+  "casesPerPop":3355.6,
+  "deathsPerPop":510.6,
   "country":"Royaume-Uni"
  },
  {
@@ -3679,8 +3679,8 @@
  },
  {
   "timestamp":1589673600000,
-  "casesPerPop":4885.3,
-  "deathsPerPop":792.6,
+  "casesPerPop":4894.4,
+  "deathsPerPop":793.0,
   "country":"Belgique"
  },
  {
@@ -3709,15 +3709,15 @@
  },
  {
   "timestamp":1589673600000,
-  "casesPerPop":3603.5,
-  "deathsPerPop":517.1,
-  "country":"Royaume-Uni"
- },
- {
-  "timestamp":1589673600000,
   "casesPerPop":3568.2,
   "deathsPerPop":187.4,
   "country":"Suisse"
+ },
+ {
+  "timestamp":1589673600000,
+  "casesPerPop":3393.5,
+  "deathsPerPop":517.8,
+  "country":"Royaume-Uni"
  },
  {
   "timestamp":1589760000000,
@@ -3739,8 +3739,8 @@
  },
  {
   "timestamp":1589760000000,
-  "casesPerPop":4892.4,
-  "deathsPerPop":795.7,
+  "casesPerPop":4901.5,
+  "deathsPerPop":796.0,
   "country":"Belgique"
  },
  {
@@ -3769,15 +3769,15 @@
  },
  {
   "timestamp":1589760000000,
-  "casesPerPop":3656.5,
-  "deathsPerPop":519.7,
-  "country":"Royaume-Uni"
- },
- {
-  "timestamp":1589760000000,
   "casesPerPop":3570.0,
   "deathsPerPop":187.5,
   "country":"Suisse"
+ },
+ {
+  "timestamp":1589760000000,
+  "casesPerPop":3529.8,
+  "deathsPerPop":26.6,
+  "country":"Kowe\u00eft"
  },
  {
   "timestamp":1589846400000,
@@ -3799,8 +3799,8 @@
  },
  {
   "timestamp":1589846400000,
-  "casesPerPop":4919.2,
-  "deathsPerPop":798.7,
+  "casesPerPop":4929.0,
+  "deathsPerPop":799.1,
   "country":"Belgique"
  },
  {
@@ -3835,9 +3835,9 @@
  },
  {
   "timestamp":1589846400000,
-  "casesPerPop":3697.2,
-  "deathsPerPop":522.1,
-  "country":"Royaume-Uni"
+  "casesPerPop":3571.2,
+  "deathsPerPop":187.5,
+  "country":"Suisse"
  },
  {
   "timestamp":1589932800000,
@@ -3854,6 +3854,12 @@
  {
   "timestamp":1589932800000,
   "casesPerPop":4954.6,
+  "deathsPerPop":801.7,
+  "country":"Belgique"
+ },
+ {
+  "timestamp":1589932800000,
+  "casesPerPop":4954.6,
   "deathsPerPop":594.2,
   "country":"Espagne"
  },
@@ -3862,12 +3868,6 @@
   "casesPerPop":4944.9,
   "deathsPerPop":318.3,
   "country":"Irlande"
- },
- {
-  "timestamp":1589932800000,
-  "casesPerPop":4944.0,
-  "deathsPerPop":801.4,
-  "country":"Belgique"
  },
  {
   "timestamp":1589932800000,
@@ -3895,9 +3895,9 @@
  },
  {
   "timestamp":1589932800000,
-  "casesPerPop":3733.4,
-  "deathsPerPop":530.3,
-  "country":"Royaume-Uni"
+  "casesPerPop":3573.6,
+  "deathsPerPop":188.8,
+  "country":"Suisse"
  },
  {
   "timestamp":1590019200000,
@@ -3913,8 +3913,8 @@
  },
  {
   "timestamp":1590019200000,
-  "casesPerPop":4977.3,
-  "deathsPerPop":804.2,
+  "casesPerPop":4988.2,
+  "deathsPerPop":804.5,
   "country":"Belgique"
  },
  {
@@ -3955,9 +3955,9 @@
  },
  {
   "timestamp":1590019200000,
-  "casesPerPop":3725.5,
-  "deathsPerPop":535.7,
-  "country":"Royaume-Uni"
+  "casesPerPop":3578.3,
+  "deathsPerPop":190.6,
+  "country":"Suisse"
  },
  {
   "timestamp":1590105600000,
@@ -3979,8 +3979,8 @@
  },
  {
   "timestamp":1590105600000,
-  "casesPerPop":4983.4,
-  "deathsPerPop":806.7,
+  "casesPerPop":4994.4,
+  "deathsPerPop":807.0,
   "country":"Belgique"
  },
  {
@@ -4015,9 +4015,9 @@
  },
  {
   "timestamp":1590105600000,
-  "casesPerPop":3764.7,
-  "deathsPerPop":540.8,
-  "country":"Royaume-Uni"
+  "casesPerPop":3582.5,
+  "deathsPerPop":191.6,
+  "country":"Suisse"
  },
  {
   "timestamp":1590192000000,
@@ -4039,15 +4039,15 @@
  },
  {
   "timestamp":1590192000000,
-  "casesPerPop":5012.9,
-  "deathsPerPop":611.0,
-  "country":"Espagne"
+  "casesPerPop":5016.0,
+  "deathsPerPop":810.4,
+  "country":"Belgique"
  },
  {
   "timestamp":1590192000000,
-  "casesPerPop":5004.9,
-  "deathsPerPop":809.9,
-  "country":"Belgique"
+  "casesPerPop":5012.9,
+  "deathsPerPop":611.0,
+  "country":"Espagne"
  },
  {
   "timestamp":1590192000000,
@@ -4069,15 +4069,15 @@
  },
  {
   "timestamp":1590192000000,
-  "casesPerPop":3814.0,
-  "deathsPerPop":546.1,
-  "country":"Royaume-Uni"
- },
- {
-  "timestamp":1590192000000,
   "casesPerPop":3788.3,
   "deathsPerPop":540.4,
   "country":"Italie"
+ },
+ {
+  "timestamp":1590192000000,
+  "casesPerPop":3629.0,
+  "deathsPerPop":20.1,
+  "country":"B\u00e9larus"
  },
  {
   "timestamp":1590278400000,
@@ -4099,15 +4099,15 @@
  },
  {
   "timestamp":1590278400000,
-  "casesPerPop":5023.2,
-  "deathsPerPop":612.6,
-  "country":"Espagne"
+  "casesPerPop":5026.7,
+  "deathsPerPop":812.4,
+  "country":"Belgique"
  },
  {
   "timestamp":1590278400000,
-  "casesPerPop":5015.6,
-  "deathsPerPop":812.0,
-  "country":"Belgique"
+  "casesPerPop":5023.2,
+  "deathsPerPop":612.6,
+  "country":"Espagne"
  },
  {
   "timestamp":1590278400000,
@@ -4129,15 +4129,15 @@
  },
  {
   "timestamp":1590278400000,
-  "casesPerPop":3858.4,
-  "deathsPerPop":550.3,
-  "country":"Royaume-Uni"
- },
- {
-  "timestamp":1590278400000,
   "casesPerPop":3799.3,
   "deathsPerPop":542.3,
   "country":"Italie"
+ },
+ {
+  "timestamp":1590278400000,
+  "casesPerPop":3728.6,
+  "deathsPerPop":20.5,
+  "country":"B\u00e9larus"
  },
  {
   "timestamp":1590364800000,
@@ -4165,15 +4165,15 @@
  },
  {
   "timestamp":1590364800000,
-  "casesPerPop":5024.0,
-  "deathsPerPop":327.5,
-  "country":"Irlande"
+  "casesPerPop":5033.2,
+  "deathsPerPop":815.4,
+  "country":"Belgique"
  },
  {
   "timestamp":1590364800000,
-  "casesPerPop":5022.1,
-  "deathsPerPop":815.0,
-  "country":"Belgique"
+  "casesPerPop":5024.0,
+  "deathsPerPop":327.5,
+  "country":"Irlande"
  },
  {
   "timestamp":1590364800000,
@@ -4189,15 +4189,15 @@
  },
  {
   "timestamp":1590364800000,
-  "casesPerPop":3894.5,
-  "deathsPerPop":552.1,
-  "country":"Royaume-Uni"
- },
- {
-  "timestamp":1590364800000,
   "casesPerPop":3829.5,
   "deathsPerPop":21.1,
   "country":"B\u00e9larus"
+ },
+ {
+  "timestamp":1590364800000,
+  "casesPerPop":3808.1,
+  "deathsPerPop":543.2,
+  "country":"Italie"
  },
  {
   "timestamp":1590451200000,
@@ -4225,15 +4225,15 @@
  },
  {
   "timestamp":1590451200000,
-  "casesPerPop":5051.6,
-  "deathsPerPop":298.5,
-  "country":"\u00c9tats-Unis"
+  "casesPerPop":5060.4,
+  "deathsPerPop":817.5,
+  "country":"Belgique"
  },
  {
   "timestamp":1590451200000,
-  "casesPerPop":5048.7,
-  "deathsPerPop":817.1,
-  "country":"Belgique"
+  "casesPerPop":5051.6,
+  "deathsPerPop":298.5,
+  "country":"\u00c9tats-Unis"
  },
  {
   "timestamp":1590451200000,
@@ -4255,9 +4255,9 @@
  },
  {
   "timestamp":1590451200000,
-  "casesPerPop":3918.9,
-  "deathsPerPop":553.9,
-  "country":"Royaume-Uni"
+  "casesPerPop":3904.4,
+  "deathsPerPop":40.2,
+  "country":"Chili"
  },
  {
   "timestamp":1590537600000,
@@ -4291,8 +4291,8 @@
  },
  {
   "timestamp":1590537600000,
-  "casesPerPop":5065.9,
-  "deathsPerPop":820.6,
+  "casesPerPop":5078.1,
+  "deathsPerPop":821.0,
   "country":"Belgique"
  },
  {
@@ -4351,8 +4351,8 @@
  },
  {
   "timestamp":1590624000000,
-  "casesPerPop":5081.7,
-  "deathsPerPop":822.7,
+  "casesPerPop":5093.9,
+  "deathsPerPop":823.1,
   "country":"Belgique"
  },
  {
@@ -4411,8 +4411,8 @@
  },
  {
   "timestamp":1590710400000,
-  "casesPerPop":5095.6,
-  "deathsPerPop":824.6,
+  "casesPerPop":5108.9,
+  "deathsPerPop":825.0,
   "country":"Belgique"
  },
  {
@@ -4471,8 +4471,8 @@
  },
  {
   "timestamp":1590796800000,
-  "casesPerPop":5109.5,
-  "deathsPerPop":825.7,
+  "casesPerPop":5123.3,
+  "deathsPerPop":826.2,
   "country":"Belgique"
  },
  {
@@ -4531,8 +4531,8 @@
  },
  {
   "timestamp":1590883200000,
-  "casesPerPop":5114.7,
-  "deathsPerPop":827.8,
+  "casesPerPop":5128.6,
+  "deathsPerPop":828.3,
   "country":"Belgique"
  },
  {
@@ -4597,8 +4597,8 @@
  },
  {
   "timestamp":1590969600000,
-  "casesPerPop":5118.9,
-  "deathsPerPop":829.5,
+  "casesPerPop":5132.9,
+  "deathsPerPop":830.0,
   "country":"Belgique"
  },
  {
@@ -4663,8 +4663,8 @@
  },
  {
   "timestamp":1591056000000,
-  "casesPerPop":5124.0,
-  "deathsPerPop":831.4,
+  "casesPerPop":5138.0,
+  "deathsPerPop":831.9,
   "country":"Belgique"
  },
  {
@@ -4723,8 +4723,8 @@
  },
  {
   "timestamp":1591142400000,
-  "casesPerPop":5139.5,
-  "deathsPerPop":833.1,
+  "casesPerPop":5153.6,
+  "deathsPerPop":833.7,
   "country":"Belgique"
  },
  {
@@ -4783,8 +4783,8 @@
  },
  {
   "timestamp":1591228800000,
-  "casesPerPop":5153.5,
-  "deathsPerPop":834.9,
+  "casesPerPop":5167.5,
+  "deathsPerPop":835.4,
   "country":"Belgique"
  },
  {
@@ -4843,8 +4843,8 @@
  },
  {
   "timestamp":1591315200000,
-  "casesPerPop":5168.2,
-  "deathsPerPop":836.1,
+  "casesPerPop":5182.1,
+  "deathsPerPop":836.6,
   "country":"Belgique"
  },
  {
@@ -4903,8 +4903,8 @@
  },
  {
   "timestamp":1591401600000,
-  "casesPerPop":5181.7,
-  "deathsPerPop":837.2,
+  "casesPerPop":5195.7,
+  "deathsPerPop":837.7,
   "country":"Belgique"
  },
  {
@@ -4963,8 +4963,8 @@
  },
  {
   "timestamp":1591488000000,
-  "casesPerPop":5187.7,
-  "deathsPerPop":838.1,
+  "casesPerPop":5201.7,
+  "deathsPerPop":838.6,
   "country":"Belgique"
  },
  {
@@ -5023,8 +5023,8 @@
  },
  {
   "timestamp":1591574400000,
-  "casesPerPop":5192.3,
-  "deathsPerPop":839.1,
+  "casesPerPop":5206.3,
+  "deathsPerPop":839.7,
   "country":"Belgique"
  },
  {
@@ -5089,8 +5089,8 @@
  },
  {
   "timestamp":1591660800000,
-  "casesPerPop":5205.4,
-  "deathsPerPop":839.9,
+  "casesPerPop":5219.6,
+  "deathsPerPop":840.5,
   "country":"Belgique"
  },
  {
@@ -5149,8 +5149,8 @@
  },
  {
   "timestamp":1591747200000,
-  "casesPerPop":5218.0,
-  "deathsPerPop":840.8,
+  "casesPerPop":5232.2,
+  "deathsPerPop":841.5,
   "country":"Belgique"
  },
  {
@@ -5209,8 +5209,8 @@
  },
  {
   "timestamp":1591833600000,
-  "casesPerPop":5228.1,
-  "deathsPerPop":841.9,
+  "casesPerPop":5242.4,
+  "deathsPerPop":842.6,
   "country":"Belgique"
  },
  {
@@ -5269,8 +5269,8 @@
  },
  {
   "timestamp":1591920000000,
-  "casesPerPop":5236.3,
-  "deathsPerPop":842.5,
+  "casesPerPop":5250.7,
+  "deathsPerPop":843.2,
   "country":"Belgique"
  },
  {
@@ -5329,8 +5329,8 @@
  },
  {
   "timestamp":1592006400000,
-  "casesPerPop":5244.0,
-  "deathsPerPop":843.3,
+  "casesPerPop":5258.4,
+  "deathsPerPop":844.0,
   "country":"Belgique"
  },
  {
@@ -5395,8 +5395,8 @@
  },
  {
   "timestamp":1592092800000,
-  "casesPerPop":5248.1,
-  "deathsPerPop":843.8,
+  "casesPerPop":5262.7,
+  "deathsPerPop":844.5,
   "country":"Belgique"
  },
  {
@@ -5455,8 +5455,8 @@
  },
  {
   "timestamp":1592179200000,
-  "casesPerPop":5250.0,
-  "deathsPerPop":844.0,
+  "casesPerPop":5264.6,
+  "deathsPerPop":844.7,
   "country":"Belgique"
  },
  {
@@ -5515,8 +5515,8 @@
  },
  {
   "timestamp":1592265600000,
-  "casesPerPop":5263.0,
-  "deathsPerPop":844.7,
+  "casesPerPop":5277.5,
+  "deathsPerPop":845.4,
   "country":"Belgique"
  },
  {
@@ -5575,8 +5575,8 @@
  },
  {
   "timestamp":1592352000000,
-  "casesPerPop":5271.4,
-  "deathsPerPop":845.4,
+  "casesPerPop":5286.0,
+  "deathsPerPop":846.1,
   "country":"Belgique"
  },
  {
@@ -6238,5 +6238,1805 @@
   "casesPerPop":7219.7,
   "deathsPerPop":139.4,
   "country":"Panama"
+ },
+ {
+  "timestamp":1593388800000,
+  "casesPerPop":33337.1,
+  "deathsPerPop":38.8,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1593388800000,
+  "casesPerPop":15662.7,
+  "deathsPerPop":50.6,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1593388800000,
+  "casesPerPop":14351.1,
+  "deathsPerPop":290.7,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1593388800000,
+  "casesPerPop":10682.5,
+  "deathsPerPop":82.7,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1593388800000,
+  "casesPerPop":8594.7,
+  "deathsPerPop":286.6,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1593388800000,
+  "casesPerPop":8495.4,
+  "deathsPerPop":146.4,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1593388800000,
+  "casesPerPop":7746.2,
+  "deathsPerPop":382.3,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1593388800000,
+  "casesPerPop":7668.4,
+  "deathsPerPop":32.8,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1593388800000,
+  "casesPerPop":7487.3,
+  "deathsPerPop":4.5,
+  "country":"Singapour"
+ },
+ {
+  "timestamp":1593388800000,
+  "casesPerPop":7461.8,
+  "deathsPerPop":142.2,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1593475200000,
+  "casesPerPop":33581.8,
+  "deathsPerPop":39.9,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1593475200000,
+  "casesPerPop":15988.0,
+  "deathsPerPop":51.2,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1593475200000,
+  "casesPerPop":14563.0,
+  "deathsPerPop":294.2,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1593475200000,
+  "casesPerPop":10820.8,
+  "deathsPerPop":83.2,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1593475200000,
+  "casesPerPop":8685.4,
+  "deathsPerPop":292.3,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1593475200000,
+  "casesPerPop":8495.4,
+  "deathsPerPop":146.4,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1593475200000,
+  "casesPerPop":7872.5,
+  "deathsPerPop":383.3,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1593475200000,
+  "casesPerPop":7851.3,
+  "deathsPerPop":34.0,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1593475200000,
+  "casesPerPop":7720.6,
+  "deathsPerPop":146.0,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1593475200000,
+  "casesPerPop":7522.1,
+  "deathsPerPop":4.5,
+  "country":"Singapour"
+ },
+ {
+  "timestamp":1593561600000,
+  "casesPerPop":33928.5,
+  "deathsPerPop":39.9,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1593561600000,
+  "casesPerPop":16304.3,
+  "deathsPerPop":53.0,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1593561600000,
+  "casesPerPop":14742.1,
+  "deathsPerPop":300.1,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1593561600000,
+  "casesPerPop":10980.3,
+  "deathsPerPop":84.1,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1593561600000,
+  "casesPerPop":8773.0,
+  "deathsPerPop":297.7,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1593561600000,
+  "casesPerPop":8635.7,
+  "deathsPerPop":149.8,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1593561600000,
+  "casesPerPop":8054.3,
+  "deathsPerPop":35.4,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1593561600000,
+  "casesPerPop":8005.8,
+  "deathsPerPop":387.2,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1593561600000,
+  "casesPerPop":7900.7,
+  "deathsPerPop":148.6,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1593561600000,
+  "casesPerPop":7564.5,
+  "deathsPerPop":4.5,
+  "country":"Singapour"
+ },
+ {
+  "timestamp":1593648000000,
+  "casesPerPop":34251.6,
+  "deathsPerPop":40.6,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1593648000000,
+  "casesPerPop":16704.0,
+  "deathsPerPop":56.1,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1593648000000,
+  "casesPerPop":14881.9,
+  "deathsPerPop":303.6,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1593648000000,
+  "casesPerPop":11157.4,
+  "deathsPerPop":85.1,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1593648000000,
+  "casesPerPop":8873.4,
+  "deathsPerPop":303.3,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1593648000000,
+  "casesPerPop":8812.5,
+  "deathsPerPop":153.2,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1593648000000,
+  "casesPerPop":8280.2,
+  "deathsPerPop":37.2,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1593648000000,
+  "casesPerPop":8164.0,
+  "deathsPerPop":389.2,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1593648000000,
+  "casesPerPop":8115.7,
+  "deathsPerPop":151.9,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1593648000000,
+  "casesPerPop":7601.5,
+  "deathsPerPop":4.5,
+  "country":"Singapour"
+ },
+ {
+  "timestamp":1593734400000,
+  "casesPerPop":34567.3,
+  "deathsPerPop":41.7,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1593734400000,
+  "casesPerPop":16961.7,
+  "deathsPerPop":57.3,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1593734400000,
+  "casesPerPop":15013.7,
+  "deathsPerPop":312.4,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1593734400000,
+  "casesPerPop":11375.8,
+  "deathsPerPop":85.3,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1593734400000,
+  "casesPerPop":9013.0,
+  "deathsPerPop":155.2,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1593734400000,
+  "casesPerPop":8981.8,
+  "deathsPerPop":309.0,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1593734400000,
+  "casesPerPop":8553.8,
+  "deathsPerPop":37.8,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1593734400000,
+  "casesPerPop":8326.3,
+  "deathsPerPop":391.2,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1593734400000,
+  "casesPerPop":8298.0,
+  "deathsPerPop":157.1,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1593734400000,
+  "casesPerPop":7633.9,
+  "deathsPerPop":4.5,
+  "country":"Singapour"
+ },
+ {
+  "timestamp":1593820800000,
+  "casesPerPop":34834.2,
+  "deathsPerPop":42.7,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1593820800000,
+  "casesPerPop":17310.9,
+  "deathsPerPop":57.9,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1593820800000,
+  "casesPerPop":15201.0,
+  "deathsPerPop":319.3,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1593820800000,
+  "casesPerPop":11569.1,
+  "deathsPerPop":85.6,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1593820800000,
+  "casesPerPop":9236.8,
+  "deathsPerPop":158.6,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1593820800000,
+  "casesPerPop":9092.4,
+  "deathsPerPop":314.5,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1593820800000,
+  "casesPerPop":8830.0,
+  "deathsPerPop":38.8,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1593820800000,
+  "casesPerPop":8491.7,
+  "deathsPerPop":393.3,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1593820800000,
+  "casesPerPop":8476.5,
+  "deathsPerPop":164.4,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1593820800000,
+  "casesPerPop":7663.1,
+  "deathsPerPop":4.5,
+  "country":"Singapour"
+ },
+ {
+  "timestamp":1593907200000,
+  "casesPerPop":35021.4,
+  "deathsPerPop":43.4,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1593907200000,
+  "casesPerPop":17583.3,
+  "deathsPerPop":59.1,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1593907200000,
+  "casesPerPop":15399.2,
+  "deathsPerPop":326.7,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1593907200000,
+  "casesPerPop":11719.1,
+  "deathsPerPop":86.8,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1593907200000,
+  "casesPerPop":9432.9,
+  "deathsPerPop":161.3,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1593907200000,
+  "casesPerPop":9199.5,
+  "deathsPerPop":320.3,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1593907200000,
+  "casesPerPop":9066.5,
+  "deathsPerPop":40.8,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1593907200000,
+  "casesPerPop":8709.2,
+  "deathsPerPop":169.6,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1593907200000,
+  "casesPerPop":8629.1,
+  "deathsPerPop":394.1,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1593907200000,
+  "casesPerPop":7694.9,
+  "deathsPerPop":4.5,
+  "country":"Singapour"
+ },
+ {
+  "timestamp":1593993600000,
+  "casesPerPop":35238.9,
+  "deathsPerPop":45.2,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1593993600000,
+  "casesPerPop":17894.0,
+  "deathsPerPop":59.1,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1593993600000,
+  "casesPerPop":15593.7,
+  "deathsPerPop":332.8,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1593993600000,
+  "casesPerPop":11870.7,
+  "deathsPerPop":87.5,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1593993600000,
+  "casesPerPop":9671.6,
+  "deathsPerPop":163.6,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1593993600000,
+  "casesPerPop":9311.4,
+  "deathsPerPop":325.7,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1593993600000,
+  "casesPerPop":9282.0,
+  "deathsPerPop":42.8,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1593993600000,
+  "casesPerPop":8983.8,
+  "deathsPerPop":175.9,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1593993600000,
+  "casesPerPop":8778.3,
+  "deathsPerPop":394.9,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1593993600000,
+  "casesPerPop":7694.9,
+  "deathsPerPop":4.5,
+  "country":"Singapour"
+ },
+ {
+  "timestamp":1594080000000,
+  "casesPerPop":35431.7,
+  "deathsPerPop":47.0,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1594080000000,
+  "casesPerPop":18170.6,
+  "deathsPerPop":59.7,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1594080000000,
+  "casesPerPop":15753.3,
+  "deathsPerPop":336.9,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1594080000000,
+  "casesPerPop":12037.8,
+  "deathsPerPop":88.7,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1594080000000,
+  "casesPerPop":9783.2,
+  "deathsPerPop":166.0,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1594080000000,
+  "casesPerPop":9595.0,
+  "deathsPerPop":43.8,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1594080000000,
+  "casesPerPop":9403.2,
+  "deathsPerPop":331.3,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1594080000000,
+  "casesPerPop":9262.8,
+  "deathsPerPop":181.3,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1594080000000,
+  "casesPerPop":8930.2,
+  "deathsPerPop":396.0,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1594080000000,
+  "casesPerPop":7749.9,
+  "deathsPerPop":4.5,
+  "country":"Singapour"
+ },
+ {
+  "timestamp":1594166400000,
+  "casesPerPop":35643.5,
+  "deathsPerPop":47.3,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1594166400000,
+  "casesPerPop":18475.3,
+  "deathsPerPop":59.7,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1594166400000,
+  "casesPerPop":15883.2,
+  "deathsPerPop":339.5,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1594166400000,
+  "casesPerPop":12180.7,
+  "deathsPerPop":89.6,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1594166400000,
+  "casesPerPop":9901.2,
+  "deathsPerPop":170.1,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1594166400000,
+  "casesPerPop":9848.7,
+  "deathsPerPop":45.0,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1594166400000,
+  "casesPerPop":9513.2,
+  "deathsPerPop":336.9,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1594166400000,
+  "casesPerPop":9488.2,
+  "deathsPerPop":188.2,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1594166400000,
+  "casesPerPop":9104.9,
+  "deathsPerPop":399.6,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1594166400000,
+  "casesPerPop":7906.1,
+  "deathsPerPop":316.2,
+  "country":"Br\u00e9sil"
+ },
+ {
+  "timestamp":1594252800000,
+  "casesPerPop":35858.2,
+  "deathsPerPop":48.7,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1594252800000,
+  "casesPerPop":18847.0,
+  "deathsPerPop":60.9,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1594252800000,
+  "casesPerPop":15992.1,
+  "deathsPerPop":346.8,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1594252800000,
+  "casesPerPop":12361.8,
+  "deathsPerPop":90.1,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1594252800000,
+  "casesPerPop":10091.9,
+  "deathsPerPop":46.8,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1594252800000,
+  "casesPerPop":10082.1,
+  "deathsPerPop":176.1,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1594252800000,
+  "casesPerPop":9714.3,
+  "deathsPerPop":192.9,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1594252800000,
+  "casesPerPop":9624.9,
+  "deathsPerPop":342.4,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1594252800000,
+  "casesPerPop":9283.9,
+  "deathsPerPop":402.1,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1594252800000,
+  "casesPerPop":8117.3,
+  "deathsPerPop":322.0,
+  "country":"Br\u00e9sil"
+ },
+ {
+  "timestamp":1594339200000,
+  "casesPerPop":36054.9,
+  "deathsPerPop":50.1,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1594339200000,
+  "casesPerPop":19210.8,
+  "deathsPerPop":62.8,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1594339200000,
+  "casesPerPop":16157.4,
+  "deathsPerPop":352.6,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1594339200000,
+  "casesPerPop":12559.8,
+  "deathsPerPop":90.8,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1594339200000,
+  "casesPerPop":10397.0,
+  "deathsPerPop":47.4,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1594339200000,
+  "casesPerPop":10259.9,
+  "deathsPerPop":180.9,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1594339200000,
+  "casesPerPop":9941.5,
+  "deathsPerPop":197.6,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1594339200000,
+  "casesPerPop":9733.7,
+  "deathsPerPop":348.0,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1594339200000,
+  "casesPerPop":9475.4,
+  "deathsPerPop":405.1,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1594339200000,
+  "casesPerPop":8319.3,
+  "deathsPerPop":327.8,
+  "country":"Br\u00e9sil"
+ },
+ {
+  "timestamp":1594425600000,
+  "casesPerPop":36238.5,
+  "deathsPerPop":51.6,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1594425600000,
+  "casesPerPop":19522.1,
+  "deathsPerPop":63.4,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1594425600000,
+  "casesPerPop":16318.8,
+  "deathsPerPop":357.8,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1594425600000,
+  "casesPerPop":12735.7,
+  "deathsPerPop":91.0,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1594425600000,
+  "casesPerPop":10776.7,
+  "deathsPerPop":49.0,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1594425600000,
+  "casesPerPop":10448.2,
+  "deathsPerPop":184.6,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1594425600000,
+  "casesPerPop":10186.7,
+  "deathsPerPop":203.2,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1594425600000,
+  "casesPerPop":9832.1,
+  "deathsPerPop":353.7,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1594425600000,
+  "casesPerPop":9677.8,
+  "deathsPerPop":407.5,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1594425600000,
+  "casesPerPop":8532.7,
+  "deathsPerPop":333.6,
+  "country":"Br\u00e9sil"
+ },
+ {
+  "timestamp":1594512000000,
+  "casesPerPop":36414.3,
+  "deathsPerPop":51.6,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1594512000000,
+  "casesPerPop":19784.7,
+  "deathsPerPop":63.4,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1594512000000,
+  "casesPerPop":16464.1,
+  "deathsPerPop":363.1,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1594512000000,
+  "casesPerPop":12849.3,
+  "deathsPerPop":91.8,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1594512000000,
+  "casesPerPop":10994.4,
+  "deathsPerPop":49.8,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1594512000000,
+  "casesPerPop":10613.6,
+  "deathsPerPop":189.0,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1594512000000,
+  "casesPerPop":10439.8,
+  "deathsPerPop":210.3,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1594512000000,
+  "casesPerPop":9926.3,
+  "deathsPerPop":359.3,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1594512000000,
+  "casesPerPop":9869.4,
+  "deathsPerPop":409.7,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1594512000000,
+  "casesPerPop":8717.6,
+  "deathsPerPop":338.6,
+  "country":"Br\u00e9sil"
+ },
+ {
+  "timestamp":1594598400000,
+  "casesPerPop":36580.3,
+  "deathsPerPop":51.9,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1594598400000,
+  "casesPerPop":20071.7,
+  "deathsPerPop":66.4,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1594598400000,
+  "casesPerPop":16623.1,
+  "deathsPerPop":368.2,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1594598400000,
+  "casesPerPop":13048.0,
+  "deathsPerPop":92.7,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1594598400000,
+  "casesPerPop":11259.3,
+  "deathsPerPop":51.7,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1594598400000,
+  "casesPerPop":10808.6,
+  "deathsPerPop":191.0,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1594598400000,
+  "casesPerPop":10746.2,
+  "deathsPerPop":214.1,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1594598400000,
+  "casesPerPop":10043.4,
+  "deathsPerPop":410.9,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1594598400000,
+  "casesPerPop":10037.6,
+  "deathsPerPop":365.1,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1594598400000,
+  "casesPerPop":8835.3,
+  "deathsPerPop":341.6,
+  "country":"Br\u00e9sil"
+ },
+ {
+  "timestamp":1594684800000,
+  "casesPerPop":36727.9,
+  "deathsPerPop":52.6,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1594684800000,
+  "casesPerPop":20397.7,
+  "deathsPerPop":66.4,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1594684800000,
+  "casesPerPop":16761.1,
+  "deathsPerPop":370.6,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1594684800000,
+  "casesPerPop":13194.0,
+  "deathsPerPop":93.4,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1594684800000,
+  "casesPerPop":11694.3,
+  "deathsPerPop":52.1,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1594684800000,
+  "casesPerPop":11108.8,
+  "deathsPerPop":219.5,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1594684800000,
+  "casesPerPop":10870.2,
+  "deathsPerPop":193.7,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1594684800000,
+  "casesPerPop":10220.0,
+  "deathsPerPop":412.1,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1594684800000,
+  "casesPerPop":10154.4,
+  "deathsPerPop":370.8,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1594684800000,
+  "casesPerPop":8931.4,
+  "deathsPerPop":345.1,
+  "country":"Br\u00e9sil"
+ },
+ {
+  "timestamp":1594771200000,
+  "casesPerPop":36910.4,
+  "deathsPerPop":53.0,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1594771200000,
+  "casesPerPop":20764.5,
+  "deathsPerPop":67.6,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1594771200000,
+  "casesPerPop":16858.0,
+  "deathsPerPop":373.0,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1594771200000,
+  "casesPerPop":13352.3,
+  "deathsPerPop":94.1,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1594771200000,
+  "casesPerPop":11973.5,
+  "deathsPerPop":54.9,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1594771200000,
+  "casesPerPop":11326.2,
+  "deathsPerPop":226.1,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1594771200000,
+  "casesPerPop":10984.8,
+  "deathsPerPop":196.4,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1594771200000,
+  "casesPerPop":10428.3,
+  "deathsPerPop":414.7,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1594771200000,
+  "casesPerPop":10269.5,
+  "deathsPerPop":376.2,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1594771200000,
+  "casesPerPop":9129.7,
+  "deathsPerPop":351.3,
+  "country":"Br\u00e9sil"
+ },
+ {
+  "timestamp":1594857600000,
+  "casesPerPop":37069.3,
+  "deathsPerPop":53.3,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1594857600000,
+  "casesPerPop":21058.2,
+  "deathsPerPop":71.3,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1594857600000,
+  "casesPerPop":16948.3,
+  "deathsPerPop":379.2,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1594857600000,
+  "casesPerPop":13519.4,
+  "deathsPerPop":94.8,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1594857600000,
+  "casesPerPop":12311.0,
+  "deathsPerPop":56.5,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1594857600000,
+  "casesPerPop":11596.3,
+  "deathsPerPop":231.3,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1594857600000,
+  "casesPerPop":11158.9,
+  "deathsPerPop":200.2,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1594857600000,
+  "casesPerPop":10634.0,
+  "deathsPerPop":417.6,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1594857600000,
+  "casesPerPop":10388.2,
+  "deathsPerPop":381.9,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1594857600000,
+  "casesPerPop":9318.9,
+  "deathsPerPop":357.1,
+  "country":"Br\u00e9sil"
+ },
+ {
+  "timestamp":1594944000000,
+  "casesPerPop":37233.2,
+  "deathsPerPop":53.7,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1594944000000,
+  "casesPerPop":21377.5,
+  "deathsPerPop":73.7,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1594944000000,
+  "casesPerPop":17079.9,
+  "deathsPerPop":384.7,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1594944000000,
+  "casesPerPop":13707.4,
+  "deathsPerPop":95.6,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1594944000000,
+  "casesPerPop":12577.7,
+  "deathsPerPop":58.3,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1594944000000,
+  "casesPerPop":11862.4,
+  "deathsPerPop":235.5,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1594944000000,
+  "casesPerPop":11346.2,
+  "deathsPerPop":205.2,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1594944000000,
+  "casesPerPop":10867.8,
+  "deathsPerPop":420.5,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1594944000000,
+  "casesPerPop":10507.0,
+  "deathsPerPop":388.0,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1594944000000,
+  "casesPerPop":9534.0,
+  "deathsPerPop":363.4,
+  "country":"Br\u00e9sil"
+ },
+ {
+  "timestamp":1595030400000,
+  "casesPerPop":37392.4,
+  "deathsPerPop":54.0,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1595030400000,
+  "casesPerPop":21614.5,
+  "deathsPerPop":75.6,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1595030400000,
+  "casesPerPop":17229.8,
+  "deathsPerPop":440.4,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1595030400000,
+  "casesPerPop":13838.8,
+  "deathsPerPop":96.0,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1595030400000,
+  "casesPerPop":12903.1,
+  "deathsPerPop":59.9,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1595030400000,
+  "casesPerPop":12106.1,
+  "deathsPerPop":244.4,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1595030400000,
+  "casesPerPop":11495.6,
+  "deathsPerPop":209.6,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1595030400000,
+  "casesPerPop":11085.1,
+  "deathsPerPop":423.2,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1595030400000,
+  "casesPerPop":10628.5,
+  "deathsPerPop":393.7,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1595030400000,
+  "casesPerPop":9696.0,
+  "deathsPerPop":368.9,
+  "country":"Br\u00e9sil"
+ },
+ {
+  "timestamp":1595116800000,
+  "casesPerPop":37537.2,
+  "deathsPerPop":54.4,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1595116800000,
+  "casesPerPop":21938.1,
+  "deathsPerPop":75.6,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1595116800000,
+  "casesPerPop":17229.8,
+  "deathsPerPop":440.4,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1595116800000,
+  "casesPerPop":14001.2,
+  "deathsPerPop":96.7,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1595116800000,
+  "casesPerPop":13166.7,
+  "deathsPerPop":61.9,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1595116800000,
+  "casesPerPop":12307.0,
+  "deathsPerPop":252.2,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1595116800000,
+  "casesPerPop":11651.5,
+  "deathsPerPop":213.3,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1595116800000,
+  "casesPerPop":11278.8,
+  "deathsPerPop":425.8,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1595116800000,
+  "casesPerPop":10750.4,
+  "deathsPerPop":399.8,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1595116800000,
+  "casesPerPop":9831.2,
+  "deathsPerPop":373.2,
+  "country":"Br\u00e9sil"
+ },
+ {
+  "timestamp":1595203200000,
+  "casesPerPop":37657.2,
+  "deathsPerPop":55.4,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1595203200000,
+  "casesPerPop":22192.8,
+  "deathsPerPop":76.8,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1595203200000,
+  "casesPerPop":17461.4,
+  "deathsPerPop":448.7,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1595203200000,
+  "casesPerPop":14072.5,
+  "deathsPerPop":97.0,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1595203200000,
+  "casesPerPop":13399.2,
+  "deathsPerPop":63.9,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1595203200000,
+  "casesPerPop":12591.3,
+  "deathsPerPop":258.1,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1595203200000,
+  "casesPerPop":11791.8,
+  "deathsPerPop":216.7,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1595203200000,
+  "casesPerPop":11466.6,
+  "deathsPerPop":427.1,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1595203200000,
+  "casesPerPop":10876.2,
+  "deathsPerPop":405.6,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1595203200000,
+  "casesPerPop":9942.6,
+  "deathsPerPop":376.6,
+  "country":"Br\u00e9sil"
+ },
+ {
+  "timestamp":1595289600000,
+  "casesPerPop":37794.6,
+  "deathsPerPop":56.1,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1595289600000,
+  "casesPerPop":22506.0,
+  "deathsPerPop":78.0,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1595289600000,
+  "casesPerPop":17572.2,
+  "deathsPerPop":455.5,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1595289600000,
+  "casesPerPop":14205.3,
+  "deathsPerPop":97.0,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1595289600000,
+  "casesPerPop":13748.8,
+  "deathsPerPop":65.5,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1595289600000,
+  "casesPerPop":12816.9,
+  "deathsPerPop":265.4,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1595289600000,
+  "casesPerPop":11827.0,
+  "deathsPerPop":219.8,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1595289600000,
+  "casesPerPop":11639.1,
+  "deathsPerPop":428.2,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1595289600000,
+  "casesPerPop":11002.0,
+  "deathsPerPop":411.7,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1595289600000,
+  "casesPerPop":10038.6,
+  "deathsPerPop":379.6,
+  "country":"Br\u00e9sil"
+ },
+ {
+  "timestamp":1595376000000,
+  "casesPerPop":37933.4,
+  "deathsPerPop":56.5,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1595376000000,
+  "casesPerPop":22737.5,
+  "deathsPerPop":78.6,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1595376000000,
+  "casesPerPop":17659.5,
+  "deathsPerPop":457.8,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1595376000000,
+  "casesPerPop":14364.8,
+  "deathsPerPop":97.9,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1595376000000,
+  "casesPerPop":14047.7,
+  "deathsPerPop":67.7,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1595376000000,
+  "casesPerPop":12988.1,
+  "deathsPerPop":272.9,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1595376000000,
+  "casesPerPop":12067.7,
+  "deathsPerPop":229.2,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1595376000000,
+  "casesPerPop":11858.0,
+  "deathsPerPop":431.7,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1595376000000,
+  "casesPerPop":11137.6,
+  "deathsPerPop":417.7,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1595376000000,
+  "casesPerPop":10232.9,
+  "deathsPerPop":386.1,
+  "country":"Br\u00e9sil"
+ },
+ {
+  "timestamp":1595462400000,
+  "casesPerPop":38089.1,
+  "deathsPerPop":57.6,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1595462400000,
+  "casesPerPop":22933.1,
+  "deathsPerPop":79.2,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1595462400000,
+  "casesPerPop":17750.2,
+  "deathsPerPop":460.2,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1595462400000,
+  "casesPerPop":14543.4,
+  "deathsPerPop":99.1,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1595462400000,
+  "casesPerPop":14381.3,
+  "deathsPerPop":70.2,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1595462400000,
+  "casesPerPop":13165.4,
+  "deathsPerPop":277.9,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1595462400000,
+  "casesPerPop":12226.3,
+  "deathsPerPop":232.6,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1595462400000,
+  "casesPerPop":12067.2,
+  "deathsPerPop":435.1,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1595462400000,
+  "casesPerPop":11274.8,
+  "deathsPerPop":423.5,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1595462400000,
+  "casesPerPop":10554.5,
+  "deathsPerPop":392.2,
+  "country":"Br\u00e9sil"
+ },
+ {
+  "timestamp":1595548800000,
+  "casesPerPop":38220.8,
+  "deathsPerPop":57.9,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1595548800000,
+  "casesPerPop":23151.9,
+  "deathsPerPop":81.6,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1595548800000,
+  "casesPerPop":17874.5,
+  "deathsPerPop":466.3,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1595548800000,
+  "casesPerPop":14706.6,
+  "deathsPerPop":100.1,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1595548800000,
+  "casesPerPop":14602.2,
+  "deathsPerPop":71.4,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1595548800000,
+  "casesPerPop":13379.9,
+  "deathsPerPop":284.7,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1595548800000,
+  "casesPerPop":12378.8,
+  "deathsPerPop":234.0,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1595548800000,
+  "casesPerPop":12259.3,
+  "deathsPerPop":438.3,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1595548800000,
+  "casesPerPop":11414.7,
+  "deathsPerPop":543.0,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1595548800000,
+  "casesPerPop":10838.6,
+  "deathsPerPop":398.4,
+  "country":"Br\u00e9sil"
+ },
+ {
+  "timestamp":1595635200000,
+  "casesPerPop":38359.9,
+  "deathsPerPop":57.9,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1595635200000,
+  "casesPerPop":23433.4,
+  "deathsPerPop":82.9,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1595635200000,
+  "casesPerPop":18008.8,
+  "deathsPerPop":470.3,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1595635200000,
+  "casesPerPop":14885.6,
+  "deathsPerPop":101.0,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1595635200000,
+  "casesPerPop":14832.4,
+  "deathsPerPop":72.2,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1595635200000,
+  "casesPerPop":13656.9,
+  "deathsPerPop":294.4,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1595635200000,
+  "casesPerPop":12508.2,
+  "deathsPerPop":236.7,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1595635200000,
+  "casesPerPop":12497.6,
+  "deathsPerPop":442.3,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1595635200000,
+  "casesPerPop":11564.3,
+  "deathsPerPop":548.8,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1595635200000,
+  "casesPerPop":11103.4,
+  "deathsPerPop":403.9,
+  "country":"Br\u00e9sil"
+ },
+ {
+  "timestamp":1595721600000,
+  "casesPerPop":38500.4,
+  "deathsPerPop":57.9,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1595721600000,
+  "casesPerPop":23609.5,
+  "deathsPerPop":83.5,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1595721600000,
+  "casesPerPop":18129.6,
+  "deathsPerPop":475.9,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1595721600000,
+  "casesPerPop":15048.2,
+  "deathsPerPop":102.0,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1595721600000,
+  "casesPerPop":15046.9,
+  "deathsPerPop":74.6,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1595721600000,
+  "casesPerPop":13862.0,
+  "deathsPerPop":300.3,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1595721600000,
+  "casesPerPop":12696.7,
+  "deathsPerPop":445.1,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1595721600000,
+  "casesPerPop":12616.8,
+  "deathsPerPop":238.4,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1595721600000,
+  "casesPerPop":11685.0,
+  "deathsPerPop":554.6,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1595721600000,
+  "casesPerPop":11345.7,
+  "deathsPerPop":409.6,
+  "country":"Br\u00e9sil"
+ },
+ {
+  "timestamp":1595808000000,
+  "casesPerPop":38595.4,
+  "deathsPerPop":58.3,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1595808000000,
+  "casesPerPop":23843.4,
+  "deathsPerPop":85.3,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1595808000000,
+  "casesPerPop":18245.5,
+  "deathsPerPop":480.8,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1595808000000,
+  "casesPerPop":15277.4,
+  "deathsPerPop":77.2,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1595808000000,
+  "casesPerPop":15158.5,
+  "deathsPerPop":102.9,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1595808000000,
+  "casesPerPop":14199.2,
+  "deathsPerPop":304.7,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1595808000000,
+  "casesPerPop":12866.8,
+  "deathsPerPop":446.5,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1595808000000,
+  "casesPerPop":12641.5,
+  "deathsPerPop":240.4,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1595808000000,
+  "casesPerPop":11836.1,
+  "deathsPerPop":560.7,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1595808000000,
+  "casesPerPop":11462.2,
+  "deathsPerPop":412.2,
+  "country":"Br\u00e9sil"
+ },
+ {
+  "timestamp":1595894400000,
+  "casesPerPop":38698.5,
+  "deathsPerPop":58.3,
+  "country":"Qatar"
+ },
+ {
+  "timestamp":1595894400000,
+  "casesPerPop":24057.3,
+  "deathsPerPop":85.9,
+  "country":"Bahre\u00efn"
+ },
+ {
+  "timestamp":1595894400000,
+  "casesPerPop":18358.1,
+  "deathsPerPop":484.8,
+  "country":"Chili"
+ },
+ {
+  "timestamp":1595894400000,
+  "casesPerPop":15489.1,
+  "deathsPerPop":79.0,
+  "country":"Oman"
+ },
+ {
+  "timestamp":1595894400000,
+  "casesPerPop":15302.5,
+  "deathsPerPop":104.1,
+  "country":"Kowe\u00eft"
+ },
+ {
+  "timestamp":1595894400000,
+  "casesPerPop":14469.1,
+  "deathsPerPop":311.3,
+  "country":"Panama"
+ },
+ {
+  "timestamp":1595894400000,
+  "casesPerPop":13037.7,
+  "deathsPerPop":449.8,
+  "country":"\u00c9tats-Unis"
+ },
+ {
+  "timestamp":1595894400000,
+  "casesPerPop":12722.3,
+  "deathsPerPop":243.1,
+  "country":"Arm\u00e9nie"
+ },
+ {
+  "timestamp":1595894400000,
+  "casesPerPop":11987.4,
+  "deathsPerPop":566.5,
+  "country":"P\u00e9rou"
+ },
+ {
+  "timestamp":1595894400000,
+  "casesPerPop":11572.5,
+  "deathsPerPop":415.2,
+  "country":"Br\u00e9sil"
  }
 ]
