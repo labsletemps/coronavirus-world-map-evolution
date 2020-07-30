@@ -164,7 +164,7 @@ class multilineChart {
     }else{
       this.yaxis = d3.axisLeft().scale(this.yscale).tickFormat( d3.format(this.yTickFormat) );
     }
-    console.log(this.yTickFormat)
+
     this.g_xaxis = this.g.append("g").attr("class", "x axis").attr("transform", "translate(0," + this.height + ")");
     this.g_yaxis = this.g.append("g").attr("class", "y axis");
   }
@@ -444,7 +444,7 @@ class multilineChart {
       xLabel = d3.timeFormat("%d %b")(xValue);
       // this.xTickFormat = this.width > 600 ? d3.timeFormat("%d %b") : d3.timeFormat('%d.%m')
     } else {
-      xLabel = 'Jour ' + d3.format(this.xTickFormat)(xValue);
+      xLabel = 'Jour ' + d3.format('d')(xValue);
     }
 
     valuesToShow.sort(function(x, y){
@@ -471,8 +471,12 @@ class multilineChart {
       .append('div')
       .html(d => {
         // todo: couleur suisse
-        // return '<span style="color: ' + theChart.zscale(d.country) + ';">' + d.country + '</span>: ' + d.value.toLocaleString();
-        return d.country + ': ' + d.value.toLocaleString();
+        if(d.country === 'Suisse'){
+          return '<span style="color: #b80021;">' + d.country + '</span>: ' + d.value.toLocaleString();
+        }else{
+          return '<span style="color: ' + theChart.zscale(d.country) + ';">' + d.country + '</span>: ' + d.value.toLocaleString();
+        }
+        // return d.country + ': ' + d.value.toLocaleString();
       })
   }
 
