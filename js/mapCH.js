@@ -504,7 +504,8 @@
 					type: 'line',
 					x: 'timestamp',
 					colors: {
-						'Nouveaux décès': '#930025'
+						'Nouveaux décès': '#930025',
+						'Nombre de cas hospitalisés': '#54aac3',
 					}
 				},
 		    point: {
