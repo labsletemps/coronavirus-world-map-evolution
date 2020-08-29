@@ -30,63 +30,37 @@
 	var dateCounter = 0;
 	var availableDates = [];
 	var selectedDates = [
-		'2020-02-25',
-		'2020-02-26',
-		'2020-02-27',
-		'2020-03-06',
-		'2020-03-19', // VD > 1000 cas
-		'2020-03-23', // ZH
-		'2020-03-31', // GE devant le Tessin en valeurs relatives
-		'2020-06-29',
+		'2020-02-24',
+		'2020-03-05',
+		'2020-03-07',
+		'2020-03-17', // VD > 1000 cas (précédents chiffres: se produisait le 19 mars)
+		'2020-03-21', // ZH (précédents chiffres: 23 mars)
+		'2020-07-21', // GE devant le Tessin en valeurs relatives
 	];
 	var explainLabels = new Map();
 
-	explainLabels.set('2020-02-25',
-		[{'dx': 100, 'dy': 80, 'canton': 'TI', 'label': 'Le premier cas est détecté au Tessin', 'title': '25 février', 'lat': 46.331734, 'lng': 8.8004529}
+	explainLabels.set('2020-02-24',
+		[{'dx': 100, 'dy': 80, 'canton': 'TI', 'label': 'Premier cas confirmé au Tessin: un septuagénaire a été infecté en Italie', 'title': '24 février', 'lat': 46.331734, 'lng': 8.8004529}
 	]);
 
-	explainLabels.set('2020-02-26',
-		[{'dx': 10, 'dy': -300, 'canton': 'GE', 'label': 'Un second est confirmé à Genève', 'title': '26 février', 'lat': 46.2043907, 'lng': 6.1431577}]
-	);
-
-	explainLabels.set('2020-02-27', [
-		{'dx': 20, 'dy': 60, 'canton': 'BS', 'label': 'Un cas à Bâle-Ville', 'title': '27 février', 'lat': 47.5619253, 'lng': 7.592768},
-		{'dx': 0, 'dy': 90, 'canton': 'JU', 'label': 'Un cas dans le Jura', 'title': '27 février', 'lat': 47.38444474, 'lng': 7.2430608},
-		{'dx': 300, 'dy': 10, 'canton': 'ZH', 'label': 'Deux cas à Zurich', 'title': '27 février', 'lat': 47.3768866, 'lng': 8.541694}
-	]);
-
-	explainLabels.set('2020-03-06', [
+	explainLabels.set('2020-03-05', [
 		{'dx': -10, 'dy': -100, 'canton': 'VD', 'label': 'Premier décès en Suisse, au CHUV', 'title': '5 mars', 'lat': 46.5613135, 'lng': 6.536765},
-		{'dx': 300, 'dy': 10, 'canton': 'ZH', 'label': 'Zurich compte 30 cas', 'title': '6 mars', 'lat': 47.3768866, 'lng': 8.541694}
+	]);
+	explainLabels.set('2020-03-07', [
+		{'dx': 300, 'dy': 10, 'canton': 'ZH', 'label': 'Zurich compte 36 cas cumulés', 'title': '7 mars', 'lat': 47.3768866, 'lng': 8.541694}
 	]);
 
-
-	// explainLabels.set('2020-03-03', {'canton': 'JU', 'label': 'Jura', 'title': '26 février', 'lat': 46.2043907, 'lng': 6.1431577});
-
-	/*explainLabels.set('2020-03-05',
-	[{'dx': -10, 'dy': -100, 'canton': 'VD', 'label': 'Premier décès en Suisse, au CHUV', 'title': '5 mars', 'lat': 46.5613135, 'lng': 6.536765}]
-);*/
-
-
-	explainLabels.set('2020-03-19',
-		[{'dx': -10, 'dy': -90, 'canton': 'VD', 'label': 'Vaud dépasse 1000 cas confirmés', 'title': '19 mars', 'lat': 46.5613135, 'lng': 6.536765}]
+	explainLabels.set('2020-03-17',
+		[{'dx': -10, 'dy': -90, 'canton': 'VD', 'label': 'Vaud dépasse 1000 cas confirmés', 'title': '17 mars', 'lat': 46.5613135, 'lng': 6.536765}]
 	);
 
-	explainLabels.set('2020-03-23',
+	explainLabels.set('2020-03-21',
 		[{'dx': 300, 'dy': 10, 'canton': 'ZH', 'label': '1000e cas confirmé à Zurich', 'title': '23 mars', 'lat': 47.3768866, 'lng': 8.541694}]
 	);
 
-	explainLabels.set('2020-03-31',
-		[{'dx': 60, 'dy': 20, 'canton': 'GE', 'label': 'En taux par habitant, Genève dépasse le Tessin', 'title': '31 mars', 'lat': 46.2043907, 'lng': 6.1431577}]
+	explainLabels.set('2020-07-21',
+		[{'dx': 60, 'dy': 20, 'canton': 'GE', 'label': 'Plusieurs jours d’affilée, Genève compte plus de 20 cas quotidiens', 'title': 'Juillet', 'lat': 46.2043907, 'lng': 6.1431577}]
 	);
-
-	explainLabels.set('2020-06-29',
-	[
-		{'dx': -10, 'dy': -90, 'canton': 'VD', 'label': 'Vaud reste le canton qui compte le plus de cas confirmés', 'title': '29 juin', 'lat': 46.5613135, 'lng': 6.536765},
-		//{'dx': -10, 'dy': -100, 'canton': 'VD', 'label': 'Appenzell Rhodes-Intérieures est celui qui en compte le moins', 'title': '14 avril', 'lat': 46.5613135, 'lng': 6.536765}
-	]);
-
-
 
 	var margin = {top: 0, right: 10, bottom: 10, left: 10};
 
@@ -99,23 +73,25 @@
 	    .translate([ width/2, height/2 ]);
 	var dataById = d3.map();
 
-	Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?1593517752146")]).then(function(data) {
+	Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?1598530572912")]).then(function(data) {
 		var geodata = data[0];
 		var data = data[1];
 
 
 		data.forEach(function(d) {
 			d.no = +d.no;
-			d.confirmed = +d.confirmed;
+			d.confirmed_daily = +d.confirmed_daily;
+			d.confirmed_sum = +d.confirmed_sum;
 			d.n = +d.n;
-			d.taux = +d.taux;
+			d.daily_rate = +d.daily_rate;
+			d.sum_rate = +d.sum_rate;
 			if( availableDates.indexOf( d['date'] ) == -1 ){
 				availableDates.push( d['date'] );
 			}
 			dataById.set(d.no, d);
 		});
 
-		var valueExtent = d3.extent(data, function(d) { return +d.taux; })
+		var valueExtent = d3.extent(data, function(d) { return +d.daily_rate; })
 		var colorScale = d3.scaleSqrt()
 		.domain(valueExtent)
 		.range(["#27751D", "#C22E1D"]);
@@ -138,7 +114,7 @@
 				}else{
 					var rows = data.filter(function(e){ return (e.no == d.properties.KANTONSNUM && e.timestamp == current_timestamp)} );
 					if(rows.length > 0){
-						return colorScale(rows[0].taux);
+						return colorScale(rows[0].daily_rate);
 					}else{
 						console.log('Error for', d.properties.KANTONSNUM)
 						return '#ccc';
@@ -186,7 +162,7 @@
 						if(showAbsoluteValues){
 							return '#888';
 						}else{
-							return colorScale(data.filter(function(e){ return (e.no == d.properties.KANTONSNUM && e.timestamp == current_timestamp)} )[0].taux);
+							return colorScale(data.filter(function(e){ return (e.no == d.properties.KANTONSNUM && e.timestamp == current_timestamp)} )[0].daily_rate);
 						}
 					});
 
@@ -246,7 +222,7 @@
 							textGroup.append("text")
 								.attr("text-anchor", "middle")
 								.attr("dy", 20)
-							    .text(function(d) { return 'Taux: ' + d.taux; });
+							    .text(function(d) { return 'Taux: ' + d.daily_rate; });
 
 					textGroup.select("text")
 					.transition()
@@ -292,7 +268,7 @@
 					textGroup.append("text")
 						.attr("text-anchor", "middle")
 						.attr("dy", 20)
-							.text(function(d) { return 'Taux: ' + d.taux; });
+							.text(function(d) { return 'Taux: ' + d.daily_rate; });
 
 					textGroup.select("circle")
 					.transition()
@@ -316,7 +292,7 @@
 
 				// legends
 				if(!showAbsoluteValues){
-					var labels = [10, 100, 200, 500, 800]
+					var labels = [0.1, 0.5, 1.0, 5.0, 10.0]
 					var size_l = 20
 					var distance_from_top = height * 0.2;
 					// Legend title
@@ -326,7 +302,7 @@
 							.attr("x", 20)
 							.attr("y", distance_from_top - labels.length*(size_l+5) + (size_l/2))
 							.attr("width", 90)
-							.text("Taux pour 100 000 habitants")
+							.text("Nouveaux cas pour 100 000 habitants")
 							.style('font-size', '16px')
 
 					// Add one dot in the legend for each name.
@@ -412,8 +388,10 @@
 					addendum = '<p><span class="stats">Pas de données pour cette date:</span> les données du jour précédent sont indiquées</p>';
 				}
 				return `<h4>${d.name}</h4>
-					<p><span class="stats">Cas confirmés cumulés:</span> ${parseInt( d.confirmed )}</p>
-					<p><span class="stats">Taux pour 100 000 habitants:</span> ${d.taux} (soit ${d.perc}%)</p>
+					<p><span class="stats">Nouveaux cas:</span> ${parseInt( d.confirmed_daily )}</p>
+					<p><span class="stats">Taux pour 100 000 habitants:</span> ${d.daily_rate}</p>
+					<p><span class="stats">Cas confirmés cumulés:</span> ${parseInt( d.confirmed_sum )}</p>
+					<p><span class="stats">Taux pour 100 000 habitants:</span> ${d.sum_rate} (soit ${d.sum_perc}%)</p>
 					${addendum}
 					<p><span class="stats">Date:</span> ${ timeFormat( new Date(d.timestamp) ) }</p>
 
@@ -522,13 +500,17 @@
 				bindto: "#time-serie-chart-ch",
 
 				data: {
-					url: 'data/c3-linegraph-ch.csv?1593517752146',
+					url: 'data/c3-linegraph-ch.csv?1598530572912',
 					type: 'line',
 					x: 'timestamp',
 					colors: {
-						'Infections confirmées': '#930025'
+						'Nouveaux décès': '#930025',
+						'Nombre de cas hospitalisés': '#54aac3',
 					}
 				},
+		    point: {
+		        show: true // ($(window).width() > 600)
+		    },
 				axis: {
 					x: {
 						type: 'timeseries',

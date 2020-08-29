@@ -15,6 +15,7 @@ with open( 'index.html.twig' , 'r') as f:
     content = content.replace('UPDATE', now)
 
     content = content.replace('_TODAY_', today_timestamp)
+    content = content.replace('_YESTERDAY_', yesterday_timestamp)
 
     with open( 'update/index.html.twig', 'w') as fp:
         fp.write( content )
