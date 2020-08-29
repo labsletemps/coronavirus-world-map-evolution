@@ -571,3 +571,11 @@ select:focus, textarea:focus, input:focus {
 	stroke: #FF0D83;
 	stroke-width: 2px;
 }
+.toggle{
+	position: absolute;
+  right: 6px;
+  top: 6px;
+}
+.toggle label{
+	/* margin-right: 30px; */
+}

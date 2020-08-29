@@ -24,6 +24,8 @@ class multilineChart {
     this.xMin = opts.xMin ? opts.xMin : false;
     this.yMax = opts.yMax ? opts.yMax : false;
     this.straightLine = opts.straightLine ? opts.straightLine : false;
+    this.weekly = opts.weekly ? opts.weekly : false;
+    this.colors = opts.colors ? opts.colors : null;
 
     if(this.hideLabel === true){
       this.margin.right = this.margin.left;
@@ -72,6 +74,23 @@ class multilineChart {
       this.g = svg.append("g").attr("transform", `translate(${this.margin.left},${this.margin.top})`);
     }
     this.createScales();
+    this.fetch();
+  }
+
+  setLogScale(useLogScale){
+    this.g.selectAll('.country').remove();
+    this.g.selectAll('.axis').remove();
+    this.logScale = useLogScale;
+    // TODO: animate
+    // this.yaxis.scale(this.yscale());
+    this.createScales();
+    this.draw();
+  }
+  setData(name, file){
+    // todo: don’t reload
+    // and animate change
+    this.g.selectAll('.country').remove();
+    this.file = file;
     this.fetch();
   }
 
@@ -150,7 +169,11 @@ class multilineChart {
     }else{
       this.yscale = d3.scaleLinear().range([this.height, 0]);
     }
-    this.zscale = d3.scaleOrdinal(d3.schemeCategory10);
+    if(this.colors !== null){
+      this.zscale = d3.scaleOrdinal().range(this.colors);
+    }else{
+      this.zscale = d3.scaleOrdinal(d3.schemeCategory10);
+    }
 
     // Axis setup
     if(this.timeScale){
@@ -441,7 +464,7 @@ class multilineChart {
 
     var xLabel = '';
     if(this.timeScale){
-      xLabel = d3.timeFormat("%d %b")(xValue);
+      xLabel = (this.weekly ? 'Semaine du ' : '') + d3.timeFormat("%d %b")(xValue);
       // this.xTickFormat = this.width > 600 ? d3.timeFormat("%d %b") : d3.timeFormat('%d.%m')
     } else {
       xLabel = 'Jour ' + d3.format('d')(xValue);
@@ -462,7 +485,7 @@ class multilineChart {
       xSpan = this.margin.left + this.width - 200;
     }
 
-    this.tooltip.html('<b>' + xLabel + '</b>') // TODO: date / index
+    this.tooltip.html('<b>' + xLabel + '</b>')
       .style('display', 'block')
       .style('opacity', 1)
       .style('left', function(d){ return xSpan + 'px'; })
