@@ -579,3 +579,17 @@ select:focus, textarea:focus, input:focus {
 .toggle label{
 	/* margin-right: 30px; */
 }
+rect.uncertain-rectangle{
+	fill: #ccc;
+	opacity: 0.4;
+}
+.avertissement{
+	color: #856404;
+	background-color: #fff5dc;
+	border-color: #ffeeba;
+	padding: 4px 20px;
+	margin-bottom: 20px;
+}
+.avertissement p{
+	font-size: .9em;
+}
