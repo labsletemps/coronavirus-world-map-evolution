@@ -74,11 +74,12 @@
 				<h5><a target="_blank" href="https://labs.letemps.ch/interactive/2020/carte-coronavirus-monde/">Le Covid-19 en Suisse</a></h5>
 				<a target="_blank" href="https://labs.letemps.ch/interactive/2020/carte-coronavirus-monde/" class="btn btn-outline-primary btn-sm">Voir tous les graphiques</a>
 
+				<h6>Bilans quotidiens, aplanis par une moyenne mobile</h6>
+				<div class="multiline" id="chartDailyTestsCH"></div>
+
 				<h6>Taux de reproduction effectif (Re)</h6>
 				<div class="multiline" id="reMeanCH"></div>
 
-				<h6 class="www_only">Nouveaux cas quotidiens</h6>
-				<div class="multiline www_only" id="chartDailyCH"></div>
 			</div>
 
 		</div>
@@ -96,7 +97,7 @@
 	}
 	var height = Math.max( document.body.offsetHeight,
                        document.documentElement.clientHeight, document.documentElement.offsetHeight );
-	console.log(height);
+
 	if(height > 400){
 		document.body.classList.remove('notwebapp');
 	}
@@ -117,12 +118,30 @@
 	}
 	d3.timeFormatDefaultLocale(timeLocale);
 
-	var chartDailyCH = new multilineChart({'selector': '#chartDailyCH', height: 110, margin: {top: 10, left: 50, right: 0, bottom: 25}, 'file': 'data/ch-daily-cases.csv?' + update, 'timeScale': true, 'yTickFormat': "d", 'hideLabel': true, 'annotationSplitter': /\n/})
+	var chartDailyTestsCH = new multilineChart({
+		'selector': '#chartDailyTestsCH',
+		'colors': ['#1f77b4', '#222', '#89C4C9', '#aaa'],
+		'file': 'data/ch-daily-cases-and-tests-rolling.csv?' + update,
+		'timeScale': true, 'logScale': true,
+		'yTickFormat': "d", 'hideLabel': false,
+		'annotationSplitter': /\n/,
+		'height': 100,
+		'margin': {top: 10, left: 50, right: 70, bottom: 25},
+		'needsRectlayer': true
+	});
 
-	var reMeanCH = new multilineChart({'selector': '#reMeanCH', height: 110, margin: {top: 10, left: 50, right: 0, bottom: 25}, 'file': 'data/re_switzerland.csv?' + update, 'timeScale': true, 'yTickFormat': ".2n", 'hideLabel': true, 'hasConfidenceInterval': true, 'xMin': true, 'straightLine': false})
-	setTimeout(function(){
-		reMeanCH.addReLimit();
-	}, 500)
+	var reMeanCH = new multilineChart({'selector': '#reMeanCH',
+	 'height': 100,
+	 'margin': {'top': 10, 'left': 50, 'right': 70, 'bottom': 25},
+	 'file': 'data/re_switzerland.csv?' + update,
+	 'timeScale': true,
+	 'yTickFormat': ".2n",
+	 'hideLabel': false,
+	 'hasConfidenceInterval': true,
+	 'xMin': true,
+	 'straightLine': false,
+	 'needsReLimit': true
+ });
 
 
 	</script>
