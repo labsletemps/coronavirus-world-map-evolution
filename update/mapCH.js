@@ -73,7 +73,7 @@
 	    .translate([ width/2, height/2 ]);
 	var dataById = d3.map();
 
-	Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?1598530572912")]).then(function(data) {
+	Promise.all([d3.json("data/cantons-1k.json"), d3.csv("data/covid19_cases_ch.csv?1603296269092")]).then(function(data) {
 		var geodata = data[0];
 		var data = data[1];
 
@@ -427,7 +427,6 @@
 
 		// animate
 		function runAnimation(){
-			console.log(dateCounter);
 			// doc: http://ionden.com/a/plugins/ion.rangeSlider/demo_interactions.html
 			var slider_instance = $("#range_sliderCH").data("ionRangeSlider");
 
@@ -500,7 +499,7 @@
 				bindto: "#time-serie-chart-ch",
 
 				data: {
-					url: 'data/c3-linegraph-ch.csv?1598530572912',
+					url: 'data/c3-linegraph-ch.csv?1603296269092',
 					type: 'line',
 					x: 'timestamp',
 					colors: {
@@ -521,7 +520,7 @@
 					},
 					y: {
 						tick: {
-							values: [0, 10000, 20000, 30000],
+							// values: [0, 10000, 20000, 30000],
 							// format: d3.format(".0s")
 						}
 					}

@@ -50,7 +50,7 @@ $( document ).ready(function() {
   var yaxis = d3.axisLeft().scale(yscale);
   var g_yaxis = g.append("g").attr("class", "y axis");
 
-  d3.json("data/top_per_pop.json?1598530572913").then(json => {
+  d3.json("data/top_per_pop.json?1603296269093").then(json => {
     data = json;
     data.forEach(function(d) {
       if( availableDates.indexOf( d['timestamp'] ) == -1 ){
