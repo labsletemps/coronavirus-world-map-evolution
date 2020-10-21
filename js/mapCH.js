@@ -427,7 +427,6 @@
 
 		// animate
 		function runAnimation(){
-			console.log(dateCounter);
 			// doc: http://ionden.com/a/plugins/ion.rangeSlider/demo_interactions.html
 			var slider_instance = $("#range_sliderCH").data("ionRangeSlider");
 
@@ -521,7 +520,7 @@
 					},
 					y: {
 						tick: {
-							values: [0, 10000, 20000, 30000],
+							// values: [0, 10000, 20000, 30000],
 							// format: d3.format(".0s")
 						}
 					}
