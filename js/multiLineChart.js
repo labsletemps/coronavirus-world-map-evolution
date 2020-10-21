@@ -12,35 +12,46 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 class multilineChart {
   constructor(opts = {}) {
+
     this.selector = opts.selector ? opts.selector : '#multilineChart';
-    this.margin = opts.margin ? opts.margin : { top: 40, bottom: 30, left: 50, right: 100 };
-    this.fatLineWidth = opts.fatLineWidth ? opts.fatLineWidth : 3;
-    this.needsMouseGroup = opts.needsMouseGroup ? opts.needsMouseGroup : true;
-    this.tickNumber = opts.tickNumber ? opts.tickNumber : 4;
+
+    // Layout and margins
     this.hideLabel = opts.hideLabel ? opts.hideLabel : false;
+
+    this.margin = opts.margin ? opts.margin : { top: 40, bottom: 30, left: 50, right: 100 };
     this.height = opts.height ? opts.height : 400 - this.margin.top - this.margin.bottom;
-    this.annotationSplitter = opts.annotationSplitter ? opts.annotationSplitter: ' ';
-    this.hasConfidenceInterval = opts.hasConfidenceInterval ? opts.hasConfidenceInterval: false;
-    this.xMin = opts.xMin ? opts.xMin : false;
-    this.yMax = opts.yMax ? opts.yMax : false;
-    this.straightLine = opts.straightLine ? opts.straightLine : false;
-    this.weekly = opts.weekly ? opts.weekly : false;
-    this.colors = opts.colors ? opts.colors : null;
 
     if(this.hideLabel === true){
       this.margin.right = this.margin.left;
     }
 
-    /* data */
-    this.data = null;
-    this.file = opts.file;
+    // Line style
+    this.straightLine = opts.straightLine ? opts.straightLine : false;
+    this.fatLineWidth = opts.fatLineWidth ? opts.fatLineWidth : 3;
+    this.colors = opts.colors ? opts.colors : null;
 
-    /* scales */
+    // Axis
+    this.tickNumber = opts.tickNumber ? opts.tickNumber : 4;
+    this.xMin = opts.xMin ? opts.xMin : false;
+    this.yMax = opts.yMax ? opts.yMax : false;
+
+    /* Axis Scales */
     this.yTickFormat = opts.yTickFormat ? opts.yTickFormat : "d";
     this.timeScale = opts.timeScale ? opts.timeScale : false;
-
     this.exponentScale = opts.exponentScale ? opts.exponentScale : false;
     this.logScale = opts.logScale ? opts.logScale : false;
+
+    // Custom Annotations
+    this.needsMouseGroup = opts.needsMouseGroup ? opts.needsMouseGroup : true;
+    this.annotationSplitter = opts.annotationSplitter ? opts.annotationSplitter : ' ';
+    this.hasConfidenceInterval = opts.hasConfidenceInterval ? opts.hasConfidenceInterval : false;
+    this.needsReLimit = opts.needsReLimit ? opts.needsReLimit : false;
+    this.needsRectlayer = opts.needsRectlayer ? opts.needsRectlayer : false;
+    this.weekly = opts.weekly ? opts.weekly : false;
+
+    // Data
+    this.data = null;
+    this.file = opts.file;
 
     /* booleans */
     this.annotationsDrawn = false;
@@ -53,10 +64,7 @@ class multilineChart {
     this.mouseMoveTimeout = null;
 
     /* columns */
-    this.countries = [];
-    this.selectedColumns = ['Corée du Sud', 'Etats-Unis',
-    'France', 'Italie', 'Royaume-Uni',
-    'Suisse'];
+    this.columns = [];
 
     /* create container */
     var container = d3.select(this.selector).node();
@@ -108,7 +116,7 @@ class multilineChart {
     });
     var lastColIndex = theChart.hasConfidenceInterval ? data.columns.length - 2 : data.columns.length;
 
-    this.countries = data.columns.slice(1, lastColIndex).map(function(id) {
+    this.columns = data.columns.slice(1, lastColIndex).map(function(id) {
       return {
         id: id,
         values: data.map(function(d) {
@@ -133,7 +141,7 @@ class multilineChart {
 
       var lastColIndex = theChart.hasConfidenceInterval ? data.columns.length - 2 : data.columns.length;
 
-      theChart.countries = data.columns.slice(1, lastColIndex).map(function(id) {
+      theChart.columns = data.columns.slice(1, lastColIndex).map(function(id) {
         return {
           id: id,
           values: data.map(function(d) {
@@ -146,10 +154,6 @@ class multilineChart {
   }
 
   createScales(){
-    // Global variable for all data
-    let data;
-    var countries;
-
     // Scales setup
     if(this.timeScale){
       this.xscale = d3.scaleTime().range([0, this.width]);
@@ -158,13 +162,11 @@ class multilineChart {
     }
 
     if(this.exponentScale){
-      console.log('Exponent scale for', this.selector);
       this.yscale = d3.scalePow(0.5).range([this.height, 0]);
     }else if (this.logScale){
-      console.log('Log scale for', this.selector);
       this.yscale = d3.scaleLog().clamp(true).domain([
         0.1,
-        d3.max(this.countries, function(c) { return d3.max(c.values, function(d) { return d.value; }); })
+        d3.max(this.columns, function(c) { return d3.max(c.values, function(d) { return d.value; }); })
       ]).range([this.height, 0]);
     }else{
       this.yscale = d3.scaleLinear().range([this.height, 0]);
@@ -190,6 +192,7 @@ class multilineChart {
 
     this.g_xaxis = this.g.append("g").attr("class", "x axis").attr("transform", "translate(0," + this.height + ")");
     this.g_yaxis = this.g.append("g").attr("class", "y axis");
+    this.g_rectlayer = this.g.append("g").attr("class", "rectlayer");
   }
 
   addReLimit(){
@@ -205,8 +208,25 @@ class multilineChart {
       .attr("y2", function(d){ return theChart.yscale(1)})
   }
 
+  addRectlayer(){
+    var rectdata = [
+      {xValue: new Date(this.data[this.data.length - 3].xValue), y0: 0, y1: this.height}
+    ]
+    var width = this.xscale(this.data[2].xValue)
+    var theChart = this;
+
+    this.g_rectlayer.selectAll(".uncertain-rectangle")
+      .data(rectdata)
+      .enter()
+      .append("rect")
+      .attr("class", "uncertain-rectangle")
+      .attr("x", function(d) { return theChart.xscale(d.xValue)} )
+      .attr("y", d.y0)
+      .attr("width", width)
+      .attr("height", function(d) { return d.y1 });
+  }
+
   addConfidenceInterval(){
-    console.log('Show confidence interval')
     var theChart = this;
 
     // Show confidence interval
@@ -234,17 +254,17 @@ class multilineChart {
     if(this.logScale){
       this.yscale.domain([
         1,
-        this.yMax ? this.yMax : d3.max(this.countries, function(c) { return d3.max(c.values, function(d) { return d.value; }); })
+        this.yMax ? this.yMax : d3.max(this.columns, function(c) { return d3.max(c.values, function(d) { return d.value; }); })
       ]);
     }else{
       this.yscale.domain([
-        theChart.xMin ? 0 : d3.min(this.countries, function(c) { return d3.min(c.values, function(d) { return d.value; }); }),
-        d3.max(this.countries, function(c) { return d3.max(c.values, function(d) { return d.value; }); })
+        theChart.xMin ? 0 : d3.min(this.columns, function(c) { return d3.min(c.values, function(d) { return d.value; }); }),
+        d3.max(this.columns, function(c) { return d3.max(c.values, function(d) { return d.value; }); })
       ]).nice();
     }
 
 
-    this.zscale.domain(this.countries.map(function(c) { return c.id; }));
+    this.zscale.domain(this.columns.map(function(c) { return c.id; }));
 
     // Render axis
     this.g_xaxis.transition().call(this.xaxis);
@@ -272,7 +292,7 @@ class multilineChart {
 
 
     var country = this.g.selectAll(".city")
-      .data(this.countries)
+      .data(this.columns)
       .enter().append("g")
       .attr("class", function(d){ return "country " + d.id});
 
@@ -313,6 +333,13 @@ class multilineChart {
     }
     if(this.needsMouseGroup){
       this.mouseG = this.createMouseGroup();
+    }
+    if(this.needsReLimit){
+      this.addReLimit();
+    }
+
+    if(this.needsRectlayer){
+      this.addRectlayer();
     }
 
     this.arrangeLabels();
@@ -453,7 +480,7 @@ class multilineChart {
     var valuesToShow = [];
     var xValue = false;
 
-    this.countries.forEach(function(row){
+    this.columns.forEach(function(row){
       if( !isNaN( row.values[idx].value ) ){
         valuesToShow.push( {'country': row.id, 'value': row.values[idx].value} )
         if(!xValue){
@@ -481,7 +508,6 @@ class multilineChart {
     // }
     if(xSpan + 200 > this.margin.left + this.width){
       // TODO
-      console.log('>')
       xSpan = this.margin.left + this.width - 200;
     }
 
@@ -507,7 +533,7 @@ class multilineChart {
     // Adapted from this block by diananow
     // https://bl.ocks.org/dianaow/0da76b59a7dffe24abcfa55d5b9e163e
 
-    if(!this.countries || !this.zscale){
+    if(!this.columns || !this.zscale){
       console.warn('Mouse group: data not ready yet')
       return false;
     }
@@ -533,7 +559,7 @@ class multilineChart {
     var lines = document.getElementsByClassName('line');
 
     var mousePerLine = mouseG.selectAll('.mouse-per-line')
-      .data(this.countries)
+      .data(this.columns)
       .enter()
       .append("g")
       .attr("class", "mouse-per-line");
@@ -542,7 +568,7 @@ class multilineChart {
       .attr("r", 4)
       .style("stroke", function (d) {
         return '#ccc'
-        // return this.zscale(d.key)
+        // return theChart.zscale(d.key)
       })
       .style("fill", "none")
       .style("stroke-width", '1px')
