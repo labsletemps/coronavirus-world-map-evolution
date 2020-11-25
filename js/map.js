@@ -314,6 +314,7 @@
 							},
 						},
 						y: {
+							min: 0,
 							tick: {
 								format: function (x) {
 									if(x > 0){
@@ -329,14 +330,13 @@
 						y: {
 							lines: [
 								{ value: 0},
-								{ value: 5000000},
 								{ value: 10000000},
-								{ value: 15000000},
 								{ value: 20000000},
-								{ value: 25000000},
 								{ value: 30000000},
-								{ value: 35000000},
-								// { value: 40000000},
+								{ value: 40000000},
+								{ value: 50000000},
+								{ value: 60000000},
+								{ value: 70000000},
 							]
 						}
 					},

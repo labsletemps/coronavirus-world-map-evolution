@@ -36,6 +36,9 @@
 		'2020-03-17', // VD > 1000 cas (précédents chiffres: se produisait le 19 mars)
 		'2020-03-21', // ZH (précédents chiffres: 23 mars)
 		'2020-07-21', // GE devant le Tessin en valeurs relatives
+		'2020-10-09',// > 300 cas à Zurich
+		'2020-10-16', // 396 cas au Valais soit taux de 115 + taux de 117 au Jura
+		'2020-10-19' // 509 en Valais soit taux de 148
 	];
 	var explainLabels = new Map();
 
@@ -62,6 +65,18 @@
 		[{'dx': 60, 'dy': 20, 'canton': 'GE', 'label': 'Plusieurs jours d’affilée, Genève compte plus de 20 cas quotidiens', 'title': 'Juillet', 'lat': 46.2043907, 'lng': 6.1431577}]
 	);
 
+	explainLabels.set('2020-10-09',
+		[{'dx': 300, 'dy': 10, 'canton': 'ZH', 'label': 'Plus de 300 cas en un jour à Zurich', 'title': '9 octobre', 'lat': 47.3768866, 'lng': 8.541694}]
+	);
+
+	explainLabels.set('2020-10-16',
+		[{'dx': -60, 'dy': -20, 'canton': 'JU', 'label': '117 nouveaux cas par 100 000 habitants au Jura', 'title': '16 octobre', 'lat': 47.38444474, 'lng': 7.2430608}]
+	);
+	explainLabels.set('2020-10-19',
+		[{'dx': 60, 'dy': 20, 'canton': 'VS', 'label': 'En un jour, plus de 500 cas soit 148 cas par 100 000 habitants', 'title': '19 octobre', 'lat': 46.1904614, 'lng': 7.5449226}]
+	);
+
+
 	var margin = {top: 0, right: 10, bottom: 10, left: 10};
 
 	var width = 1500 - margin.left - margin.right,
@@ -85,7 +100,7 @@
 			d.n = +d.n;
 			d.daily_rate = +d.daily_rate;
 			d.sum_rate = +d.sum_rate;
-			if( availableDates.indexOf( d['date'] ) == -1 ){
+			if( availableDates.indexOf( d['date'] ) === -1 ){
 				availableDates.push( d['date'] );
 			}
 			dataById.set(d.no, d);
@@ -112,7 +127,7 @@
 				if(showAbsoluteValues){
 					return '#888';
 				}else{
-					var rows = data.filter(function(e){ return (e.no == d.properties.KANTONSNUM && e.timestamp == current_timestamp)} );
+					var rows = data.filter(function(e){ return (e.no === d.properties.KANTONSNUM && e.timestamp === current_timestamp)} );
 					if(rows.length > 0){
 						return colorScale(rows[0].daily_rate);
 					}else{
@@ -130,12 +145,12 @@
 			.on('mouseover', function(d) {
 				d3.select(this).style('stroke-width', 1.5);
 			 	d3.event.preventDefault();
-				var d2 = data.filter(function(e){ return (e.no == d.properties.KANTONSNUM && e.timestamp == current_timestamp)} )[0];
+				var d2 = data.filter(function(e){ return (e.no === d.properties.KANTONSNUM && e.timestamp === current_timestamp)} )[0];
 			 	displayDetail(d2);
 			 }).on('mouseout', function(d) {
 			 	d3.select(this).style('stroke-width', 0.3);
 			 }).on("click", function(d) {
-				var d2 = data.filter(function(e){ return (e.no == d.properties.KANTONSNUM && e.timestamp == current_timestamp)} )[0];
+				var d2 = data.filter(function(e){ return (e.no === d.properties.KANTONSNUM && e.timestamp === current_timestamp)} )[0];
 			 	displayDetail(d2);
 			 });
 
@@ -162,7 +177,12 @@
 						if(showAbsoluteValues){
 							return '#888';
 						}else{
-							return colorScale(data.filter(function(e){ return (e.no == d.properties.KANTONSNUM && e.timestamp == current_timestamp)} )[0].daily_rate);
+							var result = data.filter(function(e){ return (e.no === d.properties.KANTONSNUM && e.timestamp === current_timestamp)} );
+							if(result.length === 1){
+								return colorScale( result[0].daily_rate );
+							}else{
+								return '#ccc';
+							}
 						}
 					});
 
@@ -172,7 +192,7 @@
 
 					var circles = svg
 						.selectAll(".circles")
-						.data(data.filter(function(d){ return d.timestamp == timestamp}).filter(function(d){ return d.n > 0}).sort(function(a,b) { return +b.n - +a.n }));
+						.data(data.filter(function(d){ return d.timestamp === timestamp}).filter(function(d){ return d.n > 0}).sort(function(a,b) { return +b.n - +a.n }));
 
 						var circleEnter = circles
 						.enter()
@@ -185,8 +205,8 @@
 							.attr("cx", function(d){ return projection([+d.lng, +d.lat])[0] })
 							.attr("cy", function(d){ return projection([+d.lng, +d.lat])[1] })
 							.attr("r", function(d){ return size(+d.n) })
-							.style("fill", function(d){ return d.status == '' ? '#C32E1E' : '#f5670c' })
-							.attr("fill-opacity", function(d){ return d.status == '' ? 0.5 : 0.3} )
+							.style("fill", function(d){ return d.status === '' ? '#C32E1E' : '#f5670c' })
+							.attr("fill-opacity", function(d){ return d.status === '' ? 0.5 : 0.3} )
 							.on("click", function(d) {
 								d3.event.preventDefault();
 								displayDetail(d);
@@ -231,11 +251,11 @@
 					textGroup.exit()
 							.remove();
 				} else {
-
 					// dry: tomorrow
+
 					var textLabels = svg
 					.selectAll(".textLabels")
-					.data( data.filter(function(d){ return (d.timestamp == timestamp && d.n > 0)}) );
+					.data(  data.filter(function(d){ return (d.timestamp === timestamp && d.n > 0)}) );
 
 					var textEnter = textLabels
 						.enter()
@@ -292,7 +312,7 @@
 
 				// legends
 				if(!showAbsoluteValues){
-					var labels = [0.1, 0.5, 1.0, 5.0, 10.0]
+					var labels = [1, 10, 50, 100]
 					var size_l = 20
 					var distance_from_top = height * 0.2;
 					// Legend title
@@ -302,7 +322,7 @@
 							.attr("x", 20)
 							.attr("y", distance_from_top - labels.length*(size_l+5) + (size_l/2))
 							.attr("width", 90)
-							.text("Nouveaux cas pour 100 000 habitants")
+							.text("Taux de nouveaux cas pour 100 000 habitants")
 							.style('font-size', '16px')
 
 					// Add one dot in the legend for each name.
@@ -325,7 +345,7 @@
 							.attr("x", 20 + size_l*1.2)
 							.attr("y", function(d,i){ return distance_from_top - i*(size_l+5) + (size_l/2)}) // 100 is where the first dot appears. 25 is the distance between dots
 							.style("fill", '#000')
-							.text(function(d){ return d + (d == 800 ? ' et plus' : '')})
+							.text(function(d){ return d + (d === 800 ? ' et plus' : '')})
 							.attr("text-anchor", "left")
 							.style("alignment-baseline", "middle")
 
@@ -384,6 +404,10 @@
 				// 	location += ', ' + d['Province/State']
 
 				var addendum = '';
+				if(!d){
+					return `<h4></h4>
+					<p>Pas de données pour cette date.</p>`;
+				}
 				if(d.status != ''){
 					addendum = '<p><span class="stats">Pas de données pour cette date:</span> les données du jour précédent sont indiquées</p>';
 				}
@@ -520,7 +544,7 @@
 					},
 					y: {
 						tick: {
-							// values: [0, 10000, 20000, 30000],
+							values: [0, 2000, 4000, 6000],
 							// format: d3.format(".0s")
 						}
 					}
@@ -529,9 +553,9 @@
 					y: {
 						lines: [
 							{ value: 0},
-							{ value: 10000},
-							{ value: 20000},
-							{ value: 30000},
+							{ value: 2000},
+							{ value: 4000},
+							{ value: 6000},
 						]
 					}
 				},

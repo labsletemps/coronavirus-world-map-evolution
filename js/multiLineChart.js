@@ -42,12 +42,14 @@ class multilineChart {
     this.logScale = opts.logScale ? opts.logScale : false;
 
     // Custom Annotations
+    this.annotations = opts.annotations ? opts.annotations : [];
     this.needsMouseGroup = opts.needsMouseGroup ? opts.needsMouseGroup : true;
     this.annotationSplitter = opts.annotationSplitter ? opts.annotationSplitter : ' ';
     this.hasConfidenceInterval = opts.hasConfidenceInterval ? opts.hasConfidenceInterval : false;
     this.needsReLimit = opts.needsReLimit ? opts.needsReLimit : false;
     this.needsRectlayer = opts.needsRectlayer ? opts.needsRectlayer : false;
     this.weekly = opts.weekly ? opts.weekly : false;
+    this.yFormat = opts.yFormat ? opts.yFormat : false;
 
     // Data
     this.data = null;
@@ -185,15 +187,17 @@ class multilineChart {
     }
 
     if(this.logScale){
-      this.yaxis = d3.axisLeft().scale(this.yscale).ticks(3).tickFormat( d3.format(this.yTickFormat) );
+      this.yaxis = d3.axisLeft().scale(this.yscale).ticks(4).tickSize(-this.width).tickFormat( d3.format(this.yTickFormat) );
     }else{
-      this.yaxis = d3.axisLeft().scale(this.yscale).tickFormat( d3.format(this.yTickFormat) );
+      this.yaxis = d3.axisLeft().scale(this.yscale).tickSize(-this.width).tickFormat( d3.format(this.yTickFormat) );
     }
 
     this.g_xaxis = this.g.append("g").attr("class", "x axis").attr("transform", "translate(0," + this.height + ")");
     this.g_yaxis = this.g.append("g").attr("class", "y axis");
+
     this.g_rectlayer = this.g.append("g").attr("class", "rectlayer");
   }
+
 
   addReLimit(){
     var bounds = this.xaxis.scale().domain();
@@ -523,7 +527,7 @@ class multilineChart {
         if(d.country === 'Suisse'){
           return '<span style="color: #b80021;">' + d.country + '</span>: ' + d.value.toLocaleString();
         }else{
-          return '<span style="color: ' + theChart.zscale(d.country) + ';">' + d.country + '</span>: ' + d.value.toLocaleString();
+          return '<span style="color: ' + theChart.zscale(d.country) + ';">' + d.country + '</span>: ' + ( theChart.yFormat !== false ? d3.format(theChart.yFormat)(d.value) : d.value.toLocaleString() );
         }
         // return d.country + ': ' + d.value.toLocaleString();
       })
