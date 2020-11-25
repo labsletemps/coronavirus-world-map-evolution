@@ -128,7 +128,7 @@ h1 {
 }
 
 h1.intro {
-  color: #787878;
+  /* color: #787878; */
   color: #000;
   text-shadow: none;
   text-align: left;
@@ -140,8 +140,12 @@ h1.intro {
 
 
 h2 {
+	color: #000;
+	font-size: 2.1rem;
+	line-height: 2.2rem;
 	margin-top: 60px;
 	margin-bottom: 30px;
+	font-weight: 600;
 }
 p {
 	margin-bottom: 20px;
@@ -235,6 +239,9 @@ h1{
 	shape-rendering: crispEdges;
 	stroke-width: 1px;
 }
+.y.axis line {
+	opacity: 0.2;
+}
 
 .axis text {
 	font-family: 'Raleway', sans-serif;
@@ -322,10 +329,10 @@ h1{
 }
 h3{
 	color: #555;
-	font-weight: bold;
+	font-weight: 600;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 1.4em;
+  font-size: 1.1em;
 }
 
 /*/HTML5 Boilerplate) Clearfix, hidden, visuallyhidden, invisible...*/
@@ -412,6 +419,7 @@ h5{
 	margin-top: 30px;
 	font-family: 'montserratsemi_bold';
   color: #555;
+	font-size: 1rem;
 }
 h6{
 	margin-top: 10px;
@@ -448,6 +456,21 @@ h6{
   background: rgba(204, 229, 223, 0.2);
   color: rgb(104, 129, 123);
   border-color: 2px solid rgb(204, 229, 223);
+}
+.highlight-turquoise{
+	background: rgba(137, 196, 201, 0.2);
+  color: #89C4C9;
+  border-color: 3px solid #89C4C9;
+}
+.highlight-black{
+	background: rgba(34, 34, 34, 0.2);
+  color: #222;
+  border-color: 3px solid #222;
+}
+.highlight-grey{
+	background: rgba(170, 170, 170, 0.2);
+  color: #aaa;
+  border-color: 3px solid #aaa;
 }
 
 .highlight-blue{
@@ -592,4 +615,15 @@ rect.uncertain-rectangle{
 }
 .avertissement p{
 	font-size: .9em;
+}
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+.grid path {
+  stroke-width: 0;
+}
+.medium{
+	font-weight: 600;
 }

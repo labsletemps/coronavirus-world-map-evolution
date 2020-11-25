@@ -23,6 +23,8 @@ if (file_exists(__DIR__ . '/variables.json')) {
 	$variables = json_decode(file_get_contents(__DIR__ . '/variables.json'), TRUE);
 	$created = $variables['pubDate'] ?? date('c', filectime(__DIR__ . '/variables.json'));
 	$modified = date('c', filemtime(__DIR__ . '/index.html.twig'));
+	$lastModifiedDisplay = $variables['lastModifiedDisplay'];
+	$introComment = $variables['introComment'];
 }
 
 // Application variables (as URL and more)
