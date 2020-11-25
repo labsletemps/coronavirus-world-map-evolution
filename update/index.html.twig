@@ -12,8 +12,8 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/c3.min.css"/>
 
-	<link rel="stylesheet" type="text/css" href="css/style.css?1603296269089" />
-	<link rel="stylesheet" type="text/css" href="css/map.css?1603296269089" />
+	<link rel="stylesheet" type="text/css" href="css/style.css?1606224407703" />
+	<link rel="stylesheet" type="text/css" href="css/map.css?1606224407703" />
 	<link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.css" />
 	<style>
 	.c3-area {
@@ -41,533 +41,606 @@
 
 				<p class="lead">Les données sur la pandémie décryptées en infographies</p>
 
-				<p class="textUpdate" style="font-size: 14px; color: #7d7d7d;">Publié le 27 janvier 2020 – Modifié le 21 octobre 2020</p>
+				<p class="textUpdate" style="font-size: 14px; color: #7d7d7d;">Publié le 27 janvier 2020 – Modifié le {{lastModifiedDisplay}}</p>
 
 				<div class="avertissement">
 					<h6>Actualisation en continu</h6>
-					<p>Les chiffres de cette pages sont mis à jour automatiquement chaque heure (bilan général), chaque jour (bilans quotidiens) et chaque semaine (bilans hebdomadaires).</p>
+					<p>Les chiffres de cette pages sont mis à jour automatiquement chaque heure (totaux mondiaux), chaque jour (bilans quotidiens) et chaque semaine (bilans hebdomadaires).</p>
+					<!-- <p>Le nombre de «cas des dernières 24 heures», annoncé chaque jour vers 14 heures par l’Office fédéral de la santé publique (OFSP), inclut des cas remontant aux jours précédents mais comptabilisés avec du retard. Les valeurs indiquées ci-dessous proviennent également de l’OFSP. Elles sont inférieures, mais plus précises.</p> -->
 				</div>
 
-				<p>Le covid a atteint la Suisse le 25 février 2020, quatre semaines après l’Italie. Après une accalmie en mai, le virus a lentement repris du terrain dès le large assouplissement des mesures du Conseil fédéral, le 6 juin. La hausse du nombre de cas s’est nettement accélérée au mois d’octobre.</p>
+				<div class="toc_container" style="font-size: .9em;">
+					<h5 class="toc_title">Dans cette page:</h5>
+					<ul class="toc_list">
+						<li><a href="#swiss-anchor">Suisse</a></li>
+						<ul>
+							<li><a href="#ch-daily-anchor">Nouveau cas, tests, hospitalisations et décès</a></li>
+							<li><a href="#cantons-anchor">Nouveaux cas dans les cantons romands</a></li>
+							<!-- Surmortalité des 65 ans et plus dans la région lémanique -->
+							<li><a href="#ch-map-anchor">Carte des cantons</a></li>
+							<li><a href="#ch-re-anchor">Taux de reproduction (Re)</a></li>
+							<!-- décès par genre et âge -->
+						</ul>
+						<li><a href="#world-anchor">Monde</a></li>
+						<ul>
+							<li><a href="world-daily-anchor">Nouveau cas et décès dans le monde</a></li>
+							<li><a href="#world-weekly-death-anchor">Nombre hebdomadaire de décès</a></li>
+							<!-- Taux de cas confirmés par million d’habitants -->
+							<!-- Taux de décès par million d’habitants -->
+							<li><a href="#europe-re-anchor">Taux de reproduction en Europe</a></li>
+							<li><a href="#world-map-anchor">Carte du monde</a></li>
 
-				<p>Le dernier bilan complet (mais provisoire) de l’OFSP était de <span class="new_swiss_cases">____</span> nouveaux cas confirmés en laboratoire et <span class="new_swiss_deaths">____</span> nouveaux décès le <span class="new_swiss_cases_date">__________</span>, contre <span class="new_swiss_cases_7days">____</span> cas confirmés et <span class="new_swiss_deaths_7days">____</span> décès le mardi 14 octobre.
-					Cela représente <span class="new_swiss_cases_increase">____</span>% de nouveaux cas de <span class="new_swiss_cases_symbol">____</span> que sept jours plus tôt.</p>
 
-				<!-- <p>Dans le monde, les derniers chiffres de l’agence européenne ECDC étaient <span class="new_world_cases">____</span> nouveaux cas confirmés et <span class="new_world_deaths">____</span> nouveaux décès le <span class="new_world_cases_date">__________</span>, contre <span class="new_world_cases_yesterday">____</span> hier (<span class="new_world_cases_yesterday_increase">_</span>%) et <span class="new_world_cases_7days">____</span> (<span class="new_world_cases_yesterday">_</span>%) sept jours plus tôt.</p> -->
+						</ul>
 
-				<p>Selon l’université américaine Johns-Hopkins, qui actualise son bilan plusieurs fois par jour, le SARS-CoV-2 a causé plus de <span class="confirmed_total_floor">_____</span> infections confirmées et <span class="deaths_total">____</span> décès <a href="#map-anchor">dans le monde</a>. Les plus grands foyers de l’épidémie sont les Etats-Unis et le Brésil. L’Afrique du Sud a été le pays le plus touché du continent africain.</p>
+						<li><a href="#methode-anchor">Méthode</a></li>
+						<li><a href="#credit-anchor">Code source et licence</a></li>
+					</ul>
+				</div>
 
+				<p><strong>En Suisse</strong>, le dernier bilan de l’Office fédéral de la santé publique (OFSP) était de <span class="new_swiss_cases medium">____</span> nouveaux cas confirmés en laboratoire et <span class="new_swiss_deaths medium">____</span> nouveaux décès le <span class="new_swiss_cases_date">__________</span>, contre <span class="new_swiss_cases_7days">____</span> cas confirmés et <span class="new_swiss_deaths_7days">____</span> décès le <span class="new_swiss_cases_7days_date">__________</span>.
+					Ce bilan provisoire, qui sera complété ces trois prochains jours, représente <span class="medium"><span class="new_swiss_cases_increase">____</span>%</span> de nouveaux cas de <span class="new_swiss_cases_symbol">____</span> que sept jours plus tôt.</p>
+
+					<p class="avertissement small">Les «cas annoncés durant les dernières 24 heures», indiqués chaque jour vers 14 heures par l’OFSP, incluent des cas remontant aux jours précédents et comptabilisés avec du retard. Les valeurs affichées ci-dessus et dans les graphiques proviennent également de l’OFSP, mais se rapportent précisément aux dates des jours concernés.</p>
+					<p><strong>Dans le monde</strong>, le SARS-CoV-2 a causé <span class="confirmed_total_floor medium">________</span> d’infections confirmées et  <span class="deaths_total_floor medium">________</span> de décès selon l’université américaine <a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">Johns-Hopkins</a>, qui actualise son bilan plusieurs fois par jour (mis à jour le <span class="dashboardUpdate">_____________</span>).</p>
+					<p>Les plus grands foyers de l’épidémie sont les Etats-Unis (<span class="usa_lastCases_mio medium">__</span> de cas cumulés, <span class="usa_lastCasesPerPop medium">_____</span> par million d’habitants) et le Brésil (<span class="brasil_lastCases_mio medium">__</span> de cas, <span class="brasil_lastCasesPerPop medium">_____</span> par million d’habitants). L’Inde compte <span class="india_lastCases_mio medium">__</span> de cas, mais cela n’en représente que <span class="india_lastCasesPerPop medium">_____</span> par million d’habitants (source: ECDC, mis à jour le <span class="ecdcUpdate">_____________</span>). <a href="#world-anchor">↓ Plus de données mondiales…</a></p>
+
+					<h3>Comprendre les temps de latence</h3>
+					<p>La temporalité du covid est source d’incompréhension, relève l’épidémiologiste Silvia Stringhini, responsable de l’unité d’épidémiologie populationnelle des Hôpitaux universitaires de Genève. Tout d'abord, les symptômes n'apparaissent pas immédiatement après une infection. «Le temps d’incubation est en général de 2 à 12 jours, mais il peut dépasser 14 jours, comme le relève <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/32150748/">une étude publiée en mai 2020</a>. Sans compter qu’un petit pourcentage des personnes infectées est totalement asymptomatique et peut ne jamais se rendre compte qu’elle a contracté le virus.»</p>
+					<p>De plus, tous les malades du covid sont asymptomatiques pendant une courte période. «Cette caractéristique du SARS-CoV-2 complique l’auto-isolement des personnes infectieuses. Il contribue beaucoup à la transmission», poursuit-elle.</p>
+					<p>Le délai entre le développement de l’infection et l’apparition de symptômes demandant une hospitalisation est encore plus variable. «Selon les facteurs de risque et l’âge du malade, il va de zéro à une ou deux semaines. Puis il peut s’écouler quatre à six semaines, voir plus, avant que certains malades ne décèdent.» Cette étendue temporelle rend difficile l’anticipation des mesures sanitaires. On peut observer dans le graphique ci-dessous le décalage entre <span class="highlight highlight-blue">les cas</span> (à comparer aux <span class="highlight highlight-grey">tests</span>), <span class="highlight highlight-turquoise">les hospitalisations</span> et <span class="highlight highlight-black">les décès</span>.</p>
+				</div>
 			</div>
-		</div>
 
-	<div class="row numbers text-center align-items-top margin-bottom worldmap">
+			<div class="row padding-bottom" id="ch-daily-anchor">
+				<div class="col-12 was-col-10">
+					<h5>Suisse: nouveaux tests, cas, hospitalisations et décès</h5>
+					<p class="legend">Ce graphique emploie une échelle logarithmique, permettant de représenter des données d’un ordre de grandeur différent. Une moyenne mobile lisse les creux du week-end, dus à un plus faible nombre de tests. Décochez-les pour voir les fluctuations quotidiennes et mettre une échelle linéaire.
+						Les données des trois derniers jours (sur fond gris) sont provisoires.</p>
+						<p class="legend avertissement"><b>Note:</b> l’annonce quotidienne de l’OFSP, vers 14 heures, inclut des cas, décès et hospitalisations annoncés avec du retard. Les valeurs du dernier jour indiquées ci-dessous proviennent également de l’OFSP, mais correspondent uniquement aux cas datant de ce jour précisément.</p>
 
-		<div class="col-12 col-sm-6 group-label border">
-			<div class="row">
-				<div class="col-12">
-					<h5>Cas cumulés dans le monde</h5>
+						<div class="multiline" id="chartDailyTestsCH">
+							<span class="toggle">
+								<input type="checkbox" class="form-check-input" id="chartCHToggleLog" checked="checked"></input><label class="form-check-label" for="chartCHToggleLog">Echelle logarithmique</label><br>
+								<input type="checkbox" class="form-check-input" id="chartCHToggle" checked="checked"></input><label class="form-check-label" for="chartCHToggle">Moyenne mobile</label>
+							</span>
+						</div>
+						<div class="source"><b>Source:</b> <a target="_blank" href="https://www.bag.admin.ch/bag/fr/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov.html">OFSP</a>, données retraitées par «Le Temps». Moyenne mobile sur 7 jours.</div>
+					</div>
 				</div>
 
-				<div class="col-12 col-md-6">
-					<span class="big confirmed_total">_____</span><br>
-					<span class="label">cas confirmés</span>
-				</div>
-				<div class="col-12 col-md-6">
-					<span class="big deaths_total">___</span><br>
-					<span class="label">décès</span>
-				</div>
 
-				<div class="col-12 margin-top">
-					<p class="small">Mis à jour le <span class="dashboardUpdate">_____________</span>, source:
-						<a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">Université Johns-Hopkins</a></p>
-				</div>
+				<div class="row">
+					<div class="offset-md-2 col-md-8 col-sm-12">
 
-			</div>
-		</div>
+						<h2 id="swiss-anchor">En Suisse</h2>
+						<p>Le premier cas a été détecté le 24 février 2020 au Tessin et <a href="https://www.admin.ch/gov/fr/accueil/documentation/communiques.msg-id-78233.html">annoncé le lendemain par l’Office fédéral de la santé publique</a>. Après une première vague en mars et avril, puis une accalmie en mai, le virus a lentement repris du terrain dès le large assouplissement des mesures du Conseil fédéral, le 6 juin.</p>
 
-		<div class="col-12 col-sm-6 group-label border">
-			<div class="row">
-				<div class="col-12">
-					<h5>Cas cumulés en Suisse</h5>
+						<!-- TODO A vérifier régulièrement, dans variables textes -->
+						<p>{{introComment}}</p>
+
+						<h3>Le nombre de cas, indicateur précoce mais imprécis</h3>
+						<p>Les cas confirmés par un test positif ne reflètent pas la réalité des infections, rappelle Silvia Stringhini. «C’est un chiffre à observer en lien avec le taux de positivité des tests. Au mois d’octobre à Genève, ce taux est presque plus important que durant la première vague, bien que les critères de test n’aient pas été restreints.»</p>
+					</div>
 				</div>
 
-				<div class="col-12 col-md-6">
-					<span class="big confirmed_total_ch">___</span><br>
-					<span class="label">cas confirmés<br>(+<span class="increase_ch">___</span> depuis <span class="day_name">___</span> soir)</span>
+				<div class="row padding-bottom">
+					<div class="col-12 was-col-10">
+						<h5>Taux de positivité des tests dans l’ensemble de la Suisse</h5>
+						<p class="legend">Part de tests positifs par rapport au total des tests, en pourcents.</p>
+							<div class="multiline" id="chartDailyTestRate">
+							</div>
+							<div class="source"><b>Source:</b> <a target="_blank" href="https://www.bag.admin.ch/bag/fr/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov.html">OFSP</a>, données retraitées par «Le Temps». Moyenne mobile sur 7 jours.</div>
+						</div>
+					</div>
+
+				<div class="row">
+					<div class="offset-md-2 col-md-8 col-sm-12">
+						<p>«Le nombre de cas confirmés est tout de même une donnée intéressante: il est un indicateur précoce et permet des comparaisons, notamment par rapport à la première vague», nuance Silvia Stringhini. Le chiffre réel des infections est très difficile à déterminer. Le 23 octobre, Martin Ackermann, le président de la Task Force scientifique sur le covid, estimait que le nombre de cas en circulation était probablement trois à quatre fois plus élevé que les cas confirmés lors de cette deuxième vague, dix fois plus élevé durant la première vague et probablement deux à trois fois plus importants durant l’été.</p>
+
+						<!-- TODO deplacer? -->
+						<p>Les décès attribués au covid sont une mesure bien plus fiable mais tardive, prévient Silvia Stringhini: «Pour prévenir les décès, il faut intervenir avant que la progression de la mortalité ne soit observable. Avec le covid, on a constamment une latence de deux à trois semaines.»</p>
+
+						<h3>Le taux d’hospitalisation, «variable la plus précise»</h3>
+						<p>«En temps réel, le taux d’hospitalisation est la variable la plus précise et objective, dans le sens où les personnes qui ont besoin d’être hospitalisées le sont», selon Silvia Stringhini. Il est en plus un indicateur de la surcharge du système de soin, puisqu’il s’agit de faire en sorte que le système de santé puisse continuer de prendre en charge non seulement les cas de covid, mais aussi les autres patients.</p>
+						<p>L’OFSP fournit le nombre d’hospitalisation et non le taux d’occupation des soins intensifs. Une équipe de l’Ecole polytechnique fédérale de Zurich (ETHZ) a développé un système de surveillance qui calcule une estimation, deux fois par semaine, du taux d’occupation des soins intensifs par hôpital. Les valeurs sont réservées au personnel médical, mais <a target="_blank" href="https://icumonitoring.ch/">un aperçu par canton est accessible au public</a>. A l’échelle mondiale, le nombre d’hospitalisations et le taux d’occupation des soins intensifs sont très rarement disponibles en temps réel.</p>
+					</div>
 				</div>
-				<div class="col-12 col-md-6">
-					<span class="big deaths_total_ch">___</span><br>
-					<span class="label">décès</span>
+
+				<div class="row padding-bottom" id="cantons-anchor">
+					<div class="col-12 was-col-10">
+						<h5>Nouveaux cas dans les cantons romands ainsi que Berne et Zurich, depuis le 20 septembre</h5>
+						<p>Ce graphique emploie une moyenne mobile sur sept jours pour aplanir les fluctuations, notamment durant les week-ends. Les données des trois derniers jours (sur fond gris) sont provisoires.</p>
+						<div class="multiline" id="chartCantons">
+							<span class="toggle"><input type="checkbox" class="form-check-input" id="chartCantonsToggle" checked="checked"></input><label class="form-check-label" for="chartCantonsToggle">Moyenne mobile</label></span>
+						</div>
+						<div class="source">
+							<b>Source:</b> <a target="_blank" href="https://covid-19-schweiz.bagapps.ch/fr-2.html">OFSP, Cas confirmés en laboratoire: évolution chronologique de la distribution géographique</a>.
+						</div>
+					</div>
 				</div>
 
-				<div class="col-12 margin-top">
-					<p class="small">Mis à jour le <span class="dashboardUpdate_ch">_____________</span>, source:
-						<a target="_blank" href="https://github.com/openZH/covid_19">OpenZH</a>
-					</p>
+				<div class="row">
+					<div class="offset-md-2 col-md-8 col-sm-12">
+						<h3>Ce qui biaise les comparaisons par canton ou pays</h3>
+						<p>Comme le covid se transmet par clusters, les données locales sont de première importance. «Ce mode de transmission rend les comparaisons nationales ou suprarégionales difficiles, avertit l’épidémiologiste. Des problèmes locaux peuvent être sous-estimés si l’on fait des moyennes à une échelle plus large.»</p>
+						<p>De plus, les critères de tests varient selon les pays et même les cantons. «Genève a des critères assez larges et admet une personne qui a un simple rhume, poursuit Silvia Stringhini. Inversement, Vaud et le Valais ont restreint leurs critères le 8 octobre, sauf en cas de contact étroit avec un cas confirmé. Le traçage des contacts et l’isolement sont également très différents d’un canton à l’autre et d’un pays à l’autre.»</p>
+					</div>
 				</div>
 
-			</div>
-		</div>
+
+				<!-- switzerland -->
+				<div class="row align-items-end">
+					<div class="col-12 group-label">
+						<h5 id="ch-map-anchor">Nouveaux cas confirmés dans les cantons</h5>
+						<p class="legend">Canton par canton, retrouvez le nombre de cas annoncés par l’OFSP, leur incidence (taux par 100 000 habitants), ainsi que le cumul du nombre de cas. Les guérisons et décès ne sont pas prises en compte dans ce cumul. Les données ne sont pas lissées, d’où de fortes fluctuations d’un jour à l’autre, dues notamment aux week-ends. </p>
+					</div>
+
+					<div class="col-12">
+						<div id="time-serie-chart-ch"></div>
+					</div>
+					<div class="col-7 filter-container-ch">
+						<label>Naviguer par date</label>
+						<input type="text" id="range_sliderCH" />
+					</div>
+					<div class="col-1 col-lg-2">
+						<button id="playpauseCH" class="button play-ch pause-ch"></button>
+					</div>
+					<div class="col-4 col-lg-3">
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input" id="showAbsoluteCH">
+							<label class="form-check-label" for="showAbsoluteCH">Valeurs absolues</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-9 col-sm-12">
+						<div id="mapCH" class="map">
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-sm-12">
+						<div class="map-details-CH">
+							<h4></h4>
+							<p class="legend">Survoler/toucher un canton pour plus d’informations.</p>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="source"><b>Source:</b> <a target="_blank" href="https://www.bag.admin.ch/bag/fr/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov.html">OFSP</a>, données retraitées par «Le Temps». Population dans les cantons: <a target="_blank" href="https://www.bfs.admin.ch/bfs/fr/home/statistiques/population/effectif-evolution/population.assetdetail.9486047.html">chiffres définitifs 2018 de l’OFS</a></div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="offset-md-2 col-md-8 col-sm-12">
+						<h3>Revoir la stratégie de traçage</h3>
+						<p>Pour l’épidémiologiste Antoine Flahault, directeur de l’Institut de santé globale, à l’Université de Genève, les cantons devraient revoir leur stratégie de tests et de traçage. «Je ne demande pas qu’on en fasse plus, mais plutôt que l’on procède différemment et surtout plus stratégiquement, résume-t-il. La propagation du covid n’est pas homogène. Lorsque l’on dit que le taux de reproduction est de trois, cela signifie que les personnes contaminées infectent en moyenne deux à trois personnes. Mais, en réalité, il y a 80% des personnes qui n’en infectent aucune ou une seule et ne contribuent pas à l’accélération de l’épidémie, leurs contacts ne nous intéressent pas tant. Il faut donc plutôt rechercher activement les 20% qui contaminent plus de 2, 5 voire 100 personnes, car ce sont eux qui propagent à grande vitesse l’épidémie sur le territoire.»</p>
+						<p><strong>Lire aussi:</strong> <a href="https://www.letemps.ch/sciences/choeurs-abattoirs-lieux-culte-attention-aux-nids-coronavirus">Chœurs, abattoirs, lieux de culte… attention aux nids à coronavirus</a></p>
+
+						<h3>Stratégie prospective ou rétrospective</h3>
+						<p>A Genève (état au 15 octobre), on ne trace les contacts que jusqu’à 48h avant les premiers symptômes, alors que le temps d’incubation peut dépasser 14 jours <em>(voir plus haut)</em>. Et surtout, comme dans la plupart des pays occidentaux, la recherche se concentre sur les personnes potentiellement contaminées par le cas dépisté. On y réalise une recherche de contacts «prospective».</p>
+						<p>La stratégie «rétrospective» de recherche des contacts, très utilisée dans les pays asiatiques, consiste à rechercher non pas les contacts du cas mais de celui que l’on suspecte l’avoir contaminé (le «parent»), si cette suspicion de contamination a eu lieu dans un lieu clos, bondé, mal ventilé, c’est-à-dire connu pour être propice aux super-propagations. «Cette méthode est beaucoup moins consommatrice de tests et plus efficace que l’approche prospective pratiquée en Occident, souligne le directeur de l’Institut de santé globale. Mais elle nécessite de la rapidité, et bénéficie de s’appuyer sur des tests rapides.»</p>
+						<p>Ces tests rapides antigéniques sont décriés pour être moins sensibles que les tests PCR (amplification en chaîne par polymérase, une technique permettant d’obtenir des fragments d’ADN). «Il faut être pragmatique dans la lutte contre ce coronavirus, il est mieux de laisser filer quelques poissons mais d’attraper les bons, poursuit Antoine Flahault. Ces tests donnent un résultat entre 15 et 30 minutes. De quoi mettre rapidement en quarantaine les personnes ayant fréquenté un restaurant, une chorale ou encore une salle de gym lorsqu’un foyer épidémique a été identifié. Ces mises en quarantaine rapides peuvent éviter un confinement généralisé, comme l’ont réussi les pays asiatiques, ou pourraient permettre de prendre le relais en sortie de confinement, pour conserver le contrôle sur l’épidémie, cet hiver en Europe.»</p>
+						<p><strong>A ce sujet:</strong> <a href="https://www.letemps.ch/sciences/une-porte-ouverte-aux-tests-rapides">Une porte ouverte aux tests rapides</a></p>
+					</div>
+				</div>
 
 
+
+				<div class="row padding-bottom" id="ch-re-anchor">
+					<div class="col-12 was-col-10">
+						<h5>Taux de reproduction en Suisse</h5>
+						<p class="legend">Le nombre de reproduction effectif (R<sub>e</sub>) correspond au nombre moyen d’infections causées par un individu infecté. S’il est supérieur à 1 (<span class="highlight highlight-dark-orange">la ligne orange</span> dans le graphique ci-dessous), l’épidémie croît de manière exponentielle. Ce taux, calculé avec deux semaines de décalage, perd de son intérêt en cas de forte hausse des cas.</p>
+						<div class="multiline" id="reMeanCH"></div>
+						<div class="source"><b>Source:</b> estimation de la <a target="_blank" href="https://ncs-tf.ch/fr/rapport-de-situation">Swiss National COVID-19 Science Task Force</a> fondée sur les cas confirmés d’après l’OFSP. Les valeurs des derniers jours sont inconnues en raison du délai entre l’infection et le moment de sa détection. La Task Force révise régulièrement ses estimations.</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="offset-md-2 col-md-8 col-sm-12">
+						<h3>Un taux Re à l’utilité toute relative</h3>
+						<p>Le taux de reproduction (Re), très utilisé dans les épidémies en général, montre ses limites lors d’une croissance exponentielle des cas. «Le Re dépend des cas confirmés, donc des tests, et reflète les conditions d’il y a deux semaines, explique Silvia Stringhini. Lorsque des changements radicaux se produisent d’un jour à l’autre, il perd de son intérêt.»</p>
+
+						<h3>Les excès de décès</h3>
+						<p>«La surmortalité est la meilleure variable qu’on puisse utiliser, poursuit Silvia Stringhini. Son défaut est qu’on ne peut pas la calculer en temps réel: pour cela, on est obligé de se reporter au nombre de décès attribués au covid.»</p>
+
+						<p>La statistique de la surmortalité correspond à l’excès de décès par rapport à la normale. Le calcul consiste à comparer les décès hebdomadaires de l’année en cours à une «valeur attendue» fondée sur la moyenne des années précédentes. Il prend en compte non seulement les décès officiellement attribués au covid, mais également ceux dus à une surcharge des hôpitaux (lire: <a href="https://labs.letemps.ch/interactive/2020/surmortalite-et-covid-19/">L’impact du Covid-19 sous-estimé dans de nombreux pays</a>).</p>
+
+						<p>Ci-dessous, le <span class="highlight highlight-blue">nombre de décès</span> de personnes âgées de 65 et plus dans la région lémanique, toutes causes confondues.</p>
+					</div>
+				</div>
+
+				<div class="row padding-bottom">
+					<div class="col-12 was-col-10">
+						<h5>Surmortalité des 65 ans et plus dans la région lémanique</h5>
+						<p class="legend">La <span class="highlight highlight-orange">valeur attendue</span> est calculée sur la base des cinq années précédentes. L’<span class="highlight highlight-green">aire verte</span> correspond à la fourchette dans laquelle les fluctuations sont considérées comme aléatoires. Quant au <span class="highlight highlight-blue">nombre de décès</span>, l’OFS corrige à la hausse les valeurs des 40 derniers jours pour tenir compte des retards.</p>
+
+						<div class="multiline" id="deathRate"></div>
+						<div class="source"><b>Source:</b> <a href="https://www.experimental.bfs.admin.ch/fr/momo.html" target="_blank">Office fédéral de la statistique</a>. En raison des décès annoncés en retard, l’OFS ajuste à la hausse les valeurs des 40 derniers jours.</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="offset-md-2 col-md-8 col-sm-12">
+						<h2 id="world-anchor">Dans le monde</h2>
+
+						<p>Le SARS-CoV-2 a causé <span class="confirmed_total_floor medium">________</span> d’infections confirmées et  <span class="deaths_total_floor medium">________</span> de décès selon l’université américaine <a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">Johns-Hopkins</a>, qui actualise son bilan plusieurs fois par jour (mis à jour le <span class="dashboardUpdate">_____________</span>).</p>
+
+						<p>Au niveau mondial aussi, le décalage entre la <span class="highlight highlight-blue">détection de nouveaux cas en laboratoire</span> et <span class="highlight highlight-black">les décès</span> est nettement visible. Des données quotidiennes complètes sur les tests ou les hospitalisations ne sont pas disponibles au niveau mondial.</p>
+
+						<p>On comptait environ 80 000 nouveaux cas confirmés par jour en avril contre 300 000 - 400 000 en octobre. L’échelle exponentielle du graphique ci-dessous peut masquer l’ampleur de cette hausse. Décochez «échelle logarithmique» pour mieux l’observer.</p>
+
+					</div>
+				</div>
+
+				<div class="row padding-bottom" id="world-daily-anchor">
+					<div class="col-12 was-col-10">
+						<h5>Nouveaux cas et décès quotidiens dans le monde</h5>
+						<p class="legend">Ce graphique emploie une moyenne mobile et une échelle logarithmique. Décochez-les pour voir les fluctuations et mettre une échelle linéaire.</p>
+
+						<div class="multiline" id="chartDailyCasesWorld">
+							<span class="toggle">
+								<input type="checkbox" class="form-check-input" id="chartWorldToggleLog" checked="checked"></input><label class="form-check-label" for="chartWorldToggleLog">Echelle logarithmique</label><br>
+								<input type="checkbox" class="form-check-input" id="chartWorldToggle" checked="checked"></input><label class="form-check-label" for="chartWorldToggle">Moyenne mobile</label>
+							</span>
+						</div>
+						<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
+					</div>
+				</div>
+
+
+
+				<div class="row">
+					<div class="offset-md-2 col-md-8 col-sm-12">
+						<p>Les plus grands foyers de l’épidémie sont les Etats-Unis (<span class="usa_lastCases_mio medium">__</span> de cas cumulés, <span class="usa_lastCasesPerPop medium">_____</span> par million d’habitants) et le Brésil (<span class="brasil_lastCases_mio medium">__</span> de cas, <span class="brasil_lastCasesPerPop medium">_____</span> par million d’habitants). L’Inde compte <span class="india_lastCases_mio medium">__</span> de cas, mais cela n’en représente que <span class="india_lastCasesPerPop medium">_____</span> par million d’habitants (source: ECDC, mis à jour le <span class="ecdcUpdate">_____________</span>).</p>
+
+						<p>Les pays, petits et grands, ayant compté le plus de cas par rapport à leur population durant les 14 derniers jours sont les suivants: <span class="mostCases14days">_______</span> (source: ECDC, mis à jour le <span class="ecdcUpdate">_____________</span>).</p>
+					</div>
+				</div>
+
+				<div class="row padding-bottom">
+					<div class="col-12 was-col-10">
+						<h5>Taux de cas confirmés par million d’habitants</h5>
+						<p class="legend">Les pays sont alignés sur le jour où les cas confirmés atteignent le taux de 1 cas par million d’habitants. <span class="highlight highlight-fatline">Pour la Suisse</span>, ce «jour 0» est le 29 février, avec 12 cas. Des différences dans les méthodes et le nombre de tests effectués rendent cependant les comparaisons entre pays difficiles.</p>
+						<div class="multiline" id="chartDayOffset"></div>
+						<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
+						<div class="source">Note: le 25 mai, l’Espagne a réévalué ses bilans à la baisse (-1918 décès et-372 cas). Ces chiffres ont ensuite été fortement corrigés à la hausse.</div>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="offset-md-2 col-md-8 col-sm-12">
+						<div class="avertissement">
+							<h6>Lire les chiffres du covid</b></h6>
+							<ul>
+								<li>La fiabilité et la disponibilité des données varie de pays en pays</li>
+								<li>Le nombre de cas confirmés ne correspond qu’à une portion des cas réels. Il dépend de la stratégie de dépistage et de la qualité des tests</li>
+								<li>L’attribution de décès au Covid-19 suit des règles différentes selon les pays</li>
+								<li>Les pays et cantons réajustent régulièrement leurs bilans des jours précédents</li>
+								<li>L’ECDC, l’OMS ou encore Johns-Hopkins sont incapables de tenir compte de toutes les corrections dans leurs compilations de données mondiales</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="row padding-bottom">
+					<div class="col-12 was-col-10">
+						<h5 id="taux-deces">Taux de décès par million d’habitants (cumul)</h5>
+						<p class="legend">Les pays sont alignés sur le jour où les cas confirmés ont atteint le taux de 1 cas par million d’habitants durant la première vague. L’attribution ou non d’un décès au Covid-19 peut être difficile, en particulier lorsque la victime était affectée par plusieurs maladies. Les critères ne sont pas les mêmes dans chaque pays.</p>
+						<!-- <p class="legend">A comparer avec les <a href="#deces-hebdomadaires">décès hebdomadaires en valeurs absolues</a>.</p> -->
+						<div class="multiline" id="chartDeath"></div>
+						<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>. Le graphique s’arrête à la dernière valeur pour l’Italie, celles concernant la Chine sont donc rognées.</div>
+						<div class="source">Note: jusqu’au 22 avril, le graphique s’arrêtait au nombre de jours du pays où le Covid s’est déclaré le plus récemment.</div>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="offset-md-2 col-md-8 col-sm-12">
+						<p>En nombres absolus, les Etats-Unis cumulent le plus grand nombre de décès attribués au Covid-19 (225 735 le 27 octobre). Mais l’Inde et le Brésil l’ont rattrapé en nombre de nouveaux décès par semaine.</p>
+					</div>
+				</div>
+
+
+				<div class="row padding-bottom" id="world-weekly-death-anchor">
+					<div class="col-12 was-col-10">
+						<h5 id="deces-hebdomadaires">Nombre hebdomadaire de décès</h5>
+						<p class="legend">Ce graphique emploie une échelle logarithmique et aplanit les fluctuations hebdomadaires. Survolez une date pour voir les valeurs et positions exactes.</p>
+						<p class="legend avertissement">L’ECDC ne reporte pas toujours les rectifications apportées par les pays dans les valeurs des jours ou semaines précédentes. Pour la Suisse par exemple, il manque plus de 8000 cas et une vingtaine de décès pour la période du 24 février au 15 octobre (comparaison actualisée le 28 octobre).</p>
+
+						<!-- <p class="legend">A comparer avec les <a href="#taux-deces">taux de décès cumulés par million d’habitants</a>, plus bas dans cette page.</p> -->
+						<div class="multiline" id="chartMovingAvg"></div>
+						<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
+					</div>
+				</div>
+
+				<div class="row padding-bottom" id="europe-re-anchor">
+					<div class="col-12 was-col-10">
+						<h5>Taux de reproduction en Europe</h5>
+
+						<p class="legend">R<sub>e</sub> est actuellement <span class="highlight highlight-dark-orange">supérieur à 1</span> dans la plupart des pays européens, selon les estimations de la task force scientifique de la Confédération. Calculé avec au moins deux semaines de décalage, cette variable perd de son intérêt lors de brusque évolution de la situation.</p>
+
+						<div class="multiline" id="reMeanEU"></div>
+						<div class="source"><b>Source:</b> estimation de la <a target="_blank" href="https://ibz-shiny.ethz.ch/covid-19-re/">Swiss National COVID-19 Science Task Force</a> fondée sur les cas confirmés selon l’ECDC. La Task Force révise régulièrement ses estimations, en particulier pour les jours les plus récents.</div>
+					</div>
+				</div>
+
+
+
+<!-- toolbox -->
+
+<div class="row align-items-end">
+	<div class="col-12 group-label">
+		<h5 id="map-anchor">Cas cumulés dans le monde depuis le 27 janvier</h5>
+		<p>Cette carte présente un cumul hebdomadaire du nombre de cas qui ne tient pas compte des guérisons et décès.</p>
 	</div>
+
+	<div class="col-12">
+		<div id="time-serie-chart"></div>
+	</div>
+	<div class="col-10 filter-container">
+		<label>Naviguer par date</label>
+		<input type="text" id="range_slider" />
+	</div>
+	<div class="col-2">
+		<button id="playpause" class="button play pause"></button>
+	</div>
+</div>
+
+<!-- map container -->
+<div class="row" id="world-map-anchor">
+
+	<div class="col-lg-9 col-sm-12">
+		<div id="map" class="map">
+			<div class="tooltip"></div>
+		</div>
+	</div>
+
+	<div class="col-lg-3 col-sm-12">
+		<div class="map-details">
+			<h4></h4>
+			<p>Survoler/toucher un cercle pour plus d’informations.</p>
+		</div>
+	</div>
+	<div class="col-lg-12">
+		<div class="source">
+			<b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>. La taille des cercles a été modifiée à plusieurs reprises dès le 15 avril en raison de la forte hausse des cas aux Etats-Unis.
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="offset-md-2 col-md-8 col-sm-12">
+		<h3>En Afrique subsaharienne, peu de tests mais une démographie favorable</h3>
+		<p>L’Institut de santé globale, qui analyse chaque soir, en collaboration avec l’EPFL et l’ETHZ, <a href="https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/_w_97a0b6be/?tab=ecdc_pred&amp;country=Switzerland" target="_blank" rel="noopener">les tendances de 209 pays et territoires dans le monde</a>, estime que «seuls les pays qui ont pu réaliser au moins 6000 tests par million d’habitants depuis le début de la pandémie fournissent des données permettant de faire des prévisions à 7 jours», explique son directeur Antoine Flahault. La plupart des pays d’Afrique subsaharienne sont au-dessous de ce seuil.</p>
+		<p>«Cela dit, poursuit l’épidémiologiste, s’ils effectuent peu de tests pour permettre des prévisions fiables, leur faible activité épidémique reste un mystère que personne n’explique encore bien. La démographie jeune protège-t-elle l’Afrique <em>(ndlr: l’âge médian est de seulement 18 ans environ, contre 42,2 en Suisse)</em>? Ou les modes de vie plus souvent à l’extérieur? Ou une immunité croisée? Ou encore un simple décalage dans le temps de l’arrivée de la vague épidémique? L’avenir le dira peut-être.»</p>
+	</div>
+</div>
+
 
 
 	<!-- <div class="row padding-bottom">
-		<div class="col-12 was-col-10">
-			<h5>Nouveaux cas quotidiens en Suisse</h5>
-			<p>Un pic de contamination s’est produit de mi-mars à mi-avril, avec plus de 400 nouveaux cas décelés quotidiennement. Des creux sont visibles chaque week-end en raison d’un plus faible nombre de tests (voir ci-dessous). Ce graphique aplanit les extrêmes, touchez ou survolez une date pour voir le bilan exact.</p>
+	<div class="col-12 was-col-10">
+	<h5>Taux d’augmentation</h5>
 
-			<div class="multiline" id="chartDailyCH"></div>
-			<div class="source"><b>Source:</b> <a target="_blank" href="https://www.bag.admin.ch/bag/fr/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov.html">OFSP</a>. Jusqu’au vendredi 3 juillet, la source de données de ce graphique était la compilation des bilans cantonaux d’<a target="_blank" href="https://github.com/openZH/covid_19">OpenZH</a>.</div>
+	<div class="multiline" id="chartIncrease"></div>
+	<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
+</div>
+</div> -->
+
+<!-- <div class="row padding-bottom" id="triggerAnimatedChart">
+
+<div class="offset-md-2 col-md-8 col-sm-12">
+<h5>Quand la Suisse était le pays au taux le plus élevé</h5>
+<p>Du mardi 24 au dimanche 29 mars, la Suisse a été le pays comptant le taux de cas confirmés par habitant le plus élevé. Elle se trouvait en 6e position en décès par million d’habitants, bien que l’épidémie n’ait atteint le pays que le 25 février (contre le 31 janvier pour l’Italie).</p>
+<p>La fiabilité des données, l’étendue des tests et la manière d’attribuer les décès au Covid-19 varie de pays en pays a cependant une forte importance dans les bilans annoncés par les pays.</p>
+<p class="text-center no-margin"><b>Date:</b> <span class="date">mercredi 11 mars 2020</span> <span class="horizontal-spacer"></span><i class="fa fa-undo reload" aria-hidden="true"></i></p>
+
+<div id="animatedBarChart"></div>
+<div>Taux de cas confirmés pour un million d’habitants. Les pays comptant moins d’un million d’habitants ont été écartés.</div>
+<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
+</div>
+</div> -->
+
+
+
+
+
+
+<!-- bloc texte -->
+<div class="row text margin-top padding-bottom">
+	<div class="offset-md-2 col-md-8 col-sm-12">
+
+		<h3>Le Covid-19 en douze questions</h3>
+
+		<div id="faq" class="card">
+			<ul class="list-group list-group-flush">
+				<!-- begin qa li -->
+
+				<li class="list-group-item">
+					<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse0" aria-expanded="false" aria-controls="collapseExample">
+						Covid-19, SARS-CoV-2, coronavirus… Qu’est-ce que ces noms désignent?
+						<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+					</button>
+					<div class="collapse" id="collapse0">
+						<p>Parlez-vous le coronavirus? Commençons par un rapide point sur la nomenclature utilisée.</p>
+						<p>L’épidémie est provoquée par un virus de la famille des coronavirus, ou virus à couronne, du nom de l’aspect de ces agents pathogènes: une boule hérissée de spicules formant une couronne.</p>
+						<p>Il existe plusieurs coronavirus. Celui dont il est question en ce moment, un temps nommé nCoV-2019 pour «nouveau coronavirus de 2019», s’appelle désormais officiellement le SARS-CoV-2, pour «coronavirus responsable du syndrome respiratoire aigu sévère 2».</p>
+						<p>La maladie qu’il provoque est quant à elle nommée le Covid-19, pour «maladie du coronavirus de 2019».</p>
+						<p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/coronavirus-un-nouveau-nom-nest-terrible" target="_blank" rel="noopener">Le coronavirus a un nouveau nom et il n’est pas terrible</a></p>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseExample">
+						Rappelez-moi comment les choses ont démarré, s’il vous plaît.
+						<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+					</button>
+					<div class="collapse" id="collapse1">
+						<p>Selon la version officielle, tout serait parti en décembre 2019 d’animaux vivants vendus sur le marché de Wuhan en Chine et qui auraient transmis le virus à l’homme. Les coronavirus sont des virus dits zoonotiques, à savoir que leurs réservoirs naturels sont des animaux, souvent la chauve-souris. Généralement, le passage vers l’être humain se fait via un autre animal, appelé hôte intermédiaire: la civette masquée pour le SRAS et le dromadaire pour le MERS, deux épidémies provoquées par des coronavirus.</p>
+						<p>Cet animal intermédiaire pourrait être le pangolin, d’après une étude chinoise. Après avoir testé plus de 1000 échantillons provenant d’animaux sauvages, les scientifiques ont déterminé que les génomes de séquences de virus prélevés sur les pangolins étaient à 99% identiques à ceux trouvés sur des patients atteints du nouveau coronavirus, selon l’agence étatique Chine nouvelle. Mais ces résultats demandent confirmation.</p>
+						<p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/chauvessouris-chinoises-fabriques-nouveaux-coronavirus" target="_blank" rel="noopener">Les chauves-souris chinoises, fabriques à coronavirus</a> | <a href="https://www.letemps.ch/sciences/cerveau-ne-comprend-rien-propagation-coronavirus" target="_blank" rel="noopener">Pourquoi notre cerveau ne comprend rien à la propagation du coronavirus</a> | <a href="https://www.letemps.ch/sciences/francois-balloux-y-beaucoup-patients-zero-inutile-chercher-coupables" target="_blank" rel="noopener">François Balloux: «Il y a beaucoup de «patients zéro», il est inutile de chercher les coupables!»</a></p>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseExample">
+						Quels sont les symptômes provoqués par une infection au coronavirus?
+						<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+					</button>
+					<div class="collapse" id="collapse2">
+						<p>Les cas de maladies liés au SARS-CoV-2 peuvent évoluer très différemment et s’accompagner de légers symptômes comme de plus graves nécessitant une hospitalisation chez les sujets souffrant de maladies chroniques ou particulièrement sensibles.</p>
+						<p>Les symptômes les plus fréquents sont la fièvre (plus de 38 °C) et une toux sèche pouvant s’accompagner parfois de maux de gorge. Des symptômes mois courants peuvent également apparaître, comme des courbatures, des douleurs, des maux de tête, une conjonctivite, une diarrhée, une perte du goût ou de l’odorat, une éruption cutanée ou une décoloration des doigts du pied ou de la main.</p>
+						<p>D’après l’Organisation mondiale de la santé (OMS), environ une personne infectée sur cinq devient gravement malade et développe des symptômes plus inquiétants de difficultés respiratoires.</p>
+						<p><strong>Sur ce sujet:</strong> <a href="https://blogs.letemps.ch/dr-jean-gabriel-jeannot/2020/03/05/coronavirus-un-test-en-ligne-pour-connaitre-votre-risque/" target="_blank" rel="noopener">Coronavirus: un test en ligne pour connaître votre risque</a> | <a href="https://www.letemps.ch/sciences/crises-delirium-chez-malades-covid19" target="_blank" rel="noopener">Crises de delirium chez des malades du Covid-19</a> | <a href="https://www.letemps.ch/sciences/covid19-malades-ne-guerissent" target="_blank" rel="noopener">Covid-19, ces malades qui ne guérissent pas</a> | <a href="https://www.letemps.ch/sciences/coronavirus-sattaque-lentier-corps" target="_blank" rel="noopener">Comment le coronavirus s’attaque à l’entier de notre corps</a> | <a href="https://www.letemps.ch/sciences/avis-tempete-immunitaire-cas-graves-covid19" target="_blank" rel="noopener">Avis de tempête immunitaire dans les cas graves de Covid-19</a></p>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapseExample">
+						Que faire si je pense être infecté?
+						<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+					</button>
+					<div class="collapse" id="collapse3">
+						<p>Commençons par ce que vous ne devez surtout pas faire: aller directement chez le médecin, à l’hôpital sans y avoir été invité: c’est le meilleur moyen pour infecter un grand nombre de personnes, sujets vulnérables et personnels soignants compris.</p>
+						<p>Ceci étant dit, vous pouvez consulter la plateforme <a href="https://coronavirus.unisante.ch/evaluation" target="_blank" rel="noopener">Coronacheck,</a> première étape utile pour se faire une idée de son état et savoir s’il est recommandé de se faire tester au Covid-19.</p>
+						<p>En cas d’apparition des symptômes évoqués ci-dessus, vous pouvez appeler la ligne spécialement mise en place par l’Office fédéral de la santé publique (OFSP): le 058 463 00 00, accessible 24 heures sur 24.</p>
+						<p><strong>Sur ce sujet:</strong> <a href="https://www.bag.admin.ch/bag/fr/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/selbst-isolierung-und-selbst-quarantaene.html" target="_blank" rel="noopener">La fiche auto-isolation de l’OFSP vous dira tout</a></p>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapseExample">
+						Comment le virus se propage-t-il?
+						<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+					</button>
+					<div class="collapse" id="collapse4">
+						<p>Le virus ne se propage pas seul: ce sont les personnes qui le propagent. Les scientifiques ont encore beaucoup à apprendre à ce sujet, mais ils semblent s’accorder sur le fait que le SARS-CoV-2 se transmet par les sécrétions de personnes à personnes (postillons, toux, etc.). Des études ont également mis en évidence une possible transmission par les aérosols, ces nuages de gouttelettes microscopiques, qui sont mille fois plus petites que les postillons et invisible à l’œil nu.</p>
+						<p>Il subsiste quelques doutes sur la capacité du coronavirus à être transmis via des surfaces infectées – ce qu’on appelle des fomites. De récents travaux ont établi que le SARS-CoV-2 pouvait perdurer plusieurs jours sur du plastique ou de l’acier inoxydable. Une telle infection «peut être possible», évoque le site des Centres américains de contrôle et de prévention des maladies (CDC), si l’on touche une telle surface et qu’on porte ses mains au visage ensuite. Mais ce n’est vraisemblablement pas la principale voie de transmission.</p>
+						<p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/coronavirus-pourrait-finalement-se-transmettre-lair" target="_blank" rel="noopener">Le coronavirus pourrait finalement se transmettre par l’air</a> | <a href="https://www.letemps.ch/sciences/salles-fitness-nids-coronavirus" target="_blank" rel="noopener">Les salles de fitness, des nids à coronavirus?</a> | <a href="https://www.letemps.ch/sciences/coronavirus-mer-coquillages" target="_blank" rel="noopener">Le coronavirus ni dans la mer ni dans les coquillages</a></p>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapseExample">
+						Les personnes asymptomatiques peuvent-elles infecter d’autres personnes?
+						<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+					</button>
+					<div class="collapse" id="collapse5">
+						<p>Les personnes les plus malades sont aussi les plus contagieuses. Mais les autres? Plusieurs études semblent confirmer le rôle important des personnes asymptomatiques ou préasymptomatiques – c’est-à-dire n’ayant pas encore éprouvé les premières manifestations cliniques liées au Covid-19- dans la propagation de la pandémie du nouveau coronavirus. Selon certains experts, cette transmission silencieuse de la maladie serait responsable de plus de 50% du taux d’infections au sein de la pandémie.</p>
+						<p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/covid19-meme-symptomes-une-transmission-possible" target="_blank" rel="noopener">Covid-19: même sans symptômes, une transmission est possible</a></p>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapseExample">
+						Faut-il porter un masque de protection?
+						<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+					</button>
+					<div class="collapse" id="collapse6">
+						<p>Au début de l’épidémie, l’Organisation mondiale de la santé (OMS) estimait que seuls les personnes présentant des symptômes et les personnels soignants doivent en porter. Les masques chirurgicaux, les plus courants, ne protègent pas contre une infection virale: ils empêchent le porteur d’expectorer des gouttelettes potentiellement infectieuses.</p>
+						<p>Mais certains experts ne sont pas d’accord avec l’OMS, <a href="https://www.lemonde.fr/idees/article/2020/03/31/ne-pas-porter-de-masque-pour-se-proteger-du-coronavirus-est-une-grande-erreur-affirme-un-haut-scientifique-chinois_6035064_3232.html" target="_blank" rel="noopener">à commencer par le directeur des centres chinois de contrôle et de prévention des maladies</a>. Plusieurs pays asiatiques ont au contraire encouragé la population à se protéger, arguant du fait que si tout le monde se protège, on limite la transmission, comme l’ont montré plusieurs études scientifiques. La protection des masques est donc limitée, mais combinée avec les mesures d’hygiène et de distanciation sociale, elle a bel et bien un effet.</p>
+						<p><strong>En vidéo</strong><strong>:</strong> <a href="https://www.letemps.ch/node/1210369" target="_blank" rel="noopener">A quoi sert (vraiment) un masque?</a></p>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapseExample">
+						Mon chat, mon chien, mon perroquet peuvent-ils me transmettre le Covid-19?
+						<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+					</button>
+					<div class="collapse" id="collapse7">
+						<p>Début avril, plusieurs cas d’animaux de compagnie testés positifs au SARS-CoV-2 étaient recensés dont trois chiens à Hongkong et un chat en Belgique. Un des chiens est mort, mais sans preuve que ce soit bien le Covid-19 qui ait tué ce loulou de Poméranie à Hongkong. Le virus est extrêmement bien adapté pour infecter les humains, mais cela ne veut pas dire qu’il sera aussi efficace chez un chien. Il peut ouvrir deux portes accédant à l’intérieur des cellules humaines: les protéines transmembranaires ACE2 et TMPRSS2. Protéines qui existent aussi chez le chien, mais de forme légèrement différentes. Peu de chance qu’il puisse donc infecter les cellules de ces animaux, d’autant qu’il semble peu soumis aux mutations génétiques.</p>
+						<p>En l’état, il y a donc très peu de risque de transmission depuis ou vers les animaux domestiques. Et ce sont ces pauvres bêtes qui trinquent: les refuges du monde entier <a href="https://time.com/5793363/china-coronavirus-covid19-abandoned-pets-wuhan/" target="_blank" rel="noopener">observent un pic d’abandon</a> depuis le début de l’épidémie.</p>
+						<p><strong>Sur ce sujet</strong>: <a href="https://www.letemps.ch/sciences/animaux-compagnie-labri-coronavirus" target="_blank" rel="noopener">Les animaux de compagnie à l’abri du coronavirus</a></p>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapseExample">
+						Peut-on être infecté en faisant ses courses?
+						<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+					</button>
+					<div class="collapse" id="collapse8">
+						<p>C’est possible, mais facilement évitable en prenant quelques précautions. Possible car le virus persiste jusqu’à trois heures dans des aérosols, et que les supermarchés constituent des environnements confinés: rayons, parkings couverts et autres ascenseurs contribuent à une promiscuité déconseillée. Mais les aérosols ne sont vraisemblablement pas le vecteur principal de transmission.</p>
+						<p>Les aliments <a href="https://www.efsa.europa.eu/fr/news/coronavirus-no-evidence-food-source-or-transmission-route" target="_blank" rel="noopener">ne sont pas non plus des vecteurs privilégiés</a>, et la cuisson tue les virus. Attention de bien laver ses fruits et légumes, ce qu’il faut de toute façon faire pandémie ou pas. Enfin s’agissant des emballages, ils peuvent être contaminés. Il faut donc les jeter et se laver les mains.</p>
+						<p>En résumé, en évitant les contacts, en respectant une hygiène stricte, et en lavant ou cuisant bien ses aliments, on ne risque rien.</p>
+						<p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/faire-courses-risques-gestes-adopter" target="_blank" rel="noopener">Faire ses courses sans risques: les gestes à adopter</a></p>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapseExample">
+						Les enfants peuvent-ils attraper le Covid-19 ou le transmettre?
+						<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+					</button>
+					<div class="collapse" id="collapse9">
+						<p>Comme tout le monde, les enfants peuvent être infectés par le SARS-CoV-2, mais ils sont sous-représentés parmi les personnes atteintes. <a href="https://www.nejm.org/doi/full/10.1056/NEJMc2005073?cid=DM88773_&amp;bid=171209032" target="_blank" rel="noopener">Une étude menée sur 72 134 personnes infectées en Chine</a> a montré début mars que seuls 1% d’entre elles avaient moins de 10 ans. La plupart des cas n’étaient pas critiques. Un seul décès a été recensé dans cette étude, chez un bébé de dix mois ayant un facteur de risque pulmonaire. Depuis, des cas de décès chez une fille de 16 ans en France, et une autre de 12 ans en Belgique ont été signalés. Mais il s’agit de formes sévères rarissimes de la maladie.</p>
+						<p>Quant à la transmission, elle ne semble pas particulièrement portée par les enfants, même si ce point demeure obscur. Parmi les explications possibles, le fait qu’ils toussent «mal» comparé aux adultes, limitant les projections de gouttelettes, ou encore le fait que le nez ne coule pas lors du Covid-19 (les sécrétions nasales étant un vecteur important chez les enfants). Les adolescents ou les jeunes adultes semblent plus à même de transmettre le virus, en raison de faibles symptômes qu’ils subissent.</p>
+						<p><strong>Sur ce sujet</strong>: <a href="https://www.letemps.ch/sciences/covid19-chez-enfants-preuves-scientifiques-insuffisantes" target="_blank" rel="noopener">Le Covid-19 chez les enfants, des preuves scientifiques insuffisantes</a></p>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapseExample">
+						Quels sont les traitements donnés en cas de Covid-19?
+						<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+					</button>
+					<div class="collapse" id="collapse10">
+						<p>Il n’y a pas de traitement standard étant donné que le SARS-CoV-2 est un virus émergent, qui était inconnu il y a quelques mois. Tant qu’aucune molécule n’a clairement démontré son efficacité à éradiquer le virus, les médecins doivent donc se baser sur des maladies semblables. Pour les patients à risque et hospitalisés, qui présentent des infiltrations pulmonaires et de graves insuffisances respiratoires, il existe plusieurs molécules, au premier rang desquelles les antiviraux.</p>
+						<p>Le Kaletra, une combinaison de lopinavir et de ritonavir, est utilisé dans certains hôpitaux, dont celui de Genève. Autre possibilité: le remdesivir, produit par Gilead, ou encore l’hydroxychloroquine, un ancien antipaludique dont l’efficacité a été mise en doute par de nombreuses études. Tous ces médicaments – et d’autres – font actuellement l’objet d’essais cliniques afin de déterminer leur efficacité et leur innocuité.</p>
+						<p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/plasma-personnes-gueries-peutil-venir-bout-coronavirus" target="_blank" rel="noopener">Le plasma des personnes guéries peut-il venir à bout du coronavirus?</a> | <a href="https://www.letemps.ch/node/1208194" target="_blank" rel="noopener">Peut-on guérir grâce au sang d’un autre?</a></p>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapseExample">
+						Pourquoi peut-on perdre l’odorat si l’on est infecté?
+						<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+					</button>
+					<div class="collapse" id="collapse11">
+						<p>Négligée lors de l’irruption de la maladie, la perte de l’odorat est désormais relevée dans de nombreux pays et pourrait être expliquée par la capacité du nouveau coronavirus à infecter le système nerveux central des malades – notamment les zones du cerveau traitant les informations olfactives.</p>
+						<p>Des études ont rapporté la présence du SARS-CoV-1 (très proche génétiquement) dans le système nerveux de malades lors de l’épidémie de SRAS au début des années 2000. D’autres travaux ont mis en évidence chez la souris la diffusion du virus dans le bulbe olfactif puis dans le reste du cerveau. De quoi laisser supposer à certains scientifiques que les difficultés respiratoires des patients pourraient être aussi le fait d’atteintes aux centres nerveux en charge du contrôle de la respiration.</p>
+						<p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/covid19-perte-dodorat-probablement-temporaire">Covid-19: la perte d’odorat probablement temporaire</a></p>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapseExample">
+						Une fois remis de la maladie, est-on immunisé contre le coronavirus?
+						<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+					</button>
+					<div class="collapse" id="collapse12">
+						<p>C’est la grande question, que les experts du monde entier essaient encore de trancher. Des études ont confirmé l’existence d’une immunité acquise contre le SARS-CoV-2, y compris chez les personnes présentant une forme légère de la maladie, mais on ne sait toujours pas de combien de temps est sa durée.</p>
+						<p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/covid19-ont-une-forme-mineure-ont-developpe-une-immunite-protectrice-combien-temps" target="_blank" rel="noopener">Covid-19: «Ceux qui ont fait une forme mineure ont développé une immunité protectrice, mais pour combien de temps?»</a></p>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapseExample">
+						Quand un vaccin sera-t-il disponible et comment sont-ils conçus?
+						<i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
+					</button>
+					<div class="collapse" id="collapse13">
+						<p>La science ne dispose, à l’heure actuelle, d’aucun remède efficace contre le nouveau coronavirus. Dans ce contexte, tous les regards se tournent vers un possible vaccin. Depuis le début de l’été, l’élaboration d’un vaccin contre le Covid-19 s’est accélérée. Selon le suivi réalisé par l’OMS, cinq projets sont entrés dans la phase III de leurs essais clinique sur les plus de 160 recensés à travers le monde. Les plus rapides devraient présenter les résultats préliminaires de cette phase finale de développement cet automne.</p>
+						<p>Plusieurs méthodes sont actuellement adoptées afin de développer un vaccin. La première, choisie par deux des recherches menées en Chine, consiste à prendre une particule du virus et à l’inactiver, comme le vaccin contre la coqueluche, par exemple.</p>
+						<p>La deuxième consiste à mettre une des protéines qui enveloppent le coronavirus, appelée protéine Spike, dans un autre virus, afin que celui-ci se réplique dans le corps humain, et accélère la fabrication d’anticorps.</p>
+						<p>Quant à la troisième méthode, elle consiste à injecter dans le corps humain une molécule des protéines du gène (ADN) ou du messager du gène (RNA) du coronavirus. La particule sera sélectionnée précisément afin de provoquer la meilleure réponse immunitaire possible.</p>
+						<p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/covid19-un-vaccin" target="_blank" rel="noopener">Covid-19: à quand un vaccin?</a></p>
+					</div>
+				</li>
+				<!-- end qa li -->
+			</ul>
 		</div>
-	</div> -->
 
-	<div class="row padding-bottom">
-		<div class="col-12 was-col-10">
-			<h5>Nouveaux cas, nouveaux décès et nombre de tests</h5>
-			<p>Le nombre de cas quotidiens confirmés en laboratoire augmente très nettement depuis début octobre. Notamment au regard du nombre de tests, stable depuis plusieurs mois.<br/> Ce graphique emploie une moyenne mobile, qui aplanit les fluctuations, et une échelle logarithmique, permettant de représenter des données d’un ordre de grandeur différent. Décochez la moyenne mobile pour voir les fluctuations quotidiennes – notamment les creux du week-end dûs à un plus faible nombre de tests.</p>
-
-			<div class="multiline" id="chartDailyTestsCH">
-				<span class="toggle">
-					<input type="checkbox" class="form-check-input" id="chartCHToggleLog" checked="checked"></input><label class="form-check-label" for="chartCHToggleLog">Echelle logarithmique</label><br>
-					<input type="checkbox" class="form-check-input" id="chartCHToggle" checked="checked"></input><label class="form-check-label" for="chartCHToggle">Moyenne mobile</label>
-				</span>
-			</div>
-			<div class="source"><b>Source:</b> <a target="_blank" href="https://www.bag.admin.ch/bag/fr/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov.html">OFSP</a>, données retraitées par «Le Temps». Moyenne mobile sur 7 jours.</div>
-		</div>
 	</div>
+</div> <!-- fin bloc texte -->
 
-	<div class="row">
-		<div class="offset-md-2 col-md-8 col-sm-12">
-			<div class="avertissement">
-				<h6>Lire les chiffres du covid</b></h6>
-				<ul>
-					<li>La fiabilité et la disponibilité des données varie de pays en pays</li>
-					<li>Le nombre de cas confirmés ne correspond qu’à une portion des cas réels. Il dépend de la stratégie de dépistage et de la qualité des tests</li>
-					<li>L’attribution de décès au Covid-19 suit des règles différentes selon les pays</li>
-					<li>Les pays et cantons réajustent régulièrement leurs bilans des jours précédents</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+<div class="row" id="methode-anchor">
+	<div class="offset-md-2 col-md-8 col-sm-12">
 
-	<div class="row padding-bottom">
-		<div class="col-12 was-col-10">
-			<h5>Nouveaux cas dans les cantons romands ainsi que Berne et Zurich, depuis le 20 septembre</h5>
-			<p>Ce graphique emploie une moyenne mobile sur sept jours pour aplanir les fluctuations, notamment durant les week-ends. Les données des derniers jours sont provisoires.</p>
-				<div class="multiline" id="chartCantons">
-					<span class="toggle"><input type="checkbox" class="form-check-input" id="chartCantonsToggle" checked="checked"></input><label class="form-check-label" for="chartCantonsToggle">Moyenne mobile</label></span>
-				</div>
-			<div class="source">
-				<b>Source:</b> <a target="_blank" href="https://covid-19-schweiz.bagapps.ch/fr-2.html">OFSP, Cas confirmés en laboratoire: évolution chronologique de la distribution géographique</a>.
-			</div>
-		</div>
-	</div>
-
-	<div class="row padding-bottom">
-		<div class="col-12 was-col-10">
-			<h5>Taux de reproduction en Suisse</h5>
-
-			<p>Le nombre de reproduction effectif (R<sub>e</sub>) correspond au nombre moyen d’infections causées par un individu infecté. S’il est supérieur à 1 (<span class="highlight highlight-dark-orange">la ligne orange</span> dans le graphique ci-dessous), l’épidémie croît de manière exponentielle.</p>
-
-			<div class="multiline" id="reMeanCH"></div>
-			<div class="source"><b>Source:</b> estimation de la <a target="_blank" href="https://ncs-tf.ch/fr/rapport-de-situation">Swiss National COVID-19 Science Task Force</a> fondée sur les cas confirmés d’après l’OFSP. Les valeurs des derniers jours sont inconnues en raison du délai entre l’infection et le moment de sa détection. La Task Force révise régulièrement ses estimations.</div>
-		</div>
-	</div>
-
-	<div class="row padding-bottom">
-		<div class="col-12 was-col-10">
-			<h5>Taux de reproduction en Europe</h5>
-
-			<p>R<sub>e</sub> est actuellement <span class="highlight highlight-dark-orange">supérieur à 1</span> dans la plupart des pays européens, selon les estimations de la task force scientifique de la Confédération.</p>
-
-			<div class="multiline" id="reMeanEU"></div>
-			<div class="source"><b>Source:</b> estimation de la <a target="_blank" href="https://ibz-shiny.ethz.ch/covid-19-re/">Swiss National COVID-19 Science Task Force</a> fondée sur les cas confirmés selon l’ECDC. La Task Force révise régulièrement ses estimations, en particulier pour les jours les plus récents.</div>
-		</div>
-	</div>
-
-
-
-
-	<div class="row padding-bottom">
-		<div class="col-12 was-col-10">
-			<h5 id="deces-hebdomadaires">Nombre hebdomadaire de décès</h5>
-			<p>En nombre absolus, les Etats-Unis cumulent le plus grand nombre de décès attribués au Covid-19. Mais l’Inde et le Brésil l’ont rattrapé en nombre de nouveaux décès par semaine. Ce graphique emploie une échelle logarithmique.</p>
-			<p>A comparer avec les <a href="#taux-deces">taux de décès cumulés par million d’habitants</a>, plus bas dans cette page.</p>
-			<div class="multiline" id="chartMovingAvg"></div>
-			<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
-		</div>
-	</div>
-
-	<div class="row padding-bottom">
-		<div class="col-12 was-col-10">
-			<h5>Surmortalité des 65 ans et plus dans la région lémanique</h5>
-			<p>L’Office fédéral de la statistique observe le <span class="highlight highlight-blue">nombre hebdomadaire de décès</span> dans les grandes régions de Suisse, toutes causes confondues. La <span class="highlight highlight-orange">valeur attendue</span> est calculée sur la base des cinq années précédentes. L’<span class="highlight highlight-green">aire verte</span> correspond à la fourchette dans laquelle les fluctuations sont considérées comme aléatoires. La surmortalité est le nombre de décès qui dépassent la valeur attendue. L’OFS corrige à la hausse les valeurs des 40 derniers jours pour tenir compte des décès enregistrés en retard.</p>
-
-			<p>Les statistiques de surmortalité des différents pays permettent d’évaluer la précision de leurs bilans en matière de décès dus au Covid-19. Lire à ce sujet: <a href="https://labs.letemps.ch/interactive/2020/surmortalite-et-covid-19/">L’impact du Covid-19 sous-estimé dans de nombreux pays</a></p>
-
-			<div class="multiline" id="deathRate"></div>
-			<div class="source"><b>Source:</b> <a href="https://www.experimental.bfs.admin.ch/fr/momo.html" target="_blank">Office fédéral de la statistique</a>. En raison des décès annoncés en retard, l’OFS doit ajuster les valeurs des 40 derniers jours.</div>
-		</div>
-	</div>
-
-	<!-- <div class="row padding-bottom">
-		<div class="col-12 was-col-10">
-			<h5>Taux de décès quotidien</h5>
-			<p></p>
-			<div class="multiline" id="chartMovingAvgPop"></div>
-			<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
-		</div>
-	</div> -->
-
-
-
-	<!-- switzerland -->
-	<div class="row align-items-end">
-		<div class="col-12 group-label">
-			<h5>Nouveaux cas confirmés par canton</h5>
-		</div>
-
-		<div class="col-12">
-			<div id="time-serie-chart-ch"></div>
-		</div>
-		<div class="col-7 filter-container-ch">
-			<label>Naviguer par date</label>
-			<input type="text" id="range_sliderCH" />
-		</div>
-		<div class="col-1 col-lg-2">
-			<button id="playpauseCH" class="button play-ch pause-ch"></button>
-		</div>
-		<div class="col-4 col-lg-3">
-			<div class="form-check">
-		    <input type="checkbox" class="form-check-input" id="showAbsoluteCH">
-		    <label class="form-check-label" for="showAbsoluteCH">Valeurs absolues</label>
-		  </div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-lg-9 col-sm-12">
-			<div id="mapCH" class="map">
-			</div>
-		</div>
-
-		<div class="col-lg-3 col-sm-12">
-			<div class="map-details-CH">
-				<h4></h4>
-				<p>Survoler/toucher un canton pour plus d’informations.</p>
-			</div>
-		</div>
-		<div class="col-lg-12">
-			<div class="source"><b>Note:</b> les données cantonales manquantes sont substituées par celles du jour précédent.</div>
-			<div class="source"><b>Source:</b> <a target="_blank" href="https://github.com/openZH/covid_19">OpenZH</a>, cantons suisses. Population dans les cantons: <a target="_blank" href="https://www.bfs.admin.ch/bfs/fr/home/statistiques/population/effectif-evolution/population.assetdetail.9486047.html">chiffres définitifs 2018 de l’OFS</a></div>
-		</div>
-	</div>
-
-
-
-		<!-- <div class="row padding-bottom">
-			<div class="col-12 was-col-10">
-				<h5>Cas confirmés en valeurs absolues</h5>
-				<p>Le nombre de cas confirmés en laboratoire grimpe en flèche aux Etats-Unis, qui sont cependant encore loin derrière l’Italie et l’Espagne en taux de cas par rapport à la population.</p>
-				<div class="multiline" id="chartAbsolute"></div>
-				<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
-			</div>
-		</div> -->
-
-		<div class="row padding-bottom">
-			<div class="col-12 was-col-10">
-				<h5>Taux de cas confirmés par million d’habitants</h5>
-				<p>Les pays sont alignés sur le jour où les cas confirmés atteignent le taux de 1 cas par million d’habitants. <span class="highlight highlight-fatline">Pour la Suisse</span>, ce «jour 0» est le 29 février, avec 12 cas. Des différences dans les méthodes et le nombre de tests effectués rendent cependant les comparaisons entre pays difficiles.</p>
-				<div class="multiline" id="chartDayOffset"></div>
-				<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>. Le graphique s’arrête à la dernière valeur pour l’Italie, celles concernant la Chine sont donc rognées.</div>
-				<div class="source">Note: le 25 mai, l’Espagne a réévalué ses bilans à la baisse (-1918 décès et-372 cas). Ces chiffres ont ensuite été fortement corrigés à la hausse.</div>
-			</div>
-		</div>
-
-		<div class="row padding-bottom">
-			<div class="col-12 was-col-10">
-				<h5 id="taux-deces">Taux de décès par million d’habitants</h5>
-				<p>Les pays sont alignés sur le jour où les cas confirmés atteignent le taux de 1 cas par million d’habitants. L’attribution ou non d’un décès au Covid-19 peut être difficile, en particulier lorsque la victime était affectée par plusieurs maladies. Les critères ne sont pas les mêmes dans chaque pays.</p>
-				<p>A comparer avec les <a href="#deces-hebdomadaires">décès hebdomadaires en valeurs absolues</a>.</p>
-				<div class="multiline" id="chartDeath"></div>
-				<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>. Le graphique s’arrête à la dernière valeur pour l’Italie, celles concernant la Chine sont donc rognées.</div>
-				<div class="source">Note: jusqu’au 22 avril, le graphique s’arrêtait au nombre de jours du pays où le Covid s’est déclaré le plus récemment.</div>
-			</div>
-		</div>
-
-	<!-- toolbox -->
-
-	<div class="row align-items-end">
-		<div class="col-12 group-label">
-			<h5 id="map-anchor">Cas cumulés dans le monde depuis le 27 janvier</h5>
-			<p>Les Etats-Unis et le Brésil sont devenus les nouveaux épicentres de la pandémie. L’Afrique du Sud et l’Afrique subsaharienne restent relativement épargnées.</p>
-			<p>Cette carte présente un cumul hebdomadaire du nombre de cas qui ne tient pas compte des guérisons et décès.</p>
-		</div>
-
-		<div class="col-12">
-			<div id="time-serie-chart"></div>
-		</div>
-		<div class="col-10 filter-container">
-			<label>Naviguer par date</label>
-			<input type="text" id="range_slider" />
-		</div>
-		<div class="col-2">
-			<button id="playpause" class="button play pause"></button>
-		</div>
-	</div>
-
-	<!-- map container -->
-	<div class="row">
-
-		<div class="col-lg-9 col-sm-12">
-			<div id="map" class="map">
-				<div class="tooltip"></div>
-			</div>
-		</div>
-
-		<div class="col-lg-3 col-sm-12">
-			<div class="map-details">
-				<h4></h4>
-				<p>Survoler/toucher un cercle pour plus d’informations.</p>
-			</div>
-		</div>
-		<div class="col-lg-12">
-			<div class="source">
-				<b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>. La taille des cercles a été modifiée à plusieurs reprises dès le 15 avril en raison de la forte hausse des cas aux Etats-Unis.</div>
-			</div>
-		</div>
-
-
-
-
-	<!-- <div class="row padding-bottom">
-		<div class="col-12 was-col-10">
-			<h5>Taux d’augmentation</h5>
-
-			<div class="multiline" id="chartIncrease"></div>
-			<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
-		</div>
-	</div> -->
-
-	<div class="row padding-bottom" id="triggerAnimatedChart">
-
-			<div class="offset-md-2 col-md-8 col-sm-12">
-				<h5>Quand la Suisse était le pays au taux le plus élevé</h5>
-				<p>Du mardi 24 au dimanche 29 mars, la Suisse a été le pays comptant le taux de cas confirmés par habitant le plus élevé. Elle se trouvait en 6e position en décès par million d’habitants, bien que l’épidémie n’ait atteint le pays que le 25 février (contre le 31 janvier pour l’Italie).</p>
-				<p>La fiabilité des données, l’étendue des tests et la manière d’attribuer les décès au Covid-19 varie de pays en pays a cependant une forte importance dans les bilans annoncés par les pays.</p>
-
-				<!-- <div class="text-center form-check">
-					<input type="checkbox" class="form-check-input" id="displayChina">
-					<label class="form-check-label" for="displayChina">Décès par Mio d’habitant</label>
-				</div> -->
-
-				<p class="text-center no-margin"><b>Date:</b> <span class="date">mercredi 11 mars 2020</span> <span class="horizontal-spacer"></span><i class="fa fa-undo reload" aria-hidden="true"></i></p>
-
-				<div id="animatedBarChart"></div>
-				<div>Taux de cas confirmés pour un million d’habitants. Les pays comptant moins d’un million d’habitants ont été écartés.</div>
-				<div class="source"><b>Source:</b> <a href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide" target="_blank">Centre européen de prévention et de contrôle des maladies (ECDC)</a>, données retraitées par <i>Le Temps</i>.</div>
-		</div>
-	</div>
-
-
-
-
-
-
-	<!-- bloc texte -->
-	<div class="row text margin-top padding-bottom">
-		<div class="offset-md-2 col-md-8 col-sm-12">
-
-			<h3>Le Covid-19 en douze questions</h3>
-
-			<div id="faq" class="card">
-				<ul class="list-group list-group-flush">
-					<!-- begin qa li -->
-
-					<li class="list-group-item">
-  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse0" aria-expanded="false" aria-controls="collapseExample">
-    Covid-19, SARS-CoV-2, coronavirus… Qu’est-ce que ces noms désignent?
-    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
-  </button>
-  <div class="collapse" id="collapse0">
-    <p>Parlez-vous le coronavirus? Commençons par un rapide point sur la nomenclature utilisée.</p>
-		<p>L’épidémie est provoquée par un virus de la famille des coronavirus, ou virus à couronne, du nom de l’aspect de ces agents pathogènes: une boule hérissée de spicules formant une couronne.</p>
-		<p>Il existe plusieurs coronavirus. Celui dont il est question en ce moment, un temps nommé nCoV-2019 pour «nouveau coronavirus de 2019», s’appelle désormais officiellement le SARS-CoV-2, pour «coronavirus responsable du syndrome respiratoire aigu sévère 2».</p>
-		<p>La maladie qu’il provoque est quant à elle nommée le Covid-19, pour «maladie du coronavirus de 2019».</p>
-    <p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/coronavirus-un-nouveau-nom-nest-terrible" target="_blank" rel="noopener">Le coronavirus a un nouveau nom et il n’est pas terrible</a></p>
-  </div>
-</li>
-
-<li class="list-group-item">
-  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseExample">
-    Rappelez-moi comment les choses ont démarré, s’il vous plaît.
-    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
-  </button>
-  <div class="collapse" id="collapse1">
-    <p>Selon la version officielle, tout serait parti en décembre 2019 d’animaux vivants vendus sur le marché de Wuhan en Chine et qui auraient transmis le virus à l’homme. Les coronavirus sont des virus dits zoonotiques, à savoir que leurs réservoirs naturels sont des animaux, souvent la chauve-souris. Généralement, le passage vers l’être humain se fait via un autre animal, appelé hôte intermédiaire: la civette masquée pour le SRAS et le dromadaire pour le MERS, deux épidémies provoquées par des coronavirus.</p>
-		<p>Cet animal intermédiaire pourrait être le pangolin, d’après une étude chinoise. Après avoir testé plus de 1000 échantillons provenant d’animaux sauvages, les scientifiques ont déterminé que les génomes de séquences de virus prélevés sur les pangolins étaient à 99% identiques à ceux trouvés sur des patients atteints du nouveau coronavirus, selon l’agence étatique Chine nouvelle. Mais ces résultats demandent confirmation.</p>
-    <p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/chauvessouris-chinoises-fabriques-nouveaux-coronavirus" target="_blank" rel="noopener">Les chauves-souris chinoises, fabriques à coronavirus</a> | <a href="https://www.letemps.ch/sciences/cerveau-ne-comprend-rien-propagation-coronavirus" target="_blank" rel="noopener">Pourquoi notre cerveau ne comprend rien à la propagation du coronavirus</a> | <a href="https://www.letemps.ch/sciences/francois-balloux-y-beaucoup-patients-zero-inutile-chercher-coupables" target="_blank" rel="noopener">François Balloux: «Il y a beaucoup de «patients zéro», il est inutile de chercher les coupables!»</a></p>
-  </div>
-</li>
-
-<li class="list-group-item">
-  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseExample">
-    Quels sont les symptômes provoqués par une infection au coronavirus?
-    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
-  </button>
-  <div class="collapse" id="collapse2">
-    <p>Les cas de maladies liés au SARS-CoV-2 peuvent évoluer très différemment et s’accompagner de légers symptômes comme de plus graves nécessitant une hospitalisation chez les sujets souffrant de maladies chroniques ou particulièrement sensibles.</p>
-		<p>Les symptômes les plus fréquents sont la fièvre (plus de 38 °C) et une toux sèche pouvant s’accompagner parfois de maux de gorge. Des symptômes mois courants peuvent également apparaître, comme des courbatures, des douleurs, des maux de tête, une conjonctivite, une diarrhée, une perte du goût ou de l’odorat, une éruption cutanée ou une décoloration des doigts du pied ou de la main.</p>
-		<p>D’après l’Organisation mondiale de la santé (OMS), environ une personne infectée sur cinq devient gravement malade et développe des symptômes plus inquiétants de difficultés respiratoires.</p>
-    <p><strong>Sur ce sujet:</strong> <a href="https://blogs.letemps.ch/dr-jean-gabriel-jeannot/2020/03/05/coronavirus-un-test-en-ligne-pour-connaitre-votre-risque/" target="_blank" rel="noopener">Coronavirus: un test en ligne pour connaître votre risque</a> | <a href="https://www.letemps.ch/sciences/crises-delirium-chez-malades-covid19" target="_blank" rel="noopener">Crises de delirium chez des malades du Covid-19</a> | <a href="https://www.letemps.ch/sciences/covid19-malades-ne-guerissent" target="_blank" rel="noopener">Covid-19, ces malades qui ne guérissent pas</a> | <a href="https://www.letemps.ch/sciences/coronavirus-sattaque-lentier-corps" target="_blank" rel="noopener">Comment le coronavirus s’attaque à l’entier de notre corps</a> | <a href="https://www.letemps.ch/sciences/avis-tempete-immunitaire-cas-graves-covid19" target="_blank" rel="noopener">Avis de tempête immunitaire dans les cas graves de Covid-19</a></p>
-  </div>
-</li>
-
-<li class="list-group-item">
-  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapseExample">
-    Que faire si je pense être infecté?
-    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
-  </button>
-  <div class="collapse" id="collapse3">
-    <p>Commençons par ce que vous ne devez surtout pas faire: aller directement chez le médecin, à l’hôpital sans y avoir été invité: c’est le meilleur moyen pour infecter un grand nombre de personnes, sujets vulnérables et personnels soignants compris.</p>
-		<p>Ceci étant dit, vous pouvez consulter la plateforme <a href="https://coronavirus.unisante.ch/evaluation" target="_blank" rel="noopener">Coronacheck,</a> première étape utile pour se faire une idée de son état et savoir s’il est recommandé de se faire tester au Covid-19.</p>
-		<p>En cas d’apparition des symptômes évoqués ci-dessus, vous pouvez appeler la ligne spécialement mise en place par l’Office fédéral de la santé publique (OFSP): le 058 463 00 00, accessible 24 heures sur 24.</p>
-    <p><strong>Sur ce sujet:</strong> <a href="https://www.bag.admin.ch/bag/fr/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov/selbst-isolierung-und-selbst-quarantaene.html" target="_blank" rel="noopener">La fiche auto-isolation de l’OFSP vous dira tout</a></p>
-  </div>
-</li>
-
-<li class="list-group-item">
-  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapseExample">
-    Comment le virus se propage-t-il?
-    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
-  </button>
-  <div class="collapse" id="collapse4">
-    <p>Le virus ne se propage pas seul: ce sont les personnes qui le propagent. Les scientifiques ont encore beaucoup à apprendre à ce sujet, mais ils semblent s’accorder sur le fait que le SARS-CoV-2 se transmet par les sécrétions de personnes à personnes (postillons, toux, etc.). Des études ont également mis en évidence une possible transmission par les aérosols, ces nuages de gouttelettes microscopiques, qui sont mille fois plus petites que les postillons et invisible à l’œil nu.</p>
-		<p>Il subsiste quelques doutes sur la capacité du coronavirus à être transmis via des surfaces infectées – ce qu’on appelle des fomites. De récents travaux ont établi que le SARS-CoV-2 pouvait perdurer plusieurs jours sur du plastique ou de l’acier inoxydable. Une telle infection «peut être possible», évoque le site des Centres américains de contrôle et de prévention des maladies (CDC), si l’on touche une telle surface et qu’on porte ses mains au visage ensuite. Mais ce n’est vraisemblablement pas la principale voie de transmission.</p>
-    <p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/coronavirus-pourrait-finalement-se-transmettre-lair" target="_blank" rel="noopener">Le coronavirus pourrait finalement se transmettre par l’air</a> | <a href="https://www.letemps.ch/sciences/salles-fitness-nids-coronavirus" target="_blank" rel="noopener">Les salles de fitness, des nids à coronavirus?</a> | <a href="https://www.letemps.ch/sciences/coronavirus-mer-coquillages" target="_blank" rel="noopener">Le coronavirus ni dans la mer ni dans les coquillages</a></p>
-  </div>
-</li>
-
-<li class="list-group-item">
-  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapseExample">
-    Les personnes asymptomatiques peuvent-elles infecter d’autres personnes?
-    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
-  </button>
-  <div class="collapse" id="collapse5">
-    <p>Les personnes les plus malades sont aussi les plus contagieuses. Mais les autres? Plusieurs études semblent confirmer le rôle important des personnes asymptomatiques ou préasymptomatiques – c’est-à-dire n’ayant pas encore éprouvé les premières manifestations cliniques liées au Covid-19- dans la propagation de la pandémie du nouveau coronavirus. Selon certains experts, cette transmission silencieuse de la maladie serait responsable de plus de 50% du taux d’infections au sein de la pandémie.</p>
-    <p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/covid19-meme-symptomes-une-transmission-possible" target="_blank" rel="noopener">Covid-19: même sans symptômes, une transmission est possible</a></p>
-  </div>
-</li>
-
-<li class="list-group-item">
-  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapseExample">
-    Faut-il porter un masque de protection?
-    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
-  </button>
-  <div class="collapse" id="collapse6">
-    <p>Au début de l’épidémie, l’Organisation mondiale de la santé (OMS) estimait que seuls les personnes présentant des symptômes et les personnels soignants doivent en porter. Les masques chirurgicaux, les plus courants, ne protègent pas contre une infection virale: ils empêchent le porteur d’expectorer des gouttelettes potentiellement infectieuses.</p>
-		<p>Mais certains experts ne sont pas d’accord avec l’OMS, <a href="https://www.lemonde.fr/idees/article/2020/03/31/ne-pas-porter-de-masque-pour-se-proteger-du-coronavirus-est-une-grande-erreur-affirme-un-haut-scientifique-chinois_6035064_3232.html" target="_blank" rel="noopener">à commencer par le directeur des centres chinois de contrôle et de prévention des maladies</a>. Plusieurs pays asiatiques ont au contraire encouragé la population à se protéger, arguant du fait que si tout le monde se protège, on limite la transmission, comme l’ont montré plusieurs études scientifiques. La protection des masques est donc limitée, mais combinée avec les mesures d’hygiène et de distanciation sociale, elle a bel et bien un effet.</p>
-    <p><strong>En vidéo</strong><strong>:</strong> <a href="https://www.letemps.ch/node/1210369" target="_blank" rel="noopener">A quoi sert (vraiment) un masque?</a></p>
-  </div>
-</li>
-
-<li class="list-group-item">
-  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapseExample">
-    Mon chat, mon chien, mon perroquet peuvent-ils me transmettre le Covid-19?
-    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
-  </button>
-  <div class="collapse" id="collapse7">
-    <p>Début avril, plusieurs cas d’animaux de compagnie testés positifs au SARS-CoV-2 étaient recensés dont trois chiens à Hongkong et un chat en Belgique. Un des chiens est mort, mais sans preuve que ce soit bien le Covid-19 qui ait tué ce loulou de Poméranie à Hongkong. Le virus est extrêmement bien adapté pour infecter les humains, mais cela ne veut pas dire qu’il sera aussi efficace chez un chien. Il peut ouvrir deux portes accédant à l’intérieur des cellules humaines: les protéines transmembranaires ACE2 et TMPRSS2. Protéines qui existent aussi chez le chien, mais de forme légèrement différentes. Peu de chance qu’il puisse donc infecter les cellules de ces animaux, d’autant qu’il semble peu soumis aux mutations génétiques.</p>
-		<p>En l’état, il y a donc très peu de risque de transmission depuis ou vers les animaux domestiques. Et ce sont ces pauvres bêtes qui trinquent: les refuges du monde entier <a href="https://time.com/5793363/china-coronavirus-covid19-abandoned-pets-wuhan/" target="_blank" rel="noopener">observent un pic d’abandon</a> depuis le début de l’épidémie.</p>
-    <p><strong>Sur ce sujet</strong>: <a href="https://www.letemps.ch/sciences/animaux-compagnie-labri-coronavirus" target="_blank" rel="noopener">Les animaux de compagnie à l’abri du coronavirus</a></p>
-  </div>
-</li>
-
-<li class="list-group-item">
-  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapseExample">
-    Peut-on être infecté en faisant ses courses?
-    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
-  </button>
-  <div class="collapse" id="collapse8">
-    <p>C’est possible, mais facilement évitable en prenant quelques précautions. Possible car le virus persiste jusqu’à trois heures dans des aérosols, et que les supermarchés constituent des environnements confinés: rayons, parkings couverts et autres ascenseurs contribuent à une promiscuité déconseillée. Mais les aérosols ne sont vraisemblablement pas le vecteur principal de transmission.</p>
-		<p>Les aliments <a href="https://www.efsa.europa.eu/fr/news/coronavirus-no-evidence-food-source-or-transmission-route" target="_blank" rel="noopener">ne sont pas non plus des vecteurs privilégiés</a>, et la cuisson tue les virus. Attention de bien laver ses fruits et légumes, ce qu’il faut de toute façon faire pandémie ou pas. Enfin s’agissant des emballages, ils peuvent être contaminés. Il faut donc les jeter et se laver les mains.</p>
-		<p>En résumé, en évitant les contacts, en respectant une hygiène stricte, et en lavant ou cuisant bien ses aliments, on ne risque rien.</p>
-    <p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/faire-courses-risques-gestes-adopter" target="_blank" rel="noopener">Faire ses courses sans risques: les gestes à adopter</a></p>
-  </div>
-</li>
-
-<li class="list-group-item">
-  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapseExample">
-    Les enfants peuvent-ils attraper le Covid-19 ou le transmettre?
-    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
-  </button>
-  <div class="collapse" id="collapse9">
-    <p>Comme tout le monde, les enfants peuvent être infectés par le SARS-CoV-2, mais ils sont sous-représentés parmi les personnes atteintes. <a href="https://www.nejm.org/doi/full/10.1056/NEJMc2005073?cid=DM88773_&amp;bid=171209032" target="_blank" rel="noopener">Une étude menée sur 72 134 personnes infectées en Chine</a> a montré début mars que seuls 1% d’entre elles avaient moins de 10 ans. La plupart des cas n’étaient pas critiques. Un seul décès a été recensé dans cette étude, chez un bébé de dix mois ayant un facteur de risque pulmonaire. Depuis, des cas de décès chez une fille de 16 ans en France, et une autre de 12 ans en Belgique ont été signalés. Mais il s’agit de formes sévères rarissimes de la maladie.</p>
-<p>Quant à la transmission, elle ne semble pas particulièrement portée par les enfants, même si ce point demeure obscur. Parmi les explications possibles, le fait qu’ils toussent «mal» comparé aux adultes, limitant les projections de gouttelettes, ou encore le fait que le nez ne coule pas lors du Covid-19 (les sécrétions nasales étant un vecteur important chez les enfants). Les adolescents ou les jeunes adultes semblent plus à même de transmettre le virus, en raison de faibles symptômes qu’ils subissent.</p>
-    <p><strong>Sur ce sujet</strong>: <a href="https://www.letemps.ch/sciences/covid19-chez-enfants-preuves-scientifiques-insuffisantes" target="_blank" rel="noopener">Le Covid-19 chez les enfants, des preuves scientifiques insuffisantes</a></p>
-  </div>
-</li>
-
-<li class="list-group-item">
-  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse10" aria-expanded="false" aria-controls="collapseExample">
-    Quels sont les traitements donnés en cas de Covid-19?
-    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
-  </button>
-  <div class="collapse" id="collapse10">
-    <p>Il n’y a pas de traitement standard étant donné que le SARS-CoV-2 est un virus émergent, qui était inconnu il y a quelques mois. Tant qu’aucune molécule n’a clairement démontré son efficacité à éradiquer le virus, les médecins doivent donc se baser sur des maladies semblables. Pour les patients à risque et hospitalisés, qui présentent des infiltrations pulmonaires et de graves insuffisances respiratoires, il existe plusieurs molécules, au premier rang desquelles les antiviraux.</p>
-<p>Le Kaletra, une combinaison de lopinavir et de ritonavir, est utilisé dans certains hôpitaux, dont celui de Genève. Autre possibilité: le remdesivir, produit par Gilead, ou encore l’hydroxychloroquine, un ancien antipaludique dont l’efficacité a été mise en doute par de nombreuses études. Tous ces médicaments – et d’autres – font actuellement l’objet d’essais cliniques afin de déterminer leur efficacité et leur innocuité.</p>
-    <p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/plasma-personnes-gueries-peutil-venir-bout-coronavirus" target="_blank" rel="noopener">Le plasma des personnes guéries peut-il venir à bout du coronavirus?</a> | <a href="https://www.letemps.ch/node/1208194" target="_blank" rel="noopener">Peut-on guérir grâce au sang d’un autre?</a></p>
-  </div>
-</li>
-
-<li class="list-group-item">
-  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse11" aria-expanded="false" aria-controls="collapseExample">
-    Pourquoi peut-on perdre l’odorat si l’on est infecté?
-    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
-  </button>
-  <div class="collapse" id="collapse11">
-    <p>Négligée lors de l’irruption de la maladie, la perte de l’odorat est désormais relevée dans de nombreux pays et pourrait être expliquée par la capacité du nouveau coronavirus à infecter le système nerveux central des malades – notamment les zones du cerveau traitant les informations olfactives.</p>
-		<p>Des études ont rapporté la présence du SARS-CoV-1 (très proche génétiquement) dans le système nerveux de malades lors de l’épidémie de SRAS au début des années 2000. D’autres travaux ont mis en évidence chez la souris la diffusion du virus dans le bulbe olfactif puis dans le reste du cerveau. De quoi laisser supposer à certains scientifiques que les difficultés respiratoires des patients pourraient être aussi le fait d’atteintes aux centres nerveux en charge du contrôle de la respiration.</p>
-    <p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/covid19-perte-dodorat-probablement-temporaire">Covid-19: la perte d’odorat probablement temporaire</a></p>
-  </div>
-</li>
-
-<li class="list-group-item">
-  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse12" aria-expanded="false" aria-controls="collapseExample">
-    Une fois remis de la maladie, est-on immunisé contre le coronavirus?
-    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
-  </button>
-  <div class="collapse" id="collapse12">
-    <p>C’est la grande question, que les experts du monde entier essaient encore de trancher. Des études ont confirmé l’existence d’une immunité acquise contre le SARS-CoV-2, y compris chez les personnes présentant une forme légère de la maladie, mais on ne sait toujours pas de combien de temps est sa durée.</p>
-    <p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/covid19-ont-une-forme-mineure-ont-developpe-une-immunite-protectrice-combien-temps" target="_blank" rel="noopener">Covid-19: «Ceux qui ont fait une forme mineure ont développé une immunité protectrice, mais pour combien de temps?»</a></p>
-  </div>
-</li>
-
-<li class="list-group-item">
-  <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse13" aria-expanded="false" aria-controls="collapseExample">
-    Quand un vaccin sera-t-il disponible et comment sont-ils conçus?
-    <i class="fa fa-chevron-down pull-right" aria-hidden="true"></i>
-  </button>
-  <div class="collapse" id="collapse13">
-    <p>La science ne dispose, à l’heure actuelle, d’aucun remède efficace contre le nouveau coronavirus. Dans ce contexte, tous les regards se tournent vers un possible vaccin. Depuis le début de l’été, l’élaboration d’un vaccin contre le Covid-19 s’est accélérée. Selon le suivi réalisé par l’OMS, cinq projets sont entrés dans la phase III de leurs essais clinique sur les plus de 160 recensés à travers le monde. Les plus rapides devraient présenter les résultats préliminaires de cette phase finale de développement cet automne.</p>
-		<p>Plusieurs méthodes sont actuellement adoptées afin de développer un vaccin. La première, choisie par deux des recherches menées en Chine, consiste à prendre une particule du virus et à l’inactiver, comme le vaccin contre la coqueluche, par exemple.</p>
-		<p>La deuxième consiste à mettre une des protéines qui enveloppent le coronavirus, appelée protéine Spike, dans un autre virus, afin que celui-ci se réplique dans le corps humain, et accélère la fabrication d’anticorps.</p>
-		<p>Quant à la troisième méthode, elle consiste à injecter dans le corps humain une molécule des protéines du gène (ADN) ou du messager du gène (RNA) du coronavirus. La particule sera sélectionnée précisément afin de provoquer la meilleure réponse immunitaire possible.</p>
-    <p><strong>Sur ce sujet:</strong> <a href="https://www.letemps.ch/sciences/covid19-un-vaccin" target="_blank" rel="noopener">Covid-19: à quand un vaccin?</a></p>
-  </div>
-</li>
-					<!-- end qa li -->
-				</ul>
-			</div>
-
-		</div>
-	</div> <!-- fin bloc texte -->
-
-	<div class="row">
-		<div class="offset-md-2 col-md-8 col-sm-12">
-
+		<div class="avertissement">
 			<h3>Données et méthode</h3>
 
 			<p>Les données concernant <b>le monde entier ou des pays</b> sont fondées sur <a target="_blank" href="https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide">les fichiers diffusés quotidiennement par l’agence européenne ECDC</a>, à l’exception de la situation en temps réel, qui repose sur les <a target="_blank" href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">compilations en continu de l’université Johns-Hopkins</a>.</p>
@@ -583,38 +656,59 @@
 			<p>Les données géographiques sont ajoutées sur la base de l’abréviation sur trois lettres des pays (code alpha-3) et sur deux lettres des cantons. Nous réparons un maximum de données pour les pays, mais des chiffres relatifs aux trois pays suivants ne sont pas affichés pour cause de codes alpha-3 manquants: Pays-Bas caribéens, Anguilla et îles Malouines.</p>
 
 			<p>Pour que l’aire des cercles soit proportionnelle au nombre de cas, ceux des cantons sont calculés au moyen d’une racine carrée. En raison des très grandes différences entre les pays (d’une poignée à plus d’un demi-million de cas), les cercles de la carte mondiale sont basés sur la puissance de 1/1.75.</p>
-
-			<p style="margin-bottom: 4px;"><b>A consulter également:</b></p>
-
-			<ul>
-					<li><a href="https://labs.letemps.ch/interactive/2020/covid-trends/">Covid-19: histoire d’une médiatisation</a></li>
-
-					<li>Le jeu interactif <a href="https://labs.letemps.ch/interactive/2020/quatre-apparts-un-confinement/">Quatre apparts et un confinement</a> créé par l’UNIL, l’EPFL et <i>Le Temps</i> avec le soutien de l’Initiative pour l’innovation dans les médias</li>
-
-					<!-- <li><a href="https://labs.letemps.ch/interactive/2020/covid-trends/">L’impact du Covid-19 sous-estimé dans de nombreux pays</a></li> -->
-
-					<li> notre <a href="https://www.letemps.ch/dossiers/menace-covid19">dossier sur le Covid-19</a></li>
-				</ul>
-
-			<p class="credits">Infographies: Paul Ronga, code <a target="_blank" href="https://github.com/labsletemps/coronavirus-world-map-evolution">disponible sur GitHub</a> <a class="warn_error"></a></p>
 		</div>
+
+		<p style="margin-bottom: 4px;"><b>A consulter également:</b></p>
+
+		<ul>
+			<li><a href="https://labs.letemps.ch/interactive/2020/covid-trends/">Covid-19: histoire d’une médiatisation</a></li>
+
+			<li>Le jeu interactif <a href="https://labs.letemps.ch/interactive/2020/quatre-apparts-un-confinement/">Quatre apparts et un confinement</a> créé par l’UNIL, l’EPFL et <i>Le Temps</i> avec le soutien de l’Initiative pour l’innovation dans les médias</li>
+
+			<!-- <li><a href="https://labs.letemps.ch/interactive/2020/covid-trends/">L’impact du Covid-19 sous-estimé dans de nombreux pays</a></li> -->
+
+			<li> notre <a href="https://www.letemps.ch/dossiers/menace-covid19">dossier sur le Covid-19</a></li>
+		</ul>
+
+		<p class="credits" id="credit-anchor">Infographies: Paul Ronga, code <a target="_blank" href="https://github.com/labsletemps/coronavirus-world-map-evolution">disponible en licence MIT sur GitHub</a> <a class="warn_error"></a></p>
+
 	</div>
+</div>
 </div>
 
 {{ block('footer_brand') }}
 
 <!-- 14 merged, minified libraries -->
 <script src="lib-merged/libraries.js"></script>
+
+<!--<script src="lib/jquery-3.4.1.slim.min.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+<script src="lib/d3.min.js"></script>
+<script src="lib/d3-zoom.min.js"></script>
+<script src="lib/d3-geo-projection.v2.min.js"></script>
+<script src="lib/d3-annotation.min.js"></script>
+<script src="lib/ion.rangeSlider.min.js"></script>
+<script src="lib/d3-legend.min.js"></script>
+<script src="lib/topojson.v2.min.js"></script>
+<script src="lib/d3-tip.js"></script>
+<script src="lib/c3.min.js"></script>
+<script src="lib/queue.min.js"></script>
+
+<script src="lib/scrollmagic/main.min.js"></script>
+<script src="lib/scrollmagic/animation.gsap.min.js"></script>
+<script src="lib/scrollmagic/animation.velocity.min.js"></script>
+<script src="lib/scrollmagic/debug.addIndicators.min.js"></script>-->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
 
 <script>
 var controller = new ScrollMagic.Controller();
 var smallWindow = $( window ).width() < 600;
 </script>
-<script src="js/map.js?1603296269089"></script>
-<script src="js/mapCH.js?1603296269089"></script>
-<script src="js/animatedBarChartRelative.js?1603296269089"></script>
-<script src="js/multiLineChart.js?1603296269089"></script>
+<script src="js/map.js?1606224407703"></script>
+<script src="js/mapCH.js?1606224407703"></script>
+<!-- <script src="js/animatedBarChartRelative.js?1606224407703"></script> -->
+<script src="js/multiLineChart.js?1606224407703"></script>
 
 <script>
 
@@ -640,11 +734,59 @@ var chartDailyTestsCH = new multilineChart({
 	'selector': '#chartDailyTestsCH',
 	'colors': ['#1f77b4', '#222', '#89C4C9', '#aaa'],
 	'file': 'data/ch-daily-cases-and-tests-rolling.csv?' + update,
-	'timeScale': true, 'logScale': true,
+	'timeScale': true,
+	'logScale': true,
 	'yTickFormat': "d", 'hideLabel': false,
 	'annotationSplitter': /\n/,
 	'margin': { top: 60, bottom: 30, left: 50, right: 100 },
-	'needsRectlayer': true
+	'needsRectlayer': true,
+	'yMax': 50000,
+	'annotations': [
+		{
+			note: {
+				title: null,
+				label: "3 derniers jours: \nbilan provisoire",
+				wrapSplitter: "\n",
+			},
+			data: { xValue: new Date(), value: 100 },
+			className: "show-bg",
+			dx: 0,
+			dy: 0,
+			connector: { end: "arrow", type: 'todo' }
+		}
+	]
+});
+
+var chartPositivityRate = new multilineChart({
+	'selector': '#chartDailyTestRate',
+	'colors': ['#aaa'],
+	'file': 'data/ch_positivity_rate.csv?' + update,
+	'timeScale': true,
+	'height': 220,
+	'yTickFormat': '.0%',
+	'yFormat': '.1%',
+	'hideLabel': true
+});
+
+new ScrollMagic.Scene({triggerElement: "#chartDailyTestsCH", duration: 300})
+.addTo(controller)
+.on("enter", function(){
+
+	chartDailyTestsCH.annotate("16 mars:\nmesures du \nConseil fédéral", {x: new Date('2020-03-16'), y: (smallWindow ? 900 : 850)}, (smallWindow ? 30 : 0), -60);
+
+	// chartDailyTestsCH.annotate("Creux durant\nles week-ends", {x: new Date('2020-03-29'), y: 550}, 0, 30);
+
+	if(!smallWindow){
+		chartDailyTestsCH.annotate("27 avril:\n1er assouplissement", {x: new Date('2020-04-27'), y: 175}, (smallWindow ? 30 : 0), -70);
+	}
+	// chartDailyTestsCH.annotate("Réouverture \ndes écoles", {x: new Date('2020-05-11'), y: 65}, (smallWindow ? 35 : 0), -60);
+
+	chartDailyTestsCH.annotate("Mesures \nlargement \nassouplies", {x: new Date('2020-06-06'), y: 20}, (smallWindow ? 20 : 0), -80);
+
+	//
+
+	// chartDailyTestsCH.annotate("Interdiction des rassemblements de plus de 5 personnes", {x: new Date('2020-03-20'), y: 800}, -30, -50);
+
 });
 
 $('#chartCHToggle').change(function(){
@@ -666,44 +808,59 @@ $('#chartCHToggleLog').change(function(){
 	}
 });
 
+var chartDailyCasesWorld = new multilineChart({
+	'selector': '#chartDailyCasesWorld',
+	'colors': ['#1f77b4', '#222', '#89C4C9', '#aaa'],
+	'file': 'data/world-daily-cases-rolling.csv?' + update,
+	'timeScale': true, 'logScale': true,
+	'yTickFormat': "d", 'hideLabel': false,
+	'annotationSplitter': /\n/,
+	'margin': { top: 60, bottom: 30, left: 65, right: 100 },
+	// 'needsRectlayer': true,
+	'yMax': 1000000,
+	'annotations': [
+	]
+});
+
+$('#chartWorldToggle').change(function(){
+	// invert
+	var rollingAvg = $(this).prop('checked');
+	if(rollingAvg){
+		chartDailyCasesWorld.setData('default', 'data/world-daily-cases-rolling.csv?' + update);
+	} else {
+		chartDailyCasesWorld.setData('not-rolling', 'data/world-daily-cases.csv?' + update);
+	}
+});
+$('#chartWorldToggleLog').change(function(){
+	// invert
+	var logScale = $(this).prop('checked');
+	if(logScale){
+		chartDailyCasesWorld.setLogScale(true);
+	} else {
+		chartDailyCasesWorld.setLogScale(false);
+	}
+});
+
 var reMeanCH = new multilineChart({'selector': '#reMeanCH', 'file': 'data/re_switzerland.csv?' + update, 'timeScale': true, 'yTickFormat': ".2n", 'hideLabel': false, 'hasConfidenceInterval': true, 'xMin': true, 'straightLine': false, 'needsReLimit': true})
 
 var reMeanEU = new multilineChart({'selector': '#reMeanEU', 'file': 'data/re_eu.csv?' + update, 'timeScale': true, 'yTickFormat': ".2n", 'hideLabel': false, 'xMin': true, 'straightLine': false, 'needsReLimit': true})
 
-// TODO implement callback in multiLineChart.js
-/*setTimeout(function(){
-	reMeanCH.addReLimit();
-	reMeanEU.addReLimit();
-	reMeanEU.addFatLine();
-}, 500)*/
+var deathRate = new multilineChart({
+	'selector': '#deathRate',
+	'file': 'data/excess-deaths.csv?' + update,
+	'timeScale': true,
+	'weekly': true,
+	'yTickFormat': "d",
+	'hideLabel': false,
+	'hasConfidenceInterval': true,
+	'xMin': true,
+	'straightLine': true})
 
-var deathRate = new multilineChart({'selector': '#deathRate', 'file': 'data/excess-deaths.csv?' + update, 'timeScale': true, 'weekly': true, 'yTickFormat': "d", 'hideLabel': false, 'hasConfidenceInterval': true, 'xMin': true, 'straightLine': true})
 
-new ScrollMagic.Scene({triggerElement: "#chartDailyTestsCH", duration: 300})
-	.addTo(controller)
-	.on("enter", function(){
+	//var chartMovingAvg = new multilineChart({'selector': '#chartMovingAvg', 'file': 'data/cases_timestamp_deaths.csv?' + update, 'timeScale': true, 'logScale': true, 'yMax': 10000, 'yTickFormat': "d", 'margin': { top: 40, bottom: 30, left: 52, right: 85 } });
+	var chartMovingAvg = new multilineChart({'selector': '#chartMovingAvg', 'file': 'data/cases_timestamp_deaths.csv?' + update, 'timeScale': true, 'weekly': true, 'logScale': true, 'yMax': 25000, 'straightLine': false, 'yTickFormat': "d", 'margin': { top: 40, bottom: 30, left: 52, right: 85 } });
 
-		chartDailyTestsCH.annotate("16 mars:\nmesures du \nConseil fédéral", {x: new Date('2020-03-16'), y: (smallWindow ? 900 : 850)}, (smallWindow ? 30 : 0), -60);
-
-		// chartDailyTestsCH.annotate("Creux durant\nles week-ends", {x: new Date('2020-03-29'), y: 550}, 0, 30);
-
-		if(!smallWindow){
-			chartDailyTestsCH.annotate("27 avril:\n1er assouplissement", {x: new Date('2020-04-27'), y: 175}, (smallWindow ? 30 : 0), -70);
-		}
-		// chartDailyTestsCH.annotate("Réouverture \ndes écoles", {x: new Date('2020-05-11'), y: 65}, (smallWindow ? 35 : 0), -60);
-
-		chartDailyTestsCH.annotate("Mesures \nlargement \nassouplies", {x: new Date('2020-06-06'), y: 20}, (smallWindow ? 20 : 0), -80);
-
-		// chartDailyTestsCH.annotate("3 derniers jours: \nbilan \nprovisoire", {x: new Date('2020-10-19'), y: 360}, 0, -60);
-
-		// chartDailyTestsCH.annotate("Interdiction des rassemblements de plus de 5 personnes", {x: new Date('2020-03-20'), y: 800}, -30, -50);
-
-});
-
-//var chartMovingAvg = new multilineChart({'selector': '#chartMovingAvg', 'file': 'data/cases_timestamp_deaths.csv?' + update, 'timeScale': true, 'logScale': true, 'yMax': 10000, 'yTickFormat': "d", 'margin': { top: 40, bottom: 30, left: 52, right: 85 } });
-var chartMovingAvg = new multilineChart({'selector': '#chartMovingAvg', 'file': 'data/cases_timestamp_deaths.csv?' + update, 'timeScale': true, 'weekly': true, 'logScale': true, 'yMax': 10000, 'straightLine': false, 'yTickFormat': "d", 'margin': { top: 40, bottom: 30, left: 52, right: 85 } });
-
-new ScrollMagic.Scene({triggerElement: "#chartMovingAvg", duration: 300})
+	new ScrollMagic.Scene({triggerElement: "#chartMovingAvg", duration: 300})
 	.addTo(controller)
 	.on("enter", function(){
 		chartMovingAvg.addFatLine();
@@ -711,19 +868,19 @@ new ScrollMagic.Scene({triggerElement: "#chartMovingAvg", duration: 300})
 		chartMovingAvg.annotate("25 mai: l’Espagne révise ses bilans", {x: new Date('2020-05-25'), y: 3.5}, -100, 0);
 
 		/*if(!smallWindow){
-			chartMovingAvg.annotate("En Italie, 795 décès en un dimanche", {x: new Date('2020-03-22'), y: 800}, -30, -10);
-		}
-		chartMovingAvg.annotate("Près de 5000 décès en 24 heures", {x: new Date('2020-04-16'), y: 4090}, 30, -10);*/
+		chartMovingAvg.annotate("En Italie, 795 décès en un dimanche", {x: new Date('2020-03-22'), y: 800}, -30, -10);
+	}
+	chartMovingAvg.annotate("Près de 5000 décès en 24 heures", {x: new Date('2020-04-16'), y: 4090}, 30, -10);*/
 });
 
 /*
 var chartMovingAvgPop = new multilineChart({'selector': '#chartMovingAvgPop', 'file': 'data/cases_timestamp_3d.csv?' + update, 'timeScale': true, 'yTickFormat': "d"});
 
 new ScrollMagic.Scene({triggerElement: "#chartMovingAvgPop", duration: 300})
-	.addTo(controller)
-	.on("enter", function(){
-		chartMovingAvgPop.addFatLine();
-		// chartMovingAvg.annotate("2000 décès en 24 heures", {x: new Date('2020-04-11'), y: 6}, -50, -50);
+.addTo(controller)
+.on("enter", function(){
+chartMovingAvgPop.addFatLine();
+// chartMovingAvg.annotate("2000 décès en 24 heures", {x: new Date('2020-04-11'), y: 6}, -50, -50);
 });*/
 
 var chartCantons = new multilineChart({
@@ -747,14 +904,14 @@ $('#chartCantonsToggle').change(function(){
 /*var chartAbsolute = new multilineChart({'selector': '#chartAbsolute', 'file': 'data/cases_timestamp.csv?' + update, 'timeScale': true, 'yTickFormat': ".2s"});
 
 new ScrollMagic.Scene({triggerElement: "#chartAbsolute", duration: 300})
-	.addTo(controller)
-	.on("enter", function(){
-		chartAbsolute.addFatLine();
-		// chartAbsolute.annotate("23 janvier: Wuhan confinée", {x: new Date('2020-01-23'), y: 5000}, 0, -60);
+.addTo(controller)
+.on("enter", function(){
+chartAbsolute.addFatLine();
+// chartAbsolute.annotate("23 janvier: Wuhan confinée", {x: new Date('2020-01-23'), y: 5000}, 0, -60);
 
-		chartAbsolute.annotate("31 janvier: premier cas en Italie", {x: new Date('2020-01-31'), y: 5000}, 0, -60);
+chartAbsolute.annotate("31 janvier: premier cas en Italie", {x: new Date('2020-01-31'), y: 5000}, 0, -60);
 
-		chartAbsolute.annotate("17 mars: début du confinement en France", {x: new Date('2020-03-17'), y: 10000}, 0, -120);
+chartAbsolute.annotate("17 mars: début du confinement en France", {x: new Date('2020-03-17'), y: 10000}, 0, -120);
 });
 
 */
@@ -764,33 +921,30 @@ new ScrollMagic.Scene({triggerElement: "#chartAbsolute", duration: 300})
 var chartDayOffset = new multilineChart({'selector': '#chartDayOffset', 'file': 'data/cases_per_pop_day0.csv?' + update});
 
 new ScrollMagic.Scene({triggerElement: "#chartDayOffset", duration: 300})
-	.addTo(controller)
-	.on("enter", function(){
-		chartDayOffset.addFatLine();
+.addTo(controller)
+.on("enter", function(){
+	chartDayOffset.addFatLine();
 
-		if(!smallWindow){
-			chartDayOffset.annotate("Les pays sont alignés sur leur «jour 0»", {x: 0, y: 50}, 20, -20);
-		}
+	if(!smallWindow){
+		chartDayOffset.annotate("Les pays sont alignés sur leur «jour 0»", {x: 0, y: 50}, 60, -20);
+	}
 
-		chartDayOffset.annotate("Fin du dépistage systématique en Suisse", {x: 14, y: 185}, 20, -70);
+
 });
 
 var chartDeath = new multilineChart({'selector': '#chartDeath', 'file': 'data/deaths_per_pop_day0.csv?' + update});
 
 new ScrollMagic.Scene({triggerElement: "#chartDeath", duration: 300})
-	.addTo(controller)
-	.on("enter", function(){
-		chartDeath.addFatLine();
+.addTo(controller)
+.on("enter", function(){
+	chartDeath.addFatLine();
 
-		if(!smallWindow){
-			chartDeath.annotate("L’Espagne enregistre plus de 500 décès en 24 heures", {x: 23, y: 52}, -25);
-		}
-		chartDeath.annotate("25 mai: l’Espagne révise ses bilans", {x: 86, y: 585}, 10, -10);
+	chartDeath.annotate("25 mai: l’Espagne révise ses bilans", {x: 86, y: 585}, 10, -10);
 
 
-		if(!smallWindow){
-			chartDeath.annotate("Les pays sont alignés sur leur «jour 0» en cas confirmés", {x: 1, y: 10}, 60, -20);
-		}
+	if(!smallWindow){
+		chartDeath.annotate("Les pays sont alignés sur leur «jour 0» en cas confirmés", {x: 1, y: 10}, 60, -20);
+	}
 });
 
 
@@ -806,34 +960,42 @@ $(document).ready(function() {
 	});
 
 	var numberLocale = d3.formatLocale({
-	  decimal: ",",
-	  thousands: '\xa0',
-	  grouping: [3]
+		decimal: ",",
+		thousands: '\xa0',
+		grouping: [3]
 	});
 	var format = numberLocale.format(",d");
+	var floatFormat = numberLocale.format(",.1f");
 
 	if (window.fetch) {
 		fetch('data/metaAuto.json?' + update)
-			.then(function(response) { return response.json(); })
-			.then(function(data) {
+		.then(function(response) { return response.json(); })
+		.then(function(data) {
 			$('.warn_error').text('Signaler une erreur');
 			$('<span>| </span>').insertBefore('.warn_error')
 			$('.warn_error').attr('href', 'mailto:' + data['contact'] + '@letemps.ch');
 			$('.deaths_total').text( format( data['deaths_total'] ) )
 			$('.confirmed_total').text( format( data['confirmed_total'] ) )
-			$('.confirmed_total_floor').text( format( Math.floor(data['confirmed_total'] / 1000) * 1000 ) )
+			$('.confirmed_total_floor').text( floatFormat( Math.floor(data['confirmed_total'] / 100000) / 10 ) + ' millions' )
+
+			$('.deaths_total_floor').text( floatFormat( Math.floor(data['deaths_total'] / 100000) / 10 )  + ' million' )
+
+
 
 			$('.increase_ch').text(data['increase_ch']);
-      $('.day_name').text(data['day_name']);
+			$('.day_name').text(data['day_name']);
 			$('.confirmed_total_ch').text( format( data['confirmed_ch'] ) )
 			$('.deaths_total_ch').text( format( data['deaths_ch'] ) )
 
 
 			$('.dashboardUpdate').text(data['dashboardUpdate'])
 			$('.dashboardUpdate_ch').text(data['dashboardUpdate_ch'])
+			$('.ecdcUpdate').text(data['ecdcUpdate'])
+
 
 			// Phrase d’intro sur la suisse
 			$('.new_swiss_cases_date').text( data['new_swiss_cases_date'] );
+			$('.new_swiss_cases_7days_date').text( data['new_swiss_cases_7days_date'] );
 			$('.new_swiss_cases').text( data['new_swiss_cases'] );
 			$('.new_swiss_deaths').text( data['new_swiss_deaths'] );
 			$('.new_swiss_cases_7days').text( data['new_swiss_cases_7days'] );
@@ -841,6 +1003,20 @@ $(document).ready(function() {
 			$('.new_swiss_cases_increase').text( data['new_swiss_cases_increase'] );
 			$('.new_swiss_cases_symbol').text( data['new_swiss_cases_symbol'] );
 			$('.new_swiss_cases_increase').text( data['new_swiss_cases_increase'] );
+
+			// Phrase situation mondiale avec l’ECDC
+
+
+			$('.usa_lastCases_mio').text( floatFormat( data['usa_lastCases_mio'] ) + ' millions' )
+			$('.usa_lastCasesPerPop').text( format( data['usa_lastCasesPerPop'] ) )
+
+			$('.brasil_lastCases_mio').text( floatFormat( data['brasil_lastCases_mio'] ) + ' millions' )
+			$('.brasil_lastCasesPerPop').text( format( data['brasil_lastCasesPerPop'] ) )
+
+			$('.india_lastCases_mio').text( floatFormat( data['india_lastCases_mio'] ) + ' millions' )
+			$('.india_lastCasesPerPop').text( format( data['india_lastCasesPerPop'] ) )
+
+			$('.mostCases14days').text( data['mostCases14days'] );
 		});
 	}
 }); // end on ready

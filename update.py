@@ -7,6 +7,13 @@ today_timestamp = datetime.now().strftime('%Y-%m-%d')
 yesterday_timestamp = ( datetime.now() - timedelta(days=1) ).strftime('%Y-%m-%d')
 yesterday_fr = ( datetime.now() - timedelta(days=1) ).strftime('%-d %B')
 
+# matinée
+today_timestamp = ( datetime.now() - timedelta(days=1) ).strftime('%Y-%m-%d')
+yesterday_timestamp = ( datetime.now() - timedelta(days=2) ).strftime('%Y-%m-%d')
+yesterday_fr = ( datetime.now() - timedelta(days=2) ).strftime('%-d %B')
+
+threedays_timestamp = ( datetime.now() - timedelta(days=2) ).strftime('%Y-%m-%d')
+
 with open( 'index.html.twig' , 'r') as f:
     content = f.read()
 
@@ -16,6 +23,7 @@ with open( 'index.html.twig' , 'r') as f:
 
     content = content.replace('_TODAY_', today_timestamp)
     content = content.replace('_YESTERDAY_', yesterday_timestamp)
+    content = content.replace('_THREEDAYS_', threedays_timestamp)
 
     with open( 'update/index.html.twig', 'w') as fp:
         fp.write( content )
