@@ -2,7 +2,7 @@
 	"title": "Le covid en Suisse et dans le monde – Le Temps",
 	"description": "Le virus a fait plus d’un million de victimes dans le monde. L'évolution de la pandémie au quotidien",
 	"authors": "Paul Ronga",
-	"imgSocial": "img/social-cantons.jpg",
+	"imgSocial": "img/social_oct_2020.png",
 
 	"navBarStyle": "black",
 	"navBarOffset": "0",
@@ -11,5 +11,7 @@
 	"partner": {
 		"logo": "img/empty.png",
 		"link": "https://www.letemps.ch/"
-	}
+	},
+	"lastModifiedDisplay": "jeudi 29 octobre 2020",
+	"introComment": "La hausse du nombre de cas s’est nettement accélérée au mois d’octobre, conduisant à une nouvelle vague bien plus forte que la première en nombre de cas confirmés: plus de 5000 nouveaux cas par jour en moyenne contre 1000 en moyenne durant la première vague."
 }
