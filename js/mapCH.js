@@ -100,8 +100,8 @@
 			d.n = +d.n;
 			d.daily_rate = +d.daily_rate;
 			d.sum_rate = +d.sum_rate;
-			if( availableDates.indexOf( d['date'] ) === -1 ){
-				availableDates.push( d['date'] );
+			if( availableDates.indexOf( d['timestamp'] ) === -1 ){
+				availableDates.push( d['timestamp'] );
 			}
 			dataById.set(d.no, d);
 		});
