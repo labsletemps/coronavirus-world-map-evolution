@@ -38,7 +38,8 @@
 		'2020-07-21', // GE devant le Tessin en valeurs relatives
 		'2020-10-09',// > 300 cas à Zurich
 		'2020-10-16', // 396 cas au Valais soit taux de 115 + taux de 117 au Jura
-		'2020-10-19' // 509 en Valais soit taux de 148
+		'2020-10-19', // 509 en Valais soit taux de 148 -- chiffres revises entre temps
+		'2020-11-07' // incidence record à genève
 	];
 	var explainLabels = new Map();
 
@@ -73,7 +74,11 @@
 		[{'dx': -60, 'dy': -20, 'canton': 'JU', 'label': '117 nouveaux cas par 100 000 habitants au Jura', 'title': '16 octobre', 'lat': 47.38444474, 'lng': 7.2430608}]
 	);
 	explainLabels.set('2020-10-19',
-		[{'dx': 60, 'dy': 20, 'canton': 'VS', 'label': 'En un jour, plus de 500 cas soit 148 cas par 100 000 habitants', 'title': '19 octobre', 'lat': 46.1904614, 'lng': 7.5449226}]
+		[{'dx': 60, 'dy': 20, 'canton': 'VS', 'label': 'En un jour, plus de 500 cas (164 pour 100 000 habitants)', 'title': '19 octobre', 'lat': 46.1904614, 'lng': 7.5449226}]
+	);
+
+	explainLabels.set('2020-11-07',
+		[{'dx': 60, 'dy': 20, 'canton': 'GE', 'label': 'Incidence record de 2810 cas par habitant sur 14 jours', 'title': 'Novembre', 'lat': 46.2043907, 'lng': 6.1431577}]
 	);
 
 
@@ -403,21 +408,16 @@
 				// if(d['Province/State']){
 				// 	location += ', ' + d['Province/State']
 
-				var addendum = '';
 				if(!d){
 					return `<h4></h4>
 					<p>Pas de données pour cette date.</p>`;
 				}
-				if(d.status != ''){
-					addendum = '<p><span class="stats">Pas de données pour cette date:</span> les données du jour précédent sont indiquées</p>';
-				}
 				return `<h4>${d.name}</h4>
-					<p><span class="stats">Nouveaux cas:</span> ${parseInt( d.confirmed_daily )}</p>
-					<p><span class="stats">Taux pour 100 000 habitants:</span> ${d.daily_rate}</p>
-					<p><span class="stats">Cas confirmés cumulés:</span> ${parseInt( d.confirmed_sum )}</p>
-					<p><span class="stats">Taux pour 100 000 habitants:</span> ${d.sum_rate} (soit ${d.sum_perc}%)</p>
-					${addendum}
 					<p><span class="stats">Date:</span> ${ timeFormat( new Date(d.timestamp) ) }</p>
+					<p><span class="stats">Nouveaux cas:</span> ${parseInt( d.confirmed_daily )}</p>
+					<p><span class="stats">Nouveaux cas pour 100 000 habitants:</span> ${d.daily_rate}</p>
+					<p><span class="stats">Incidence des cas durant les 14 derniers jours:</span> ${d.confirmed_14days}</p>
+					<p><span class="stats">Incidence des décès durant les 14 derniers jours:</span> ${d.death_14days}</p>
 
 				`;})
 				.style('opacity', 1);
